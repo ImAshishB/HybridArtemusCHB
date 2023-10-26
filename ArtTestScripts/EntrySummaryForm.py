@@ -58,6 +58,7 @@ def random_BillGenerator(size=6, chars=string.ascii_uppercase + string.digits):
 for r in range(50, 51):
     i = 0
     i = i - 1
+    selectImporterData = utills.readData(file, "Sheet1", r, 140)
     billCounts = utills.readData(file, "Sheet1", r, 2)
     lineitmscount = utills.readData(file, "Sheet1", r, 3)
     # intlineitmscount = int(lineitmscount)
@@ -140,9 +141,10 @@ for r in range(50, 51):
     # Select Importer
     selectImporterTxt = mywait.until(EC.element_to_be_clickable((By.XPATH, "//input[@id='typeahead-basic']")))
     selectImporterTxt.click()
-    selectImporterTxt.send_keys("arttest")
+    selectImporterTxt.send_keys(selectImporterData)
     time.sleep(2)
     selectImporterTxt.send_keys(Keys.ENTER)
+
 
     Form7501 = mywait.until(EC.element_to_be_clickable((By.LINK_TEXT, "Form 7501")))
     Form7501.click()

@@ -3243,3 +3243,58 @@ Stacktrace:
 2023-10-26 13:12:59,933 - INFO - ----Trading Partner 2 Done----
 2023-10-26 13:13:12,719 - INFO - It is Cotton HTS
 2023-10-26 13:13:27,988 - INFO - ----Form Saved Successfully----
+2023-10-26 15:19:26,164 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-10-26 15:19:36,826 - INFO - Login Done
+2023-10-26 15:20:09,091 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-10-26 15:21:02,494 - INFO - Login Done
+2023-10-26 15:21:14,735 - INFO - 7501 Form opened
+2023-10-26 15:21:21,697 - INFO - ----Upper Part Done----
+2023-10-26 15:21:41,719 - INFO - ----Vessel Done----
+2023-10-26 15:21:57,665 - INFO - ----Trading Partner 1 Done----
+2023-10-26 15:22:14,417 - INFO - ----Trading Partner 2 Done----
+2023-10-26 15:22:40,810 - INFO - ----Form Saved Successfully----
+2023-10-26 15:22:47,355 - INFO - 7501 Form opened
+2023-10-26 15:22:56,498 - INFO - ----Upper Part Done----
+2023-10-26 15:23:17,085 - INFO - ----Vessel Done----
+2023-10-26 15:23:33,629 - INFO - ----Trading Partner 1 Done----
+2023-10-26 15:23:58,824 - ERROR - !----Trading Partner 2 Not Done----!
+2023-10-26 15:24:46,384 - INFO - ----Form not Saved----
+2023-10-26 16:19:06,066 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-10-26 16:22:16,286 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-10-26 16:22:31,593 - INFO - Login Done
+2023-10-26 16:22:42,098 - INFO - 7501 Form opened
+2023-10-26 16:22:49,173 - INFO - ----Upper Part Done----
+2023-10-26 16:23:09,263 - INFO - ----Vessel Done----
+2023-10-26 16:23:26,260 - INFO - ----Trading Partner 1 Done----
+2023-10-26 16:23:42,659 - INFO - ----Trading Partner 2 Done----
+2023-10-26 16:24:54,345 - INFO - FD1 Filled
+2023-10-26 16:24:55,502 - ERROR - Message: element click intercepted: Element <span _ngcontent-agm-c196="">...</span> is not clickable at point (127, 401). Other element would receive the click: <button _ngcontent-agm-c196="" type="button" ngbpaneltoggle="" class="btn btn-link container-fluid text-left pl-0" aria-expanded="true" aria-controls="0">...</button>
+  (Session info: chrome=118.0.5993.89)
+Stacktrace:
+	GetHandleVerifier [0x00007FF7CEB67892+54818]
+	(No symbol) [0x00007FF7CEAD6AC2]
+	(No symbol) [0x00007FF7CE98DA3B]
+	(No symbol) [0x00007FF7CE9D47CB]
+	(No symbol) [0x00007FF7CE9D2B99]
+	(No symbol) [0x00007FF7CE9D0968]
+	(No symbol) [0x00007FF7CE9CFA23]
+	(No symbol) [0x00007FF7CE9C571F]
+	(No symbol) [0x00007FF7CE9EEAAA]
+	(No symbol) [0x00007FF7CE9C5036]
+	(No symbol) [0x00007FF7CE9EECC0]
+	(No symbol) [0x00007FF7CEA075A2]
+	(No symbol) [0x00007FF7CE9EE883]
+	(No symbol) [0x00007FF7CE9C3691]
+	(No symbol) [0x00007FF7CE9C48D4]
+	GetHandleVerifier [0x00007FF7CEECB992+3610402]
+	GetHandleVerifier [0x00007FF7CEF21860+3962352]
+	GetHandleVerifier [0x00007FF7CEF19D4F+3930847]
+	GetHandleVerifier [0x00007FF7CEC03646+693206]
+	(No symbol) [0x00007FF7CEAE1628]
+	(No symbol) [0x00007FF7CEADD934]
+	(No symbol) [0x00007FF7CEADDA62]
+	(No symbol) [0x00007FF7CEACE113]
+	BaseThreadInitThunk [0x00007FFC7357257D+29]
+	RtlUserThreadStart [0x00007FFC7486AA78+40]
+
+2023-10-26 16:25:01,994 - INFO - ----Form Saved Successfully----

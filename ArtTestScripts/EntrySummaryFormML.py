@@ -70,14 +70,14 @@ Shipment.click()
 time.sleep(2)
 
 # Select Importer
-selectImporterTxt = mywait.until(EC.element_to_be_clickable((By.XPATH, "//input[@id='typeahead-basic']")))
-selectImporterTxt.click()
-selectImporterTxt.send_keys("arttest")#ASHISH DISTRIBUTION LLC
+for r in range(3, 4):
+    selectImporterData = utills.readData(file, "Sheet1", r, 140)
+    selectImporterTxt = mywait.until(EC.element_to_be_clickable((By.XPATH, "//input[@id='typeahead-basic']")))
+    selectImporterTxt.click()
+    selectImporterTxt.send_keys(selectImporterData)
+    time.sleep(2)
+    selectImporterTxt.send_keys(Keys.ENTER)
 
-time.sleep(2)
-selectImporterTxt.send_keys(Keys.ENTER)
-
-#Read data from excel
 for r in range(3, 8):
     i = 0
     i = i - 1
