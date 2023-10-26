@@ -1,0 +1,650 @@
+2023-08-24 13:18:36 - TestLogin - INFO - Name shown in Homepage
+2023-08-24 13:18:36 - TestLogin - INFO - Test Case Pass
+2023-08-24 13:23:29 - TestLogin - INFO - Name shown in Homepage
+2023-08-24 13:23:29 - TestLogin - INFO - Test Case Pass
+2023-08-24 13:25:09 - TestLogin - INFO - Name shown in Homepage
+2023-08-24 13:25:10 - TestLogin - INFO - Test Case Pass
+2023-08-24 13:25:50 - TestLogin - INFO - Name shown in Homepage2
+2023-08-24 13:25:50 - TestLogin - INFO - Test Case 2 Pass
+2023-08-24 16:20:57 - TestLogin - INFO - Name shown in Homepage
+2023-08-24 16:20:57 - TestLogin - INFO - Test Case Pass
+2023-08-24 16:21:02 - TestLogin - INFO - Name shown in Homepage
+2023-08-24 16:21:02 - TestLogin - INFO - Test Case Pass
+2023-08-24 16:21:07 - TestLogin - INFO - Name shown in Homepage
+2023-08-24 16:21:07 - TestLogin - INFO - Test Case Pass
+2023-08-24 16:21:13 - TestLogin - INFO - Name shown in Homepage
+2023-08-24 16:21:13 - TestLogin - INFO - Test Case Pass
+2023-08-24 16:22:41 - TestLogin - INFO - Name shown in Homepage
+2023-08-24 16:22:41 - TestLogin - INFO - Test Case Pass
+2023-08-24 16:22:46 - TestLogin - INFO - Name shown in Homepage
+2023-08-24 16:22:46 - TestLogin - INFO - Test Case failed
+2023-08-24 16:25:22 - TestLogin - INFO - Name shown in Homepage
+2023-08-24 16:25:22 - TestLogin - INFO - Test Case Pass
+2023-08-24 16:25:27 - TestLogin - INFO - Name shown in Homepage
+2023-08-24 16:25:28 - TestLogin - WARNING - Test Case failed
+2023-08-24 16:25:33 - TestLogin - INFO - Name shown in Homepage
+2023-08-24 16:25:33 - TestLogin - INFO - Test Case Pass
+2023-08-24 16:25:38 - TestLogin - INFO - Name shown in Homepage
+2023-08-24 16:25:38 - TestLogin - INFO - Test Case Pass
+2023-08-24 16:40:27 - TestLogin - INFO - Name shown in Homepage
+2023-08-24 16:40:27 - TestLogin - INFO - Test Case Pass
+2023-08-24 16:40:33 - TestLogin - INFO - Name shown in Homepage
+2023-08-24 16:40:33 - TestLogin - WARNING - Test Case failed
+2023-08-24 16:40:39 - TestLogin - INFO - Name shown in Homepage
+2023-08-24 16:40:39 - TestLogin - INFO - Test Case Pass
+2023-08-24 16:40:45 - TestLogin - INFO - Name shown in Homepage
+2023-08-24 16:40:45 - TestLogin - INFO - Test Case Pass
+2023-08-24 16:42:31 - TestLogin - INFO - Name shown in Homepage
+2023-08-24 16:42:31 - TestLogin - INFO - Test Case Pass
+2023-08-24 16:42:37 - TestLogin - INFO - Name shown in Homepage
+2023-08-24 16:42:37 - TestLogin - WARNING - Test Case failed
+2023-08-24 16:42:43 - TestLogin - INFO - Name shown in Homepage
+2023-08-24 16:42:43 - TestLogin - INFO - Test Case Pass
+2023-08-24 16:42:49 - TestLogin - INFO - Name shown in Homepage
+2023-08-24 16:42:49 - TestLogin - INFO - Test Case Pass
+2023-08-24 16:53:10 - TestLogin - INFO - Name shown in Homepage
+2023-08-24 16:53:10 - TestLogin - INFO - Test Case Pass
+2023-08-24 16:53:15 - TestLogin - INFO - Name shown in Homepage
+2023-08-24 16:53:15 - TestLogin - WARNING - Test Case failed
+2023-08-24 16:53:21 - TestLogin - INFO - Name shown in Homepage
+2023-08-24 16:53:21 - TestLogin - INFO - Test Case Pass
+2023-08-24 16:53:26 - TestLogin - INFO - Name shown in Homepage
+2023-08-24 16:53:26 - TestLogin - INFO - Test Case Pass
+2023-08-24 16:59:14 - TestLogin - INFO - Name shown in Homepage
+2023-08-24 16:59:14 - TestLogin - INFO - Test Case Pass
+2023-08-24 16:59:20 - TestLogin - INFO - Name shown in Homepage
+2023-08-24 16:59:20 - TestLogin - WARNING - Test Case failed
+2023-08-24 16:59:25 - TestLogin - INFO - Name shown in Homepage
+2023-08-24 16:59:25 - TestLogin - INFO - Test Case Pass
+2023-08-24 16:59:30 - TestLogin - INFO - Name shown in Homepage
+2023-08-24 16:59:30 - TestLogin - INFO - Test Case Pass
+2023-08-24 16:59:46 - TestLogin - INFO - Name shown in Homepage
+2023-08-24 16:59:46 - TestLogin - INFO - Test Case Pass
+2023-08-24 16:59:51 - TestLogin - INFO - Name shown in Homepage
+2023-08-24 16:59:51 - TestLogin - WARNING - Test Case failed
+2023-08-24 17:00:29 - TestLogin - INFO - Name shown in Homepage
+2023-08-24 17:00:29 - TestLogin - INFO - Test Case Pass
+2023-08-24 17:00:34 - TestLogin - INFO - Name shown in Homepage
+2023-08-24 17:00:34 - TestLogin - WARNING - Test Case failed
+2023-08-24 17:00:40 - TestLogin - INFO - Name shown in Homepage
+2023-08-24 17:00:40 - TestLogin - INFO - Test Case Pass
+2023-08-24 17:00:45 - TestLogin - INFO - Name shown in Homepage
+2023-08-24 17:00:45 - TestLogin - INFO - Test Case Pass
+2023-08-24 17:01:01 - TestLogin - INFO - Name shown in Homepage
+2023-08-24 17:01:01 - TestLogin - INFO - Test Case Pass
+2023-08-24 17:01:07 - TestLogin - INFO - Name shown in Homepage
+2023-08-24 17:01:07 - TestLogin - WARNING - Test Case failed
+2023-08-24 17:01:12 - TestLogin - INFO - Name shown in Homepage
+2023-08-24 17:01:12 - TestLogin - INFO - Test Case Pass
+2023-08-24 17:01:17 - TestLogin - INFO - Name shown in Homepage
+2023-08-24 17:01:17 - TestLogin - INFO - Test Case Pass
+2023-08-24 17:08:20 - TestLogin - INFO - Name shown in Homepage
+2023-08-24 17:08:20 - TestLogin - INFO - Test Case Pass
+2023-08-24 17:08:36 - TestLogin - INFO - Name shown in Homepage2
+2023-08-24 17:08:36 - TestLogin - INFO - Test Case 2 Pass
+2023-08-24 17:51:27 - TestLogin - INFO - Name shown in Homepage
+2023-08-24 17:51:27 - TestLogin - INFO - Test Case Pass
+2023-08-24 17:51:43 - TestLogin - INFO - Name shown in Homepage2
+2023-08-24 17:51:43 - TestLogin - INFO - Test Case 2 Pass
+2023-08-25 11:02:21 - TestLogin - INFO - Name shown in Homepage
+2023-08-25 11:02:21 - TestLogin - INFO - Test Case Pass
+2023-08-25 11:02:26 - TestLogin - INFO - Name shown in Homepage
+2023-08-25 11:02:26 - TestLogin - WARNING - Test Case failed
+2023-08-25 11:02:32 - TestLogin - INFO - Name shown in Homepage
+2023-08-25 11:02:32 - TestLogin - INFO - Test Case Pass
+2023-08-25 11:02:37 - TestLogin - INFO - Name shown in Homepage
+2023-08-25 11:02:37 - TestLogin - INFO - Test Case Pass
+2023-08-25 11:05:02 - TestLogin - INFO - Name shown in Homepage
+2023-08-25 11:05:02 - TestLogin - INFO - Test Case Pass
+2023-08-25 11:05:08 - TestLogin - INFO - Name shown in Homepage
+2023-08-25 11:05:08 - TestLogin - WARNING - Test Case failed
+2023-08-25 11:05:13 - TestLogin - INFO - Name shown in Homepage
+2023-08-25 11:05:13 - TestLogin - INFO - Test Case Pass
+2023-08-25 11:05:18 - TestLogin - INFO - Name shown in Homepage
+2023-08-25 11:05:18 - TestLogin - INFO - Test Case Pass
+2023-08-25 11:05:34 - TestLogin - INFO - Name shown in Homepage2
+2023-08-25 11:05:34 - TestLogin - INFO - Test Case 2 Pass
+2023-08-25 11:08:14 - TestLogin - INFO - Name shown in Homepage
+2023-08-25 11:08:14 - TestLogin - INFO - Test Case Pass
+2023-08-25 11:08:49 - TestLogin - INFO - Name shown in Homepage2
+2023-08-25 11:08:49 - TestLogin - INFO - Test Case 2 Pass
+2023-08-25 15:47:40 - TestEntryForm - INFO - ----------------Test Case test_saveformwithinvoiceNumber Starterd----------------
+2023-08-25 15:47:49 - TestEntryForm - INFO - ----Entered in Form 7501----
+2023-08-25 15:48:04 - TestEntryForm - INFO - Test Case 'save form with invoice Number' Passed
+2023-08-25 15:48:04 - TestEntryForm - INFO - ----------------Test Case test_saveformwithinvoiceNumber End----------------
+2023-08-25 15:48:44 - TestEntryForm - INFO - ----------------Test Case test_saveformwithoutinvoiceNumber Starterd----------------
+2023-08-25 15:48:52 - TestEntryForm - INFO - ----Entered in Form 7501----
+2023-08-25 15:49:02 - TestEntryForm - INFO - Test Case 'save form without invoice Number' Passed
+2023-08-25 15:49:03 - TestEntryForm - INFO - ----------------Test Case test_saveformwithoutinvoiceNumber End----------------
+2023-08-25 16:14:46 - TestLogin - INFO - Name shown in Homepage
+2023-08-25 16:14:46 - TestLogin - INFO - Name shown in Homepage
+2023-08-25 16:14:46 - TestLogin - INFO - Test Case Pass
+2023-08-25 16:14:46 - TestLogin - INFO - Test Case Pass
+2023-08-25 16:15:07 - TestLogin - INFO - Name shown in Homepage2
+2023-08-25 16:15:07 - TestLogin - INFO - Name shown in Homepage2
+2023-08-25 16:15:07 - TestLogin - INFO - Test Case 2 Pass
+2023-08-25 16:15:07 - TestLogin - INFO - Test Case 2 Pass
+2023-08-25 16:15:51 - TestLogin - INFO - Name shown in Homepage
+2023-08-25 16:15:51 - TestLogin - INFO - Name shown in Homepage
+2023-08-25 16:15:51 - TestLogin - INFO - Test Case Pass
+2023-08-25 16:15:51 - TestLogin - INFO - Test Case Pass
+2023-08-25 16:16:13 - TestLogin - INFO - Name shown in Homepage2
+2023-08-25 16:16:13 - TestLogin - INFO - Name shown in Homepage2
+2023-08-25 16:16:13 - TestLogin - INFO - Test Case 2 Pass
+2023-08-25 16:16:13 - TestLogin - INFO - Test Case 2 Pass
+2023-08-25 16:16:28 - TestEntryForm - INFO - ----------------Test Case test_saveformwithinvoiceNumber Starterd----------------
+2023-08-25 16:16:36 - TestEntryForm - INFO - ----Entered in Form 7501----
+2023-08-25 16:16:47 - TestEntryForm - INFO - Test Case 'save form with invoice Number' Passed
+2023-08-25 16:16:48 - TestEntryForm - INFO - ----------------Test Case test_saveformwithinvoiceNumber End----------------
+2023-08-25 16:17:02 - TestEntryForm - INFO - ----------------Test Case test_saveformwithoutinvoiceNumber Starterd----------------
+2023-08-25 16:17:10 - TestEntryForm - INFO - ----Entered in Form 7501----
+2023-08-25 16:17:17 - TestEntryForm - INFO - Test Case 'save form without invoice Number' Passed
+2023-08-25 16:17:17 - TestEntryForm - INFO - ----------------Test Case test_saveformwithoutinvoiceNumber End----------------
+2023-08-25 16:49:06 - TestLogin - INFO - Name shown in Homepage
+2023-08-25 16:49:06 - TestLogin - INFO - Test Case Pass
+2023-08-25 16:51:21 - TestLogin - INFO - Name shown in Homepage2
+2023-08-25 16:51:21 - TestLogin - INFO - Test Case 2 Pass
+2023-08-25 16:57:05 - TestLogin - INFO - Name shown in Homepage
+2023-08-25 16:57:05 - TestLogin - INFO - Test Case Pass
+2023-08-25 17:21:50 - TestLogin - INFO - Name shown in Homepage
+2023-08-25 17:21:51 - TestLogin - INFO - Test Case Pass
+2023-08-25 17:22:37 - TestLogin - INFO - Name shown in Homepage2
+2023-08-25 17:22:37 - TestLogin - INFO - Test Case 2 Pass
+2023-08-25 17:25:51 - TestLogin - INFO - Name shown in Homepage
+2023-08-25 17:25:52 - TestLogin - INFO - Test Case Pass
+2023-08-25 17:26:30 - TestLogin - INFO - Name shown in Homepage2
+2023-08-25 17:26:30 - TestLogin - INFO - Test Case 2 Pass
+2023-08-25 17:42:44 - TestEntryForm - INFO - ----------------Test Case test_saveformwithinvoiceNumber Starterd----------------
+2023-08-25 17:42:53 - TestEntryForm - INFO - ----Entered in Form 7501----
+2023-08-25 17:43:05 - TestEntryForm - INFO - Test Case 'save form with invoice Number' Passed
+2023-08-25 17:43:05 - TestEntryForm - INFO - ----------------Test Case test_saveformwithinvoiceNumber End----------------
+2023-08-25 17:43:32 - TestEntryForm - INFO - ----------------Test Case test_saveformwithoutinvoiceNumber Starterd----------------
+2023-08-25 17:43:40 - TestEntryForm - INFO - ----Entered in Form 7501----
+2023-08-25 17:43:49 - TestEntryForm - INFO - Test Case 'save form without invoice Number' Passed
+2023-08-25 17:43:50 - TestEntryForm - INFO - ----------------Test Case test_saveformwithoutinvoiceNumber End----------------
+2023-08-25 17:44:12 - TestEntryForm - INFO - ----------------Test Case test_saveformwithExistinginvoiceNumber Starterd----------------
+2023-08-25 17:44:21 - TestEntryForm - INFO - ----Entered in Form 7501----
+2023-08-25 17:44:25 - TestEntryForm - INFO - Test Case 'save form with Existing invoice Number' Passed
+2023-08-25 17:48:29 - TestEntryForm - INFO - ----------------Test Case test_saveformwithinvoiceNumber Starterd----------------
+2023-08-25 17:48:38 - TestEntryForm - INFO - ----Entered in Form 7501----
+2023-08-25 17:48:50 - TestEntryForm - INFO - Test Case 'save form with invoice Number' Passed
+2023-08-25 17:48:50 - TestEntryForm - INFO - ----------------Test Case test_saveformwithinvoiceNumber End----------------
+2023-08-25 17:49:38 - TestEntryForm - INFO - ----------------Test Case test_saveformwithoutinvoiceNumber Starterd----------------
+2023-08-25 17:49:47 - TestEntryForm - INFO - ----Entered in Form 7501----
+2023-08-25 17:49:55 - TestEntryForm - INFO - Test Case 'save form without invoice Number' Passed
+2023-08-25 17:49:56 - TestEntryForm - INFO - ----------------Test Case test_saveformwithoutinvoiceNumber End----------------
+2023-08-25 17:50:27 - TestEntryForm - INFO - ----------------Test Case test_saveformwithExistinginvoiceNumber Starterd----------------
+2023-08-25 17:50:36 - TestEntryForm - INFO - ----Entered in Form 7501----
+2023-08-25 17:50:40 - TestEntryForm - INFO - Test Case 'save form with Existing invoice Number' Passed
+2023-08-25 17:50:41 - TestEntryForm - INFO - ----------------Test Case test_saveformwithExistinginvoiceNumber End----------------
+2023-08-25 17:54:05 - TestEntryForm - INFO - ----------------Test Case test_saveformwithinvoiceNumber Starterd----------------
+2023-08-25 17:54:14 - TestEntryForm - INFO - ----Entered in Form 7501----
+2023-08-25 17:54:29 - TestEntryForm - INFO - Test Case 'save form with invoice Number' Passed
+2023-08-25 17:54:30 - TestEntryForm - INFO - ----------------Test Case test_saveformwithinvoiceNumber End----------------
+2023-08-25 17:55:26 - TestEntryForm - INFO - ----------------Test Case test_saveformwithoutinvoiceNumber Starterd----------------
+2023-08-25 17:55:35 - TestEntryForm - INFO - ----Entered in Form 7501----
+2023-08-25 17:55:47 - TestEntryForm - INFO - Test Case 'save form without invoice Number' Passed
+2023-08-25 17:55:47 - TestEntryForm - INFO - ----------------Test Case test_saveformwithoutinvoiceNumber End----------------
+2023-08-25 17:56:31 - TestEntryForm - INFO - ----------------Test Case test_saveformwithExistinginvoiceNumber Starterd----------------
+2023-08-25 17:56:40 - TestEntryForm - INFO - ----Entered in Form 7501----
+2023-08-25 17:56:44 - TestEntryForm - INFO - Test Case 'save form with Existing invoice Number' Passed
+2023-08-25 17:56:44 - TestEntryForm - INFO - ----------------Test Case test_saveformwithExistinginvoiceNumber End----------------
+2023-08-25 18:15:31 - TestEntryForm - INFO - ----------------Test Case test_saveformwithinvoiceNumber Starterd----------------
+2023-08-25 18:15:40 - TestEntryForm - INFO - ----Entered in Form 7501----
+2023-08-25 18:15:55 - TestEntryForm - INFO - Test Case 'save form with invoice Number' Passed
+2023-08-25 18:15:55 - TestEntryForm - INFO - ----------------Test Case test_saveformwithinvoiceNumber End----------------
+2023-08-25 18:17:02 - TestEntryForm - INFO - ----------------Test Case test_saveformwithoutinvoiceNumber Starterd----------------
+2023-08-25 18:17:11 - TestEntryForm - INFO - ----Entered in Form 7501----
+2023-08-25 18:17:22 - TestEntryForm - INFO - Test Case 'save form without invoice Number' Passed
+2023-08-25 18:17:22 - TestEntryForm - INFO - ----------------Test Case test_saveformwithoutinvoiceNumber End----------------
+2023-08-25 18:17:48 - TestEntryForm - INFO - ----------------Test Case test_saveformwithExistinginvoiceNumber Starterd----------------
+2023-08-25 18:17:57 - TestEntryForm - INFO - ----Entered in Form 7501----
+2023-08-25 18:18:01 - TestEntryForm - INFO - Test Case 'save form with Existing invoice Number' Passed
+2023-08-25 18:18:01 - TestEntryForm - INFO - ----------------Test Case test_saveformwithExistinginvoiceNumber End----------------
+2023-08-28 10:12:05 - TestEntryForm - INFO - ----------------Test Case test_saveformwithinvoiceNumber Starterd----------------
+2023-08-28 10:12:13 - TestEntryForm - INFO - ----Entered in Form 7501----
+2023-08-28 10:12:26 - TestEntryForm - INFO - Test Case 'save form with invoice Number' Passed
+2023-08-28 10:12:27 - TestEntryForm - INFO - ----------------Test Case test_saveformwithinvoiceNumber End----------------
+2023-08-28 10:12:37 - TestEntryForm - INFO - ----------------Test Case test_saveformwithoutinvoiceNumber Starterd----------------
+2023-08-28 10:12:45 - TestEntryForm - INFO - ----Entered in Form 7501----
+2023-08-28 10:12:53 - TestEntryForm - INFO - Test Case 'save form without invoice Number' Passed
+2023-08-28 10:12:54 - TestEntryForm - INFO - ----------------Test Case test_saveformwithoutinvoiceNumber End----------------
+2023-08-28 10:13:04 - TestEntryForm - INFO - ----------------Test Case test_saveformwithExistinginvoiceNumber Starterd----------------
+2023-08-28 10:13:12 - TestEntryForm - INFO - ----Entered in Form 7501----
+2023-08-28 10:13:16 - TestEntryForm - INFO - Test Case 'save form with Existing invoice Number' Passed
+2023-08-28 10:13:16 - TestEntryForm - INFO - ----------------Test Case test_saveformwithExistinginvoiceNumber End----------------
+2023-08-28 12:59:58 - TestEntryForm - INFO - ----------------Test Case test_saveformwithinvoiceNumber Starterd----------------
+2023-08-28 13:00:06 - TestEntryForm - INFO - ----Entered in Form 7501----
+2023-08-28 13:00:19 - TestEntryForm - INFO - Test Case 'save form with invoice Number' Passed
+2023-08-28 13:01:02 - TestEntryForm1LineItem - INFO - ----------------Test Case test_saveformwithinvoiceNumber Starterd----------------
+2023-08-28 13:01:10 - TestEntryForm1LineItem - INFO - ----Entered in Form 7501----
+2023-08-28 13:19:42 - TestEntryForm1LineItem - INFO - ----------------Test Case test_saveformwithinvoiceNumber Starterd----------------
+2023-08-28 13:19:50 - TestEntryForm1LineItem - INFO - ----Entered in Form 7501----
+2023-08-28 16:55:51 - TestEntryForm1LineItem - INFO - ----------------Test Case test_saveformwithinvoiceNumber Starterd----------------
+2023-08-28 16:55:52 - TestEntryForm1LineItem - INFO - ----Login Done----
+2023-08-28 16:55:59 - TestEntryForm1LineItem - INFO - ----Form 7501 Opened----
+2023-08-28 16:55:59 - TestEntryForm1LineItem - INFO - ----Upper Part Started----
+2023-08-28 16:56:11 - TestEntryForm1LineItem - INFO - ----Upper Part Done----
+2023-08-28 16:56:11 - TestEntryForm1LineItem - INFO - ----Bill Of Lading Started----
+2023-08-28 17:10:09 - TestEntryForm1LineItem - INFO - ----------------Test Case test_saveformwithinvoiceNumber Starterd----------------
+2023-08-28 17:10:10 - TestEntryForm1LineItem - INFO - ----Login Done----
+2023-08-28 17:10:17 - TestEntryForm1LineItem - INFO - ----Form 7501 Opened----
+2023-08-28 17:10:17 - TestEntryForm1LineItem - INFO - ----Upper Part Started----
+2023-08-28 17:10:29 - TestEntryForm1LineItem - INFO - ----Upper Part Done----
+2023-08-28 17:15:00 - TestEntryForm1LineItem - INFO - ----------------Test Case test_saveformwithinvoiceNumber Starterd----------------
+2023-08-28 17:15:01 - TestEntryForm1LineItem - INFO - ----Login Done----
+2023-08-28 17:15:08 - TestEntryForm1LineItem - INFO - ----Form 7501 Opened----
+2023-08-28 17:16:55 - TestEntryForm1LineItem - INFO - ----------------Test Case test_saveformwithinvoiceNumber Starterd----------------
+2023-08-28 17:16:57 - TestEntryForm1LineItem - INFO - ----Login Done----
+2023-08-28 17:17:03 - TestEntryForm1LineItem - INFO - ----Form 7501 Opened----
+2023-08-28 17:19:13 - TestEntryForm1LineItem - INFO - ----------------Test Case test_saveformwithinvoiceNumber Starterd----------------
+2023-08-28 17:19:14 - TestEntryForm1LineItem - INFO - ----Login Done----
+2023-08-28 17:19:20 - TestEntryForm1LineItem - INFO - ----Form 7501 Opened----
+2023-08-28 17:22:24 - TestEntryForm1LineItem - INFO - ----------------Test Case test_saveformwithinvoiceNumber Starterd----------------
+2023-08-28 17:22:26 - TestEntryForm1LineItem - INFO - ----Login Done----
+2023-08-28 17:22:32 - TestEntryForm1LineItem - INFO - ----Form 7501 Opened----
+2023-08-28 17:24:06 - TestEntryForm1LineItem - INFO - ----------------Test Case test_saveformwithinvoiceNumber Starterd----------------
+2023-08-28 17:24:08 - TestEntryForm1LineItem - INFO - ----Login Done----
+2023-08-28 17:24:15 - TestEntryForm1LineItem - INFO - ----Form 7501 Opened----
+2023-08-28 17:25:32 - TestEntryForm1LineItem - INFO - ----------------Test Case test_saveformwithinvoiceNumber Starterd----------------
+2023-08-28 17:25:34 - TestEntryForm1LineItem - INFO - ----Login Done----
+2023-08-28 17:25:41 - TestEntryForm1LineItem - INFO - ----Form 7501 Opened----
+2023-08-28 17:27:13 - TestEntryForm1LineItem - INFO - ----------------Test Case test_saveformwithinvoiceNumber Starterd----------------
+2023-08-28 17:27:15 - TestEntryForm1LineItem - INFO - ----Login Done----
+2023-08-28 17:27:21 - TestEntryForm1LineItem - INFO - ----Form 7501 Opened----
+2023-08-28 17:30:50 - TestEntryForm1LineItem - INFO - ----------------Test Case test_saveformwithinvoiceNumber Starterd----------------
+2023-08-28 17:30:53 - TestEntryForm1LineItem - INFO - ----Login Done----
+2023-08-28 17:31:00 - TestEntryForm1LineItem - INFO - ----Form 7501 Opened----
+2023-08-28 17:33:43 - TestEntryForm1LineItem - INFO - ----------------Test Case test_saveformwithinvoiceNumber Starterd----------------
+2023-08-28 17:33:44 - TestEntryForm1LineItem - INFO - ----Login Done----
+2023-08-28 17:33:51 - TestEntryForm1LineItem - INFO - ----Form 7501 Opened----
+2023-08-28 17:33:51 - TestEntryForm1LineItem - INFO - ----Bill Of Lading Started----
+2023-08-28 17:35:52 - TestEntryForm1LineItem - INFO - ----------------Test Case test_saveformwithinvoiceNumber Starterd----------------
+2023-08-28 17:35:54 - TestEntryForm1LineItem - INFO - ----Login Done----
+2023-08-28 17:36:00 - TestEntryForm1LineItem - INFO - ----Form 7501 Opened----
+2023-08-28 17:36:00 - TestEntryForm1LineItem - INFO - ----Bill Of Lading Started----
+2023-08-28 17:38:48 - TestEntryForm1LineItem - INFO - ----------------Test Case test_saveformwithinvoiceNumber Starterd----------------
+2023-08-28 17:38:49 - TestEntryForm1LineItem - INFO - ----Login Done----
+2023-08-28 17:38:56 - TestEntryForm1LineItem - INFO - ----Form 7501 Opened----
+2023-08-28 17:38:56 - TestEntryForm1LineItem - INFO - ----Bill Of Lading Started----
+2023-08-28 17:41:04 - TestEntryForm1LineItem - INFO - ----------------Test Case test_saveformwithinvoiceNumber Starterd----------------
+2023-08-28 17:41:06 - TestEntryForm1LineItem - INFO - ----Login Done----
+2023-08-28 17:41:13 - TestEntryForm1LineItem - INFO - ----Form 7501 Opened----
+2023-08-28 17:41:13 - TestEntryForm1LineItem - INFO - ----Bill Of Lading Started----
+2023-08-28 17:42:32 - TestEntryForm1LineItem - INFO - ----------------Test Case test_saveformwithinvoiceNumber Starterd----------------
+2023-08-28 17:42:34 - TestEntryForm1LineItem - INFO - ----Login Done----
+2023-08-28 17:42:40 - TestEntryForm1LineItem - INFO - ----Form 7501 Opened----
+2023-08-28 17:42:40 - TestEntryForm1LineItem - INFO - ----Bill Of Lading Started----
+2023-08-28 17:44:25 - TestEntryForm1LineItem - INFO - ----------------Test Case test_saveformwithinvoiceNumber Starterd----------------
+2023-08-28 17:44:26 - TestEntryForm1LineItem - INFO - ----Login Done----
+2023-08-28 17:44:33 - TestEntryForm1LineItem - INFO - ----Form 7501 Opened----
+2023-08-28 17:44:33 - TestEntryForm1LineItem - INFO - ----Bill Of Lading Started----
+2023-08-28 17:44:35 - TestEntryForm1LineItem - INFO - ----Bill Of Lading Done----
+2023-08-28 17:46:59 - TestEntryForm1LineItem - INFO - ----------------Test Case test_saveformwithinvoiceNumber Starterd----------------
+2023-08-28 17:47:01 - TestEntryForm1LineItem - INFO - ----Login Done----
+2023-08-28 17:47:07 - TestEntryForm1LineItem - INFO - ----Form 7501 Opened----
+2023-08-28 17:48:33 - TestEntryForm1LineItem - INFO - ----------------Test Case test_saveformwithinvoiceNumber Starterd----------------
+2023-08-28 17:48:35 - TestEntryForm1LineItem - INFO - ----Login Done----
+2023-08-28 17:48:42 - TestEntryForm1LineItem - INFO - ----Form 7501 Opened----
+2023-08-28 17:48:42 - TestEntryForm1LineItem - INFO - ----Bill Of Lading Started----
+2023-08-28 17:51:59 - TestEntryForm1LineItem - INFO - ----------------Test Case test_saveformwithinvoiceNumber Starterd----------------
+2023-08-28 17:52:00 - TestEntryForm1LineItem - INFO - ----Login Done----
+2023-08-28 18:01:33 - TestEntryForm1LineItem - INFO - ----------------Test Case test_saveformwithinvoiceNumber Starterd----------------
+2023-08-28 18:01:34 - TestEntryForm1LineItem - INFO - ----Login Done----
+2023-08-28 18:01:40 - TestEntryForm1LineItem - INFO - ----Form 7501 Opened----
+2023-08-28 18:01:40 - TestEntryForm1LineItem - INFO - ----Bill Of Lading Started----
+2023-08-28 18:10:54 - TestEntryForm1LineItem - INFO - ----------------Test Case test_saveformwithinvoiceNumber Starterd----------------
+2023-08-28 18:10:55 - TestEntryForm1LineItem - INFO - ----Login Done----
+2023-08-28 18:11:02 - TestEntryForm1LineItem - INFO - ----Form 7501 Opened----
+2023-08-28 18:11:28 - TestEntryForm1LineItem - INFO - ----Bill Of Lading Started----
+2023-08-28 18:15:06 - TestEntryForm1LineItem - INFO - ----------------Test Case test_saveformwithinvoiceNumber Starterd----------------
+2023-08-28 18:15:08 - TestEntryForm1LineItem - INFO - ----Login Done----
+2023-08-28 18:15:15 - TestEntryForm1LineItem - INFO - ----Form 7501 Opened----
+2023-08-28 18:15:21 - TestEntryForm1LineItem - INFO - ----Bill Of Lading Started----
+2023-08-28 18:18:07 - TestEntryForm1LineItem - INFO - ----------------Test Case test_saveformwithinvoiceNumber Starterd----------------
+2023-08-28 18:18:09 - TestEntryForm1LineItem - INFO - ----Login Done----
+2023-08-28 18:18:16 - TestEntryForm1LineItem - INFO - ----Form 7501 Opened----
+2023-08-28 18:20:22 - TestEntryForm1LineItem - INFO - ----------------Test Case test_saveformwithinvoiceNumber Starterd----------------
+2023-08-28 18:20:24 - TestEntryForm1LineItem - INFO - ----Login Done----
+2023-08-28 18:20:32 - TestEntryForm1LineItem - INFO - ----Form 7501 Opened----
+2023-08-28 18:20:34 - TestEntryForm1LineItem - INFO - ----clicked scac----
+2023-08-28 18:20:38 - TestEntryForm1LineItem - INFO - ----clicked uom----
+2023-08-28 18:21:54 - TestEntryForm1LineItem - INFO - ----------------Test Case test_saveformwithinvoiceNumber Starterd----------------
+2023-08-28 18:21:56 - TestEntryForm1LineItem - INFO - ----Login Done----
+2023-08-28 18:22:03 - TestEntryForm1LineItem - INFO - ----Form 7501 Opened----
+2023-08-28 18:22:04 - TestEntryForm1LineItem - INFO - ----clicked scac----
+2023-08-28 18:22:07 - TestEntryForm1LineItem - INFO - ----clicked uom----
+2023-08-28 18:23:22 - TestEntryForm1LineItem - INFO - ----------------Test Case test_saveformwithinvoiceNumber Starterd----------------
+2023-08-28 18:23:23 - TestEntryForm1LineItem - INFO - ----Login Done----
+2023-08-28 18:23:30 - TestEntryForm1LineItem - INFO - ----Form 7501 Opened----
+2023-08-28 18:23:31 - TestEntryForm1LineItem - INFO - ----clicked scac----
+2023-08-28 18:23:35 - TestEntryForm1LineItem - INFO - ----clicked uom----
+2023-08-28 18:25:48 - TestEntryForm1LineItem - INFO - ----------------Test Case test_saveformwithinvoiceNumber Starterd----------------
+2023-08-28 18:25:50 - TestEntryForm1LineItem - INFO - ----Login Done----
+2023-08-28 18:25:57 - TestEntryForm1LineItem - INFO - ----Form 7501 Opened----
+2023-08-28 18:26:03 - TestEntryForm1LineItem - INFO - ----clicked scac----
+2023-08-28 18:36:44 - TestEntryForm1LineItem - INFO - ----------------Test Case test_saveformwithinvoiceNumber Starterd----------------
+2023-08-28 18:36:46 - TestEntryForm1LineItem - INFO - ----Login Done----
+2023-08-28 18:36:53 - TestEntryForm1LineItem - INFO - ----Form 7501 Opened----
+2023-08-28 18:43:45 - TestEntryForm1LineItem - INFO - ----------------Test Case test_saveformwithinvoiceNumber Starterd----------------
+2023-08-28 18:43:47 - TestEntryForm1LineItem - INFO - ----Login Done----
+2023-08-28 18:43:54 - TestEntryForm1LineItem - INFO - ----Form 7501 Opened----
+2023-08-28 19:00:35 - TestEntryForm1LineItem - INFO - ----------------Test Case test_saveformwithinvoiceNumber Starterd----------------
+2023-08-28 19:00:39 - TestEntryForm1LineItem - INFO - ----Login Done----
+2023-08-28 19:00:46 - TestEntryForm1LineItem - INFO - ----Form 7501 Opened----
+2023-08-28 19:00:46 - TestEntryForm1LineItem - INFO - ----Upper Part Started----
+2023-08-28 19:00:58 - TestEntryForm1LineItem - INFO - ----Upper Part Done----
+2023-08-28 19:00:58 - TestEntryForm1LineItem - INFO - ----Trading Partners 1 Started----
+2023-08-28 19:01:19 - TestEntryForm1LineItem - INFO - ----Trading Partners 1 Done----
+2023-08-28 19:01:19 - TestEntryForm1LineItem - INFO - ----Trading Partners 2 Started----
+2023-08-28 19:01:41 - TestEntryForm1LineItem - INFO - ----Trading Partners 2 Done----
+2023-08-28 19:01:41 - TestEntryForm1LineItem - INFO - ----Line Items Started----
+2023-08-28 19:02:00 - TestEntryForm1LineItem - INFO - ----Line Items Done----
+2023-08-29 10:25:50 - TestEntryForm1LineItem - INFO - ----------------Test Case test_saveformwithinvoiceNumber Starterd----------------
+2023-08-29 10:25:52 - TestEntryForm1LineItem - INFO - ----Login Done----
+2023-08-29 10:27:49 - TestEntryForm - INFO - ----------------Test Case test_saveformwithinvoiceNumber Starterd----------------
+2023-08-29 10:28:13 - TestEntryForm - INFO - ----------------Test Case test_saveformwithoutinvoiceNumber Starterd----------------
+2023-08-29 10:28:38 - TestEntryForm - INFO - ----------------Test Case test_saveformwithExistinginvoiceNumber Starterd----------------
+2023-08-29 10:28:47 - TestEntryForm - INFO - ----Entered in Form 7501----
+2023-08-29 10:28:51 - TestEntryForm - INFO - Test Case 'save form with Existing invoice Number' Passed
+2023-08-29 10:28:52 - TestEntryForm - INFO - ----------------Test Case test_saveformwithExistinginvoiceNumber End----------------
+2023-08-29 10:53:39 - TestTradingPartners - INFO - ----Login Done----
+2023-08-29 10:53:47 - TestTradingPartners - INFO - ----7501 Form Opened----
+2023-08-29 10:53:47 - TestTradingPartners - INFO - ----Trading Partners 1 Started----
+2023-08-29 10:54:10 - TestTradingPartners - INFO - ----Trading Partners 1 Done----
+2023-08-29 10:54:22 - TestTradingPartners - INFO - ----Login Done----
+2023-08-29 10:54:29 - TestTradingPartners - INFO - ----7501 Form Opened----
+2023-08-29 10:54:29 - TestTradingPartners - INFO - ----Trading Partners 2 Started----
+2023-08-29 10:54:56 - TestTradingPartners - INFO - ----Trading Partners 2 Done----
+2023-08-29 10:55:55 - TestTradingPartners - INFO - ----Login Done----
+2023-08-29 10:56:02 - TestTradingPartners - INFO - ----7501 Form Opened----
+2023-08-29 10:56:02 - TestTradingPartners - INFO - ----Trading Partners 1 Started----
+2023-08-29 10:56:23 - TestTradingPartners - INFO - ----Trading Partners 1 Done----
+2023-08-29 11:12:58 - TestTradingPartners - INFO - ----Login Done----
+2023-08-29 11:13:05 - TestTradingPartners - INFO - ----7501 Form Opened----
+2023-08-29 11:13:05 - TestTradingPartners - INFO - ----Trading Partners 1 Started----
+2023-08-29 11:13:11 - TestTradingPartners - INFO - ----Trading Partners 1 Done----
+2023-08-29 11:13:11 - TestTradingPartners - INFO - ----Text verification done----
+2023-08-29 11:13:46 - TestTradingPartners - INFO - ----Login Done----
+2023-08-29 11:13:54 - TestTradingPartners - INFO - ----7501 Form Opened----
+2023-08-29 11:13:54 - TestTradingPartners - INFO - ----Trading Partners 1 Started----
+2023-08-29 11:14:00 - TestTradingPartners - INFO - ----Trading Partners 1 Done----
+2023-08-29 12:22:29 - TestTradingPartners - INFO - ----Test Case test_tradingPartners1 Started----
+2023-08-29 12:22:30 - TestTradingPartners - INFO - ----Login Done----
+2023-08-29 12:22:37 - TestTradingPartners - INFO - ----7501 Form Opened----
+2023-08-29 12:22:37 - TestTradingPartners - INFO - ----Trading Partners 1 Started----
+2023-08-29 12:22:58 - TestTradingPartners - INFO - ----Text verification done----
+2023-08-29 12:22:59 - TestTradingPartners - INFO - ----Test Case test_tradingPartners1 End----
+2023-08-29 12:23:22 - TestTradingPartners - INFO - ----Test Case test_tradingPartners2 Started----
+2023-08-29 12:23:23 - TestTradingPartners - INFO - ----Login Done----
+2023-08-29 12:23:30 - TestTradingPartners - INFO - ----7501 Form Opened----
+2023-08-29 12:23:30 - TestTradingPartners - INFO - ----Trading Partners 2 Started----
+2023-08-29 12:23:57 - TestTradingPartners - ERROR - ----Text verification failed----
+2023-08-29 13:05:47 - TestTradingPartners - INFO - ----Test Case test_tradingPartners1 Started----
+2023-08-29 13:05:48 - TestTradingPartners - INFO - ----Login Done----
+2023-08-29 13:05:56 - TestTradingPartners - INFO - ----7501 Form Opened----
+2023-08-29 13:05:56 - TestTradingPartners - INFO - ----Trading Partners 1 Started----
+2023-08-29 13:06:17 - TestTradingPartners - INFO - ----Text verification done----
+2023-08-29 13:06:18 - TestTradingPartners - INFO - ----Test Case test_tradingPartners1 End----
+2023-08-29 13:06:50 - TestTradingPartners - INFO - ----Test Case test_tradingPartners2 Started----
+2023-08-29 13:06:50 - TestTradingPartners - INFO - ----Login Done----
+2023-08-29 13:06:58 - TestTradingPartners - INFO - ----7501 Form Opened----
+2023-08-29 13:06:58 - TestTradingPartners - INFO - ----Trading Partners 2 Started----
+2023-08-29 13:09:19 - TestTradingPartners - INFO - ----Test Case test_tradingPartners1 Started----
+2023-08-29 13:09:19 - TestTradingPartners - INFO - ----Login Done----
+2023-08-29 13:09:27 - TestTradingPartners - INFO - ----7501 Form Opened----
+2023-08-29 13:09:27 - TestTradingPartners - INFO - ----Trading Partners 1 Started----
+2023-08-29 13:09:48 - TestTradingPartners - INFO - ----Text verification done----
+2023-08-29 13:09:49 - TestTradingPartners - INFO - ----Test Case test_tradingPartners1 End----
+2023-08-29 13:10:24 - TestTradingPartners - INFO - ----Test Case test_tradingPartners2 Started----
+2023-08-29 13:10:24 - TestTradingPartners - INFO - ----Login Done----
+2023-08-29 13:10:32 - TestTradingPartners - INFO - ----7501 Form Opened----
+2023-08-29 13:10:32 - TestTradingPartners - INFO - ----Trading Partners 2 Started----
+2023-08-29 13:10:59 - TestTradingPartners - ERROR - ----Text verification failed----
+2023-08-29 14:36:41 - TestTradingPartners - INFO - ----Test Case test_tradingPartners2 Started----
+2023-08-29 14:36:41 - TestTradingPartners - INFO - ----Login Done----
+2023-08-29 14:36:49 - TestTradingPartners - INFO - ----7501 Form Opened----
+2023-08-29 14:36:49 - TestTradingPartners - INFO - ----Trading Partners 2 Started----
+2023-08-29 14:42:18 - TestTradingPartners - INFO - ----Test Case test_tradingPartners2 Started----
+2023-08-29 14:42:19 - TestTradingPartners - INFO - ----Login Done----
+2023-08-29 14:42:26 - TestTradingPartners - INFO - ----7501 Form Opened----
+2023-08-29 14:42:26 - TestTradingPartners - INFO - ----Trading Partners 2 Started----
+2023-08-29 14:47:01 - TestTradingPartners - INFO - ----Test Case test_tradingPartners1 Started----
+2023-08-29 14:47:02 - TestTradingPartners - INFO - ----Login Done----
+2023-08-29 14:47:09 - TestTradingPartners - INFO - ----7501 Form Opened----
+2023-08-29 14:47:09 - TestTradingPartners - INFO - ----Trading Partners 1 Started----
+2023-08-29 14:47:33 - TestTradingPartners - INFO - ----Text verification done----
+2023-08-29 14:47:33 - TestTradingPartners - INFO - ----Test Case test_tradingPartners1 End----
+2023-08-29 14:49:46 - TestTradingPartners - INFO - ----Test Case test_tradingPartners2 Started----
+2023-08-29 14:49:46 - TestTradingPartners - INFO - ----Login Done----
+2023-08-29 14:49:54 - TestTradingPartners - INFO - ----7501 Form Opened----
+2023-08-29 14:49:54 - TestTradingPartners - INFO - ----Trading Partners 2 Started----
+2023-08-29 14:50:23 - TestTradingPartners - INFO - ----Text verification done----
+2023-08-29 14:50:24 - TestTradingPartners - INFO - ----Test Case test_tradingPartners2 End----
+2023-08-29 16:53:37 - TestBillOfLading - INFO - ----Test Case test_BillOfLading Started----
+2023-08-29 16:53:38 - TestBillOfLading - INFO - ----Login Done----
+2023-08-29 16:53:46 - TestBillOfLading - INFO - ----7501 Form Opened----
+2023-08-29 16:53:46 - TestBillOfLading - INFO - ----Bill Of lading Started----
+2023-08-29 16:56:40 - TestBillOfLading - INFO - ----Test Case test_BillOfLading Started----
+2023-08-29 16:56:41 - TestBillOfLading - INFO - ----Login Done----
+2023-08-29 16:56:48 - TestBillOfLading - INFO - ----7501 Form Opened----
+2023-08-29 16:56:48 - TestBillOfLading - INFO - ----Bill Of lading Started----
+2023-08-29 17:01:47 - TestBillOfLading - INFO - ----Test Case test_BillOfLading Started----
+2023-08-29 17:01:47 - TestBillOfLading - INFO - ----Login Done----
+2023-08-29 17:01:55 - TestBillOfLading - INFO - ----7501 Form Opened----
+2023-08-29 17:01:55 - TestBillOfLading - INFO - ----Bill Of lading Started----
+2023-08-29 17:11:02 - TestBillOfLading - INFO - ----Test Case test_BillOfLading Started----
+2023-08-29 17:11:02 - TestBillOfLading - INFO - ----Login Done----
+2023-08-29 17:11:10 - TestBillOfLading - INFO - ----7501 Form Opened----
+2023-08-29 17:11:10 - TestBillOfLading - INFO - ----Bill Of lading Started----
+2023-08-29 17:11:30 - TestBillOfLading - INFO - ----Text verification done----
+2023-08-29 17:11:30 - TestBillOfLading - INFO - ----Test Case test_BillOfLading End----
+2023-08-29 17:13:34 - TestBillOfLading - INFO - ----Test Case test_BillOfLading Started----
+2023-08-29 17:13:35 - TestBillOfLading - INFO - ----Login Done----
+2023-08-29 17:13:42 - TestBillOfLading - INFO - ----7501 Form Opened----
+2023-08-29 17:13:42 - TestBillOfLading - INFO - ----Bill Of lading Started----
+2023-08-29 17:13:59 - TestBillOfLading - INFO - ----Text verification done----
+2023-08-29 17:13:59 - TestBillOfLading - INFO - ----Test Case test_BillOfLading End----
+2023-08-29 17:15:16 - TestBillOfLading - INFO - ----Test Case test_BillOfLading Started----
+2023-08-29 17:15:17 - TestBillOfLading - INFO - ----Login Done----
+2023-08-29 17:15:24 - TestBillOfLading - INFO - ----7501 Form Opened----
+2023-08-29 17:15:24 - TestBillOfLading - INFO - ----Bill Of lading Started----
+2023-08-29 17:15:41 - TestBillOfLading - ERROR - ----Text verification failed----
+2023-08-29 17:20:27 - TestBillOfLading - INFO - ----Test Case test_BillOfLading Started----
+2023-08-29 17:20:27 - TestBillOfLading - INFO - ----Login Done----
+2023-08-29 17:20:35 - TestBillOfLading - INFO - ----7501 Form Opened----
+2023-08-29 17:20:35 - TestBillOfLading - INFO - ----Bill Of lading Started----
+2023-08-29 17:20:55 - TestBillOfLading - ERROR - ----Text verification failed----
+2023-08-29 17:29:08 - TestEntryForm1LineItem - INFO - ----------------Test Case test_HTC1 Starterd----------------
+2023-08-29 17:29:10 - TestEntryForm1LineItem - INFO - ----Login Done----
+2023-08-29 17:29:17 - TestEntryForm1LineItem - INFO - ----Form 7501 Opened----
+2023-08-29 17:29:17 - TestEntryForm1LineItem - INFO - ----Upper Part Started----
+2023-08-29 17:29:28 - TestEntryForm1LineItem - INFO - ----Upper Part Done----
+2023-08-29 17:29:28 - TestEntryForm1LineItem - INFO - ----Bill Of Lading Started----
+2023-08-29 17:29:43 - TestEntryForm1LineItem - INFO - ----Bill Of Lading Done----
+2023-08-29 17:29:43 - TestEntryForm1LineItem - INFO - ----Trading Partners 1 Started----
+2023-08-29 17:30:01 - TestEntryForm1LineItem - INFO - ----Trading Partners 1 Done----
+2023-08-29 17:30:01 - TestEntryForm1LineItem - INFO - ----Trading Partners 2 Started----
+2023-08-29 17:30:19 - TestEntryForm1LineItem - INFO - ----Trading Partners 2 Done----
+2023-08-29 17:30:19 - TestEntryForm1LineItem - INFO - ----Line Items Started----
+2023-08-29 17:30:30 - TestEntryForm1LineItem - INFO - ----Line Items Done----
+2023-08-29 17:50:04 - TestEntryForm1LineItem - INFO - ----------------Test Case test_HTC1 Starterd----------------
+2023-08-29 17:50:06 - TestEntryForm1LineItem - INFO - ----Login Done----
+2023-08-29 17:50:13 - TestEntryForm1LineItem - INFO - ----Form 7501 Opened----
+2023-08-29 17:50:13 - TestEntryForm1LineItem - INFO - ----Upper Part Started----
+2023-08-29 17:50:24 - TestEntryForm1LineItem - INFO - ----Upper Part Done----
+2023-08-29 17:50:24 - TestEntryForm1LineItem - INFO - ----Bill Of Lading Started----
+2023-08-29 17:50:39 - TestEntryForm1LineItem - INFO - ----Bill Of Lading Done----
+2023-08-29 17:50:39 - TestEntryForm1LineItem - INFO - ----Trading Partners 1 Started----
+2023-08-29 17:50:57 - TestEntryForm1LineItem - INFO - ----Trading Partners 1 Done----
+2023-08-29 17:50:57 - TestEntryForm1LineItem - INFO - ----Trading Partners 2 Started----
+2023-08-29 17:51:15 - TestEntryForm1LineItem - INFO - ----Trading Partners 2 Done----
+2023-08-29 17:51:15 - TestEntryForm1LineItem - INFO - ----Line Items Started----
+2023-08-29 17:51:26 - TestEntryForm1LineItem - INFO - ----Line Items Done----
+2023-08-29 17:51:34 - TestEntryForm1LineItem - INFO - ----Form Saved Successfully----
+2023-08-29 17:51:34 - TestEntryForm1LineItem - INFO - ----------------Test Case test_HTC1 End----------------
+2023-08-31 10:13:57 - TestEntryForm - INFO - ----------------Test Case test_saveformwithinvoiceNumber Starterd----------------
+2023-08-31 10:14:05 - TestEntryForm - INFO - ----Entered in Form 7501----
+2023-08-31 10:14:20 - TestEntryForm - INFO - Test Case 'save form with invoice Number' Passed
+2023-08-31 10:14:21 - TestEntryForm - INFO - ----------------Test Case test_saveformwithinvoiceNumber End----------------
+2023-08-31 10:14:32 - TestEntryForm - INFO - ----------------Test Case test_saveformwithoutinvoiceNumber Starterd----------------
+2023-08-31 10:14:40 - TestEntryForm - INFO - ----Entered in Form 7501----
+2023-08-31 10:14:50 - TestEntryForm - INFO - Test Case 'save form without invoice Number' Passed
+2023-08-31 10:14:51 - TestEntryForm - INFO - ----------------Test Case test_saveformwithoutinvoiceNumber End----------------
+2023-08-31 10:15:01 - TestEntryForm - INFO - ----------------Test Case test_saveformwithExistinginvoiceNumber Starterd----------------
+2023-08-31 10:15:09 - TestEntryForm - INFO - ----Entered in Form 7501----
+2023-08-31 10:15:14 - TestEntryForm - INFO - Test Case 'save form with Existing invoice Number' Passed
+2023-08-31 10:15:15 - TestEntryForm - INFO - ----------------Test Case test_saveformwithExistinginvoiceNumber End----------------
+2023-08-31 16:24:52 - TestEntryForm - INFO - ----------------Test Case test_saveformwithinvoiceNumber Starterd----------------
+2023-08-31 16:25:00 - TestEntryForm - INFO - ----Entered in Form 7501----
+2023-08-31 16:25:14 - TestEntryForm - INFO - Test Case 'save form with invoice Number' Passed
+2023-08-31 16:25:14 - TestEntryForm - INFO - ----------------Test Case test_saveformwithinvoiceNumber End----------------
+2023-08-31 16:26:24 - TestEntryForm - INFO - ----------------Test Case test_saveformwithoutinvoiceNumber Starterd----------------
+2023-08-31 16:26:32 - TestEntryForm - INFO - ----Entered in Form 7501----
+2023-08-31 16:26:39 - TestEntryForm - INFO - Test Case 'save form without invoice Number' Passed
+2023-08-31 16:26:39 - TestEntryForm - INFO - ----------------Test Case test_saveformwithoutinvoiceNumber End----------------
+2023-08-31 16:27:54 - TestEntryForm - INFO - ----------------Test Case test_saveformwithExistinginvoiceNumber Starterd----------------
+2023-08-31 16:28:02 - TestEntryForm - INFO - ----Entered in Form 7501----
+2023-08-31 16:28:06 - TestEntryForm - INFO - Test Case 'save form with Existing invoice Number' Passed
+2023-08-31 16:28:06 - TestEntryForm - INFO - ----------------Test Case test_saveformwithExistinginvoiceNumber End----------------
+2023-08-31 17:34:53 - TestEntryForm1LineItem - INFO - ----------------Test Case test_HTC1 Starterd----------------
+2023-08-31 17:34:55 - TestEntryForm1LineItem - INFO - ----Login Done----
+2023-08-31 17:35:01 - TestEntryForm1LineItem - INFO - ----Form 7501 Opened----
+2023-08-31 17:35:01 - TestEntryForm1LineItem - INFO - ----Upper Part Started----
+2023-08-31 17:35:09 - TestEntryForm1LineItem - INFO - ----Upper Part Done----
+2023-08-31 17:35:09 - TestEntryForm1LineItem - INFO - ----Bill Of Lading Started----
+2023-08-31 17:35:22 - TestEntryForm1LineItem - INFO - ----Bill Of Lading Done----
+2023-08-31 17:35:22 - TestEntryForm1LineItem - INFO - ----Trading Partners 1 Started----
+2023-08-31 17:35:40 - TestEntryForm1LineItem - INFO - ----Trading Partners 1 Done----
+2023-08-31 17:35:40 - TestEntryForm1LineItem - INFO - ----Trading Partners 2 Started----
+2023-08-31 17:35:59 - TestEntryForm1LineItem - INFO - ----Trading Partners 2 Done----
+2023-08-31 17:35:59 - TestEntryForm1LineItem - INFO - ----Line Items Started----
+2023-08-31 17:36:10 - TestEntryForm1LineItem - INFO - ----Line Items Done----
+2023-08-31 17:36:17 - TestEntryForm1LineItem - INFO - ----Form Saved Successfully----
+2023-08-31 17:36:17 - TestEntryForm1LineItem - INFO - ----------------Test Case test_HTC1 End----------------
+2023-09-01 11:30:55 - TestBillOfLading - INFO - ----Test Case test_BillOfLading Started----
+2023-09-01 11:30:55 - TestBillOfLading - INFO - ----Login Done----
+2023-09-01 11:31:03 - TestBillOfLading - INFO - ----7501 Form Opened----
+2023-09-01 11:31:03 - TestBillOfLading - INFO - ----Bill Of lading Started----
+2023-09-01 11:31:21 - TestBillOfLading - ERROR - ----Text verification failed----
+2023-09-01 11:33:32 - TestTradingPartners - INFO - ----Test Case test_tradingPartners1 Started----
+2023-09-01 11:33:33 - TestTradingPartners - INFO - ----Login Done----
+2023-09-01 11:33:41 - TestTradingPartners - INFO - ----7501 Form Opened----
+2023-09-01 11:33:41 - TestTradingPartners - INFO - ----Trading Partners 1 Started----
+2023-09-01 11:34:12 - TestTradingPartners - INFO - ----Text verification done----
+2023-09-01 11:34:13 - TestTradingPartners - INFO - ----Test Case test_tradingPartners1 End----
+2023-09-01 11:34:27 - TestTradingPartners - INFO - ----Test Case test_tradingPartners2 Started----
+2023-09-01 11:34:27 - TestTradingPartners - INFO - ----Login Done----
+2023-09-01 11:34:35 - TestTradingPartners - INFO - ----7501 Form Opened----
+2023-09-01 11:34:35 - TestTradingPartners - INFO - ----Trading Partners 2 Started----
+2023-09-01 11:37:22 - TestBillOfLading - INFO - ----Test Case test_BillOfLading Started----
+2023-09-01 11:37:22 - TestBillOfLading - INFO - ----Login Done----
+2023-09-01 11:37:30 - TestBillOfLading - INFO - ----7501 Form Opened----
+2023-09-01 11:37:30 - TestBillOfLading - INFO - ----Bill Of lading Started----
+2023-09-01 11:37:49 - TestBillOfLading - ERROR - ----Text verification failed----
+2023-09-01 12:11:24 - TestBillOfLading - INFO - ----Test Case test_BillOfLading Started----
+2023-09-01 12:11:24 - TestBillOfLading - INFO - ----Login Done----
+2023-09-01 12:11:32 - TestBillOfLading - INFO - ----7501 Form Opened----
+2023-09-01 12:11:32 - TestBillOfLading - INFO - ----Bill Of lading Started----
+2023-09-01 12:11:49 - TestBillOfLading - ERROR - ----Text verification failed----
+2023-09-01 12:22:56 - TestBillOfLading - INFO - ----Test Case test_BillOfLading Started----
+2023-09-01 12:22:56 - TestBillOfLading - INFO - ----Login Done----
+2023-09-01 12:23:04 - TestBillOfLading - INFO - ----7501 Form Opened----
+2023-09-01 12:23:04 - TestBillOfLading - INFO - ----Bill Of lading Started----
+2023-09-01 12:23:20 - TestBillOfLading - ERROR - ----Text verification failed----
+2023-09-01 13:16:19 - TestBillOfLading - INFO - ----Test Case test_BillOfLading Started----
+2023-09-01 13:16:19 - TestBillOfLading - INFO - ----Login Done----
+2023-09-01 13:16:27 - TestBillOfLading - INFO - ----7501 Form Opened----
+2023-09-01 13:16:27 - TestBillOfLading - INFO - ----Bill Of lading Started----
+2023-09-01 13:16:45 - TestBillOfLading - ERROR - ----Text verification failed----
+2023-09-04 10:08:34 - TestBillOfLading - INFO - ----Test Case test_BillOfLading Started----
+2023-09-04 10:08:35 - TestBillOfLading - INFO - ----Login Done----
+2023-09-04 10:08:42 - TestBillOfLading - INFO - ----7501 Form Opened----
+2023-09-04 10:08:42 - TestBillOfLading - INFO - ----Bill Of lading Started----
+2023-09-04 10:09:07 - TestBillOfLading - ERROR - ----Text verification failed----
+2023-09-04 10:21:37 - TestBillOfLading - INFO - ----Test Case test_BillOfLading Started----
+2023-09-04 10:21:38 - TestBillOfLading - INFO - ----Login Done----
+2023-09-04 10:21:46 - TestBillOfLading - INFO - ----7501 Form Opened----
+2023-09-04 10:21:46 - TestBillOfLading - INFO - ----Bill Of lading Started----
+2023-09-04 10:22:03 - TestBillOfLading - INFO - ----Text verification done----
+2023-09-04 10:22:03 - TestBillOfLading - INFO - ----Test Case test_BillOfLading End----
+2023-09-04 10:51:21 - TestQuery - INFO - ----Test Case test_Query Started----
+2023-09-04 10:51:22 - TestQuery - INFO - ----Login Done----
+2023-09-04 10:53:54 - TestQuery - INFO - ----Test Case test_Query Started----
+2023-09-04 10:53:55 - TestQuery - INFO - ----Login Done----
+2023-09-04 10:54:01 - TestQuery - INFO - ----tariffquery Form Opened----
+2023-09-04 11:12:21 - TestQuery - INFO - ----Test Case test_Query Started----
+2023-09-04 11:12:22 - TestQuery - INFO - ----Login Done----
+2023-09-04 11:12:28 - TestQuery - INFO - ----tariffquery Form Opened----
+2023-09-06 11:00:37 - TestEntryForm1LineItem - INFO - ----------------Test Case test_HTC1 Starterd----------------
+2023-09-06 11:00:39 - TestEntryForm1LineItem - INFO - ----Login Done----
+2023-09-06 11:00:46 - TestEntryForm1LineItem - INFO - ----Form 7501 Opened----
+2023-09-06 11:00:46 - TestEntryForm1LineItem - INFO - ----Upper Part Started----
+2023-09-06 11:00:54 - TestEntryForm1LineItem - INFO - ----Upper Part Done----
+2023-09-06 11:00:54 - TestEntryForm1LineItem - INFO - ----Bill Of Lading Started----
+2023-09-06 11:01:40 - TestEntryForm - INFO - ----------------Test Case test_saveformwithoutinvoiceNumber Starterd----------------
+2023-09-06 11:03:57 - TestEntryForm1LineItem - INFO - ----------------Test Case test_HTC1 Starterd----------------
+2023-09-06 11:03:59 - TestEntryForm1LineItem - INFO - ----Login Done----
+2023-09-06 11:04:06 - TestEntryForm1LineItem - INFO - ----Form 7501 Opened----
+2023-09-06 11:04:06 - TestEntryForm1LineItem - INFO - ----Upper Part Started----
+2023-09-06 11:04:18 - TestEntryForm1LineItem - INFO - ----Upper Part Done----
+2023-09-06 11:04:18 - TestEntryForm1LineItem - INFO - ----Bill Of Lading Started----
+2023-09-06 11:04:35 - TestEntryForm1LineItem - INFO - ----Bill Of Lading Done----
+2023-09-06 11:04:35 - TestEntryForm1LineItem - INFO - ----Trading Partners 1 Started----
+2023-09-06 11:04:54 - TestEntryForm1LineItem - INFO - ----Trading Partners 1 Done----
+2023-09-06 11:04:54 - TestEntryForm1LineItem - INFO - ----Trading Partners 2 Started----
+2023-09-06 11:05:13 - TestEntryForm1LineItem - INFO - ----Trading Partners 2 Done----
+2023-09-06 11:05:13 - TestEntryForm1LineItem - INFO - ----Line Items Started----
+2023-09-06 11:05:25 - TestEntryForm1LineItem - INFO - ----Line Items Done----
+2023-09-06 11:05:34 - TestEntryForm1LineItem - INFO - ----Form Saved Successfully----
+2023-09-06 11:05:34 - TestEntryForm1LineItem - INFO - ----------------Test Case test_HTC1 End----------------
+2023-09-06 11:06:22 - TestBillOfLading - INFO - ----Test Case test_BillOfLading Started----
+2023-09-06 11:06:23 - TestBillOfLading - INFO - ----Login Done----
+2023-09-06 11:06:30 - TestBillOfLading - INFO - ----7501 Form Opened----
+2023-09-06 11:06:30 - TestBillOfLading - INFO - ----Bill Of lading Started----
+2023-09-06 11:06:48 - TestBillOfLading - INFO - ----Text verification done----
+2023-09-06 11:06:49 - TestBillOfLading - INFO - ----Test Case test_BillOfLading End----
+2023-09-06 11:07:11 - TestLogin - INFO - Name shown in Homepage
+2023-09-06 11:07:11 - TestLogin - INFO - Name shown in Homepage
+2023-09-06 11:07:11 - TestLogin - INFO - Test Case Pass
+2023-09-06 11:07:11 - TestLogin - INFO - Test Case Pass
+2023-09-06 11:08:10 - TestLogin - INFO - Name shown in Homepage2
+2023-09-06 11:08:10 - TestLogin - INFO - Name shown in Homepage2
+2023-09-06 11:08:10 - TestLogin - INFO - Test Case 2 Pass
+2023-09-06 11:08:10 - TestLogin - INFO - Test Case 2 Pass
+2023-09-06 11:08:46 - TestLogin - INFO - Name shown in Homepage
+2023-09-06 11:08:46 - TestLogin - INFO - Name shown in Homepage
+2023-09-06 11:08:46 - TestLogin - INFO - Test Case Pass
+2023-09-06 11:08:46 - TestLogin - INFO - Test Case Pass
+2023-09-06 11:09:02 - TestLogin - INFO - Name shown in Homepage2
+2023-09-06 11:09:02 - TestLogin - INFO - Name shown in Homepage2
+2023-09-06 11:09:02 - TestLogin - INFO - Test Case 2 Pass
+2023-09-06 11:09:02 - TestLogin - INFO - Test Case 2 Pass
+2023-09-06 11:09:13 - TestQuery - INFO - ----Test Case test_Query Started----
+2023-09-06 11:09:13 - TestQuery - INFO - ----Login Done----
+2023-09-06 11:09:19 - TestQuery - INFO - ----tariffquery Form Opened----
+2023-09-06 11:09:33 - TestQuery - INFO - ----Test Case test_Query Done----
+2023-09-06 11:10:14 - TestEntryForm - INFO - ----------------Test Case test_saveformwithinvoiceNumber Starterd----------------
+2023-09-06 11:10:22 - TestEntryForm - INFO - ----Entered in Form 7501----
+2023-09-06 11:10:37 - TestEntryForm - INFO - Test Case 'save form with invoice Number' Passed
+2023-09-06 11:10:37 - TestEntryForm - INFO - ----------------Test Case test_saveformwithinvoiceNumber End----------------
+2023-09-06 11:11:42 - TestEntryForm - INFO - ----------------Test Case test_saveformwithoutinvoiceNumber Starterd----------------
+2023-09-06 11:11:50 - TestEntryForm - INFO - ----Entered in Form 7501----
+2023-09-06 11:12:01 - TestEntryForm - INFO - Test Case 'save form without invoice Number' Passed
+2023-09-06 11:12:01 - TestEntryForm - INFO - ----------------Test Case test_saveformwithoutinvoiceNumber End----------------
+2023-09-06 11:12:23 - TestEntryForm - INFO - ----------------Test Case test_saveformwithExistinginvoiceNumber Starterd----------------
+2023-09-06 11:12:31 - TestEntryForm - INFO - ----Entered in Form 7501----
+2023-09-06 11:12:36 - TestEntryForm - INFO - Test Case 'save form with Existing invoice Number' Passed
+2023-09-06 11:12:37 - TestEntryForm - INFO - ----------------Test Case test_saveformwithExistinginvoiceNumber End----------------
+2023-09-06 11:13:23 - TestTradingPartners - INFO - ----Test Case test_tradingPartners1 Started----
+2023-09-06 11:13:24 - TestTradingPartners - INFO - ----Login Done----
+2023-09-06 11:13:31 - TestTradingPartners - INFO - ----7501 Form Opened----
+2023-09-06 11:13:31 - TestTradingPartners - INFO - ----Trading Partners 1 Started----
+2023-09-06 11:13:55 - TestTradingPartners - INFO - ----Text verification done----
+2023-09-06 11:13:55 - TestTradingPartners - INFO - ----Test Case test_tradingPartners1 End----
+2023-09-06 11:14:06 - TestTradingPartners - INFO - ----Test Case test_tradingPartners2 Started----
+2023-09-06 11:14:06 - TestTradingPartners - INFO - ----Login Done----
+2023-09-06 11:14:14 - TestTradingPartners - INFO - ----7501 Form Opened----
+2023-09-06 11:14:14 - TestTradingPartners - INFO - ----Trading Partners 2 Started----
+2023-09-06 11:14:43 - TestTradingPartners - INFO - ----Text verification done----
+2023-09-06 11:14:43 - TestTradingPartners - INFO - ----Test Case test_tradingPartners2 End----

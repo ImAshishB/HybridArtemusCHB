@@ -1,0 +1,1112 @@
+1692860062549	geckodriver	INFO	Listening on 127.0.0.1:55757
+1692860065642	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "55758" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Admin\\AppData\\Local\\Temp\\rust_mozprofileV411eF"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692860066821	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1692860066982	Marionette	INFO	Listening on port 55769
+WebDriver BiDi listening on ws://127.0.0.1:55758
+Read port: 55769
+1692860067688	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:55758/devtools/browser/b2fab87e-571b-4760-b422-1bf23f76c334
+[Parent 6764, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 8244, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://52.54.244.138:8080."
+1692860926738	Marionette	INFO	Stopped listening on port 55769
+Dynamically enable window occlusion 1
+[Parent 6764, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 8244, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 6764, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 8244, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 6764, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 8244, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 6764, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 8244, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkou1692860928102	Marionette	INFO	Stopped listening on port 56222
+Dynamically enable window occlusion 1
+[Parent 3784, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 17472, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 3784, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 17472, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 3784, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 17472, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 3784, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 17472, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/che1692860930036	Marionette	INFO	Stopped listening on port 56288
+Dynamically enable window occlusion 1
+[Parent 2104, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 10576, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 2104, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 10576, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 2104, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 10576, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+1692875369144	geckodriver	INFO	Listening on 127.0.0.1:60904
+1692875372244	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "60905" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Admin\\AppData\\Local\\Temp\\rust_mozprofileTlmkt2"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692875372927	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1692875373047	Marionette	INFO	Listening on port 60915
+WebDriver BiDi listening on ws://127.0.0.1:60905
+Read port: 60915
+1692875373418	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:60905/devtools/browser/4a2b1473-8a6f-4c7b-94a1-2ac1e60cddaa
+[Parent 19240, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 1676, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://52.54.244.138:8080."
+1692875565759	Marionette	INFO	Stopped listening on port 60915
+Dynamically enable window occlusion 1
+[Parent 19240, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 1676, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 19240, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 1676, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 19240, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 1676, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 19240, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 1676, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/chec1692875700113	Marionette	INFO	Stopped listening on port 61004
+Dynamically enable window occlusion 1
+[Parent 13816, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 10176, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 13816, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 10176, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 13816, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 10176, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 13816, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 10176, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 13816, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 10176, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+1692966214408	geckodriver	INFO	Listening on 127.0.0.1:64801
+1692966217569	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64802" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Admin\\AppData\\Local\\Temp\\rust_mozprofileWz7YVc"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692966218484	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1692966218642	Marionette	INFO	Listening on port 64810
+WebDriver BiDi listening on ws://127.0.0.1:64802
+Read port: 64810
+1692966218982	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:64802/devtools/browser/38ee05e7-687f-417f-910e-04c0a1061f39
+[Parent 9080, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 13016, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://52.54.244.138:8080."
+1692966256043	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:221:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:205:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:180:31
+1692966270113	Marionette	INFO	Stopped listening on port 64810
+Dynamically enable window occlusion 1
+[Parent 9080, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 13016, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 9080, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 13016, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 9080, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 13016, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 9080, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 13016, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 9080, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 13016, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+1692966274590	geckodriver	INFO	Listening on 127.0.0.1:64881
+1692966277627	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64882" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Admin\\AppData\\Local\\Temp\\rust_mozprofilevBHGxg"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692966278434	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1692966278593	Marionette	INFO	Listening on port 64890
+WebDriver BiDi listening on ws://127.0.0.1:64882
+Read port: 64890
+1692966278863	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:64882/devtools/browser/b706f3ca-d012-47c2-a5a6-03076d0ff137
+[Parent 21844, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 6836, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://52.54.244.138:8080."
+1692966347571	Marionette	INFO	Stopped listening on port 64890
+Dynamically enable window occlusion 1
+[Parent 21844, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 6836, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 21844, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 6836, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 21844, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 6836, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 21844, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 6836, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 21844, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 6836, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+1692966351360	geckodriver	INFO	Listening on 127.0.0.1:64954
+1692966354401	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "64955" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Admin\\AppData\\Local\\Temp\\rust_mozprofile9m2VDx"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692966354995	Marionette	INFO	Marionette enabled
+Dynamically enable window occlusion 0
+1692966355116	Marionette	INFO	Listening on port 64962
+WebDriver BiDi listening on ws://127.0.0.1:64955
+Read port: 64962
+1692966355347	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:64955/devtools/browser/07e6e130-5219-4f14-a304-bec2c6c9a86e
+[Parent 7520, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 8172, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://52.54.244.138:8080."
+1692966402616	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:221:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:205:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:180:31
+1692966404928	Marionette	INFO	Stopped listening on port 64962
+Dynamically enable window occlusion 1
+[Parent 7520, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 8172, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 7520, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 8172, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 7520, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 8172, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 7520, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 8172, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 7520, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 8172, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+1692967488677	geckodriver	INFO	Listening on 127.0.0.1:65383
+1692967491718	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "65384" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Admin\\AppData\\Local\\Temp\\rust_mozprofileIFWkCh"
+1692967491732	geckodriver::marionette	DEBUG	Waiting 60s to connect to browser on 127.0.0.1
+1692967491733	geckodriver::browser	TRACE	Failed to open C:\Users\Admin\AppData\Local\Temp\rust_mozprofileIFWkCh\MarionetteActivePort
+1692967491733	geckodriver::marionette	TRACE	Retrying in 100ms
+1692967491834	geckodriver::browser	TRACE	Failed to open C:\Users\Admin\AppData\Local\Temp\rust_mozprofileIFWkCh\MarionetteActivePort
+1692967491834	geckodriver::marionette	TRACE	Retrying in 100ms
+1692967491940	geckodriver::browser	TRACE	Failed to open C:\Users\Admin\AppData\Local\Temp\rust_mozprofileIFWkCh\MarionetteActivePort
+1692967491940	geckodriver::marionette	TRACE	Retrying in 100ms
+1692967492046	geckodriver::browser	TRACE	Failed to open C:\Users\Admin\AppData\Local\Temp\rust_mozprofileIFWkCh\MarionetteActivePort
+1692967492046	geckodriver::marionette	TRACE	Retrying in 100ms
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692967492153	geckodriver::browser	TRACE	Failed to open C:\Users\Admin\AppData\Local\Temp\rust_mozprofileIFWkCh\MarionetteActivePort
+1692967492153	geckodriver::marionette	TRACE	Retrying in 100ms
+1692967492267	geckodriver::browser	TRACE	Failed to open C:\Users\Admin\AppData\Local\Temp\rust_mozprofileIFWkCh\MarionetteActivePort
+1692967492267	geckodriver::marionette	TRACE	Retrying in 100ms
+1692967492326	RemoteAgent	DEBUG	WebDriver BiDi enabled
+1692967492326	RemoteAgent	DEBUG	CDP enabled
+1692967492326	Marionette	INFO	Marionette enabled
+1692967492328	RemoteAgent	DEBUG	Setting recommended pref apz.content_response_timeout to 60000
+1692967492328	RemoteAgent	DEBUG	Setting recommended pref browser.contentblocking.introCount to 99
+1692967492328	RemoteAgent	DEBUG	Setting recommended pref browser.download.panel.shown to true
+1692967492328	RemoteAgent	DEBUG	Setting recommended pref browser.newtabpage.enabled to false
+1692967492328	RemoteAgent	DEBUG	Setting recommended pref browser.pagethumbnails.capturing_disabled to true
+1692967492328	RemoteAgent	DEBUG	Setting recommended pref browser.search.update to false
+1692967492328	RemoteAgent	DEBUG	Setting recommended pref browser.startup.couldRestoreSession.count to -1
+1692967492329	RemoteAgent	DEBUG	Setting recommended pref browser.tabs.closeWindowWithLastTab to false
+1692967492329	RemoteAgent	DEBUG	Setting recommended pref browser.tabs.unloadOnLowMemory to false
+1692967492329	RemoteAgent	DEBUG	Setting recommended pref browser.tabs.warnOnClose to false
+1692967492329	RemoteAgent	DEBUG	Setting recommended pref browser.tabs.warnOnCloseOtherTabs to false
+1692967492329	RemoteAgent	DEBUG	Setting recommended pref browser.tabs.warnOnOpen to false
+1692967492329	RemoteAgent	DEBUG	Setting recommended pref browser.toolbars.bookmarks.visibility to never
+1692967492329	RemoteAgent	DEBUG	Setting recommended pref browser.topsites.contile.enabled to false
+1692967492329	RemoteAgent	DEBUG	Setting recommended pref browser.usedOnWindows10.introURL to 
+1692967492329	RemoteAgent	DEBUG	Setting recommended pref browser.urlbar.merino.endpointURL to 
+1692967492329	RemoteAgent	DEBUG	Setting recommended pref browser.urlbar.suggest.searches to false
+1692967492329	RemoteAgent	DEBUG	Setting recommended pref datareporting.policy.dataSubmissionPolicyAccepted to false
+1692967492329	RemoteAgent	DEBUG	Setting recommended pref dom.disable_open_during_load to false
+1692967492329	RemoteAgent	DEBUG	Setting recommended pref dom.file.createInChild to true
+1692967492329	RemoteAgent	DEBUG	Setting recommended pref dom.max_chrome_script_run_time to 0
+1692967492329	RemoteAgent	DEBUG	Setting recommended pref dom.max_script_run_time to 0
+1692967492330	RemoteAgent	DEBUG	Setting recommended pref dom.navigation.locationChangeRateLimit.count to 0
+1692967492330	RemoteAgent	DEBUG	Setting recommended pref dom.push.connection.enabled to false
+1692967492330	RemoteAgent	DEBUG	Setting recommended pref dom.screenorientation.allow-lock to true
+1692967492330	RemoteAgent	DEBUG	Setting recommended pref dom.successive_dialog_time_limit to 0
+1692967492330	RemoteAgent	DEBUG	Setting recommended pref extensions.getAddons.cache.enabled to false
+1692967492330	RemoteAgent	DEBUG	Setting recommended pref extensions.getAddons.discovery.api_url to data:, 
+1692967492330	RemoteAgent	DEBUG	Setting recommended pref network.http.phishy-userpass-length to 255
+1692967492330	RemoteAgent	DEBUG	Setting recommended pref network.http.prompt-temp-redirect to false
+1692967492330	RemoteAgent	DEBUG	Setting recommended pref privacy.trackingprotection.enabled to false
+1692967492330	RemoteAgent	DEBUG	Setting recommended pref security.fileuri.strict_origin_policy to false
+1692967492330	RemoteAgent	DEBUG	Setting recommended pref security.notification_enable_delay to 0
+1692967492330	RemoteAgent	DEBUG	Setting recommended pref signon.autofillForms to false
+1692967492330	RemoteAgent	DEBUG	Setting recommended pref signon.rememberSignons to false
+1692967492330	RemoteAgent	DEBUG	Setting recommended pref widget.windows.window_occlusion_tracking.enabled to false
+Dynamically enable window occlusion 0
+1692967492330	RemoteAgent	DEBUG	Setting recommended pref dom.disable_beforeunload to true
+1692967492332	Marionette	TRACE	Received observer notification final-ui-startup
+1692967492333	RemoteAgent	TRACE	Received observer notification final-ui-startup
+1692967492374	geckodriver::browser	TRACE	Failed to open C:\Users\Admin\AppData\Local\Temp\rust_mozprofileIFWkCh\MarionetteActivePort
+1692967492374	geckodriver::marionette	TRACE	Retrying in 100ms
+1692967492473	Marionette	INFO	Listening on port 65391
+1692967492475	Marionette	DEBUG	Marionette is listening
+1692967492481	RemoteAgent	TRACE	Available local IP addresses: 127.0.0.1, [::1]
+WebDriver BiDi listening on ws://127.0.0.1:65384
+Read port: 65391
+1692967492497	RemoteAgent	DEBUG	Setting recommended pref browser.contentblocking.features.standard to -tp,tpPrivate,cookieBehavior0,-cm,-fp
+1692967492497	RemoteAgent	DEBUG	Setting recommended pref network.cookie.cookieBehavior to 0
+1692967492498	CDP	DEBUG	Waiting for initial application window
+1692967492510	Marionette	DEBUG	Accepted connection 0 from 127.0.0.1:65392
+1692967492533	geckodriver::marionette	DEBUG	Connection to Marionette established on 127.0.0.1:65391.
+1692967492575	Marionette	DEBUG	0 -> [0,1,"WebDriver:NewSession",{"acceptInsecureCerts":true,"browserName":"firefox","pageLoadStrategy":"normal"}]
+1692967492579	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1692967492604	Marionette	DEBUG	Waiting for initial application window
+1692967495114	Marionette	TRACE	Received observer notification browser-idle-startup-tasks-finished
+1692967495114	RemoteAgent	TRACE	Received observer notification browser-idle-startup-tasks-finished
+1692967495133	RemoteAgent	TRACE	[8] ProgressListener Start: expectNavigation=false resolveWhenStarted=false unloadTimeout=5000 waitForExplicitStart=false
+1692967495133	RemoteAgent	TRACE	[8] ProgressListener Setting unload timer (5000ms)
+1692967495133	RemoteAgent	TRACE	[8] Document already finished loading: about:blank
+1692967495133	RemoteAgent	TRACE	[8] ProgressListener Stop: has error=false
+DevTools listening on ws://127.0.0.1:65384/devtools/browser/e196e3ab-653a-4bdc-8120-17b83d555b88
+1692967495162	Marionette	DEBUG	0 <- [1,1,null,{"sessionId":"a2f12c2a-b88d-4d4a-a04b-de7a9a16288f","capabilities":{"browserName":"firefox","browserVersion":"116.0.3","platformName":"windows","acceptInsecureCerts":true,"pageLoadStrategy":"normal","setWindowRect":true,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"strictFileInteractability":false,"unhandledPromptBehavior":"dismiss and notify","moz:accessibilityChecks":false,"moz:buildID":"20230815173142","moz:debuggerAddress":"127.0.0.1:65384","moz:headless":false,"moz:platformVersion":"10.0","moz:processID":10068,"moz:profile":"C:\\Users\\Admin\\AppData\\Local\\Temp\\rust_mozprofileIFWkCh","moz:shutdownTimeout":60000,"moz:webdriverClick":true,"moz:windowless":false,"proxy":{}}}]
+1692967495185	webdriver::server	DEBUG	<- 200 OK {"value":{"sessionId":"a2f12c2a-b88d-4d4a-a04b-de7a9a16288f","capabilities":{"acceptInsecureCerts":true,"browserNam ... ctability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify"}}}
+1692967495189	webdriver::server	DEBUG	-> POST /session/a2f12c2a-b88d-4d4a-a04b-de7a9a16288f/url {"url": "http://52.54.244.138:8080/ArtemusChb/"}
+1692967495192	Marionette	DEBUG	0 -> [0,2,"WebDriver:Navigate",{"url":"http://52.54.244.138:8080/ArtemusChb/"}]
+1692967495206	Marionette	TRACE	[8] Received event beforeunload for about:blank
+1692967495652	Marionette	TRACE	Remoteness change detected. Set new top-level browsing context to 11
+1692967495657	Marionette	TRACE	[11] Received event beforeunload for about:blank
+1692967495660	Marionette	TRACE	[11] Received event pagehide for about:blank
+[Parent 10068, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 11684, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+1692967531224	Marionette	TRACE	[11] Received event DOMContentLoaded for http://52.54.244.138:8080/ArtemusChb/#/login
+1692967531619	Marionette	TRACE	[11] Received event pageshow for http://52.54.244.138:8080/ArtemusChb/#/login
+1692967531619	Marionette	DEBUG	0 <- [1,2,null,{"value":null}]
+1692967531624	webdriver::server	DEBUG	<- 200 OK {"value":null}
+1692967531626	webdriver::server	DEBUG	-> POST /session/a2f12c2a-b88d-4d4a-a04b-de7a9a16288f/window/maximize {}
+1692967531627	Marionette	DEBUG	0 -> [0,3,"WebDriver:MaximizeWindow",{}]
+1692967531628	Marionette	DEBUG	0 <- [1,3,null,{"x":-6,"y":-6,"width":1354,"height":733}]
+1692967531636	webdriver::server	DEBUG	<- 200 OK {"value":{"x":-6,"y":-6,"width":1354,"height":733}}
+1692967531783	webdriver::server	DEBUG	-> POST /session/a2f12c2a-b88d-4d4a-a04b-de7a9a16288f/element {"using": "css selector", "value": "[id=\"username\"]"}
+1692967531785	Marionette	DEBUG	0 -> [0,4,"WebDriver:FindElement",{"using":"css selector","value":"[id=\"username\"]"}]
+1692967531790	RemoteAgent	TRACE	WebDriverProcessData actor created for PID 5188
+1692967531791	Marionette	TRACE	[11] MarionetteCommands actor created for window id 6442450945
+1692967531798	Marionette	DEBUG	0 <- [1,4,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"dec6dda2-6669-4296-bec8-1677f78c72ef"}}]
+1692967531798	webdriver::server	DEBUG	<- 200 OK {"value":{"element-6066-11e4-a52e-4f735466cecf":"dec6dda2-6669-4296-bec8-1677f78c72ef"}}
+1692967531803	webdriver::server	DEBUG	-> POST /session/a2f12c2a-b88d-4d4a-a04b-de7a9a16288f/execute/sync {"script": "/* isDisplayed */return (function(){return (fu ... ts);}\n).apply(null, arguments);", "args": [{"element-6066-11e4-a52e-4f735466cecf": "dec6dda2-6669-4296-bec8-1677f78c72ef"}]}
+1692967531805	Marionette	DEBUG	0 -> [0,5,"WebDriver:ExecuteScript",{"args":[{"element-6066-11e4-a52e-4f735466cecf":"dec6dda2-6669-4296-bec8-1677f78c72ef"}],"script":"/* isDisplayed */return (function(){return (function(){var k=this||self;function aa(a){return\"string\"==typeof a}function ba(a ... ined'?window.navigator:null,document:typeof window!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);"}]
+1692967531825	Marionette	DEBUG	0 <- [1,5,null,{"value":true}]
+1692967531828	webdriver::server	DEBUG	<- 200 OK {"value":true}
+1692967531829	webdriver::server	DEBUG	-> GET /session/a2f12c2a-b88d-4d4a-a04b-de7a9a16288f/element/dec6dda2-6669-4296-bec8-1677f78c72ef/enabled 
+1692967531833	Marionette	DEBUG	0 -> [0,6,"WebDriver:IsElementEnabled",{"id":"dec6dda2-6669-4296-bec8-1677f78c72ef"}]
+1692967531857	Marionette	DEBUG	0 <- [1,6,null,{"value":true}]
+1692967531857	webdriver::server	DEBUG	<- 200 OK {"value":true}
+1692967531859	webdriver::server	DEBUG	-> POST /session/a2f12c2a-b88d-4d4a-a04b-de7a9a16288f/element/dec6dda2-6669-4296-bec8-1677f78c72ef/click {"id": "dec6dda2-6669-4296-bec8-1677f78c72ef"}
+1692967531863	Marionette	DEBUG	0 -> [0,7,"WebDriver:ElementClick",{"id":"dec6dda2-6669-4296-bec8-1677f78c72ef"}]
+1692967531876	Marionette	TRACE	Received DOM event click for [object HTMLInputElement]
+1692967532080	Marionette	TRACE	Canceled page load listener because no navigation has been detected
+1692967532080	Marionette	DEBUG	0 <- [1,7,null,{"value":null}]
+1692967532081	webdriver::server	DEBUG	<- 200 OK {"value":null}
+1692967532082	webdriver::server	DEBUG	-> POST /session/a2f12c2a-b88d-4d4a-a04b-de7a9a16288f/element/dec6dda2-6669-4296-bec8-1677f78c72ef/value {"text": "tnash", "value": ["t", "n", "a", "s", "h"], "id": "dec6dda2-6669-4296-bec8-1677f78c72ef"}
+1692967532084	Marionette	DEBUG	0 -> [0,8,"WebDriver:ElementSendKeys",{"id":"dec6dda2-6669-4296-bec8-1677f78c72ef","text":"tnash","value":["t","n","a","s","h"]}]
+1692967532096	Marionette	DEBUG	0 <- [1,8,null,{"value":null}]
+1692967532096	webdriver::server	DEBUG	<- 200 OK {"value":null}
+1692967532098	webdriver::server	DEBUG	-> POST /session/a2f12c2a-b88d-4d4a-a04b-de7a9a16288f/element {"using": "css selector", "value": "[id=\"password\"]"}
+1692967532098	Marionette	DEBUG	0 -> [0,9,"WebDriver:FindElement",{"using":"css selector","value":"[id=\"password\"]"}]
+1692967532100	Marionette	DEBUG	0 <- [1,9,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"4058c5ad-7be3-4c1b-ac1b-dcb5cc013e54"}}]
+1692967532100	webdriver::server	DEBUG	<- 200 OK {"value":{"element-6066-11e4-a52e-4f735466cecf":"4058c5ad-7be3-4c1b-ac1b-dcb5cc013e54"}}
+1692967532103	webdriver::server	DEBUG	-> POST /session/a2f12c2a-b88d-4d4a-a04b-de7a9a16288f/execute/sync {"script": "/* isDisplayed */return (function(){return (fu ... ts);}\n).apply(null, arguments);", "args": [{"element-6066-11e4-a52e-4f735466cecf": "4058c5ad-7be3-4c1b-ac1b-dcb5cc013e54"}]}
+1692967532106	Marionette	DEBUG	0 -> [0,10,"WebDriver:ExecuteScript",{"args":[{"element-6066-11e4-a52e-4f735466cecf":"4058c5ad-7be3-4c1b-ac1b-dcb5cc013e54"}],"script":"/* isDisplayed */return (function(){return (function(){var k=this||self;function aa(a){return\"string\"==typeof a}function ba(a ... ined'?window.navigator:null,document:typeof window!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);"}]
+1692967532114	Marionette	DEBUG	0 <- [1,10,null,{"value":true}]
+1692967532115	webdriver::server	DEBUG	<- 200 OK {"value":true}
+1692967532116	webdriver::server	DEBUG	-> GET /session/a2f12c2a-b88d-4d4a-a04b-de7a9a16288f/element/4058c5ad-7be3-4c1b-ac1b-dcb5cc013e54/enabled 
+1692967532118	Marionette	DEBUG	0 -> [0,11,"WebDriver:IsElementEnabled",{"id":"4058c5ad-7be3-4c1b-ac1b-dcb5cc013e54"}]
+1692967532120	Marionette	DEBUG	0 <- [1,11,null,{"value":true}]
+1692967532122	webdriver::server	DEBUG	<- 200 OK {"value":true}
+1692967532123	webdriver::server	DEBUG	-> POST /session/a2f12c2a-b88d-4d4a-a04b-de7a9a16288f/element/4058c5ad-7be3-4c1b-ac1b-dcb5cc013e54/click {"id": "4058c5ad-7be3-4c1b-ac1b-dcb5cc013e54"}
+1692967532124	Marionette	DEBUG	0 -> [0,12,"WebDriver:ElementClick",{"id":"4058c5ad-7be3-4c1b-ac1b-dcb5cc013e54"}]
+1692967532134	Marionette	TRACE	Received DOM event click for [object HTMLInputElement]
+1692967532339	Marionette	TRACE	Canceled page load listener because no navigation has been detected
+1692967532339	Marionette	DEBUG	0 <- [1,12,null,{"value":null}]
+1692967532340	webdriver::server	DEBUG	<- 200 OK {"value":null}
+1692967532342	webdriver::server	DEBUG	-> POST /session/a2f12c2a-b88d-4d4a-a04b-de7a9a16288f/element/4058c5ad-7be3-4c1b-ac1b-dcb5cc013e54/value {"text": "tnash1", "value": ["t", "n", "a", "s", "h", "1"], "id": "4058c5ad-7be3-4c1b-ac1b-dcb5cc013e54"}
+1692967532343	Marionette	DEBUG	0 -> [0,13,"WebDriver:ElementSendKeys",{"id":"4058c5ad-7be3-4c1b-ac1b-dcb5cc013e54","text":"tnash1","value":["t","n","a","s","h","1"]}]
+1692967532371	Marionette	DEBUG	0 <- [1,13,null,{"value":null}]
+1692967532373	webdriver::server	DEBUG	<- 200 OK {"value":null}
+1692967532375	webdriver::server	DEBUG	-> POST /session/a2f12c2a-b88d-4d4a-a04b-de7a9a16288f/element {"using": "xpath", "value": "//*[@id=\"background\"]/div/div/div/div/div/form/button"}
+1692967532377	Marionette	DEBUG	0 -> [0,14,"WebDriver:FindElement",{"using":"xpath","value":"//*[@id=\"background\"]/div/div/div/div/div/form/button"}]
+1692967532379	Marionette	DEBUG	0 <- [1,14,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"c802d621-f8f2-41e8-93dc-b8435c5ab104"}}]
+1692967532379	webdriver::server	DEBUG	<- 200 OK {"value":{"element-6066-11e4-a52e-4f735466cecf":"c802d621-f8f2-41e8-93dc-b8435c5ab104"}}
+1692967532382	webdriver::server	DEBUG	-> POST /session/a2f12c2a-b88d-4d4a-a04b-de7a9a16288f/element/c802d621-f8f2-41e8-93dc-b8435c5ab104/click {"id": "c802d621-f8f2-41e8-93dc-b8435c5ab104"}
+1692967532383	Marionette	DEBUG	0 -> [0,15,"WebDriver:ElementClick",{"id":"c802d621-f8f2-41e8-93dc-b8435c5ab104"}]
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://52.54.244.138:8080."
+1692967532412	Marionette	TRACE	Received DOM event click for [object HTMLButtonElement]
+1692967532644	Marionette	TRACE	Canceled page load listener because no navigation has been detected
+1692967532644	Marionette	DEBUG	0 <- [1,15,null,{"value":null}]
+1692967532645	webdriver::server	DEBUG	<- 200 OK {"value":null}
+1692967536649	webdriver::server	DEBUG	-> POST /session/a2f12c2a-b88d-4d4a-a04b-de7a9a16288f/element {"using": "link text", "value": "Shipments"}
+1692967536650	Marionette	DEBUG	0 -> [0,16,"WebDriver:FindElement",{"using":"link text","value":"Shipments"}]
+1692967536682	Marionette	DEBUG	0 <- [1,16,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"d42007f0-ae4e-46ca-a98b-fae97e754b1a"}}]
+1692967536683	webdriver::server	DEBUG	<- 200 OK {"value":{"element-6066-11e4-a52e-4f735466cecf":"d42007f0-ae4e-46ca-a98b-fae97e754b1a"}}
+1692967536692	webdriver::server	DEBUG	-> POST /session/a2f12c2a-b88d-4d4a-a04b-de7a9a16288f/execute/sync {"script": "/* isDisplayed */return (function(){return (fu ... ts);}\n).apply(null, arguments);", "args": [{"element-6066-11e4-a52e-4f735466cecf": "d42007f0-ae4e-46ca-a98b-fae97e754b1a"}]}
+1692967536699	Marionette	DEBUG	0 -> [0,17,"WebDriver:ExecuteScript",{"args":[{"element-6066-11e4-a52e-4f735466cecf":"d42007f0-ae4e-46ca-a98b-fae97e754b1a"}],"script":"/* isDisplayed */return (function(){return (function(){var k=this||self;function aa(a){return\"string\"==typeof a}function ba(a ... ined'?window.navigator:null,document:typeof window!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);"}]
+1692967536722	Marionette	DEBUG	0 <- [1,17,null,{"value":true}]
+1692967536723	webdriver::server	DEBUG	<- 200 OK {"value":true}
+1692967536725	webdriver::server	DEBUG	-> GET /session/a2f12c2a-b88d-4d4a-a04b-de7a9a16288f/element/d42007f0-ae4e-46ca-a98b-fae97e754b1a/enabled 
+1692967536726	Marionette	DEBUG	0 -> [0,18,"WebDriver:IsElementEnabled",{"id":"d42007f0-ae4e-46ca-a98b-fae97e754b1a"}]
+1692967536728	Marionette	DEBUG	0 <- [1,18,null,{"value":true}]
+1692967536728	webdriver::server	DEBUG	<- 200 OK {"value":true}
+1692967536730	webdriver::server	DEBUG	-> POST /session/a2f12c2a-b88d-4d4a-a04b-de7a9a16288f/element/d42007f0-ae4e-46ca-a98b-fae97e754b1a/click {"id": "d42007f0-ae4e-46ca-a98b-fae97e754b1a"}
+1692967536731	Marionette	DEBUG	0 -> [0,19,"WebDriver:ElementClick",{"id":"d42007f0-ae4e-46ca-a98b-fae97e754b1a"}]
+1692967536779	Marionette	TRACE	Received DOM event click for http://52.54.244.138:8080/ArtemusChb/#/userHome/shipments
+1692967536985	Marionette	TRACE	Canceled page load listener because no navigation has been detected
+1692967536986	Marionette	DEBUG	0 <- [1,19,null,{"value":null}]
+1692967536987	webdriver::server	DEBUG	<- 200 OK {"value":null}
+1692967538992	webdriver::server	DEBUG	-> POST /session/a2f12c2a-b88d-4d4a-a04b-de7a9a16288f/element {"using": "link text", "value": "Form 7501"}
+1692967538994	Marionette	DEBUG	0 -> [0,20,"WebDriver:FindElement",{"using":"link text","value":"Form 7501"}]
+1692967539048	Marionette	DEBUG	0 <- [1,20,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"82ce8bd5-9d2c-42f6-a033-146f8c0a58da"}}]
+1692967539049	webdriver::server	DEBUG	<- 200 OK {"value":{"element-6066-11e4-a52e-4f735466cecf":"82ce8bd5-9d2c-42f6-a033-146f8c0a58da"}}
+1692967539054	webdriver::server	DEBUG	-> POST /session/a2f12c2a-b88d-4d4a-a04b-de7a9a16288f/execute/sync {"script": "/* isDisplayed */return (function(){return (fu ... ts);}\n).apply(null, arguments);", "args": [{"element-6066-11e4-a52e-4f735466cecf": "82ce8bd5-9d2c-42f6-a033-146f8c0a58da"}]}
+1692967539058	Marionette	DEBUG	0 -> [0,21,"WebDriver:ExecuteScript",{"args":[{"element-6066-11e4-a52e-4f735466cecf":"82ce8bd5-9d2c-42f6-a033-146f8c0a58da"}],"script":"/* isDisplayed */return (function(){return (function(){var k=this||self;function aa(a){return\"string\"==typeof a}function ba(a ... ined'?window.navigator:null,document:typeof window!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);"}]
+1692967539072	Marionette	DEBUG	0 <- [1,21,null,{"value":true}]
+1692967539072	webdriver::server	DEBUG	<- 200 OK {"value":true}
+1692967539074	webdriver::server	DEBUG	-> GET /session/a2f12c2a-b88d-4d4a-a04b-de7a9a16288f/element/82ce8bd5-9d2c-42f6-a033-146f8c0a58da/enabled 
+1692967539075	Marionette	DEBUG	0 -> [0,22,"WebDriver:IsElementEnabled",{"id":"82ce8bd5-9d2c-42f6-a033-146f8c0a58da"}]
+1692967539077	Marionette	DEBUG	0 <- [1,22,null,{"value":true}]
+1692967539078	webdriver::server	DEBUG	<- 200 OK {"value":true}
+1692967539080	webdriver::server	DEBUG	-> POST /session/a2f12c2a-b88d-4d4a-a04b-de7a9a16288f/element/82ce8bd5-9d2c-42f6-a033-146f8c0a58da/click {"id": "82ce8bd5-9d2c-42f6-a033-146f8c0a58da"}
+1692967539081	Marionette	DEBUG	0 -> [0,23,"WebDriver:ElementClick",{"id":"82ce8bd5-9d2c-42f6-a033-146f8c0a58da"}]
+1692967539278	Marionette	TRACE	Received DOM event click for [object HTMLDivElement]
+1692967539512	Marionette	TRACE	Canceled page load listener because no navigation has been detected
+1692967539513	Marionette	DEBUG	0 <- [1,23,null,{"value":null}]
+1692967539513	webdriver::server	DEBUG	<- 200 OK {"value":null}
+1692967540515	webdriver::server	DEBUG	-> POST /session/a2f12c2a-b88d-4d4a-a04b-de7a9a16288f/element {"using": "css selector", "value": "input#invoiceNumber"}
+1692967540515	Marionette	DEBUG	0 -> [0,24,"WebDriver:FindElement",{"using":"css selector","value":"input#invoiceNumber"}]
+1692967540522	Marionette	DEBUG	0 <- [1,24,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"0dc56174-5ff3-46d8-85af-75bb3368f294"}}]
+1692967540522	webdriver::server	DEBUG	<- 200 OK {"value":{"element-6066-11e4-a52e-4f735466cecf":"0dc56174-5ff3-46d8-85af-75bb3368f294"}}
+1692967540523	webdriver::server	DEBUG	-> POST /session/a2f12c2a-b88d-4d4a-a04b-de7a9a16288f/element/0dc56174-5ff3-46d8-85af-75bb3368f294/value {"text": "ABTestInvc ... T", "e", "s", "t", "I", "n", "v", "c", "V", "2", "I", "C", "Z", "9", "M", "S"], "id": "0dc56174-5ff3-46d8-85af-75bb3368f294"}
+1692967540524	Marionette	DEBUG	0 -> [0,25,"WebDriver:ElementSendKeys",{"id":"0dc56174-5ff3-46d8-85af-75bb3368f294","text":"ABTestInvcV2ICZ9MS","value":["A","B","T","e","s","t","I","n","v","c","V","2","I","C","Z","9","M","S"]}]
+1692967540587	Marionette	DEBUG	0 <- [1,25,null,{"value":null}]
+1692967540588	webdriver::server	DEBUG	<- 200 OK {"value":null}
+1692967541589	webdriver::server	DEBUG	-> POST /session/a2f12c2a-b88d-4d4a-a04b-de7a9a16288f/element {"using": "xpath", "value": "//span[normalize-space()='Invoice Number:']"}
+1692967541590	Marionette	DEBUG	0 -> [0,26,"WebDriver:FindElement",{"using":"xpath","value":"//span[normalize-space()='Invoice Number:']"}]
+1692967541596	Marionette	DEBUG	0 <- [1,26,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"fa43ba0f-4f91-48d2-aba2-1f24e4a4bfb7"}}]
+1692967541597	webdriver::server	DEBUG	<- 200 OK {"value":{"element-6066-11e4-a52e-4f735466cecf":"fa43ba0f-4f91-48d2-aba2-1f24e4a4bfb7"}}
+1692967541598	webdriver::server	DEBUG	-> POST /session/a2f12c2a-b88d-4d4a-a04b-de7a9a16288f/element/fa43ba0f-4f91-48d2-aba2-1f24e4a4bfb7/click {"id": "fa43ba0f-4f91-48d2-aba2-1f24e4a4bfb7"}
+1692967541598	Marionette	DEBUG	0 -> [0,27,"WebDriver:ElementClick",{"id":"fa43ba0f-4f91-48d2-aba2-1f24e4a4bfb7"}]
+1692967542123	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:221:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:205:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:180:31
+1692967542330	Marionette	TRACE	Canceled page load listener because no navigation has been detected
+1692967542330	Marionette	DEBUG	0 <- [1,27,null,{"value":null}]
+1692967542330	webdriver::server	DEBUG	<- 200 OK {"value":null}
+1692967544332	webdriver::server	DEBUG	-> POST /session/a2f12c2a-b88d-4d4a-a04b-de7a9a16288f/element {"using": "xpath", "value": "//button[contains(text(),'Save')]"}
+1692967544332	Marionette	DEBUG	0 -> [0,28,"WebDriver:FindElement",{"using":"xpath","value":"//button[contains(text(),'Save')]"}]
+1692967544334	Marionette	DEBUG	0 <- [1,28,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"9cf90962-d08b-4640-8184-ebea5cb60f69"}}]
+1692967544334	webdriver::server	DEBUG	<- 200 OK {"value":{"element-6066-11e4-a52e-4f735466cecf":"9cf90962-d08b-4640-8184-ebea5cb60f69"}}
+1692967544337	webdriver::server	DEBUG	-> POST /session/a2f12c2a-b88d-4d4a-a04b-de7a9a16288f/execute/sync {"script": "/* isDisplayed */return (function(){return (fu ... ts);}\n).apply(null, arguments);", "args": [{"element-6066-11e4-a52e-4f735466cecf": "9cf90962-d08b-4640-8184-ebea5cb60f69"}]}
+1692967544339	Marionette	DEBUG	0 -> [0,29,"WebDriver:ExecuteScript",{"args":[{"element-6066-11e4-a52e-4f735466cecf":"9cf90962-d08b-4640-8184-ebea5cb60f69"}],"script":"/* isDisplayed */return (function(){return (function(){var k=this||self;function aa(a){return\"string\"==typeof a}function ba(a ... ined'?window.navigator:null,document:typeof window!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);"}]
+1692967544352	Marionette	DEBUG	0 <- [1,29,null,{"value":true}]
+1692967544352	webdriver::server	DEBUG	<- 200 OK {"value":true}
+1692967544353	webdriver::server	DEBUG	-> GET /session/a2f12c2a-b88d-4d4a-a04b-de7a9a16288f/element/9cf90962-d08b-4640-8184-ebea5cb60f69/enabled 
+1692967544354	Marionette	DEBUG	0 -> [0,30,"WebDriver:IsElementEnabled",{"id":"9cf90962-d08b-4640-8184-ebea5cb60f69"}]
+1692967544357	Marionette	DEBUG	0 <- [1,30,null,{"value":true}]
+1692967544357	webdriver::server	DEBUG	<- 200 OK {"value":true}
+1692967544359	webdriver::server	DEBUG	-> POST /session/a2f12c2a-b88d-4d4a-a04b-de7a9a16288f/element/9cf90962-d08b-4640-8184-ebea5cb60f69/click {"id": "9cf90962-d08b-4640-8184-ebea5cb60f69"}
+1692967544360	Marionette	DEBUG	0 -> [0,31,"WebDriver:ElementClick",{"id":"9cf90962-d08b-4640-8184-ebea5cb60f69"}]
+1692967544375	Marionette	TRACE	Received DOM event click for [object HTMLButtonElement]
+1692967544584	Marionette	TRACE	Canceled page load listener because no navigation has been detected
+1692967544584	Marionette	DEBUG	0 <- [1,31,null,{"value":null}]
+1692967544584	webdriver::server	DEBUG	<- 200 OK {"value":null}
+1692967546585	webdriver::server	DEBUG	-> POST /session/a2f12c2a-b88d-4d4a-a04b-de7a9a16288f/element {"using": "tag name", "value": "body"}
+1692967546586	Marionette	DEBUG	0 -> [0,32,"WebDriver:FindElement",{"using":"tag name","value":"body"}]
+1692967546589	Marionette	DEBUG	0 <- [1,32,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"7455f990-9375-4364-a455-a3a501c403d1"}}]
+1692967546589	webdriver::server	DEBUG	<- 200 OK {"value":{"element-6066-11e4-a52e-4f735466cecf":"7455f990-9375-4364-a455-a3a501c403d1"}}
+1692967546590	webdriver::server	DEBUG	-> GET /session/a2f12c2a-b88d-4d4a-a04b-de7a9a16288f/element/7455f990-9375-4364-a455-a3a501c403d1/text 
+1692967546591	Marionette	DEBUG	0 -> [0,33,"WebDriver:GetElementText",{"id":"7455f990-9375-4364-a455-a3a501c403d1"}]
+1692967553223	Marionette	DEBUG	0 <- [1,33,null,{"value":"Welcome, tnash  \nLogout\nAdmin\nQueries\nShipments\nParties\nParts\nStatements\nImporter\nISF\n5106\nReports\nInvoices\nForm 7512\nAll\nFor ... d Date:\nSEB Bond Amount:\nRelease Date:\nPSC Indicator\nForm saved succesfully!\nFor submitting edi please click submit button\nOK"}]
+1692967553224	webdriver::server	DEBUG	<- 200 OK {"value":"Welcome, tnash  \nLogout\nAdmin\nQueries\nShipments\nParties\nParts\nStatements\nImporter\nISF\n5106\nRep ... nSEB Bond Amount:\nRelease Date:\nPSC Indicator\nForm saved succesfully!\nFor submitting edi please click submit button\nOK"}
+1692967553225	webdriver::server	DEBUG	-> POST /session/a2f12c2a-b88d-4d4a-a04b-de7a9a16288f/element {"using": "xpath", "value": "//button[normalize-space()='OK']"}
+1692967553226	Marionette	DEBUG	0 -> [0,34,"WebDriver:FindElement",{"using":"xpath","value":"//button[normalize-space()='OK']"}]
+1692967553235	Marionette	DEBUG	0 <- [1,34,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"ef27bf51-1ff3-4fcb-afa1-c159d11c1ed8"}}]
+1692967553235	webdriver::server	DEBUG	<- 200 OK {"value":{"element-6066-11e4-a52e-4f735466cecf":"ef27bf51-1ff3-4fcb-afa1-c159d11c1ed8"}}
+1692967553237	webdriver::server	DEBUG	-> POST /session/a2f12c2a-b88d-4d4a-a04b-de7a9a16288f/element/ef27bf51-1ff3-4fcb-afa1-c159d11c1ed8/click {"id": "ef27bf51-1ff3-4fcb-afa1-c159d11c1ed8"}
+1692967553237	Marionette	DEBUG	0 -> [0,35,"WebDriver:ElementClick",{"id":"ef27bf51-1ff3-4fcb-afa1-c159d11c1ed8"}]
+1692967553268	Marionette	TRACE	Received DOM event click for [object HTMLButtonElement]
+1692967553478	Marionette	TRACE	Canceled page load listener because no navigation has been detected
+1692967553479	Marionette	DEBUG	0 <- [1,35,null,{"value":null}]
+1692967553479	webdriver::server	DEBUG	<- 200 OK {"value":null}
+1692967555481	webdriver::server	DEBUG	-> POST /session/a2f12c2a-b88d-4d4a-a04b-de7a9a16288f/element {"using": "xpath", "value": "//a[normalize-space()='Logout']"}
+1692967555481	Marionette	DEBUG	0 -> [0,36,"WebDriver:FindElement",{"using":"xpath","value":"//a[normalize-space()='Logout']"}]
+1692967555504	Marionette	DEBUG	0 <- [1,36,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"ccf2ec49-ecd0-4a57-9a6e-c02f0b9dfe4a"}}]
+1692967555505	webdriver::server	DEBUG	<- 200 OK {"value":{"element-6066-11e4-a52e-4f735466cecf":"ccf2ec49-ecd0-4a57-9a6e-c02f0b9dfe4a"}}
+1692967555506	webdriver::server	DEBUG	-> POST /session/a2f12c2a-b88d-4d4a-a04b-de7a9a16288f/element/ccf2ec49-ecd0-4a57-9a6e-c02f0b9dfe4a/click {"id": "ccf2ec49-ecd0-4a57-9a6e-c02f0b9dfe4a"}
+1692967555525	Marionette	DEBUG	0 -> [0,37,"WebDriver:ElementClick",{"id":"ccf2ec49-ecd0-4a57-9a6e-c02f0b9dfe4a"}]
+1692967555572	Marionette	TRACE	Received DOM event click for 
+1692967555808	Marionette	TRACE	Canceled page load listener because no navigation has been detected
+1692967555808	Marionette	DEBUG	0 <- [1,37,null,{"value":null}]
+1692967555808	webdriver::server	DEBUG	<- 200 OK {"value":null}
+1692967555811	webdriver::server	DEBUG	-> DELETE /session/a2f12c2a-b88d-4d4a-a04b-de7a9a16288f/window 
+1692967555813	Marionette	DEBUG	0 -> [0,38,"WebDriver:CloseWindow",{}]
+1692967555813	Marionette	DEBUG	0 <- [1,38,null,[]]
+1692967555813	webdriver::server	DEBUG	Last window was closed, deleting session
+1692967555813	webdriver::server	DEBUG	Teardown session
+1692967555835	Marionette	DEBUG	0 -> [0,39,"Marionette:Quit",{"flags":["eForceQuit"]}]
+1692967555836	Marionette	INFO	Stopped listening on port 65391
+1692967555839	Marionette	TRACE	[11] MarionetteCommands actor destroyed for window id 6442450945
+1692967556428	Marionette	TRACE	Received observer notification quit-application
+1692967556435	Marionette	TRACE	Received observer notification quit-application
+1692967556436	RemoteAgent	DEBUG	Resetting recommended pref apz.content_response_timeout
+1692967556437	RemoteAgent	DEBUG	Resetting recommended pref browser.contentblocking.introCount
+1692967556438	RemoteAgent	DEBUG	Resetting recommended pref browser.download.panel.shown
+1692967556438	RemoteAgent	DEBUG	Resetting recommended pref browser.newtabpage.enabled
+1692967556443	RemoteAgent	DEBUG	Resetting recommended pref browser.pagethumbnails.capturing_disabled
+1692967556444	RemoteAgent	DEBUG	Resetting recommended pref browser.search.update
+1692967556444	RemoteAgent	DEBUG	Resetting recommended pref browser.startup.couldRestoreSession.count
+1692967556445	RemoteAgent	DEBUG	Resetting recommended pref browser.tabs.closeWindowWithLastTab
+1692967556445	RemoteAgent	DEBUG	Resetting recommended pref browser.tabs.unloadOnLowMemory
+1692967556445	RemoteAgent	DEBUG	Resetting recommended pref browser.tabs.warnOnClose
+1692967556446	RemoteAgent	DEBUG	Resetting recommended pref browser.tabs.warnOnCloseOtherTabs
+1692967556446	RemoteAgent	DEBUG	Resetting recommended pref browser.tabs.warnOnOpen
+1692967556447	RemoteAgent	DEBUG	Resetting recommended pref browser.toolbars.bookmarks.visibility
+1692967556447	RemoteAgent	DEBUG	Resetting recommended pref browser.topsites.contile.enabled
+1692967556447	RemoteAgent	DEBUG	Resetting recommended pref browser.usedOnWindows10.introURL
+1692967556448	RemoteAgent	DEBUG	Resetting recommended pref browser.urlbar.merino.endpointURL
+1692967556454	RemoteAgent	DEBUG	Resetting recommended pref browser.urlbar.suggest.searches
+1692967556456	RemoteAgent	DEBUG	Resetting recommended pref datareporting.policy.dataSubmissionPolicyAccepted
+1692967556456	RemoteAgent	DEBUG	Resetting recommended pref dom.disable_open_during_load
+1692967556456	RemoteAgent	DEBUG	Resetting recommended pref dom.file.createInChild
+1692967556457	RemoteAgent	DEBUG	Resetting recommended pref dom.max_chrome_script_run_time
+1692967556457	RemoteAgent	DEBUG	Resetting recommended pref dom.max_script_run_time
+1692967556457	RemoteAgent	DEBUG	Resetting recommended pref dom.navigation.locationChangeRateLimit.count
+1692967556457	RemoteAgent	DEBUG	Resetting recommended pref dom.push.connection.enabled
+1692967556458	RemoteAgent	DEBUG	Resetting recommended pref dom.screenorientation.allow-lock
+1692967556458	RemoteAgent	DEBUG	Resetting recommended pref dom.successive_dialog_time_limit
+1692967556458	RemoteAgent	DEBUG	Resetting recommended pref extensions.getAddons.cache.enabled
+1692967556458	RemoteAgent	DEBUG	Resetting recommended pref extensions.getAddons.discovery.api_url
+1692967556458	RemoteAgent	DEBUG	Resetting recommended pref network.http.phishy-userpass-length
+1692967556458	RemoteAgent	DEBUG	Resetting recommended pref network.http.prompt-temp-redirect
+1692967556458	RemoteAgent	DEBUG	Resetting recommended pref privacy.trackingprotection.enabled
+1692967556458	RemoteAgent	DEBUG	Resetting recommended pref security.fileuri.strict_origin_policy
+1692967556459	RemoteAgent	DEBUG	Resetting recommended pref security.notification_enable_delay
+1692967556459	RemoteAgent	DEBUG	Resetting recommended pref signon.autofillForms
+1692967556460	RemoteAgent	DEBUG	Resetting recommended pref signon.rememberSignons
+1692967556461	RemoteAgent	DEBUG	Resetting recommended pref widget.windows.window_occlusion_tracking.enabled
+Dynamically enable window occlusion 1
+1692967556467	RemoteAgent	DEBUG	Resetting recommended pref dom.disable_beforeunload
+1692967556467	RemoteAgent	DEBUG	Resetting recommended pref browser.contentblocking.features.standard
+1692967556468	RemoteAgent	DEBUG	Resetting recommended pref network.cookie.cookieBehavior
+1692967556468	RemoteAgent	TRACE	Received observer notification quit-application
+1692967556470	Marionette	DEBUG	Marionette stopped listening
+1692967556474	Marionette	DEBUG	0 <- [1,39,null,{"cause":"shutdown","forced":false,"in_app":true}]
+1692967556501	RemoteAgent	DEBUG	Resetting recommended pref browser.contentblocking.features.standard
+1692967556501	RemoteAgent	DEBUG	Resetting recommended pref network.cookie.cookieBehavior
+[Parent 10068, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 11684, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+1692967556517	Marionette	DEBUG	Closed connection 0
+[Parent 10068, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 11684, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 10068, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 11684, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 10068, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 11684, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 10068, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 11684, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+1692967557461	geckodriver::browser	DEBUG	Browser process stopped: exit code: 0
+1692967559151	webdriver::server	DEBUG	<- 200 OK {"value":[]}
+1692967560069	geckodriver	INFO	Listening on 127.0.0.1:65454
+1692967563101	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "65455" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Admin\\AppData\\Local\\Temp\\rust_mozprofileyr1ohy"
+1692967563115	geckodriver::marionette	DEBUG	Waiting 60s to connect to browser on 127.0.0.1
+1692967563115	geckodriver::browser	TRACE	Failed to open C:\Users\Admin\AppData\Local\Temp\rust_mozprofileyr1ohy\MarionetteActivePort
+1692967563115	geckodriver::marionette	TRACE	Retrying in 100ms
+1692967563219	geckodriver::browser	TRACE	Failed to open C:\Users\Admin\AppData\Local\Temp\rust_mozprofileyr1ohy\MarionetteActivePort
+1692967563219	geckodriver::marionette	TRACE	Retrying in 100ms
+1692967563325	geckodriver::browser	TRACE	Failed to open C:\Users\Admin\AppData\Local\Temp\rust_mozprofileyr1ohy\MarionetteActivePort
+1692967563325	geckodriver::marionette	TRACE	Retrying in 100ms
+1692967563429	geckodriver::browser	TRACE	Failed to open C:\Users\Admin\AppData\Local\Temp\rust_mozprofileyr1ohy\MarionetteActivePort
+1692967563429	geckodriver::marionette	TRACE	Retrying in 100ms
+1692967563530	geckodriver::browser	TRACE	Failed to open C:\Users\Admin\AppData\Local\Temp\rust_mozprofileyr1ohy\MarionetteActivePort
+1692967563530	geckodriver::marionette	TRACE	Retrying in 100ms
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692967563643	geckodriver::browser	TRACE	Failed to open C:\Users\Admin\AppData\Local\Temp\rust_mozprofileyr1ohy\MarionetteActivePort
+1692967563643	geckodriver::marionette	TRACE	Retrying in 100ms
+1692967563758	geckodriver::browser	TRACE	Failed to open C:\Users\Admin\AppData\Local\Temp\rust_mozprofileyr1ohy\MarionetteActivePort
+1692967563758	geckodriver::marionette	TRACE	Retrying in 100ms
+1692967563865	geckodriver::browser	TRACE	Failed to open C:\Users\Admin\AppData\Local\Temp\rust_mozprofileyr1ohy\MarionetteActivePort
+1692967563865	geckodriver::marionette	TRACE	Retrying in 100ms
+1692967563906	RemoteAgent	DEBUG	WebDriver BiDi enabled
+1692967563907	RemoteAgent	DEBUG	CDP enabled
+1692967563907	Marionette	INFO	Marionette enabled
+1692967563908	RemoteAgent	DEBUG	Setting recommended pref apz.content_response_timeout to 60000
+1692967563908	RemoteAgent	DEBUG	Setting recommended pref browser.contentblocking.introCount to 99
+1692967563908	RemoteAgent	DEBUG	Setting recommended pref browser.download.panel.shown to true
+1692967563908	RemoteAgent	DEBUG	Setting recommended pref browser.newtabpage.enabled to false
+1692967563908	RemoteAgent	DEBUG	Setting recommended pref browser.pagethumbnails.capturing_disabled to true
+1692967563908	RemoteAgent	DEBUG	Setting recommended pref browser.search.update to false
+1692967563908	RemoteAgent	DEBUG	Setting recommended pref browser.startup.couldRestoreSession.count to -1
+1692967563909	RemoteAgent	DEBUG	Setting recommended pref browser.tabs.closeWindowWithLastTab to false
+1692967563909	RemoteAgent	DEBUG	Setting recommended pref browser.tabs.unloadOnLowMemory to false
+1692967563909	RemoteAgent	DEBUG	Setting recommended pref browser.tabs.warnOnClose to false
+1692967563909	RemoteAgent	DEBUG	Setting recommended pref browser.tabs.warnOnCloseOtherTabs to false
+1692967563909	RemoteAgent	DEBUG	Setting recommended pref browser.tabs.warnOnOpen to false
+1692967563909	RemoteAgent	DEBUG	Setting recommended pref browser.toolbars.bookmarks.visibility to never
+1692967563909	RemoteAgent	DEBUG	Setting recommended pref browser.topsites.contile.enabled to false
+1692967563909	RemoteAgent	DEBUG	Setting recommended pref browser.usedOnWindows10.introURL to 
+1692967563909	RemoteAgent	DEBUG	Setting recommended pref browser.urlbar.merino.endpointURL to 
+1692967563909	RemoteAgent	DEBUG	Setting recommended pref browser.urlbar.suggest.searches to false
+1692967563909	RemoteAgent	DEBUG	Setting recommended pref datareporting.policy.dataSubmissionPolicyAccepted to false
+1692967563909	RemoteAgent	DEBUG	Setting recommended pref dom.disable_open_during_load to false
+1692967563909	RemoteAgent	DEBUG	Setting recommended pref dom.file.createInChild to true
+1692967563909	RemoteAgent	DEBUG	Setting recommended pref dom.max_chrome_script_run_time to 0
+1692967563909	RemoteAgent	DEBUG	Setting recommended pref dom.max_script_run_time to 0
+1692967563909	RemoteAgent	DEBUG	Setting recommended pref dom.navigation.locationChangeRateLimit.count to 0
+1692967563909	RemoteAgent	DEBUG	Setting recommended pref dom.push.connection.enabled to false
+1692967563909	RemoteAgent	DEBUG	Setting recommended pref dom.screenorientation.allow-lock to true
+1692967563909	RemoteAgent	DEBUG	Setting recommended pref dom.successive_dialog_time_limit to 0
+1692967563909	RemoteAgent	DEBUG	Setting recommended pref extensions.getAddons.cache.enabled to false
+1692967563909	RemoteAgent	DEBUG	Setting recommended pref extensions.getAddons.discovery.api_url to data:, 
+1692967563910	RemoteAgent	DEBUG	Setting recommended pref network.http.phishy-userpass-length to 255
+1692967563910	RemoteAgent	DEBUG	Setting recommended pref network.http.prompt-temp-redirect to false
+1692967563910	RemoteAgent	DEBUG	Setting recommended pref privacy.trackingprotection.enabled to false
+1692967563910	RemoteAgent	DEBUG	Setting recommended pref security.fileuri.strict_origin_policy to false
+1692967563910	RemoteAgent	DEBUG	Setting recommended pref security.notification_enable_delay to 0
+1692967563910	RemoteAgent	DEBUG	Setting recommended pref signon.autofillForms to false
+1692967563910	RemoteAgent	DEBUG	Setting recommended pref signon.rememberSignons to false
+1692967563910	RemoteAgent	DEBUG	Setting recommended pref widget.windows.window_occlusion_tracking.enabled to false
+Dynamically enable window occlusion 0
+1692967563910	RemoteAgent	DEBUG	Setting recommended pref dom.disable_beforeunload to true
+1692967563911	Marionette	TRACE	Received observer notification final-ui-startup
+1692967563912	RemoteAgent	TRACE	Received observer notification final-ui-startup
+1692967563980	geckodriver::browser	TRACE	Failed to open C:\Users\Admin\AppData\Local\Temp\rust_mozprofileyr1ohy\MarionetteActivePort
+1692967563980	geckodriver::marionette	TRACE	Retrying in 100ms
+1692967564054	Marionette	INFO	Listening on port 65462
+1692967564059	Marionette	DEBUG	Marionette is listening
+1692967564073	RemoteAgent	TRACE	Available local IP addresses: 127.0.0.1, [::1]
+WebDriver BiDi listening on ws://127.0.0.1:65455
+1692967564089	RemoteAgent	DEBUG	Setting recommended pref browser.contentblocking.features.standard to -tp,tpPrivate,cookieBehavior0,-cm,-fp
+1692967564090	RemoteAgent	DEBUG	Setting recommended pref network.cookie.cookieBehavior to 0
+1692967564090	CDP	DEBUG	Waiting for initial application window
+Read port: 65462
+1692967564122	Marionette	DEBUG	Accepted connection 0 from 127.0.0.1:65463
+1692967564134	geckodriver::marionette	DEBUG	Connection to Marionette established on 127.0.0.1:65462.
+1692967564246	Marionette	DEBUG	0 -> [0,1,"WebDriver:NewSession",{"acceptInsecureCerts":true,"browserName":"firefox","pageLoadStrategy":"normal"}]
+1692967564249	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1692967564271	Marionette	DEBUG	Waiting for initial application window
+1692967566142	Marionette	TRACE	Received observer notification browser-idle-startup-tasks-finished
+1692967566142	RemoteAgent	TRACE	Received observer notification browser-idle-startup-tasks-finished
+1692967566150	RemoteAgent	TRACE	[8] ProgressListener Start: expectNavigation=false resolveWhenStarted=false unloadTimeout=5000 waitForExplicitStart=false
+1692967566150	RemoteAgent	TRACE	[8] ProgressListener Setting unload timer (5000ms)
+1692967566150	RemoteAgent	TRACE	[8] Document already finished loading: about:blank
+1692967566150	RemoteAgent	TRACE	[8] ProgressListener Stop: has error=false
+DevTools listening on ws://127.0.0.1:65455/devtools/browser/52145751-38fd-48db-9eea-6c9a3da2de9d
+1692967566160	Marionette	DEBUG	0 <- [1,1,null,{"sessionId":"c5addedc-5b11-4bb3-aa2a-a55c7b7f9e92","capabilities":{"browserName":"firefox","browserVersion":"116.0.3","platformName":"windows","acceptInsecureCerts":true,"pageLoadStrategy":"normal","setWindowRect":true,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"strictFileInteractability":false,"unhandledPromptBehavior":"dismiss and notify","moz:accessibilityChecks":false,"moz:buildID":"20230815173142","moz:debuggerAddress":"127.0.0.1:65455","moz:headless":false,"moz:platformVersion":"10.0","moz:processID":4752,"moz:profile":"C:\\Users\\Admin\\AppData\\Local\\Temp\\rust_mozprofileyr1ohy","moz:shutdownTimeout":60000,"moz:webdriverClick":true,"moz:windowless":false,"proxy":{}}}]
+1692967566166	webdriver::server	DEBUG	<- 200 OK {"value":{"sessionId":"c5addedc-5b11-4bb3-aa2a-a55c7b7f9e92","capabilities":{"acceptInsecureCerts":true,"browserNam ... ctability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify"}}}
+1692967566167	webdriver::server	DEBUG	-> POST /session/c5addedc-5b11-4bb3-aa2a-a55c7b7f9e92/url {"url": "http://52.54.244.138:8080/ArtemusChb/"}
+1692967566168	Marionette	DEBUG	0 -> [0,2,"WebDriver:Navigate",{"url":"http://52.54.244.138:8080/ArtemusChb/"}]
+1692967566173	Marionette	TRACE	[8] Received event beforeunload for about:blank
+1692967566614	Marionette	TRACE	Remoteness change detected. Set new top-level browsing context to 11
+1692967566620	Marionette	TRACE	[11] Received event beforeunload for about:blank
+1692967566622	Marionette	TRACE	[11] Received event pagehide for about:blank
+[Parent 4752, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 19300, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+1692967621939	Marionette	TRACE	[11] Received event DOMContentLoaded for http://52.54.244.138:8080/ArtemusChb/#/login
+1692967622431	Marionette	TRACE	[11] Received event pageshow for http://52.54.244.138:8080/ArtemusChb/#/login
+1692967622432	Marionette	DEBUG	0 <- [1,2,null,{"value":null}]
+1692967622438	webdriver::server	DEBUG	<- 200 OK {"value":null}
+1692967622441	webdriver::server	DEBUG	-> POST /session/c5addedc-5b11-4bb3-aa2a-a55c7b7f9e92/window/maximize {}
+1692967622453	Marionette	DEBUG	0 -> [0,3,"WebDriver:MaximizeWindow",{}]
+1692967622454	Marionette	DEBUG	0 <- [1,3,null,{"x":-6,"y":-6,"width":1354,"height":733}]
+1692967622460	webdriver::server	DEBUG	<- 200 OK {"value":{"x":-6,"y":-6,"width":1354,"height":733}}
+1692967622570	webdriver::server	DEBUG	-> POST /session/c5addedc-5b11-4bb3-aa2a-a55c7b7f9e92/element {"using": "css selector", "value": "[id=\"username\"]"}
+1692967622571	Marionette	DEBUG	0 -> [0,4,"WebDriver:FindElement",{"using":"css selector","value":"[id=\"username\"]"}]
+1692967622575	RemoteAgent	TRACE	WebDriverProcessData actor created for PID 9460
+1692967622576	Marionette	TRACE	[11] MarionetteCommands actor created for window id 6442450945
+1692967622581	Marionette	DEBUG	0 <- [1,4,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"b6f6e85f-288e-4b3e-885a-abebe887bc28"}}]
+1692967622581	webdriver::server	DEBUG	<- 200 OK {"value":{"element-6066-11e4-a52e-4f735466cecf":"b6f6e85f-288e-4b3e-885a-abebe887bc28"}}
+1692967622584	webdriver::server	DEBUG	-> POST /session/c5addedc-5b11-4bb3-aa2a-a55c7b7f9e92/execute/sync {"script": "/* isDisplayed */return (function(){return (fu ... ts);}\n).apply(null, arguments);", "args": [{"element-6066-11e4-a52e-4f735466cecf": "b6f6e85f-288e-4b3e-885a-abebe887bc28"}]}
+1692967622587	Marionette	DEBUG	0 -> [0,5,"WebDriver:ExecuteScript",{"args":[{"element-6066-11e4-a52e-4f735466cecf":"b6f6e85f-288e-4b3e-885a-abebe887bc28"}],"script":"/* isDisplayed */return (function(){return (function(){var k=this||self;function aa(a){return\"string\"==typeof a}function ba(a ... ined'?window.navigator:null,document:typeof window!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);"}]
+1692967622596	Marionette	DEBUG	0 <- [1,5,null,{"value":true}]
+1692967622596	webdriver::server	DEBUG	<- 200 OK {"value":true}
+1692967622597	webdriver::server	DEBUG	-> GET /session/c5addedc-5b11-4bb3-aa2a-a55c7b7f9e92/element/b6f6e85f-288e-4b3e-885a-abebe887bc28/enabled 
+1692967622598	Marionette	DEBUG	0 -> [0,6,"WebDriver:IsElementEnabled",{"id":"b6f6e85f-288e-4b3e-885a-abebe887bc28"}]
+1692967622619	Marionette	DEBUG	0 <- [1,6,null,{"value":true}]
+1692967622620	webdriver::server	DEBUG	<- 200 OK {"value":true}
+1692967622621	webdriver::server	DEBUG	-> POST /session/c5addedc-5b11-4bb3-aa2a-a55c7b7f9e92/element/b6f6e85f-288e-4b3e-885a-abebe887bc28/click {"id": "b6f6e85f-288e-4b3e-885a-abebe887bc28"}
+1692967622622	Marionette	DEBUG	0 -> [0,7,"WebDriver:ElementClick",{"id":"b6f6e85f-288e-4b3e-885a-abebe887bc28"}]
+1692967622635	Marionette	TRACE	Received DOM event click for [object HTMLInputElement]
+1692967622843	Marionette	TRACE	Canceled page load listener because no navigation has been detected
+1692967622844	Marionette	DEBUG	0 <- [1,7,null,{"value":null}]
+1692967622846	webdriver::server	DEBUG	<- 200 OK {"value":null}
+1692967622851	webdriver::server	DEBUG	-> POST /session/c5addedc-5b11-4bb3-aa2a-a55c7b7f9e92/element/b6f6e85f-288e-4b3e-885a-abebe887bc28/value {"text": "tnash", "value": ["t", "n", "a", "s", "h"], "id": "b6f6e85f-288e-4b3e-885a-abebe887bc28"}
+1692967622853	Marionette	DEBUG	0 -> [0,8,"WebDriver:ElementSendKeys",{"id":"b6f6e85f-288e-4b3e-885a-abebe887bc28","text":"tnash","value":["t","n","a","s","h"]}]
+1692967622897	Marionette	DEBUG	0 <- [1,8,null,{"value":null}]
+1692967622898	webdriver::server	DEBUG	<- 200 OK {"value":null}
+1692967622902	webdriver::server	DEBUG	-> POST /session/c5addedc-5b11-4bb3-aa2a-a55c7b7f9e92/element {"using": "css selector", "value": "[id=\"password\"]"}
+1692967622904	Marionette	DEBUG	0 -> [0,9,"WebDriver:FindElement",{"using":"css selector","value":"[id=\"password\"]"}]
+1692967622907	Marionette	DEBUG	0 <- [1,9,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"de96d42f-0460-4246-929e-3f7e585ae533"}}]
+1692967622908	webdriver::server	DEBUG	<- 200 OK {"value":{"element-6066-11e4-a52e-4f735466cecf":"de96d42f-0460-4246-929e-3f7e585ae533"}}
+1692967622918	webdriver::server	DEBUG	-> POST /session/c5addedc-5b11-4bb3-aa2a-a55c7b7f9e92/execute/sync {"script": "/* isDisplayed */return (function(){return (fu ... ts);}\n).apply(null, arguments);", "args": [{"element-6066-11e4-a52e-4f735466cecf": "de96d42f-0460-4246-929e-3f7e585ae533"}]}
+1692967622927	Marionette	DEBUG	0 -> [0,10,"WebDriver:ExecuteScript",{"args":[{"element-6066-11e4-a52e-4f735466cecf":"de96d42f-0460-4246-929e-3f7e585ae533"}],"script":"/* isDisplayed */return (function(){return (function(){var k=this||self;function aa(a){return\"string\"==typeof a}function ba(a ... ined'?window.navigator:null,document:typeof window!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);"}]
+1692967622958	Marionette	DEBUG	0 <- [1,10,null,{"value":true}]
+1692967622961	webdriver::server	DEBUG	<- 200 OK {"value":true}
+1692967622965	webdriver::server	DEBUG	-> GET /session/c5addedc-5b11-4bb3-aa2a-a55c7b7f9e92/element/de96d42f-0460-4246-929e-3f7e585ae533/enabled 
+1692967622970	Marionette	DEBUG	0 -> [0,11,"WebDriver:IsElementEnabled",{"id":"de96d42f-0460-4246-929e-3f7e585ae533"}]
+1692967622977	Marionette	DEBUG	0 <- [1,11,null,{"value":true}]
+1692967622979	webdriver::server	DEBUG	<- 200 OK {"value":true}
+1692967622983	webdriver::server	DEBUG	-> POST /session/c5addedc-5b11-4bb3-aa2a-a55c7b7f9e92/element/de96d42f-0460-4246-929e-3f7e585ae533/click {"id": "de96d42f-0460-4246-929e-3f7e585ae533"}
+1692967622986	Marionette	DEBUG	0 -> [0,12,"WebDriver:ElementClick",{"id":"de96d42f-0460-4246-929e-3f7e585ae533"}]
+1692967623016	Marionette	TRACE	Received DOM event click for [object HTMLInputElement]
+1692967623224	Marionette	TRACE	Canceled page load listener because no navigation has been detected
+1692967623224	Marionette	DEBUG	0 <- [1,12,null,{"value":null}]
+1692967623225	webdriver::server	DEBUG	<- 200 OK {"value":null}
+1692967623228	webdriver::server	DEBUG	-> POST /session/c5addedc-5b11-4bb3-aa2a-a55c7b7f9e92/element/de96d42f-0460-4246-929e-3f7e585ae533/value {"text": "tnash1", "value": ["t", "n", "a", "s", "h", "1"], "id": "de96d42f-0460-4246-929e-3f7e585ae533"}
+1692967623229	Marionette	DEBUG	0 -> [0,13,"WebDriver:ElementSendKeys",{"id":"de96d42f-0460-4246-929e-3f7e585ae533","text":"tnash1","value":["t","n","a","s","h","1"]}]
+1692967623257	Marionette	DEBUG	0 <- [1,13,null,{"value":null}]
+1692967623258	webdriver::server	DEBUG	<- 200 OK {"value":null}
+1692967623262	webdriver::server	DEBUG	-> POST /session/c5addedc-5b11-4bb3-aa2a-a55c7b7f9e92/element {"using": "xpath", "value": "//*[@id=\"background\"]/div/div/div/div/div/form/button"}
+1692967623265	Marionette	DEBUG	0 -> [0,14,"WebDriver:FindElement",{"using":"xpath","value":"//*[@id=\"background\"]/div/div/div/div/div/form/button"}]
+1692967623270	Marionette	DEBUG	0 <- [1,14,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"73cde65e-5c33-45fe-a1cf-848a0912b64a"}}]
+1692967623271	webdriver::server	DEBUG	<- 200 OK {"value":{"element-6066-11e4-a52e-4f735466cecf":"73cde65e-5c33-45fe-a1cf-848a0912b64a"}}
+1692967623276	webdriver::server	DEBUG	-> POST /session/c5addedc-5b11-4bb3-aa2a-a55c7b7f9e92/element/73cde65e-5c33-45fe-a1cf-848a0912b64a/click {"id": "73cde65e-5c33-45fe-a1cf-848a0912b64a"}
+1692967623277	Marionette	DEBUG	0 -> [0,15,"WebDriver:ElementClick",{"id":"73cde65e-5c33-45fe-a1cf-848a0912b64a"}]
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://52.54.244.138:8080."
+1692967623312	Marionette	TRACE	Received DOM event click for [object HTMLButtonElement]
+1692967623533	Marionette	TRACE	Canceled page load listener because no navigation has been detected
+1692967623534	Marionette	DEBUG	0 <- [1,15,null,{"value":null}]
+1692967623536	webdriver::server	DEBUG	<- 200 OK {"value":null}
+1692967627540	webdriver::server	DEBUG	-> POST /session/c5addedc-5b11-4bb3-aa2a-a55c7b7f9e92/element {"using": "link text", "value": "Shipments"}
+1692967627542	Marionette	DEBUG	0 -> [0,16,"WebDriver:FindElement",{"using":"link text","value":"Shipments"}]
+1692967627567	Marionette	DEBUG	0 <- [1,16,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"920b4c85-87c2-49c0-b54b-b3f8990cde1a"}}]
+1692967627567	webdriver::server	DEBUG	<- 200 OK {"value":{"element-6066-11e4-a52e-4f735466cecf":"920b4c85-87c2-49c0-b54b-b3f8990cde1a"}}
+1692967627573	webdriver::server	DEBUG	-> POST /session/c5addedc-5b11-4bb3-aa2a-a55c7b7f9e92/execute/sync {"script": "/* isDisplayed */return (function(){return (fu ... ts);}\n).apply(null, arguments);", "args": [{"element-6066-11e4-a52e-4f735466cecf": "920b4c85-87c2-49c0-b54b-b3f8990cde1a"}]}
+1692967627577	Marionette	DEBUG	0 -> [0,17,"WebDriver:ExecuteScript",{"args":[{"element-6066-11e4-a52e-4f735466cecf":"920b4c85-87c2-49c0-b54b-b3f8990cde1a"}],"script":"/* isDisplayed */return (function(){return (function(){var k=this||self;function aa(a){return\"string\"==typeof a}function ba(a ... ined'?window.navigator:null,document:typeof window!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);"}]
+1692967627593	Marionette	DEBUG	0 <- [1,17,null,{"value":true}]
+1692967627594	webdriver::server	DEBUG	<- 200 OK {"value":true}
+1692967627595	webdriver::server	DEBUG	-> GET /session/c5addedc-5b11-4bb3-aa2a-a55c7b7f9e92/element/920b4c85-87c2-49c0-b54b-b3f8990cde1a/enabled 
+1692967627596	Marionette	DEBUG	0 -> [0,18,"WebDriver:IsElementEnabled",{"id":"920b4c85-87c2-49c0-b54b-b3f8990cde1a"}]
+1692967627598	Marionette	DEBUG	0 <- [1,18,null,{"value":true}]
+1692967627599	webdriver::server	DEBUG	<- 200 OK {"value":true}
+1692967627600	webdriver::server	DEBUG	-> POST /session/c5addedc-5b11-4bb3-aa2a-a55c7b7f9e92/element/920b4c85-87c2-49c0-b54b-b3f8990cde1a/click {"id": "920b4c85-87c2-49c0-b54b-b3f8990cde1a"}
+1692967627601	Marionette	DEBUG	0 -> [0,19,"WebDriver:ElementClick",{"id":"920b4c85-87c2-49c0-b54b-b3f8990cde1a"}]
+1692967627645	Marionette	TRACE	Received DOM event click for http://52.54.244.138:8080/ArtemusChb/#/userHome/shipments
+1692967627852	Marionette	TRACE	Canceled page load listener because no navigation has been detected
+1692967627852	Marionette	DEBUG	0 <- [1,19,null,{"value":null}]
+1692967627853	webdriver::server	DEBUG	<- 200 OK {"value":null}
+1692967629856	webdriver::server	DEBUG	-> POST /session/c5addedc-5b11-4bb3-aa2a-a55c7b7f9e92/element {"using": "link text", "value": "Form 7501"}
+1692967629858	Marionette	DEBUG	0 -> [0,20,"WebDriver:FindElement",{"using":"link text","value":"Form 7501"}]
+1692967629920	Marionette	DEBUG	0 <- [1,20,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"b2bc7043-56f0-4cd8-b01f-f496b8b77730"}}]
+1692967629921	webdriver::server	DEBUG	<- 200 OK {"value":{"element-6066-11e4-a52e-4f735466cecf":"b2bc7043-56f0-4cd8-b01f-f496b8b77730"}}
+1692967629926	webdriver::server	DEBUG	-> POST /session/c5addedc-5b11-4bb3-aa2a-a55c7b7f9e92/execute/sync {"script": "/* isDisplayed */return (function(){return (fu ... ts);}\n).apply(null, arguments);", "args": [{"element-6066-11e4-a52e-4f735466cecf": "b2bc7043-56f0-4cd8-b01f-f496b8b77730"}]}
+1692967629930	Marionette	DEBUG	0 -> [0,21,"WebDriver:ExecuteScript",{"args":[{"element-6066-11e4-a52e-4f735466cecf":"b2bc7043-56f0-4cd8-b01f-f496b8b77730"}],"script":"/* isDisplayed */return (function(){return (function(){var k=this||self;function aa(a){return\"string\"==typeof a}function ba(a ... ined'?window.navigator:null,document:typeof window!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);"}]
+1692967629945	Marionette	DEBUG	0 <- [1,21,null,{"value":true}]
+1692967629946	webdriver::server	DEBUG	<- 200 OK {"value":true}
+1692967629948	webdriver::server	DEBUG	-> GET /session/c5addedc-5b11-4bb3-aa2a-a55c7b7f9e92/element/b2bc7043-56f0-4cd8-b01f-f496b8b77730/enabled 
+1692967629949	Marionette	DEBUG	0 -> [0,22,"WebDriver:IsElementEnabled",{"id":"b2bc7043-56f0-4cd8-b01f-f496b8b77730"}]
+1692967629951	Marionette	DEBUG	0 <- [1,22,null,{"value":true}]
+1692967629951	webdriver::server	DEBUG	<- 200 OK {"value":true}
+1692967629953	webdriver::server	DEBUG	-> POST /session/c5addedc-5b11-4bb3-aa2a-a55c7b7f9e92/element/b2bc7043-56f0-4cd8-b01f-f496b8b77730/click {"id": "b2bc7043-56f0-4cd8-b01f-f496b8b77730"}
+1692967629954	Marionette	DEBUG	0 -> [0,23,"WebDriver:ElementClick",{"id":"b2bc7043-56f0-4cd8-b01f-f496b8b77730"}]
+1692967630129	Marionette	TRACE	Received DOM event click for [object HTMLDivElement]
+1692967630419	Marionette	TRACE	Canceled page load listener because no navigation has been detected
+1692967630420	Marionette	DEBUG	0 <- [1,23,null,{"value":null}]
+1692967630421	webdriver::server	DEBUG	<- 200 OK {"value":null}
+1692967631424	webdriver::server	DEBUG	-> POST /session/c5addedc-5b11-4bb3-aa2a-a55c7b7f9e92/element {"using": "xpath", "value": "//button[contains(text(),'Save')]"}
+1692967631429	Marionette	DEBUG	0 -> [0,24,"WebDriver:FindElement",{"using":"xpath","value":"//button[contains(text(),'Save')]"}]
+1692967631435	Marionette	DEBUG	0 <- [1,24,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"78769a6d-b0fe-4ae7-b426-b5823f5d30a8"}}]
+1692967631435	webdriver::server	DEBUG	<- 200 OK {"value":{"element-6066-11e4-a52e-4f735466cecf":"78769a6d-b0fe-4ae7-b426-b5823f5d30a8"}}
+1692967631438	webdriver::server	DEBUG	-> POST /session/c5addedc-5b11-4bb3-aa2a-a55c7b7f9e92/execute/sync {"script": "/* isDisplayed */return (function(){return (fu ... ts);}\n).apply(null, arguments);", "args": [{"element-6066-11e4-a52e-4f735466cecf": "78769a6d-b0fe-4ae7-b426-b5823f5d30a8"}]}
+1692967631441	Marionette	DEBUG	0 -> [0,25,"WebDriver:ExecuteScript",{"args":[{"element-6066-11e4-a52e-4f735466cecf":"78769a6d-b0fe-4ae7-b426-b5823f5d30a8"}],"script":"/* isDisplayed */return (function(){return (function(){var k=this||self;function aa(a){return\"string\"==typeof a}function ba(a ... ined'?window.navigator:null,document:typeof window!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);"}]
+1692967631451	Marionette	DEBUG	0 <- [1,25,null,{"value":true}]
+1692967631451	webdriver::server	DEBUG	<- 200 OK {"value":true}
+1692967631452	webdriver::server	DEBUG	-> GET /session/c5addedc-5b11-4bb3-aa2a-a55c7b7f9e92/element/78769a6d-b0fe-4ae7-b426-b5823f5d30a8/enabled 
+1692967631453	Marionette	DEBUG	0 -> [0,26,"WebDriver:IsElementEnabled",{"id":"78769a6d-b0fe-4ae7-b426-b5823f5d30a8"}]
+1692967631458	Marionette	DEBUG	0 <- [1,26,null,{"value":true}]
+1692967631458	webdriver::server	DEBUG	<- 200 OK {"value":true}
+1692967631459	webdriver::server	DEBUG	-> POST /session/c5addedc-5b11-4bb3-aa2a-a55c7b7f9e92/element/78769a6d-b0fe-4ae7-b426-b5823f5d30a8/click {"id": "78769a6d-b0fe-4ae7-b426-b5823f5d30a8"}
+1692967631460	Marionette	DEBUG	0 -> [0,27,"WebDriver:ElementClick",{"id":"78769a6d-b0fe-4ae7-b426-b5823f5d30a8"}]
+1692967631489	Marionette	TRACE	Received DOM event click for [object HTMLButtonElement]
+1692967631732	Marionette	TRACE	Canceled page load listener because no navigation has been detected
+1692967631733	Marionette	DEBUG	0 <- [1,27,null,{"value":null}]
+1692967631735	webdriver::server	DEBUG	<- 200 OK {"value":null}
+1692967633738	webdriver::server	DEBUG	-> POST /session/c5addedc-5b11-4bb3-aa2a-a55c7b7f9e92/element {"using": "tag name", "value": "body"}
+1692967633739	Marionette	DEBUG	0 -> [0,28,"WebDriver:FindElement",{"using":"tag name","value":"body"}]
+1692967633748	Marionette	DEBUG	0 <- [1,28,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"800717b4-5f6b-46fe-a4d7-299043c19c7a"}}]
+1692967633749	webdriver::server	DEBUG	<- 200 OK {"value":{"element-6066-11e4-a52e-4f735466cecf":"800717b4-5f6b-46fe-a4d7-299043c19c7a"}}
+1692967633750	webdriver::server	DEBUG	-> GET /session/c5addedc-5b11-4bb3-aa2a-a55c7b7f9e92/element/800717b4-5f6b-46fe-a4d7-299043c19c7a/text 
+1692967633750	Marionette	DEBUG	0 -> [0,29,"WebDriver:GetElementText",{"id":"800717b4-5f6b-46fe-a4d7-299043c19c7a"}]
+1692967640428	Marionette	DEBUG	0 <- [1,29,null,{"value":"Welcome, tnash  \nLogout\nAdmin\nQueries\nShipments\nParties\nParts\nStatements\nImporter\nISF\n5106\nReports\nInvoices\nForm 7512\nAll\nFor ... SEB Bond:\neBond/STB\nInvoice Date:\nDocs Received Date:\nSEB Bond Amount:\nRelease Date:\nPSC Indicator\n!\nEnter Invoice Number!\nOK"}]
+1692967640429	webdriver::server	DEBUG	<- 200 OK {"value":"Welcome, tnash  \nLogout\nAdmin\nQueries\nShipments\nParties\nParts\nStatements\nImporter\nISF\n5106\nRep ... eBond/STB\nInvoice Date:\nDocs Received Date:\nSEB Bond Amount:\nRelease Date:\nPSC Indicator\n!\nEnter Invoice Number!\nOK"}
+1692967640430	webdriver::server	DEBUG	-> POST /session/c5addedc-5b11-4bb3-aa2a-a55c7b7f9e92/element {"using": "xpath", "value": "//button[normalize-space()='OK']"}
+1692967640430	Marionette	DEBUG	0 -> [0,30,"WebDriver:FindElement",{"using":"xpath","value":"//button[normalize-space()='OK']"}]
+1692967640439	Marionette	DEBUG	0 <- [1,30,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"b71143ea-73b8-4994-bcf7-5ff746e5422d"}}]
+1692967640440	webdriver::server	DEBUG	<- 200 OK {"value":{"element-6066-11e4-a52e-4f735466cecf":"b71143ea-73b8-4994-bcf7-5ff746e5422d"}}
+1692967640441	webdriver::server	DEBUG	-> POST /session/c5addedc-5b11-4bb3-aa2a-a55c7b7f9e92/element/b71143ea-73b8-4994-bcf7-5ff746e5422d/click {"id": "b71143ea-73b8-4994-bcf7-5ff746e5422d"}
+1692967640441	Marionette	DEBUG	0 -> [0,31,"WebDriver:ElementClick",{"id":"b71143ea-73b8-4994-bcf7-5ff746e5422d"}]
+1692967640470	Marionette	TRACE	Received DOM event click for [object HTMLButtonElement]
+1692967640682	Marionette	TRACE	Canceled page load listener because no navigation has been detected
+1692967640682	Marionette	DEBUG	0 <- [1,31,null,{"value":null}]
+1692967640682	webdriver::server	DEBUG	<- 200 OK {"value":null}
+1692967642684	webdriver::server	DEBUG	-> POST /session/c5addedc-5b11-4bb3-aa2a-a55c7b7f9e92/element {"using": "xpath", "value": "//a[normalize-space()='Logout']"}
+1692967642685	Marionette	DEBUG	0 -> [0,32,"WebDriver:FindElement",{"using":"xpath","value":"//a[normalize-space()='Logout']"}]
+1692967642690	Marionette	DEBUG	0 <- [1,32,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"cf2768db-6df3-43fa-ade0-734a77efd6da"}}]
+1692967642691	webdriver::server	DEBUG	<- 200 OK {"value":{"element-6066-11e4-a52e-4f735466cecf":"cf2768db-6df3-43fa-ade0-734a77efd6da"}}
+1692967642692	webdriver::server	DEBUG	-> POST /session/c5addedc-5b11-4bb3-aa2a-a55c7b7f9e92/element/cf2768db-6df3-43fa-ade0-734a77efd6da/click {"id": "cf2768db-6df3-43fa-ade0-734a77efd6da"}
+1692967642692	Marionette	DEBUG	0 -> [0,33,"WebDriver:ElementClick",{"id":"cf2768db-6df3-43fa-ade0-734a77efd6da"}]
+1692967642728	Marionette	TRACE	Received DOM event click for 
+1692967642935	Marionette	TRACE	Canceled page load listener because no navigation has been detected
+1692967642935	Marionette	DEBUG	0 <- [1,33,null,{"value":null}]
+1692967642935	webdriver::server	DEBUG	<- 200 OK {"value":null}
+1692967642938	webdriver::server	DEBUG	-> DELETE /session/c5addedc-5b11-4bb3-aa2a-a55c7b7f9e92/window 
+1692967642938	Marionette	DEBUG	0 -> [0,34,"WebDriver:CloseWindow",{}]
+1692967642938	Marionette	DEBUG	0 <- [1,34,null,[]]
+1692967642939	webdriver::server	DEBUG	Last window was closed, deleting session
+1692967642939	webdriver::server	DEBUG	Teardown session
+1692967642939	Marionette	DEBUG	0 -> [0,35,"Marionette:Quit",{"flags":["eForceQuit"]}]
+1692967642940	Marionette	INFO	Stopped listening on port 65462
+1692967642941	Marionette	TRACE	[11] MarionetteCommands actor destroyed for window id 6442450945
+1692967643690	Marionette	TRACE	Received observer notification quit-application
+1692967643692	Marionette	TRACE	Received observer notification quit-application
+1692967643692	RemoteAgent	DEBUG	Resetting recommended pref apz.content_response_timeout
+1692967643693	RemoteAgent	DEBUG	Resetting recommended pref browser.contentblocking.introCount
+1692967643693	RemoteAgent	DEBUG	Resetting recommended pref browser.download.panel.shown
+1692967643693	RemoteAgent	DEBUG	Resetting recommended pref browser.newtabpage.enabled
+1692967643694	RemoteAgent	DEBUG	Resetting recommended pref browser.pagethumbnails.capturing_disabled
+1692967643695	RemoteAgent	DEBUG	Resetting recommended pref browser.search.update
+1692967643695	RemoteAgent	DEBUG	Resetting recommended pref browser.startup.couldRestoreSession.count
+1692967643695	RemoteAgent	DEBUG	Resetting recommended pref browser.tabs.closeWindowWithLastTab
+1692967643695	RemoteAgent	DEBUG	Resetting recommended pref browser.tabs.unloadOnLowMemory
+1692967643695	RemoteAgent	DEBUG	Resetting recommended pref browser.tabs.warnOnClose
+1692967643695	RemoteAgent	DEBUG	Resetting recommended pref browser.tabs.warnOnCloseOtherTabs
+1692967643695	RemoteAgent	DEBUG	Resetting recommended pref browser.tabs.warnOnOpen
+1692967643696	RemoteAgent	DEBUG	Resetting recommended pref browser.toolbars.bookmarks.visibility
+1692967643696	RemoteAgent	DEBUG	Resetting recommended pref browser.topsites.contile.enabled
+1692967643696	RemoteAgent	DEBUG	Resetting recommended pref browser.usedOnWindows10.introURL
+1692967643697	RemoteAgent	DEBUG	Resetting recommended pref browser.urlbar.merino.endpointURL
+1692967643704	RemoteAgent	DEBUG	Resetting recommended pref browser.urlbar.suggest.searches
+1692967643706	RemoteAgent	DEBUG	Resetting recommended pref datareporting.policy.dataSubmissionPolicyAccepted
+1692967643706	RemoteAgent	DEBUG	Resetting recommended pref dom.disable_open_during_load
+1692967643706	RemoteAgent	DEBUG	Resetting recommended pref dom.file.createInChild
+1692967643707	RemoteAgent	DEBUG	Resetting recommended pref dom.max_chrome_script_run_time
+1692967643707	RemoteAgent	DEBUG	Resetting recommended pref dom.max_script_run_time
+1692967643709	RemoteAgent	DEBUG	Resetting recommended pref dom.navigation.locationChangeRateLimit.count
+1692967643709	RemoteAgent	DEBUG	Resetting recommended pref dom.push.connection.enabled
+1692967643709	RemoteAgent	DEBUG	Resetting recommended pref dom.screenorientation.allow-lock
+1692967643710	RemoteAgent	DEBUG	Resetting recommended pref dom.successive_dialog_time_limit
+1692967643710	RemoteAgent	DEBUG	Resetting recommended pref extensions.getAddons.cache.enabled
+1692967643710	RemoteAgent	DEBUG	Resetting recommended pref extensions.getAddons.discovery.api_url
+1692967643710	RemoteAgent	DEBUG	Resetting recommended pref network.http.phishy-userpass-length
+1692967643710	RemoteAgent	DEBUG	Resetting recommended pref network.http.prompt-temp-redirect
+1692967643710	RemoteAgent	DEBUG	Resetting recommended pref privacy.trackingprotection.enabled
+1692967643711	RemoteAgent	DEBUG	Resetting recommended pref security.fileuri.strict_origin_policy
+1692967643711	RemoteAgent	DEBUG	Resetting recommended pref security.notification_enable_delay
+1692967643712	RemoteAgent	DEBUG	Resetting recommended pref signon.autofillForms
+1692967643713	RemoteAgent	DEBUG	Resetting recommended pref signon.rememberSignons
+1692967643715	RemoteAgent	DEBUG	Resetting recommended pref widget.windows.window_occlusion_tracking.enabled
+Dynamically enable window occlusion 1
+1692967643719	RemoteAgent	DEBUG	Resetting recommended pref dom.disable_beforeunload
+1692967643721	RemoteAgent	DEBUG	Resetting recommended pref browser.contentblocking.features.standard
+1692967643722	RemoteAgent	DEBUG	Resetting recommended pref network.cookie.cookieBehavior
+1692967643724	RemoteAgent	TRACE	Received observer notification quit-application
+1692967643727	Marionette	DEBUG	Marionette stopped listening
+1692967643728	Marionette	DEBUG	0 <- [1,35,null,{"cause":"shutdown","forced":false,"in_app":true}]
+1692967643756	RemoteAgent	DEBUG	Resetting recommended pref browser.contentblocking.features.standard
+1692967643756	RemoteAgent	DEBUG	Resetting recommended pref network.cookie.cookieBehavior
+[Parent 4752, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 19300, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+1692967643774	Marionette	DEBUG	Closed connection 0
+[Parent 4752, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 19300, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 4752, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 19300, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 4752, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 19300, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+1692967644089	geckodriver::browser	DEBUG	Browser process stopped: exit code: 0
+1692967645226	webdriver::server	DEBUG	<- 200 OK {"value":[]}
+1692967646071	geckodriver	INFO	Listening on 127.0.0.1:49160
+1692967649109	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "49161" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Admin\\AppData\\Local\\Temp\\rust_mozprofileVmRgyR"
+1692967649117	geckodriver::marionette	DEBUG	Waiting 60s to connect to browser on 127.0.0.1
+1692967649117	geckodriver::browser	TRACE	Failed to open C:\Users\Admin\AppData\Local\Temp\rust_mozprofileVmRgyR\MarionetteActivePort
+1692967649117	geckodriver::marionette	TRACE	Retrying in 100ms
+1692967649223	geckodriver::browser	TRACE	Failed to open C:\Users\Admin\AppData\Local\Temp\rust_mozprofileVmRgyR\MarionetteActivePort
+1692967649223	geckodriver::marionette	TRACE	Retrying in 100ms
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1692967649338	geckodriver::browser	TRACE	Failed to open C:\Users\Admin\AppData\Local\Temp\rust_mozprofileVmRgyR\MarionetteActivePort
+1692967649338	geckodriver::marionette	TRACE	Retrying in 100ms
+1692967649445	geckodriver::browser	TRACE	Failed to open C:\Users\Admin\AppData\Local\Temp\rust_mozprofileVmRgyR\MarionetteActivePort
+1692967649445	geckodriver::marionette	TRACE	Retrying in 100ms
+1692967649526	RemoteAgent	DEBUG	WebDriver BiDi enabled
+1692967649526	RemoteAgent	DEBUG	CDP enabled
+1692967649527	Marionette	INFO	Marionette enabled
+1692967649528	RemoteAgent	DEBUG	Setting recommended pref apz.content_response_timeout to 60000
+1692967649528	RemoteAgent	DEBUG	Setting recommended pref browser.contentblocking.introCount to 99
+1692967649528	RemoteAgent	DEBUG	Setting recommended pref browser.download.panel.shown to true
+1692967649528	RemoteAgent	DEBUG	Setting recommended pref browser.newtabpage.enabled to false
+1692967649528	RemoteAgent	DEBUG	Setting recommended pref browser.pagethumbnails.capturing_disabled to true
+1692967649528	RemoteAgent	DEBUG	Setting recommended pref browser.search.update to false
+1692967649528	RemoteAgent	DEBUG	Setting recommended pref browser.startup.couldRestoreSession.count to -1
+1692967649528	RemoteAgent	DEBUG	Setting recommended pref browser.tabs.closeWindowWithLastTab to false
+1692967649528	RemoteAgent	DEBUG	Setting recommended pref browser.tabs.unloadOnLowMemory to false
+1692967649529	RemoteAgent	DEBUG	Setting recommended pref browser.tabs.warnOnClose to false
+1692967649529	RemoteAgent	DEBUG	Setting recommended pref browser.tabs.warnOnCloseOtherTabs to false
+1692967649529	RemoteAgent	DEBUG	Setting recommended pref browser.tabs.warnOnOpen to false
+1692967649529	RemoteAgent	DEBUG	Setting recommended pref browser.toolbars.bookmarks.visibility to never
+1692967649529	RemoteAgent	DEBUG	Setting recommended pref browser.topsites.contile.enabled to false
+1692967649529	RemoteAgent	DEBUG	Setting recommended pref browser.usedOnWindows10.introURL to 
+1692967649529	RemoteAgent	DEBUG	Setting recommended pref browser.urlbar.merino.endpointURL to 
+1692967649529	RemoteAgent	DEBUG	Setting recommended pref browser.urlbar.suggest.searches to false
+1692967649529	RemoteAgent	DEBUG	Setting recommended pref datareporting.policy.dataSubmissionPolicyAccepted to false
+1692967649529	RemoteAgent	DEBUG	Setting recommended pref dom.disable_open_during_load to false
+1692967649529	RemoteAgent	DEBUG	Setting recommended pref dom.file.createInChild to true
+1692967649529	RemoteAgent	DEBUG	Setting recommended pref dom.max_chrome_script_run_time to 0
+1692967649529	RemoteAgent	DEBUG	Setting recommended pref dom.max_script_run_time to 0
+1692967649529	RemoteAgent	DEBUG	Setting recommended pref dom.navigation.locationChangeRateLimit.count to 0
+1692967649529	RemoteAgent	DEBUG	Setting recommended pref dom.push.connection.enabled to false
+1692967649529	RemoteAgent	DEBUG	Setting recommended pref dom.screenorientation.allow-lock to true
+1692967649529	RemoteAgent	DEBUG	Setting recommended pref dom.successive_dialog_time_limit to 0
+1692967649529	RemoteAgent	DEBUG	Setting recommended pref extensions.getAddons.cache.enabled to false
+1692967649529	RemoteAgent	DEBUG	Setting recommended pref extensions.getAddons.discovery.api_url to data:, 
+1692967649529	RemoteAgent	DEBUG	Setting recommended pref network.http.phishy-userpass-length to 255
+1692967649529	RemoteAgent	DEBUG	Setting recommended pref network.http.prompt-temp-redirect to false
+1692967649529	RemoteAgent	DEBUG	Setting recommended pref privacy.trackingprotection.enabled to false
+1692967649529	RemoteAgent	DEBUG	Setting recommended pref security.fileuri.strict_origin_policy to false
+1692967649529	RemoteAgent	DEBUG	Setting recommended pref security.notification_enable_delay to 0
+1692967649529	RemoteAgent	DEBUG	Setting recommended pref signon.autofillForms to false
+1692967649529	RemoteAgent	DEBUG	Setting recommended pref signon.rememberSignons to false
+1692967649529	RemoteAgent	DEBUG	Setting recommended pref widget.windows.window_occlusion_tracking.enabled to false
+Dynamically enable window occlusion 0
+1692967649530	RemoteAgent	DEBUG	Setting recommended pref dom.disable_beforeunload to true
+1692967649531	Marionette	TRACE	Received observer notification final-ui-startup
+1692967649532	RemoteAgent	TRACE	Received observer notification final-ui-startup
+1692967649558	geckodriver::browser	TRACE	Failed to open C:\Users\Admin\AppData\Local\Temp\rust_mozprofileVmRgyR\MarionetteActivePort
+1692967649558	geckodriver::marionette	TRACE	Retrying in 100ms
+1692967649655	Marionette	INFO	Listening on port 49171
+1692967649657	Marionette	DEBUG	Marionette is listening
+1692967649663	RemoteAgent	TRACE	Available local IP addresses: 127.0.0.1, [::1]
+WebDriver BiDi listening on ws://127.0.0.1:49161
+1692967649672	RemoteAgent	DEBUG	Setting recommended pref browser.contentblocking.features.standard to -tp,tpPrivate,cookieBehavior0,-cm,-fp
+1692967649673	RemoteAgent	DEBUG	Setting recommended pref network.cookie.cookieBehavior to 0
+1692967649676	CDP	DEBUG	Waiting for initial application window
+Read port: 49171
+1692967649701	Marionette	DEBUG	Accepted connection 0 from 127.0.0.1:49172
+1692967649704	geckodriver::marionette	DEBUG	Connection to Marionette established on 127.0.0.1:49171.
+1692967649736	Marionette	DEBUG	0 -> [0,1,"WebDriver:NewSession",{"acceptInsecureCerts":true,"browserName":"firefox","pageLoadStrategy":"normal"}]
+1692967649739	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1692967649761	Marionette	DEBUG	Waiting for initial application window
+1692967652082	Marionette	TRACE	Received observer notification browser-idle-startup-tasks-finished
+1692967652082	RemoteAgent	TRACE	Received observer notification browser-idle-startup-tasks-finished
+1692967652091	RemoteAgent	TRACE	[8] ProgressListener Start: expectNavigation=false resolveWhenStarted=false unloadTimeout=5000 waitForExplicitStart=false
+1692967652091	RemoteAgent	TRACE	[8] ProgressListener Setting unload timer (5000ms)
+1692967652091	RemoteAgent	TRACE	[8] Document already finished loading: about:blank
+1692967652091	RemoteAgent	TRACE	[8] ProgressListener Stop: has error=false
+DevTools listening on ws://127.0.0.1:49161/devtools/browser/42bee7ec-7e0b-4de8-9579-1a9648938ae0
+1692967652102	Marionette	DEBUG	0 <- [1,1,null,{"sessionId":"f2b7c2be-40af-4480-8189-0bce797ae2c2","capabilities":{"browserName":"firefox","browserVersion":"116.0.3","platformName":"windows","acceptInsecureCerts":true,"pageLoadStrategy":"normal","setWindowRect":true,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"strictFileInteractability":false,"unhandledPromptBehavior":"dismiss and notify","moz:accessibilityChecks":false,"moz:buildID":"20230815173142","moz:debuggerAddress":"127.0.0.1:49161","moz:headless":false,"moz:platformVersion":"10.0","moz:processID":2388,"moz:profile":"C:\\Users\\Admin\\AppData\\Local\\Temp\\rust_mozprofileVmRgyR","moz:shutdownTimeout":60000,"moz:webdriverClick":true,"moz:windowless":false,"proxy":{}}}]
+1692967652106	webdriver::server	DEBUG	<- 200 OK {"value":{"sessionId":"f2b7c2be-40af-4480-8189-0bce797ae2c2","capabilities":{"acceptInsecureCerts":true,"browserNam ... ctability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify"}}}
+1692967652108	webdriver::server	DEBUG	-> POST /session/f2b7c2be-40af-4480-8189-0bce797ae2c2/url {"url": "http://52.54.244.138:8080/ArtemusChb/"}
+1692967652109	Marionette	DEBUG	0 -> [0,2,"WebDriver:Navigate",{"url":"http://52.54.244.138:8080/ArtemusChb/"}]
+1692967652114	Marionette	TRACE	[8] Received event beforeunload for about:blank
+1692967652637	Marionette	TRACE	Remoteness change detected. Set new top-level browsing context to 11
+1692967652642	Marionette	TRACE	[11] Received event beforeunload for about:blank
+1692967652644	Marionette	TRACE	[11] Received event pagehide for about:blank
+[Parent 2388, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 14564, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+1692967668375	Marionette	TRACE	[11] Received event DOMContentLoaded for http://52.54.244.138:8080/ArtemusChb/#/login
+1692967668560	Marionette	TRACE	[11] Received event pageshow for http://52.54.244.138:8080/ArtemusChb/#/login
+1692967668560	Marionette	DEBUG	0 <- [1,2,null,{"value":null}]
+1692967668565	webdriver::server	DEBUG	<- 200 OK {"value":null}
+1692967668567	webdriver::server	DEBUG	-> POST /session/f2b7c2be-40af-4480-8189-0bce797ae2c2/window/maximize {}
+1692967668578	Marionette	DEBUG	0 -> [0,3,"WebDriver:MaximizeWindow",{}]
+1692967668579	Marionette	DEBUG	0 <- [1,3,null,{"x":-6,"y":-6,"width":1354,"height":733}]
+1692967668585	webdriver::server	DEBUG	<- 200 OK {"value":{"x":-6,"y":-6,"width":1354,"height":733}}
+1692967668686	webdriver::server	DEBUG	-> POST /session/f2b7c2be-40af-4480-8189-0bce797ae2c2/element {"using": "css selector", "value": "[id=\"username\"]"}
+1692967668687	Marionette	DEBUG	0 -> [0,4,"WebDriver:FindElement",{"using":"css selector","value":"[id=\"username\"]"}]
+1692967668691	RemoteAgent	TRACE	WebDriverProcessData actor created for PID 20452
+1692967668691	Marionette	TRACE	[11] MarionetteCommands actor created for window id 6442450945
+1692967668697	Marionette	DEBUG	0 <- [1,4,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"05d49f7c-49ab-42b8-84d2-3f6b024b9e77"}}]
+1692967668697	webdriver::server	DEBUG	<- 200 OK {"value":{"element-6066-11e4-a52e-4f735466cecf":"05d49f7c-49ab-42b8-84d2-3f6b024b9e77"}}
+1692967668700	webdriver::server	DEBUG	-> POST /session/f2b7c2be-40af-4480-8189-0bce797ae2c2/execute/sync {"script": "/* isDisplayed */return (function(){return (fu ... ts);}\n).apply(null, arguments);", "args": [{"element-6066-11e4-a52e-4f735466cecf": "05d49f7c-49ab-42b8-84d2-3f6b024b9e77"}]}
+1692967668702	Marionette	DEBUG	0 -> [0,5,"WebDriver:ExecuteScript",{"args":[{"element-6066-11e4-a52e-4f735466cecf":"05d49f7c-49ab-42b8-84d2-3f6b024b9e77"}],"script":"/* isDisplayed */return (function(){return (function(){var k=this||self;function aa(a){return\"string\"==typeof a}function ba(a ... ined'?window.navigator:null,document:typeof window!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);"}]
+1692967668710	Marionette	DEBUG	0 <- [1,5,null,{"value":true}]
+1692967668710	webdriver::server	DEBUG	<- 200 OK {"value":true}
+1692967668711	webdriver::server	DEBUG	-> GET /session/f2b7c2be-40af-4480-8189-0bce797ae2c2/element/05d49f7c-49ab-42b8-84d2-3f6b024b9e77/enabled 
+1692967668712	Marionette	DEBUG	0 -> [0,6,"WebDriver:IsElementEnabled",{"id":"05d49f7c-49ab-42b8-84d2-3f6b024b9e77"}]
+1692967668731	Marionette	DEBUG	0 <- [1,6,null,{"value":true}]
+1692967668732	webdriver::server	DEBUG	<- 200 OK {"value":true}
+1692967668734	webdriver::server	DEBUG	-> POST /session/f2b7c2be-40af-4480-8189-0bce797ae2c2/element/05d49f7c-49ab-42b8-84d2-3f6b024b9e77/click {"id": "05d49f7c-49ab-42b8-84d2-3f6b024b9e77"}
+1692967668735	Marionette	DEBUG	0 -> [0,7,"WebDriver:ElementClick",{"id":"05d49f7c-49ab-42b8-84d2-3f6b024b9e77"}]
+1692967668759	Marionette	TRACE	Received DOM event click for [object HTMLInputElement]
+1692967668965	Marionette	TRACE	Canceled page load listener because no navigation has been detected
+1692967668965	Marionette	DEBUG	0 <- [1,7,null,{"value":null}]
+1692967668966	webdriver::server	DEBUG	<- 200 OK {"value":null}
+1692967668969	webdriver::server	DEBUG	-> POST /session/f2b7c2be-40af-4480-8189-0bce797ae2c2/element/05d49f7c-49ab-42b8-84d2-3f6b024b9e77/value {"text": "tnash", "value": ["t", "n", "a", "s", "h"], "id": "05d49f7c-49ab-42b8-84d2-3f6b024b9e77"}
+1692967668970	Marionette	DEBUG	0 -> [0,8,"WebDriver:ElementSendKeys",{"id":"05d49f7c-49ab-42b8-84d2-3f6b024b9e77","text":"tnash","value":["t","n","a","s","h"]}]
+1692967668992	Marionette	DEBUG	0 <- [1,8,null,{"value":null}]
+1692967668992	webdriver::server	DEBUG	<- 200 OK {"value":null}
+1692967668994	webdriver::server	DEBUG	-> POST /session/f2b7c2be-40af-4480-8189-0bce797ae2c2/element {"using": "css selector", "value": "[id=\"password\"]"}
+1692967668995	Marionette	DEBUG	0 -> [0,9,"WebDriver:FindElement",{"using":"css selector","value":"[id=\"password\"]"}]
+1692967668997	Marionette	DEBUG	0 <- [1,9,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"e647da2e-4cd9-4b8d-ab52-00f1cdc83fb3"}}]
+1692967668998	webdriver::server	DEBUG	<- 200 OK {"value":{"element-6066-11e4-a52e-4f735466cecf":"e647da2e-4cd9-4b8d-ab52-00f1cdc83fb3"}}
+1692967669002	webdriver::server	DEBUG	-> POST /session/f2b7c2be-40af-4480-8189-0bce797ae2c2/execute/sync {"script": "/* isDisplayed */return (function(){return (fu ... ts);}\n).apply(null, arguments);", "args": [{"element-6066-11e4-a52e-4f735466cecf": "e647da2e-4cd9-4b8d-ab52-00f1cdc83fb3"}]}
+1692967669007	Marionette	DEBUG	0 -> [0,10,"WebDriver:ExecuteScript",{"args":[{"element-6066-11e4-a52e-4f735466cecf":"e647da2e-4cd9-4b8d-ab52-00f1cdc83fb3"}],"script":"/* isDisplayed */return (function(){return (function(){var k=this||self;function aa(a){return\"string\"==typeof a}function ba(a ... ined'?window.navigator:null,document:typeof window!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);"}]
+1692967669020	Marionette	DEBUG	0 <- [1,10,null,{"value":true}]
+1692967669023	webdriver::server	DEBUG	<- 200 OK {"value":true}
+1692967669027	webdriver::server	DEBUG	-> GET /session/f2b7c2be-40af-4480-8189-0bce797ae2c2/element/e647da2e-4cd9-4b8d-ab52-00f1cdc83fb3/enabled 
+1692967669030	Marionette	DEBUG	0 -> [0,11,"WebDriver:IsElementEnabled",{"id":"e647da2e-4cd9-4b8d-ab52-00f1cdc83fb3"}]
+1692967669035	Marionette	DEBUG	0 <- [1,11,null,{"value":true}]
+1692967669036	webdriver::server	DEBUG	<- 200 OK {"value":true}
+1692967669040	webdriver::server	DEBUG	-> POST /session/f2b7c2be-40af-4480-8189-0bce797ae2c2/element/e647da2e-4cd9-4b8d-ab52-00f1cdc83fb3/click {"id": "e647da2e-4cd9-4b8d-ab52-00f1cdc83fb3"}
+1692967669042	Marionette	DEBUG	0 -> [0,12,"WebDriver:ElementClick",{"id":"e647da2e-4cd9-4b8d-ab52-00f1cdc83fb3"}]
+1692967669067	Marionette	TRACE	Received DOM event click for [object HTMLInputElement]
+1692967669289	Marionette	TRACE	Canceled page load listener because no navigation has been detected
+1692967669290	Marionette	DEBUG	0 <- [1,12,null,{"value":null}]
+1692967669291	webdriver::server	DEBUG	<- 200 OK {"value":null}
+1692967669295	webdriver::server	DEBUG	-> POST /session/f2b7c2be-40af-4480-8189-0bce797ae2c2/element/e647da2e-4cd9-4b8d-ab52-00f1cdc83fb3/value {"text": "tnash1", "value": ["t", "n", "a", "s", "h", "1"], "id": "e647da2e-4cd9-4b8d-ab52-00f1cdc83fb3"}
+1692967669297	Marionette	DEBUG	0 -> [0,13,"WebDriver:ElementSendKeys",{"id":"e647da2e-4cd9-4b8d-ab52-00f1cdc83fb3","text":"tnash1","value":["t","n","a","s","h","1"]}]
+1692967669340	Marionette	DEBUG	0 <- [1,13,null,{"value":null}]
+1692967669341	webdriver::server	DEBUG	<- 200 OK {"value":null}
+1692967669345	webdriver::server	DEBUG	-> POST /session/f2b7c2be-40af-4480-8189-0bce797ae2c2/element {"using": "xpath", "value": "//*[@id=\"background\"]/div/div/div/div/div/form/button"}
+1692967669348	Marionette	DEBUG	0 -> [0,14,"WebDriver:FindElement",{"using":"xpath","value":"//*[@id=\"background\"]/div/div/div/div/div/form/button"}]
+1692967669353	Marionette	DEBUG	0 <- [1,14,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"21f242de-78a0-4ccd-9f34-44debbec993e"}}]
+1692967669355	webdriver::server	DEBUG	<- 200 OK {"value":{"element-6066-11e4-a52e-4f735466cecf":"21f242de-78a0-4ccd-9f34-44debbec993e"}}
+1692967669360	webdriver::server	DEBUG	-> POST /session/f2b7c2be-40af-4480-8189-0bce797ae2c2/element/21f242de-78a0-4ccd-9f34-44debbec993e/click {"id": "21f242de-78a0-4ccd-9f34-44debbec993e"}
+1692967669362	Marionette	DEBUG	0 -> [0,15,"WebDriver:ElementClick",{"id":"21f242de-78a0-4ccd-9f34-44debbec993e"}]
+console.warn: LoginRecipes: "Falling back to a synchronous message for: http://52.54.244.138:8080."
+1692967669399	Marionette	TRACE	Received DOM event click for [object HTMLButtonElement]
+1692967669622	Marionette	TRACE	Canceled page load listener because no navigation has been detected
+1692967669623	Marionette	DEBUG	0 <- [1,15,null,{"value":null}]
+1692967669624	webdriver::server	DEBUG	<- 200 OK {"value":null}
+1692967673629	webdriver::server	DEBUG	-> POST /session/f2b7c2be-40af-4480-8189-0bce797ae2c2/element {"using": "link text", "value": "Shipments"}
+1692967673630	Marionette	DEBUG	0 -> [0,16,"WebDriver:FindElement",{"using":"link text","value":"Shipments"}]
+1692967673663	Marionette	DEBUG	0 <- [1,16,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"932b1420-96e1-405f-a26a-eb2bf41d197b"}}]
+1692967673664	webdriver::server	DEBUG	<- 200 OK {"value":{"element-6066-11e4-a52e-4f735466cecf":"932b1420-96e1-405f-a26a-eb2bf41d197b"}}
+1692967673673	webdriver::server	DEBUG	-> POST /session/f2b7c2be-40af-4480-8189-0bce797ae2c2/execute/sync {"script": "/* isDisplayed */return (function(){return (fu ... ts);}\n).apply(null, arguments);", "args": [{"element-6066-11e4-a52e-4f735466cecf": "932b1420-96e1-405f-a26a-eb2bf41d197b"}]}
+1692967673680	Marionette	DEBUG	0 -> [0,17,"WebDriver:ExecuteScript",{"args":[{"element-6066-11e4-a52e-4f735466cecf":"932b1420-96e1-405f-a26a-eb2bf41d197b"}],"script":"/* isDisplayed */return (function(){return (function(){var k=this||self;function aa(a){return\"string\"==typeof a}function ba(a ... ined'?window.navigator:null,document:typeof window!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);"}]
+1692967673704	Marionette	DEBUG	0 <- [1,17,null,{"value":true}]
+1692967673705	webdriver::server	DEBUG	<- 200 OK {"value":true}
+1692967673709	webdriver::server	DEBUG	-> GET /session/f2b7c2be-40af-4480-8189-0bce797ae2c2/element/932b1420-96e1-405f-a26a-eb2bf41d197b/enabled 
+1692967673710	Marionette	DEBUG	0 -> [0,18,"WebDriver:IsElementEnabled",{"id":"932b1420-96e1-405f-a26a-eb2bf41d197b"}]
+1692967673713	Marionette	DEBUG	0 <- [1,18,null,{"value":true}]
+1692967673714	webdriver::server	DEBUG	<- 200 OK {"value":true}
+1692967673717	webdriver::server	DEBUG	-> POST /session/f2b7c2be-40af-4480-8189-0bce797ae2c2/element/932b1420-96e1-405f-a26a-eb2bf41d197b/click {"id": "932b1420-96e1-405f-a26a-eb2bf41d197b"}
+1692967673719	Marionette	DEBUG	0 -> [0,19,"WebDriver:ElementClick",{"id":"932b1420-96e1-405f-a26a-eb2bf41d197b"}]
+1692967673797	Marionette	TRACE	Received DOM event click for http://52.54.244.138:8080/ArtemusChb/#/userHome/shipments
+1692967674011	Marionette	TRACE	Canceled page load listener because no navigation has been detected
+1692967674011	Marionette	DEBUG	0 <- [1,19,null,{"value":null}]
+1692967674012	webdriver::server	DEBUG	<- 200 OK {"value":null}
+1692967676015	webdriver::server	DEBUG	-> POST /session/f2b7c2be-40af-4480-8189-0bce797ae2c2/element {"using": "link text", "value": "Form 7501"}
+1692967676017	Marionette	DEBUG	0 -> [0,20,"WebDriver:FindElement",{"using":"link text","value":"Form 7501"}]
+1692967676084	Marionette	DEBUG	0 <- [1,20,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"db0b8220-cc08-4906-8b75-ac39d12a3233"}}]
+1692967676085	webdriver::server	DEBUG	<- 200 OK {"value":{"element-6066-11e4-a52e-4f735466cecf":"db0b8220-cc08-4906-8b75-ac39d12a3233"}}
+1692967676091	webdriver::server	DEBUG	-> POST /session/f2b7c2be-40af-4480-8189-0bce797ae2c2/execute/sync {"script": "/* isDisplayed */return (function(){return (fu ... ts);}\n).apply(null, arguments);", "args": [{"element-6066-11e4-a52e-4f735466cecf": "db0b8220-cc08-4906-8b75-ac39d12a3233"}]}
+1692967676095	Marionette	DEBUG	0 -> [0,21,"WebDriver:ExecuteScript",{"args":[{"element-6066-11e4-a52e-4f735466cecf":"db0b8220-cc08-4906-8b75-ac39d12a3233"}],"script":"/* isDisplayed */return (function(){return (function(){var k=this||self;function aa(a){return\"string\"==typeof a}function ba(a ... ined'?window.navigator:null,document:typeof window!='undefined'?window.document:null}, arguments);}\n).apply(null, arguments);"}]
+1692967676109	Marionette	DEBUG	0 <- [1,21,null,{"value":true}]
+1692967676110	webdriver::server	DEBUG	<- 200 OK {"value":true}
+1692967676112	webdriver::server	DEBUG	-> GET /session/f2b7c2be-40af-4480-8189-0bce797ae2c2/element/db0b8220-cc08-4906-8b75-ac39d12a3233/enabled 
+1692967676113	Marionette	DEBUG	0 -> [0,22,"WebDriver:IsElementEnabled",{"id":"db0b8220-cc08-4906-8b75-ac39d12a3233"}]
+1692967676115	Marionette	DEBUG	0 <- [1,22,null,{"value":true}]
+1692967676116	webdriver::server	DEBUG	<- 200 OK {"value":true}
+1692967676118	webdriver::server	DEBUG	-> POST /session/f2b7c2be-40af-4480-8189-0bce797ae2c2/element/db0b8220-cc08-4906-8b75-ac39d12a3233/click {"id": "db0b8220-cc08-4906-8b75-ac39d12a3233"}
+1692967676119	Marionette	DEBUG	0 -> [0,23,"WebDriver:ElementClick",{"id":"db0b8220-cc08-4906-8b75-ac39d12a3233"}]
+1692967676272	Marionette	TRACE	Received DOM event click for [object HTMLDivElement]
+1692967676516	Marionette	TRACE	Canceled page load listener because no navigation has been detected
+1692967676516	Marionette	DEBUG	0 <- [1,23,null,{"value":null}]
+1692967676517	webdriver::server	DEBUG	<- 200 OK {"value":null}
+1692967677519	webdriver::server	DEBUG	-> POST /session/f2b7c2be-40af-4480-8189-0bce797ae2c2/element {"using": "css selector", "value": "input#invoiceNumber"}
+1692967677520	Marionette	DEBUG	0 -> [0,24,"WebDriver:FindElement",{"using":"css selector","value":"input#invoiceNumber"}]
+1692967677524	Marionette	DEBUG	0 <- [1,24,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"ba90afe7-c552-45f2-9cb3-d99323fbe6af"}}]
+1692967677524	webdriver::server	DEBUG	<- 200 OK {"value":{"element-6066-11e4-a52e-4f735466cecf":"ba90afe7-c552-45f2-9cb3-d99323fbe6af"}}
+1692967677525	webdriver::server	DEBUG	-> POST /session/f2b7c2be-40af-4480-8189-0bce797ae2c2/element/ba90afe7-c552-45f2-9cb3-d99323fbe6af/value {"text": "ABTestInvc ... T", "e", "s", "t", "I", "n", "v", "c", "V", "2", "I", "C", "Z", "9", "M", "S"], "id": "ba90afe7-c552-45f2-9cb3-d99323fbe6af"}
+1692967677526	Marionette	DEBUG	0 -> [0,25,"WebDriver:ElementSendKeys",{"id":"ba90afe7-c552-45f2-9cb3-d99323fbe6af","text":"ABTestInvcV2ICZ9MS","value":["A","B","T","e","s","t","I","n","v","c","V","2","I","C","Z","9","M","S"]}]
+1692967677586	Marionette	DEBUG	0 <- [1,25,null,{"value":null}]
+1692967677587	webdriver::server	DEBUG	<- 200 OK {"value":null}
+1692967678589	webdriver::server	DEBUG	-> POST /session/f2b7c2be-40af-4480-8189-0bce797ae2c2/element {"using": "xpath", "value": "//span[normalize-space()='Invoice Number:']"}
+1692967678589	Marionette	DEBUG	0 -> [0,26,"WebDriver:FindElement",{"using":"xpath","value":"//span[normalize-space()='Invoice Number:']"}]
+1692967678591	Marionette	DEBUG	0 <- [1,26,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"90c15ca9-539e-4c61-bd09-ae72dee712fa"}}]
+1692967678592	webdriver::server	DEBUG	<- 200 OK {"value":{"element-6066-11e4-a52e-4f735466cecf":"90c15ca9-539e-4c61-bd09-ae72dee712fa"}}
+1692967678593	webdriver::server	DEBUG	-> POST /session/f2b7c2be-40af-4480-8189-0bce797ae2c2/element/90c15ca9-539e-4c61-bd09-ae72dee712fa/click {"id": "90c15ca9-539e-4c61-bd09-ae72dee712fa"}
+1692967678594	Marionette	DEBUG	0 -> [0,27,"WebDriver:ElementClick",{"id":"90c15ca9-539e-4c61-bd09-ae72dee712fa"}]
+1692967679115	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:221:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:205:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:180:31
+1692967679213	Marionette	TRACE	Received observer notification common-dialog-loaded
+1692967679213	Marionette	TRACE	Canceled page load listener because a dialog opened
+1692967679213	Marionette	DEBUG	0 <- [1,27,null,{"value":null}]
+1692967679221	webdriver::server	DEBUG	<- 200 OK {"value":null}
+1692967681224	webdriver::server	DEBUG	-> GET /session/f2b7c2be-40af-4480-8189-0bce797ae2c2/alert/text 
+1692967681226	Marionette	DEBUG	0 -> [0,28,"WebDriver:GetAlertText",{}]
+1692967681226	Marionette	DEBUG	0 <- [1,28,null,{"value":"Invoice Number already exists for these entry : 00027425"}]
+1692967681227	webdriver::server	DEBUG	<- 200 OK {"value":"Invoice Number already exists for these entry : 00027425"}
+1692967681230	webdriver::server	DEBUG	-> POST /session/f2b7c2be-40af-4480-8189-0bce797ae2c2/alert/accept {}
+1692967681231	Marionette	DEBUG	0 -> [0,29,"WebDriver:AcceptAlert",{}]
+1692967681252	Marionette	TRACE	Received event DOMModalDialogClosed
+1692967681257	Marionette	DEBUG	0 <- [1,29,null,{"value":null}]
+1692967681263	webdriver::server	DEBUG	<- 200 OK {"value":null}
+1692967681265	webdriver::server	DEBUG	-> POST /session/f2b7c2be-40af-4480-8189-0bce797ae2c2/element {"using": "xpath", "value": "//a[normalize-space()='Logout']"}
+1692967681266	Marionette	DEBUG	0 -> [0,30,"WebDriver:FindElement",{"using":"xpath","value":"//a[normalize-space()='Logout']"}]
+1692967681278	Marionette	DEBUG	0 <- [1,30,null,{"value":{"element-6066-11e4-a52e-4f735466cecf":"4f0beb45-fbb9-4932-a1c7-97506a071a7a"}}]
+1692967681279	webdriver::server	DEBUG	<- 200 OK {"value":{"element-6066-11e4-a52e-4f735466cecf":"4f0beb45-fbb9-4932-a1c7-97506a071a7a"}}
+1692967681281	webdriver::server	DEBUG	-> POST /session/f2b7c2be-40af-4480-8189-0bce797ae2c2/element/4f0beb45-fbb9-4932-a1c7-97506a071a7a/click {"id": "4f0beb45-fbb9-4932-a1c7-97506a071a7a"}
+1692967681281	Marionette	DEBUG	0 -> [0,31,"WebDriver:ElementClick",{"id":"4f0beb45-fbb9-4932-a1c7-97506a071a7a"}]
+1692967681310	Marionette	TRACE	Received DOM event click for 
+1692967681519	Marionette	TRACE	Canceled page load listener because no navigation has been detected
+1692967681520	Marionette	DEBUG	0 <- [1,31,null,{"value":null}]
+1692967681520	webdriver::server	DEBUG	<- 200 OK {"value":null}
+1692967681524	webdriver::server	DEBUG	-> DELETE /session/f2b7c2be-40af-4480-8189-0bce797ae2c2/window 
+1692967681525	Marionette	DEBUG	0 -> [0,32,"WebDriver:CloseWindow",{}]
+1692967681525	Marionette	DEBUG	0 <- [1,32,null,[]]
+1692967681526	webdriver::server	DEBUG	Last window was closed, deleting session
+1692967681526	webdriver::server	DEBUG	Teardown session
+1692967681526	Marionette	DEBUG	0 -> [0,33,"Marionette:Quit",{"flags":["eForceQuit"]}]
+1692967681527	Marionette	INFO	Stopped listening on port 49171
+1692967681527	Marionette	TRACE	[11] MarionetteCommands actor destroyed for window id 6442450945
+1692967682778	Marionette	TRACE	Received observer notification quit-application
+1692967682781	Marionette	TRACE	Received observer notification quit-application
+1692967682782	RemoteAgent	DEBUG	Resetting recommended pref apz.content_response_timeout
+1692967682782	RemoteAgent	DEBUG	Resetting recommended pref browser.contentblocking.introCount
+1692967682782	RemoteAgent	DEBUG	Resetting recommended pref browser.download.panel.shown
+1692967682783	RemoteAgent	DEBUG	Resetting recommended pref browser.newtabpage.enabled
+1692967682785	RemoteAgent	DEBUG	Resetting recommended pref browser.pagethumbnails.capturing_disabled
+1692967682785	RemoteAgent	DEBUG	Resetting recommended pref browser.search.update
+1692967682786	RemoteAgent	DEBUG	Resetting recommended pref browser.startup.couldRestoreSession.count
+1692967682786	RemoteAgent	DEBUG	Resetting recommended pref browser.tabs.closeWindowWithLastTab
+1692967682786	RemoteAgent	DEBUG	Resetting recommended pref browser.tabs.unloadOnLowMemory
+1692967682787	RemoteAgent	DEBUG	Resetting recommended pref browser.tabs.warnOnClose
+1692967682787	RemoteAgent	DEBUG	Resetting recommended pref browser.tabs.warnOnCloseOtherTabs
+1692967682787	RemoteAgent	DEBUG	Resetting recommended pref browser.tabs.warnOnOpen
+1692967682788	RemoteAgent	DEBUG	Resetting recommended pref browser.toolbars.bookmarks.visibility
+1692967682788	RemoteAgent	DEBUG	Resetting recommended pref browser.topsites.contile.enabled
+1692967682789	RemoteAgent	DEBUG	Resetting recommended pref browser.usedOnWindows10.introURL
+1692967682790	RemoteAgent	DEBUG	Resetting recommended pref browser.urlbar.merino.endpointURL
+1692967682799	RemoteAgent	DEBUG	Resetting recommended pref browser.urlbar.suggest.searches
+1692967682800	RemoteAgent	DEBUG	Resetting recommended pref datareporting.policy.dataSubmissionPolicyAccepted
+1692967682801	RemoteAgent	DEBUG	Resetting recommended pref dom.disable_open_during_load
+1692967682802	RemoteAgent	DEBUG	Resetting recommended pref dom.file.createInChild
+1692967682802	RemoteAgent	DEBUG	Resetting recommended pref dom.max_chrome_script_run_time
+1692967682802	RemoteAgent	DEBUG	Resetting recommended pref dom.max_script_run_time
+1692967682803	RemoteAgent	DEBUG	Resetting recommended pref dom.navigation.locationChangeRateLimit.count
+1692967682804	RemoteAgent	DEBUG	Resetting recommended pref dom.push.connection.enabled
+1692967682804	RemoteAgent	DEBUG	Resetting recommended pref dom.screenorientation.allow-lock
+1692967682805	RemoteAgent	DEBUG	Resetting recommended pref dom.successive_dialog_time_limit
+1692967682805	RemoteAgent	DEBUG	Resetting recommended pref extensions.getAddons.cache.enabled
+1692967682805	RemoteAgent	DEBUG	Resetting recommended pref extensions.getAddons.discovery.api_url
+1692967682806	RemoteAgent	DEBUG	Resetting recommended pref network.http.phishy-userpass-length
+1692967682806	RemoteAgent	DEBUG	Resetting recommended pref network.http.prompt-temp-redirect
+1692967682806	RemoteAgent	DEBUG	Resetting recommended pref privacy.trackingprotection.enabled
+1692967682806	RemoteAgent	DEBUG	Resetting recommended pref security.fileuri.strict_origin_policy
+1692967682807	RemoteAgent	DEBUG	Resetting recommended pref security.notification_enable_delay
+1692967682807	RemoteAgent	DEBUG	Resetting recommended pref signon.autofillForms
+1692967682809	RemoteAgent	DEBUG	Resetting recommended pref signon.rememberSignons
+1692967682811	RemoteAgent	DEBUG	Resetting recommended pref widget.windows.window_occlusion_tracking.enabled
+Dynamically enable window occlusion 1
+1692967682816	RemoteAgent	DEBUG	Resetting recommended pref dom.disable_beforeunload
+1692967682816	RemoteAgent	DEBUG	Resetting recommended pref browser.contentblocking.features.standard
+1692967682817	RemoteAgent	DEBUG	Resetting recommended pref network.cookie.cookieBehavior
+1692967682817	RemoteAgent	TRACE	Received observer notification quit-application
+1692967682819	Marionette	DEBUG	Marionette stopped listening
+1692967682821	Marionette	DEBUG	0 <- [1,33,null,{"cause":"shutdown","forced":false,"in_app":true}]
+1692967682869	RemoteAgent	DEBUG	Resetting recommended pref browser.contentblocking.features.standard
+1692967682869	RemoteAgent	DEBUG	Resetting recommended pref network.cookie.cookieBehavior
+[Parent 2388, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 14564, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+1692967682888	Marionette	DEBUG	Closed connection 0
+[Parent 2388, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 14564, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+console.error: services.settings: 
+  Message: NetworkError: Network error: TypeError: NetworkError: Network request failed
+  Stack:
+    APIError@resource://services-settings/RemoteSettingsClient.sys.mjs:111:1
+NetworkError@resource://services-settings/RemoteSettingsClient.sys.mjs:115:5
+_adjustedError@resource://services-settings/RemoteSettingsClient.sys.mjs:911:14
+maybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:816:38
+
+console.warn: services.settings: main/search-telemetry-v2 sync interrupted by shutdown
+console.warn: services.settings: main/translations-models sync interrupted by shutdown
+console.warn: services.settings: main/devtools-compatibility-browsers sync interrupted by shutdown
+console.error: (new AbortError("IndexedDB: main/quicksuggest getLastModified() IndexedDB:  execute() A request was aborted, for example through a call to IDBTransaction.abort.", "resource://services-settings/IDBHelpers.sys.mjs", 16))
+[Parent 2388, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 14564, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 2388, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 14564, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+[Parent 2388, IPC I/O Parent] WARNING: DuplicateHandle failed for handle 0 in TransferHandles: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:621
+[GPU 14564, IPC I/O Child] WARNING: pipe error: 232: file /builds/worker/checkouts/gecko/ipc/chromium/src/chrome/common/ipc_channel_win.cc:443
+1692967683299	geckodriver::browser	DEBUG	Browser process stopped: exit code: 0
+1692967683575	webdriver::server	DEBUG	<- 200 OK {"value":[]}

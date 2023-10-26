@@ -1,0 +1,3245 @@
+2023-08-29 18:34:11,798 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-08-29 18:34:26,146 - INFO - Login Done
+2023-08-29 18:34:37,765 - INFO - 7501 Form opened
+2023-08-29 18:34:47,012 - INFO - ----Upper Part Done----
+2023-08-29 18:35:01,125 - INFO - ----Bill Of Lading Done----
+2023-08-29 18:35:21,775 - INFO - ----Vessel Done----
+2023-08-29 18:35:41,156 - INFO - ----Trading Partner 1 Done----
+2023-08-29 18:36:01,911 - INFO - ----Trading Partner 2 Done----
+2023-08-29 18:36:28,121 - INFO - ----Form Saved Successfully----
+2023-08-29 18:36:31,020 - INFO - Login Done
+2023-08-29 18:36:42,689 - INFO - 7501 Form opened
+2023-08-29 18:36:51,353 - INFO - ----Upper Part Done----
+2023-08-29 18:37:05,752 - INFO - ----Bill Of Lading Done----
+2023-08-29 18:37:25,001 - INFO - ----Vessel Done----
+2023-08-29 18:37:42,893 - INFO - ----Trading Partner 1 Done----
+2023-08-29 18:38:01,201 - INFO - ----Trading Partner 2 Done----
+2023-08-29 18:38:24,607 - INFO - ----Form Saved Successfully----
+2023-08-29 18:38:26,751 - INFO - Login Done
+2023-08-29 18:38:38,106 - INFO - 7501 Form opened
+2023-08-29 18:38:46,397 - INFO - ----Upper Part Done----
+2023-08-29 18:39:00,594 - INFO - ----Bill Of Lading Done----
+2023-08-29 18:39:19,447 - INFO - ----Vessel Done----
+2023-08-29 18:39:38,404 - INFO - ----Trading Partner 1 Done----
+2023-08-29 18:39:58,912 - INFO - ----Trading Partner 2 Done----
+2023-08-29 18:40:31,168 - INFO - ----Form Saved Successfully----
+2023-08-29 18:40:33,671 - INFO - Login Done
+2023-08-29 18:40:45,110 - INFO - 7501 Form opened
+2023-08-29 18:40:54,103 - INFO - ----Upper Part Done----
+2023-08-29 18:41:08,571 - INFO - ----Bill Of Lading Done----
+2023-08-29 18:41:27,575 - INFO - ----Vessel Done----
+2023-08-29 18:41:46,053 - INFO - ----Trading Partner 1 Done----
+2023-08-29 18:42:09,313 - INFO - ----Trading Partner 2 Done----
+2023-08-30 10:47:59,508 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-08-30 10:49:00,126 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-08-30 10:49:54,077 - INFO - Login Done
+2023-08-30 10:50:05,672 - INFO - 7501 Form opened
+2023-08-30 10:50:36,579 - INFO - foreign Line Value filled
+2023-08-30 10:50:46,893 - ERROR - Message: 
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00007FF7583F3E62+57250]
+	(No symbol) [0x00007FF75836BC02]
+	(No symbol) [0x00007FF75823E0BB]
+	(No symbol) [0x00007FF75827765E]
+	(No symbol) [0x00007FF75827774C]
+	(No symbol) [0x00007FF7582B0267]
+	(No symbol) [0x00007FF7582967EF]
+	(No symbol) [0x00007FF7582AE312]
+	(No symbol) [0x00007FF758296583]
+	(No symbol) [0x00007FF75826CC71]
+	(No symbol) [0x00007FF75826DE54]
+	GetHandleVerifier [0x00007FF7586A4CF2+2879026]
+	GetHandleVerifier [0x00007FF7586F6F30+3215472]
+	GetHandleVerifier [0x00007FF7586EFD4F+3186319]
+	GetHandleVerifier [0x00007FF758485505+652869]
+	(No symbol) [0x00007FF758377518]
+	(No symbol) [0x00007FF7583735F4]
+	(No symbol) [0x00007FF7583736EC]
+	(No symbol) [0x00007FF7583638E3]
+	BaseThreadInitThunk [0x00007FFC7A7A26AD+29]
+	RtlUserThreadStart [0x00007FFC7C2CAA68+40]
+
+2023-08-30 10:50:58,411 - INFO - ----Form Saved Successfully----
+2023-08-30 11:09:52,402 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-08-30 11:10:06,857 - INFO - Login Done
+2023-08-30 11:10:19,069 - INFO - 7501 Form opened
+2023-08-30 11:10:31,762 - INFO - ----Upper Part Done----
+2023-08-30 11:10:41,279 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020AC5A99410>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/ed943902d3b568a5ee14c6142a3539a0/element
+2023-08-30 11:10:45,352 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020AC5D30310>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/ed943902d3b568a5ee14c6142a3539a0/element
+2023-08-30 11:11:57,214 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-08-30 11:12:35,854 - INFO - Login Done
+2023-08-30 11:12:47,686 - INFO - 7501 Form opened
+2023-08-30 11:12:59,437 - INFO - ----Upper Part Done----
+2023-08-30 11:13:18,425 - INFO - ----Bill Of Lading Done----
+2023-08-30 11:13:39,858 - INFO - ----Vessel Done----
+2023-08-30 11:14:01,263 - INFO - ----Trading Partner 1 Done----
+2023-08-30 11:14:03,099 - ERROR - Message: element click intercepted: Element <input _ngcontent-gfm-c188="" autocapitalize="off" autocorrect="off" role="combobox" aria-multiline="false" id="typeahead-basic" type="text" class="form-control ng-untouched ng-pristine ng-valid" autocomplete="off" aria-autocomplete="list" aria-expanded="false"> is not clickable at point (780, 555). Other element would receive the click: <div _ngcontent-gfm-c239="" class="loadingScreen">...</div>
+  (Session info: chrome=116.0.5845.140)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00007FF6615F3E62+57250]
+	(No symbol) [0x00007FF66156BC02]
+	(No symbol) [0x00007FF66143E0BB]
+	(No symbol) [0x00007FF66147D080]
+	(No symbol) [0x00007FF66147B6FD]
+	(No symbol) [0x00007FF6614796E5]
+	(No symbol) [0x00007FF6614788F5]
+	(No symbol) [0x00007FF66146EC1F]
+	(No symbol) [0x00007FF6614967AA]
+	(No symbol) [0x00007FF66146E536]
+	(No symbol) [0x00007FF6614969C0]
+	(No symbol) [0x00007FF6614AE312]
+	(No symbol) [0x00007FF661496583]
+	(No symbol) [0x00007FF66146CC71]
+	(No symbol) [0x00007FF66146DE54]
+	GetHandleVerifier [0x00007FF6618A4CF2+2879026]
+	GetHandleVerifier [0x00007FF6618F6F30+3215472]
+	GetHandleVerifier [0x00007FF6618EFD4F+3186319]
+	GetHandleVerifier [0x00007FF661685505+652869]
+	(No symbol) [0x00007FF661577518]
+	(No symbol) [0x00007FF6615735F4]
+	(No symbol) [0x00007FF6615736EC]
+	(No symbol) [0x00007FF6615638E3]
+	BaseThreadInitThunk [0x00007FFC7A7A26AD+29]
+	RtlUserThreadStart [0x00007FFC7C2CAA68+40]
+
+2023-08-30 11:14:06,356 - ERROR - Message: element click intercepted: Element <input _ngcontent-gfm-c195="" autocapitalize="off" autocorrect="off" role="combobox" aria-multiline="false" id="typeahead-basic" type="text" tabindex="1" class="form-control ng-untouched ng-pristine ng-invalid" autocomplete="off" aria-autocomplete="list" aria-expanded="false" required=""> is not clickable at point (591, 350). Other element would receive the click: <div _ngcontent-gfm-c239="" class="loadingScreen">...</div>
+  (Session info: chrome=116.0.5845.140)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00007FF6615F3E62+57250]
+	(No symbol) [0x00007FF66156BC02]
+	(No symbol) [0x00007FF66143E0BB]
+	(No symbol) [0x00007FF66147D080]
+	(No symbol) [0x00007FF66147B6FD]
+	(No symbol) [0x00007FF6614796E5]
+	(No symbol) [0x00007FF6614788F5]
+	(No symbol) [0x00007FF66146EC1F]
+	(No symbol) [0x00007FF6614967AA]
+	(No symbol) [0x00007FF66146E536]
+	(No symbol) [0x00007FF6614969C0]
+	(No symbol) [0x00007FF6614AE312]
+	(No symbol) [0x00007FF661496583]
+	(No symbol) [0x00007FF66146CC71]
+	(No symbol) [0x00007FF66146DE54]
+	GetHandleVerifier [0x00007FF6618A4CF2+2879026]
+	GetHandleVerifier [0x00007FF6618F6F30+3215472]
+	GetHandleVerifier [0x00007FF6618EFD4F+3186319]
+	GetHandleVerifier [0x00007FF661685505+652869]
+	(No symbol) [0x00007FF661577518]
+	(No symbol) [0x00007FF6615735F4]
+	(No symbol) [0x00007FF6615736EC]
+	(No symbol) [0x00007FF6615638E3]
+	BaseThreadInitThunk [0x00007FFC7A7A26AD+29]
+	RtlUserThreadStart [0x00007FFC7C2CAA68+40]
+
+2023-08-30 11:45:16,165 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-08-30 11:45:40,879 - INFO - Login Done
+2023-08-30 11:45:52,354 - INFO - 7501 Form opened
+2023-08-30 11:46:01,573 - INFO - ----Upper Part Done----
+2023-08-30 11:46:15,444 - INFO - ----Bill Of Lading Done----
+2023-08-30 11:46:34,910 - INFO - ----Vessel Done----
+2023-08-30 11:46:53,635 - INFO - ----Trading Partner 1 Done----
+2023-08-30 11:47:11,317 - INFO - ----Trading Partner 2 Done----
+2023-08-30 11:47:34,496 - INFO - ----Form Saved Successfully----
+2023-08-30 11:47:36,641 - INFO - Login Done
+2023-08-30 11:47:47,993 - INFO - 7501 Form opened
+2023-08-30 11:47:56,627 - INFO - ----Upper Part Done----
+2023-08-30 11:48:10,450 - INFO - ----Bill Of Lading Done----
+2023-08-30 11:48:29,709 - INFO - ----Vessel Done----
+2023-08-30 11:48:47,935 - INFO - ----Trading Partner 1 Done----
+2023-08-30 11:49:06,620 - INFO - ----Trading Partner 2 Done----
+2023-08-30 11:49:31,046 - INFO - ----Form Saved Successfully----
+2023-08-30 11:49:33,989 - INFO - Login Done
+2023-08-30 11:49:45,330 - INFO - 7501 Form opened
+2023-08-30 11:49:54,743 - INFO - ----Upper Part Done----
+2023-08-30 11:50:08,912 - INFO - ----Bill Of Lading Done----
+2023-08-30 11:50:27,925 - INFO - ----Vessel Done----
+2023-08-30 11:50:46,159 - INFO - ----Trading Partner 1 Done----
+2023-08-30 11:51:03,484 - INFO - ----Trading Partner 2 Done----
+2023-08-30 11:51:29,454 - INFO - ----Form Saved Successfully----
+2023-08-30 11:51:31,693 - INFO - Login Done
+2023-08-30 11:51:43,023 - INFO - 7501 Form opened
+2023-08-30 11:51:51,250 - INFO - ----Upper Part Done----
+2023-08-30 11:52:08,224 - INFO - ----Bill Of Lading Done----
+2023-08-30 11:52:30,588 - INFO - ----Vessel Done----
+2023-08-30 11:52:51,330 - INFO - ----Trading Partner 1 Done----
+2023-08-30 11:53:19,140 - INFO - ----Trading Partner 2 Done----
+2023-08-30 11:53:33,076 - INFO - foreign Line Value filled
+2023-08-30 11:53:49,285 - INFO - ----Form Saved Successfully----
+2023-08-30 11:53:52,364 - INFO - Login Done
+2023-08-30 11:54:03,830 - INFO - 7501 Form opened
+2023-08-30 11:54:14,362 - INFO - ----Upper Part Done----
+2023-08-30 11:54:31,370 - INFO - ----Bill Of Lading Done----
+2023-08-30 11:54:52,513 - INFO - ----Vessel Done----
+2023-08-30 11:55:13,377 - INFO - ----Trading Partner 1 Done----
+2023-08-30 11:55:36,347 - INFO - ----Trading Partner 2 Done----
+2023-08-30 11:55:49,366 - INFO - It is China HTS
+2023-08-30 11:56:05,687 - INFO - ----Form Saved Successfully----
+2023-08-30 13:33:15,284 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-08-30 13:33:48,292 - INFO - Login Done
+2023-08-30 13:34:00,137 - INFO - 7501 Form opened
+2023-08-30 13:34:08,981 - INFO - ----Upper Part Done----
+2023-08-30 13:34:22,900 - INFO - ----Bill Of Lading Done----
+2023-08-30 13:34:41,751 - INFO - ----Vessel Done----
+2023-08-30 13:34:59,602 - INFO - ----Trading Partner 1 Done----
+2023-08-30 13:35:17,810 - INFO - ----Trading Partner 2 Done----
+2023-08-30 13:35:43,557 - ERROR - EP7 Filled
+2023-08-30 13:35:58,454 - INFO - ----Form Saved Successfully----
+2023-08-30 13:36:01,000 - INFO - Login Done
+2023-08-30 13:36:12,326 - INFO - 7501 Form opened
+2023-08-30 13:36:20,831 - INFO - ----Upper Part Done----
+2023-08-30 13:36:34,555 - INFO - ----Bill Of Lading Done----
+2023-08-30 13:36:53,598 - INFO - ----Vessel Done----
+2023-08-30 13:37:03,951 - ERROR - Seller not Entered
+2023-08-30 13:37:13,500 - ERROR - !----Trading Partner 1 Not Done----!
+2023-08-30 13:37:31,389 - INFO - ----Trading Partner 2 Done----
+2023-08-30 13:37:47,285 - INFO - EP5 Filled
+2023-08-30 13:38:03,732 - ERROR - EP7 Filled
+2023-08-30 13:38:18,558 - INFO - ----Form Saved Successfully----
+2023-08-30 13:38:21,084 - INFO - Login Done
+2023-08-30 13:38:32,425 - INFO - 7501 Form opened
+2023-08-30 13:38:42,558 - INFO - ----Upper Part Done----
+2023-08-30 13:38:56,202 - INFO - ----Bill Of Lading Done----
+2023-08-30 13:39:06,611 - INFO - No Container found
+2023-08-30 13:39:24,410 - INFO - ----Trading Partner 1 Done----
+2023-08-30 13:39:41,734 - INFO - ----Trading Partner 2 Done----
+2023-08-30 13:39:58,045 - INFO - EP5 Filled
+2023-08-30 13:40:14,494 - ERROR - EP7 Filled
+2023-08-30 13:40:29,278 - INFO - ----Form Saved Successfully----
+2023-08-30 14:16:44,385 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-08-30 14:17:19,351 - INFO - Login Done
+2023-08-30 14:17:31,001 - INFO - 7501 Form opened
+2023-08-30 14:17:41,978 - INFO - ----Upper Part Done----
+2023-08-30 14:17:55,603 - INFO - ----Bill Of Lading Done----
+2023-08-30 14:18:05,993 - INFO - No Container found
+2023-08-30 14:18:23,768 - INFO - ----Trading Partner 1 Done----
+2023-08-30 14:18:41,524 - INFO - ----Trading Partner 2 Done----
+2023-08-30 14:19:05,701 - INFO - ----Form Saved Successfully----
+2023-08-30 14:19:08,120 - INFO - Login Done
+2023-08-30 14:19:19,452 - INFO - 7501 Form opened
+2023-08-30 14:19:27,712 - INFO - ----Upper Part Done----
+2023-08-30 14:19:41,400 - INFO - ----Bill Of Lading Done----
+2023-08-30 14:20:00,143 - INFO - ----Vessel Done----
+2023-08-30 14:20:17,677 - INFO - ----Trading Partner 1 Done----
+2023-08-30 14:20:35,319 - INFO - ----Trading Partner 2 Done----
+2023-08-30 14:20:47,266 - INFO - It is China HTS
+2023-08-30 14:21:01,034 - INFO - ----Form Saved Successfully----
+2023-08-30 14:21:03,502 - INFO - Login Done
+2023-08-30 14:21:14,833 - INFO - 7501 Form opened
+2023-08-30 14:21:23,029 - INFO - ----Upper Part Done----
+2023-08-30 14:21:36,710 - INFO - ----Bill Of Lading Done----
+2023-08-30 14:21:55,415 - INFO - ----Vessel Done----
+2023-08-30 14:22:12,857 - INFO - ----Trading Partner 1 Done----
+2023-08-30 14:22:30,562 - INFO - ----Trading Partner 2 Done----
+2023-08-30 14:22:42,558 - INFO - It is China HTS
+2023-08-30 14:22:43,624 - INFO - It is Cotton HTS
+2023-08-30 14:22:56,624 - INFO - ----Form Saved Successfully----
+2023-08-30 14:22:59,124 - INFO - Login Done
+2023-08-30 14:23:10,446 - INFO - 7501 Form opened
+2023-08-30 14:23:18,710 - INFO - ----Upper Part Done----
+2023-08-30 14:23:32,585 - INFO - ----Bill Of Lading Done----
+2023-08-30 14:23:51,657 - INFO - ----Vessel Done----
+2023-08-30 14:24:09,319 - INFO - ----Trading Partner 1 Done----
+2023-08-30 14:24:26,960 - INFO - ----Trading Partner 2 Done----
+2023-08-30 14:24:38,793 - INFO - It is China HTS
+2023-08-30 14:24:53,751 - ERROR - EP7 Filled
+2023-08-30 14:25:08,656 - INFO - ----Form Saved Successfully----
+2023-08-30 14:35:51,218 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-08-30 14:36:04,603 - INFO - Login Done
+2023-08-30 14:36:16,241 - INFO - 7501 Form opened
+2023-08-30 14:36:25,015 - INFO - ----Upper Part Done----
+2023-08-30 14:36:38,494 - INFO - ----Bill Of Lading Done----
+2023-08-30 14:36:57,096 - INFO - ----Vessel Done----
+2023-08-30 14:37:15,005 - INFO - ----Trading Partner 1 Done----
+2023-08-30 14:37:32,303 - INFO - ----Trading Partner 2 Done----
+2023-08-30 14:37:45,773 - INFO - It is Cotton HTS
+2023-08-30 14:37:48,350 - INFO - It is China HTS
+2023-08-30 14:38:02,288 - INFO - ----Form Saved Successfully----
+2023-08-30 14:39:15,033 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-08-30 14:39:32,316 - INFO - Login Done
+2023-08-30 14:39:44,106 - INFO - 7501 Form opened
+2023-08-30 14:39:52,547 - INFO - ----Upper Part Done----
+2023-08-30 14:40:06,121 - INFO - ----Bill Of Lading Done----
+2023-08-30 14:40:24,927 - INFO - ----Vessel Done----
+2023-08-30 14:40:42,613 - INFO - ----Trading Partner 1 Done----
+2023-08-30 14:41:00,077 - INFO - ----Trading Partner 2 Done----
+2023-08-30 14:41:25,094 - INFO - ----Form Saved Successfully----
+2023-08-30 14:41:27,474 - INFO - Login Done
+2023-08-30 14:41:38,789 - INFO - 7501 Form opened
+2023-08-30 14:41:47,688 - INFO - ----Upper Part Done----
+2023-08-30 14:42:01,596 - INFO - ----Bill Of Lading Done----
+2023-08-30 14:42:20,356 - INFO - ----Vessel Done----
+2023-08-30 14:42:38,079 - INFO - ----Trading Partner 1 Done----
+2023-08-30 14:42:55,930 - INFO - ----Trading Partner 2 Done----
+2023-08-30 14:43:20,357 - INFO - ----Form Saved Successfully----
+2023-08-30 14:43:23,991 - INFO - Login Done
+2023-08-30 14:43:35,396 - INFO - 7501 Form opened
+2023-08-30 14:43:44,810 - INFO - ----Upper Part Done----
+2023-08-30 14:44:00,701 - INFO - ----Bill Of Lading Done----
+2023-08-30 14:44:21,450 - INFO - ----Vessel Done----
+2023-08-30 14:44:40,247 - INFO - ----Trading Partner 1 Done----
+2023-08-30 14:45:00,658 - INFO - ----Trading Partner 2 Done----
+2023-08-30 14:45:29,156 - INFO - ----Form Saved Successfully----
+2023-08-30 14:45:31,781 - INFO - Login Done
+2023-08-30 14:45:43,094 - INFO - 7501 Form opened
+2023-08-30 14:45:51,440 - INFO - ----Upper Part Done----
+2023-08-30 14:46:05,578 - INFO - ----Bill Of Lading Done----
+2023-08-30 14:46:24,643 - INFO - ----Vessel Done----
+2023-08-30 14:46:42,946 - INFO - ----Trading Partner 1 Done----
+2023-08-30 14:47:06,770 - INFO - ----Trading Partner 2 Done----
+2023-08-30 14:47:20,444 - INFO - foreign Line Value filled
+2023-08-30 14:47:33,444 - INFO - ----Form Saved Successfully----
+2023-08-30 14:47:36,192 - INFO - Login Done
+2023-08-30 14:47:47,521 - INFO - 7501 Form opened
+2023-08-30 14:47:55,888 - INFO - ----Upper Part Done----
+2023-08-30 14:48:10,340 - INFO - ----Bill Of Lading Done----
+2023-08-30 14:48:29,519 - INFO - ----Vessel Done----
+2023-08-30 14:48:48,118 - INFO - ----Trading Partner 1 Done----
+2023-08-30 14:49:07,084 - INFO - ----Trading Partner 2 Done----
+2023-08-30 14:49:20,698 - INFO - It is Cotton HTS
+2023-08-30 14:49:36,028 - INFO - ----Form Saved Successfully----
+2023-08-30 14:49:39,227 - INFO - Login Done
+2023-08-30 14:49:50,694 - INFO - 7501 Form opened
+2023-08-30 14:50:00,222 - INFO - ----Upper Part Done----
+2023-08-30 14:50:15,630 - INFO - ----Bill Of Lading Done----
+2023-08-30 14:50:34,978 - INFO - ----Vessel Done----
+2023-08-30 14:50:52,600 - INFO - ----Trading Partner 1 Done----
+2023-08-30 14:51:10,187 - INFO - ----Trading Partner 2 Done----
+2023-08-30 14:51:36,456 - ERROR - EP7 Filled
+2023-08-30 14:51:50,702 - INFO - ----Form Saved Successfully----
+2023-08-30 14:51:53,163 - INFO - Login Done
+2023-08-30 14:52:04,472 - INFO - 7501 Form opened
+2023-08-30 14:52:12,645 - INFO - ----Upper Part Done----
+2023-08-30 14:52:26,537 - INFO - ----Bill Of Lading Done----
+2023-08-30 14:52:45,245 - INFO - ----Vessel Done----
+2023-08-30 14:53:03,081 - INFO - ----Trading Partner 1 Done----
+2023-08-30 14:53:20,244 - INFO - ----Trading Partner 2 Done----
+2023-08-30 14:53:37,257 - INFO - EP5 Filled
+2023-08-30 14:53:53,662 - ERROR - EP7 Filled
+2023-08-30 14:54:07,928 - INFO - ----Form Saved Successfully----
+2023-08-30 14:54:10,607 - INFO - Login Done
+2023-08-30 14:54:21,919 - INFO - 7501 Form opened
+2023-08-30 14:54:31,900 - INFO - ----Upper Part Done----
+2023-08-30 14:54:45,537 - INFO - ----Bill Of Lading Done----
+2023-08-30 14:54:55,949 - INFO - No Container found
+2023-08-30 14:55:13,799 - INFO - ----Trading Partner 1 Done----
+2023-08-30 14:55:31,364 - INFO - ----Trading Partner 2 Done----
+2023-08-30 14:55:48,213 - INFO - EP5 Filled
+2023-08-30 14:56:04,617 - ERROR - EP7 Filled
+2023-08-30 14:56:19,135 - INFO - ----Form Saved Successfully----
+2023-08-30 14:56:21,591 - INFO - Login Done
+2023-08-30 14:56:32,921 - INFO - 7501 Form opened
+2023-08-30 14:56:42,901 - INFO - ----Upper Part Done----
+2023-08-30 14:56:56,399 - INFO - ----Bill Of Lading Done----
+2023-08-30 14:57:06,795 - INFO - No Container found
+2023-08-30 14:57:24,427 - INFO - ----Trading Partner 1 Done----
+2023-08-30 14:57:42,968 - INFO - ----Trading Partner 2 Done----
+2023-08-30 14:58:07,797 - INFO - ----Form Saved Successfully----
+2023-08-30 14:58:10,176 - INFO - Login Done
+2023-08-30 14:58:21,486 - INFO - 7501 Form opened
+2023-08-30 14:58:29,786 - INFO - ----Upper Part Done----
+2023-08-30 14:58:35,982 - ERROR - SCAC not entered
+2023-08-30 14:58:45,318 - ERROR - !----Bill Of Lading Not Done----!
+2023-08-30 14:59:05,901 - INFO - ----Vessel Done----
+2023-08-30 14:59:25,305 - INFO - ----Trading Partner 1 Done----
+2023-08-30 14:59:46,113 - INFO - ----Trading Partner 2 Done----
+2023-08-30 15:00:02,489 - INFO - It is China HTS
+2023-08-30 15:00:18,883 - INFO - ----Form Saved Successfully----
+2023-08-30 15:00:21,461 - INFO - Login Done
+2023-08-30 15:00:32,770 - INFO - 7501 Form opened
+2023-08-30 15:00:41,107 - INFO - ----Upper Part Done----
+2023-08-30 15:00:54,811 - INFO - ----Bill Of Lading Done----
+2023-08-30 15:01:13,636 - INFO - ----Vessel Done----
+2023-08-30 15:01:31,386 - INFO - ----Trading Partner 1 Done----
+2023-08-30 15:01:49,473 - INFO - ----Trading Partner 2 Done----
+2023-08-30 15:02:02,953 - INFO - It is Cotton HTS
+2023-08-30 15:02:05,536 - INFO - It is China HTS
+2023-08-30 15:02:19,062 - INFO - ----Form Saved Successfully----
+2023-08-30 15:02:21,489 - INFO - Login Done
+2023-08-30 15:02:32,853 - INFO - 7501 Form opened
+2023-08-30 15:02:41,103 - INFO - ----Upper Part Done----
+2023-08-30 15:02:54,912 - INFO - ----Bill Of Lading Done----
+2023-08-30 15:03:13,735 - INFO - ----Vessel Done----
+2023-08-30 15:03:31,558 - INFO - ----Trading Partner 1 Done----
+2023-08-30 15:03:49,073 - INFO - ----Trading Partner 2 Done----
+2023-08-30 15:04:04,171 - INFO - It is China HTS
+2023-08-30 15:04:19,121 - ERROR - EP7 Filled
+2023-08-30 15:04:34,013 - INFO - ----Form Saved Successfully----
+2023-08-30 15:11:25,683 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-08-30 15:12:12,490 - INFO - Login Done
+2023-08-30 15:12:19,946 - INFO - 7501 Form opened
+2023-08-30 15:12:34,638 - INFO - ----Bill Of Lading Done----
+2023-08-30 15:13:12,499 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-08-30 15:14:02,157 - INFO - Login Done
+2023-08-30 15:14:09,645 - INFO - 7501 Form opened
+2023-08-30 15:14:24,610 - INFO - ----Bill Of Lading Done----
+2023-08-30 15:15:25,408 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-08-30 15:15:39,360 - INFO - Login Done
+2023-08-30 15:15:47,009 - INFO - 7501 Form opened
+2023-08-30 15:16:07,575 - INFO - ----Bill Of Lading Done----
+2023-08-30 15:16:23,246 - INFO - ----Bill Of Lading Done----
+2023-08-30 15:17:05,905 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-08-30 15:18:47,782 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-08-30 15:19:37,369 - INFO - Login Done
+2023-08-30 15:19:45,111 - INFO - 7501 Form opened
+2023-08-30 15:20:04,410 - INFO - ----Bill Of Lading Done----
+2023-08-30 15:33:41,048 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-08-30 15:33:58,127 - INFO - Login Done
+2023-08-30 15:34:06,058 - INFO - 7501 Form opened
+2023-08-30 15:34:33,579 - ERROR - SCAC not entered
+2023-08-30 15:34:46,508 - ERROR - UOM not entered
+2023-08-30 15:35:37,786 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-08-30 15:36:02,788 - INFO - Login Done
+2023-08-30 15:36:10,779 - INFO - 7501 Form opened
+2023-08-30 15:36:46,569 - ERROR - SCAC not entered
+2023-08-30 15:37:02,152 - ERROR - UOM not entered
+2023-08-30 15:38:03,603 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-08-30 15:38:23,423 - INFO - Login Done
+2023-08-30 15:38:30,932 - INFO - 7501 Form opened
+2023-08-30 15:38:54,000 - ERROR - SCAC not entered
+2023-08-30 15:40:26,567 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-08-30 15:49:30,789 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-08-30 15:49:44,052 - INFO - Login Done
+2023-08-30 15:49:51,543 - INFO - 7501 Form opened
+2023-08-30 15:52:09,004 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-08-30 15:52:23,443 - INFO - Login Done
+2023-08-30 15:52:31,049 - INFO - 7501 Form opened
+2023-08-30 15:56:23,554 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-08-30 15:57:07,543 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-08-30 16:00:06,838 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-08-30 16:00:21,714 - INFO - Login Done
+2023-08-30 16:00:29,241 - INFO - 7501 Form opened
+2023-08-30 16:00:55,608 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-08-30 16:01:10,643 - INFO - Login Done
+2023-08-30 16:01:18,250 - INFO - 7501 Form opened
+2023-08-30 16:08:09,119 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-08-30 16:08:23,393 - INFO - Login Done
+2023-08-30 16:08:30,992 - INFO - 7501 Form opened
+2023-08-30 16:09:08,028 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-08-30 16:09:51,645 - INFO - Login Done
+2023-08-30 16:09:59,495 - INFO - 7501 Form opened
+2023-08-30 16:10:08,763 - ERROR - SCAC not entered
+2023-08-30 16:10:21,523 - ERROR - SCAC not entered
+2023-08-30 16:11:00,062 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-08-30 16:11:35,422 - INFO - Login Done
+2023-08-30 16:11:43,348 - INFO - 7501 Form opened
+2023-08-30 16:13:57,829 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-08-30 16:14:14,707 - INFO - Login Done
+2023-08-30 16:14:22,686 - INFO - 7501 Form opened
+2023-08-30 16:14:59,760 - ERROR - SCAC not entered
+2023-08-30 16:15:15,844 - ERROR - UOM not entered
+2023-08-30 16:18:29,410 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-08-30 16:18:48,798 - INFO - Login Done
+2023-08-30 16:18:57,003 - INFO - 7501 Form opened
+2023-08-30 16:20:23,235 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-08-30 16:20:59,699 - INFO - Login Done
+2023-08-30 16:21:07,790 - INFO - 7501 Form opened
+2023-08-30 16:55:17,699 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-08-30 16:56:56,250 - INFO - Login Done
+2023-08-30 16:57:03,515 - INFO - 7501 Form opened
+2023-08-30 16:57:21,136 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-08-30 16:57:36,142 - INFO - Login Done
+2023-08-30 16:57:43,741 - INFO - 7501 Form opened
+2023-08-30 17:03:11,182 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-08-30 17:03:27,961 - INFO - Login Done
+2023-08-30 17:03:35,594 - INFO - 7501 Form opened
+2023-08-30 17:05:37,168 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-08-30 17:05:51,042 - INFO - Login Done
+2023-08-30 17:05:58,604 - INFO - 7501 Form opened
+2023-08-30 17:08:19,323 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-08-30 17:12:52,932 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-08-30 17:13:10,241 - INFO - Login Done
+2023-08-30 17:13:18,111 - INFO - 7501 Form opened
+2023-08-30 17:39:37,520 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-08-30 17:40:13,303 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-08-30 17:42:41,805 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-08-30 17:44:15,469 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-08-30 17:44:29,389 - INFO - Login Done
+2023-08-30 17:44:52,411 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-08-30 17:45:03,658 - INFO - Login Done
+2023-08-30 17:45:13,548 - INFO - 7501 Form opened
+2023-08-30 17:45:18,416 - INFO - ----Upper Part Done----
+2023-08-30 17:45:30,284 - INFO - 7501 Form opened
+2023-08-30 17:45:34,931 - INFO - ----Upper Part Done----
+2023-08-30 17:45:45,602 - INFO - 7501 Form opened
+2023-08-30 17:45:50,138 - INFO - ----Upper Part Done----
+2023-08-30 17:46:01,430 - INFO - 7501 Form opened
+2023-08-30 17:46:06,031 - INFO - ----Upper Part Done----
+2023-08-30 17:46:16,774 - INFO - 7501 Form opened
+2023-08-30 17:46:21,384 - INFO - ----Upper Part Done----
+2023-08-30 17:46:32,392 - INFO - 7501 Form opened
+2023-08-30 17:46:36,993 - INFO - ----Upper Part Done----
+2023-08-30 17:46:47,734 - INFO - 7501 Form opened
+2023-08-30 17:46:52,357 - INFO - ----Upper Part Done----
+2023-08-30 17:47:03,852 - INFO - 7501 Form opened
+2023-08-30 17:47:09,345 - INFO - ----Upper Part Done----
+2023-08-30 17:47:20,549 - INFO - 7501 Form opened
+2023-08-30 17:47:25,176 - INFO - ----Upper Part Done----
+2023-08-30 17:47:36,960 - INFO - 7501 Form opened
+2023-08-30 17:47:45,891 - INFO - ----Upper Part Done----
+2023-08-30 17:47:57,310 - INFO - 7501 Form opened
+2023-08-30 17:48:02,432 - INFO - ----Upper Part Done----
+2023-08-30 17:48:13,446 - INFO - 7501 Form opened
+2023-08-30 17:48:18,290 - INFO - ----Upper Part Done----
+2023-08-30 17:50:48,998 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-08-30 17:51:08,165 - INFO - Login Done
+2023-08-30 17:51:16,740 - INFO - 7501 Form opened
+2023-08-30 17:51:21,284 - INFO - ----Upper Part Done----
+2023-08-30 17:51:27,742 - INFO - 7501 Form opened
+2023-08-30 17:51:32,431 - INFO - ----Upper Part Done----
+2023-08-30 17:51:38,355 - INFO - 7501 Form opened
+2023-08-30 17:51:42,924 - INFO - ----Upper Part Done----
+2023-08-30 17:51:54,213 - INFO - 7501 Form opened
+2023-08-30 17:51:58,983 - INFO - ----Upper Part Done----
+2023-08-30 17:52:04,958 - INFO - 7501 Form opened
+2023-08-30 17:52:09,570 - INFO - ----Upper Part Done----
+2023-08-30 17:52:16,764 - INFO - 7501 Form opened
+2023-08-30 17:52:25,339 - INFO - ----Upper Part Done----
+2023-08-30 17:52:34,398 - INFO - 7501 Form opened
+2023-08-30 17:52:40,543 - INFO - ----Upper Part Done----
+2023-08-30 17:52:47,836 - INFO - 7501 Form opened
+2023-08-30 17:52:55,346 - INFO - ----Upper Part Done----
+2023-08-30 17:53:01,684 - INFO - 7501 Form opened
+2023-08-30 17:53:06,643 - INFO - ----Upper Part Done----
+2023-08-30 17:53:12,720 - INFO - 7501 Form opened
+2023-08-30 17:53:17,451 - INFO - ----Upper Part Done----
+2023-08-30 17:53:23,494 - INFO - 7501 Form opened
+2023-08-30 17:53:28,056 - INFO - ----Upper Part Done----
+2023-08-30 17:53:34,096 - INFO - 7501 Form opened
+2023-08-30 17:53:39,675 - INFO - ----Upper Part Done----
+2023-08-30 18:02:02,064 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-08-30 18:02:12,696 - INFO - Login Done
+2023-08-30 18:02:22,187 - INFO - 7501 Form opened
+2023-08-30 18:02:29,239 - INFO - 7501 Form opened
+2023-08-30 18:02:36,922 - INFO - 7501 Form opened
+2023-08-30 18:02:43,814 - INFO - 7501 Form opened
+2023-08-30 18:02:50,789 - INFO - 7501 Form opened
+2023-08-30 18:03:03,056 - INFO - 7501 Form opened
+2023-08-30 18:03:15,470 - INFO - 7501 Form opened
+2023-08-30 18:03:22,770 - INFO - 7501 Form opened
+2023-08-30 18:03:30,010 - INFO - 7501 Form opened
+2023-08-30 18:03:40,482 - INFO - 7501 Form opened
+2023-08-30 18:03:47,481 - INFO - 7501 Form opened
+2023-08-30 18:03:54,787 - INFO - 7501 Form opened
+2023-09-04 12:27:46,703 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-04 12:39:34,139 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-04 12:40:09,187 - INFO - Login Done
+2023-09-04 12:40:16,593 - INFO - 7501 Form opened
+2023-09-04 12:40:23,343 - INFO - ----Upper Part Done----
+2023-09-04 12:40:38,470 - INFO - ----Bill Of Lading Done----
+2023-09-04 12:40:51,163 - INFO - ----Bill Of Lading Done----
+2023-09-04 12:40:58,864 - INFO - ----Vessel Done----
+2023-09-04 12:41:15,322 - INFO - ----Trading Partner 1 Done----
+2023-09-04 12:41:31,171 - INFO - ----Trading Partner 2 Done----
+2023-09-04 12:42:11,125 - INFO - ----Form Saved Successfully----
+2023-09-04 14:50:15,204 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-04 14:51:25,109 - INFO - Login Done
+2023-09-04 14:51:32,633 - INFO - 7501 Form opened
+2023-09-04 14:51:43,149 - INFO - ----Upper Part Done----
+2023-09-04 14:52:02,143 - INFO - ----Bill Of Lading Done----
+2023-09-04 14:52:17,116 - INFO - ----Bill Of Lading Done----
+2023-09-04 14:52:26,693 - INFO - ----Vessel Done----
+2023-09-04 14:52:46,180 - INFO - ----Trading Partner 1 Done----
+2023-09-04 14:53:05,396 - INFO - ----Trading Partner 2 Done----
+2023-09-04 14:53:58,540 - ERROR - Message: 
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00007FF775F23E62+57250]
+	(No symbol) [0x00007FF775E9BC02]
+	(No symbol) [0x00007FF775D6E0BB]
+	(No symbol) [0x00007FF775DA765E]
+	(No symbol) [0x00007FF775DA774C]
+	(No symbol) [0x00007FF775DE0267]
+	(No symbol) [0x00007FF775DC67EF]
+	(No symbol) [0x00007FF775DDE312]
+	(No symbol) [0x00007FF775DC6583]
+	(No symbol) [0x00007FF775D9CC71]
+	(No symbol) [0x00007FF775D9DE54]
+	GetHandleVerifier [0x00007FF7761D4CF2+2879026]
+	GetHandleVerifier [0x00007FF776226F30+3215472]
+	GetHandleVerifier [0x00007FF77621FD4F+3186319]
+	GetHandleVerifier [0x00007FF775FB5505+652869]
+	(No symbol) [0x00007FF775EA7518]
+	(No symbol) [0x00007FF775EA35F4]
+	(No symbol) [0x00007FF775EA36EC]
+	(No symbol) [0x00007FF775E938E3]
+	BaseThreadInitThunk [0x00007FFAB875257D+29]
+	RtlUserThreadStart [0x00007FFAB944AA68+40]
+
+2023-09-04 14:54:18,284 - INFO - ----Form Saved Successfully----
+2023-09-04 15:01:55,829 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-04 15:02:32,402 - INFO - Login Done
+2023-09-04 15:02:40,127 - INFO - 7501 Form opened
+2023-09-04 15:03:40,142 - ERROR - Message: element not interactable
+  (Session info: chrome=116.0.5845.141)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00007FF775F23E62+57250]
+	(No symbol) [0x00007FF775E9BC02]
+	(No symbol) [0x00007FF775D6DF6D]
+	(No symbol) [0x00007FF775DA87B7]
+	(No symbol) [0x00007FF775D9EC1F]
+	(No symbol) [0x00007FF775DC67AA]
+	(No symbol) [0x00007FF775D9E536]
+	(No symbol) [0x00007FF775DC69C0]
+	(No symbol) [0x00007FF775DDE312]
+	(No symbol) [0x00007FF775DC6583]
+	(No symbol) [0x00007FF775D9CC71]
+	(No symbol) [0x00007FF775D9DE54]
+	GetHandleVerifier [0x00007FF7761D4CF2+2879026]
+	GetHandleVerifier [0x00007FF776226F30+3215472]
+	GetHandleVerifier [0x00007FF77621FD4F+3186319]
+	GetHandleVerifier [0x00007FF775FB5505+652869]
+	(No symbol) [0x00007FF775EA7518]
+	(No symbol) [0x00007FF775EA35F4]
+	(No symbol) [0x00007FF775EA36EC]
+	(No symbol) [0x00007FF775E938E3]
+	BaseThreadInitThunk [0x00007FFAB875257D+29]
+	RtlUserThreadStart [0x00007FFAB944AA68+40]
+
+2023-09-04 15:04:36,819 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-04 15:05:51,737 - INFO - Login Done
+2023-09-04 15:05:59,539 - INFO - 7501 Form opened
+2023-09-04 15:07:10,073 - ERROR - Message: element not interactable
+  (Session info: chrome=116.0.5845.141)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00007FF775F23E62+57250]
+	(No symbol) [0x00007FF775E9BC02]
+	(No symbol) [0x00007FF775D6DF6D]
+	(No symbol) [0x00007FF775DA87B7]
+	(No symbol) [0x00007FF775D9EC1F]
+	(No symbol) [0x00007FF775DC67AA]
+	(No symbol) [0x00007FF775D9E536]
+	(No symbol) [0x00007FF775DC69C0]
+	(No symbol) [0x00007FF775DDE312]
+	(No symbol) [0x00007FF775DC6583]
+	(No symbol) [0x00007FF775D9CC71]
+	(No symbol) [0x00007FF775D9DE54]
+	GetHandleVerifier [0x00007FF7761D4CF2+2879026]
+	GetHandleVerifier [0x00007FF776226F30+3215472]
+	GetHandleVerifier [0x00007FF77621FD4F+3186319]
+	GetHandleVerifier [0x00007FF775FB5505+652869]
+	(No symbol) [0x00007FF775EA7518]
+	(No symbol) [0x00007FF775EA35F4]
+	(No symbol) [0x00007FF775EA36EC]
+	(No symbol) [0x00007FF775E938E3]
+	BaseThreadInitThunk [0x00007FFAB875257D+29]
+	RtlUserThreadStart [0x00007FFAB944AA68+40]
+
+2023-09-04 15:11:35,435 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-04 15:12:39,149 - INFO - Login Done
+2023-09-04 15:12:46,744 - INFO - 7501 Form opened
+2023-09-04 15:14:13,018 - INFO - It is Cotton HTS
+2023-09-04 15:16:16,851 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-04 15:16:59,700 - INFO - Login Done
+2023-09-04 15:17:07,291 - INFO - 7501 Form opened
+2023-09-04 15:18:03,380 - INFO - It is Cotton HTS
+2023-09-04 15:18:28,429 - ERROR - Message: 
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00007FF775F23E62+57250]
+	(No symbol) [0x00007FF775E9BC02]
+	(No symbol) [0x00007FF775D6E0BB]
+	(No symbol) [0x00007FF775DA765E]
+	(No symbol) [0x00007FF775DA774C]
+	(No symbol) [0x00007FF775DE0267]
+	(No symbol) [0x00007FF775DC67EF]
+	(No symbol) [0x00007FF775DDE312]
+	(No symbol) [0x00007FF775DC6583]
+	(No symbol) [0x00007FF775D9CC71]
+	(No symbol) [0x00007FF775D9DE54]
+	GetHandleVerifier [0x00007FF7761D4CF2+2879026]
+	GetHandleVerifier [0x00007FF776226F30+3215472]
+	GetHandleVerifier [0x00007FF77621FD4F+3186319]
+	GetHandleVerifier [0x00007FF775FB5505+652869]
+	(No symbol) [0x00007FF775EA7518]
+	(No symbol) [0x00007FF775EA35F4]
+	(No symbol) [0x00007FF775EA36EC]
+	(No symbol) [0x00007FF775E938E3]
+	BaseThreadInitThunk [0x00007FFAB875257D+29]
+	RtlUserThreadStart [0x00007FFAB944AA68+40]
+
+2023-09-04 15:48:29,406 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-04 15:49:24,433 - INFO - Login Done
+2023-09-04 15:49:31,925 - INFO - 7501 Form opened
+2023-09-04 15:50:11,790 - INFO - It is Cotton HTS
+2023-09-04 15:50:38,063 - INFO - It is Cotton HTS
+2023-09-04 15:53:31,031 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-04 15:54:15,946 - INFO - Login Done
+2023-09-04 15:54:23,448 - INFO - 7501 Form opened
+2023-09-04 15:55:12,478 - INFO - It is Cotton HTS
+2023-09-04 15:55:34,927 - ERROR - Message: 
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00007FF775F23E62+57250]
+	(No symbol) [0x00007FF775E9BC02]
+	(No symbol) [0x00007FF775D6E0BB]
+	(No symbol) [0x00007FF775DA765E]
+	(No symbol) [0x00007FF775DA774C]
+	(No symbol) [0x00007FF775DE0267]
+	(No symbol) [0x00007FF775DC67EF]
+	(No symbol) [0x00007FF775DDE312]
+	(No symbol) [0x00007FF775DC6583]
+	(No symbol) [0x00007FF775D9CC71]
+	(No symbol) [0x00007FF775D9DE54]
+	GetHandleVerifier [0x00007FF7761D4CF2+2879026]
+	GetHandleVerifier [0x00007FF776226F30+3215472]
+	GetHandleVerifier [0x00007FF77621FD4F+3186319]
+	GetHandleVerifier [0x00007FF775FB5505+652869]
+	(No symbol) [0x00007FF775EA7518]
+	(No symbol) [0x00007FF775EA35F4]
+	(No symbol) [0x00007FF775EA36EC]
+	(No symbol) [0x00007FF775E938E3]
+	BaseThreadInitThunk [0x00007FFAB875257D+29]
+	RtlUserThreadStart [0x00007FFAB944AA68+40]
+
+2023-09-04 15:57:46,880 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-04 15:58:05,893 - INFO - Login Done
+2023-09-04 15:58:13,539 - INFO - 7501 Form opened
+2023-09-04 15:59:13,398 - INFO - It is Cotton HTS
+2023-09-04 15:59:51,730 - INFO - It is Cotton HTS
+2023-09-04 16:02:14,574 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-04 16:02:54,346 - INFO - Login Done
+2023-09-04 16:03:02,081 - INFO - 7501 Form opened
+2023-09-04 16:04:47,086 - INFO - It is Cotton HTS
+2023-09-04 16:05:42,962 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-04 16:06:57,616 - INFO - Login Done
+2023-09-04 16:07:05,119 - INFO - 7501 Form opened
+2023-09-04 16:08:42,174 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-04 16:09:59,949 - INFO - Login Done
+2023-09-04 16:10:07,477 - INFO - 7501 Form opened
+2023-09-04 16:20:57,538 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-04 16:21:25,058 - INFO - Login Done
+2023-09-04 16:21:32,489 - INFO - 7501 Form opened
+2023-09-04 16:25:47,078 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-04 16:26:47,998 - INFO - Login Done
+2023-09-04 16:26:55,681 - INFO - 7501 Form opened
+2023-09-04 16:30:21,413 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-04 16:31:19,618 - INFO - Login Done
+2023-09-04 16:31:27,265 - INFO - 7501 Form opened
+2023-09-04 17:08:51,225 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-04 17:09:15,240 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-04 17:09:38,143 - INFO - Login Done
+2023-09-04 17:09:49,551 - INFO - 7501 Form opened
+2023-09-04 17:11:46,757 - INFO - It is Cotton HTS
+2023-09-04 17:12:35,970 - INFO - It is Cotton HTS
+2023-09-04 17:17:49,926 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-04 17:18:42,768 - INFO - Login Done
+2023-09-04 17:18:50,220 - INFO - 7501 Form opened
+2023-09-04 17:19:27,464 - ERROR - EP7 Filled
+2023-09-04 17:20:14,238 - ERROR - EP7 Filled
+2023-09-04 17:20:24,866 - ERROR - Message: 
+
+2023-09-04 17:21:05,577 - ERROR - EP7 Filled
+2023-09-04 17:21:16,283 - ERROR - Message: 
+
+2023-09-04 17:21:59,680 - ERROR - EP7 Filled
+2023-09-04 17:22:10,514 - ERROR - Message: 
+
+2023-09-04 17:28:26,599 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-04 17:29:43,920 - INFO - Login Done
+2023-09-04 17:29:51,768 - INFO - 7501 Form opened
+2023-09-04 17:30:24,906 - ERROR - Error while saving form
+2023-09-04 17:30:26,193 - ERROR - Message: no such element: Unable to locate element: {"method":"xpath","selector":"//button[normalize-space()='OK']"}
+  (Session info: chrome=116.0.5845.141); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00007FF775F23E62+57250]
+	(No symbol) [0x00007FF775E9BC02]
+	(No symbol) [0x00007FF775D6E0BB]
+	(No symbol) [0x00007FF775DA765E]
+	(No symbol) [0x00007FF775DA774C]
+	(No symbol) [0x00007FF775DE0267]
+	(No symbol) [0x00007FF775DC67EF]
+	(No symbol) [0x00007FF775DDE312]
+	(No symbol) [0x00007FF775DC6583]
+	(No symbol) [0x00007FF775D9CC71]
+	(No symbol) [0x00007FF775D9DE54]
+	GetHandleVerifier [0x00007FF7761D4CF2+2879026]
+	GetHandleVerifier [0x00007FF776226F30+3215472]
+	GetHandleVerifier [0x00007FF77621FD4F+3186319]
+	GetHandleVerifier [0x00007FF775FB5505+652869]
+	(No symbol) [0x00007FF775EA7518]
+	(No symbol) [0x00007FF775EA35F4]
+	(No symbol) [0x00007FF775EA36EC]
+	(No symbol) [0x00007FF775E938E3]
+	BaseThreadInitThunk [0x00007FFAB875257D+29]
+	RtlUserThreadStart [0x00007FFAB944AA68+40]
+
+2023-09-04 17:35:26,844 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-04 17:36:24,436 - INFO - Login Done
+2023-09-04 17:36:32,067 - INFO - 7501 Form opened
+2023-09-04 17:36:39,534 - ERROR - Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=116.0.5845.141)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00007FF775F23E62+57250]
+	(No symbol) [0x00007FF775E9BC02]
+	(No symbol) [0x00007FF775D6E0BB]
+	(No symbol) [0x00007FF775D4DD39]
+	(No symbol) [0x00007FF775DCABF7]
+	(No symbol) [0x00007FF775DDD9DF]
+	(No symbol) [0x00007FF775DC6583]
+	(No symbol) [0x00007FF775D9CC71]
+	(No symbol) [0x00007FF775D9DE54]
+	GetHandleVerifier [0x00007FF7761D4CF2+2879026]
+	GetHandleVerifier [0x00007FF776226F30+3215472]
+	GetHandleVerifier [0x00007FF77621FD4F+3186319]
+	GetHandleVerifier [0x00007FF775FB5505+652869]
+	(No symbol) [0x00007FF775EA7518]
+	(No symbol) [0x00007FF775EA35F4]
+	(No symbol) [0x00007FF775EA36EC]
+	(No symbol) [0x00007FF775E938E3]
+	BaseThreadInitThunk [0x00007FFAB875257D+29]
+	RtlUserThreadStart [0x00007FFAB944AA68+40]
+
+2023-09-04 17:36:49,547 - INFO - No Container found
+2023-09-04 17:36:49,549 - ERROR - Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=116.0.5845.141)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00007FF775F23E62+57250]
+	(No symbol) [0x00007FF775E9BC02]
+	(No symbol) [0x00007FF775D6E0BB]
+	(No symbol) [0x00007FF775D4DD39]
+	(No symbol) [0x00007FF775DCABF7]
+	(No symbol) [0x00007FF775DDD9DF]
+	(No symbol) [0x00007FF775DC6583]
+	(No symbol) [0x00007FF775D9CC71]
+	(No symbol) [0x00007FF775D9DE54]
+	GetHandleVerifier [0x00007FF7761D4CF2+2879026]
+	GetHandleVerifier [0x00007FF776226F30+3215472]
+	GetHandleVerifier [0x00007FF77621FD4F+3186319]
+	GetHandleVerifier [0x00007FF775FB5505+652869]
+	(No symbol) [0x00007FF775EA7518]
+	(No symbol) [0x00007FF775EA35F4]
+	(No symbol) [0x00007FF775EA36EC]
+	(No symbol) [0x00007FF775E938E3]
+	BaseThreadInitThunk [0x00007FFAB875257D+29]
+	RtlUserThreadStart [0x00007FFAB944AA68+40]
+
+2023-09-04 17:36:49,550 - ERROR - Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=116.0.5845.141)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00007FF775F23E62+57250]
+	(No symbol) [0x00007FF775E9BC02]
+	(No symbol) [0x00007FF775D6E0BB]
+	(No symbol) [0x00007FF775D4DD39]
+	(No symbol) [0x00007FF775DCABF7]
+	(No symbol) [0x00007FF775DDD9DF]
+	(No symbol) [0x00007FF775DC6583]
+	(No symbol) [0x00007FF775D9CC71]
+	(No symbol) [0x00007FF775D9DE54]
+	GetHandleVerifier [0x00007FF7761D4CF2+2879026]
+	GetHandleVerifier [0x00007FF776226F30+3215472]
+	GetHandleVerifier [0x00007FF77621FD4F+3186319]
+	GetHandleVerifier [0x00007FF775FB5505+652869]
+	(No symbol) [0x00007FF775EA7518]
+	(No symbol) [0x00007FF775EA35F4]
+	(No symbol) [0x00007FF775EA36EC]
+	(No symbol) [0x00007FF775E938E3]
+	BaseThreadInitThunk [0x00007FFAB875257D+29]
+	RtlUserThreadStart [0x00007FFAB944AA68+40]
+
+2023-09-04 17:36:49,554 - ERROR - Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=116.0.5845.141)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00007FF775F23E62+57250]
+	(No symbol) [0x00007FF775E9BC02]
+	(No symbol) [0x00007FF775D6E0BB]
+	(No symbol) [0x00007FF775D4DD39]
+	(No symbol) [0x00007FF775DCABF7]
+	(No symbol) [0x00007FF775DDD9DF]
+	(No symbol) [0x00007FF775DC6583]
+	(No symbol) [0x00007FF775D9CC71]
+	(No symbol) [0x00007FF775D9DE54]
+	GetHandleVerifier [0x00007FF7761D4CF2+2879026]
+	GetHandleVerifier [0x00007FF776226F30+3215472]
+	GetHandleVerifier [0x00007FF77621FD4F+3186319]
+	GetHandleVerifier [0x00007FF775FB5505+652869]
+	(No symbol) [0x00007FF775EA7518]
+	(No symbol) [0x00007FF775EA35F4]
+	(No symbol) [0x00007FF775EA36EC]
+	(No symbol) [0x00007FF775E938E3]
+	BaseThreadInitThunk [0x00007FFAB875257D+29]
+	RtlUserThreadStart [0x00007FFAB944AA68+40]
+
+2023-09-04 17:37:02,463 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-04 17:37:30,797 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-04 17:38:07,569 - INFO - Login Done
+2023-09-04 17:38:14,983 - INFO - 7501 Form opened
+2023-09-04 17:38:23,195 - INFO - ----Upper Part Done----
+2023-09-04 17:38:34,029 - INFO - Login Done
+2023-09-04 17:38:36,046 - INFO - ----Bill Of Lading Done----
+2023-09-04 17:38:41,627 - INFO - 7501 Form opened
+2023-09-04 17:38:55,502 - INFO - ----Vessel Done----
+2023-09-04 17:39:07,100 - INFO - EP5 Filled
+2023-09-04 17:39:14,172 - INFO - ----Trading Partner 1 Done----
+2023-09-04 17:39:32,180 - INFO - ----Trading Partner 2 Done----
+2023-09-04 17:39:40,175 - ERROR - EP7 Filled
+2023-09-04 17:39:50,586 - INFO - EP5 Filled
+2023-09-04 17:40:07,969 - ERROR - EP7 Filled
+2023-09-04 17:40:28,524 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-04 17:40:39,249 - INFO - ----Form Saved Successfully----
+2023-09-04 17:41:04,783 - INFO - Login Done
+2023-09-04 17:41:12,243 - INFO - 7501 Form opened
+2023-09-04 17:41:33,958 - INFO - EP5 Filled
+2023-09-04 17:42:02,664 - ERROR - EP7 Filled
+2023-09-04 17:42:36,134 - INFO - EP5 Filled
+2023-09-04 17:42:48,171 - ERROR - Message: 
+
+2023-09-04 17:43:12,787 - INFO - EP5 Filled
+2023-09-04 17:43:25,155 - ERROR - Message: 
+
+2023-09-04 17:47:10,809 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-04 17:47:30,804 - INFO - Login Done
+2023-09-04 17:47:38,320 - INFO - 7501 Form opened
+2023-09-04 17:48:03,293 - INFO - EP5 Filled
+2023-09-04 17:48:34,856 - ERROR - EP7 Filled
+2023-09-04 17:49:12,073 - INFO - EP5 Filled
+2023-09-04 17:49:24,412 - ERROR - Message: 
+
+2023-09-04 18:00:18,191 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-04 18:00:39,663 - INFO - Login Done
+2023-09-04 18:00:47,107 - INFO - 7501 Form opened
+2023-09-04 18:01:24,802 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-04 18:02:15,049 - INFO - Login Done
+2023-09-04 18:02:22,555 - INFO - 7501 Form opened
+2023-09-04 18:05:12,988 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-04 18:05:27,566 - INFO - Login Done
+2023-09-04 18:05:35,211 - INFO - 7501 Form opened
+2023-09-04 18:06:58,158 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-04 18:07:15,791 - INFO - Login Done
+2023-09-04 18:07:23,769 - INFO - 7501 Form opened
+2023-09-04 18:13:54,255 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-04 18:14:39,800 - INFO - Login Done
+2023-09-04 18:14:47,714 - INFO - 7501 Form opened
+2023-09-04 18:17:12,282 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-04 18:17:25,356 - INFO - Login Done
+2023-09-04 18:17:32,868 - INFO - 7501 Form opened
+2023-09-04 18:23:21,388 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-04 18:24:01,929 - INFO - Login Done
+2023-09-04 18:24:09,372 - INFO - 7501 Form opened
+2023-09-04 18:25:15,366 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-04 18:26:07,350 - INFO - Login Done
+2023-09-04 18:26:14,817 - INFO - 7501 Form opened
+2023-09-04 18:30:25,083 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-04 18:31:29,686 - INFO - Login Done
+2023-09-04 18:31:37,417 - INFO - 7501 Form opened
+2023-09-04 18:33:45,365 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-04 18:34:16,693 - INFO - Login Done
+2023-09-04 18:34:24,584 - INFO - 7501 Form opened
+2023-09-05 10:47:24,266 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-05 10:47:57,236 - INFO - Login Done
+2023-09-05 10:48:04,945 - INFO - 7501 Form opened
+2023-09-05 10:53:44,382 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-05 10:54:34,328 - INFO - Login Done
+2023-09-05 10:54:42,112 - INFO - 7501 Form opened
+2023-09-05 11:00:53,330 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-05 11:01:35,216 - INFO - Login Done
+2023-09-05 11:01:43,138 - INFO - 7501 Form opened
+2023-09-05 11:08:21,087 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-05 11:08:50,732 - INFO - Login Done
+2023-09-05 11:08:58,733 - INFO - 7501 Form opened
+2023-09-05 11:14:57,158 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-05 11:15:24,666 - INFO - Login Done
+2023-09-05 11:15:32,164 - INFO - 7501 Form opened
+2023-09-05 11:17:13,126 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-05 11:17:27,704 - INFO - Login Done
+2023-09-05 11:17:35,239 - INFO - 7501 Form opened
+2023-09-05 11:45:41,509 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-05 11:47:12,070 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-05 14:41:55,452 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-05 14:42:17,823 - INFO - Login Done
+2023-09-05 14:42:25,604 - INFO - 7501 Form opened
+2023-09-05 17:30:10,987 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-05 17:30:58,429 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-05 17:31:17,973 - INFO - Login Done
+2023-09-05 17:31:25,385 - INFO - 7501 Form opened
+2023-09-05 17:33:53,333 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-05 17:34:08,618 - INFO - Login Done
+2023-09-05 17:34:16,158 - INFO - 7501 Form opened
+2023-09-05 17:38:11,919 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-05 17:38:30,680 - INFO - Login Done
+2023-09-05 17:38:38,301 - INFO - 7501 Form opened
+2023-09-05 17:48:49,189 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-05 17:49:08,967 - INFO - Login Done
+2023-09-05 17:49:16,899 - INFO - 7501 Form opened
+2023-09-05 17:53:47,882 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-05 17:54:40,439 - INFO - Login Done
+2023-09-05 17:54:47,918 - INFO - 7501 Form opened
+2023-09-05 17:56:12,074 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-05 17:56:27,638 - INFO - Login Done
+2023-09-05 17:56:35,122 - INFO - 7501 Form opened
+2023-09-05 17:56:44,677 - INFO - ----Upper Part Done----
+2023-09-05 17:56:58,850 - INFO - ----Bill Of Lading Done----
+2023-09-05 17:57:17,726 - INFO - ----Vessel Done----
+2023-09-05 17:57:35,084 - INFO - ----Trading Partner 1 Done----
+2023-09-05 17:57:52,996 - INFO - ----Trading Partner 2 Done----
+2023-09-05 17:58:10,128 - INFO - EP5 Filled
+2023-09-05 17:58:26,936 - ERROR - EP7 Filled
+2023-09-05 17:59:27,966 - INFO - FD3 Filled
+2023-09-05 17:59:38,489 - INFO - ----Form Saved Successfully----
+2023-09-05 18:03:08,429 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-05 18:03:22,740 - INFO - Login Done
+2023-09-05 18:03:30,250 - INFO - 7501 Form opened
+2023-09-05 18:05:55,438 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-05 18:06:23,427 - INFO - Login Done
+2023-09-05 18:06:31,053 - INFO - 7501 Form opened
+2023-09-05 18:11:20,942 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-05 18:11:42,959 - INFO - Login Done
+2023-09-05 18:11:50,761 - INFO - 7501 Form opened
+2023-09-05 18:14:59,104 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-05 18:15:18,967 - INFO - Login Done
+2023-09-05 18:15:26,934 - INFO - 7501 Form opened
+2023-09-05 18:20:18,238 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-05 18:20:32,934 - INFO - Login Done
+2023-09-05 18:20:40,397 - INFO - 7501 Form opened
+2023-09-05 18:23:28,331 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-05 18:23:42,728 - INFO - Login Done
+2023-09-05 18:23:50,205 - INFO - 7501 Form opened
+2023-09-05 18:26:41,590 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-05 18:26:56,780 - INFO - Login Done
+2023-09-05 18:27:04,544 - INFO - 7501 Form opened
+2023-09-05 18:28:22,510 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-05 18:29:22,526 - INFO - Login Done
+2023-09-05 18:29:30,454 - INFO - 7501 Form opened
+2023-09-05 18:31:49,114 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-05 18:32:40,421 - INFO - Login Done
+2023-09-05 18:32:47,845 - INFO - 7501 Form opened
+2023-09-06 14:52:30,107 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-06 14:52:49,485 - INFO - Login Done
+2023-09-06 14:52:57,143 - INFO - 7501 Form opened
+2023-09-06 15:09:30,826 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-06 15:10:33,445 - INFO - Login Done
+2023-09-06 15:10:41,384 - INFO - 7501 Form opened
+2023-09-06 15:12:23,717 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-06 15:14:15,327 - INFO - Login Done
+2023-09-06 15:14:23,158 - INFO - 7501 Form opened
+2023-09-06 15:28:06,961 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-06 15:30:14,013 - INFO - Login Done
+2023-09-06 15:30:21,682 - INFO - 7501 Form opened
+2023-09-06 15:30:55,984 - ERROR - HTS not Entered
+2023-09-06 15:31:53,957 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-06 15:32:35,163 - INFO - Login Done
+2023-09-06 15:32:42,792 - INFO - 7501 Form opened
+2023-09-06 15:33:16,978 - ERROR - HTS not Entered
+2023-09-06 15:33:41,302 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-06 15:37:18,180 - INFO - Login Done
+2023-09-06 15:37:25,887 - INFO - 7501 Form opened
+2023-09-06 15:42:19,843 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-06 15:42:47,415 - INFO - Login Done
+2023-09-06 15:42:55,262 - INFO - 7501 Form opened
+2023-09-06 15:47:47,518 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-06 15:49:05,321 - INFO - Login Done
+2023-09-06 15:49:12,791 - INFO - 7501 Form opened
+2023-09-06 15:51:41,900 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-06 15:53:27,283 - INFO - Login Done
+2023-09-06 15:53:34,749 - INFO - 7501 Form opened
+2023-09-06 17:27:10,453 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-06 17:29:32,002 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-06 17:30:32,088 - INFO - Login Done
+2023-09-06 17:30:39,604 - INFO - 7501 Form opened
+2023-09-06 17:30:46,430 - INFO - ----Upper Part Done----
+2023-09-06 17:30:53,312 - ERROR - SCAC not entered
+2023-09-06 17:31:02,260 - ERROR - !----Bill Of Lading Not Done----!
+2023-09-06 17:31:15,152 - INFO - ----Bill Of Lading Done----
+2023-09-06 17:31:23,482 - INFO - ----Vessel Done----
+2023-09-06 17:31:40,718 - INFO - ----Trading Partner 1 Done----
+2023-09-06 17:31:58,767 - INFO - ----Trading Partner 2 Done----
+2023-09-06 17:32:13,988 - INFO - It is China HTS
+2023-09-06 17:32:37,723 - INFO - It is China HTS
+2023-09-06 17:32:56,411 - INFO - ----Form Saved Successfully----
+2023-09-08 11:32:04,416 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-08 11:32:39,396 - INFO - Login Done
+2023-09-08 11:32:47,187 - INFO - 7501 Form opened
+2023-09-08 11:32:58,937 - INFO - ----Upper Part Done----
+2023-09-08 11:33:25,494 - INFO - ----Bill Of Lading Done----
+2023-09-08 11:33:45,876 - INFO - ----Bill Of Lading Done----
+2023-09-08 11:33:59,485 - INFO - ----Vessel Done----
+2023-09-08 11:34:22,718 - INFO - ----Trading Partner 1 Done----
+2023-09-08 11:34:48,101 - INFO - ----Trading Partner 2 Done----
+2023-09-08 11:35:02,116 - ERROR - HTS not Entered
+2023-09-08 11:35:38,608 - INFO - It is China HTS
+2023-09-08 11:36:06,830 - INFO - ----Form Saved Successfully----
+2023-09-11 10:58:54,643 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-11 11:01:02,290 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-11 11:01:45,396 - INFO - Login Done
+2023-09-11 11:01:52,957 - INFO - 7501 Form opened
+2023-09-11 11:02:02,852 - INFO - ----Upper Part Done----
+2023-09-11 11:02:20,331 - INFO - ----Bill Of Lading Done----
+2023-09-11 11:02:33,559 - INFO - ----Bill Of Lading Done----
+2023-09-11 11:02:40,923 - INFO - ----Vessel Done----
+2023-09-11 11:02:57,184 - INFO - ----Trading Partner 1 Done----
+2023-09-11 11:03:13,524 - INFO - ----Trading Partner 2 Done----
+2023-09-11 11:04:02,832 - INFO - It is Cotton HTS
+2023-09-11 11:04:19,303 - INFO - ----Form Saved Successfully----
+2023-09-11 11:12:57,217 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-11 11:13:30,150 - INFO - Login Done
+2023-09-11 11:13:37,608 - INFO - 7501 Form opened
+2023-09-11 11:13:46,314 - INFO - ----Upper Part Done----
+2023-09-11 11:14:03,770 - INFO - ----Bill Of Lading Done----
+2023-09-11 11:14:16,939 - INFO - ----Bill Of Lading Done----
+2023-09-11 11:14:25,014 - INFO - ----Vessel Done----
+2023-09-11 11:14:42,260 - INFO - ----Trading Partner 1 Done----
+2023-09-11 11:15:00,614 - INFO - ----Trading Partner 2 Done----
+2023-09-11 11:15:45,175 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-11 11:16:19,790 - INFO - Login Done
+2023-09-11 11:16:27,216 - INFO - 7501 Form opened
+2023-09-11 11:16:36,127 - INFO - ----Upper Part Done----
+2023-09-11 11:16:53,119 - INFO - ----Bill Of Lading Done----
+2023-09-11 11:17:08,672 - INFO - ----Bill Of Lading Done----
+2023-09-11 11:17:16,322 - INFO - ----Vessel Done----
+2023-09-11 11:17:33,490 - INFO - ----Trading Partner 1 Done----
+2023-09-11 11:17:53,709 - INFO - ----Trading Partner 2 Done----
+2023-09-11 11:18:55,609 - INFO - It is Cotton HTS
+2023-09-11 11:19:17,172 - INFO - ----Form Saved Successfully----
+2023-09-11 13:22:39,434 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-11 13:23:14,852 - INFO - Login Done
+2023-09-11 13:23:22,375 - INFO - 7501 Form opened
+2023-09-11 13:23:33,246 - INFO - ----Upper Part Done----
+2023-09-11 13:23:52,310 - INFO - ----Bill Of Lading Done----
+2023-09-11 13:24:15,184 - INFO - ----Vessel Done----
+2023-09-11 13:24:37,699 - INFO - ----Trading Partner 1 Done----
+2023-09-11 13:24:42,243 - ERROR - Message: element not interactable
+  (Session info: chrome=116.0.5845.180)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00007FF6FBDA3E62+57250]
+	(No symbol) [0x00007FF6FBD1BC02]
+	(No symbol) [0x00007FF6FBBEDF6D]
+	(No symbol) [0x00007FF6FBC287B7]
+	(No symbol) [0x00007FF6FBC1EC1F]
+	(No symbol) [0x00007FF6FBC467AA]
+	(No symbol) [0x00007FF6FBC1E536]
+	(No symbol) [0x00007FF6FBC469C0]
+	(No symbol) [0x00007FF6FBC5E312]
+	(No symbol) [0x00007FF6FBC46583]
+	(No symbol) [0x00007FF6FBC1CC71]
+	(No symbol) [0x00007FF6FBC1DE54]
+	GetHandleVerifier [0x00007FF6FC054CF2+2879026]
+	GetHandleVerifier [0x00007FF6FC0A6F30+3215472]
+	GetHandleVerifier [0x00007FF6FC09FD4F+3186319]
+	GetHandleVerifier [0x00007FF6FBE35505+652869]
+	(No symbol) [0x00007FF6FBD27518]
+	(No symbol) [0x00007FF6FBD235F4]
+	(No symbol) [0x00007FF6FBD236EC]
+	(No symbol) [0x00007FF6FBD138E3]
+	BaseThreadInitThunk [0x00007FF930F7257D+29]
+	RtlUserThreadStart [0x00007FF931C6AA68+40]
+
+2023-09-11 13:24:43,541 - ERROR - Message: element not interactable
+  (Session info: chrome=116.0.5845.180)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00007FF6FBDA3E62+57250]
+	(No symbol) [0x00007FF6FBD1BC02]
+	(No symbol) [0x00007FF6FBBEDF6D]
+	(No symbol) [0x00007FF6FBC287B7]
+	(No symbol) [0x00007FF6FBC1EC1F]
+	(No symbol) [0x00007FF6FBC467AA]
+	(No symbol) [0x00007FF6FBC1E536]
+	(No symbol) [0x00007FF6FBC469C0]
+	(No symbol) [0x00007FF6FBC5E312]
+	(No symbol) [0x00007FF6FBC46583]
+	(No symbol) [0x00007FF6FBC1CC71]
+	(No symbol) [0x00007FF6FBC1DE54]
+	GetHandleVerifier [0x00007FF6FC054CF2+2879026]
+	GetHandleVerifier [0x00007FF6FC0A6F30+3215472]
+	GetHandleVerifier [0x00007FF6FC09FD4F+3186319]
+	GetHandleVerifier [0x00007FF6FBE35505+652869]
+	(No symbol) [0x00007FF6FBD27518]
+	(No symbol) [0x00007FF6FBD235F4]
+	(No symbol) [0x00007FF6FBD236EC]
+	(No symbol) [0x00007FF6FBD138E3]
+	BaseThreadInitThunk [0x00007FF930F7257D+29]
+	RtlUserThreadStart [0x00007FF931C6AA68+40]
+
+2023-09-11 13:25:14,968 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-11 13:25:30,793 - INFO - Login Done
+2023-09-11 13:25:38,287 - INFO - 7501 Form opened
+2023-09-11 13:25:47,338 - INFO - ----Upper Part Done----
+2023-09-11 13:26:03,698 - INFO - ----Bill Of Lading Done----
+2023-09-11 13:26:17,519 - INFO - ----Bill Of Lading Done----
+2023-09-11 13:26:25,275 - INFO - ----Vessel Done----
+2023-09-11 13:26:42,918 - INFO - ----Trading Partner 1 Done----
+2023-09-11 13:26:45,955 - ERROR - Message: element not interactable
+  (Session info: chrome=116.0.5845.180)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00007FF6FBDA3E62+57250]
+	(No symbol) [0x00007FF6FBD1BC02]
+	(No symbol) [0x00007FF6FBBEDF6D]
+	(No symbol) [0x00007FF6FBC287B7]
+	(No symbol) [0x00007FF6FBC1EC1F]
+	(No symbol) [0x00007FF6FBC467AA]
+	(No symbol) [0x00007FF6FBC1E536]
+	(No symbol) [0x00007FF6FBC469C0]
+	(No symbol) [0x00007FF6FBC5E312]
+	(No symbol) [0x00007FF6FBC46583]
+	(No symbol) [0x00007FF6FBC1CC71]
+	(No symbol) [0x00007FF6FBC1DE54]
+	GetHandleVerifier [0x00007FF6FC054CF2+2879026]
+	GetHandleVerifier [0x00007FF6FC0A6F30+3215472]
+	GetHandleVerifier [0x00007FF6FC09FD4F+3186319]
+	GetHandleVerifier [0x00007FF6FBE35505+652869]
+	(No symbol) [0x00007FF6FBD27518]
+	(No symbol) [0x00007FF6FBD235F4]
+	(No symbol) [0x00007FF6FBD236EC]
+	(No symbol) [0x00007FF6FBD138E3]
+	BaseThreadInitThunk [0x00007FF930F7257D+29]
+	RtlUserThreadStart [0x00007FF931C6AA68+40]
+
+2023-09-11 13:26:46,704 - ERROR - Message: element not interactable
+  (Session info: chrome=116.0.5845.180)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00007FF6FBDA3E62+57250]
+	(No symbol) [0x00007FF6FBD1BC02]
+	(No symbol) [0x00007FF6FBBEDF6D]
+	(No symbol) [0x00007FF6FBC287B7]
+	(No symbol) [0x00007FF6FBC1EC1F]
+	(No symbol) [0x00007FF6FBC467AA]
+	(No symbol) [0x00007FF6FBC1E536]
+	(No symbol) [0x00007FF6FBC469C0]
+	(No symbol) [0x00007FF6FBC5E312]
+	(No symbol) [0x00007FF6FBC46583]
+	(No symbol) [0x00007FF6FBC1CC71]
+	(No symbol) [0x00007FF6FBC1DE54]
+	GetHandleVerifier [0x00007FF6FC054CF2+2879026]
+	GetHandleVerifier [0x00007FF6FC0A6F30+3215472]
+	GetHandleVerifier [0x00007FF6FC09FD4F+3186319]
+	GetHandleVerifier [0x00007FF6FBE35505+652869]
+	(No symbol) [0x00007FF6FBD27518]
+	(No symbol) [0x00007FF6FBD235F4]
+	(No symbol) [0x00007FF6FBD236EC]
+	(No symbol) [0x00007FF6FBD138E3]
+	BaseThreadInitThunk [0x00007FF930F7257D+29]
+	RtlUserThreadStart [0x00007FF931C6AA68+40]
+
+2023-09-11 13:29:30,439 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-11 13:29:45,433 - INFO - Login Done
+2023-09-11 13:29:53,102 - INFO - 7501 Form opened
+2023-09-11 13:30:04,428 - INFO - ----Upper Part Done----
+2023-09-11 13:30:23,719 - INFO - ----Bill Of Lading Done----
+2023-09-11 13:30:30,526 - ERROR - SCAC not entered
+2023-09-11 13:30:41,267 - ERROR - !----Bill Of Lading Not Done----!
+2023-09-11 13:30:52,307 - INFO - ----Vessel Done----
+2023-09-11 13:30:59,083 - ERROR - Manufacturer not Entered
+2023-09-11 13:31:14,867 - ERROR - !----Trading Partner 1 Not Done----!
+2023-09-11 13:31:39,072 - INFO - ----Trading Partner 2 Done----
+2023-09-11 13:32:48,585 - INFO - It is Cotton HTS
+2023-09-11 13:33:14,572 - INFO - ----Form Saved Successfully----
+2023-09-11 15:22:49,677 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-11 15:24:04,988 - INFO - Login Done
+2023-09-11 15:24:12,671 - INFO - 7501 Form opened
+2023-09-11 15:24:21,181 - INFO - ----Upper Part Done----
+2023-09-11 15:24:49,890 - INFO - ----Bill Of Lading Done----
+2023-09-11 15:25:11,901 - INFO - ----Bill Of Lading Done----
+2023-09-11 15:25:25,419 - INFO - ----Vessel Done----
+2023-09-11 15:25:50,824 - INFO - ----Trading Partner 1 Done----
+2023-09-11 15:26:18,912 - INFO - ----Trading Partner 2 Done----
+2023-09-11 15:27:43,179 - INFO - It is Cotton HTS
+2023-09-11 15:28:22,458 - INFO - ----Form Saved Successfully----
+2023-09-12 13:29:09,755 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-12 13:29:58,632 - INFO - Login Done
+2023-09-12 13:30:06,428 - INFO - 7501 Form opened
+2023-09-12 13:30:19,576 - INFO - ----Upper Part Done----
+2023-09-12 13:30:49,148 - INFO - ----Vessel Done----
+2023-09-12 13:30:56,016 - ERROR - Manufacturer not Entered
+2023-09-12 13:31:12,612 - ERROR - !----Trading Partner 1 Not Done----!
+2023-09-12 13:31:40,946 - INFO - ----Trading Partner 2 Done----
+2023-09-12 13:33:12,404 - INFO - It is Cotton HTS
+2023-09-12 13:33:43,094 - INFO - ----Form Saved Successfully----
+2023-09-12 14:43:29,395 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-12 14:44:04,552 - INFO - Login Done
+2023-09-12 14:44:17,454 - INFO - 7501 Form opened
+2023-09-12 14:44:28,411 - INFO - ----Upper Part Done----
+2023-09-12 14:45:00,193 - INFO - ----Vessel Done----
+2023-09-12 14:45:22,574 - INFO - ----Trading Partner 1 Done----
+2023-09-12 14:45:47,034 - INFO - ----Trading Partner 2 Done----
+2023-09-12 14:46:25,159 - INFO - ----Form Saved Successfully----
+2023-09-12 14:49:00,148 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-12 14:49:54,325 - INFO - Login Done
+2023-09-12 14:50:06,884 - INFO - 7501 Form opened
+2023-09-12 14:50:14,801 - INFO - ----Upper Part Done----
+2023-09-12 14:50:46,003 - INFO - ----Vessel Done----
+2023-09-12 14:51:08,742 - INFO - ----Trading Partner 1 Done----
+2023-09-12 14:51:33,854 - INFO - ----Trading Partner 2 Done----
+2023-09-12 14:52:06,869 - INFO - ----Form Saved Successfully----
+2023-09-12 14:52:11,752 - INFO - 7501 Form opened
+2023-09-12 14:52:20,526 - INFO - ----Upper Part Done----
+2023-09-12 14:52:57,192 - INFO - ----Vessel Done----
+2023-09-12 14:53:23,326 - INFO - ----Trading Partner 1 Done----
+2023-09-12 14:53:54,072 - INFO - ----Trading Partner 2 Done----
+2023-09-12 14:54:46,825 - INFO - ----Form Saved Successfully----
+2023-09-12 14:54:55,043 - INFO - 7501 Form opened
+2023-09-12 14:55:03,066 - INFO - ----Upper Part Done----
+2023-09-12 14:55:35,242 - INFO - ----Vessel Done----
+2023-09-12 14:55:57,683 - INFO - ----Trading Partner 1 Done----
+2023-09-12 14:56:29,297 - INFO - ----Trading Partner 2 Done----
+2023-09-12 14:56:45,617 - INFO - foreign Line Value filled
+2023-09-12 14:57:09,406 - INFO - ----Form Saved Successfully----
+2023-09-12 14:57:14,504 - INFO - 7501 Form opened
+2023-09-12 14:57:22,292 - INFO - ----Upper Part Done----
+2023-09-12 14:57:52,109 - INFO - ----Vessel Done----
+2023-09-12 14:58:14,378 - INFO - ----Trading Partner 1 Done----
+2023-09-12 14:58:39,426 - INFO - ----Trading Partner 2 Done----
+2023-09-12 14:58:56,365 - INFO - It is Cotton HTS
+2023-09-12 14:59:21,879 - INFO - ----Form Saved Successfully----
+2023-09-12 14:59:29,640 - INFO - 7501 Form opened
+2023-09-12 14:59:41,961 - INFO - ----Upper Part Done----
+2023-09-12 15:00:13,742 - INFO - ----Vessel Done----
+2023-09-12 15:00:36,224 - INFO - ----Trading Partner 1 Done----
+2023-09-12 15:01:02,226 - INFO - ----Trading Partner 2 Done----
+2023-09-12 15:01:37,242 - ERROR - EP7 Filled
+2023-09-12 15:02:03,054 - INFO - ----Form Saved Successfully----
+2023-09-12 15:02:10,879 - INFO - 7501 Form opened
+2023-09-12 15:02:18,566 - INFO - ----Upper Part Done----
+2023-09-12 15:02:39,958 - INFO - ----Vessel Done----
+2023-09-12 15:02:56,942 - INFO - ----Trading Partner 1 Done----
+2023-09-12 15:03:13,442 - INFO - ----Trading Partner 2 Done----
+2023-09-12 15:03:32,144 - INFO - EP5 Filled
+2023-09-12 15:03:51,812 - ERROR - EP7 Filled
+2023-09-12 15:04:12,877 - INFO - ----Form Saved Successfully----
+2023-09-12 15:04:20,403 - INFO - 7501 Form opened
+2023-09-12 15:04:29,576 - INFO - ----Upper Part Done----
+2023-09-12 15:04:49,186 - INFO - No Container found
+2023-09-12 15:05:13,318 - INFO - ----Trading Partner 1 Done----
+2023-09-12 15:05:40,562 - INFO - ----Trading Partner 2 Done----
+2023-09-12 15:06:02,441 - INFO - EP5 Filled
+2023-09-12 15:06:23,519 - ERROR - EP7 Filled
+2023-09-12 15:06:48,222 - INFO - ----Form Saved Successfully----
+2023-09-12 15:06:55,627 - INFO - 7501 Form opened
+2023-09-12 15:07:04,707 - INFO - ----Upper Part Done----
+2023-09-12 15:07:17,356 - INFO - No Container found
+2023-09-12 15:07:33,844 - INFO - ----Trading Partner 1 Done----
+2023-09-12 15:07:49,407 - INFO - ----Trading Partner 2 Done----
+2023-09-12 15:08:23,570 - INFO - ----Form Saved Successfully----
+2023-09-13 11:09:31,288 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-13 11:09:44,755 - INFO - Login Done
+2023-09-13 11:09:52,143 - INFO - 7501 Form opened
+2023-09-13 11:09:59,834 - INFO - ----Upper Part Done----
+2023-09-13 11:10:19,436 - INFO - ----Vessel Done----
+2023-09-13 11:10:35,375 - INFO - ----Trading Partner 1 Done----
+2023-09-13 11:10:52,374 - INFO - ----Trading Partner 2 Done----
+2023-09-13 11:10:57,329 - ERROR - Part not Entered
+2023-09-13 11:11:22,346 - ERROR - Message: element not interactable
+  (Session info: chrome=116.0.5845.188)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00007FF739A63E62+57250]
+	(No symbol) [0x00007FF7399DBC02]
+	(No symbol) [0x00007FF7398ADF6D]
+	(No symbol) [0x00007FF7398E87B7]
+	(No symbol) [0x00007FF7398DEC1F]
+	(No symbol) [0x00007FF7399067AA]
+	(No symbol) [0x00007FF7398DE536]
+	(No symbol) [0x00007FF7399069C0]
+	(No symbol) [0x00007FF73991E312]
+	(No symbol) [0x00007FF739906583]
+	(No symbol) [0x00007FF7398DCC71]
+	(No symbol) [0x00007FF7398DDE54]
+	GetHandleVerifier [0x00007FF739D14CF2+2879026]
+	GetHandleVerifier [0x00007FF739D66F30+3215472]
+	GetHandleVerifier [0x00007FF739D5FD4F+3186319]
+	GetHandleVerifier [0x00007FF739AF5505+652869]
+	(No symbol) [0x00007FF7399E7518]
+	(No symbol) [0x00007FF7399E35F4]
+	(No symbol) [0x00007FF7399E36EC]
+	(No symbol) [0x00007FF7399D38E3]
+	BaseThreadInitThunk [0x00007FF930F7257D+29]
+	RtlUserThreadStart [0x00007FF931C6AA68+40]
+
+2023-09-13 11:11:32,292 - INFO - ----Form Saved Successfully----
+2023-09-13 11:14:30,830 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-13 11:14:44,950 - INFO - Login Done
+2023-09-13 11:14:52,386 - INFO - 7501 Form opened
+2023-09-13 11:15:09,709 - ERROR - Message: element not interactable
+  (Session info: chrome=116.0.5845.188)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00007FF739A63E62+57250]
+	(No symbol) [0x00007FF7399DBC02]
+	(No symbol) [0x00007FF7398ADF6D]
+	(No symbol) [0x00007FF7398E87B7]
+	(No symbol) [0x00007FF7398DEC1F]
+	(No symbol) [0x00007FF7399067AA]
+	(No symbol) [0x00007FF7398DE536]
+	(No symbol) [0x00007FF7399069C0]
+	(No symbol) [0x00007FF73991E312]
+	(No symbol) [0x00007FF739906583]
+	(No symbol) [0x00007FF7398DCC71]
+	(No symbol) [0x00007FF7398DDE54]
+	GetHandleVerifier [0x00007FF739D14CF2+2879026]
+	GetHandleVerifier [0x00007FF739D66F30+3215472]
+	GetHandleVerifier [0x00007FF739D5FD4F+3186319]
+	GetHandleVerifier [0x00007FF739AF5505+652869]
+	(No symbol) [0x00007FF7399E7518]
+	(No symbol) [0x00007FF7399E35F4]
+	(No symbol) [0x00007FF7399E36EC]
+	(No symbol) [0x00007FF7399D38E3]
+	BaseThreadInitThunk [0x00007FF930F7257D+29]
+	RtlUserThreadStart [0x00007FF931C6AA68+40]
+
+2023-09-13 11:15:17,813 - INFO - ----Form not Saved----
+2023-09-13 11:16:06,684 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-13 11:16:27,330 - INFO - Login Done
+2023-09-13 11:16:34,857 - INFO - 7501 Form opened
+2023-09-13 11:16:45,647 - ERROR - Part not Entered
+2023-09-13 11:17:02,793 - ERROR - Part not Entered
+2023-09-13 11:17:11,069 - ERROR - Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=116.0.5845.188)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00007FF739A63E62+57250]
+	(No symbol) [0x00007FF7399DBC02]
+	(No symbol) [0x00007FF7398AE0BB]
+	(No symbol) [0x00007FF73988DD39]
+	(No symbol) [0x00007FF73990ABF7]
+	(No symbol) [0x00007FF73991D9DF]
+	(No symbol) [0x00007FF739906583]
+	(No symbol) [0x00007FF7398DCC71]
+	(No symbol) [0x00007FF7398DDE54]
+	GetHandleVerifier [0x00007FF739D14CF2+2879026]
+	GetHandleVerifier [0x00007FF739D66F30+3215472]
+	GetHandleVerifier [0x00007FF739D5FD4F+3186319]
+	GetHandleVerifier [0x00007FF739AF5505+652869]
+	(No symbol) [0x00007FF7399E7518]
+	(No symbol) [0x00007FF7399E35F4]
+	(No symbol) [0x00007FF7399E36EC]
+	(No symbol) [0x00007FF7399D38E3]
+	BaseThreadInitThunk [0x00007FF930F7257D+29]
+	RtlUserThreadStart [0x00007FF931C6AA68+40]
+
+2023-09-13 11:17:25,910 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-13 11:17:42,343 - INFO - Login Done
+2023-09-13 11:17:49,998 - INFO - 7501 Form opened
+2023-09-13 11:18:03,810 - ERROR - Message: element not interactable
+  (Session info: chrome=116.0.5845.188)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00007FF739A63E62+57250]
+	(No symbol) [0x00007FF7399DBC02]
+	(No symbol) [0x00007FF7398ADF6D]
+	(No symbol) [0x00007FF7398E87B7]
+	(No symbol) [0x00007FF7398DEC1F]
+	(No symbol) [0x00007FF7399067AA]
+	(No symbol) [0x00007FF7398DE536]
+	(No symbol) [0x00007FF7399069C0]
+	(No symbol) [0x00007FF73991E312]
+	(No symbol) [0x00007FF739906583]
+	(No symbol) [0x00007FF7398DCC71]
+	(No symbol) [0x00007FF7398DDE54]
+	GetHandleVerifier [0x00007FF739D14CF2+2879026]
+	GetHandleVerifier [0x00007FF739D66F30+3215472]
+	GetHandleVerifier [0x00007FF739D5FD4F+3186319]
+	GetHandleVerifier [0x00007FF739AF5505+652869]
+	(No symbol) [0x00007FF7399E7518]
+	(No symbol) [0x00007FF7399E35F4]
+	(No symbol) [0x00007FF7399E36EC]
+	(No symbol) [0x00007FF7399D38E3]
+	BaseThreadInitThunk [0x00007FF930F7257D+29]
+	RtlUserThreadStart [0x00007FF931C6AA68+40]
+
+2023-09-13 11:19:13,555 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-13 11:19:27,815 - INFO - Login Done
+2023-09-13 11:19:35,325 - INFO - 7501 Form opened
+2023-09-15 12:23:33,561 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-15 12:23:47,443 - INFO - Login Done
+2023-09-15 12:23:54,901 - INFO - 7501 Form opened
+2023-09-15 12:24:04,453 - INFO - ----Upper Part Done----
+2023-09-15 12:24:24,506 - INFO - ----Vessel Done----
+2023-09-15 12:24:40,803 - INFO - ----Trading Partner 1 Done----
+2023-09-15 12:24:58,120 - INFO - ----Trading Partner 2 Done----
+2023-09-15 12:25:46,815 - ERROR - Message: element not interactable
+  (Session info: chrome=116.0.5845.188)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00007FF73C543E62+57250]
+	(No symbol) [0x00007FF73C4BBC02]
+	(No symbol) [0x00007FF73C38DF6D]
+	(No symbol) [0x00007FF73C3C87B7]
+	(No symbol) [0x00007FF73C3BEC1F]
+	(No symbol) [0x00007FF73C3E67AA]
+	(No symbol) [0x00007FF73C3BE536]
+	(No symbol) [0x00007FF73C3E69C0]
+	(No symbol) [0x00007FF73C3FE312]
+	(No symbol) [0x00007FF73C3E6583]
+	(No symbol) [0x00007FF73C3BCC71]
+	(No symbol) [0x00007FF73C3BDE54]
+	GetHandleVerifier [0x00007FF73C7F4CF2+2879026]
+	GetHandleVerifier [0x00007FF73C846F30+3215472]
+	GetHandleVerifier [0x00007FF73C83FD4F+3186319]
+	GetHandleVerifier [0x00007FF73C5D5505+652869]
+	(No symbol) [0x00007FF73C4C7518]
+	(No symbol) [0x00007FF73C4C35F4]
+	(No symbol) [0x00007FF73C4C36EC]
+	(No symbol) [0x00007FF73C4B38E3]
+	BaseThreadInitThunk [0x00007FF8960E257D+29]
+	RtlUserThreadStart [0x00007FF897BEAA68+40]
+
+2023-09-15 12:25:58,575 - INFO - ----Form Saved Successfully----
+2023-09-15 18:45:08,392 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-15 18:46:43,122 - INFO - Login Done
+2023-09-15 18:46:55,798 - INFO - 7501 Form opened
+2023-09-15 18:47:04,364 - INFO - ----Upper Part Done----
+2023-09-15 18:47:36,085 - INFO - ----Vessel Done----
+2023-09-15 18:48:00,192 - INFO - ----Trading Partner 1 Done----
+2023-09-15 18:48:25,972 - INFO - ----Trading Partner 2 Done----
+2023-09-15 18:49:05,241 - INFO - ----Form Saved Successfully----
+2023-09-15 18:49:13,556 - INFO - 7501 Form opened
+2023-09-15 18:49:23,737 - INFO - ----Upper Part Done----
+2023-09-15 18:49:56,384 - INFO - ----Vessel Done----
+2023-09-15 18:50:19,419 - INFO - ----Trading Partner 1 Done----
+2023-09-15 18:50:44,378 - INFO - ----Trading Partner 2 Done----
+2023-09-15 18:51:23,384 - INFO - ----Form Saved Successfully----
+2023-09-15 18:55:00,542 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-15 19:03:38,794 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-15 19:04:37,508 - INFO - Login Done
+2023-09-15 19:04:45,335 - INFO - 7501 Form opened
+2023-09-15 19:04:53,207 - INFO - ----Upper Part Done----
+2023-09-15 19:05:17,993 - INFO - ----Vessel Done----
+2023-09-15 19:05:35,286 - INFO - ----Trading Partner 1 Done----
+2023-09-15 19:05:54,807 - INFO - ----Trading Partner 2 Done----
+2023-09-15 19:07:11,093 - INFO - It is Cotton HTS
+2023-09-15 19:07:36,774 - INFO - ----Form Saved Successfully----
+2023-09-18 12:44:01,279 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-18 12:44:21,756 - INFO - Login Done
+2023-09-18 12:44:31,609 - INFO - 7501 Form opened
+2023-09-18 12:44:39,457 - INFO - ----Upper Part Done----
+2023-09-18 12:45:07,317 - INFO - ----Vessel Done----
+2023-09-18 12:45:25,427 - INFO - ----Trading Partner 1 Done----
+2023-09-18 12:45:41,212 - INFO - ----Trading Partner 2 Done----
+2023-09-18 12:45:54,773 - INFO - It is China HTS
+2023-09-18 12:46:14,882 - INFO - It is China HTS
+2023-09-18 12:46:29,331 - INFO - ----Form Saved Successfully----
+2023-09-18 12:47:50,609 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-18 12:48:03,551 - INFO - Login Done
+2023-09-18 12:48:13,368 - INFO - 7501 Form opened
+2023-09-18 12:48:22,116 - INFO - ----Upper Part Done----
+2023-09-18 12:48:43,032 - INFO - ----Vessel Done----
+2023-09-18 12:48:59,486 - INFO - ----Trading Partner 1 Done----
+2023-09-18 12:49:16,501 - INFO - ----Trading Partner 2 Done----
+2023-09-18 12:49:30,761 - INFO - It is China HTS
+2023-09-18 12:49:52,347 - INFO - It is China HTS
+2023-09-18 12:50:08,786 - INFO - ----Form Saved Successfully----
+2023-09-18 12:50:13,409 - INFO - 7501 Form opened
+2023-09-18 12:50:21,001 - INFO - ----Upper Part Done----
+2023-09-18 12:50:41,724 - INFO - ----Vessel Done----
+2023-09-18 12:50:58,134 - INFO - ----Trading Partner 1 Done----
+2023-09-18 12:51:14,065 - INFO - ----Trading Partner 2 Done----
+2023-09-18 12:51:27,456 - INFO - It is China HTS
+2023-09-18 12:51:45,938 - INFO - It is Cotton HTS
+2023-09-18 12:51:48,090 - INFO - It is China HTS
+2023-09-18 12:52:07,838 - INFO - It is Cotton HTS
+2023-09-18 12:52:10,085 - INFO - It is China HTS
+2023-09-18 12:52:28,497 - INFO - ----Form Saved Successfully----
+2023-09-18 12:52:32,892 - INFO - 7501 Form opened
+2023-09-18 12:52:40,869 - INFO - ----Upper Part Done----
+2023-09-18 12:53:01,944 - INFO - ----Vessel Done----
+2023-09-18 12:53:19,228 - INFO - ----Trading Partner 1 Done----
+2023-09-18 12:53:35,252 - INFO - ----Trading Partner 2 Done----
+2023-09-18 12:53:48,964 - INFO - It is China HTS
+2023-09-18 12:54:09,966 - INFO - It is China HTS
+2023-09-18 12:54:33,538 - INFO - It is Cotton HTS
+2023-09-18 12:54:35,814 - INFO - It is China HTS
+2023-09-18 12:54:52,550 - INFO - ----Form Saved Successfully----
+2023-09-18 13:06:33,098 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-18 13:07:01,686 - INFO - Login Done
+2023-09-18 13:07:11,537 - INFO - 7501 Form opened
+2023-09-18 13:07:21,207 - INFO - ----Upper Part Done----
+2023-09-18 13:07:34,021 - INFO - No Container found
+2023-09-18 13:07:50,415 - INFO - ----Trading Partner 1 Done----
+2023-09-18 13:08:05,885 - INFO - ----Trading Partner 2 Done----
+2023-09-18 13:08:21,976 - INFO - EP5 Filled
+2023-09-18 13:08:38,290 - ERROR - EP7 Filled
+2023-09-18 13:09:01,691 - INFO - EP5 Filled
+2023-09-18 13:09:12,980 - ERROR - Message: 
+
+2023-09-18 13:09:29,490 - INFO - EP5 Filled
+2023-09-18 13:09:40,748 - ERROR - Message: 
+
+2023-09-18 13:09:57,651 - INFO - EP5 Filled
+2023-09-18 13:10:08,896 - ERROR - Message: 
+
+2023-09-18 13:10:19,576 - INFO - ----Form Saved Successfully----
+2023-09-18 13:10:23,831 - INFO - 7501 Form opened
+2023-09-18 13:10:32,622 - INFO - ----Upper Part Done----
+2023-09-18 13:10:44,630 - INFO - No Container found
+2023-09-18 13:11:01,091 - INFO - ----Trading Partner 1 Done----
+2023-09-18 13:11:17,360 - INFO - ----Trading Partner 2 Done----
+2023-09-18 13:12:04,104 - ERROR - HTS not Entered
+2023-09-18 13:12:22,595 - ERROR - HTS not Entered
+2023-09-18 13:12:32,131 - INFO - ----Form not Saved----
+2023-09-18 14:53:30,058 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-18 14:55:50,393 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-18 14:59:25,751 - INFO - Login Done
+2023-09-18 14:59:35,961 - INFO - 7501 Form opened
+2023-09-18 14:59:38,225 - ERROR - Message: element click intercepted: Element <select _ngcontent-lib-c188="" id="entryFilingTypeCode" name="entryFilingTypeCode" tabindex="1" class="form-control form-control-sm ng-untouched ng-pristine ng-valid">...</select> is not clickable at point (443, 269). Other element would receive the click: <div _ngcontent-lib-c239="" class="loadingScreen">...</div>
+  (Session info: chrome=116.0.5845.188)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00007FF789953E62+57250]
+	(No symbol) [0x00007FF7898CBC02]
+	(No symbol) [0x00007FF78979E0BB]
+	(No symbol) [0x00007FF7897DD080]
+	(No symbol) [0x00007FF7897DB6FD]
+	(No symbol) [0x00007FF7897D96E5]
+	(No symbol) [0x00007FF7897D88F5]
+	(No symbol) [0x00007FF7897CEC1F]
+	(No symbol) [0x00007FF7897F67AA]
+	(No symbol) [0x00007FF7897CE536]
+	(No symbol) [0x00007FF7897F69C0]
+	(No symbol) [0x00007FF78980E312]
+	(No symbol) [0x00007FF7897F6583]
+	(No symbol) [0x00007FF7897CCC71]
+	(No symbol) [0x00007FF7897CDE54]
+	GetHandleVerifier [0x00007FF789C04CF2+2879026]
+	GetHandleVerifier [0x00007FF789C56F30+3215472]
+	GetHandleVerifier [0x00007FF789C4FD4F+3186319]
+	GetHandleVerifier [0x00007FF7899E5505+652869]
+	(No symbol) [0x00007FF7898D7518]
+	(No symbol) [0x00007FF7898D35F4]
+	(No symbol) [0x00007FF7898D36EC]
+	(No symbol) [0x00007FF7898C38E3]
+	BaseThreadInitThunk [0x00007FF8960E257D+29]
+	RtlUserThreadStart [0x00007FF897BEAA68+40]
+
+2023-09-18 15:00:05,142 - INFO - ----Vessel Done----
+2023-09-18 15:00:27,862 - INFO - ----Trading Partner 1 Done----
+2023-09-18 15:00:37,586 - ERROR - Message: element click intercepted: Element <input _ngcontent-lib-c188="" autocapitalize="off" autocorrect="off" role="combobox" aria-multiline="false" id="typeahead-basic" type="text" class="form-control ng-untouched ng-pristine ng-valid" autocomplete="off" aria-autocomplete="list" aria-expanded="false"> is not clickable at point (1147, 644). Other element would receive the click: <ngb-modal-window role="dialog" tabindex="-1" aria-modal="true" aria-labelledby="modal-basic-title" class="d-block fade modal show">...</ngb-modal-window>
+  (Session info: chrome=116.0.5845.188)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00007FF789953E62+57250]
+	(No symbol) [0x00007FF7898CBC02]
+	(No symbol) [0x00007FF78979E0BB]
+	(No symbol) [0x00007FF7897DD080]
+	(No symbol) [0x00007FF7897DB6FD]
+	(No symbol) [0x00007FF7897D96E5]
+	(No symbol) [0x00007FF7897D88F5]
+	(No symbol) [0x00007FF7897CEC1F]
+	(No symbol) [0x00007FF7897F67AA]
+	(No symbol) [0x00007FF7897CE536]
+	(No symbol) [0x00007FF7897F69C0]
+	(No symbol) [0x00007FF78980E312]
+	(No symbol) [0x00007FF7897F6583]
+	(No symbol) [0x00007FF7897CCC71]
+	(No symbol) [0x00007FF7897CDE54]
+	GetHandleVerifier [0x00007FF789C04CF2+2879026]
+	GetHandleVerifier [0x00007FF789C56F30+3215472]
+	GetHandleVerifier [0x00007FF789C4FD4F+3186319]
+	GetHandleVerifier [0x00007FF7899E5505+652869]
+	(No symbol) [0x00007FF7898D7518]
+	(No symbol) [0x00007FF7898D35F4]
+	(No symbol) [0x00007FF7898D36EC]
+	(No symbol) [0x00007FF7898C38E3]
+	BaseThreadInitThunk [0x00007FF8960E257D+29]
+	RtlUserThreadStart [0x00007FF897BEAA68+40]
+
+2023-09-18 15:00:39,060 - ERROR - Message: element not interactable
+  (Session info: chrome=116.0.5845.188)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00007FF789953E62+57250]
+	(No symbol) [0x00007FF7898CBC02]
+	(No symbol) [0x00007FF78979DF6D]
+	(No symbol) [0x00007FF7897D87B7]
+	(No symbol) [0x00007FF7897CEC1F]
+	(No symbol) [0x00007FF7897F67AA]
+	(No symbol) [0x00007FF7897CE536]
+	(No symbol) [0x00007FF7897F69C0]
+	(No symbol) [0x00007FF78980E312]
+	(No symbol) [0x00007FF7897F6583]
+	(No symbol) [0x00007FF7897CCC71]
+	(No symbol) [0x00007FF7897CDE54]
+	GetHandleVerifier [0x00007FF789C04CF2+2879026]
+	GetHandleVerifier [0x00007FF789C56F30+3215472]
+	GetHandleVerifier [0x00007FF789C4FD4F+3186319]
+	GetHandleVerifier [0x00007FF7899E5505+652869]
+	(No symbol) [0x00007FF7898D7518]
+	(No symbol) [0x00007FF7898D35F4]
+	(No symbol) [0x00007FF7898D36EC]
+	(No symbol) [0x00007FF7898C38E3]
+	BaseThreadInitThunk [0x00007FF8960E257D+29]
+	RtlUserThreadStart [0x00007FF897BEAA68+40]
+
+2023-09-18 15:01:45,106 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-18 15:05:33,294 - INFO - Login Done
+2023-09-18 15:05:46,826 - INFO - 7501 Form opened
+2023-09-18 15:05:59,959 - INFO - ----Upper Part Done----
+2023-09-18 15:06:34,704 - INFO - ----Vessel Done----
+2023-09-18 15:06:58,820 - INFO - ----Trading Partner 1 Done----
+2023-09-18 15:07:26,075 - INFO - ----Trading Partner 2 Done----
+2023-09-18 15:08:00,764 - ERROR - EP7 Filled
+2023-09-18 15:08:54,599 - ERROR - EP7 Filled
+2023-09-18 15:09:04,829 - ERROR - Message: 
+
+2023-09-18 15:09:40,539 - ERROR - Error while saving form
+2023-09-18 15:09:41,569 - ERROR - Message: no such element: Unable to locate element: {"method":"xpath","selector":"//button[normalize-space()='OK']"}
+  (Session info: chrome=116.0.5845.188); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00007FF789953E62+57250]
+	(No symbol) [0x00007FF7898CBC02]
+	(No symbol) [0x00007FF78979E0BB]
+	(No symbol) [0x00007FF7897D765E]
+	(No symbol) [0x00007FF7897D774C]
+	(No symbol) [0x00007FF789810267]
+	(No symbol) [0x00007FF7897F67EF]
+	(No symbol) [0x00007FF78980E312]
+	(No symbol) [0x00007FF7897F6583]
+	(No symbol) [0x00007FF7897CCC71]
+	(No symbol) [0x00007FF7897CDE54]
+	GetHandleVerifier [0x00007FF789C04CF2+2879026]
+	GetHandleVerifier [0x00007FF789C56F30+3215472]
+	GetHandleVerifier [0x00007FF789C4FD4F+3186319]
+	GetHandleVerifier [0x00007FF7899E5505+652869]
+	(No symbol) [0x00007FF7898D7518]
+	(No symbol) [0x00007FF7898D35F4]
+	(No symbol) [0x00007FF7898D36EC]
+	(No symbol) [0x00007FF7898C38E3]
+	BaseThreadInitThunk [0x00007FF8960E257D+29]
+	RtlUserThreadStart [0x00007FF897BEAA68+40]
+
+2023-09-18 15:09:41,711 - ERROR - Message: element not interactable
+  (Session info: chrome=116.0.5845.188)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00007FF789953E62+57250]
+	(No symbol) [0x00007FF7898CBC02]
+	(No symbol) [0x00007FF78979DF6D]
+	(No symbol) [0x00007FF7897D87B7]
+	(No symbol) [0x00007FF7897CEC1F]
+	(No symbol) [0x00007FF7897F67AA]
+	(No symbol) [0x00007FF7897CE536]
+	(No symbol) [0x00007FF7897F69C0]
+	(No symbol) [0x00007FF78980E312]
+	(No symbol) [0x00007FF7897F6583]
+	(No symbol) [0x00007FF7897CCC71]
+	(No symbol) [0x00007FF7897CDE54]
+	GetHandleVerifier [0x00007FF789C04CF2+2879026]
+	GetHandleVerifier [0x00007FF789C56F30+3215472]
+	GetHandleVerifier [0x00007FF789C4FD4F+3186319]
+	GetHandleVerifier [0x00007FF7899E5505+652869]
+	(No symbol) [0x00007FF7898D7518]
+	(No symbol) [0x00007FF7898D35F4]
+	(No symbol) [0x00007FF7898D36EC]
+	(No symbol) [0x00007FF7898C38E3]
+	BaseThreadInitThunk [0x00007FF8960E257D+29]
+	RtlUserThreadStart [0x00007FF897BEAA68+40]
+
+2023-09-18 15:09:59,240 - INFO - 7501 Form opened
+2023-09-18 15:10:06,549 - INFO - ----Upper Part Done----
+2023-09-18 15:10:31,217 - INFO - ----Vessel Done----
+2023-09-18 15:10:57,011 - INFO - ----Trading Partner 1 Done----
+2023-09-18 15:11:28,936 - INFO - ----Trading Partner 2 Done----
+2023-09-18 15:12:13,796 - ERROR - EP7 Filled
+2023-09-18 15:12:58,850 - INFO - EP5 Filled
+2023-09-18 15:13:30,216 - ERROR - EP7 Filled
+2023-09-18 15:14:20,742 - INFO - EP5 Filled
+2023-09-18 15:14:58,496 - ERROR - EP7 Filled
+2023-09-18 15:17:25,422 - INFO - FD3 Filled
+2023-09-18 15:18:34,078 - INFO - ----Form Saved Successfully----
+2023-09-18 15:21:05,493 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-18 15:23:34,170 - INFO - Login Done
+2023-09-18 15:23:47,113 - INFO - 7501 Form opened
+2023-09-18 15:23:58,000 - INFO - ----Upper Part Done----
+2023-09-18 15:24:29,996 - INFO - ----Vessel Done----
+2023-09-18 15:24:52,727 - INFO - ----Trading Partner 1 Done----
+2023-09-18 15:25:17,687 - INFO - ----Trading Partner 2 Done----
+2023-09-18 15:25:37,207 - INFO - It is China HTS
+2023-09-18 15:26:02,882 - INFO - ----Form Saved Successfully----
+2023-09-18 15:26:10,739 - INFO - 7501 Form opened
+2023-09-18 15:26:18,391 - INFO - ----Upper Part Done----
+2023-09-18 15:26:50,440 - INFO - ----Vessel Done----
+2023-09-18 15:27:12,666 - INFO - ----Trading Partner 1 Done----
+2023-09-18 15:27:37,712 - INFO - ----Trading Partner 2 Done----
+2023-09-18 15:27:54,341 - INFO - It is Cotton HTS
+2023-09-18 15:27:58,217 - INFO - It is China HTS
+2023-09-18 15:28:23,700 - INFO - ----Form Saved Successfully----
+2023-09-18 15:28:31,402 - INFO - 7501 Form opened
+2023-09-18 15:28:39,120 - INFO - ----Upper Part Done----
+2023-09-18 15:29:08,655 - INFO - ----Vessel Done----
+2023-09-18 15:29:31,179 - INFO - ----Trading Partner 1 Done----
+2023-09-18 15:29:56,158 - INFO - ----Trading Partner 2 Done----
+2023-09-18 15:30:15,857 - INFO - It is China HTS
+2023-09-18 15:30:35,351 - ERROR - EP7 Filled
+2023-09-18 15:31:01,108 - INFO - ----Form Saved Successfully----
+2023-09-18 15:31:08,816 - INFO - 7501 Form opened
+2023-09-18 15:31:17,368 - INFO - ----Upper Part Done----
+2023-09-18 15:31:47,315 - INFO - ----Vessel Done----
+2023-09-18 15:32:09,736 - INFO - ----Trading Partner 1 Done----
+2023-09-18 15:32:34,817 - INFO - ----Trading Partner 2 Done----
+2023-09-18 15:33:37,766 - INFO - ----Form not Saved----
+2023-09-22 10:40:22,124 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-22 10:40:32,908 - INFO - Login Done
+2023-09-22 10:40:42,435 - INFO - 7501 Form opened
+2023-09-22 10:40:51,957 - INFO - ----Upper Part Done----
+2023-09-22 10:41:16,939 - INFO - ----Vessel Done----
+2023-09-22 10:41:33,843 - INFO - ----Trading Partner 1 Done----
+2023-09-22 10:41:49,359 - INFO - ----Trading Partner 2 Done----
+2023-09-22 10:42:12,777 - INFO - ----Form Saved Successfully----
+2023-09-22 10:42:17,126 - INFO - 7501 Form opened
+2023-09-22 10:42:24,229 - INFO - ----Upper Part Done----
+2023-09-22 10:42:44,030 - INFO - ----Vessel Done----
+2023-09-22 10:43:00,145 - INFO - ----Trading Partner 1 Done----
+2023-09-22 10:43:15,882 - INFO - ----Trading Partner 2 Done----
+2023-09-22 10:43:41,856 - INFO - ----Form Saved Successfully----
+2023-09-22 10:43:46,630 - INFO - 7501 Form opened
+2023-09-22 10:43:55,186 - INFO - ----Upper Part Done----
+2023-09-22 10:44:17,656 - INFO - ----Vessel Done----
+2023-09-22 10:44:34,126 - INFO - ----Trading Partner 1 Done----
+2023-09-22 10:44:55,184 - INFO - ----Trading Partner 2 Done----
+2023-09-22 10:45:08,542 - INFO - foreign Line Value filled
+2023-09-22 10:45:22,751 - INFO - ----Form Saved Successfully----
+2023-09-22 10:45:27,732 - INFO - 7501 Form opened
+2023-09-22 10:45:35,046 - INFO - ----Upper Part Done----
+2023-09-22 10:45:55,338 - INFO - ----Vessel Done----
+2023-09-22 10:46:12,945 - INFO - ----Trading Partner 1 Done----
+2023-09-22 10:46:30,071 - INFO - ----Trading Partner 2 Done----
+2023-09-22 10:46:42,742 - INFO - It is Cotton HTS
+2023-09-22 10:46:55,795 - INFO - ----Form Saved Successfully----
+2023-09-22 10:47:00,640 - INFO - 7501 Form opened
+2023-09-22 10:47:08,055 - INFO - ----Upper Part Done----
+2023-09-22 10:47:30,260 - INFO - ----Vessel Done----
+2023-09-22 10:47:47,449 - INFO - ----Trading Partner 1 Done----
+2023-09-22 10:48:03,530 - INFO - ----Trading Partner 2 Done----
+2023-09-22 10:48:31,726 - ERROR - EP7 Filled
+2023-09-22 10:48:45,418 - INFO - ----Form Saved Successfully----
+2023-09-22 10:50:42,242 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-22 10:51:28,525 - INFO - Login Done
+2023-09-22 10:51:38,152 - INFO - 7501 Form opened
+2023-09-22 10:51:44,974 - INFO - ----Upper Part Done----
+2023-09-22 10:52:05,857 - INFO - ----Vessel Done----
+2023-09-22 10:52:23,230 - INFO - ----Trading Partner 1 Done----
+2023-09-22 10:52:40,437 - INFO - ----Trading Partner 2 Done----
+2023-09-22 10:53:30,053 - INFO - It is Cotton HTS
+2023-09-22 10:53:47,487 - INFO - ----Form Saved Successfully----
+2023-09-22 10:53:52,171 - INFO - 7501 Form opened
+2023-09-22 10:53:59,792 - INFO - ----Upper Part Done----
+2023-09-22 10:54:20,927 - INFO - ----Vessel Done----
+2023-09-22 10:54:38,598 - INFO - ----Trading Partner 1 Done----
+2023-09-22 10:54:55,146 - INFO - ----Trading Partner 2 Done----
+2023-09-22 10:55:51,099 - INFO - It is Cotton HTS
+2023-09-22 10:56:19,066 - INFO - ----Form Saved Successfully----
+2023-09-22 10:56:23,768 - INFO - 7501 Form opened
+2023-09-22 10:56:31,042 - INFO - ----Upper Part Done----
+2023-09-22 10:56:51,416 - INFO - ----Vessel Done----
+2023-09-22 10:57:08,701 - INFO - ----Trading Partner 1 Done----
+2023-09-22 10:57:26,115 - INFO - ----Trading Partner 2 Done----
+2023-09-22 10:58:16,794 - INFO - It is Cotton HTS
+2023-09-22 10:58:38,546 - INFO - It is Cotton HTS
+2023-09-22 10:58:58,451 - INFO - ----Form Saved Successfully----
+2023-09-22 10:59:03,120 - INFO - 7501 Form opened
+2023-09-22 10:59:11,724 - INFO - ----Upper Part Done----
+2023-09-22 10:59:33,524 - INFO - ----Vessel Done----
+2023-09-22 10:59:50,008 - INFO - ----Trading Partner 1 Done----
+2023-09-22 11:00:06,650 - INFO - ----Trading Partner 2 Done----
+2023-09-22 11:00:32,535 - ERROR - EP7 Filled
+2023-09-22 11:00:45,552 - ERROR - Country OF Origin not Entered
+2023-09-22 11:01:13,924 - ERROR - EP7 Filled
+2023-09-22 11:01:24,204 - ERROR - Message: 
+
+2023-09-22 11:01:25,123 - ERROR - Message: element not interactable
+  (Session info: chrome=116.0.5845.188)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00007FF6ACA83E62+57250]
+	(No symbol) [0x00007FF6AC9FBC02]
+	(No symbol) [0x00007FF6AC8CDF6D]
+	(No symbol) [0x00007FF6AC9087B7]
+	(No symbol) [0x00007FF6AC8FEC1F]
+	(No symbol) [0x00007FF6AC9267AA]
+	(No symbol) [0x00007FF6AC8FE536]
+	(No symbol) [0x00007FF6AC9269C0]
+	(No symbol) [0x00007FF6AC93E312]
+	(No symbol) [0x00007FF6AC926583]
+	(No symbol) [0x00007FF6AC8FCC71]
+	(No symbol) [0x00007FF6AC8FDE54]
+	GetHandleVerifier [0x00007FF6ACD34CF2+2879026]
+	GetHandleVerifier [0x00007FF6ACD86F30+3215472]
+	GetHandleVerifier [0x00007FF6ACD7FD4F+3186319]
+	GetHandleVerifier [0x00007FF6ACB15505+652869]
+	(No symbol) [0x00007FF6ACA07518]
+	(No symbol) [0x00007FF6ACA035F4]
+	(No symbol) [0x00007FF6ACA036EC]
+	(No symbol) [0x00007FF6AC9F38E3]
+	BaseThreadInitThunk [0x00007FFADC52257D+29]
+	RtlUserThreadStart [0x00007FFADDBAAA68+40]
+
+2023-09-22 11:01:36,895 - INFO - ----Form Saved Successfully----
+2023-09-22 11:01:42,618 - INFO - 7501 Form opened
+2023-09-22 11:01:50,637 - INFO - ----Upper Part Done----
+2023-09-22 11:02:12,068 - INFO - ----Vessel Done----
+2023-09-22 11:02:29,490 - INFO - ----Trading Partner 1 Done----
+2023-09-22 11:02:45,827 - INFO - ----Trading Partner 2 Done----
+2023-09-22 11:03:11,641 - ERROR - EP7 Filled
+2023-09-22 11:03:35,252 - INFO - EP5 Filled
+2023-09-22 11:03:52,012 - ERROR - EP7 Filled
+2023-09-22 11:04:17,196 - INFO - EP5 Filled
+2023-09-22 11:04:34,290 - ERROR - EP7 Filled
+2023-09-22 11:05:34,452 - INFO - FD3 Filled
+2023-09-22 11:06:11,799 - INFO - ----Form Saved Successfully----
+2023-09-22 11:06:16,589 - INFO - 7501 Form opened
+2023-09-22 11:06:26,267 - INFO - ----Upper Part Done----
+2023-09-22 11:06:39,017 - INFO - No Container found
+2023-09-22 11:06:55,656 - INFO - ----Trading Partner 1 Done----
+2023-09-22 11:07:14,374 - INFO - ----Trading Partner 2 Done----
+2023-09-22 11:08:44,449 - INFO - ----Form Saved Successfully----
+2023-09-22 11:35:05,762 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-22 11:36:03,300 - INFO - Login Done
+2023-09-22 11:40:08,920 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-22 11:40:19,495 - INFO - Login Done
+2023-09-22 11:40:29,408 - INFO - 7501 Form opened
+2023-09-22 11:40:39,051 - INFO - ----Upper Part Done----
+2023-09-22 11:41:00,279 - INFO - ----Vessel Done----
+2023-09-22 11:41:05,473 - ERROR - Manufacturer not Entered
+2023-09-22 11:41:10,824 - ERROR - Seller not Entered
+2023-09-22 11:41:16,336 - ERROR - consignee not Entered
+2023-09-22 11:41:19,141 - ERROR - Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=116.0.5845.188)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00007FF7B3573E62+57250]
+	(No symbol) [0x00007FF7B34EBC02]
+	(No symbol) [0x00007FF7B33BE0BB]
+	(No symbol) [0x00007FF7B339DD39]
+	(No symbol) [0x00007FF7B341ABF7]
+	(No symbol) [0x00007FF7B342D9DF]
+	(No symbol) [0x00007FF7B3416583]
+	(No symbol) [0x00007FF7B33ECC71]
+	(No symbol) [0x00007FF7B33EDE54]
+	GetHandleVerifier [0x00007FF7B3824CF2+2879026]
+	GetHandleVerifier [0x00007FF7B3876F30+3215472]
+	GetHandleVerifier [0x00007FF7B386FD4F+3186319]
+	GetHandleVerifier [0x00007FF7B3605505+652869]
+	(No symbol) [0x00007FF7B34F7518]
+	(No symbol) [0x00007FF7B34F35F4]
+	(No symbol) [0x00007FF7B34F36EC]
+	(No symbol) [0x00007FF7B34E38E3]
+	BaseThreadInitThunk [0x00007FFADC52257D+29]
+	RtlUserThreadStart [0x00007FFADDBAAA68+40]
+
+2023-09-22 11:41:19,144 - ERROR - Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=116.0.5845.188)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00007FF7B3573E62+57250]
+	(No symbol) [0x00007FF7B34EBC02]
+	(No symbol) [0x00007FF7B33BE0BB]
+	(No symbol) [0x00007FF7B339DD39]
+	(No symbol) [0x00007FF7B341ABF7]
+	(No symbol) [0x00007FF7B342D9DF]
+	(No symbol) [0x00007FF7B3416583]
+	(No symbol) [0x00007FF7B33ECC71]
+	(No symbol) [0x00007FF7B33EDE54]
+	GetHandleVerifier [0x00007FF7B3824CF2+2879026]
+	GetHandleVerifier [0x00007FF7B3876F30+3215472]
+	GetHandleVerifier [0x00007FF7B386FD4F+3186319]
+	GetHandleVerifier [0x00007FF7B3605505+652869]
+	(No symbol) [0x00007FF7B34F7518]
+	(No symbol) [0x00007FF7B34F35F4]
+	(No symbol) [0x00007FF7B34F36EC]
+	(No symbol) [0x00007FF7B34E38E3]
+	BaseThreadInitThunk [0x00007FFADC52257D+29]
+	RtlUserThreadStart [0x00007FFADDBAAA68+40]
+
+2023-09-22 11:41:19,149 - ERROR - Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=116.0.5845.188)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00007FF7B3573E62+57250]
+	(No symbol) [0x00007FF7B34EBC02]
+	(No symbol) [0x00007FF7B33BE0BB]
+	(No symbol) [0x00007FF7B339DD39]
+	(No symbol) [0x00007FF7B341ABF7]
+	(No symbol) [0x00007FF7B342D9DF]
+	(No symbol) [0x00007FF7B3416583]
+	(No symbol) [0x00007FF7B33ECC71]
+	(No symbol) [0x00007FF7B33EDE54]
+	GetHandleVerifier [0x00007FF7B3824CF2+2879026]
+	GetHandleVerifier [0x00007FF7B3876F30+3215472]
+	GetHandleVerifier [0x00007FF7B386FD4F+3186319]
+	GetHandleVerifier [0x00007FF7B3605505+652869]
+	(No symbol) [0x00007FF7B34F7518]
+	(No symbol) [0x00007FF7B34F35F4]
+	(No symbol) [0x00007FF7B34F36EC]
+	(No symbol) [0x00007FF7B34E38E3]
+	BaseThreadInitThunk [0x00007FFADC52257D+29]
+	RtlUserThreadStart [0x00007FFADDBAAA68+40]
+
+2023-09-22 11:42:37,445 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-22 11:42:47,666 - INFO - Login Done
+2023-09-22 11:42:57,931 - INFO - 7501 Form opened
+2023-09-22 11:43:08,027 - INFO - ----Upper Part Done----
+2023-09-22 11:43:28,785 - INFO - ----Vessel Done----
+2023-09-22 11:43:45,580 - INFO - ----Trading Partner 1 Done----
+2023-09-22 11:44:02,685 - INFO - ----Trading Partner 2 Done----
+2023-09-22 11:44:30,164 - INFO - ----Form Saved Successfully----
+2023-09-22 11:44:35,329 - INFO - 7501 Form opened
+2023-09-22 11:44:43,120 - INFO - ----Upper Part Done----
+2023-09-22 11:45:04,935 - INFO - ----Vessel Done----
+2023-09-22 11:45:22,409 - INFO - ----Trading Partner 1 Done----
+2023-09-22 11:45:39,058 - INFO - ----Trading Partner 2 Done----
+2023-09-22 11:46:04,421 - INFO - ----Form Saved Successfully----
+2023-09-22 11:46:09,296 - INFO - 7501 Form opened
+2023-09-22 11:46:16,531 - INFO - ----Upper Part Done----
+2023-09-22 11:46:39,328 - INFO - ----Vessel Done----
+2023-09-22 11:46:55,820 - INFO - ----Trading Partner 1 Done----
+2023-09-22 11:47:12,296 - INFO - ----Trading Partner 2 Done----
+2023-09-22 11:47:40,637 - INFO - ----Form Saved Successfully----
+2023-09-22 11:47:45,639 - INFO - 7501 Form opened
+2023-09-22 11:47:53,446 - INFO - ----Upper Part Done----
+2023-09-22 11:48:15,821 - INFO - ----Vessel Done----
+2023-09-22 11:48:33,014 - INFO - ----Trading Partner 1 Done----
+2023-09-22 11:48:53,960 - INFO - ----Trading Partner 2 Done----
+2023-09-22 11:49:07,012 - INFO - foreign Line Value filled
+2023-09-22 11:49:20,600 - INFO - ----Form Saved Successfully----
+2023-09-22 11:49:25,884 - INFO - 7501 Form opened
+2023-09-22 11:49:33,324 - INFO - ----Upper Part Done----
+2023-09-22 11:49:54,304 - INFO - ----Vessel Done----
+2023-09-22 11:50:10,258 - INFO - ----Trading Partner 1 Done----
+2023-09-22 11:50:26,002 - INFO - ----Trading Partner 2 Done----
+2023-09-22 11:50:38,372 - INFO - It is Cotton HTS
+2023-09-22 11:50:55,036 - INFO - ----Form Saved Successfully----
+2023-09-22 11:51:00,429 - INFO - 7501 Form opened
+2023-09-22 11:51:09,637 - INFO - ----Upper Part Done----
+2023-09-22 11:51:22,348 - INFO - No Container found
+2023-09-22 11:51:38,397 - INFO - ----Trading Partner 1 Done----
+2023-09-22 11:51:54,487 - INFO - ----Trading Partner 2 Done----
+2023-09-22 11:52:10,658 - INFO - EP5 Filled
+2023-09-22 11:52:27,210 - ERROR - EP7 Filled
+2023-09-22 11:52:41,778 - INFO - ----Form Saved Successfully----
+2023-09-22 11:52:46,701 - INFO - 7501 Form opened
+2023-09-22 11:52:56,533 - INFO - ----Upper Part Done----
+2023-09-22 11:53:09,450 - INFO - No Container found
+2023-09-22 11:53:25,252 - INFO - ----Trading Partner 1 Done----
+2023-09-22 11:53:42,092 - INFO - ----Trading Partner 2 Done----
+2023-09-22 11:54:06,830 - INFO - ----Form Saved Successfully----
+2023-09-22 11:54:12,018 - INFO - 7501 Form opened
+2023-09-22 11:54:19,977 - INFO - ----Upper Part Done----
+2023-09-22 11:54:42,129 - INFO - ----Vessel Done----
+2023-09-22 11:54:58,701 - INFO - ----Trading Partner 1 Done----
+2023-09-22 11:55:15,587 - INFO - ----Trading Partner 2 Done----
+2023-09-22 11:55:29,548 - INFO - It is China HTS
+2023-09-22 11:55:44,966 - INFO - ----Form Saved Successfully----
+2023-09-28 10:26:10,160 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-28 10:28:07,244 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-28 10:28:25,474 - INFO - Login Done
+2023-09-28 10:28:33,024 - INFO - 7501 Form opened
+2023-09-28 10:28:42,428 - INFO - ----Upper Part Done----
+2023-09-28 10:29:04,911 - INFO - ----Vessel Done----
+2023-09-28 10:29:11,797 - ERROR - Message: element click intercepted: Element <input _ngcontent-yuv-c184="" autocapitalize="off" autocorrect="off" role="combobox" aria-multiline="false" id="typeahead-basic" type="text" tabindex="1" name="seller" class="form-control form-control-sm ng-untouched ng-pristine ng-valid" autocomplete="off" aria-autocomplete="list" aria-expanded="false"> is not clickable at point (1154, 755). Other element would receive the click: <div _ngcontent-yuv-c239="" class="loadingScreen">...</div>
+  (Session info: chrome=117.0.5938.92)
+Stacktrace:
+	GetHandleVerifier [0x00007FF690567892+54818]
+	(No symbol) [0x00007FF6904D6AC2]
+	(No symbol) [0x00007FF69038DA3B]
+	(No symbol) [0x00007FF6903D47CB]
+	(No symbol) [0x00007FF6903D2B99]
+	(No symbol) [0x00007FF6903D0968]
+	(No symbol) [0x00007FF6903CFA23]
+	(No symbol) [0x00007FF6903C571F]
+	(No symbol) [0x00007FF6903EEAAA]
+	(No symbol) [0x00007FF6903C5036]
+	(No symbol) [0x00007FF6903EECC0]
+	(No symbol) [0x00007FF6904075A2]
+	(No symbol) [0x00007FF6903EE883]
+	(No symbol) [0x00007FF6903C3691]
+	(No symbol) [0x00007FF6903C48D4]
+	GetHandleVerifier [0x00007FF6908CB992+3610402]
+	GetHandleVerifier [0x00007FF690921860+3962352]
+	GetHandleVerifier [0x00007FF690919D4F+3930847]
+	GetHandleVerifier [0x00007FF690603646+693206]
+	(No symbol) [0x00007FF6904E1628]
+	(No symbol) [0x00007FF6904DD934]
+	(No symbol) [0x00007FF6904DDA62]
+	(No symbol) [0x00007FF6904CE113]
+	BaseThreadInitThunk [0x00007FFADC52257D+29]
+	RtlUserThreadStart [0x00007FFADDBAAA68+40]
+
+2023-09-28 10:29:37,570 - ERROR - !----Trading Partner 2 Not Done----!
+2023-09-28 10:31:22,272 - INFO - FD1 Filled
+2023-09-28 10:33:22,761 - INFO - FD1 Filled
+2023-09-28 10:33:33,563 - ERROR - Message: 
+
+2023-09-28 10:35:32,272 - ERROR - Error while saving form
+2023-09-28 10:35:33,385 - ERROR - Message: no such element: Unable to locate element: {"method":"xpath","selector":"//button[normalize-space()='OK']"}
+  (Session info: chrome=117.0.5938.92); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF690567892+54818]
+	(No symbol) [0x00007FF6904D6AC2]
+	(No symbol) [0x00007FF69038DA3B]
+	(No symbol) [0x00007FF6903CE4FC]
+	(No symbol) [0x00007FF6903CE67C]
+	(No symbol) [0x00007FF690409627]
+	(No symbol) [0x00007FF6903EEAEF]
+	(No symbol) [0x00007FF6904075A2]
+	(No symbol) [0x00007FF6903EE883]
+	(No symbol) [0x00007FF6903C3691]
+	(No symbol) [0x00007FF6903C48D4]
+	GetHandleVerifier [0x00007FF6908CB992+3610402]
+	GetHandleVerifier [0x00007FF690921860+3962352]
+	GetHandleVerifier [0x00007FF690919D4F+3930847]
+	GetHandleVerifier [0x00007FF690603646+693206]
+	(No symbol) [0x00007FF6904E1628]
+	(No symbol) [0x00007FF6904DD934]
+	(No symbol) [0x00007FF6904DDA62]
+	(No symbol) [0x00007FF6904CE113]
+	BaseThreadInitThunk [0x00007FFADC52257D+29]
+	RtlUserThreadStart [0x00007FFADDBAAA68+40]
+
+2023-09-28 10:35:34,265 - ERROR - Message: element not interactable
+  (Session info: chrome=117.0.5938.92)
+Stacktrace:
+	GetHandleVerifier [0x00007FF690567892+54818]
+	(No symbol) [0x00007FF6904D6AC2]
+	(No symbol) [0x00007FF69038D8ED]
+	(No symbol) [0x00007FF6903CF8E5]
+	(No symbol) [0x00007FF6903C571F]
+	(No symbol) [0x00007FF6903EEAAA]
+	(No symbol) [0x00007FF6903C5036]
+	(No symbol) [0x00007FF6903EECC0]
+	(No symbol) [0x00007FF6904075A2]
+	(No symbol) [0x00007FF6903EE883]
+	(No symbol) [0x00007FF6903C3691]
+	(No symbol) [0x00007FF6903C48D4]
+	GetHandleVerifier [0x00007FF6908CB992+3610402]
+	GetHandleVerifier [0x00007FF690921860+3962352]
+	GetHandleVerifier [0x00007FF690919D4F+3930847]
+	GetHandleVerifier [0x00007FF690603646+693206]
+	(No symbol) [0x00007FF6904E1628]
+	(No symbol) [0x00007FF6904DD934]
+	(No symbol) [0x00007FF6904DDA62]
+	(No symbol) [0x00007FF6904CE113]
+	BaseThreadInitThunk [0x00007FFADC52257D+29]
+	RtlUserThreadStart [0x00007FFADDBAAA68+40]
+
+2023-09-28 10:39:52,200 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-09-28 10:40:35,189 - INFO - Login Done
+2023-09-28 10:40:42,608 - INFO - 7501 Form opened
+2023-09-28 10:40:50,406 - INFO - ----Upper Part Done----
+2023-09-28 10:41:23,639 - INFO - No Container found
+2023-09-28 10:41:31,946 - ERROR - Message: element click intercepted: Element <input _ngcontent-drj-c184="" autocapitalize="off" autocorrect="off" role="combobox" aria-multiline="false" id="typeahead-basic" type="text" tabindex="1" name="seller" class="form-control form-control-sm ng-untouched ng-pristine ng-valid" autocomplete="off" aria-autocomplete="list" aria-expanded="false"> is not clickable at point (760, 427). Other element would receive the click: <div _ngcontent-drj-c239="" class="loadingScreen">...</div>
+  (Session info: chrome=117.0.5938.92)
+Stacktrace:
+	GetHandleVerifier [0x00007FF690567892+54818]
+	(No symbol) [0x00007FF6904D6AC2]
+	(No symbol) [0x00007FF69038DA3B]
+	(No symbol) [0x00007FF6903D47CB]
+	(No symbol) [0x00007FF6903D2B99]
+	(No symbol) [0x00007FF6903D0968]
+	(No symbol) [0x00007FF6903CFA23]
+	(No symbol) [0x00007FF6903C571F]
+	(No symbol) [0x00007FF6903EEAAA]
+	(No symbol) [0x00007FF6903C5036]
+	(No symbol) [0x00007FF6903EECC0]
+	(No symbol) [0x00007FF6904075A2]
+	(No symbol) [0x00007FF6903EE883]
+	(No symbol) [0x00007FF6903C3691]
+	(No symbol) [0x00007FF6903C48D4]
+	GetHandleVerifier [0x00007FF6908CB992+3610402]
+	GetHandleVerifier [0x00007FF690921860+3962352]
+	GetHandleVerifier [0x00007FF690919D4F+3930847]
+	GetHandleVerifier [0x00007FF690603646+693206]
+	(No symbol) [0x00007FF6904E1628]
+	(No symbol) [0x00007FF6904DD934]
+	(No symbol) [0x00007FF6904DDA62]
+	(No symbol) [0x00007FF6904CE113]
+	BaseThreadInitThunk [0x00007FFADC52257D+29]
+	RtlUserThreadStart [0x00007FFADDBAAA68+40]
+
+2023-09-28 10:41:34,811 - ERROR - Message: element click intercepted: Element <input _ngcontent-drj-c188="" autocapitalize="off" autocorrect="off" role="combobox" aria-multiline="false" id="typeahead-basic" type="text" class="form-control ng-untouched ng-pristine ng-valid" autocomplete="off" aria-autocomplete="list" aria-expanded="false"> is not clickable at point (754, 462). Other element would receive the click: <div _ngcontent-drj-c239="" class="loadingScreen">...</div>
+  (Session info: chrome=117.0.5938.92)
+Stacktrace:
+	GetHandleVerifier [0x00007FF690567892+54818]
+	(No symbol) [0x00007FF6904D6AC2]
+	(No symbol) [0x00007FF69038DA3B]
+	(No symbol) [0x00007FF6903D47CB]
+	(No symbol) [0x00007FF6903D2B99]
+	(No symbol) [0x00007FF6903D0968]
+	(No symbol) [0x00007FF6903CFA23]
+	(No symbol) [0x00007FF6903C571F]
+	(No symbol) [0x00007FF6903EEAAA]
+	(No symbol) [0x00007FF6903C5036]
+	(No symbol) [0x00007FF6903EECC0]
+	(No symbol) [0x00007FF6904075A2]
+	(No symbol) [0x00007FF6903EE883]
+	(No symbol) [0x00007FF6903C3691]
+	(No symbol) [0x00007FF6903C48D4]
+	GetHandleVerifier [0x00007FF6908CB992+3610402]
+	GetHandleVerifier [0x00007FF690921860+3962352]
+	GetHandleVerifier [0x00007FF690919D4F+3930847]
+	GetHandleVerifier [0x00007FF690603646+693206]
+	(No symbol) [0x00007FF6904E1628]
+	(No symbol) [0x00007FF6904DD934]
+	(No symbol) [0x00007FF6904DDA62]
+	(No symbol) [0x00007FF6904CE113]
+	BaseThreadInitThunk [0x00007FFADC52257D+29]
+	RtlUserThreadStart [0x00007FFADDBAAA68+40]
+
+2023-09-28 10:41:39,642 - ERROR - Message: element click intercepted: Element <input _ngcontent-drj-c195="" autocapitalize="off" autocorrect="off" role="combobox" aria-multiline="false" id="typeahead-basic" type="text" tabindex="1" class="form-control ng-untouched ng-pristine ng-invalid" autocomplete="off" aria-autocomplete="list" aria-expanded="false" required=""> is not clickable at point (574, 304). Other element would receive the click: <div _ngcontent-drj-c239="" class="loadingScreen">...</div>
+  (Session info: chrome=117.0.5938.92)
+Stacktrace:
+	GetHandleVerifier [0x00007FF690567892+54818]
+	(No symbol) [0x00007FF6904D6AC2]
+	(No symbol) [0x00007FF69038DA3B]
+	(No symbol) [0x00007FF6903D47CB]
+	(No symbol) [0x00007FF6903D2B99]
+	(No symbol) [0x00007FF6903D0968]
+	(No symbol) [0x00007FF6903CFA23]
+	(No symbol) [0x00007FF6903C571F]
+	(No symbol) [0x00007FF6903EEAAA]
+	(No symbol) [0x00007FF6903C5036]
+	(No symbol) [0x00007FF6903EECC0]
+	(No symbol) [0x00007FF6904075A2]
+	(No symbol) [0x00007FF6903EE883]
+	(No symbol) [0x00007FF6903C3691]
+	(No symbol) [0x00007FF6903C48D4]
+	GetHandleVerifier [0x00007FF6908CB992+3610402]
+	GetHandleVerifier [0x00007FF690921860+3962352]
+	GetHandleVerifier [0x00007FF690919D4F+3930847]
+	GetHandleVerifier [0x00007FF690603646+693206]
+	(No symbol) [0x00007FF6904E1628]
+	(No symbol) [0x00007FF6904DD934]
+	(No symbol) [0x00007FF6904DDA62]
+	(No symbol) [0x00007FF6904CE113]
+	BaseThreadInitThunk [0x00007FFADC52257D+29]
+	RtlUserThreadStart [0x00007FFADDBAAA68+40]
+
+2023-10-03 10:12:10,867 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-10-03 10:12:25,956 - INFO - Login Done
+2023-10-03 10:12:39,376 - INFO - 7501 Form opened
+2023-10-03 10:12:49,058 - INFO - ----Upper Part Done----
+2023-10-03 10:13:15,450 - INFO - ----Vessel Done----
+2023-10-03 10:13:37,830 - ERROR - !----Trading Partner 1 Not Done----!
+2023-10-03 10:13:58,507 - INFO - ----Trading Partner 2 Done----
+2023-10-03 10:14:30,974 - INFO - ----Form Saved Successfully----
+2023-10-03 10:14:36,237 - INFO - 7501 Form opened
+2023-10-03 10:14:43,307 - INFO - ----Upper Part Done----
+2023-10-03 10:15:03,100 - INFO - ----Vessel Done----
+2023-10-03 10:15:20,082 - INFO - ----Trading Partner 1 Done----
+2023-10-03 10:15:37,783 - INFO - ----Trading Partner 2 Done----
+2023-10-03 10:16:04,250 - INFO - ----Form Saved Successfully----
+2023-10-03 10:16:09,152 - INFO - 7501 Form opened
+2023-10-03 10:16:16,954 - INFO - ----Upper Part Done----
+2023-10-03 10:16:37,933 - INFO - ----Vessel Done----
+2023-10-03 10:16:54,706 - INFO - ----Trading Partner 1 Done----
+2023-10-03 10:17:10,853 - INFO - ----Trading Partner 2 Done----
+2023-10-03 10:17:39,610 - INFO - ----Form Saved Successfully----
+2023-10-03 10:17:44,920 - INFO - 7501 Form opened
+2023-10-03 10:17:52,123 - INFO - ----Upper Part Done----
+2023-10-03 10:18:11,923 - INFO - ----Vessel Done----
+2023-10-03 10:18:27,989 - INFO - ----Trading Partner 1 Done----
+2023-10-03 10:18:47,981 - INFO - ----Trading Partner 2 Done----
+2023-10-03 10:19:00,906 - INFO - foreign Line Value filled
+2023-10-03 10:19:14,210 - INFO - ----Form Saved Successfully----
+2023-10-03 10:19:18,920 - INFO - 7501 Form opened
+2023-10-03 10:19:26,068 - INFO - ----Upper Part Done----
+2023-10-03 10:19:45,461 - INFO - ----Vessel Done----
+2023-10-03 10:20:01,474 - INFO - ----Trading Partner 1 Done----
+2023-10-03 10:20:17,079 - INFO - ----Trading Partner 2 Done----
+2023-10-03 10:20:29,673 - INFO - It is Cotton HTS
+2023-10-03 10:20:43,374 - INFO - ----Form Saved Successfully----
+2023-10-03 11:03:37,880 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-10-03 11:03:49,791 - INFO - Login Done
+2023-10-03 11:03:59,658 - INFO - 7501 Form opened
+2023-10-03 11:04:07,797 - INFO - ----Upper Part Done----
+2023-10-03 11:04:27,370 - INFO - ----Vessel Done----
+2023-10-03 11:04:44,645 - INFO - ----Trading Partner 1 Done----
+2023-10-03 11:05:01,272 - INFO - ----Trading Partner 2 Done----
+2023-10-03 11:05:27,456 - ERROR - EP7 Filled
+2023-10-03 11:05:42,755 - INFO - ----Form not Saved----
+2023-10-03 11:14:16,494 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-10-03 11:14:54,523 - INFO - Login Done
+2023-10-03 11:15:05,099 - INFO - 7501 Form opened
+2023-10-03 11:15:14,448 - INFO - ----Upper Part Done----
+2023-10-03 11:15:34,338 - INFO - ----Vessel Done----
+2023-10-03 11:15:50,512 - INFO - ----Trading Partner 1 Done----
+2023-10-03 11:16:08,003 - INFO - ----Trading Partner 2 Done----
+2023-10-03 11:16:34,032 - ERROR - EP7 Filled
+2023-10-03 11:16:48,359 - INFO - ----Form Saved Successfully----
+2023-10-03 11:16:53,960 - INFO - 7501 Form opened
+2023-10-03 11:17:01,703 - INFO - ----Upper Part Done----
+2023-10-03 11:17:23,070 - INFO - ----Vessel Done----
+2023-10-03 11:17:39,596 - INFO - ----Trading Partner 1 Done----
+2023-10-03 11:17:57,604 - INFO - ----Trading Partner 2 Done----
+2023-10-03 11:18:14,734 - INFO - EP5 Filled
+2023-10-03 11:18:31,434 - ERROR - EP7 Filled
+2023-10-03 11:18:46,821 - INFO - ----Form Saved Successfully----
+2023-10-03 12:22:35,914 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-10-03 12:22:53,748 - INFO - Login Done
+2023-10-03 12:23:03,534 - INFO - 7501 Form opened
+2023-10-03 12:23:12,659 - INFO - ----Upper Part Done----
+2023-10-03 12:23:32,176 - INFO - No Container found
+2023-10-03 12:23:55,908 - INFO - ----Trading Partner 1 Done----
+2023-10-03 12:24:28,029 - INFO - ----Trading Partner 2 Done----
+2023-10-03 12:24:53,263 - INFO - EP5 Filled
+2023-10-03 12:25:10,232 - ERROR - EP7 Filled
+2023-10-03 12:25:27,699 - INFO - ----Form Saved Successfully----
+2023-10-03 12:25:39,721 - INFO - 7501 Form opened
+2023-10-03 12:25:48,297 - INFO - ----Upper Part Done----
+2023-10-03 12:26:00,348 - INFO - No Container found
+2023-10-03 12:26:16,516 - INFO - ----Trading Partner 1 Done----
+2023-10-03 12:26:32,891 - INFO - ----Trading Partner 2 Done----
+2023-10-03 12:26:57,196 - INFO - ----Form Saved Successfully----
+2023-10-03 12:28:59,501 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-10-03 12:29:14,566 - INFO - Login Done
+2023-10-03 12:29:22,000 - INFO - 7501 Form opened
+2023-10-03 12:29:33,104 - INFO - ----Upper Part Done----
+2023-10-03 12:30:03,752 - INFO - ----Vessel Done----
+2023-10-03 12:30:25,445 - INFO - ----Trading Partner 1 Done----
+2023-10-03 12:30:47,371 - INFO - ----Trading Partner 2 Done----
+2023-10-03 12:31:45,571 - INFO - ----Form Saved Successfully----
+2023-10-03 12:43:51,089 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-10-03 12:44:04,526 - INFO - Login Done
+2023-10-03 12:44:12,047 - INFO - 7501 Form opened
+2023-10-03 12:49:06,076 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-10-03 12:49:29,646 - INFO - Login Done
+2023-10-03 12:49:37,044 - INFO - 7501 Form opened
+2023-10-03 12:49:47,255 - ERROR - Message: element click intercepted: Element <button _ngcontent-vow-c196="" tabindex="1">...</button> is not clickable at point (84, 8). Other element would receive the click: <div class="swal2-container swal2-center swal2-backdrop-show" style="overflow-y: auto;">...</div>
+  (Session info: chrome=117.0.5938.132)
+Stacktrace:
+	GetHandleVerifier [0x00007FF63CBC7892+54818]
+	(No symbol) [0x00007FF63CB36AC2]
+	(No symbol) [0x00007FF63C9EDA3B]
+	(No symbol) [0x00007FF63CA347CB]
+	(No symbol) [0x00007FF63CA32B99]
+	(No symbol) [0x00007FF63CA30968]
+	(No symbol) [0x00007FF63CA2FA23]
+	(No symbol) [0x00007FF63CA2571F]
+	(No symbol) [0x00007FF63CA4EAAA]
+	(No symbol) [0x00007FF63CA25036]
+	(No symbol) [0x00007FF63CA4ECC0]
+	(No symbol) [0x00007FF63CA675A2]
+	(No symbol) [0x00007FF63CA4E883]
+	(No symbol) [0x00007FF63CA23691]
+	(No symbol) [0x00007FF63CA248D4]
+	GetHandleVerifier [0x00007FF63CF2B992+3610402]
+	GetHandleVerifier [0x00007FF63CF81860+3962352]
+	GetHandleVerifier [0x00007FF63CF79D4F+3930847]
+	GetHandleVerifier [0x00007FF63CC63646+693206]
+	(No symbol) [0x00007FF63CB41628]
+	(No symbol) [0x00007FF63CB3D934]
+	(No symbol) [0x00007FF63CB3DA62]
+	(No symbol) [0x00007FF63CB2E113]
+	BaseThreadInitThunk [0x00007FFADC52257D+29]
+	RtlUserThreadStart [0x00007FFADDBAAA68+40]
+
+2023-10-03 12:50:57,566 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-10-03 12:51:17,197 - INFO - Login Done
+2023-10-03 12:51:24,698 - INFO - 7501 Form opened
+2023-10-03 12:51:36,973 - ERROR - Message: element not interactable
+  (Session info: chrome=117.0.5938.132)
+Stacktrace:
+	GetHandleVerifier [0x00007FF63CBC7892+54818]
+	(No symbol) [0x00007FF63CB36AC2]
+	(No symbol) [0x00007FF63C9ED8ED]
+	(No symbol) [0x00007FF63CA2F8E5]
+	(No symbol) [0x00007FF63CA2571F]
+	(No symbol) [0x00007FF63CA4EAAA]
+	(No symbol) [0x00007FF63CA25036]
+	(No symbol) [0x00007FF63CA4ECC0]
+	(No symbol) [0x00007FF63CA675A2]
+	(No symbol) [0x00007FF63CA4E883]
+	(No symbol) [0x00007FF63CA23691]
+	(No symbol) [0x00007FF63CA248D4]
+	GetHandleVerifier [0x00007FF63CF2B992+3610402]
+	GetHandleVerifier [0x00007FF63CF81860+3962352]
+	GetHandleVerifier [0x00007FF63CF79D4F+3930847]
+	GetHandleVerifier [0x00007FF63CC63646+693206]
+	(No symbol) [0x00007FF63CB41628]
+	(No symbol) [0x00007FF63CB3D934]
+	(No symbol) [0x00007FF63CB3DA62]
+	(No symbol) [0x00007FF63CB2E113]
+	BaseThreadInitThunk [0x00007FFADC52257D+29]
+	RtlUserThreadStart [0x00007FFADDBAAA68+40]
+
+2023-10-03 13:14:04,864 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-10-03 13:14:25,905 - INFO - Login Done
+2023-10-03 13:14:33,447 - INFO - 7501 Form opened
+2023-10-03 13:14:46,214 - ERROR - Message: element not interactable
+  (Session info: chrome=117.0.5938.132)
+Stacktrace:
+	GetHandleVerifier [0x00007FF608A47892+54818]
+	(No symbol) [0x00007FF6089B6AC2]
+	(No symbol) [0x00007FF60886D8ED]
+	(No symbol) [0x00007FF6088AF8E5]
+	(No symbol) [0x00007FF6088A571F]
+	(No symbol) [0x00007FF6088CEAAA]
+	(No symbol) [0x00007FF6088A5036]
+	(No symbol) [0x00007FF6088CECC0]
+	(No symbol) [0x00007FF6088E75A2]
+	(No symbol) [0x00007FF6088CE883]
+	(No symbol) [0x00007FF6088A3691]
+	(No symbol) [0x00007FF6088A48D4]
+	GetHandleVerifier [0x00007FF608DAB992+3610402]
+	GetHandleVerifier [0x00007FF608E01860+3962352]
+	GetHandleVerifier [0x00007FF608DF9D4F+3930847]
+	GetHandleVerifier [0x00007FF608AE3646+693206]
+	(No symbol) [0x00007FF6089C1628]
+	(No symbol) [0x00007FF6089BD934]
+	(No symbol) [0x00007FF6089BDA62]
+	(No symbol) [0x00007FF6089AE113]
+	BaseThreadInitThunk [0x00007FFADC52257D+29]
+	RtlUserThreadStart [0x00007FFADDBAAA68+40]
+
+2023-10-03 13:23:30,754 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-10-03 13:24:02,394 - INFO - Login Done
+2023-10-03 13:24:09,896 - INFO - 7501 Form opened
+2023-10-03 13:26:18,350 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-10-03 13:27:11,064 - INFO - Login Done
+2023-10-03 13:27:18,689 - INFO - 7501 Form opened
+2023-10-03 13:27:33,884 - ERROR - Message: element not interactable
+  (Session info: chrome=117.0.5938.132)
+Stacktrace:
+	GetHandleVerifier [0x00007FF608A47892+54818]
+	(No symbol) [0x00007FF6089B6AC2]
+	(No symbol) [0x00007FF60886D8ED]
+	(No symbol) [0x00007FF6088AF8E5]
+	(No symbol) [0x00007FF6088A571F]
+	(No symbol) [0x00007FF6088CEAAA]
+	(No symbol) [0x00007FF6088A5036]
+	(No symbol) [0x00007FF6088CECC0]
+	(No symbol) [0x00007FF6088E75A2]
+	(No symbol) [0x00007FF6088CE883]
+	(No symbol) [0x00007FF6088A3691]
+	(No symbol) [0x00007FF6088A48D4]
+	GetHandleVerifier [0x00007FF608DAB992+3610402]
+	GetHandleVerifier [0x00007FF608E01860+3962352]
+	GetHandleVerifier [0x00007FF608DF9D4F+3930847]
+	GetHandleVerifier [0x00007FF608AE3646+693206]
+	(No symbol) [0x00007FF6089C1628]
+	(No symbol) [0x00007FF6089BD934]
+	(No symbol) [0x00007FF6089BDA62]
+	(No symbol) [0x00007FF6089AE113]
+	BaseThreadInitThunk [0x00007FFADC52257D+29]
+	RtlUserThreadStart [0x00007FFADDBAAA68+40]
+
+2023-10-03 14:43:46,163 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-10-03 14:44:49,920 - INFO - Login Done
+2023-10-03 14:45:03,896 - INFO - 7501 Form opened
+2023-10-03 14:45:15,679 - INFO - ----Upper Part Done----
+2023-10-03 14:45:48,350 - INFO - ----Vessel Done----
+2023-10-03 14:46:10,802 - INFO - ----Trading Partner 1 Done----
+2023-10-03 14:46:36,001 - INFO - ----Trading Partner 2 Done----
+2023-10-03 14:46:55,143 - INFO - It is China HTS
+2023-10-03 14:47:24,132 - INFO - ----Form Saved Successfully----
+2023-10-03 14:47:32,973 - INFO - 7501 Form opened
+2023-10-03 14:47:44,274 - INFO - ----Upper Part Done----
+2023-10-03 14:48:15,984 - INFO - ----Vessel Done----
+2023-10-03 14:48:37,350 - INFO - ----Trading Partner 1 Done----
+2023-10-03 14:49:02,567 - INFO - ----Trading Partner 2 Done----
+2023-10-03 14:49:19,692 - INFO - It is Cotton HTS
+2023-10-03 14:49:23,722 - INFO - It is China HTS
+2023-10-03 14:49:52,548 - INFO - ----Form Saved Successfully----
+2023-10-03 14:49:58,581 - INFO - 7501 Form opened
+2023-10-03 14:50:08,582 - INFO - ----Upper Part Done----
+2023-10-03 14:50:41,706 - INFO - ----Vessel Done----
+2023-10-03 14:51:03,714 - INFO - ----Trading Partner 1 Done----
+2023-10-03 14:51:23,452 - INFO - ----Trading Partner 2 Done----
+2023-10-03 14:51:43,116 - INFO - It is China HTS
+2023-10-03 14:52:01,997 - ERROR - EP7 Filled
+2023-10-03 14:52:22,161 - INFO - ----Form Saved Successfully----
+2023-10-03 14:56:49,425 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-10-03 14:58:14,747 - INFO - Login Done
+2023-10-03 14:58:26,198 - INFO - 7501 Form opened
+2023-10-03 14:58:36,432 - INFO - ----Upper Part Done----
+2023-10-03 14:59:11,231 - INFO - ----Vessel Done----
+2023-10-03 14:59:37,787 - INFO - ----Trading Partner 1 Done----
+2023-10-03 15:00:09,500 - INFO - ----Trading Partner 2 Done----
+2023-10-03 15:01:28,554 - INFO - ----Form Saved Successfully----
+2023-10-03 15:01:34,937 - INFO - 7501 Form opened
+2023-10-03 15:01:43,512 - INFO - ----Upper Part Done----
+2023-10-03 15:02:14,087 - INFO - ----Vessel Done----
+2023-10-03 15:02:34,617 - INFO - ----Trading Partner 1 Done----
+2023-10-03 15:03:01,011 - INFO - ----Trading Partner 2 Done----
+2023-10-03 15:03:39,950 - INFO - It is Cotton HTS
+2023-10-03 15:04:06,657 - INFO - It is Cotton HTS
+2023-10-03 15:04:33,017 - INFO - ----Form Saved Successfully----
+2023-10-03 15:04:38,927 - INFO - 7501 Form opened
+2023-10-03 15:04:47,526 - INFO - ----Upper Part Done----
+2023-10-03 15:05:18,887 - INFO - ----Vessel Done----
+2023-10-03 15:05:40,664 - INFO - ----Trading Partner 1 Done----
+2023-10-03 15:06:04,643 - INFO - ----Trading Partner 2 Done----
+2023-10-03 15:07:07,104 - INFO - It is Cotton HTS
+2023-10-03 15:07:33,297 - INFO - ----Form Saved Successfully----
+2023-10-03 15:07:38,810 - INFO - 7501 Form opened
+2023-10-03 15:07:46,655 - INFO - ----Upper Part Done----
+2023-10-03 15:08:07,993 - INFO - ----Vessel Done----
+2023-10-03 15:08:25,185 - INFO - ----Trading Partner 1 Done----
+2023-10-03 15:08:43,845 - INFO - ----Trading Partner 2 Done----
+2023-10-03 15:09:44,308 - INFO - It is Cotton HTS
+2023-10-03 15:10:06,512 - INFO - ----Form Saved Successfully----
+2023-10-03 15:10:12,325 - INFO - 7501 Form opened
+2023-10-03 15:10:21,918 - INFO - ----Upper Part Done----
+2023-10-03 15:10:56,554 - INFO - ----Vessel Done----
+2023-10-03 15:11:19,364 - INFO - ----Trading Partner 1 Done----
+2023-10-03 15:11:45,169 - INFO - ----Trading Partner 2 Done----
+2023-10-03 15:12:56,865 - INFO - It is Cotton HTS
+2023-10-03 15:13:27,698 - INFO - It is Cotton HTS
+2023-10-03 15:14:02,201 - INFO - ----Form Saved Successfully----
+2023-10-04 12:46:44,321 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-10-04 12:47:44,388 - INFO - Login Done
+2023-10-04 12:47:58,931 - INFO - 7501 Form opened
+2023-10-04 12:48:11,576 - INFO - ----Upper Part Done----
+2023-10-04 12:48:44,836 - INFO - ----Vessel Done----
+2023-10-04 12:49:08,350 - INFO - ----Trading Partner 1 Done----
+2023-10-04 12:49:30,996 - INFO - ----Trading Partner 2 Done----
+2023-10-04 12:50:50,009 - INFO - ----Form Saved Successfully----
+2023-10-04 12:50:58,925 - INFO - 7501 Form opened
+2023-10-04 12:51:07,085 - INFO - ----Upper Part Done----
+2023-10-04 12:51:35,564 - INFO - ----Vessel Done----
+2023-10-04 12:51:54,951 - INFO - ----Trading Partner 1 Done----
+2023-10-04 12:52:20,426 - INFO - ----Trading Partner 2 Done----
+2023-10-04 12:53:11,288 - INFO - It is Cotton HTS
+2023-10-04 12:53:49,048 - INFO - It is Cotton HTS
+2023-10-04 12:54:25,920 - INFO - ----Form Saved Successfully----
+2023-10-04 12:54:37,274 - INFO - 7501 Form opened
+2023-10-04 12:54:47,807 - INFO - ----Upper Part Done----
+2023-10-04 12:55:12,943 - INFO - ----Vessel Done----
+2023-10-04 12:55:33,745 - INFO - ----Trading Partner 1 Done----
+2023-10-04 12:55:54,986 - INFO - ----Trading Partner 2 Done----
+2023-10-04 12:57:14,130 - INFO - It is Cotton HTS
+2023-10-04 12:57:44,156 - INFO - ----Form Saved Successfully----
+2023-10-04 12:57:53,229 - INFO - 7501 Form opened
+2023-10-04 12:58:01,495 - INFO - ----Upper Part Done----
+2023-10-04 12:58:24,948 - INFO - ----Vessel Done----
+2023-10-04 12:58:43,032 - INFO - ----Trading Partner 1 Done----
+2023-10-04 12:59:00,212 - INFO - ----Trading Partner 2 Done----
+2023-10-04 13:00:22,664 - INFO - It is Cotton HTS
+2023-10-04 13:00:43,004 - INFO - ----Form not Saved----
+2023-10-04 13:03:07,887 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-10-04 13:06:23,145 - INFO - Login Done
+2023-10-04 13:06:37,610 - INFO - 7501 Form opened
+2023-10-04 13:06:51,217 - INFO - ----Upper Part Done----
+2023-10-04 13:07:28,850 - INFO - ----Vessel Done----
+2023-10-04 13:07:52,846 - INFO - ----Trading Partner 1 Done----
+2023-10-04 13:08:23,102 - INFO - ----Trading Partner 2 Done----
+2023-10-04 13:10:14,988 - INFO - It is Cotton HTS
+2023-10-04 13:11:03,693 - INFO - ----Form Saved Successfully----
+2023-10-04 13:14:44,643 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-10-04 13:20:24,507 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-10-04 13:28:11,870 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-10-04 14:56:49,632 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-10-04 14:57:51,704 - INFO - Login Done
+2023-10-04 14:58:01,478 - INFO - 7501 Form opened
+2023-10-04 14:58:08,256 - INFO - ----Upper Part Done----
+2023-10-04 14:58:29,115 - INFO - ----Vessel Done----
+2023-10-04 14:58:45,577 - INFO - ----Trading Partner 1 Done----
+2023-10-04 14:59:02,776 - INFO - ----Trading Partner 2 Done----
+2023-10-04 15:00:02,997 - INFO - It is Cotton HTS
+2023-10-04 15:00:29,312 - INFO - It is Cotton HTS
+2023-10-04 15:00:54,795 - INFO - ----Form Saved Successfully----
+2023-10-04 15:01:01,188 - INFO - 7501 Form opened
+2023-10-04 15:01:10,596 - INFO - ----Upper Part Done----
+2023-10-04 15:01:33,620 - INFO - ----Vessel Done----
+2023-10-04 15:01:51,416 - INFO - ----Trading Partner 1 Done----
+2023-10-04 15:02:09,901 - INFO - ----Trading Partner 2 Done----
+2023-10-04 15:02:37,235 - ERROR - EP7 Filled
+2023-10-04 15:03:16,459 - ERROR - EP7 Filled
+2023-10-04 15:03:26,629 - ERROR - Message: 
+
+2023-10-04 15:03:53,656 - ERROR - EP7 Filled
+2023-10-04 15:04:03,753 - ERROR - Message: 
+
+2023-10-04 15:04:31,145 - ERROR - EP7 Filled
+2023-10-04 15:04:41,326 - ERROR - Message: 
+
+2023-10-04 15:04:52,482 - INFO - ----Form Saved Successfully----
+2023-10-04 15:04:57,338 - INFO - 7501 Form opened
+2023-10-04 15:05:04,911 - INFO - ----Upper Part Done----
+2023-10-04 15:05:26,105 - INFO - ----Vessel Done----
+2023-10-04 15:05:42,431 - INFO - ----Trading Partner 1 Done----
+2023-10-04 15:05:58,860 - INFO - ----Trading Partner 2 Done----
+2023-10-04 15:06:25,024 - ERROR - EP7 Filled
+2023-10-04 15:06:49,487 - INFO - EP5 Filled
+2023-10-04 15:07:06,013 - ERROR - EP7 Filled
+2023-10-04 15:07:46,656 - INFO - EP5 Filled
+2023-10-04 15:08:03,554 - ERROR - EP7 Filled
+2023-10-04 15:09:12,576 - INFO - FD3 Filled
+2023-10-04 15:09:50,963 - INFO - ----Form Saved Successfully----
+2023-10-04 15:09:55,708 - INFO - 7501 Form opened
+2023-10-04 15:10:04,858 - INFO - ----Upper Part Done----
+2023-10-04 15:10:18,087 - INFO - No Container found
+2023-10-04 15:10:34,387 - INFO - ----Trading Partner 1 Done----
+2023-10-04 15:10:52,918 - INFO - ----Trading Partner 2 Done----
+2023-10-04 15:12:31,330 - INFO - ----Form Saved Successfully----
+2023-10-04 15:12:36,937 - INFO - 7501 Form opened
+2023-10-04 15:12:46,528 - INFO - ----Upper Part Done----
+2023-10-04 15:12:59,302 - INFO - No Container found
+2023-10-04 15:13:16,212 - INFO - ----Trading Partner 1 Done----
+2023-10-04 15:13:33,983 - INFO - ----Trading Partner 2 Done----
+2023-10-04 15:15:06,561 - INFO - ----Form Saved Successfully----
+2023-10-04 15:22:08,231 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-10-04 15:23:07,162 - INFO - Login Done
+2023-10-04 15:23:17,281 - INFO - 7501 Form opened
+2023-10-04 15:23:24,815 - INFO - ----Upper Part Done----
+2023-10-04 15:23:46,640 - INFO - ----Vessel Done----
+2023-10-04 15:24:03,992 - INFO - ----Trading Partner 1 Done----
+2023-10-04 15:24:21,076 - INFO - ----Trading Partner 2 Done----
+2023-10-04 15:24:34,786 - INFO - It is China HTS
+2023-10-04 15:24:56,944 - INFO - It is China HTS
+2023-10-04 15:25:15,652 - INFO - ----Form Saved Successfully----
+2023-10-04 15:25:21,159 - INFO - 7501 Form opened
+2023-10-04 15:25:28,642 - INFO - ----Upper Part Done----
+2023-10-04 15:25:49,588 - INFO - ----Vessel Done----
+2023-10-04 15:26:06,409 - INFO - ----Trading Partner 1 Done----
+2023-10-04 15:26:22,863 - INFO - ----Trading Partner 2 Done----
+2023-10-04 15:26:36,624 - INFO - It is China HTS
+2023-10-04 15:26:57,373 - INFO - It is Cotton HTS
+2023-10-04 15:26:59,583 - INFO - It is China HTS
+2023-10-04 15:27:21,103 - INFO - It is Cotton HTS
+2023-10-04 15:27:23,433 - INFO - It is China HTS
+2023-10-04 15:27:42,800 - INFO - ----Form Saved Successfully----
+2023-10-04 15:27:48,022 - INFO - 7501 Form opened
+2023-10-04 15:27:56,247 - INFO - ----Upper Part Done----
+2023-10-04 15:28:16,913 - INFO - ----Vessel Done----
+2023-10-04 15:28:35,783 - INFO - ----Trading Partner 1 Done----
+2023-10-04 15:28:53,405 - INFO - ----Trading Partner 2 Done----
+2023-10-04 15:29:07,372 - INFO - It is China HTS
+2023-10-04 15:29:31,468 - INFO - It is China HTS
+2023-10-04 15:29:54,276 - INFO - It is Cotton HTS
+2023-10-04 15:29:57,300 - INFO - It is China HTS
+2023-10-04 15:30:20,653 - INFO - ----Form Saved Successfully----
+2023-10-05 11:18:54,131 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-10-05 11:19:50,712 - INFO - Login Done
+2023-10-05 11:19:58,230 - INFO - 7501 Form opened
+2023-10-05 11:19:59,500 - ERROR - 'RelativeBy' object has no attribute 'click'
+2023-10-11 16:03:43,850 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-10-11 16:04:18,606 - INFO - Login Done
+2023-10-11 16:04:26,195 - INFO - 7501 Form opened
+2023-10-11 16:04:36,969 - INFO - ----Upper Part Done----
+2023-10-11 16:05:04,012 - INFO - ----Vessel Done----
+2023-10-11 16:05:24,590 - INFO - ----Trading Partner 1 Done----
+2023-10-11 16:05:47,539 - INFO - ----Trading Partner 2 Done----
+2023-10-11 16:07:02,706 - INFO - FD1 Filled
+2023-10-11 16:07:21,987 - INFO - ----Form Saved Successfully----
+2023-10-16 13:21:13,294 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-10-16 13:21:26,339 - INFO - Login Done
+2023-10-16 13:21:33,696 - INFO - 7501 Form opened
+2023-10-16 13:21:37,343 - INFO - ----Upper Part Done----
+2023-10-16 13:21:47,872 - INFO - ----Vessel Done----
+2023-10-16 13:22:01,128 - ERROR - !----Trading Partner 1 Not Done----!
+2023-10-16 13:22:13,272 - INFO - ----Trading Partner 2 Done----
+2023-10-16 13:22:37,356 - INFO - ----Form Saved Successfully----
+2023-10-16 13:24:24,377 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-10-16 13:24:35,025 - INFO - Login Done
+2023-10-16 13:24:42,347 - INFO - 7501 Form opened
+2023-10-16 13:24:45,998 - INFO - ----Upper Part Done----
+2023-10-16 13:24:56,516 - INFO - ----Vessel Done----
+2023-10-16 13:25:09,861 - INFO - ----Trading Partner 1 Done----
+2023-10-16 13:25:22,110 - INFO - ----Trading Partner 2 Done----
+2023-10-19 15:30:37,198 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-10-19 15:31:21,489 - INFO - Login Done
+2023-10-19 15:36:34,687 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-10-19 15:37:25,619 - INFO - Login Done
+2023-10-19 15:37:41,554 - INFO - 7501 Form opened
+2023-10-19 15:37:49,697 - INFO - ----Upper Part Done----
+2023-10-19 15:38:18,367 - INFO - ----Vessel Done----
+2023-10-19 15:38:41,522 - ERROR - !----Trading Partner 1 Not Done----!
+2023-10-19 15:39:10,328 - INFO - ----Trading Partner 2 Done----
+2023-10-19 15:40:05,829 - INFO - ----Form Saved Successfully----
+2023-10-19 15:41:01,557 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-10-19 15:41:24,475 - INFO - Login Done
+2023-10-19 15:41:39,049 - INFO - 7501 Form opened
+2023-10-19 15:41:51,827 - INFO - ----Upper Part Done----
+2023-10-19 15:42:21,099 - INFO - ----Vessel Done----
+2023-10-19 15:42:44,693 - ERROR - !----Trading Partner 1 Not Done----!
+2023-10-19 15:43:16,400 - INFO - ----Trading Partner 2 Done----
+2023-10-19 15:44:02,461 - INFO - ----Form Saved Successfully----
+2023-10-19 15:44:10,401 - INFO - 7501 Form opened
+2023-10-19 15:44:20,035 - INFO - ----Upper Part Done----
+2023-10-19 15:44:46,239 - INFO - ----Vessel Done----
+2023-10-19 15:45:05,578 - INFO - ----Trading Partner 1 Done----
+2023-10-19 15:45:25,606 - INFO - ----Trading Partner 2 Done----
+2023-10-19 15:46:14,750 - INFO - ----Form Saved Successfully----
+2023-10-19 15:46:23,005 - INFO - 7501 Form opened
+2023-10-19 15:46:33,310 - INFO - ----Upper Part Done----
+2023-10-19 15:47:02,709 - INFO - ----Vessel Done----
+2023-10-19 15:47:21,760 - INFO - ----Trading Partner 1 Done----
+2023-10-19 15:47:50,140 - INFO - ----Trading Partner 2 Done----
+2023-10-19 15:48:04,834 - INFO - foreign Line Value filled
+2023-10-19 15:48:25,745 - INFO - ----Form Saved Successfully----
+2023-10-19 15:48:34,241 - INFO - 7501 Form opened
+2023-10-19 15:48:45,243 - INFO - ----Upper Part Done----
+2023-10-19 15:49:12,860 - INFO - ----Vessel Done----
+2023-10-19 15:49:33,570 - INFO - ----Trading Partner 1 Done----
+2023-10-19 15:49:53,988 - INFO - ----Trading Partner 2 Done----
+2023-10-19 15:50:08,527 - INFO - It is Cotton HTS
+2023-10-19 15:50:30,615 - INFO - ----Form Saved Successfully----
+2023-10-19 15:50:37,784 - INFO - 7501 Form opened
+2023-10-19 15:50:47,956 - INFO - ----Upper Part Done----
+2023-10-19 15:51:14,312 - INFO - ----Vessel Done----
+2023-10-19 15:51:32,750 - INFO - ----Trading Partner 1 Done----
+2023-10-19 15:51:53,490 - INFO - ----Trading Partner 2 Done----
+2023-10-19 15:52:23,411 - ERROR - EP7 Filled
+2023-10-19 15:52:48,612 - INFO - ----Form Saved Successfully----
+2023-10-19 15:52:57,816 - INFO - 7501 Form opened
+2023-10-19 15:53:09,789 - INFO - ----Upper Part Done----
+2023-10-19 15:53:40,151 - INFO - ----Vessel Done----
+2023-10-19 15:54:02,814 - ERROR - !----Trading Partner 1 Not Done----!
+2023-10-19 15:54:34,920 - INFO - ----Trading Partner 2 Done----
+2023-10-19 15:55:05,448 - INFO - EP5 Filled
+2023-10-19 15:55:35,052 - ERROR - EP7 Filled
+2023-10-19 15:56:08,430 - INFO - ----Form Saved Successfully----
+2023-10-19 15:56:17,094 - INFO - 7501 Form opened
+2023-10-19 15:56:30,550 - INFO - ----Upper Part Done----
+2023-10-19 15:56:57,339 - INFO - No Container found
+2023-10-19 15:57:23,448 - INFO - ----Trading Partner 1 Done----
+2023-10-19 15:57:54,485 - INFO - ----Trading Partner 2 Done----
+2023-10-19 15:58:17,900 - INFO - EP5 Filled
+2023-10-19 15:58:39,322 - ERROR - EP7 Filled
+2023-10-19 15:59:16,187 - INFO - ----Form Saved Successfully----
+2023-10-19 15:59:28,276 - INFO - 7501 Form opened
+2023-10-19 15:59:44,810 - INFO - ----Upper Part Done----
+2023-10-19 16:00:08,977 - INFO - No Container found
+2023-10-19 16:00:34,890 - INFO - ----Trading Partner 1 Done----
+2023-10-19 16:01:06,378 - INFO - ----Trading Partner 2 Done----
+2023-10-19 16:02:00,775 - INFO - ----Form Saved Successfully----
+2023-10-19 16:02:13,020 - INFO - 7501 Form opened
+2023-10-19 16:02:25,591 - INFO - ----Upper Part Done----
+2023-10-19 16:03:02,263 - INFO - ----Vessel Done----
+2023-10-19 16:03:22,293 - INFO - ----Trading Partner 1 Done----
+2023-10-19 16:03:47,734 - INFO - ----Trading Partner 2 Done----
+2023-10-19 16:04:36,677 - INFO - ----Form not Saved----
+2023-10-19 16:56:22,187 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-10-19 16:56:33,799 - INFO - Login Done
+2023-10-19 16:59:15,553 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-10-19 17:00:05,424 - INFO - Login Done
+2023-10-19 17:00:17,485 - INFO - 7501 Form opened
+2023-10-19 17:00:34,244 - INFO - 7501 Form opened
+2023-10-19 17:00:49,437 - INFO - 7501 Form opened
+2023-10-19 17:01:05,687 - INFO - 7501 Form opened
+2023-10-19 17:01:21,757 - INFO - 7501 Form opened
+2023-10-19 17:01:37,958 - INFO - 7501 Form opened
+2023-10-19 17:01:54,323 - INFO - 7501 Form opened
+2023-10-19 17:02:11,276 - INFO - 7501 Form opened
+2023-10-19 17:02:26,721 - INFO - 7501 Form opened
+2023-10-19 17:02:44,101 - INFO - 7501 Form opened
+2023-10-19 17:03:00,629 - INFO - 7501 Form opened
+2023-10-19 17:28:47,490 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-10-19 17:28:58,928 - INFO - Login Done
+2023-10-19 17:29:11,405 - INFO - 7501 Form opened
+2023-10-19 17:29:31,165 - INFO - 7501 Form opened
+2023-10-19 17:29:45,529 - INFO - 7501 Form opened
+2023-10-19 17:30:01,116 - INFO - 7501 Form opened
+2023-10-19 17:30:15,593 - INFO - 7501 Form opened
+2023-10-19 17:30:30,183 - INFO - 7501 Form opened
+2023-10-19 17:30:44,497 - INFO - 7501 Form opened
+2023-10-19 17:30:59,682 - INFO - 7501 Form opened
+2023-10-19 17:31:14,181 - INFO - 7501 Form opened
+2023-10-19 17:31:29,091 - INFO - 7501 Form opened
+2023-10-19 17:31:43,910 - INFO - 7501 Form opened
+2023-10-19 17:37:00,090 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-10-19 17:38:02,171 - INFO - Login Done
+2023-10-19 17:38:15,083 - INFO - 7501 Form opened
+2023-10-19 17:38:30,839 - INFO - 7501 Form opened
+2023-10-19 17:38:47,915 - INFO - 7501 Form opened
+2023-10-19 17:39:08,299 - INFO - 7501 Form opened
+2023-10-23 18:11:10,253 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-10-25 13:00:51,215 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-10-25 13:01:17,574 - INFO - Login Done
+2023-10-25 13:01:30,056 - INFO - 7501 Form opened
+2023-10-25 13:01:42,653 - INFO - ----Form Saved Successfully----
+2023-10-25 13:01:47,425 - INFO - 7501 Form opened
+2023-10-25 13:02:03,879 - INFO - ----Form Saved Successfully----
+2023-10-25 13:02:09,667 - INFO - 7501 Form opened
+2023-10-25 13:02:25,467 - INFO - ----Form Saved Successfully----
+2023-10-25 13:02:31,363 - INFO - 7501 Form opened
+2023-10-25 13:02:43,866 - INFO - ----Form Saved Successfully----
+2023-10-25 13:02:47,807 - INFO - 7501 Form opened
+2023-10-25 13:03:01,626 - INFO - ----Form Saved Successfully----
+2023-10-25 13:03:05,719 - INFO - 7501 Form opened
+2023-10-25 13:03:22,334 - INFO - ----Form Saved Successfully----
+2023-10-25 13:03:26,806 - INFO - 7501 Form opened
+2023-10-25 13:03:42,783 - INFO - ----Form Saved Successfully----
+2023-10-25 13:03:48,644 - INFO - 7501 Form opened
+2023-10-25 13:04:01,007 - INFO - ----Form Saved Successfully----
+2023-10-25 13:04:05,592 - INFO - 7501 Form opened
+2023-10-25 13:04:22,967 - INFO - ----Form Saved Successfully----
+2023-10-25 13:04:28,700 - INFO - 7501 Form opened
+2023-10-25 13:04:44,589 - INFO - ----Form Saved Successfully----
+2023-10-25 13:04:49,749 - INFO - 7501 Form opened
+2023-10-25 13:05:05,271 - INFO - ----Form Saved Successfully----
+2023-10-25 13:05:11,323 - INFO - 7501 Form opened
+2023-10-25 13:05:27,304 - INFO - ----Form Saved Successfully----
+2023-10-25 13:05:33,138 - INFO - 7501 Form opened
+2023-10-25 13:05:49,068 - INFO - ----Form Saved Successfully----
+2023-10-25 13:05:54,975 - INFO - 7501 Form opened
+2023-10-25 13:06:11,277 - INFO - ----Form Saved Successfully----
+2023-10-25 13:06:17,119 - INFO - 7501 Form opened
+2023-10-25 13:06:32,949 - INFO - ----Form Saved Successfully----
+2023-10-25 13:06:38,757 - INFO - 7501 Form opened
+2023-10-25 13:06:54,503 - INFO - ----Form Saved Successfully----
+2023-10-25 13:07:00,341 - INFO - 7501 Form opened
+2023-10-25 13:07:16,673 - INFO - ----Form Saved Successfully----
+2023-10-25 13:07:22,579 - INFO - 7501 Form opened
+2023-10-25 13:07:40,512 - INFO - ----Form Saved Successfully----
+2023-10-25 14:43:30,949 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-10-25 14:44:00,966 - INFO - Login Done
+2023-10-25 14:44:11,334 - INFO - 7501 Form opened
+2023-10-25 14:44:22,549 - INFO - ----Form Saved Successfully----
+2023-10-25 14:44:26,052 - INFO - 7501 Form opened
+2023-10-25 14:44:38,271 - INFO - ----Form Saved Successfully----
+2023-10-25 14:44:41,852 - INFO - 7501 Form opened
+2023-10-25 14:44:53,667 - INFO - ----Form Saved Successfully----
+2023-10-25 14:44:57,644 - INFO - 7501 Form opened
+2023-10-25 14:45:09,930 - INFO - ----Form Saved Successfully----
+2023-10-25 14:45:13,832 - INFO - 7501 Form opened
+2023-10-25 14:45:26,665 - INFO - ----Form Saved Successfully----
+2023-10-25 14:45:30,298 - INFO - 7501 Form opened
+2023-10-25 14:45:43,128 - INFO - ----Form Saved Successfully----
+2023-10-25 14:45:46,675 - INFO - 7501 Form opened
+2023-10-25 14:45:58,449 - INFO - ----Form Saved Successfully----
+2023-10-25 14:46:02,098 - INFO - 7501 Form opened
+2023-10-25 14:46:14,489 - INFO - ----Form Saved Successfully----
+2023-10-25 14:46:18,071 - INFO - 7501 Form opened
+2023-10-25 14:46:30,053 - INFO - ----Form Saved Successfully----
+2023-10-25 14:46:33,663 - INFO - 7501 Form opened
+2023-10-25 14:46:45,562 - INFO - ----Form Saved Successfully----
+2023-10-25 14:46:49,031 - INFO - 7501 Form opened
+2023-10-25 14:47:01,209 - INFO - ----Form Saved Successfully----
+2023-10-25 14:47:04,692 - INFO - 7501 Form opened
+2023-10-25 14:47:16,771 - INFO - ----Form Saved Successfully----
+2023-10-25 14:47:20,357 - INFO - 7501 Form opened
+2023-10-25 14:47:32,608 - INFO - ----Form Saved Successfully----
+2023-10-25 14:47:36,110 - INFO - 7501 Form opened
+2023-10-25 14:47:47,749 - INFO - ----Form Saved Successfully----
+2023-10-25 14:47:51,431 - INFO - 7501 Form opened
+2023-10-25 14:48:03,167 - INFO - ----Form Saved Successfully----
+2023-10-25 14:48:06,671 - INFO - 7501 Form opened
+2023-10-25 14:48:18,650 - INFO - ----Form Saved Successfully----
+2023-10-25 14:48:22,241 - INFO - 7501 Form opened
+2023-10-25 14:48:34,349 - INFO - ----Form Saved Successfully----
+2023-10-25 14:48:37,844 - INFO - 7501 Form opened
+2023-10-25 14:48:49,899 - INFO - ----Form Saved Successfully----
+2023-10-25 15:29:26,206 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-10-25 15:29:45,881 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-10-25 15:56:53,495 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-10-25 15:57:03,957 - INFO - Login Done
+2023-10-25 15:57:14,244 - INFO - 7501 Form opened
+2023-10-25 15:57:25,799 - INFO - ----Form Saved Successfully----
+2023-10-25 15:57:29,363 - INFO - 7501 Form opened
+2023-10-25 15:57:41,633 - INFO - ----Form Saved Successfully----
+2023-10-25 15:57:45,229 - INFO - 7501 Form opened
+2023-10-25 15:57:57,647 - INFO - ----Form Saved Successfully----
+2023-10-25 15:58:01,467 - INFO - 7501 Form opened
+2023-10-25 15:58:14,082 - INFO - ----Form Saved Successfully----
+2023-10-25 15:58:17,753 - INFO - 7501 Form opened
+2023-10-25 15:58:30,035 - INFO - ----Form Saved Successfully----
+2023-10-25 15:58:33,607 - INFO - 7501 Form opened
+2023-10-25 15:58:45,957 - INFO - ----Form Saved Successfully----
+2023-10-25 15:58:49,985 - INFO - 7501 Form opened
+2023-10-25 15:59:05,183 - INFO - ----Form Saved Successfully----
+2023-10-25 15:59:09,435 - INFO - 7501 Form opened
+2023-10-25 15:59:21,895 - INFO - ----Form Saved Successfully----
+2023-10-25 15:59:25,711 - INFO - 7501 Form opened
+2023-10-25 15:59:37,840 - INFO - ----Form Saved Successfully----
+2023-10-25 15:59:41,393 - INFO - 7501 Form opened
+2023-10-25 15:59:53,085 - INFO - ----Form Saved Successfully----
+2023-10-25 15:59:56,605 - INFO - 7501 Form opened
+2023-10-25 16:00:08,692 - INFO - ----Form Saved Successfully----
+2023-10-25 16:00:12,629 - INFO - 7501 Form opened
+2023-10-25 16:00:25,099 - INFO - ----Form Saved Successfully----
+2023-10-25 16:00:28,924 - INFO - 7501 Form opened
+2023-10-25 16:00:40,677 - INFO - ----Form Saved Successfully----
+2023-10-25 16:00:44,262 - INFO - 7501 Form opened
+2023-10-25 16:00:57,783 - INFO - ----Form Saved Successfully----
+2023-10-25 16:01:02,250 - INFO - 7501 Form opened
+2023-10-25 16:01:14,034 - INFO - ----Form Saved Successfully----
+2023-10-25 16:01:17,665 - INFO - 7501 Form opened
+2023-10-25 16:01:31,494 - INFO - ----Form Saved Successfully----
+2023-10-25 16:01:35,481 - INFO - 7501 Form opened
+2023-10-25 16:01:47,914 - INFO - ----Form Saved Successfully----
+2023-10-25 16:01:51,684 - INFO - 7501 Form opened
+2023-10-25 16:02:03,716 - INFO - ----Form Saved Successfully----
+2023-10-25 16:04:05,304 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-10-25 16:04:17,465 - INFO - Login Done
+2023-10-25 16:04:27,185 - INFO - 7501 Form opened
+2023-10-25 16:04:27,214 - ERROR - Message: no such element: Unable to locate element: {"method":"css selector","selector":"[id="entryFilingTypeCode"]"}
+  (Session info: chrome=118.0.5993.89); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF62B377892+54818]
+	(No symbol) [0x00007FF62B2E6AC2]
+	(No symbol) [0x00007FF62B19DA3B]
+	(No symbol) [0x00007FF62B1DE4FC]
+	(No symbol) [0x00007FF62B1DE67C]
+	(No symbol) [0x00007FF62B219627]
+	(No symbol) [0x00007FF62B1FEAEF]
+	(No symbol) [0x00007FF62B2175A2]
+	(No symbol) [0x00007FF62B1FE883]
+	(No symbol) [0x00007FF62B1D3691]
+	(No symbol) [0x00007FF62B1D48D4]
+	GetHandleVerifier [0x00007FF62B6DB992+3610402]
+	GetHandleVerifier [0x00007FF62B731860+3962352]
+	GetHandleVerifier [0x00007FF62B729D4F+3930847]
+	GetHandleVerifier [0x00007FF62B413646+693206]
+	(No symbol) [0x00007FF62B2F1628]
+	(No symbol) [0x00007FF62B2ED934]
+	(No symbol) [0x00007FF62B2EDA62]
+	(No symbol) [0x00007FF62B2DE113]
+	BaseThreadInitThunk [0x00007FFC7357257D+29]
+	RtlUserThreadStart [0x00007FFC7486AA78+40]
+
+2023-10-25 16:04:37,363 - INFO - No Container found
+2023-10-25 16:04:37,395 - ERROR - Message: no such element: Unable to locate element: {"method":"css selector","selector":"[name="manufacturer"]"}
+  (Session info: chrome=118.0.5993.89); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF62B377892+54818]
+	(No symbol) [0x00007FF62B2E6AC2]
+	(No symbol) [0x00007FF62B19DA3B]
+	(No symbol) [0x00007FF62B1DE4FC]
+	(No symbol) [0x00007FF62B1DE67C]
+	(No symbol) [0x00007FF62B219627]
+	(No symbol) [0x00007FF62B1FEAEF]
+	(No symbol) [0x00007FF62B2175A2]
+	(No symbol) [0x00007FF62B1FE883]
+	(No symbol) [0x00007FF62B1D3691]
+	(No symbol) [0x00007FF62B1D48D4]
+	GetHandleVerifier [0x00007FF62B6DB992+3610402]
+	GetHandleVerifier [0x00007FF62B731860+3962352]
+	GetHandleVerifier [0x00007FF62B729D4F+3930847]
+	GetHandleVerifier [0x00007FF62B413646+693206]
+	(No symbol) [0x00007FF62B2F1628]
+	(No symbol) [0x00007FF62B2ED934]
+	(No symbol) [0x00007FF62B2EDA62]
+	(No symbol) [0x00007FF62B2DE113]
+	BaseThreadInitThunk [0x00007FFC7357257D+29]
+	RtlUserThreadStart [0x00007FFC7486AA78+40]
+
+2023-10-25 16:04:37,406 - ERROR - Message: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='formBorderBill']//div[@class='row new-form-row'][1]//div[@class='col-md-3 form-lable'][2]//input[@id='typeahead-basic']"}
+  (Session info: chrome=118.0.5993.89); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF62B377892+54818]
+	(No symbol) [0x00007FF62B2E6AC2]
+	(No symbol) [0x00007FF62B19DA3B]
+	(No symbol) [0x00007FF62B1DE4FC]
+	(No symbol) [0x00007FF62B1DE67C]
+	(No symbol) [0x00007FF62B219627]
+	(No symbol) [0x00007FF62B1FEAEF]
+	(No symbol) [0x00007FF62B2175A2]
+	(No symbol) [0x00007FF62B1FE883]
+	(No symbol) [0x00007FF62B1D3691]
+	(No symbol) [0x00007FF62B1D48D4]
+	GetHandleVerifier [0x00007FF62B6DB992+3610402]
+	GetHandleVerifier [0x00007FF62B731860+3962352]
+	GetHandleVerifier [0x00007FF62B729D4F+3930847]
+	GetHandleVerifier [0x00007FF62B413646+693206]
+	(No symbol) [0x00007FF62B2F1628]
+	(No symbol) [0x00007FF62B2ED934]
+	(No symbol) [0x00007FF62B2EDA62]
+	(No symbol) [0x00007FF62B2DE113]
+	BaseThreadInitThunk [0x00007FFC7357257D+29]
+	RtlUserThreadStart [0x00007FFC7486AA78+40]
+
+2023-10-25 16:04:37,441 - ERROR - Message: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Tariff #1:']//parent::div//following-sibling::div/input[@id='typeahead-basic' and @class='form-control ng-untouched ng-pristine ng-valid']"}
+  (Session info: chrome=118.0.5993.89); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF62B377892+54818]
+	(No symbol) [0x00007FF62B2E6AC2]
+	(No symbol) [0x00007FF62B19DA3B]
+	(No symbol) [0x00007FF62B1DE4FC]
+	(No symbol) [0x00007FF62B1DE67C]
+	(No symbol) [0x00007FF62B219627]
+	(No symbol) [0x00007FF62B1FEAEF]
+	(No symbol) [0x00007FF62B2175A2]
+	(No symbol) [0x00007FF62B1FE883]
+	(No symbol) [0x00007FF62B1D3691]
+	(No symbol) [0x00007FF62B1D48D4]
+	GetHandleVerifier [0x00007FF62B6DB992+3610402]
+	GetHandleVerifier [0x00007FF62B731860+3962352]
+	GetHandleVerifier [0x00007FF62B729D4F+3930847]
+	GetHandleVerifier [0x00007FF62B413646+693206]
+	(No symbol) [0x00007FF62B2F1628]
+	(No symbol) [0x00007FF62B2ED934]
+	(No symbol) [0x00007FF62B2EDA62]
+	(No symbol) [0x00007FF62B2DE113]
+	BaseThreadInitThunk [0x00007FFC7357257D+29]
+	RtlUserThreadStart [0x00007FFC7486AA78+40]
+
+2023-10-25 16:15:36,444 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-10-25 16:16:19,733 - INFO - Login Done
+2023-10-25 16:16:31,889 - INFO - 7501 Form opened
+2023-10-25 16:16:39,338 - INFO - ----Upper Part Done----
+2023-10-25 16:17:00,786 - INFO - ----Vessel Done----
+2023-10-25 16:17:17,352 - INFO - ----Trading Partner 1 Done----
+2023-10-25 16:17:33,148 - INFO - ----Trading Partner 2 Done----
+2023-10-25 16:17:56,769 - INFO - ----Form not Saved----
+2023-10-25 16:19:50,997 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-10-25 16:20:19,665 - INFO - Login Done
+2023-10-25 16:20:30,109 - INFO - 7501 Form opened
+2023-10-25 16:20:41,585 - INFO - ----Form Saved Successfully----
+2023-10-25 16:20:45,497 - INFO - 7501 Form opened
+2023-10-25 16:20:58,180 - INFO - ----Form Saved Successfully----
+2023-10-25 16:21:01,979 - INFO - 7501 Form opened
+2023-10-25 16:21:14,526 - INFO - ----Form Saved Successfully----
+2023-10-25 16:21:18,132 - INFO - 7501 Form opened
+2023-10-25 16:21:30,197 - INFO - ----Form Saved Successfully----
+2023-10-25 16:21:33,834 - INFO - 7501 Form opened
+2023-10-25 16:21:45,808 - INFO - ----Form Saved Successfully----
+2023-10-25 16:21:49,366 - INFO - 7501 Form opened
+2023-10-25 16:22:01,681 - INFO - ----Form Saved Successfully----
+2023-10-25 16:22:05,270 - INFO - 7501 Form opened
+2023-10-25 16:22:17,147 - INFO - ----Form Saved Successfully----
+2023-10-25 16:22:20,776 - INFO - 7501 Form opened
+2023-10-25 16:22:33,111 - INFO - ----Form Saved Successfully----
+2023-10-25 16:22:36,691 - INFO - 7501 Form opened
+2023-10-25 16:22:48,516 - INFO - ----Form Saved Successfully----
+2023-10-25 16:22:52,198 - INFO - 7501 Form opened
+2023-10-25 16:23:04,347 - INFO - ----Form Saved Successfully----
+2023-10-25 16:23:07,941 - INFO - 7501 Form opened
+2023-10-25 16:23:19,893 - INFO - ----Form Saved Successfully----
+2023-10-25 16:23:23,653 - INFO - 7501 Form opened
+2023-10-25 16:23:35,993 - INFO - ----Form Saved Successfully----
+2023-10-25 16:23:39,694 - INFO - 7501 Form opened
+2023-10-25 16:23:52,166 - INFO - ----Form Saved Successfully----
+2023-10-25 16:23:56,363 - INFO - 7501 Form opened
+2023-10-25 16:24:08,558 - INFO - ----Form Saved Successfully----
+2023-10-25 16:24:12,072 - INFO - 7501 Form opened
+2023-10-25 16:24:24,108 - INFO - ----Form Saved Successfully----
+2023-10-25 16:24:27,588 - INFO - 7501 Form opened
+2023-10-25 16:24:37,769 - INFO - ----Form not Saved----
+2023-10-25 17:07:16,185 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-10-25 17:07:57,657 - INFO - Login Done
+2023-10-25 17:08:11,740 - INFO - 7501 Form opened
+2023-10-25 17:08:19,942 - INFO - ----Upper Part Done----
+2023-10-25 17:08:50,319 - INFO - ----Vessel Done----
+2023-10-25 17:09:09,624 - INFO - ----Trading Partner 1 Done----
+2023-10-25 17:09:25,584 - INFO - ----Trading Partner 2 Done----
+2023-10-25 17:09:55,278 - INFO - ----Form Saved Successfully----
+2023-10-25 17:10:01,497 - INFO - 7501 Form opened
+2023-10-25 17:10:09,061 - INFO - ----Upper Part Done----
+2023-10-25 17:10:30,732 - INFO - ----Vessel Done----
+2023-10-25 17:10:47,978 - INFO - ----Trading Partner 1 Done----
+2023-10-25 17:11:04,979 - INFO - ----Trading Partner 2 Done----
+2023-10-25 17:11:34,450 - INFO - ----Form Saved Successfully----
+2023-10-25 17:11:40,910 - INFO - 7501 Form opened
+2023-10-25 17:11:49,897 - INFO - ----Upper Part Done----
+2023-10-25 17:12:21,996 - INFO - ----Vessel Done----
+2023-10-25 17:12:44,845 - INFO - ----Trading Partner 1 Done----
+2023-10-25 17:13:15,893 - INFO - ----Trading Partner 2 Done----
+2023-10-25 17:13:31,959 - INFO - foreign Line Value filled
+2023-10-25 17:13:50,899 - INFO - ----Form Saved Successfully----
+2023-10-25 17:13:56,764 - INFO - 7501 Form opened
+2023-10-25 17:14:05,738 - INFO - ----Upper Part Done----
+2023-10-25 17:14:37,621 - INFO - ----Vessel Done----
+2023-10-25 17:15:00,411 - INFO - ----Trading Partner 1 Done----
+2023-10-25 17:15:24,676 - INFO - ----Trading Partner 2 Done----
+2023-10-25 17:15:41,010 - INFO - It is Cotton HTS
+2023-10-25 17:15:59,783 - INFO - ----Form Saved Successfully----
+2023-10-25 17:16:05,366 - INFO - 7501 Form opened
+2023-10-25 17:16:13,451 - INFO - ----Upper Part Done----
+2023-10-25 17:16:44,696 - INFO - ----Vessel Done----
+2023-10-25 17:17:06,897 - INFO - ----Trading Partner 1 Done----
+2023-10-25 17:17:31,287 - INFO - ----Trading Partner 2 Done----
+2023-10-25 17:18:03,365 - ERROR - EP7 Filled
+2023-10-25 17:18:22,724 - INFO - ----Form Saved Successfully----
+2023-10-25 17:18:31,772 - INFO - 7501 Form opened
+2023-10-25 17:18:39,382 - INFO - ----Upper Part Done----
+2023-10-25 17:19:00,244 - INFO - ----Vessel Done----
+2023-10-25 17:19:16,517 - INFO - ----Trading Partner 1 Done----
+2023-10-25 17:19:32,794 - INFO - ----Trading Partner 2 Done----
+2023-10-25 17:19:51,011 - INFO - EP5 Filled
+2023-10-25 17:20:11,899 - ERROR - EP7 Filled
+2023-10-25 17:20:36,395 - INFO - ----Form Saved Successfully----
+2023-10-25 17:20:45,414 - INFO - 7501 Form opened
+2023-10-25 17:21:00,244 - INFO - ----Upper Part Done----
+2023-10-25 17:21:19,620 - INFO - No Container found
+2023-10-25 17:21:41,852 - INFO - ----Trading Partner 1 Done----
+2023-10-25 17:22:07,302 - INFO - ----Trading Partner 2 Done----
+2023-10-25 17:22:28,221 - INFO - EP5 Filled
+2023-10-25 17:22:45,067 - ERROR - EP7 Filled
+2023-10-25 17:23:01,612 - INFO - ----Form Saved Successfully----
+2023-10-25 17:23:08,103 - INFO - 7501 Form opened
+2023-10-25 17:23:17,620 - INFO - ----Upper Part Done----
+2023-10-25 17:23:36,356 - INFO - No Container found
+2023-10-25 17:23:52,353 - INFO - ----Trading Partner 1 Done----
+2023-10-25 17:24:10,772 - ERROR - !----Trading Partner 2 Not Done----!
+2023-10-25 17:24:41,317 - INFO - ----Form Saved Successfully----
+2023-10-25 17:24:50,201 - INFO - 7501 Form opened
+2023-10-25 17:25:00,517 - INFO - ----Upper Part Done----
+2023-10-25 17:25:32,804 - INFO - ----Vessel Done----
+2023-10-25 17:25:54,466 - INFO - ----Trading Partner 1 Done----
+2023-10-25 17:26:18,726 - INFO - ----Trading Partner 2 Done----
+2023-10-25 17:26:37,839 - INFO - It is China HTS
+2023-10-25 17:27:06,733 - INFO - ----Form Saved Successfully----
+2023-10-25 17:27:15,803 - INFO - 7501 Form opened
+2023-10-25 17:27:28,401 - INFO - ----Upper Part Done----
+2023-10-25 17:28:00,363 - INFO - ----Vessel Done----
+2023-10-25 17:28:22,471 - INFO - ----Trading Partner 1 Done----
+2023-10-25 17:28:47,357 - INFO - ----Trading Partner 2 Done----
+2023-10-25 17:29:03,738 - INFO - It is Cotton HTS
+2023-10-25 17:29:07,886 - INFO - It is China HTS
+2023-10-25 17:29:36,903 - INFO - ----Form Saved Successfully----
+2023-10-25 17:29:46,544 - INFO - 7501 Form opened
+2023-10-25 17:29:59,698 - INFO - ----Upper Part Done----
+2023-10-25 17:30:30,763 - INFO - ----Vessel Done----
+2023-10-25 17:30:52,903 - INFO - ----Trading Partner 1 Done----
+2023-10-25 17:31:18,469 - INFO - ----Trading Partner 2 Done----
+2023-10-25 17:31:38,121 - INFO - It is China HTS
+2023-10-25 17:31:57,831 - ERROR - EP7 Filled
+2023-10-25 17:32:27,315 - INFO - ----Form Saved Successfully----
+2023-10-25 19:52:50,462 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-10-25 19:53:15,359 - INFO - Login Done
+2023-10-25 19:55:00,926 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-10-25 19:55:35,846 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-10-25 19:56:59,405 - INFO - Login Done
+2023-10-25 19:57:16,170 - INFO - 7501 Form opened
+2023-10-25 19:57:28,797 - INFO - ----Upper Part Done----
+2023-10-25 19:58:01,070 - INFO - ----Vessel Done----
+2023-10-25 19:58:22,851 - INFO - ----Trading Partner 1 Done----
+2023-10-25 19:58:47,153 - INFO - ----Trading Partner 2 Done----
+2023-10-25 19:59:28,443 - INFO - ----Form Saved Successfully----
+2023-10-25 19:59:37,625 - INFO - 7501 Form opened
+2023-10-25 19:59:48,805 - INFO - ----Upper Part Done----
+2023-10-25 20:00:20,770 - INFO - ----Vessel Done----
+2023-10-25 20:00:43,032 - INFO - ----Trading Partner 1 Done----
+2023-10-25 20:01:07,478 - INFO - ----Trading Partner 2 Done----
+2023-10-25 20:01:49,913 - INFO - ----Form Saved Successfully----
+2023-10-25 20:01:59,307 - INFO - 7501 Form opened
+2023-10-25 20:02:11,820 - INFO - ----Upper Part Done----
+2023-10-25 20:02:42,704 - INFO - ----Vessel Done----
+2023-10-25 20:03:04,928 - INFO - ----Trading Partner 1 Done----
+2023-10-25 20:03:25,361 - INFO - ----Trading Partner 2 Done----
+2023-10-25 20:04:02,594 - INFO - ----Form Saved Successfully----
+2023-10-25 20:04:10,197 - INFO - 7501 Form opened
+2023-10-25 20:04:21,511 - INFO - ----Upper Part Done----
+2023-10-25 20:04:53,564 - INFO - ----Vessel Done----
+2023-10-25 20:05:13,233 - INFO - ----Trading Partner 1 Done----
+2023-10-25 20:05:48,753 - ERROR - !----Trading Partner 2 Not Done----!
+2023-10-25 20:06:06,596 - INFO - foreign Line Value filled
+2023-10-25 20:06:33,742 - INFO - ----Form Saved Successfully----
+2023-10-25 20:06:41,499 - INFO - 7501 Form opened
+2023-10-25 20:06:50,675 - INFO - ----Upper Part Done----
+2023-10-25 20:07:16,478 - INFO - ----Vessel Done----
+2023-10-25 20:07:35,753 - INFO - ----Trading Partner 1 Done----
+2023-10-25 20:07:56,158 - INFO - ----Trading Partner 2 Done----
+2023-10-25 20:08:10,842 - INFO - It is Cotton HTS
+2023-10-25 20:08:33,875 - INFO - ----Form Saved Successfully----
+2023-10-26 13:03:03,217 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-10-26 13:03:17,766 - INFO - Login Done
+2023-10-26 13:03:29,885 - INFO - 7501 Form opened
+2023-10-26 13:03:36,911 - INFO - ----Upper Part Done----
+2023-10-26 13:04:04,570 - INFO - ----Vessel Done----
+2023-10-26 13:04:08,609 - ERROR - Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=118.0.5993.89)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6C84F7892+54818]
+	(No symbol) [0x00007FF6C8466AC2]
+	(No symbol) [0x00007FF6C831DA3B]
+	(No symbol) [0x00007FF6C82FDEE8]
+	(No symbol) [0x00007FF6C8383237]
+	(No symbol) [0x00007FF6C8396C6F]
+	(No symbol) [0x00007FF6C837E883]
+	(No symbol) [0x00007FF6C8353691]
+	(No symbol) [0x00007FF6C83548D4]
+	GetHandleVerifier [0x00007FF6C885B992+3610402]
+	GetHandleVerifier [0x00007FF6C88B1860+3962352]
+	GetHandleVerifier [0x00007FF6C88A9D4F+3930847]
+	GetHandleVerifier [0x00007FF6C8593646+693206]
+	(No symbol) [0x00007FF6C8471628]
+	(No symbol) [0x00007FF6C846D934]
+	(No symbol) [0x00007FF6C846DA62]
+	(No symbol) [0x00007FF6C845E113]
+	BaseThreadInitThunk [0x00007FFC7357257D+29]
+	RtlUserThreadStart [0x00007FFC7486AA78+40]
+
+2023-10-26 13:04:08,611 - ERROR - Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=118.0.5993.89)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6C84F7892+54818]
+	(No symbol) [0x00007FF6C8466AC2]
+	(No symbol) [0x00007FF6C831DA3B]
+	(No symbol) [0x00007FF6C82FDEE8]
+	(No symbol) [0x00007FF6C8383237]
+	(No symbol) [0x00007FF6C8396C6F]
+	(No symbol) [0x00007FF6C837E883]
+	(No symbol) [0x00007FF6C8353691]
+	(No symbol) [0x00007FF6C83548D4]
+	GetHandleVerifier [0x00007FF6C885B992+3610402]
+	GetHandleVerifier [0x00007FF6C88B1860+3962352]
+	GetHandleVerifier [0x00007FF6C88A9D4F+3930847]
+	GetHandleVerifier [0x00007FF6C8593646+693206]
+	(No symbol) [0x00007FF6C8471628]
+	(No symbol) [0x00007FF6C846D934]
+	(No symbol) [0x00007FF6C846DA62]
+	(No symbol) [0x00007FF6C845E113]
+	BaseThreadInitThunk [0x00007FFC7357257D+29]
+	RtlUserThreadStart [0x00007FFC7486AA78+40]
+
+2023-10-26 13:04:08,616 - ERROR - Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=118.0.5993.89)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6C84F7892+54818]
+	(No symbol) [0x00007FF6C8466AC2]
+	(No symbol) [0x00007FF6C831DA3B]
+	(No symbol) [0x00007FF6C82FDEE8]
+	(No symbol) [0x00007FF6C8383237]
+	(No symbol) [0x00007FF6C8396C6F]
+	(No symbol) [0x00007FF6C837E883]
+	(No symbol) [0x00007FF6C8353691]
+	(No symbol) [0x00007FF6C83548D4]
+	GetHandleVerifier [0x00007FF6C885B992+3610402]
+	GetHandleVerifier [0x00007FF6C88B1860+3962352]
+	GetHandleVerifier [0x00007FF6C88A9D4F+3930847]
+	GetHandleVerifier [0x00007FF6C8593646+693206]
+	(No symbol) [0x00007FF6C8471628]
+	(No symbol) [0x00007FF6C846D934]
+	(No symbol) [0x00007FF6C846DA62]
+	(No symbol) [0x00007FF6C845E113]
+	BaseThreadInitThunk [0x00007FFC7357257D+29]
+	RtlUserThreadStart [0x00007FFC7486AA78+40]
+
+2023-10-26 13:04:40,229 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-10-26 13:05:12,436 - INFO - Login Done
+2023-10-26 13:05:24,753 - INFO - 7501 Form opened
+2023-10-26 13:05:31,887 - INFO - ----Upper Part Done----
+2023-10-26 13:05:54,297 - INFO - ----Vessel Done----
+2023-10-26 13:06:11,307 - INFO - ----Trading Partner 1 Done----
+2023-10-26 13:06:28,880 - INFO - ----Trading Partner 2 Done----
+2023-10-26 13:06:55,894 - INFO - ----Form Saved Successfully----
+2023-10-26 13:07:01,371 - INFO - 7501 Form opened
+2023-10-26 13:07:09,044 - INFO - ----Upper Part Done----
+2023-10-26 13:07:29,589 - INFO - ----Vessel Done----
+2023-10-26 13:07:45,949 - INFO - ----Trading Partner 1 Done----
+2023-10-26 13:08:03,958 - INFO - ----Trading Partner 2 Done----
+2023-10-26 13:08:30,626 - INFO - ----Form Saved Successfully----
+2023-10-26 13:08:35,531 - INFO - 7501 Form opened
+2023-10-26 13:08:43,278 - INFO - ----Upper Part Done----
+2023-10-26 13:09:04,493 - INFO - ----Vessel Done----
+2023-10-26 13:09:20,570 - INFO - ----Trading Partner 1 Done----
+2023-10-26 13:09:38,217 - INFO - ----Trading Partner 2 Done----
+2023-10-26 13:10:07,733 - INFO - ----Form Saved Successfully----
+2023-10-26 13:10:12,973 - INFO - 7501 Form opened
+2023-10-26 13:10:21,926 - INFO - ----Upper Part Done----
+2023-10-26 13:10:43,326 - INFO - ----Vessel Done----
+2023-10-26 13:11:01,449 - INFO - ----Trading Partner 1 Done----
+2023-10-26 13:11:23,172 - INFO - ----Trading Partner 2 Done----
+2023-10-26 13:11:36,192 - INFO - foreign Line Value filled
+2023-10-26 13:11:51,223 - INFO - ----Form Saved Successfully----
+2023-10-26 13:11:56,415 - INFO - 7501 Form opened
+2023-10-26 13:12:04,699 - INFO - ----Upper Part Done----
+2023-10-26 13:12:25,822 - INFO - ----Vessel Done----
+2023-10-26 13:12:42,509 - INFO - ----Trading Partner 1 Done----
+2023-10-26 13:12:59,933 - INFO - ----Trading Partner 2 Done----
+2023-10-26 13:13:12,719 - INFO - It is Cotton HTS
+2023-10-26 13:13:27,988 - INFO - ----Form Saved Successfully----

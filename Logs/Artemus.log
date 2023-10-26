@@ -1,0 +1,692 @@
+2023-09-07 15:23:30 - TestLogin - INFO - Name shown in Homepage
+2023-09-07 15:23:31 - TestLogin - INFO - Test Case Pass
+2023-09-07 15:23:54 - TestLogin - INFO - Name shown in Homepage2
+2023-09-07 15:23:54 - TestLogin - INFO - Test Case 2 Pass
+2023-09-11 11:17:25 - TestEntryForm - INFO - ----------------Test Case test_saveformwithinvoiceNumber Starterd----------------
+2023-09-11 11:17:34 - TestEntryForm - INFO - ----Entered in Form 7501----
+2023-09-11 11:17:48 - TestEntryForm - INFO - Test Case 'save form with invoice Number' Passed
+2023-09-11 11:17:49 - TestEntryForm - INFO - ----------------Test Case test_saveformwithinvoiceNumber End----------------
+2023-09-11 11:18:18 - TestEntryForm - INFO - ----------------Test Case test_saveformwithoutinvoiceNumber Starterd----------------
+2023-09-11 11:18:26 - TestEntryForm - INFO - ----Entered in Form 7501----
+2023-09-11 11:18:36 - TestEntryForm - INFO - Test Case 'save form without invoice Number' Passed
+2023-09-11 11:18:37 - TestEntryForm - INFO - ----------------Test Case test_saveformwithoutinvoiceNumber End----------------
+2023-09-11 11:18:47 - TestEntryForm - INFO - ----------------Test Case test_saveformwithExistinginvoiceNumber Starterd----------------
+2023-09-11 11:18:55 - TestEntryForm - INFO - ----Entered in Form 7501----
+2023-09-11 11:19:01 - TestEntryForm - INFO - Test Case 'save form with Existing invoice Number' Passed
+2023-09-11 11:19:01 - TestEntryForm - INFO - ----------------Test Case test_saveformwithExistinginvoiceNumber End----------------
+2023-09-11 11:55:57 - TestEntryForm - INFO - ----------------Test Case test_saveformwithParts Starterd----------------
+2023-09-11 11:56:05 - TestEntryForm - INFO - ----Entered in Form 7501----
+2023-09-11 11:56:21 - TestEntryForm - INFO - Test Case 'save form with Parts' Passed
+2023-09-11 11:56:22 - TestEntryForm - INFO - ----------------Test Case test_saveformwithParts End----------------
+2023-09-18 10:32:29 - TestEntryForm - INFO - ----------------Test Case test_saveformwithinvoiceNumber Starterd----------------
+2023-09-18 10:32:37 - TestEntryForm - INFO - ----Entered in Form 7501----
+2023-09-18 10:32:49 - TestEntryForm - INFO - Test Case 'save form with invoice Number' Passed
+2023-09-18 10:32:50 - TestEntryForm - INFO - ----------------Test Case test_saveformwithinvoiceNumber End----------------
+2023-09-18 10:33:01 - TestEntryForm - INFO - ----------------Test Case test_saveformwithoutinvoiceNumber Starterd----------------
+2023-09-18 10:33:09 - TestEntryForm - INFO - ----Entered in Form 7501----
+2023-09-18 10:33:19 - TestEntryForm - INFO - Test Case 'save form without invoice Number' Passed
+2023-09-18 10:33:19 - TestEntryForm - INFO - ----------------Test Case test_saveformwithoutinvoiceNumber End----------------
+2023-09-18 10:33:29 - TestEntryForm - INFO - ----------------Test Case test_saveformwithExistinginvoiceNumber Starterd----------------
+2023-09-18 10:33:36 - TestEntryForm - INFO - ----Entered in Form 7501----
+2023-09-18 10:33:40 - TestEntryForm - INFO - Test Case 'save form with Existing invoice Number' Passed
+2023-09-18 10:33:41 - TestEntryForm - INFO - ----------------Test Case test_saveformwithExistinginvoiceNumber End----------------
+2023-09-18 10:33:52 - TestEntryForm - INFO - ----------------Test Case test_saveformwithParts Starterd----------------
+2023-09-18 10:34:00 - TestEntryForm - INFO - ----Entered in Form 7501----
+2023-09-18 16:26:58 - TestLogin - INFO - Name shown in Homepage
+2023-09-18 16:26:58 - TestLogin - INFO - Test Case Pass
+2023-09-18 16:27:36 - TestLogin - INFO - Name shown in Homepage2
+2023-09-18 16:27:36 - TestLogin - INFO - Test Case 2 Pass
+2023-09-20 10:56:01 - Test1LTC - INFO - ----------------Test Case test_HTC1 Starterd----------------
+2023-09-20 10:56:04 - Test1LTC - INFO - ----Login Done----
+2023-09-20 10:56:11 - Test1LTC - INFO - ----Form 7501 Opened----
+2023-09-20 10:56:11 - Test1LTC - INFO - ----Upper Part Started----
+2023-09-20 10:56:20 - Test1LTC - INFO - ----Upper Part Done----
+2023-09-20 10:56:20 - Test1LTC - INFO - ----Bill Of Lading Started----
+2023-09-20 10:56:33 - Test1LTC - INFO - ----Bill Of Lading Done----
+2023-09-20 10:56:33 - Test1LTC - INFO - ----Trading Partners 1 Started----
+2023-09-20 10:56:50 - Test1LTC - INFO - ----Trading Partners 1 Done----
+2023-09-20 10:56:50 - Test1LTC - INFO - ----Trading Partners 2 Started----
+2023-09-20 10:57:05 - Test1LTC - INFO - ----Trading Partners 2 Done----
+2023-09-20 10:57:05 - Test1LTC - INFO - ----Line Items Started----
+2023-09-20 10:57:16 - Test1LTC - INFO - ----Line Items Done----
+2023-09-20 10:57:23 - Test1LTC - INFO - ----Form Saved Successfully----
+2023-09-20 10:57:23 - Test1LTC - INFO - ----------------Test Case test_HTC1 End----------------
+2023-09-20 12:24:31 - Test1LTC - INFO - ----------------Test Case test_HTC1 Starterd----------------
+2023-09-20 12:24:34 - Test1LTC - INFO - ----Login Done----
+2023-09-20 12:24:40 - Test1LTC - INFO - ----Form 7501 Opened----
+2023-09-20 12:24:40 - Test1LTC - INFO - ----Upper Part Started----
+2023-09-20 12:24:49 - Test1LTC - INFO - ----Upper Part Done----
+2023-09-20 12:24:49 - Test1LTC - INFO - ----Bill Of Lading Started----
+2023-09-20 12:25:05 - Test1LTC - INFO - ----Bill Of Lading Done----
+2023-09-20 12:25:05 - Test1LTC - INFO - ----Trading Partners 1 Started----
+2023-09-20 12:26:23 - Test1LTC - INFO - ----------------Test Case test_HTC1 Starterd----------------
+2023-09-20 12:26:25 - Test1LTC - INFO - ----Login Done----
+2023-09-20 12:26:32 - Test1LTC - INFO - ----Form 7501 Opened----
+2023-09-20 12:26:32 - Test1LTC - INFO - ----Upper Part Started----
+2023-09-20 12:26:39 - Test1LTC - INFO - ----Upper Part Done----
+2023-09-20 12:26:39 - Test1LTC - INFO - ----Bill Of Lading Started----
+2023-09-20 12:26:52 - Test1LTC - INFO - ----Bill Of Lading Done----
+2023-09-20 12:26:52 - Test1LTC - INFO - ----Trading Partners 1 Started----
+2023-09-20 12:27:09 - Test1LTC - INFO - ----Trading Partners 1 Done----
+2023-09-20 12:27:09 - Test1LTC - INFO - ----Trading Partners 2 Started----
+2023-09-20 12:27:24 - Test1LTC - INFO - ----Trading Partners 2 Done----
+2023-09-20 12:27:24 - Test1LTC - INFO - ----Line Items Started----
+2023-09-20 12:27:35 - Test1LTC - INFO - ----Line Items Done----
+2023-09-20 12:27:42 - Test1LTC - INFO - ----Form Saved Successfully----
+2023-09-20 12:27:42 - Test1LTC - INFO - ----------------Test Case test_HTC1 End----------------
+2023-09-20 12:45:47 - Test1LTC - INFO - ----------------Test Case test_HTC1 Starterd----------------
+2023-09-20 12:45:49 - Test1LTC - INFO - ----Login Done----
+2023-09-20 12:45:56 - Test1LTC - INFO - ----Form 7501 Opened----
+2023-09-20 12:45:56 - Test1LTC - INFO - ----Vessel Information Started----
+2023-09-20 12:49:23 - Test1LTC - INFO - ----------------Test Case test_HTC1 Starterd----------------
+2023-09-20 12:49:25 - Test1LTC - INFO - ----Login Done----
+2023-09-20 12:49:32 - Test1LTC - INFO - ----Form 7501 Opened----
+2023-09-20 12:49:32 - Test1LTC - INFO - ----Vessel Information Started----
+2023-09-20 12:52:31 - Test1LTC - INFO - ----------------Test Case test_HTC1 Starterd----------------
+2023-09-20 12:52:34 - Test1LTC - INFO - ----Login Done----
+2023-09-20 12:52:40 - Test1LTC - INFO - ----Form 7501 Opened----
+2023-09-20 12:52:40 - Test1LTC - INFO - ----Vessel Information Started----
+2023-09-20 12:52:44 - Test1LTC - INFO - ----------------Test Case test_HTC1 End----------------
+2023-09-20 12:55:52 - Test1LTC - INFO - ----------------Test Case test_HTC1 Starterd----------------
+2023-09-20 12:57:10 - Test1LTC - INFO - ----------------Test Case test_HTC1 Starterd----------------
+2023-09-20 12:58:09 - Test1LTC - INFO - ----------------Test Case test_HTC1 Starterd----------------
+2023-09-20 12:58:50 - Test1LTC - INFO - ----------------Test Case test_HTC1 Starterd----------------
+2023-09-20 12:58:53 - Test1LTC - INFO - ----Login Done----
+2023-09-20 12:59:00 - Test1LTC - INFO - ----Form 7501 Opened----
+2023-09-20 12:59:00 - Test1LTC - INFO - ----Vessel Information Started----
+2023-09-20 12:59:07 - Test1LTC - INFO - ----------------Test Case test_HTC1 End----------------
+2023-09-20 13:00:00 - Test1LTC - INFO - ----------------Test Case test_HTC1 Starterd----------------
+2023-09-20 13:01:51 - Test1LTC - INFO - ----------------Test Case test_HTC1 Starterd----------------
+2023-09-20 13:03:56 - Test1LTC - INFO - ----------------Test Case test_HTC1 Starterd----------------
+2023-09-20 13:07:33 - Test1LTC - INFO - ----------------Test Case test_HTC1 Starterd----------------
+2023-09-20 13:07:36 - Test1LTC - INFO - ----Login Done----
+2023-09-20 13:07:42 - Test1LTC - INFO - ----Form 7501 Opened----
+2023-09-20 13:07:42 - Test1LTC - INFO - ----Vessel Information Started----
+2023-09-20 13:22:42 - Test1LTC - INFO - ----------------Test Case test_HTC1 Starterd----------------
+2023-09-20 13:22:45 - Test1LTC - INFO - ----Login Done----
+2023-09-20 13:22:51 - Test1LTC - INFO - ----Form 7501 Opened----
+2023-09-20 13:22:51 - Test1LTC - INFO - ----Line Items Started----
+2023-09-20 13:27:26 - Test1LTC - INFO - ----------------Test Case test_HTC1 Starterd----------------
+2023-09-20 13:27:30 - Test1LTC - INFO - ----Login Done----
+2023-09-20 13:27:36 - Test1LTC - INFO - ----Form 7501 Opened----
+2023-09-20 13:27:36 - Test1LTC - INFO - ----Upper Part Started----
+2023-09-20 13:27:45 - Test1LTC - INFO - ----Upper Part Done----
+2023-09-20 13:27:45 - Test1LTC - INFO - ----Line Items Started----
+2023-09-20 14:46:46 - Test1LTC - INFO - ----------------Test Case test_HTC1 Starterd----------------
+2023-09-20 14:46:52 - Test1LTC - INFO - ----Login Done----
+2023-09-20 14:46:59 - Test1LTC - INFO - ----Form 7501 Opened----
+2023-09-20 14:46:59 - Test1LTC - INFO - ----Upper Part Started----
+2023-09-20 14:47:09 - Test1LTC - INFO - ----Upper Part Done----
+2023-09-20 14:47:09 - Test1LTC - INFO - ----Line Items Started----
+2023-09-20 14:53:20 - Test1LTC - INFO - ----------------Test Case test_HTC1 Starterd----------------
+2023-09-20 14:53:23 - Test1LTC - INFO - ----Login Done----
+2023-09-20 14:53:30 - Test1LTC - INFO - ----Form 7501 Opened----
+2023-09-20 14:53:30 - Test1LTC - INFO - ----Upper Part Started----
+2023-09-20 14:53:39 - Test1LTC - INFO - ----Upper Part Done----
+2023-09-20 14:53:39 - Test1LTC - INFO - ----Line Items Started----
+2023-09-20 14:54:07 - Test1LTC - INFO - ----Line Items Done----
+2023-09-20 14:54:07 - Test1LTC - INFO - ----------------Test Case test_HTC1 End----------------
+2023-09-20 14:55:39 - Test1LTC - INFO - ----------------Test Case test_HTC1 Starterd----------------
+2023-09-20 14:55:47 - Test1LTC - INFO - ----Login Done----
+2023-09-20 14:55:53 - Test1LTC - INFO - ----Form 7501 Opened----
+2023-09-20 14:55:53 - Test1LTC - INFO - ----Upper Part Started----
+2023-09-20 14:56:02 - Test1LTC - INFO - ----Upper Part Done----
+2023-09-20 14:56:02 - Test1LTC - INFO - ----Line Items Started----
+2023-09-20 14:56:26 - Test1LTC - INFO - ----Line Items Done----
+2023-09-20 14:56:26 - Test1LTC - INFO - ----------------Test Case test_HTC1 End----------------
+2023-09-20 15:06:22 - Test1LTC - INFO - ----------------Test Case test_HTC1 Starterd----------------
+2023-09-20 15:06:28 - Test1LTC - INFO - ----Login Done----
+2023-09-20 15:06:35 - Test1LTC - INFO - ----Form 7501 Opened----
+2023-09-20 15:06:35 - Test1LTC - INFO - ----Upper Part Started----
+2023-09-20 15:06:42 - Test1LTC - INFO - ----Upper Part Done----
+2023-09-20 15:09:26 - Test1LTC - INFO - ----------------Test Case test_HTC1 Starterd----------------
+2023-09-20 15:11:51 - Test1LTC - INFO - ----------------Test Case test_HTC1 Starterd----------------
+2023-09-20 15:14:02 - Test1LTC - INFO - ----------------Test Case test_HTC1 Starterd----------------
+2023-09-20 15:17:35 - Test1LTC - INFO - ----------------Test Case test_HTC1 Starterd----------------
+2023-09-20 15:19:32 - Test1LTC - INFO - ----------------Test Case test_HTC3 Starterd----------------
+2023-09-20 15:19:37 - Test1LTC - INFO - ----Login Done----
+2023-09-20 15:19:44 - Test1LTC - INFO - ----Form 7501 Opened----
+2023-09-20 15:19:44 - Test1LTC - INFO - ----Upper Part Started----
+2023-09-20 15:19:52 - Test1LTC - INFO - ----Upper Part Done----
+2023-09-20 15:19:52 - Test1LTC - INFO - ----Bill Of Lading Started----
+2023-09-20 15:20:06 - Test1LTC - INFO - ----Bill Of Lading Done----
+2023-09-20 15:20:06 - Test1LTC - INFO - ----Vessel Information Started----
+2023-10-03 10:21:20 - Test1LTC - INFO - ----------------Test Case test_HTC1 Starterd----------------
+2023-10-03 10:21:24 - Test1LTC - INFO - ----Login Done----
+2023-10-03 10:21:30 - Test1LTC - INFO - ----Form 7501 Opened----
+2023-10-03 10:21:30 - Test1LTC - INFO - ----Upper Part Started----
+2023-10-03 10:21:40 - Test1LTC - INFO - ----Upper Part Done----
+2023-10-03 10:21:40 - Test1LTC - INFO - ----Bill Of Lading Started----
+2023-10-03 10:21:54 - Test1LTC - INFO - ----Bill Of Lading Done----
+2023-10-03 10:21:54 - Test1LTC - INFO - ----Vessel Information Started----
+2023-10-03 10:23:30 - Test1LTC - INFO - ----------------Test Case test_HTC1 Starterd----------------
+2023-10-03 10:23:36 - Test1LTC - INFO - ----Login Done----
+2023-10-03 10:23:42 - Test1LTC - INFO - ----Form 7501 Opened----
+2023-10-03 10:23:42 - Test1LTC - INFO - ----Upper Part Started----
+2023-10-03 10:23:52 - Test1LTC - INFO - ----Upper Part Done----
+2023-10-03 10:23:52 - Test1LTC - INFO - ----Bill Of Lading Started----
+2023-10-03 10:24:08 - Test1LTC - INFO - ----Bill Of Lading Done----
+2023-10-03 10:24:08 - Test1LTC - INFO - ----Vessel Information Started----
+2023-10-03 10:25:21 - Test1LTC - INFO - ----------------Test Case test_HTC1 Starterd----------------
+2023-10-03 10:25:30 - Test1LTC - INFO - ----Login Done----
+2023-10-03 10:25:36 - Test1LTC - INFO - ----Form 7501 Opened----
+2023-10-03 10:25:36 - Test1LTC - INFO - ----Upper Part Started----
+2023-10-03 10:25:50 - Test1LTC - INFO - ----Upper Part Done----
+2023-10-03 10:25:50 - Test1LTC - INFO - ----Bill Of Lading Started----
+2023-10-03 10:26:10 - Test1LTC - INFO - ----Bill Of Lading Done----
+2023-10-03 10:26:10 - Test1LTC - INFO - ----Vessel Information Started----
+2023-10-03 10:26:15 - Test1LTC - INFO - ----Trading Partners 1 Started----
+2023-10-03 10:26:35 - Test1LTC - INFO - ----Trading Partners 1 Done----
+2023-10-03 10:26:35 - Test1LTC - INFO - ----Trading Partners 2 Started----
+2023-10-03 10:27:00 - Test1LTC - INFO - ----Trading Partners 2 Done----
+2023-10-03 10:27:00 - Test1LTC - INFO - ----Line Items Started----
+2023-10-03 10:27:13 - Test1LTC - INFO - ----Line Items Done----
+2023-10-03 10:27:27 - Test1LTC - INFO - ----Form Saved Successfully----
+2023-10-03 10:27:27 - Test1LTC - INFO - ----------------Test Case test_HTC1 End----------------
+2023-10-03 11:12:07 - Test1LTC - INFO - ----------------Test Case test_HTC2 Starterd----------------
+2023-10-03 11:12:10 - Test1LTC - INFO - ----Login Done----
+2023-10-03 11:12:16 - Test1LTC - INFO - ----Form 7501 Opened----
+2023-10-03 11:12:16 - Test1LTC - INFO - ----Upper Part Started----
+2023-10-03 11:12:24 - Test1LTC - INFO - ----Upper Part Done----
+2023-10-03 11:12:24 - Test1LTC - INFO - ----Bill Of Lading Started----
+2023-10-03 11:12:37 - Test1LTC - INFO - ----Bill Of Lading Done----
+2023-10-03 11:12:37 - Test1LTC - INFO - ----Vessel Information Started----
+2023-10-03 11:12:40 - Test1LTC - INFO - ----Trading Partners 1 Started----
+2023-10-03 11:12:56 - Test1LTC - INFO - ----Trading Partners 1 Done----
+2023-10-03 11:12:56 - Test1LTC - INFO - ----Trading Partners 2 Started----
+2023-10-03 11:13:12 - Test1LTC - INFO - ----Trading Partners 2 Done----
+2023-10-03 11:13:12 - Test1LTC - INFO - ----Line Items Started----
+2023-10-03 11:13:22 - Test1LTC - INFO - ----Line Items Done----
+2023-10-03 11:13:29 - Test1LTC - INFO - ----Form Saved Successfully----
+2023-10-03 11:13:29 - Test1LTC - INFO - ----------------Test Case test_HTC2 End----------------
+2023-10-03 15:29:00 - Test1LTC - INFO - ----------------Test Case test_HTC1 Starterd----------------
+2023-10-03 15:29:09 - Test1LTC - INFO - ----Login Done----
+2023-10-03 15:29:15 - Test1LTC - INFO - ----Form 7501 Opened----
+2023-10-03 15:29:15 - Test1LTC - INFO - ----Upper Part Started----
+2023-10-03 15:29:23 - Test1LTC - INFO - ----Upper Part Done----
+2023-10-03 15:29:23 - Test1LTC - INFO - ----Bill Of Lading Started----
+2023-10-03 15:29:37 - Test1LTC - ERROR - ----Bill Of Lading Failed----
+2023-10-03 15:29:37 - Test1LTC - INFO - ----Vessel Information Started----
+2023-10-03 15:29:41 - Test1LTC - INFO - ----Trading Partners 1 Started----
+2023-10-03 15:29:59 - Test1LTC - INFO - ----Trading Partners 1 Done----
+2023-10-03 15:29:59 - Test1LTC - INFO - ----Trading Partners 2 Started----
+2023-10-03 15:30:17 - Test1LTC - INFO - ----Trading Partners 2 Done----
+2023-10-03 15:30:17 - Test1LTC - INFO - ----Line Items Started----
+2023-10-03 15:30:28 - Test1LTC - INFO - ----Line Items Done----
+2023-10-03 15:30:36 - Test1LTC - INFO - ----Form Saved Successfully----
+2023-10-03 15:30:36 - Test1LTC - INFO - ----------------Test Case test_HTC1 End----------------
+2023-10-03 15:36:18 - Test1LTC - INFO - ----------------Test Case test_HTC1 Starterd----------------
+2023-10-03 15:36:22 - Test1LTC - INFO - ----Login Done----
+2023-10-03 15:36:28 - Test1LTC - INFO - ----Form 7501 Opened----
+2023-10-03 15:36:28 - Test1LTC - INFO - ----Upper Part Started----
+2023-10-03 15:36:36 - Test1LTC - INFO - ----Upper Part Done----
+2023-10-03 15:36:36 - Test1LTC - INFO - ----Bill Of Lading Started----
+2023-10-03 15:36:50 - Test1LTC - ERROR - ----Bill Of Lading Failed----
+2023-10-03 15:36:50 - Test1LTC - INFO - ----------------Test Case test_HTC1 End----------------
+2023-10-03 15:41:12 - Test1LTC - INFO - ----------------Test Case test_HTC1 Starterd----------------
+2023-10-03 15:41:19 - Test1LTC - INFO - ----Login Done----
+2023-10-03 15:41:26 - Test1LTC - INFO - ----Form 7501 Opened----
+2023-10-03 15:41:26 - Test1LTC - INFO - ----Upper Part Started----
+2023-10-03 15:41:34 - Test1LTC - INFO - ----Upper Part Done----
+2023-10-03 15:41:34 - Test1LTC - INFO - ----Bill Of Lading Started----
+2023-10-03 15:41:50 - Test1LTC - INFO - ----------------Test Case test_HTC1 End----------------
+2023-10-03 15:53:10 - Test1LTC - INFO - ----------------Test Case test_HTC1 Starterd----------------
+2023-10-03 15:53:14 - Test1LTC - INFO - ----Login Done----
+2023-10-03 15:53:20 - Test1LTC - INFO - ----Form 7501 Opened----
+2023-10-03 15:53:20 - Test1LTC - INFO - ----Upper Part Started----
+2023-10-03 15:53:28 - Test1LTC - INFO - ----Upper Part Done----
+2023-10-03 15:53:28 - Test1LTC - INFO - ----Bill Of Lading Started----
+2023-10-03 15:53:41 - Test1LTC - ERROR - ----Bill Of Lading Failed----
+2023-10-03 15:53:41 - Test1LTC - INFO - ----------------Test Case test_HTC1 End----------------
+2023-10-03 15:56:34 - Test1LTC - INFO - ----------------Test Case test_HTC1 Starterd----------------
+2023-10-03 15:56:39 - Test1LTC - INFO - ----Login Done----
+2023-10-03 15:56:45 - Test1LTC - INFO - ----Form 7501 Opened----
+2023-10-03 15:56:45 - Test1LTC - INFO - ----Upper Part Started----
+2023-10-03 15:56:55 - Test1LTC - INFO - ----Upper Part Done----
+2023-10-03 15:56:55 - Test1LTC - INFO - ----Bill Of Lading Started----
+2023-10-03 15:57:10 - Test1LTC - ERROR - ----Bill Of Lading Failed----
+2023-10-03 15:57:10 - Test1LTC - INFO - ----------------Test Case test_HTC1 End----------------
+2023-10-03 16:28:21 - Test1LTC - INFO - ----------------Test Case test_HTC1 Starterd----------------
+2023-10-03 16:28:24 - Test1LTC - INFO - ----Login Done----
+2023-10-03 16:28:31 - Test1LTC - INFO - ----Form 7501 Opened----
+2023-10-03 16:28:31 - Test1LTC - INFO - ----Upper Part Started----
+2023-10-03 16:28:37 - Test1LTC - INFO - ----Upper Part Done----
+2023-10-03 16:28:37 - Test1LTC - INFO - ----Bill Of Lading Started----
+2023-10-03 16:28:51 - Test1LTC - ERROR - ----Bill Of Lading Failed----
+2023-10-03 16:28:51 - Test1LTC - INFO - ----------------Test Case test_HTC1 End----------------
+2023-10-13 12:28:55 - TestEntryForm1LineItem - INFO - ----------------Test Case test_HTC1 Starterd----------------
+2023-10-13 12:29:00 - TestEntryForm1LineItem - INFO - ----Login Done----
+2023-10-13 12:29:06 - TestEntryForm1LineItem - INFO - ----Form 7501 Opened----
+2023-10-13 12:29:06 - TestEntryForm1LineItem - INFO - ----Upper Part Started----
+2023-10-13 12:29:17 - TestEntryForm1LineItem - INFO - ----Upper Part Done----
+2023-10-13 12:29:17 - TestEntryForm1LineItem - INFO - ----Bill Of Lading Started----
+2023-10-13 12:29:33 - TestEntryForm1LineItem - INFO - ----Bill Of Lading Done----
+2023-10-13 12:29:33 - TestEntryForm1LineItem - INFO - ----Trading Partners 1 Started----
+2023-10-13 12:29:52 - TestEntryForm1LineItem - INFO - ----Trading Partners 1 Done----
+2023-10-13 12:29:52 - TestEntryForm1LineItem - INFO - ----Trading Partners 2 Started----
+2023-10-13 12:30:11 - TestEntryForm1LineItem - INFO - ----Trading Partners 2 Done----
+2023-10-13 12:30:11 - TestEntryForm1LineItem - INFO - ----Line Items Started----
+2023-10-13 12:30:22 - TestEntryForm1LineItem - INFO - ----Line Items Done----
+2023-10-13 12:30:31 - TestEntryForm1LineItem - INFO - ----Form Saved Successfully----
+2023-10-13 12:30:31 - TestEntryForm1LineItem - INFO - ----------------Test Case test_HTC1 End----------------
+2023-10-13 12:30:42 - TestBillOfLading - INFO - ----Test Case test_BillOfLading Started----
+2023-10-13 12:30:43 - TestBillOfLading - INFO - ----Login Done----
+2023-10-13 12:30:50 - TestBillOfLading - INFO - ----7501 Form Opened----
+2023-10-13 12:30:50 - TestBillOfLading - INFO - ----Bill Of lading Started----
+2023-10-13 12:31:11 - TestBillOfLading - INFO - ----Text verification done----
+2023-10-13 12:31:11 - TestBillOfLading - INFO - ----Test Case test_BillOfLading End----
+2023-10-13 12:31:57 - TestLogin - INFO - Name shown in Homepage
+2023-10-13 12:31:57 - TestLogin - INFO - Name shown in Homepage
+2023-10-13 12:31:57 - TestLogin - INFO - Test Case Pass
+2023-10-13 12:31:57 - TestLogin - INFO - Test Case Pass
+2023-10-13 12:32:20 - TestLogin - INFO - Name shown in Homepage2
+2023-10-13 12:32:20 - TestLogin - INFO - Name shown in Homepage2
+2023-10-13 12:32:20 - TestLogin - INFO - Test Case 2 Pass
+2023-10-13 12:32:20 - TestLogin - INFO - Test Case 2 Pass
+2023-10-13 12:33:12 - TestLogin - INFO - Name shown in Homepage
+2023-10-13 12:33:12 - TestLogin - INFO - Name shown in Homepage
+2023-10-13 12:33:13 - TestLogin - INFO - Test Case Pass
+2023-10-13 12:33:13 - TestLogin - INFO - Test Case Pass
+2023-10-13 12:33:28 - TestLogin - INFO - Name shown in Homepage2
+2023-10-13 12:33:28 - TestLogin - INFO - Name shown in Homepage2
+2023-10-13 12:33:29 - TestLogin - INFO - Test Case 2 Pass
+2023-10-13 12:33:29 - TestLogin - INFO - Test Case 2 Pass
+2023-10-13 12:34:00 - Test1LTC - INFO - ----------------Test Case test_HTC1 Starterd----------------
+2023-10-13 12:34:00 - Test1LTC - INFO - ----------------Test Case test_HTC1 Starterd----------------
+2023-10-13 12:34:00 - Test1LTC - INFO - ----------------Test Case test_HTC1 Starterd----------------
+2023-10-13 12:34:00 - Test1LTC - INFO - ----------------Test Case test_HTC1 Starterd----------------
+2023-10-13 12:34:00 - Test1LTC - INFO - ----------------Test Case test_HTC1 Starterd----------------
+2023-10-13 12:34:03 - Test1LTC - INFO - ----Login Done----
+2023-10-13 12:34:03 - Test1LTC - INFO - ----Login Done----
+2023-10-13 12:34:03 - Test1LTC - INFO - ----Login Done----
+2023-10-13 12:34:03 - Test1LTC - INFO - ----Login Done----
+2023-10-13 12:34:03 - Test1LTC - INFO - ----Login Done----
+2023-10-13 12:34:10 - Test1LTC - INFO - ----Form 7501 Opened----
+2023-10-13 12:34:10 - Test1LTC - INFO - ----Form 7501 Opened----
+2023-10-13 12:34:10 - Test1LTC - INFO - ----Form 7501 Opened----
+2023-10-13 12:34:10 - Test1LTC - INFO - ----Form 7501 Opened----
+2023-10-13 12:34:10 - Test1LTC - INFO - ----Form 7501 Opened----
+2023-10-13 12:34:10 - Test1LTC - INFO - ----Upper Part Started----
+2023-10-13 12:34:10 - Test1LTC - INFO - ----Upper Part Started----
+2023-10-13 12:34:10 - Test1LTC - INFO - ----Upper Part Started----
+2023-10-13 12:34:10 - Test1LTC - INFO - ----Upper Part Started----
+2023-10-13 12:34:10 - Test1LTC - INFO - ----Upper Part Started----
+2023-10-13 12:34:20 - Test1LTC - INFO - ----Upper Part Done----
+2023-10-13 12:34:20 - Test1LTC - INFO - ----Upper Part Done----
+2023-10-13 12:34:20 - Test1LTC - INFO - ----Upper Part Done----
+2023-10-13 12:34:20 - Test1LTC - INFO - ----Upper Part Done----
+2023-10-13 12:34:20 - Test1LTC - INFO - ----Upper Part Done----
+2023-10-13 12:34:20 - Test1LTC - INFO - ----Bill Of Lading Started----
+2023-10-13 12:34:20 - Test1LTC - INFO - ----Bill Of Lading Started----
+2023-10-13 12:34:20 - Test1LTC - INFO - ----Bill Of Lading Started----
+2023-10-13 12:34:20 - Test1LTC - INFO - ----Bill Of Lading Started----
+2023-10-13 12:34:20 - Test1LTC - INFO - ----Bill Of Lading Started----
+2023-10-13 12:34:34 - Test1LTC - INFO - ----Bill Of Lading Done----
+2023-10-13 12:34:34 - Test1LTC - INFO - ----Bill Of Lading Done----
+2023-10-13 12:34:34 - Test1LTC - INFO - ----Bill Of Lading Done----
+2023-10-13 12:34:34 - Test1LTC - INFO - ----Bill Of Lading Done----
+2023-10-13 12:34:34 - Test1LTC - INFO - ----Bill Of Lading Done----
+2023-10-13 12:34:34 - Test1LTC - INFO - ----Vessel Information Started----
+2023-10-13 12:34:34 - Test1LTC - INFO - ----Vessel Information Started----
+2023-10-13 12:34:34 - Test1LTC - INFO - ----Vessel Information Started----
+2023-10-13 12:34:34 - Test1LTC - INFO - ----Vessel Information Started----
+2023-10-13 12:34:34 - Test1LTC - INFO - ----Vessel Information Started----
+2023-10-13 12:34:38 - Test1LTC - INFO - ----Vessel Information Done----
+2023-10-13 12:34:38 - Test1LTC - INFO - ----Vessel Information Done----
+2023-10-13 12:34:38 - Test1LTC - INFO - ----Vessel Information Done----
+2023-10-13 12:34:38 - Test1LTC - INFO - ----Vessel Information Done----
+2023-10-13 12:34:38 - Test1LTC - INFO - ----Vessel Information Done----
+2023-10-13 12:34:38 - Test1LTC - INFO - ----Trading Partners 1 Started----
+2023-10-13 12:34:38 - Test1LTC - INFO - ----Trading Partners 1 Started----
+2023-10-13 12:34:38 - Test1LTC - INFO - ----Trading Partners 1 Started----
+2023-10-13 12:34:38 - Test1LTC - INFO - ----Trading Partners 1 Started----
+2023-10-13 12:34:38 - Test1LTC - INFO - ----Trading Partners 1 Started----
+2023-10-13 12:34:54 - Test1LTC - INFO - ----Trading Partners 1 Done----
+2023-10-13 12:34:54 - Test1LTC - INFO - ----Trading Partners 1 Done----
+2023-10-13 12:34:54 - Test1LTC - INFO - ----Trading Partners 1 Done----
+2023-10-13 12:34:54 - Test1LTC - INFO - ----Trading Partners 1 Done----
+2023-10-13 12:34:54 - Test1LTC - INFO - ----Trading Partners 1 Done----
+2023-10-13 12:34:54 - Test1LTC - INFO - ----Trading Partners 2 Started----
+2023-10-13 12:34:54 - Test1LTC - INFO - ----Trading Partners 2 Started----
+2023-10-13 12:34:54 - Test1LTC - INFO - ----Trading Partners 2 Started----
+2023-10-13 12:34:54 - Test1LTC - INFO - ----Trading Partners 2 Started----
+2023-10-13 12:34:54 - Test1LTC - INFO - ----Trading Partners 2 Started----
+2023-10-13 12:35:11 - Test1LTC - INFO - ----Trading Partners 2 Done----
+2023-10-13 12:35:11 - Test1LTC - INFO - ----Trading Partners 2 Done----
+2023-10-13 12:35:11 - Test1LTC - INFO - ----Trading Partners 2 Done----
+2023-10-13 12:35:11 - Test1LTC - INFO - ----Trading Partners 2 Done----
+2023-10-13 12:35:11 - Test1LTC - INFO - ----Trading Partners 2 Done----
+2023-10-13 12:35:11 - Test1LTC - INFO - ----Line Items Started----
+2023-10-13 12:35:11 - Test1LTC - INFO - ----Line Items Started----
+2023-10-13 12:35:11 - Test1LTC - INFO - ----Line Items Started----
+2023-10-13 12:35:11 - Test1LTC - INFO - ----Line Items Started----
+2023-10-13 12:35:11 - Test1LTC - INFO - ----Line Items Started----
+2023-10-13 12:35:22 - Test1LTC - INFO - ----Line Items Done----
+2023-10-13 12:35:22 - Test1LTC - INFO - ----Line Items Done----
+2023-10-13 12:35:22 - Test1LTC - INFO - ----Line Items Done----
+2023-10-13 12:35:22 - Test1LTC - INFO - ----Line Items Done----
+2023-10-13 12:35:22 - Test1LTC - INFO - ----Line Items Done----
+2023-10-13 12:35:29 - Test1LTC - INFO - ----Form Saved Successfully----
+2023-10-13 12:35:29 - Test1LTC - INFO - ----Form Saved Successfully----
+2023-10-13 12:35:29 - Test1LTC - INFO - ----Form Saved Successfully----
+2023-10-13 12:35:29 - Test1LTC - INFO - ----Form Saved Successfully----
+2023-10-13 12:35:29 - Test1LTC - INFO - ----Form Saved Successfully----
+2023-10-13 12:35:29 - Test1LTC - INFO - ----------------Test Case test_HTC1 End----------------
+2023-10-13 12:35:29 - Test1LTC - INFO - ----------------Test Case test_HTC1 End----------------
+2023-10-13 12:35:29 - Test1LTC - INFO - ----------------Test Case test_HTC1 End----------------
+2023-10-13 12:35:29 - Test1LTC - INFO - ----------------Test Case test_HTC1 End----------------
+2023-10-13 12:35:29 - Test1LTC - INFO - ----------------Test Case test_HTC1 End----------------
+2023-10-13 12:36:52 - Test1LTC - INFO - ----------------Test Case test_HTC2 Starterd----------------
+2023-10-13 12:36:52 - Test1LTC - INFO - ----------------Test Case test_HTC2 Starterd----------------
+2023-10-13 12:36:52 - Test1LTC - INFO - ----------------Test Case test_HTC2 Starterd----------------
+2023-10-13 12:36:52 - Test1LTC - INFO - ----------------Test Case test_HTC2 Starterd----------------
+2023-10-13 12:36:52 - Test1LTC - INFO - ----------------Test Case test_HTC2 Starterd----------------
+2023-10-13 12:36:55 - Test1LTC - INFO - ----Login Done----
+2023-10-13 12:36:55 - Test1LTC - INFO - ----Login Done----
+2023-10-13 12:36:55 - Test1LTC - INFO - ----Login Done----
+2023-10-13 12:36:55 - Test1LTC - INFO - ----Login Done----
+2023-10-13 12:36:55 - Test1LTC - INFO - ----Login Done----
+2023-10-13 12:37:02 - Test1LTC - INFO - ----Form 7501 Opened----
+2023-10-13 12:37:02 - Test1LTC - INFO - ----Form 7501 Opened----
+2023-10-13 12:37:02 - Test1LTC - INFO - ----Form 7501 Opened----
+2023-10-13 12:37:02 - Test1LTC - INFO - ----Form 7501 Opened----
+2023-10-13 12:37:02 - Test1LTC - INFO - ----Form 7501 Opened----
+2023-10-13 12:37:02 - Test1LTC - INFO - ----Upper Part Started----
+2023-10-13 12:37:02 - Test1LTC - INFO - ----Upper Part Started----
+2023-10-13 12:37:02 - Test1LTC - INFO - ----Upper Part Started----
+2023-10-13 12:37:02 - Test1LTC - INFO - ----Upper Part Started----
+2023-10-13 12:37:02 - Test1LTC - INFO - ----Upper Part Started----
+2023-10-13 12:37:09 - Test1LTC - INFO - ----Upper Part Done----
+2023-10-13 12:37:09 - Test1LTC - INFO - ----Upper Part Done----
+2023-10-13 12:37:09 - Test1LTC - INFO - ----Upper Part Done----
+2023-10-13 12:37:09 - Test1LTC - INFO - ----Upper Part Done----
+2023-10-13 12:37:09 - Test1LTC - INFO - ----Upper Part Done----
+2023-10-13 12:37:09 - Test1LTC - INFO - ----Bill Of Lading Started----
+2023-10-13 12:37:09 - Test1LTC - INFO - ----Bill Of Lading Started----
+2023-10-13 12:37:09 - Test1LTC - INFO - ----Bill Of Lading Started----
+2023-10-13 12:37:09 - Test1LTC - INFO - ----Bill Of Lading Started----
+2023-10-13 12:37:09 - Test1LTC - INFO - ----Bill Of Lading Started----
+2023-10-13 12:37:23 - Test1LTC - INFO - ----Bill Of Lading Done----
+2023-10-13 12:37:23 - Test1LTC - INFO - ----Bill Of Lading Done----
+2023-10-13 12:37:23 - Test1LTC - INFO - ----Bill Of Lading Done----
+2023-10-13 12:37:23 - Test1LTC - INFO - ----Bill Of Lading Done----
+2023-10-13 12:37:23 - Test1LTC - INFO - ----Bill Of Lading Done----
+2023-10-13 12:37:23 - Test1LTC - INFO - ----Vessel Information Started----
+2023-10-13 12:37:23 - Test1LTC - INFO - ----Vessel Information Started----
+2023-10-13 12:37:23 - Test1LTC - INFO - ----Vessel Information Started----
+2023-10-13 12:37:23 - Test1LTC - INFO - ----Vessel Information Started----
+2023-10-13 12:37:23 - Test1LTC - INFO - ----Vessel Information Started----
+2023-10-13 12:37:26 - Test1LTC - INFO - ----Trading Partners 1 Started----
+2023-10-13 12:37:26 - Test1LTC - INFO - ----Trading Partners 1 Started----
+2023-10-13 12:37:26 - Test1LTC - INFO - ----Trading Partners 1 Started----
+2023-10-13 12:37:26 - Test1LTC - INFO - ----Trading Partners 1 Started----
+2023-10-13 12:37:26 - Test1LTC - INFO - ----Trading Partners 1 Started----
+2023-10-13 12:37:42 - Test1LTC - INFO - ----Trading Partners 1 Done----
+2023-10-13 12:37:42 - Test1LTC - INFO - ----Trading Partners 1 Done----
+2023-10-13 12:37:42 - Test1LTC - INFO - ----Trading Partners 1 Done----
+2023-10-13 12:37:42 - Test1LTC - INFO - ----Trading Partners 1 Done----
+2023-10-13 12:37:42 - Test1LTC - INFO - ----Trading Partners 1 Done----
+2023-10-13 12:37:42 - Test1LTC - INFO - ----Trading Partners 2 Started----
+2023-10-13 12:37:42 - Test1LTC - INFO - ----Trading Partners 2 Started----
+2023-10-13 12:37:42 - Test1LTC - INFO - ----Trading Partners 2 Started----
+2023-10-13 12:37:42 - Test1LTC - INFO - ----Trading Partners 2 Started----
+2023-10-13 12:37:42 - Test1LTC - INFO - ----Trading Partners 2 Started----
+2023-10-13 12:37:58 - Test1LTC - INFO - ----Trading Partners 2 Done----
+2023-10-13 12:37:58 - Test1LTC - INFO - ----Trading Partners 2 Done----
+2023-10-13 12:37:58 - Test1LTC - INFO - ----Trading Partners 2 Done----
+2023-10-13 12:37:58 - Test1LTC - INFO - ----Trading Partners 2 Done----
+2023-10-13 12:37:58 - Test1LTC - INFO - ----Trading Partners 2 Done----
+2023-10-13 12:37:58 - Test1LTC - INFO - ----Line Items Started----
+2023-10-13 12:37:58 - Test1LTC - INFO - ----Line Items Started----
+2023-10-13 12:37:58 - Test1LTC - INFO - ----Line Items Started----
+2023-10-13 12:37:58 - Test1LTC - INFO - ----Line Items Started----
+2023-10-13 12:37:58 - Test1LTC - INFO - ----Line Items Started----
+2023-10-13 12:38:09 - Test1LTC - INFO - ----Line Items Done----
+2023-10-13 12:38:09 - Test1LTC - INFO - ----Line Items Done----
+2023-10-13 12:38:09 - Test1LTC - INFO - ----Line Items Done----
+2023-10-13 12:38:09 - Test1LTC - INFO - ----Line Items Done----
+2023-10-13 12:38:09 - Test1LTC - INFO - ----Line Items Done----
+2023-10-13 12:38:16 - Test1LTC - INFO - ----Form Saved Successfully----
+2023-10-13 12:38:16 - Test1LTC - INFO - ----Form Saved Successfully----
+2023-10-13 12:38:16 - Test1LTC - INFO - ----Form Saved Successfully----
+2023-10-13 12:38:16 - Test1LTC - INFO - ----Form Saved Successfully----
+2023-10-13 12:38:16 - Test1LTC - INFO - ----Form Saved Successfully----
+2023-10-13 12:38:16 - Test1LTC - INFO - ----------------Test Case test_HTC2 End----------------
+2023-10-13 12:38:16 - Test1LTC - INFO - ----------------Test Case test_HTC2 End----------------
+2023-10-13 12:38:16 - Test1LTC - INFO - ----------------Test Case test_HTC2 End----------------
+2023-10-13 12:38:16 - Test1LTC - INFO - ----------------Test Case test_HTC2 End----------------
+2023-10-13 12:38:16 - Test1LTC - INFO - ----------------Test Case test_HTC2 End----------------
+2023-10-13 12:38:32 - Test1LTC - INFO - ----------------Test Case test_HTC3 Starterd----------------
+2023-10-13 12:38:32 - Test1LTC - INFO - ----------------Test Case test_HTC3 Starterd----------------
+2023-10-13 12:38:32 - Test1LTC - INFO - ----------------Test Case test_HTC3 Starterd----------------
+2023-10-13 12:38:32 - Test1LTC - INFO - ----------------Test Case test_HTC3 Starterd----------------
+2023-10-13 12:38:32 - Test1LTC - INFO - ----------------Test Case test_HTC3 Starterd----------------
+2023-10-13 12:38:35 - Test1LTC - INFO - ----Login Done----
+2023-10-13 12:38:35 - Test1LTC - INFO - ----Login Done----
+2023-10-13 12:38:35 - Test1LTC - INFO - ----Login Done----
+2023-10-13 12:38:35 - Test1LTC - INFO - ----Login Done----
+2023-10-13 12:38:35 - Test1LTC - INFO - ----Login Done----
+2023-10-13 12:38:42 - Test1LTC - INFO - ----Form 7501 Opened----
+2023-10-13 12:38:42 - Test1LTC - INFO - ----Form 7501 Opened----
+2023-10-13 12:38:42 - Test1LTC - INFO - ----Form 7501 Opened----
+2023-10-13 12:38:42 - Test1LTC - INFO - ----Form 7501 Opened----
+2023-10-13 12:38:42 - Test1LTC - INFO - ----Form 7501 Opened----
+2023-10-13 12:38:42 - Test1LTC - INFO - ----Upper Part Started----
+2023-10-13 12:38:42 - Test1LTC - INFO - ----Upper Part Started----
+2023-10-13 12:38:42 - Test1LTC - INFO - ----Upper Part Started----
+2023-10-13 12:38:42 - Test1LTC - INFO - ----Upper Part Started----
+2023-10-13 12:38:42 - Test1LTC - INFO - ----Upper Part Started----
+2023-10-13 12:38:49 - Test1LTC - INFO - ----Upper Part Done----
+2023-10-13 12:38:49 - Test1LTC - INFO - ----Upper Part Done----
+2023-10-13 12:38:49 - Test1LTC - INFO - ----Upper Part Done----
+2023-10-13 12:38:49 - Test1LTC - INFO - ----Upper Part Done----
+2023-10-13 12:38:49 - Test1LTC - INFO - ----Upper Part Done----
+2023-10-13 12:38:49 - Test1LTC - INFO - ----Bill Of Lading Started----
+2023-10-13 12:38:49 - Test1LTC - INFO - ----Bill Of Lading Started----
+2023-10-13 12:38:49 - Test1LTC - INFO - ----Bill Of Lading Started----
+2023-10-13 12:38:49 - Test1LTC - INFO - ----Bill Of Lading Started----
+2023-10-13 12:38:49 - Test1LTC - INFO - ----Bill Of Lading Started----
+2023-10-13 12:39:04 - Test1LTC - INFO - ----Bill Of Lading Done----
+2023-10-13 12:39:04 - Test1LTC - INFO - ----Bill Of Lading Done----
+2023-10-13 12:39:04 - Test1LTC - INFO - ----Bill Of Lading Done----
+2023-10-13 12:39:04 - Test1LTC - INFO - ----Bill Of Lading Done----
+2023-10-13 12:39:04 - Test1LTC - INFO - ----Bill Of Lading Done----
+2023-10-13 12:39:04 - Test1LTC - INFO - ----Vessel Information Started----
+2023-10-13 12:39:04 - Test1LTC - INFO - ----Vessel Information Started----
+2023-10-13 12:39:04 - Test1LTC - INFO - ----Vessel Information Started----
+2023-10-13 12:39:04 - Test1LTC - INFO - ----Vessel Information Started----
+2023-10-13 12:39:04 - Test1LTC - INFO - ----Vessel Information Started----
+2023-10-13 12:39:07 - Test1LTC - INFO - ----Trading Partners 1 Started----
+2023-10-13 12:39:07 - Test1LTC - INFO - ----Trading Partners 1 Started----
+2023-10-13 12:39:07 - Test1LTC - INFO - ----Trading Partners 1 Started----
+2023-10-13 12:39:07 - Test1LTC - INFO - ----Trading Partners 1 Started----
+2023-10-13 12:39:07 - Test1LTC - INFO - ----Trading Partners 1 Started----
+2023-10-13 12:39:24 - Test1LTC - INFO - ----Trading Partners 1 Done----
+2023-10-13 12:39:24 - Test1LTC - INFO - ----Trading Partners 1 Done----
+2023-10-13 12:39:24 - Test1LTC - INFO - ----Trading Partners 1 Done----
+2023-10-13 12:39:24 - Test1LTC - INFO - ----Trading Partners 1 Done----
+2023-10-13 12:39:24 - Test1LTC - INFO - ----Trading Partners 1 Done----
+2023-10-13 12:39:24 - Test1LTC - INFO - ----Trading Partners 2 Started----
+2023-10-13 12:39:24 - Test1LTC - INFO - ----Trading Partners 2 Started----
+2023-10-13 12:39:24 - Test1LTC - INFO - ----Trading Partners 2 Started----
+2023-10-13 12:39:24 - Test1LTC - INFO - ----Trading Partners 2 Started----
+2023-10-13 12:39:24 - Test1LTC - INFO - ----Trading Partners 2 Started----
+2023-10-13 12:39:40 - Test1LTC - INFO - ----Trading Partners 2 Done----
+2023-10-13 12:39:40 - Test1LTC - INFO - ----Trading Partners 2 Done----
+2023-10-13 12:39:40 - Test1LTC - INFO - ----Trading Partners 2 Done----
+2023-10-13 12:39:40 - Test1LTC - INFO - ----Trading Partners 2 Done----
+2023-10-13 12:39:40 - Test1LTC - INFO - ----Trading Partners 2 Done----
+2023-10-13 12:39:40 - Test1LTC - INFO - ----Line Items Started----
+2023-10-13 12:39:40 - Test1LTC - INFO - ----Line Items Started----
+2023-10-13 12:39:40 - Test1LTC - INFO - ----Line Items Started----
+2023-10-13 12:39:40 - Test1LTC - INFO - ----Line Items Started----
+2023-10-13 12:39:40 - Test1LTC - INFO - ----Line Items Started----
+2023-10-13 12:39:53 - Test1LTC - INFO - ----Line Items Done----
+2023-10-13 12:39:53 - Test1LTC - INFO - ----Line Items Done----
+2023-10-13 12:39:53 - Test1LTC - INFO - ----Line Items Done----
+2023-10-13 12:39:53 - Test1LTC - INFO - ----Line Items Done----
+2023-10-13 12:39:53 - Test1LTC - INFO - ----Line Items Done----
+2023-10-13 12:40:00 - Test1LTC - INFO - ----Form Saved Successfully----
+2023-10-13 12:40:00 - Test1LTC - INFO - ----Form Saved Successfully----
+2023-10-13 12:40:00 - Test1LTC - INFO - ----Form Saved Successfully----
+2023-10-13 12:40:00 - Test1LTC - INFO - ----Form Saved Successfully----
+2023-10-13 12:40:00 - Test1LTC - INFO - ----Form Saved Successfully----
+2023-10-13 12:40:00 - Test1LTC - INFO - ----------------Test Case test_HTC3 End----------------
+2023-10-13 12:40:00 - Test1LTC - INFO - ----------------Test Case test_HTC3 End----------------
+2023-10-13 12:40:00 - Test1LTC - INFO - ----------------Test Case test_HTC3 End----------------
+2023-10-13 12:40:00 - Test1LTC - INFO - ----------------Test Case test_HTC3 End----------------
+2023-10-13 12:40:00 - Test1LTC - INFO - ----------------Test Case test_HTC3 End----------------
+2023-10-13 12:40:11 - Test1LTC - INFO - ----------------Test Case test_HTC4 Starterd----------------
+2023-10-13 12:40:11 - Test1LTC - INFO - ----------------Test Case test_HTC4 Starterd----------------
+2023-10-13 12:40:11 - Test1LTC - INFO - ----------------Test Case test_HTC4 Starterd----------------
+2023-10-13 12:40:11 - Test1LTC - INFO - ----------------Test Case test_HTC4 Starterd----------------
+2023-10-13 12:40:11 - Test1LTC - INFO - ----------------Test Case test_HTC4 Starterd----------------
+2023-10-13 12:40:14 - Test1LTC - INFO - ----Login Done----
+2023-10-13 12:40:14 - Test1LTC - INFO - ----Login Done----
+2023-10-13 12:40:14 - Test1LTC - INFO - ----Login Done----
+2023-10-13 12:40:14 - Test1LTC - INFO - ----Login Done----
+2023-10-13 12:40:14 - Test1LTC - INFO - ----Login Done----
+2023-10-13 12:40:21 - Test1LTC - INFO - ----Form 7501 Opened----
+2023-10-13 12:40:21 - Test1LTC - INFO - ----Form 7501 Opened----
+2023-10-13 12:40:21 - Test1LTC - INFO - ----Form 7501 Opened----
+2023-10-13 12:40:21 - Test1LTC - INFO - ----Form 7501 Opened----
+2023-10-13 12:40:21 - Test1LTC - INFO - ----Form 7501 Opened----
+2023-10-13 12:40:21 - Test1LTC - INFO - ----Upper Part Started----
+2023-10-13 12:40:21 - Test1LTC - INFO - ----Upper Part Started----
+2023-10-13 12:40:21 - Test1LTC - INFO - ----Upper Part Started----
+2023-10-13 12:40:21 - Test1LTC - INFO - ----Upper Part Started----
+2023-10-13 12:40:21 - Test1LTC - INFO - ----Upper Part Started----
+2023-10-13 12:40:29 - Test1LTC - INFO - ----Upper Part Done----
+2023-10-13 12:40:29 - Test1LTC - INFO - ----Upper Part Done----
+2023-10-13 12:40:29 - Test1LTC - INFO - ----Upper Part Done----
+2023-10-13 12:40:29 - Test1LTC - INFO - ----Upper Part Done----
+2023-10-13 12:40:29 - Test1LTC - INFO - ----Upper Part Done----
+2023-10-13 12:40:29 - Test1LTC - INFO - ----Bill Of Lading Started----
+2023-10-13 12:40:29 - Test1LTC - INFO - ----Bill Of Lading Started----
+2023-10-13 12:40:29 - Test1LTC - INFO - ----Bill Of Lading Started----
+2023-10-13 12:40:29 - Test1LTC - INFO - ----Bill Of Lading Started----
+2023-10-13 12:40:29 - Test1LTC - INFO - ----Bill Of Lading Started----
+2023-10-13 12:40:43 - Test1LTC - INFO - ----Bill Of Lading Done----
+2023-10-13 12:40:43 - Test1LTC - INFO - ----Bill Of Lading Done----
+2023-10-13 12:40:43 - Test1LTC - INFO - ----Bill Of Lading Done----
+2023-10-13 12:40:43 - Test1LTC - INFO - ----Bill Of Lading Done----
+2023-10-13 12:40:43 - Test1LTC - INFO - ----Bill Of Lading Done----
+2023-10-13 12:40:43 - Test1LTC - INFO - ----Vessel Information Started----
+2023-10-13 12:40:43 - Test1LTC - INFO - ----Vessel Information Started----
+2023-10-13 12:40:43 - Test1LTC - INFO - ----Vessel Information Started----
+2023-10-13 12:40:43 - Test1LTC - INFO - ----Vessel Information Started----
+2023-10-13 12:40:43 - Test1LTC - INFO - ----Vessel Information Started----
+2023-10-13 12:41:11 - Test1LTC - INFO - ----Trading Partners 1 Started----
+2023-10-13 12:41:11 - Test1LTC - INFO - ----Trading Partners 1 Started----
+2023-10-13 12:41:11 - Test1LTC - INFO - ----Trading Partners 1 Started----
+2023-10-13 12:41:11 - Test1LTC - INFO - ----Trading Partners 1 Started----
+2023-10-13 12:41:11 - Test1LTC - INFO - ----Trading Partners 1 Started----
+2023-10-13 12:41:39 - Test1LTC - INFO - ----Trading Partners 1 Done----
+2023-10-13 12:41:39 - Test1LTC - INFO - ----Trading Partners 1 Done----
+2023-10-13 12:41:39 - Test1LTC - INFO - ----Trading Partners 1 Done----
+2023-10-13 12:41:39 - Test1LTC - INFO - ----Trading Partners 1 Done----
+2023-10-13 12:41:39 - Test1LTC - INFO - ----Trading Partners 1 Done----
+2023-10-13 12:41:39 - Test1LTC - INFO - ----Trading Partners 2 Started----
+2023-10-13 12:41:39 - Test1LTC - INFO - ----Trading Partners 2 Started----
+2023-10-13 12:41:39 - Test1LTC - INFO - ----Trading Partners 2 Started----
+2023-10-13 12:41:39 - Test1LTC - INFO - ----Trading Partners 2 Started----
+2023-10-13 12:41:39 - Test1LTC - INFO - ----Trading Partners 2 Started----
+2023-10-13 12:43:43 - Test1LTC - INFO - ----------------Test Case test_HTC1 Starterd----------------
+2023-10-13 12:43:43 - Test1LTC - INFO - ----------------Test Case test_HTC1 Starterd----------------
+2023-10-13 12:43:43 - Test1LTC - INFO - ----------------Test Case test_HTC1 Starterd----------------
+2023-10-13 12:43:43 - Test1LTC - INFO - ----------------Test Case test_HTC1 Starterd----------------
+2023-10-13 12:43:43 - Test1LTC - INFO - ----------------Test Case test_HTC1 Starterd----------------
+2023-10-13 12:43:51 - Test1LTC - INFO - ----Login Done----
+2023-10-13 12:43:51 - Test1LTC - INFO - ----Login Done----
+2023-10-13 12:43:51 - Test1LTC - INFO - ----Login Done----
+2023-10-13 12:43:51 - Test1LTC - INFO - ----Login Done----
+2023-10-13 12:43:51 - Test1LTC - INFO - ----Login Done----
+2023-10-13 12:43:59 - Test1LTC - INFO - ----Form 7501 Opened----
+2023-10-13 12:43:59 - Test1LTC - INFO - ----Form 7501 Opened----
+2023-10-13 12:43:59 - Test1LTC - INFO - ----Form 7501 Opened----
+2023-10-13 12:43:59 - Test1LTC - INFO - ----Form 7501 Opened----
+2023-10-13 12:43:59 - Test1LTC - INFO - ----Form 7501 Opened----
+2023-10-13 12:43:59 - Test1LTC - INFO - ----Upper Part Started----
+2023-10-13 12:43:59 - Test1LTC - INFO - ----Upper Part Started----
+2023-10-13 12:43:59 - Test1LTC - INFO - ----Upper Part Started----
+2023-10-13 12:43:59 - Test1LTC - INFO - ----Upper Part Started----
+2023-10-13 12:43:59 - Test1LTC - INFO - ----Upper Part Started----
+2023-10-13 12:44:13 - Test1LTC - INFO - ----Upper Part Done----
+2023-10-13 12:44:13 - Test1LTC - INFO - ----Upper Part Done----
+2023-10-13 12:44:13 - Test1LTC - INFO - ----Upper Part Done----
+2023-10-13 12:44:13 - Test1LTC - INFO - ----Upper Part Done----
+2023-10-13 12:44:13 - Test1LTC - INFO - ----Upper Part Done----
+2023-10-13 12:44:13 - Test1LTC - INFO - ----Line Items Started----
+2023-10-13 12:44:13 - Test1LTC - INFO - ----Line Items Started----
+2023-10-13 12:44:13 - Test1LTC - INFO - ----Line Items Started----
+2023-10-13 12:44:13 - Test1LTC - INFO - ----Line Items Started----
+2023-10-13 12:44:13 - Test1LTC - INFO - ----Line Items Started----
+2023-10-13 12:44:35 - Test1LTC - INFO - ----Line Items Done----
+2023-10-13 12:44:35 - Test1LTC - INFO - ----Line Items Done----
+2023-10-13 12:44:35 - Test1LTC - INFO - ----Line Items Done----
+2023-10-13 12:44:35 - Test1LTC - INFO - ----Line Items Done----
+2023-10-13 12:44:35 - Test1LTC - INFO - ----Line Items Done----
+2023-10-13 12:44:35 - Test1LTC - INFO - ----------------Test Case test_HTC1 End----------------
+2023-10-13 12:44:35 - Test1LTC - INFO - ----------------Test Case test_HTC1 End----------------
+2023-10-13 12:44:35 - Test1LTC - INFO - ----------------Test Case test_HTC1 End----------------
+2023-10-13 12:44:35 - Test1LTC - INFO - ----------------Test Case test_HTC1 End----------------
+2023-10-13 12:44:35 - Test1LTC - INFO - ----------------Test Case test_HTC1 End----------------
+2023-10-13 12:45:03 - TestEntryForm - INFO - ----------------Test Case test_saveformwithinvoiceNumber Starterd----------------
+2023-10-13 12:45:12 - TestEntryForm - INFO - ----Entered in Form 7501----
+2023-10-13 12:45:29 - TestEntryForm - INFO - Test Case 'save form with invoice Number' Passed
+2023-10-13 12:45:31 - TestEntryForm - INFO - ----------------Test Case test_saveformwithinvoiceNumber End----------------
+2023-10-13 12:46:01 - TestEntryForm - INFO - ----------------Test Case test_saveformwithoutinvoiceNumber Starterd----------------
+2023-10-13 12:46:13 - TestEntryForm - INFO - ----Entered in Form 7501----
+2023-10-13 12:46:23 - TestEntryForm - INFO - Test Case 'save form without invoice Number' Passed
+2023-10-13 12:46:24 - TestEntryForm - INFO - ----------------Test Case test_saveformwithoutinvoiceNumber End----------------
+2023-10-13 12:46:39 - TestEntryForm - INFO - ----------------Test Case test_saveformwithExistinginvoiceNumber Starterd----------------
+2023-10-13 12:46:48 - TestEntryForm - INFO - ----Entered in Form 7501----
+2023-10-13 12:46:53 - TestEntryForm - INFO - Test Case 'save form with Existing invoice Number' Passed
+2023-10-13 12:46:54 - TestEntryForm - INFO - ----------------Test Case test_saveformwithExistinginvoiceNumber End----------------
+2023-10-13 12:47:05 - TestEntryForm - INFO - ----------------Test Case test_saveformwithParts Starterd----------------
+2023-10-13 12:47:14 - TestEntryForm - INFO - ----Entered in Form 7501----
+2023-10-13 12:47:39 - TestEntryForm - INFO - Test Case 'save form with Parts' Failed
+2023-10-13 12:47:51 - TestTradingPartners - INFO - ----Test Case test_tradingPartners1 Started----
+2023-10-13 12:47:51 - TestTradingPartners - INFO - ----Login Done----
+2023-10-13 12:47:59 - TestTradingPartners - INFO - ----7501 Form Opened----
+2023-10-13 12:47:59 - TestTradingPartners - INFO - ----Trading Partners 1 Started----
+2023-10-13 12:48:23 - TestTradingPartners - INFO - ----Text verification done----
+2023-10-13 12:48:24 - TestTradingPartners - INFO - ----Test Case test_tradingPartners1 End----
+2023-10-13 12:49:11 - TestTradingPartners - INFO - ----Test Case test_tradingPartners2 Started----
+2023-10-13 12:49:12 - TestTradingPartners - INFO - ----Login Done----
+2023-10-13 12:49:20 - TestTradingPartners - INFO - ----7501 Form Opened----
+2023-10-13 12:49:20 - TestTradingPartners - INFO - ----Trading Partners 2 Started----
+2023-10-13 12:50:01 - TestTradingPartners - INFO - ----Text verification done----
+2023-10-13 12:50:02 - TestTradingPartners - INFO - ----Test Case test_tradingPartners2 End----
+2023-10-19 17:45:12 - TestEntryForm - INFO - ----------------Test Case test_saveformwithinvoiceNumber Starterd----------------
+2023-10-19 17:45:29 - TestEntryForm - INFO - ----------------Test Case test_saveformwithParts Starterd----------------
+2023-10-19 17:51:13 - TestEntryForm - INFO - ----------------Test Case test_saveformwithExistinginvoiceNumber Starterd----------------
+2023-10-19 17:51:18 - TestEntryForm - INFO - ----------------Test Case test_saveformwithoutinvoiceNumber Starterd----------------
+2023-10-19 17:51:21 - TestEntryForm - INFO - ----Entered in Form 7501----
+2023-10-19 17:51:26 - TestEntryForm - INFO - Test Case 'save form with Existing invoice Number' Passed
+2023-10-19 17:51:27 - TestEntryForm - INFO - ----Entered in Form 7501----
+2023-10-19 17:51:28 - TestEntryForm - INFO - ----------------Test Case test_saveformwithExistinginvoiceNumber End----------------
+2023-10-19 17:51:29 - TestEntryForm - INFO - ----------------Test Case test_saveformwithinvoiceNumber Starterd----------------
+2023-10-19 17:51:37 - TestEntryForm - INFO - Test Case 'save form without invoice Number' Passed
+2023-10-19 17:51:38 - TestEntryForm - INFO - ----Entered in Form 7501----
+2023-10-19 17:51:38 - TestEntryForm - INFO - ----------------Test Case test_saveformwithoutinvoiceNumber End----------------
+2023-10-19 17:51:52 - TestEntryForm - INFO - Test Case 'save form with invoice Number' Passed
+2023-10-19 17:51:53 - TestEntryForm - INFO - ----------------Test Case test_saveformwithinvoiceNumber End----------------
+2023-10-19 17:52:05 - TestEntryForm - INFO - ----------------Test Case test_saveformwithParts Starterd----------------
+2023-10-19 17:52:14 - TestEntryForm - INFO - ----Entered in Form 7501----
+2023-10-19 17:52:38 - TestEntryForm - INFO - Test Case 'save form with Parts' Failed
+2023-10-19 18:05:52 - TestEntryForm - INFO - ----------------Test Case test_saveformwithinvoiceNumber Starterd----------------
+2023-10-19 18:06:00 - TestEntryForm - INFO - ----Entered in Form 7501----
+2023-10-19 18:06:02 - TestEntryForm - INFO - ----------------Test Case test_saveformwithoutinvoiceNumber Starterd----------------
+2023-10-19 18:06:10 - TestEntryForm - INFO - ----Entered in Form 7501----
+2023-10-19 18:06:16 - TestEntryForm - INFO - ----------------Test Case test_saveformwithExistinginvoiceNumber Starterd----------------
+2023-10-19 18:06:20 - TestEntryForm - INFO - Test Case 'save form with invoice Number' Passed
+2023-10-19 18:06:23 - TestEntryForm - INFO - ----------------Test Case test_saveformwithinvoiceNumber End----------------
+2023-10-19 18:06:27 - TestEntryForm - INFO - Test Case 'save form without invoice Number' Passed
+2023-10-19 18:06:28 - TestEntryForm - INFO - ----Entered in Form 7501----
+2023-10-19 18:06:29 - TestEntryForm - INFO - ----------------Test Case test_saveformwithoutinvoiceNumber End----------------
+2023-10-19 18:06:33 - TestEntryForm - INFO - Test Case 'save form with Existing invoice Number' Passed
+2023-10-19 18:06:34 - TestEntryForm - INFO - ----------------Test Case test_saveformwithExistinginvoiceNumber End----------------
+2023-10-19 18:10:23 - TestEntryForm - INFO - ----------------Test Case test_saveformwithParts Starterd----------------
+2023-10-19 18:10:32 - TestEntryForm - INFO - ----Entered in Form 7501----
+2023-10-19 18:10:59 - TestEntryForm - INFO - Test Case 'save form with Parts' Failed

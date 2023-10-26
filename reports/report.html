@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>report.html</title>
+    <link href="assets/style.css" rel="stylesheet" type="text/css"/></head>
+  <body onLoad="init()">
+    <script>/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this file,
+ * You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+
+function toArray(iter) {
+    if (iter === null) {
+        return null;
+    }
+    return Array.prototype.slice.call(iter);
+}
+
+function find(selector, elem) { // eslint-disable-line no-redeclare
+    if (!elem) {
+        elem = document;
+    }
+    return elem.querySelector(selector);
+}
+
+function findAll(selector, elem) {
+    if (!elem) {
+        elem = document;
+    }
+    return toArray(elem.querySelectorAll(selector));
+}
+
+function sortColumn(elem) {
+    toggleSortStates(elem);
+    const colIndex = toArray(elem.parentNode.childNodes).indexOf(elem);
+    let key;
+    if (elem.classList.contains('result')) {
+        key = keyResult;
+    } else if (elem.classList.contains('links')) {
+        key = keyLink;
+    } else {
+        key = keyAlpha;
+    }
+    sortTable(elem, key(colIndex));
+}
+
+function showAllExtras() { // eslint-disable-line no-unused-vars
+    findAll('.col-result').forEach(showExtras);
+}
+
+function hideAllExtras() { // eslint-disable-line no-unused-vars
+    findAll('.col-result').forEach(hideExtras);
+}
+
+function showExtras(colresultElem) {
+    const extras = colresultElem.parentNode.nextElementSibling;
+    const expandcollapse = colresultElem.firstElementChild;
+    extras.classList.remove('collapsed');
+    expandcollapse.classList.remove('expander');
+    expandcollapse.classList.add('collapser');
+}
+
+function hideExtras(colresultElem) {
+    const extras = colresultElem.parentNode.nextElementSibling;
+    const expandcollapse = colresultElem.firstElementChild;
+    extras.classList.add('collapsed');
+    expandcollapse.classList.remove('collapser');
+    expandcollapse.classList.add('expander');
+}
+
+function showFilters() {
+    let visibleString = getQueryParameter('visible') || 'all';
+    visibleString = visibleString.toLowerCase();
+    const checkedItems = visibleString.split(',');
+
+    const filterItems = document.getElementsByClassName('filter');
+    for (let i = 0; i < filterItems.length; i++) {
+        filterItems[i].hidden = false;
+
+        if (visibleString != 'all') {
+            filterItems[i].checked = checkedItems.includes(filterItems[i].getAttribute('data-test-result'));
+            filterTable(filterItems[i]);
+        }
+    }
+}
+
+function addCollapse() {
+    // Add links for show/hide all
+    const resulttable = find('table#results-table');
+    const showhideall = document.createElement('p');
+    showhideall.innerHTML = '<a href="javascript:showAllExtras()">Show all details</a> / ' +
+                            '<a href="javascript:hideAllExtras()">Hide all details</a>';
+    resulttable.parentElement.insertBefore(showhideall, resulttable);
+
+    // Add show/hide link to each result
+    findAll('.col-result').forEach(function(elem) {
+        const collapsed = getQueryParameter('collapsed') || 'Passed';
+        const extras = elem.parentNode.nextElementSibling;
+        const expandcollapse = document.createElement('span');
+        if (extras.classList.contains('collapsed')) {
+            expandcollapse.classList.add('expander');
+        } else if (collapsed.includes(elem.innerHTML)) {
+            extras.classList.add('collapsed');
+            expandcollapse.classList.add('expander');
+        } else {
+            expandcollapse.classList.add('collapser');
+        }
+        elem.appendChild(expandcollapse);
+
+        elem.addEventListener('click', function(event) {
+            if (event.currentTarget.parentNode.nextElementSibling.classList.contains('collapsed')) {
+                showExtras(event.currentTarget);
+            } else {
+                hideExtras(event.currentTarget);
+            }
+        });
+    });
+}
+
+function getQueryParameter(name) {
+    const match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
+    return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+}
+
+function init () { // eslint-disable-line no-unused-vars
+    resetSortHeaders();
+
+    addCollapse();
+
+    showFilters();
+
+    sortColumn(find('.initial-sort'));
+
+    findAll('.sortable').forEach(function(elem) {
+        elem.addEventListener('click',
+            function() {
+                sortColumn(elem);
+            }, false);
+    });
+}
+
+function sortTable(clicked, keyFunc) {
+    const rows = findAll('.results-table-row');
+    const reversed = !clicked.classList.contains('asc');
+    const sortedRows = sort(rows, keyFunc, reversed);
+    /* Whole table is removed here because browsers acts much slower
+     * when appending existing elements.
+     */
+    const thead = document.getElementById('results-table-head');
+    document.getElementById('results-table').remove();
+    const parent = document.createElement('table');
+    parent.id = 'results-table';
+    parent.appendChild(thead);
+    sortedRows.forEach(function(elem) {
+        parent.appendChild(elem);
+    });
+    document.getElementsByTagName('BODY')[0].appendChild(parent);
+}
+
+function sort(items, keyFunc, reversed) {
+    const sortArray = items.map(function(item, i) {
+        return [keyFunc(item), i];
+    });
+
+    sortArray.sort(function(a, b) {
+        const keyA = a[0];
+        const keyB = b[0];
+
+        if (keyA == keyB) return 0;
+
+        if (reversed) {
+            return keyA < keyB ? 1 : -1;
+        } else {
+            return keyA > keyB ? 1 : -1;
+        }
+    });
+
+    return sortArray.map(function(item) {
+        const index = item[1];
+        return items[index];
+    });
+}
+
+function keyAlpha(colIndex) {
+    return function(elem) {
+        return elem.childNodes[1].childNodes[colIndex].firstChild.data.toLowerCase();
+    };
+}
+
+function keyLink(colIndex) {
+    return function(elem) {
+        const dataCell = elem.childNodes[1].childNodes[colIndex].firstChild;
+        return dataCell == null ? '' : dataCell.innerText.toLowerCase();
+    };
+}
+
+function keyResult(colIndex) {
+    return function(elem) {
+        const strings = ['Error', 'Failed', 'Rerun', 'XFailed', 'XPassed',
+            'Skipped', 'Passed'];
+        return strings.indexOf(elem.childNodes[1].childNodes[colIndex].firstChild.data);
+    };
+}
+
+function resetSortHeaders() {
+    findAll('.sort-icon').forEach(function(elem) {
+        elem.parentNode.removeChild(elem);
+    });
+    findAll('.sortable').forEach(function(elem) {
+        const icon = document.createElement('div');
+        icon.className = 'sort-icon';
+        icon.textContent = 'vvv';
+        elem.insertBefore(icon, elem.firstChild);
+        elem.classList.remove('desc', 'active');
+        elem.classList.add('asc', 'inactive');
+    });
+}
+
+function toggleSortStates(elem) {
+    //if active, toggle between asc and desc
+    if (elem.classList.contains('active')) {
+        elem.classList.toggle('asc');
+        elem.classList.toggle('desc');
+    }
+
+    //if inactive, reset all other functions and add ascending active
+    if (elem.classList.contains('inactive')) {
+        resetSortHeaders();
+        elem.classList.remove('inactive');
+        elem.classList.add('active');
+    }
+}
+
+function isAllRowsHidden(value) {
+    return value.hidden == false;
+}
+
+function filterTable(elem) { // eslint-disable-line no-unused-vars
+    const outcomeAtt = 'data-test-result';
+    const outcome = elem.getAttribute(outcomeAtt);
+    const classOutcome = outcome + ' results-table-row';
+    const outcomeRows = document.getElementsByClassName(classOutcome);
+
+    for(let i = 0; i < outcomeRows.length; i++){
+        outcomeRows[i].hidden = !elem.checked;
+    }
+
+    const rows = findAll('.results-table-row').filter(isAllRowsHidden);
+    const allRowsHidden = rows.length == 0 ? true : false;
+    const notFoundMessage = document.getElementById('not-found-message');
+    notFoundMessage.hidden = !allRowsHidden;
+}
+</script>
+    <h1>report.html</h1>
+    <p>Report generated on 13-Oct-2023 at 12:50:02 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
+    <h2>Summary</h2>
+    <p>17 tests ran in 1313.16 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">15 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">2 failed</span>, <input checked="true" class="filter" data-test-result="error" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">1 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <h2>Results</h2>
+    <table id="results-table">
+      <thead id="results-table-head">
+        <tr>
+          <th class="sortable result initial-sort" col="result">Result</th>
+          <th class="sortable" col="name">Test</th>
+          <th class="sortable" col="duration">Duration</th>
+          <th class="sortable links" col="links">Links</th></tr>
+        <tr hidden="true" id="not-found-message">
+          <th colspan="4">No results found. Try to check the filters</th></tr></thead>
+      <tbody class="error results-table-row">
+        <tr>
+          <td class="col-result">Error</td>
+          <td class="col-name">testcases/test_query.py::TestQuery::test_Query::setup</td>
+          <td class="col-duration">13.32</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">request = &lt;SubRequest &#x27;setup&#x27; for &lt;Function test_Query&gt;&gt;, browser = &#x27;chrome&#x27;<br/><br/>    @pytest.fixture(autouse=True)#scope=&quot;class&quot;<br/>    def setup(request, browser):#browser #request<br/>        # If I want to run in Chrome<br/>        if browser==&#x27;chrome&#x27;:<br/>            options = webdriver.ChromeOptions()<br/>            options.add_experimental_option(&quot;detach&quot;, True)<br/>            serv_obj = Service(&quot;C:/Drivers/chromedriver-win64/chromedriver.exe&quot;)<br/>            driver = webdriver.Chrome(options=options, service=serv_obj)<br/>            print(&quot;Launching chrome browser.........&quot;)<br/>            mywait = WebDriverWait(driver, 10, poll_frequency=2, ignored_exceptions=[NoSuchElementException,<br/>                                                                                     ElementNotVisibleException,<br/>                                                                                     ElementNotSelectableException,<br/>                                                                                     ElementClickInterceptedException,<br/>                                                                                     ElementNotInteractableException,<br/>                                                                                     Exception])<br/>        # If I want to run in Firefox<br/>    <br/>        elif browser == &#x27;firefox&#x27;:<br/>            # Firefox setup<br/>            firefox_options = Options()<br/>            firefox_options.log.level = &quot;trace&quot;  # Set log level to trace<br/>            driver = webdriver.Firefox(options=firefox_options)<br/>            print(&quot;Launching firefox browser.........&quot;)<br/>            mywait = WebDriverWait(driver, 10, poll_frequency=2, ignored_exceptions=[NoSuchElementException,<br/>                                                                                     ElementNotVisibleException,<br/>                                                                                     ElementNotSelectableException,<br/>                                                                                     ElementClickInterceptedException,<br/>                                                                                     ElementNotInteractableException,<br/>                                                                                     Exception])<br/>        # If I don&#x27;t want to run in above then I am setting the deafult browser as Chrome<br/>        else:<br/>            # Internet Explorer<br/>            # driver = webdriver.Ie()<br/>            # Chrome<br/>            options = webdriver.ChromeOptions()<br/>            options.add_experimental_option(&quot;detach&quot;, True)<br/>            serv_obj = Service(&quot;C:/Drivers/chromedriver-win64/chromedriver.exe&quot;)<br/>            driver = webdriver.Chrome(options=options, service=serv_obj)<br/>    <br/>            mywait = WebDriverWait(driver, 10, poll_frequency=2, ignored_exceptions=[NoSuchElementException,<br/>                                                                                     ElementNotVisibleException,<br/>                                                                                     ElementNotSelectableException,<br/>                                                                                     ElementClickInterceptedException,<br/>                                                                                     ElementNotInteractableException,<br/>                                                                                     Exception])<br/>    <br/>        # return driver<br/>        # URL<br/>        driver.get(&quot;http://52.54.244.138:8080/ArtemusChb/&quot;)<br/>    <br/>        # Maximize page<br/>&gt;       driver.maximize_window()<br/><br/>testcases\conftest.py:318: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/>venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py:497: in maximize_window<br/>    self.execute(command, None)<br/>venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py:345: in execute<br/>    self.error_handler.check_response(response)<br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/><br/>self = &lt;selenium.webdriver.remote.errorhandler.ErrorHandler object at 0x0000018C68E8AD50&gt;<br/>response = {&#x27;status&#x27;: 404, &#x27;value&#x27;: &#x27;{&quot;value&quot;:{&quot;error&quot;:&quot;no such window&quot;,&quot;message&quot;:&quot;no such window: target window already closed\\...07FF783BBE113]\\n\\tBaseThreadInitThunk [0x00007FFC7357257D+29]\\n\\tRtlUserThreadStart [0x00007FFC7486AA78+40]\\n&quot;}}&#x27;}<br/><br/>    def check_response(self, response: Dict[str, Any]) -&gt; None:<br/>        &quot;&quot;&quot;Checks that a JSON response from the WebDriver does not have an<br/>        error.<br/>    <br/>        :Args:<br/>         - response - The JSON response from the WebDriver server as a dictionary<br/>           object.<br/>    <br/>        :Raises: If the response contains an error message.<br/>        &quot;&quot;&quot;<br/>        status = response.get(&quot;status&quot;, None)<br/>        if not status or status == ErrorCode.SUCCESS:<br/>            return<br/>        value = None<br/>        message = response.get(&quot;message&quot;, &quot;&quot;)<br/>        screen: str = response.get(&quot;screen&quot;, &quot;&quot;)<br/>        stacktrace = None<br/>        if isinstance(status, int):<br/>            value_json = response.get(&quot;value&quot;, None)<br/>            if value_json and isinstance(value_json, str):<br/>                import json<br/>    <br/>                try:<br/>                    value = json.loads(value_json)<br/>                    if len(value) == 1:<br/>                        value = value[&quot;value&quot;]<br/>                    status = value.get(&quot;error&quot;, None)<br/>                    if not status:<br/>                        status = value.get(&quot;status&quot;, ErrorCode.UNKNOWN_ERROR)<br/>                        message = value.get(&quot;value&quot;) or value.get(&quot;message&quot;)<br/>                        if not isinstance(message, str):<br/>                            value = message<br/>                            message = message.get(&quot;message&quot;)<br/>                    else:<br/>                        message = value.get(&quot;message&quot;, None)<br/>                except ValueError:<br/>                    pass<br/>    <br/>        exception_class: Type[WebDriverException]<br/>        e = ErrorCode()<br/>        error_codes = [item for item in dir(e) if not item.startswith(&quot;__&quot;)]<br/>        for error_code in error_codes:<br/>            error_info = getattr(ErrorCode, error_code)<br/>            if isinstance(error_info, list) and status in error_info:<br/>                exception_class = getattr(ExceptionMapping, error_code, WebDriverException)<br/>                break<br/>        else:<br/>            exception_class = WebDriverException<br/>    <br/>        if not value:<br/>            value = response[&quot;value&quot;]<br/>        if isinstance(value, str):<br/>            raise exception_class(value)<br/>        if message == &quot;&quot; and &quot;message&quot; in value:<br/>            message = value[&quot;message&quot;]<br/>    <br/>        screen = None  # type: ignore[assignment]<br/>        if &quot;screen&quot; in value:<br/>            screen = value[&quot;screen&quot;]<br/>    <br/>        stacktrace = None<br/>        st_value = value.get(&quot;stackTrace&quot;) or value.get(&quot;stacktrace&quot;)<br/>        if st_value:<br/>            if isinstance(st_value, str):<br/>                stacktrace = st_value.split(&quot;\n&quot;)<br/>            else:<br/>                stacktrace = []<br/>                try:<br/>                    for frame in st_value:<br/>                        line = frame.get(&quot;lineNumber&quot;, &quot;&quot;)<br/>                        file = frame.get(&quot;fileName&quot;, &quot;&lt;anonymous&gt;&quot;)<br/>                        if line:<br/>                            file = f&quot;{file}:{line}&quot;<br/>                        meth = frame.get(&quot;methodName&quot;, &quot;&lt;anonymous&gt;&quot;)<br/>                        if &quot;className&quot; in frame:<br/>                            meth = f&quot;{frame[&#x27;className&#x27;]}.{meth}&quot;<br/>                        msg = &quot;    at %s (%s)&quot;<br/>                        msg = msg % (meth, file)<br/>                        stacktrace.append(msg)<br/>                except TypeError:<br/>                    pass<br/>        if exception_class == UnexpectedAlertPresentException:<br/>            alert_text = None<br/>            if &quot;data&quot; in value:<br/>                alert_text = value[&quot;data&quot;].get(&quot;text&quot;)<br/>            elif &quot;alert&quot; in value:<br/>                alert_text = value[&quot;alert&quot;].get(&quot;text&quot;)<br/>            raise exception_class(message, screen, stacktrace, alert_text)  # type: ignore[call-arg]  # mypy is not smart enough here<br/>&gt;       raise exception_class(message, screen, stacktrace)<br/><span class="error">E       selenium.common.exceptions.NoSuchWindowException: Message: no such window: target window already closed</span><br/><span class="error">E       from unknown error: web view not found</span><br/><span class="error">E         (Session info: chrome=117.0.5938.152)</span><br/><span class="error">E       Stacktrace:</span><br/><span class="error">E       	GetHandleVerifier [0x00007FF783C57892+54818]</span><br/><span class="error">E       	(No symbol) [0x00007FF783BC6AC2]</span><br/><span class="error">E       	(No symbol) [0x00007FF783A7DA3B]</span><br/><span class="error">E       	(No symbol) [0x00007FF783A5DEE8]</span><br/><span class="error">E       	(No symbol) [0x00007FF783AE3237]</span><br/><span class="error">E       	(No symbol) [0x00007FF783AF6C6F]</span><br/><span class="error">E       	(No symbol) [0x00007FF783ADE883]</span><br/><span class="error">E       	(No symbol) [0x00007FF783AB3691]</span><br/><span class="error">E       	(No symbol) [0x00007FF783AB48D4]</span><br/><span class="error">E       	GetHandleVerifier [0x00007FF783FBB992+3610402]</span><br/><span class="error">E       	GetHandleVerifier [0x00007FF784011860+3962352]</span><br/><span class="error">E       	GetHandleVerifier [0x00007FF784009D4F+3930847]</span><br/><span class="error">E       	GetHandleVerifier [0x00007FF783CF3646+693206]</span><br/><span class="error">E       	(No symbol) [0x00007FF783BD1628]</span><br/><span class="error">E       	(No symbol) [0x00007FF783BCD934]</span><br/><span class="error">E       	(No symbol) [0x00007FF783BCDA62]</span><br/><span class="error">E       	(No symbol) [0x00007FF783BBE113]</span><br/><span class="error">E       	BaseThreadInitThunk [0x00007FFC7357257D+29]</span><br/><span class="error">E       	RtlUserThreadStart [0x00007FFC7486AA78+40]</span><br/><br/>venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py:229: NoSuchWindowException<br/> -----------------------------Captured stdout setup------------------------------ <br/>Launching chrome browser.........
+<br/></div></td></tr></tbody>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td class="col-name">testcases/test_TC4.py::Test1LTC::test_HTC4</td>
+          <td class="col-duration">103.45</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">self = &lt;testcases.test_TC4.Test1LTC object at 0x0000018C6880C050&gt;<br/><br/>    def test_HTC4(self): # Country of origin india/No Duty HTS(NDC)<br/>        self.log.info(&quot;----------------Test Case test_HTC4 Starterd----------------&quot;)<br/>    <br/>        for r in range(3, 4):<br/>            self.addBillbutton = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 2)<br/>            self.lineitmscount = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 3)<br/>    <br/>            self.usernameData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 5)<br/>            self.passwordData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 6)<br/>    <br/>            # upper part<br/>            self.entfilltypeData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 7)<br/>            self.actionCData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 8)<br/>            self.trnpmodeData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 9)<br/>    <br/>            # Bill<br/>            self.scacData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 11)<br/>            # billofladdingNo = utills.readData(file, &quot;Sheet1&quot;, r, 12).split(&quot;,&quot;)<br/>            self.uomData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 13)#.split(&quot;,&quot;)<br/>            self.qtyyData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 14)#.split(&quot;,&quot;)<br/>    <br/>            # Vessel Inforrmation<br/>            self.vesselsnameData = utills.readData(self.file, &quot;TcHybridArtemusData&quot;, r, 15)<br/>            self.vessellsnoData = utills.readData(self.file, &quot;TcHybridArtemusData&quot;, r, 16)<br/>            self.containerscount = utills.readData(self.file, &quot;TcHybridArtemusData&quot;, r, 4)<br/>            self.containerlistData = utills.readData(self.file, &quot;TcHybridArtemusData&quot;, r, 17)<br/>    <br/>            # Trading Partners 1<br/>            self.manufacturerData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 18)<br/>            self.sellerData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 19)<br/>            self.consigneeData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 20)<br/>            self.buyerData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 21)<br/>    <br/>            # Trading Partners 2<br/>            self.countryOfOrigin1Data = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 22)<br/>            self.release_portData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 23)<br/>            self.countryOfExport1Data = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 24)<br/>            self.ladingportData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 25)<br/>            self.grossWeightData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 26)<br/>            self.chargedata = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 27)<br/>            self.unladingportData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 28)<br/>            self.manifestDescriptionData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 29)<br/>            self.arrivaldateData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 30)<br/>            self.exportdateData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 31)<br/>            self.currencyData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 112)<br/>    <br/>            # Line Items<br/>            self.invoiceTotalData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 32)<br/>            self.tariffnoData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 33)#.split(&quot;,&quot;)<br/>            self.htsqty1Data = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 34)<br/>            self.htsqty2Data = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 35)<br/>            self.addcaseNumberData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 111)<br/>            self.cvdcaseNumberData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 110)<br/>            self.linevalueData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 36)#.split(&quot;,&quot;)<br/>            self.countryOfOrigin2Data = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 37)#.split(&quot;,&quot;)<br/>            self.countryOfExport2Data = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 38)#.split(&quot;,&quot;)<br/>    <br/>            # Login<br/>            self.lp.userName(self.usernameData)<br/>            self.lp.password(self.passwordData)<br/>            self.lp.login()<br/>            self.log.info(&quot;----Login Done----&quot;)<br/>            time.sleep(3)<br/>    <br/>            # Go to 7501 Page<br/>            # self.esf = EntryFormPage(self.driver, self.mywait)<br/>            self.esf.shipment()<br/>            self.esf.form7501()<br/>            self.log.info(&quot;----Form 7501 Opened----&quot;)<br/>    <br/>            # Upper Part<br/>            self.log.info(&quot;----Upper Part Started----&quot;)<br/>            self.esf.invoicenumber(self.randomInvoice)<br/>            self.esf.entryFillingTypecode(self.entfilltypeData)<br/>            self.esf.actionCode(self.actionCData)<br/>            self.esf.modeOfTransport(self.trnpmodeData)<br/>            self.log.info(&quot;----Upper Part Done----&quot;)<br/>    <br/>            # Bill of Lading<br/>            self.log.info(&quot;----Bill Of Lading Started----&quot;)<br/>            self.esf.scaccode(self.scacData)<br/>            self.esf.bill(self.randomBill)<br/>            self.esf.uom(self.uomData)<br/>            self.esf.quantity(self.qtyyData)<br/>            self.log.info(&quot;----Bill Of Lading Done----&quot;)<br/>    <br/>            # Vessel Inforrmation<br/>            self.log.info(&quot;----Vessel Information Started----&quot;)<br/>            self.esf.vesselName(self.vesselsnameData)<br/>            self.esf.vesselFlightNo(self.vessellsnoData)<br/>            self.esf.addEditContiner()<br/>            self.esf.containers(self.containerlistData)<br/>            self.esf.saveContainer()<br/>    <br/>            # Trading Partners 1<br/>            self.log.info(&quot;----Trading Partners 1 Started----&quot;)<br/>            self.esf.manufarture(self.manufacturerData)<br/>            self.esf.seller(self.sellerData)<br/>            self.esf.consignee(self.buyerData)<br/>            self.esf.buyer(self.buyerData)<br/>            self.log.info(&quot;----Trading Partners 1 Done----&quot;)<br/>    <br/>            # Trading Partners 2<br/>    <br/>            self.log.info(&quot;----Trading Partners 2 Started----&quot;)<br/>&gt;           self.esf.selectCurrency(self.currencyData)<br/><br/>testcases\test_TC4.py:138: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/>pages\entryformPage.py:237: in selectCurrency<br/>    selectCurrencyTxt.send_keys(currencyData)<br/>venv\Lib\site-packages\selenium\webdriver\remote\webelement.py:232: in send_keys<br/>    Command.SEND_KEYS_TO_ELEMENT, {&quot;text&quot;: &quot;&quot;.join(keys_to_typing(value)), &quot;value&quot;: keys_to_typing(value)}<br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/><br/>value = (None,)<br/><br/>    def keys_to_typing(value: Iterable[AnyKey]) -&gt; List[str]:<br/>        &quot;&quot;&quot;Processes the values that will be typed in the element.&quot;&quot;&quot;<br/>        characters: List[str] = []<br/>        for val in value:<br/>            if isinstance(val, Keys):<br/>                # Todo: Does this even work?<br/>                characters.append(val)<br/>            elif isinstance(val, (int, float)):<br/>                characters.extend(str(val))<br/>            else:<br/>&gt;               characters.extend(val)<br/><span class="error">E               TypeError: &#x27;NoneType&#x27; object is not iterable</span><br/><br/>venv\Lib\site-packages\selenium\webdriver\common\utils.py:138: TypeError<br/> -----------------------------Captured stdout setup------------------------------ <br/>Launching chrome browser.........
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     Test1LTC:test_TC4.py:34 ----------------Test Case test_HTC4 Starterd----------------
+INFO     Test1LTC:test_TC4.py:94 ----Login Done----
+INFO     Test1LTC:test_TC4.py:101 ----Form 7501 Opened----
+INFO     Test1LTC:test_TC4.py:104 ----Upper Part Started----
+INFO     Test1LTC:test_TC4.py:109 ----Upper Part Done----
+INFO     Test1LTC:test_TC4.py:112 ----Bill Of Lading Started----
+INFO     Test1LTC:test_TC4.py:117 ----Bill Of Lading Done----
+INFO     Test1LTC:test_TC4.py:120 ----Vessel Information Started----
+INFO     Test1LTC:test_TC4.py:128 ----Trading Partners 1 Started----
+INFO     Test1LTC:test_TC4.py:133 ----Trading Partners 1 Done----
+INFO     Test1LTC:test_TC4.py:137 ----Trading Partners 2 Started----<br/></div></td></tr></tbody>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td class="col-name">testcases/test_smokTestCases.py::TestEntryForm::test_saveformwithParts</td>
+          <td class="col-duration">45.70</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">self = &lt;testcases.test_smokTestCases.TestEntryForm object at 0x0000018C68E446D0&gt;<br/><br/>    def test_saveformwithParts(self):<br/>        self.log.info(&quot;----------------Test Case test_saveformwithParts Starterd----------------&quot;)<br/>    <br/>        for r in range(3, 4):<br/>            self.usernameData = utills.readData(self.file, &#x27;Sheet1&#x27;, r, 5)<br/>            self.passwordData = utills.readData(self.file, &#x27;Sheet1&#x27;, r, 6)<br/>    <br/>            # Login<br/>            self.lp.userName(self.usernameData)<br/>            self.lp.password(self.passwordData)<br/>            self.lp.login()<br/>            time.sleep(4)<br/>    <br/>            # Go to 7501 Page<br/>            self.esf = EntryFormPage(self.driver, self.mywait)<br/>            self.esf.shipment()<br/>            self.esf.form7501()<br/>            self.log.info(&quot;----Entered in Form 7501----&quot;)<br/>    <br/>            # Add Invoice Number<br/>            self.esf.invoicenumber(self.random)<br/>    <br/>            # Add Line Items<br/>            self.esf.part(&quot;ABSmkPart&quot;)<br/>            self.esf.entererror()<br/>    <br/>            # Save the form<br/>            self.esf.saveform()<br/>    <br/>            # Verify that form should be saved<br/>            self.msg = self.driver.find_element(By.TAG_NAME, &quot;body&quot;).text<br/>    <br/>            if &#x27;Form saved succesfully!&#x27; in self.msg:<br/>                assert True<br/>                self.esf.formSavedConfirmationMsg()<br/>                self.log.info(&quot;Test Case &#x27;save form with Parts&#x27; Passed&quot;)<br/>                self.lp.logout()<br/>            else:<br/>                self.driver.save_screenshot(&quot;.\\screenshots\\&quot; + &quot;test_saveformwithParts_scr.png&quot;)  # Screenshot<br/>                self.esf.formSavedConfirmationMsg()<br/>                self.log.info(&quot;Test Case &#x27;save form with Parts&#x27; Failed&quot;)<br/>                self.lp.logout()<br/>&gt;               assert False<br/><span class="error">E               assert False</span><br/><br/>testcases\test_smokTestCases.py:185: AssertionError<br/> -----------------------------Captured stdout setup------------------------------ <br/>Launching chrome browser.........
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     TestEntryForm:test_smokTestCases.py:144 ----------------Test Case test_saveformwithParts Starterd----------------
+INFO     TestEntryForm:test_smokTestCases.py:160 ----Entered in Form 7501----
+INFO     TestEntryForm:test_smokTestCases.py:183 Test Case &#x27;save form with Parts&#x27; Failed<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testcases/test_1LineItems.py::TestEntryForm1LineItem::test_HTC1</td>
+          <td class="col-duration">139.14</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>Launching chrome browser.........
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     TestEntryForm1LineItem:test_1LineItems.py:34 ----------------Test Case test_HTC1 Starterd----------------
+INFO     TestEntryForm1LineItem:test_1LineItems.py:88 ----Login Done----
+INFO     TestEntryForm1LineItem:test_1LineItems.py:95 ----Form 7501 Opened----
+INFO     TestEntryForm1LineItem:test_1LineItems.py:98 ----Upper Part Started----
+INFO     TestEntryForm1LineItem:test_1LineItems.py:103 ----Upper Part Done----
+INFO     TestEntryForm1LineItem:test_1LineItems.py:106 ----Bill Of Lading Started----
+INFO     TestEntryForm1LineItem:test_1LineItems.py:113 ----Bill Of Lading Done----
+INFO     TestEntryForm1LineItem:test_1LineItems.py:116 ----Trading Partners 1 Started----
+INFO     TestEntryForm1LineItem:test_1LineItems.py:125 ----Trading Partners 1 Done----
+INFO     TestEntryForm1LineItem:test_1LineItems.py:129 ----Trading Partners 2 Started----
+INFO     TestEntryForm1LineItem:test_1LineItems.py:144 ----Trading Partners 2 Done----
+INFO     TestEntryForm1LineItem:test_1LineItems.py:147 ----Line Items Started----
+INFO     TestEntryForm1LineItem:test_1LineItems.py:153 ----Line Items Done----
+INFO     TestEntryForm1LineItem:test_1LineItems.py:164 ----Form Saved Successfully----
+INFO     TestEntryForm1LineItem:test_1LineItems.py:173 ----------------Test Case test_HTC1 End----------------<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testcases/test_BillOfLading.py::TestBillOfLading::test_BillOfLading</td>
+          <td class="col-duration">39.94</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>Launching chrome browser.........
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     TestBillOfLading:test_BillOfLading.py:21 ----Test Case test_BillOfLading Started----
+INFO     TestBillOfLading:test_BillOfLading.py:28 ----Login Done----
+INFO     TestBillOfLading:test_BillOfLading.py:35 ----7501 Form Opened----
+INFO     TestBillOfLading:test_BillOfLading.py:38 ----Bill Of lading Started----
+INFO     TestBillOfLading:test_BillOfLading.py:57 ----Text verification done----
+INFO     TestBillOfLading:test_BillOfLading.py:64 ----Test Case test_BillOfLading End----<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testcases/test_Login.py::TestLogin::test_loginBy1stOneCredentials</td>
+          <td class="col-duration">45.77</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>Launching chrome browser.........
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     TestLogin:test_Login.py:27 Name shown in Homepage
+INFO     TestLogin:test_Login.py:32 Test Case Pass<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testcases/test_Login.py::TestLogin::test_loginBy2ndOneCredentials</td>
+          <td class="col-duration">22.57</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>Launching chrome browser.........
+<br/> ------------------------------Captured stdout call------------------------------ <br/>Welcome, artemus  
+Test Case Pass
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     TestLogin:test_Login.py:50 Name shown in Homepage2
+INFO     TestLogin:test_Login.py:56 Test Case 2 Pass<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testcases/test_LoginDDT.py::TestLogin::test_loginBy1stOneCredentials</td>
+          <td class="col-duration">52.91</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>Launching chrome browser.........
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     TestLogin:test_LoginDDT.py:120 Name shown in Homepage
+INFO     TestLogin:test_LoginDDT.py:125 Test Case Pass<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testcases/test_LoginDDT.py::TestLogin::test_loginBy2ndOneCredentials</td>
+          <td class="col-duration">16.13</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>Launching chrome browser.........
+<br/> ------------------------------Captured stdout call------------------------------ <br/>Welcome, artemus  
+Test Case Pass
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     TestLogin:test_LoginDDT.py:142 Name shown in Homepage2
+INFO     TestLogin:test_LoginDDT.py:148 Test Case 2 Pass<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testcases/test_TC1.py::Test1LTC::test_HTC1</td>
+          <td class="col-duration">120.27</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>Launching chrome browser.........
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     Test1LTC:test_TC1.py:36 ----------------Test Case test_HTC1 Starterd----------------
+INFO     Test1LTC:test_TC1.py:96 ----Login Done----
+INFO     Test1LTC:test_TC1.py:103 ----Form 7501 Opened----
+INFO     Test1LTC:test_TC1.py:106 ----Upper Part Started----
+INFO     Test1LTC:test_TC1.py:111 ----Upper Part Done----
+INFO     Test1LTC:test_TC1.py:114 ----Bill Of Lading Started----
+INFO     Test1LTC:test_TC1.py:119 ----Bill Of Lading Done----
+INFO     Test1LTC:test_TC1.py:123 ----Vessel Information Started----
+INFO     Test1LTC:test_TC1.py:129 ----Vessel Information Done----
+INFO     Test1LTC:test_TC1.py:132 ----Trading Partners 1 Started----
+INFO     Test1LTC:test_TC1.py:137 ----Trading Partners 1 Done----
+INFO     Test1LTC:test_TC1.py:141 ----Trading Partners 2 Started----
+INFO     Test1LTC:test_TC1.py:152 ----Trading Partners 2 Done----
+INFO     Test1LTC:test_TC1.py:155 ----Line Items Started----
+INFO     Test1LTC:test_TC1.py:161 ----Line Items Done----
+INFO     Test1LTC:test_TC1.py:172 ----Form Saved Successfully----
+INFO     Test1LTC:test_TC1.py:181 ----------------Test Case test_HTC1 End----------------<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testcases/test_TC2.py::Test1LTC::test_HTC2</td>
+          <td class="col-duration">166.75</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>Launching chrome browser.........
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     Test1LTC:test_TC2.py:34 ----------------Test Case test_HTC2 Starterd----------------
+INFO     Test1LTC:test_TC2.py:94 ----Login Done----
+INFO     Test1LTC:test_TC2.py:101 ----Form 7501 Opened----
+INFO     Test1LTC:test_TC2.py:104 ----Upper Part Started----
+INFO     Test1LTC:test_TC2.py:109 ----Upper Part Done----
+INFO     Test1LTC:test_TC2.py:112 ----Bill Of Lading Started----
+INFO     Test1LTC:test_TC2.py:117 ----Bill Of Lading Done----
+INFO     Test1LTC:test_TC2.py:120 ----Vessel Information Started----
+INFO     Test1LTC:test_TC2.py:128 ----Trading Partners 1 Started----
+INFO     Test1LTC:test_TC2.py:133 ----Trading Partners 1 Done----
+INFO     Test1LTC:test_TC2.py:137 ----Trading Partners 2 Started----
+INFO     Test1LTC:test_TC2.py:148 ----Trading Partners 2 Done----
+INFO     Test1LTC:test_TC2.py:151 ----Line Items Started----
+INFO     Test1LTC:test_TC2.py:157 ----Line Items Done----
+INFO     Test1LTC:test_TC2.py:168 ----Form Saved Successfully----
+INFO     Test1LTC:test_TC2.py:177 ----------------Test Case test_HTC2 End----------------<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testcases/test_TC3.py::Test1LTC::test_HTC3</td>
+          <td class="col-duration">104.50</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>Launching chrome browser.........
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     Test1LTC:test_TC3.py:34 ----------------Test Case test_HTC3 Starterd----------------
+INFO     Test1LTC:test_TC3.py:94 ----Login Done----
+INFO     Test1LTC:test_TC3.py:101 ----Form 7501 Opened----
+INFO     Test1LTC:test_TC3.py:104 ----Upper Part Started----
+INFO     Test1LTC:test_TC3.py:109 ----Upper Part Done----
+INFO     Test1LTC:test_TC3.py:112 ----Bill Of Lading Started----
+INFO     Test1LTC:test_TC3.py:117 ----Bill Of Lading Done----
+INFO     Test1LTC:test_TC3.py:120 ----Vessel Information Started----
+INFO     Test1LTC:test_TC3.py:128 ----Trading Partners 1 Started----
+INFO     Test1LTC:test_TC3.py:133 ----Trading Partners 1 Done----
+INFO     Test1LTC:test_TC3.py:137 ----Trading Partners 2 Started----
+INFO     Test1LTC:test_TC3.py:148 ----Trading Partners 2 Done----
+INFO     Test1LTC:test_TC3.py:151 ----Line Items Started----
+INFO     Test1LTC:test_TC3.py:158 ----Line Items Done----
+INFO     Test1LTC:test_TC3.py:169 ----Form Saved Successfully----
+INFO     Test1LTC:test_TC3.py:178 ----------------Test Case test_HTC3 End----------------<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testcases/test_demo.py::Test1LTC::test_HTC4</td>
+          <td class="col-duration">171.61</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>Launching chrome browser.........
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     Test1LTC:test_demo.py:34 ----------------Test Case test_HTC1 Starterd----------------
+INFO     Test1LTC:test_demo.py:94 ----Login Done----
+INFO     Test1LTC:test_demo.py:101 ----Form 7501 Opened----
+INFO     Test1LTC:test_demo.py:104 ----Upper Part Started----
+INFO     Test1LTC:test_demo.py:109 ----Upper Part Done----
+INFO     Test1LTC:test_demo.py:164 ----Line Items Started----
+INFO     Test1LTC:test_demo.py:172 ----Line Items Done----
+INFO     Test1LTC:test_demo.py:175 ----------------Test Case test_HTC1 End----------------<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testcases/test_smokTestCases.py::TestEntryForm::test_saveformwithinvoiceNumber</td>
+          <td class="col-duration">42.20</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>Launching chrome browser.........
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     TestEntryForm:test_smokTestCases.py:33 ----------------Test Case test_saveformwithinvoiceNumber Starterd----------------
+INFO     TestEntryForm:test_smokTestCases.py:49 ----Entered in Form 7501----
+INFO     TestEntryForm:test_smokTestCases.py:63 Test Case &#x27;save form with invoice Number&#x27; Passed
+INFO     TestEntryForm:test_smokTestCases.py:71 ----------------Test Case test_saveformwithinvoiceNumber End----------------<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testcases/test_smokTestCases.py::TestEntryForm::test_saveformwithoutinvoiceNumber</td>
+          <td class="col-duration">52.28</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>Launching chrome browser.........
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     TestEntryForm:test_smokTestCases.py:74 ----------------Test Case test_saveformwithoutinvoiceNumber Starterd----------------
+INFO     TestEntryForm:test_smokTestCases.py:90 ----Entered in Form 7501----
+INFO     TestEntryForm:test_smokTestCases.py:104 Test Case &#x27;save form without invoice Number&#x27; Passed
+INFO     TestEntryForm:test_smokTestCases.py:112 ----------------Test Case test_saveformwithoutinvoiceNumber End----------------<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testcases/test_smokTestCases.py::TestEntryForm::test_saveformwithExistinginvoiceNumber</td>
+          <td class="col-duration">30.03</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>Launching chrome browser.........
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     TestEntryForm:test_smokTestCases.py:115 ----------------Test Case test_saveformwithExistinginvoiceNumber Starterd----------------
+INFO     TestEntryForm:test_smokTestCases.py:131 ----Entered in Form 7501----
+INFO     TestEntryForm:test_smokTestCases.py:137 Test Case &#x27;save form with Existing invoice Number&#x27; Passed
+INFO     TestEntryForm:test_smokTestCases.py:141 ----------------Test Case test_saveformwithExistinginvoiceNumber End----------------<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testcases/test_tradingPartners.py::TestTradingPartners::test_tradingPartners1</td>
+          <td class="col-duration">44.08</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>Launching chrome browser.........
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     TestTradingPartners:test_tradingPartners.py:18 ----Test Case test_tradingPartners1 Started----
+INFO     TestTradingPartners:test_tradingPartners.py:25 ----Login Done----
+INFO     TestTradingPartners:test_tradingPartners.py:32 ----7501 Form Opened----
+INFO     TestTradingPartners:test_tradingPartners.py:36 ----Trading Partners 1 Started----
+INFO     TestTradingPartners:test_tradingPartners.py:60 ----Text verification done----
+INFO     TestTradingPartners:test_tradingPartners.py:67 ----Test Case test_tradingPartners1 End----<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testcases/test_tradingPartners.py::TestTradingPartners::test_tradingPartners2</td>
+          <td class="col-duration">98.16</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -----------------------------Captured stdout setup------------------------------ <br/>Launching chrome browser.........
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     TestTradingPartners:test_tradingPartners.py:70 ----Test Case test_tradingPartners2 Started----
+INFO     TestTradingPartners:test_tradingPartners.py:76 ----Login Done----
+INFO     TestTradingPartners:test_tradingPartners.py:83 ----7501 Form Opened----
+INFO     TestTradingPartners:test_tradingPartners.py:87 ----Trading Partners 2 Started----
+INFO     TestTradingPartners:test_tradingPartners.py:149 ----Text verification done----
+INFO     TestTradingPartners:test_tradingPartners.py:156 ----Test Case test_tradingPartners2 End----<br/></div></td></tr></tbody></table></body></html>

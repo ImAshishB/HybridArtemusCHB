@@ -1,0 +1,77 @@
+2023-08-28 13:09:07,234 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-08-28 13:09:55,150 - INFO - Login Done
+2023-08-28 13:10:06,599 - INFO - 7501 Form opened
+2023-08-28 13:10:15,238 - INFO - ----Upper Part Done----
+2023-08-28 13:10:27,917 - INFO - ----Bill Of Lading Done----
+2023-08-28 13:10:46,247 - INFO - ----Vessel Done----
+2023-08-28 13:11:05,810 - INFO - ----Trading Partner 1 Done----
+2023-08-28 13:11:26,812 - INFO - ----Trading Partner 2 Done----
+2023-08-28 18:26:40,264 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-08-28 18:26:58,130 - INFO - Login Done
+2023-08-28 18:27:10,257 - INFO - 7501 Form opened
+2023-08-28 18:27:25,728 - INFO - ----Upper Part Done----
+2023-08-28 18:27:47,464 - INFO - ----Bill Of Lading Done----
+2023-08-28 18:28:09,592 - INFO - ----Vessel Done----
+2023-08-28 18:28:30,482 - ERROR - Message: disconnected: Unable to receive message from renderer
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=116.0.5845.111)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00007FF7DCC23E62+57250]
+	(No symbol) [0x00007FF7DCB9BC02]
+	(No symbol) [0x00007FF7DCA6E0BB]
+	(No symbol) [0x00007FF7DCA5BA2A]
+	(No symbol) [0x00007FF7DCA5B973]
+	(No symbol) [0x00007FF7DCA5A3F5]
+	(No symbol) [0x00007FF7DCA5AD2E]
+	(No symbol) [0x00007FF7DCA70757]
+	(No symbol) [0x00007FF7DCA70F88]
+	(No symbol) [0x00007FF7DCA73A4F]
+	(No symbol) [0x00007FF7DCA73B40]
+	(No symbol) [0x00007FF7DCAA8171]
+	(No symbol) [0x00007FF7DCAA8234]
+	(No symbol) [0x00007FF7DCAA1E80]
+	(No symbol) [0x00007FF7DCAC67AA]
+	(No symbol) [0x00007FF7DCA9E536]
+	(No symbol) [0x00007FF7DCAC69C0]
+	(No symbol) [0x00007FF7DCADE312]
+	(No symbol) [0x00007FF7DCAC6583]
+	(No symbol) [0x00007FF7DCA9CC71]
+	(No symbol) [0x00007FF7DCA9DE54]
+	GetHandleVerifier [0x00007FF7DCED4CF2+2879026]
+	GetHandleVerifier [0x00007FF7DCF26F30+3215472]
+	GetHandleVerifier [0x00007FF7DCF1FD4F+3186319]
+	GetHandleVerifier [0x00007FF7DCCB5505+652869]
+	(No symbol) [0x00007FF7DCBA7518]
+	(No symbol) [0x00007FF7DCBA35F4]
+	(No symbol) [0x00007FF7DCBA36EC]
+	(No symbol) [0x00007FF7DCB938E3]
+	BaseThreadInitThunk [0x00007FFC7A7A26AD+29]
+	RtlUserThreadStart [0x00007FFC7C2CAA68+40]
+
+2023-08-28 18:28:30,486 - ERROR - Message: disconnected: not connected to DevTools
+  (failed to check if window was closed: disconnected: not connected to DevTools)
+  (Session info: chrome=116.0.5845.111)
+Stacktrace:
+Backtrace:
+	GetHandleVerifier [0x00007FF7DCC23E62+57250]
+	(No symbol) [0x00007FF7DCB9BC02]
+	(No symbol) [0x00007FF7DCA6E0BB]
+	(No symbol) [0x00007FF7DCA5B457]
+	(No symbol) [0x00007FF7DCA5B0D0]
+	(No symbol) [0x00007FF7DCA6F791]
+	(No symbol) [0x00007FF7DCADDA0F]
+	(No symbol) [0x00007FF7DCAC6583]
+	(No symbol) [0x00007FF7DCA9CC71]
+	(No symbol) [0x00007FF7DCA9DE54]
+	GetHandleVerifier [0x00007FF7DCED4CF2+2879026]
+	GetHandleVerifier [0x00007FF7DCF26F30+3215472]
+	GetHandleVerifier [0x00007FF7DCF1FD4F+3186319]
+	GetHandleVerifier [0x00007FF7DCCB5505+652869]
+	(No symbol) [0x00007FF7DCBA7518]
+	(No symbol) [0x00007FF7DCBA35F4]
+	(No symbol) [0x00007FF7DCBA36EC]
+	(No symbol) [0x00007FF7DCB938E3]
+	BaseThreadInitThunk [0x00007FFC7A7A26AD+29]
+	RtlUserThreadStart [0x00007FFC7C2CAA68+40]
+
