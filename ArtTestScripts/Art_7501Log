@@ -3298,3 +3298,808 @@ Stacktrace:
 	RtlUserThreadStart [0x00007FFC7486AA78+40]
 
 2023-10-26 16:25:01,994 - INFO - ----Form Saved Successfully----
+2023-10-26 19:10:05,755 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-10-26 19:10:52,357 - INFO - Login Done
+2023-10-26 19:11:14,677 - INFO - 7501 Form opened
+2023-10-26 19:11:22,111 - INFO - ----Upper Part Done----
+2023-10-26 19:11:34,489 - INFO - No Container found
+2023-10-26 19:11:52,776 - INFO - ----Trading Partner 1 Done----
+2023-10-26 19:12:11,365 - INFO - ----Trading Partner 2 Done----
+2023-10-26 19:12:46,653 - INFO - ----Form Saved Successfully----
+2023-10-26 19:12:55,229 - INFO - 7501 Form opened
+2023-10-26 19:13:07,080 - INFO - ----Upper Part Done----
+2023-10-26 19:13:26,952 - INFO - No Container found
+2023-10-26 19:13:55,008 - INFO - ----Trading Partner 1 Done----
+2023-10-26 19:14:27,261 - INFO - ----Trading Partner 2 Done----
+2023-10-26 19:14:38,065 - ERROR - Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=118.0.5993.89)
+Stacktrace:
+	GetHandleVerifier [0x00007FF62C277892+54818]
+	(No symbol) [0x00007FF62C1E6AC2]
+	(No symbol) [0x00007FF62C09DA3B]
+	(No symbol) [0x00007FF62C07DEE8]
+	(No symbol) [0x00007FF62C103237]
+	(No symbol) [0x00007FF62C116C6F]
+	(No symbol) [0x00007FF62C0FE883]
+	(No symbol) [0x00007FF62C0D3691]
+	(No symbol) [0x00007FF62C0D48D4]
+	GetHandleVerifier [0x00007FF62C5DB992+3610402]
+	GetHandleVerifier [0x00007FF62C631860+3962352]
+	GetHandleVerifier [0x00007FF62C629D4F+3930847]
+	GetHandleVerifier [0x00007FF62C313646+693206]
+	(No symbol) [0x00007FF62C1F1628]
+	(No symbol) [0x00007FF62C1ED934]
+	(No symbol) [0x00007FF62C1EDA62]
+	(No symbol) [0x00007FF62C1DE113]
+	BaseThreadInitThunk [0x00007FFC7357257D+29]
+	RtlUserThreadStart [0x00007FFC7486AA78+40]
+
+2023-10-27 10:16:08,696 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-10-27 10:16:25,964 - INFO - Login Done
+2023-10-27 10:16:36,412 - INFO - 7501 Form opened
+2023-10-27 10:16:46,905 - INFO - ----Upper Part Done----
+2023-10-27 10:17:01,809 - INFO - No Container found
+2023-10-27 10:17:20,507 - INFO - ----Trading Partner 1 Done----
+2023-10-27 10:17:38,766 - INFO - ----Trading Partner 2 Done----
+2023-10-27 10:18:54,851 - INFO - FD1 Filled
+2023-10-27 10:19:10,564 - INFO - ----Form Saved Successfully----
+2023-10-31 16:07:14,575 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-10-31 16:07:54,293 - INFO - Login Done
+2023-10-31 16:08:06,618 - INFO - 7501 Form opened
+2023-10-31 16:08:13,981 - INFO - ----Upper Part Done----
+2023-10-31 16:08:28,289 - INFO - No Container found
+2023-10-31 16:09:17,466 - INFO - ----Trading Partner 1 Done----
+2023-10-31 16:09:34,338 - INFO - ----Trading Partner 2 Done----
+2023-10-31 16:10:05,587 - INFO - ----Form Saved Successfully----
+2023-10-31 16:10:11,640 - INFO - 7501 Form opened
+2023-10-31 16:10:19,462 - INFO - ----Upper Part Done----
+2023-10-31 16:10:33,138 - INFO - No Container found
+2023-10-31 16:10:50,128 - INFO - ----Trading Partner 1 Done----
+2023-10-31 16:11:05,997 - INFO - ----Trading Partner 2 Done----
+2023-10-31 16:11:32,597 - INFO - ----Form Saved Successfully----
+2023-10-31 16:11:38,554 - INFO - 7501 Form opened
+2023-10-31 16:11:46,672 - INFO - ----Upper Part Done----
+2023-10-31 16:11:59,810 - INFO - No Container found
+2023-10-31 16:12:16,575 - INFO - ----Trading Partner 1 Done----
+2023-10-31 16:12:33,051 - INFO - ----Trading Partner 2 Done----
+2023-10-31 16:13:04,046 - INFO - ----Form Saved Successfully----
+2023-10-31 16:13:09,186 - INFO - 7501 Form opened
+2023-10-31 16:13:16,377 - INFO - ----Upper Part Done----
+2023-10-31 16:13:29,344 - INFO - No Container found
+2023-10-31 16:13:44,372 - ERROR - Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=118.0.5993.118)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6C64D7892+54818]
+	(No symbol) [0x00007FF6C6446AC2]
+	(No symbol) [0x00007FF6C62FDA3B]
+	(No symbol) [0x00007FF6C62DDEE8]
+	(No symbol) [0x00007FF6C6363237]
+	(No symbol) [0x00007FF6C6376C6F]
+	(No symbol) [0x00007FF6C635E883]
+	(No symbol) [0x00007FF6C6333691]
+	(No symbol) [0x00007FF6C63348D4]
+	GetHandleVerifier [0x00007FF6C683B992+3610402]
+	GetHandleVerifier [0x00007FF6C6891860+3962352]
+	GetHandleVerifier [0x00007FF6C6889D4F+3930847]
+	GetHandleVerifier [0x00007FF6C6573646+693206]
+	(No symbol) [0x00007FF6C6451628]
+	(No symbol) [0x00007FF6C644D934]
+	(No symbol) [0x00007FF6C644DA62]
+	(No symbol) [0x00007FF6C643E113]
+	BaseThreadInitThunk [0x00007FFC7357257D+29]
+	RtlUserThreadStart [0x00007FFC7486AA78+40]
+
+2023-10-31 16:13:44,372 - ERROR - Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=118.0.5993.118)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6C64D7892+54818]
+	(No symbol) [0x00007FF6C6446AC2]
+	(No symbol) [0x00007FF6C62FDA3B]
+	(No symbol) [0x00007FF6C62DDEE8]
+	(No symbol) [0x00007FF6C6363237]
+	(No symbol) [0x00007FF6C6376C6F]
+	(No symbol) [0x00007FF6C635E883]
+	(No symbol) [0x00007FF6C6333691]
+	(No symbol) [0x00007FF6C63348D4]
+	GetHandleVerifier [0x00007FF6C683B992+3610402]
+	GetHandleVerifier [0x00007FF6C6891860+3962352]
+	GetHandleVerifier [0x00007FF6C6889D4F+3930847]
+	GetHandleVerifier [0x00007FF6C6573646+693206]
+	(No symbol) [0x00007FF6C6451628]
+	(No symbol) [0x00007FF6C644D934]
+	(No symbol) [0x00007FF6C644DA62]
+	(No symbol) [0x00007FF6C643E113]
+	BaseThreadInitThunk [0x00007FFC7357257D+29]
+	RtlUserThreadStart [0x00007FFC7486AA78+40]
+
+2023-10-31 16:13:44,372 - ERROR - Message: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=118.0.5993.118)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6C64D7892+54818]
+	(No symbol) [0x00007FF6C6446AC2]
+	(No symbol) [0x00007FF6C62FDA3B]
+	(No symbol) [0x00007FF6C62DDEE8]
+	(No symbol) [0x00007FF6C6363237]
+	(No symbol) [0x00007FF6C6376C6F]
+	(No symbol) [0x00007FF6C635E883]
+	(No symbol) [0x00007FF6C6333691]
+	(No symbol) [0x00007FF6C63348D4]
+	GetHandleVerifier [0x00007FF6C683B992+3610402]
+	GetHandleVerifier [0x00007FF6C6891860+3962352]
+	GetHandleVerifier [0x00007FF6C6889D4F+3930847]
+	GetHandleVerifier [0x00007FF6C6573646+693206]
+	(No symbol) [0x00007FF6C6451628]
+	(No symbol) [0x00007FF6C644D934]
+	(No symbol) [0x00007FF6C644DA62]
+	(No symbol) [0x00007FF6C643E113]
+	BaseThreadInitThunk [0x00007FFC7357257D+29]
+	RtlUserThreadStart [0x00007FFC7486AA78+40]
+
+2023-10-31 16:13:58,269 - WARNING - Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001B5D9077D50>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/43c9432dcfe02bf72706b834ddf3ffa4/element
+2023-10-31 16:14:02,344 - WARNING - Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001B5D9076050>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/43c9432dcfe02bf72706b834ddf3ffa4/element
+2023-10-31 16:14:06,385 - WARNING - Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001B5D997A050>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it')': /session/43c9432dcfe02bf72706b834ddf3ffa4/element
+2023-10-31 16:15:12,329 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-10-31 16:15:36,323 - INFO - Login Done
+2023-10-31 16:15:50,307 - INFO - 7501 Form opened
+2023-10-31 16:16:01,567 - INFO - ----Upper Part Done----
+2023-10-31 16:16:22,337 - INFO - ----Vessel Done----
+2023-10-31 16:16:39,299 - INFO - ----Trading Partner 1 Done----
+2023-10-31 16:16:55,976 - INFO - ----Trading Partner 2 Done----
+2023-10-31 16:17:23,531 - INFO - ----Form Saved Successfully----
+2023-10-31 16:17:28,494 - INFO - 7501 Form opened
+2023-10-31 16:17:38,030 - INFO - ----Upper Part Done----
+2023-10-31 16:17:58,991 - INFO - ----Vessel Done----
+2023-10-31 16:18:15,765 - INFO - ----Trading Partner 1 Done----
+2023-10-31 16:18:32,494 - INFO - ----Trading Partner 2 Done----
+2023-10-31 16:18:58,967 - INFO - ----Form Saved Successfully----
+2023-10-31 16:19:03,677 - INFO - 7501 Form opened
+2023-10-31 16:19:12,291 - INFO - ----Upper Part Done----
+2023-10-31 16:19:31,474 - INFO - ----Vessel Done----
+2023-10-31 16:19:47,432 - INFO - ----Trading Partner 1 Done----
+2023-10-31 16:20:06,975 - INFO - ----Trading Partner 2 Done----
+2023-10-31 16:20:19,794 - INFO - foreign Line Value filled
+2023-10-31 16:20:32,605 - INFO - ----Form Saved Successfully----
+2023-10-31 16:20:37,391 - INFO - 7501 Form opened
+2023-10-31 16:20:46,037 - INFO - ----Upper Part Done----
+2023-10-31 16:21:05,801 - INFO - ----Vessel Done----
+2023-10-31 16:21:21,913 - INFO - ----Trading Partner 1 Done----
+2023-10-31 16:21:40,399 - INFO - ----Trading Partner 2 Done----
+2023-10-31 16:21:52,969 - INFO - It is Cotton HTS
+2023-10-31 16:22:08,108 - INFO - ----Form Saved Successfully----
+2023-10-31 16:22:13,264 - INFO - 7501 Form opened
+2023-10-31 16:22:22,563 - INFO - ----Upper Part Done----
+2023-10-31 16:22:41,879 - INFO - ----Vessel Done----
+2023-10-31 16:22:58,006 - INFO - ----Trading Partner 1 Done----
+2023-10-31 16:23:13,561 - INFO - ----Trading Partner 2 Done----
+2023-10-31 16:23:39,458 - ERROR - EP7 Filled
+2023-10-31 16:23:40,589 - ERROR - Message: element click intercepted: Element <span _ngcontent-hse-c196="">...</span> is not clickable at point (127, 401). Other element would receive the click: <button _ngcontent-hse-c196="" type="button" ngbpaneltoggle="" class="btn btn-link container-fluid text-left pl-0" aria-expanded="true" aria-controls="0">...</button>
+  (Session info: chrome=118.0.5993.118)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6C64D7892+54818]
+	(No symbol) [0x00007FF6C6446AC2]
+	(No symbol) [0x00007FF6C62FDA3B]
+	(No symbol) [0x00007FF6C63447CB]
+	(No symbol) [0x00007FF6C6342B99]
+	(No symbol) [0x00007FF6C6340968]
+	(No symbol) [0x00007FF6C633FA23]
+	(No symbol) [0x00007FF6C633571F]
+	(No symbol) [0x00007FF6C635EAAA]
+	(No symbol) [0x00007FF6C6335036]
+	(No symbol) [0x00007FF6C635ECC0]
+	(No symbol) [0x00007FF6C63775A2]
+	(No symbol) [0x00007FF6C635E883]
+	(No symbol) [0x00007FF6C6333691]
+	(No symbol) [0x00007FF6C63348D4]
+	GetHandleVerifier [0x00007FF6C683B992+3610402]
+	GetHandleVerifier [0x00007FF6C6891860+3962352]
+	GetHandleVerifier [0x00007FF6C6889D4F+3930847]
+	GetHandleVerifier [0x00007FF6C6573646+693206]
+	(No symbol) [0x00007FF6C6451628]
+	(No symbol) [0x00007FF6C644D934]
+	(No symbol) [0x00007FF6C644DA62]
+	(No symbol) [0x00007FF6C643E113]
+	BaseThreadInitThunk [0x00007FFC7357257D+29]
+	RtlUserThreadStart [0x00007FFC7486AA78+40]
+
+2023-10-31 16:23:48,687 - INFO - ----Form Saved Successfully----
+2023-10-31 16:23:55,309 - INFO - 7501 Form opened
+2023-10-31 16:24:04,443 - INFO - ----Upper Part Done----
+2023-10-31 16:24:25,107 - INFO - ----Vessel Done----
+2023-10-31 16:24:42,093 - INFO - ----Trading Partner 1 Done----
+2023-10-31 16:24:58,977 - INFO - ----Trading Partner 2 Done----
+2023-10-31 16:25:15,403 - INFO - EP5 Filled
+2023-10-31 16:25:31,805 - ERROR - EP7 Filled
+2023-10-31 16:25:32,899 - ERROR - Message: element click intercepted: Element <span _ngcontent-hse-c196="">...</span> is not clickable at point (127, 399). Other element would receive the click: <button _ngcontent-hse-c196="" type="button" ngbpaneltoggle="" class="btn btn-link container-fluid text-left pl-0" aria-expanded="true" aria-controls="0">...</button>
+  (Session info: chrome=118.0.5993.118)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6C64D7892+54818]
+	(No symbol) [0x00007FF6C6446AC2]
+	(No symbol) [0x00007FF6C62FDA3B]
+	(No symbol) [0x00007FF6C63447CB]
+	(No symbol) [0x00007FF6C6342B99]
+	(No symbol) [0x00007FF6C6340968]
+	(No symbol) [0x00007FF6C633FA23]
+	(No symbol) [0x00007FF6C633571F]
+	(No symbol) [0x00007FF6C635EAAA]
+	(No symbol) [0x00007FF6C6335036]
+	(No symbol) [0x00007FF6C635ECC0]
+	(No symbol) [0x00007FF6C63775A2]
+	(No symbol) [0x00007FF6C635E883]
+	(No symbol) [0x00007FF6C6333691]
+	(No symbol) [0x00007FF6C63348D4]
+	GetHandleVerifier [0x00007FF6C683B992+3610402]
+	GetHandleVerifier [0x00007FF6C6891860+3962352]
+	GetHandleVerifier [0x00007FF6C6889D4F+3930847]
+	GetHandleVerifier [0x00007FF6C6573646+693206]
+	(No symbol) [0x00007FF6C6451628]
+	(No symbol) [0x00007FF6C644D934]
+	(No symbol) [0x00007FF6C644DA62]
+	(No symbol) [0x00007FF6C643E113]
+	BaseThreadInitThunk [0x00007FFC7357257D+29]
+	RtlUserThreadStart [0x00007FFC7486AA78+40]
+
+2023-10-31 16:25:39,229 - INFO - ----Form Saved Successfully----
+2023-10-31 16:25:43,979 - INFO - 7501 Form opened
+2023-10-31 16:25:51,785 - INFO - ----Upper Part Done----
+2023-10-31 16:26:04,524 - INFO - No Container found
+2023-10-31 16:26:22,790 - INFO - ----Trading Partner 1 Done----
+2023-10-31 16:26:40,054 - INFO - ----Trading Partner 2 Done----
+2023-10-31 16:26:56,550 - INFO - EP5 Filled
+2023-10-31 16:27:13,171 - ERROR - EP7 Filled
+2023-10-31 16:27:28,195 - INFO - ----Form Saved Successfully----
+2023-10-31 16:27:33,243 - INFO - 7501 Form opened
+2023-10-31 16:27:43,004 - INFO - ----Upper Part Done----
+2023-10-31 16:27:56,063 - INFO - No Container found
+2023-10-31 16:28:12,395 - INFO - ----Trading Partner 1 Done----
+2023-10-31 16:28:29,153 - INFO - ----Trading Partner 2 Done----
+2023-10-31 16:28:54,680 - INFO - ----Form Saved Successfully----
+2023-10-31 16:28:59,556 - INFO - 7501 Form opened
+2023-10-31 16:29:10,639 - INFO - ----Upper Part Done----
+2023-10-31 16:29:32,493 - INFO - ----Vessel Done----
+2023-10-31 16:29:49,671 - INFO - ----Trading Partner 1 Done----
+2023-10-31 16:30:06,413 - INFO - ----Trading Partner 2 Done----
+2023-10-31 16:30:20,079 - INFO - It is China HTS
+2023-10-31 16:30:36,197 - INFO - ----Form Saved Successfully----
+2023-10-31 16:30:41,278 - INFO - 7501 Form opened
+2023-10-31 16:30:50,806 - INFO - ----Upper Part Done----
+2023-10-31 16:31:11,085 - INFO - ----Vessel Done----
+2023-10-31 16:31:27,657 - INFO - ----Trading Partner 1 Done----
+2023-10-31 16:31:44,213 - INFO - ----Trading Partner 2 Done----
+2023-10-31 16:31:56,779 - INFO - It is Cotton HTS
+2023-10-31 16:31:59,027 - INFO - It is China HTS
+2023-10-31 16:32:14,947 - INFO - ----Form Saved Successfully----
+2023-10-31 16:32:20,012 - INFO - 7501 Form opened
+2023-10-31 16:32:29,882 - INFO - ----Upper Part Done----
+2023-10-31 16:32:49,789 - INFO - ----Vessel Done----
+2023-10-31 16:33:06,244 - INFO - ----Trading Partner 1 Done----
+2023-10-31 16:33:22,910 - INFO - ----Trading Partner 2 Done----
+2023-10-31 16:33:36,976 - INFO - It is China HTS
+2023-10-31 16:33:52,100 - ERROR - EP7 Filled
+2023-10-31 16:33:53,212 - ERROR - Message: element click intercepted: Element <span _ngcontent-hse-c196="">...</span> is not clickable at point (127, 400). Other element would receive the click: <button _ngcontent-hse-c196="" type="button" ngbpaneltoggle="" class="btn btn-link container-fluid text-left pl-0" aria-expanded="true" aria-controls="1">...</button>
+  (Session info: chrome=118.0.5993.118)
+Stacktrace:
+	GetHandleVerifier [0x00007FF6C64D7892+54818]
+	(No symbol) [0x00007FF6C6446AC2]
+	(No symbol) [0x00007FF6C62FDA3B]
+	(No symbol) [0x00007FF6C63447CB]
+	(No symbol) [0x00007FF6C6342B99]
+	(No symbol) [0x00007FF6C6340968]
+	(No symbol) [0x00007FF6C633FA23]
+	(No symbol) [0x00007FF6C633571F]
+	(No symbol) [0x00007FF6C635EAAA]
+	(No symbol) [0x00007FF6C6335036]
+	(No symbol) [0x00007FF6C635ECC0]
+	(No symbol) [0x00007FF6C63775A2]
+	(No symbol) [0x00007FF6C635E883]
+	(No symbol) [0x00007FF6C6333691]
+	(No symbol) [0x00007FF6C63348D4]
+	GetHandleVerifier [0x00007FF6C683B992+3610402]
+	GetHandleVerifier [0x00007FF6C6891860+3962352]
+	GetHandleVerifier [0x00007FF6C6889D4F+3930847]
+	GetHandleVerifier [0x00007FF6C6573646+693206]
+	(No symbol) [0x00007FF6C6451628]
+	(No symbol) [0x00007FF6C644D934]
+	(No symbol) [0x00007FF6C644DA62]
+	(No symbol) [0x00007FF6C643E113]
+	BaseThreadInitThunk [0x00007FFC7357257D+29]
+	RtlUserThreadStart [0x00007FFC7486AA78+40]
+
+2023-10-31 16:34:00,151 - INFO - ----Form Saved Successfully----
+2023-11-02 11:44:23,425 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-11-02 11:48:53,511 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-11-02 11:50:22,704 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-11-02 12:14:43,819 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-11-02 12:15:15,317 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-11-02 12:17:13,698 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-11-02 12:25:23,457 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-11-02 12:33:04,648 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-11-02 12:38:22,803 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-11-02 13:13:23,418 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-11-02 13:13:35,935 - INFO - Login Done
+2023-11-02 13:13:47,844 - INFO - 7501 Form opened
+2023-11-02 13:13:53,367 - INFO - 7501 Form opened
+2023-11-02 13:13:57,419 - INFO - 7501 Form opened
+2023-11-02 13:14:52,017 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-11-02 13:15:05,736 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-11-02 13:15:24,433 - INFO - Login Done
+2023-11-02 13:15:39,397 - INFO - 7501 Form opened
+2023-11-02 13:15:51,574 - INFO - ----Upper Part Done----
+2023-11-02 13:16:17,926 - INFO - ----Vessel Done----
+2023-11-02 13:16:36,968 - INFO - ----Trading Partner 1 Done----
+2023-11-02 13:16:56,339 - INFO - ----Trading Partner 2 Done----
+2023-11-02 13:17:55,785 - INFO - ----Form Saved Successfully----
+2023-11-02 13:18:03,189 - INFO - 7501 Form opened
+2023-11-02 13:18:14,885 - INFO - ----Upper Part Done----
+2023-11-02 13:18:38,981 - INFO - ----Vessel Done----
+2023-11-02 13:18:57,384 - INFO - ----Trading Partner 1 Done----
+2023-11-02 13:19:19,643 - INFO - ----Trading Partner 2 Done----
+2023-11-02 13:20:06,787 - INFO - It is Cotton HTS
+2023-11-02 13:20:35,402 - INFO - It is Cotton HTS
+2023-11-02 13:21:00,639 - INFO - ----Form Saved Successfully----
+2023-11-02 13:21:07,676 - INFO - 7501 Form opened
+2023-11-02 13:21:19,727 - INFO - ----Upper Part Done----
+2023-11-02 13:21:43,974 - INFO - ----Vessel Done----
+2023-11-02 13:22:02,479 - INFO - ----Trading Partner 1 Done----
+2023-11-02 13:22:21,877 - INFO - ----Trading Partner 2 Done----
+2023-11-02 13:23:26,495 - INFO - It is Cotton HTS
+2023-11-02 13:23:50,865 - INFO - ----Form Saved Successfully----
+2023-11-02 13:23:57,760 - INFO - 7501 Form opened
+2023-11-02 13:24:09,827 - INFO - ----Upper Part Done----
+2023-11-02 13:24:34,273 - INFO - ----Vessel Done----
+2023-11-02 13:24:52,678 - INFO - ----Trading Partner 1 Done----
+2023-11-02 13:25:12,193 - INFO - ----Trading Partner 2 Done----
+2023-11-02 13:25:24,503 - ERROR - Message: element not interactable
+  (Session info: chrome=119.0.6045.106)
+Stacktrace:
+	GetHandleVerifier [0x00007FF656E282B2+55298]
+	(No symbol) [0x00007FF656D95E02]
+	(No symbol) [0x00007FF656C5045D]
+	(No symbol) [0x00007FF656C8CA37]
+	(No symbol) [0x00007FF656C8BD82]
+	(No symbol) [0x00007FF656CB20AA]
+	(No symbol) [0x00007FF656C880CF]
+	(No symbol) [0x00007FF656CB22C0]
+	(No symbol) [0x00007FF656CCAAA4]
+	(No symbol) [0x00007FF656CB1E83]
+	(No symbol) [0x00007FF656C8670A]
+	(No symbol) [0x00007FF656C87964]
+	GetHandleVerifier [0x00007FF6571A0AAB+3694587]
+	GetHandleVerifier [0x00007FF6571F728E+4048862]
+	GetHandleVerifier [0x00007FF6571EF173+4015811]
+	GetHandleVerifier [0x00007FF656EC47D6+695590]
+	(No symbol) [0x00007FF656DA0CE8]
+	(No symbol) [0x00007FF656D9CF34]
+	(No symbol) [0x00007FF656D9D062]
+	(No symbol) [0x00007FF656D8D3A3]
+	BaseThreadInitThunk [0x00007FFC7357257D+29]
+	RtlUserThreadStart [0x00007FFC7486AA78+40]
+
+2023-11-02 13:25:31,331 - INFO - ----Form not Saved----
+2023-11-02 15:42:38,261 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-11-02 15:43:08,923 - INFO - Login Done
+2023-11-02 15:43:23,057 - INFO - 7501 Form opened
+2023-11-02 15:43:35,859 - INFO - ----Upper Part Done----
+2023-11-02 15:43:57,640 - INFO - ----Vessel Done----
+2023-11-02 15:44:14,756 - INFO - ----Trading Partner 1 Done----
+2023-11-02 15:44:32,093 - INFO - ----Trading Partner 2 Done----
+2023-11-02 15:45:21,256 - INFO - ----Form Saved Successfully----
+2023-11-02 15:45:26,247 - INFO - 7501 Form opened
+2023-11-02 15:45:36,564 - INFO - ----Upper Part Done----
+2023-11-02 15:45:57,302 - INFO - ----Vessel Done----
+2023-11-02 15:46:13,861 - INFO - ----Trading Partner 1 Done----
+2023-11-02 15:46:29,297 - INFO - ----Trading Partner 2 Done----
+2023-11-02 15:47:00,410 - INFO - It is Cotton HTS
+2023-11-02 15:47:21,684 - INFO - It is Cotton HTS
+2023-11-02 15:47:41,541 - INFO - ----Form Saved Successfully----
+2023-11-02 15:47:46,858 - INFO - 7501 Form opened
+2023-11-02 15:47:56,658 - INFO - ----Upper Part Done----
+2023-11-02 15:48:17,074 - INFO - ----Vessel Done----
+2023-11-02 15:48:33,495 - INFO - ----Trading Partner 1 Done----
+2023-11-02 15:48:49,665 - INFO - ----Trading Partner 2 Done----
+2023-11-02 15:49:42,403 - INFO - It is Cotton HTS
+2023-11-02 15:49:59,585 - INFO - ----Form Saved Successfully----
+2023-11-02 15:50:04,447 - INFO - 7501 Form opened
+2023-11-02 15:50:13,222 - INFO - ----Upper Part Done----
+2023-11-02 15:50:35,196 - INFO - ----Vessel Done----
+2023-11-02 15:50:55,062 - INFO - ----Trading Partner 1 Done----
+2023-11-02 15:51:16,983 - INFO - ----Trading Partner 2 Done----
+2023-11-02 15:52:37,766 - INFO - It is Cotton HTS
+2023-11-02 15:53:03,352 - INFO - ----Form not Saved----
+2023-11-04 11:17:41,762 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-11-04 11:21:00,611 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-11-04 11:24:31,495 - INFO - Login Done
+2023-11-04 11:24:44,478 - INFO - 7501 Form opened
+2023-11-04 11:24:53,941 - INFO - ----Upper Part Done----
+2023-11-04 11:25:24,494 - INFO - ----Vessel Done----
+2023-11-04 11:25:46,859 - INFO - ----Trading Partner 1 Done----
+2023-11-04 11:26:03,940 - INFO - ----Trading Partner 2 Done----
+2023-11-04 11:27:19,092 - INFO - FD1 Filled
+2023-11-04 11:27:37,694 - INFO - ----Form Saved Successfully----
+2023-11-04 14:45:51,041 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-11-04 14:48:43,261 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-11-04 14:52:16,068 - INFO - Login Done
+2023-11-04 14:52:27,288 - INFO - 7501 Form opened
+2023-11-04 14:52:37,962 - INFO - ----Upper Part Done----
+2023-11-04 14:53:01,001 - INFO - ----Vessel Done----
+2023-11-04 14:53:20,445 - INFO - ----Trading Partner 1 Done----
+2023-11-04 14:53:41,140 - INFO - ----Trading Partner 2 Done----
+2023-11-04 14:55:19,896 - INFO - ----Form not Saved----
+2023-11-05 15:19:54,574 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-11-05 15:22:39,918 - INFO - Login Done
+2023-11-05 15:22:50,433 - INFO - 7501 Form opened
+2023-11-05 15:23:00,310 - INFO - ----Upper Part Done----
+2023-11-05 15:23:17,998 - INFO - ----Vessel Done----
+2023-11-05 15:23:32,978 - INFO - ----Trading Partner 1 Done----
+2023-11-05 15:23:45,479 - INFO - ----Trading Partner 2 Done----
+2023-11-05 15:23:45,527 - ERROR - Message: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Tariff #1:']//parent::div//following-sibling::div/input[@id='typeahead-basic' and @class='form-control ng-untouched ng-pristine ng-valid']"}
+  (Session info: chrome=119.0.6045.106); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7DEF082B2+55298]
+	(No symbol) [0x00007FF7DEE75E02]
+	(No symbol) [0x00007FF7DED305AB]
+	(No symbol) [0x00007FF7DED7175C]
+	(No symbol) [0x00007FF7DED718DC]
+	(No symbol) [0x00007FF7DEDACBC7]
+	(No symbol) [0x00007FF7DED920EF]
+	(No symbol) [0x00007FF7DEDAAAA4]
+	(No symbol) [0x00007FF7DED91E83]
+	(No symbol) [0x00007FF7DED6670A]
+	(No symbol) [0x00007FF7DED67964]
+	GetHandleVerifier [0x00007FF7DF280AAB+3694587]
+	GetHandleVerifier [0x00007FF7DF2D728E+4048862]
+	GetHandleVerifier [0x00007FF7DF2CF173+4015811]
+	GetHandleVerifier [0x00007FF7DEFA47D6+695590]
+	(No symbol) [0x00007FF7DEE80CE8]
+	(No symbol) [0x00007FF7DEE7CF34]
+	(No symbol) [0x00007FF7DEE7D062]
+	(No symbol) [0x00007FF7DEE6D3A3]
+	BaseThreadInitThunk [0x00007FFC7357257D+29]
+	RtlUserThreadStart [0x00007FFC7486AA78+40]
+
+2023-11-05 15:23:48,062 - INFO - ----Form not Saved----
+2023-11-05 15:33:13,819 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-11-05 15:33:29,080 - INFO - Login Done
+2023-11-05 15:33:39,182 - INFO - 7501 Form opened
+2023-11-05 15:33:45,264 - INFO - ----Upper Part Done----
+2023-11-05 15:34:00,153 - INFO - ----Vessel Done----
+2023-11-05 15:34:13,292 - INFO - ----Trading Partner 1 Done----
+2023-11-05 15:34:24,925 - INFO - ----Trading Partner 2 Done----
+2023-11-05 15:34:24,958 - ERROR - Message: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Tariff #1:']//parent::div//following-sibling::div/input[@id='typeahead-basic' and @class='form-control ng-untouched ng-pristine ng-valid']"}
+  (Session info: chrome=119.0.6045.106); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7DEF082B2+55298]
+	(No symbol) [0x00007FF7DEE75E02]
+	(No symbol) [0x00007FF7DED305AB]
+	(No symbol) [0x00007FF7DED7175C]
+	(No symbol) [0x00007FF7DED718DC]
+	(No symbol) [0x00007FF7DEDACBC7]
+	(No symbol) [0x00007FF7DED920EF]
+	(No symbol) [0x00007FF7DEDAAAA4]
+	(No symbol) [0x00007FF7DED91E83]
+	(No symbol) [0x00007FF7DED6670A]
+	(No symbol) [0x00007FF7DED67964]
+	GetHandleVerifier [0x00007FF7DF280AAB+3694587]
+	GetHandleVerifier [0x00007FF7DF2D728E+4048862]
+	GetHandleVerifier [0x00007FF7DF2CF173+4015811]
+	GetHandleVerifier [0x00007FF7DEFA47D6+695590]
+	(No symbol) [0x00007FF7DEE80CE8]
+	(No symbol) [0x00007FF7DEE7CF34]
+	(No symbol) [0x00007FF7DEE7D062]
+	(No symbol) [0x00007FF7DEE6D3A3]
+	BaseThreadInitThunk [0x00007FFC7357257D+29]
+	RtlUserThreadStart [0x00007FFC7486AA78+40]
+
+2023-11-05 15:34:27,354 - INFO - ----Form not Saved----
+2023-11-05 15:35:03,521 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-11-05 15:35:16,026 - INFO - Login Done
+2023-11-05 15:35:26,180 - INFO - 7501 Form opened
+2023-11-05 15:35:31,842 - INFO - ----Upper Part Done----
+2023-11-05 15:35:46,718 - INFO - ----Vessel Done----
+2023-11-05 15:36:00,050 - INFO - ----Trading Partner 1 Done----
+2023-11-05 15:36:23,816 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-11-05 15:36:50,959 - INFO - Login Done
+2023-11-05 15:37:01,160 - INFO - 7501 Form opened
+2023-11-05 15:37:06,643 - INFO - ----Upper Part Done----
+2023-11-05 15:37:21,298 - INFO - ----Vessel Done----
+2023-11-05 15:37:34,505 - INFO - ----Trading Partner 1 Done----
+2023-11-05 15:37:46,462 - ERROR - !----Trading Partner 2 Not Done----!
+2023-11-05 15:37:46,536 - ERROR - Message: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Tariff #1:']//parent::div//following-sibling::div/input[@id='typeahead-basic' and @class='form-control ng-untouched ng-pristine ng-valid']"}
+  (Session info: chrome=119.0.6045.106); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7DEF082B2+55298]
+	(No symbol) [0x00007FF7DEE75E02]
+	(No symbol) [0x00007FF7DED305AB]
+	(No symbol) [0x00007FF7DED7175C]
+	(No symbol) [0x00007FF7DED718DC]
+	(No symbol) [0x00007FF7DEDACBC7]
+	(No symbol) [0x00007FF7DED920EF]
+	(No symbol) [0x00007FF7DEDAAAA4]
+	(No symbol) [0x00007FF7DED91E83]
+	(No symbol) [0x00007FF7DED6670A]
+	(No symbol) [0x00007FF7DED67964]
+	GetHandleVerifier [0x00007FF7DF280AAB+3694587]
+	GetHandleVerifier [0x00007FF7DF2D728E+4048862]
+	GetHandleVerifier [0x00007FF7DF2CF173+4015811]
+	GetHandleVerifier [0x00007FF7DEFA47D6+695590]
+	(No symbol) [0x00007FF7DEE80CE8]
+	(No symbol) [0x00007FF7DEE7CF34]
+	(No symbol) [0x00007FF7DEE7D062]
+	(No symbol) [0x00007FF7DEE6D3A3]
+	BaseThreadInitThunk [0x00007FFC7357257D+29]
+	RtlUserThreadStart [0x00007FFC7486AA78+40]
+
+2023-11-05 15:37:49,040 - INFO - ----Form not Saved----
+2023-11-05 15:38:57,118 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-11-05 15:39:52,296 - INFO - Login Done
+2023-11-05 15:40:02,649 - INFO - 7501 Form opened
+2023-11-05 15:40:08,078 - INFO - ----Upper Part Done----
+2023-11-05 15:40:22,362 - INFO - ----Vessel Done----
+2023-11-05 15:40:35,807 - INFO - ----Trading Partner 1 Done----
+2023-11-05 15:40:47,461 - INFO - ----Trading Partner 2 Done----
+2023-11-05 15:40:47,481 - ERROR - Message: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Tariff #1:']//parent::div//following-sibling::div/input[@id='typeahead-basic' and @class='form-control ng-untouched ng-pristine ng-valid']"}
+  (Session info: chrome=119.0.6045.106); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7DEF082B2+55298]
+	(No symbol) [0x00007FF7DEE75E02]
+	(No symbol) [0x00007FF7DED305AB]
+	(No symbol) [0x00007FF7DED7175C]
+	(No symbol) [0x00007FF7DED718DC]
+	(No symbol) [0x00007FF7DEDACBC7]
+	(No symbol) [0x00007FF7DED920EF]
+	(No symbol) [0x00007FF7DEDAAAA4]
+	(No symbol) [0x00007FF7DED91E83]
+	(No symbol) [0x00007FF7DED6670A]
+	(No symbol) [0x00007FF7DED67964]
+	GetHandleVerifier [0x00007FF7DF280AAB+3694587]
+	GetHandleVerifier [0x00007FF7DF2D728E+4048862]
+	GetHandleVerifier [0x00007FF7DF2CF173+4015811]
+	GetHandleVerifier [0x00007FF7DEFA47D6+695590]
+	(No symbol) [0x00007FF7DEE80CE8]
+	(No symbol) [0x00007FF7DEE7CF34]
+	(No symbol) [0x00007FF7DEE7D062]
+	(No symbol) [0x00007FF7DEE6D3A3]
+	BaseThreadInitThunk [0x00007FFC7357257D+29]
+	RtlUserThreadStart [0x00007FFC7486AA78+40]
+
+2023-11-05 15:51:51,221 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-11-05 15:52:04,362 - INFO - Login Done
+2023-11-05 15:52:14,538 - INFO - 7501 Form opened
+2023-11-05 15:52:23,217 - INFO - ----Upper Part Done----
+2023-11-05 15:52:38,842 - INFO - ----Vessel Done----
+2023-11-05 15:52:52,322 - INFO - ----Trading Partner 1 Done----
+2023-11-05 15:53:04,825 - INFO - ----Trading Partner 2 Done----
+2023-11-05 15:53:04,857 - ERROR - Message: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Tariff #1:']//parent::div//following-sibling::div/input[@id='typeahead-basic' and @class='form-control ng-untouched ng-pristine ng-valid']"}
+  (Session info: chrome=119.0.6045.106); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7DEF082B2+55298]
+	(No symbol) [0x00007FF7DEE75E02]
+	(No symbol) [0x00007FF7DED305AB]
+	(No symbol) [0x00007FF7DED7175C]
+	(No symbol) [0x00007FF7DED718DC]
+	(No symbol) [0x00007FF7DEDACBC7]
+	(No symbol) [0x00007FF7DED920EF]
+	(No symbol) [0x00007FF7DEDAAAA4]
+	(No symbol) [0x00007FF7DED91E83]
+	(No symbol) [0x00007FF7DED6670A]
+	(No symbol) [0x00007FF7DED67964]
+	GetHandleVerifier [0x00007FF7DF280AAB+3694587]
+	GetHandleVerifier [0x00007FF7DF2D728E+4048862]
+	GetHandleVerifier [0x00007FF7DF2CF173+4015811]
+	GetHandleVerifier [0x00007FF7DEFA47D6+695590]
+	(No symbol) [0x00007FF7DEE80CE8]
+	(No symbol) [0x00007FF7DEE7CF34]
+	(No symbol) [0x00007FF7DEE7D062]
+	(No symbol) [0x00007FF7DEE6D3A3]
+	BaseThreadInitThunk [0x00007FFC7357257D+29]
+	RtlUserThreadStart [0x00007FFC7486AA78+40]
+
+2023-11-05 16:41:56,306 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-11-05 16:43:06,381 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-11-05 16:47:55,523 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-11-05 23:38:28,688 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-11-05 23:38:43,823 - INFO - Login Done
+2023-11-05 23:38:53,964 - INFO - 7501 Form opened
+2023-11-05 23:38:59,436 - INFO - ----Upper Part Done----
+2023-11-05 23:39:13,455 - INFO - ----Vessel Done----
+2023-11-05 23:39:26,752 - INFO - ----Trading Partner 1 Done----
+2023-11-05 23:39:38,424 - INFO - ----Trading Partner 2 Done----
+2023-11-05 23:39:38,450 - ERROR - Message: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Tariff #1:']//parent::div//following-sibling::div/input[@id='typeahead-basic' and @class='form-control ng-untouched ng-pristine ng-valid']"}
+  (Session info: chrome=119.0.6045.106); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7DEF082B2+55298]
+	(No symbol) [0x00007FF7DEE75E02]
+	(No symbol) [0x00007FF7DED305AB]
+	(No symbol) [0x00007FF7DED7175C]
+	(No symbol) [0x00007FF7DED718DC]
+	(No symbol) [0x00007FF7DEDACBC7]
+	(No symbol) [0x00007FF7DED920EF]
+	(No symbol) [0x00007FF7DEDAAAA4]
+	(No symbol) [0x00007FF7DED91E83]
+	(No symbol) [0x00007FF7DED6670A]
+	(No symbol) [0x00007FF7DED67964]
+	GetHandleVerifier [0x00007FF7DF280AAB+3694587]
+	GetHandleVerifier [0x00007FF7DF2D728E+4048862]
+	GetHandleVerifier [0x00007FF7DF2CF173+4015811]
+	GetHandleVerifier [0x00007FF7DEFA47D6+695590]
+	(No symbol) [0x00007FF7DEE80CE8]
+	(No symbol) [0x00007FF7DEE7CF34]
+	(No symbol) [0x00007FF7DEE7D062]
+	(No symbol) [0x00007FF7DEE6D3A3]
+	BaseThreadInitThunk [0x00007FFC7357257D+29]
+	RtlUserThreadStart [0x00007FFC7486AA78+40]
+
+2023-11-06 09:52:20,711 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-11-06 09:52:36,661 - INFO - Login Done
+2023-11-06 09:52:46,759 - INFO - 7501 Form opened
+2023-11-06 09:52:52,721 - INFO - ----Upper Part Done----
+2023-11-06 09:53:07,204 - INFO - ----Vessel Done----
+2023-11-06 09:53:20,415 - INFO - ----Trading Partner 1 Done----
+2023-11-06 09:53:32,872 - INFO - ----Trading Partner 2 Done----
+2023-11-06 09:53:32,908 - ERROR - Message: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Tariff #1:']//parent::div//following-sibling::div/input[@id='typeahead-basic' and @class='form-control ng-untouched ng-pristine ng-valid']"}
+  (Session info: chrome=119.0.6045.106); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7CB2B82B2+55298]
+	(No symbol) [0x00007FF7CB225E02]
+	(No symbol) [0x00007FF7CB0E05AB]
+	(No symbol) [0x00007FF7CB12175C]
+	(No symbol) [0x00007FF7CB1218DC]
+	(No symbol) [0x00007FF7CB15CBC7]
+	(No symbol) [0x00007FF7CB1420EF]
+	(No symbol) [0x00007FF7CB15AAA4]
+	(No symbol) [0x00007FF7CB141E83]
+	(No symbol) [0x00007FF7CB11670A]
+	(No symbol) [0x00007FF7CB117964]
+	GetHandleVerifier [0x00007FF7CB630AAB+3694587]
+	GetHandleVerifier [0x00007FF7CB68728E+4048862]
+	GetHandleVerifier [0x00007FF7CB67F173+4015811]
+	GetHandleVerifier [0x00007FF7CB3547D6+695590]
+	(No symbol) [0x00007FF7CB230CE8]
+	(No symbol) [0x00007FF7CB22CF34]
+	(No symbol) [0x00007FF7CB22D062]
+	(No symbol) [0x00007FF7CB21D3A3]
+	BaseThreadInitThunk [0x00007FFC7357257D+29]
+	RtlUserThreadStart [0x00007FFC7486AA78+40]
+
+2023-11-06 10:20:16,333 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-11-06 10:20:30,874 - INFO - Login Done
+2023-11-06 10:20:40,976 - INFO - 7501 Form opened
+2023-11-06 10:20:46,725 - INFO - ----Upper Part Done----
+2023-11-06 10:21:01,857 - INFO - ----Vessel Done----
+2023-11-06 10:21:15,025 - INFO - ----Trading Partner 1 Done----
+2023-11-06 10:21:26,912 - INFO - ----Trading Partner 2 Done----
+2023-11-06 10:21:26,941 - ERROR - Message: no such element: Unable to locate element: {"method":"xpath","selector":"//span[text()='Tariff #1:']//parent::div//following-sibling::div/input[@id='typeahead-basic' and @class='form-control ng-untouched ng-pristine ng-valid']"}
+  (Session info: chrome=119.0.6045.106); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Stacktrace:
+	GetHandleVerifier [0x00007FF7AB6D82B2+55298]
+	(No symbol) [0x00007FF7AB645E02]
+	(No symbol) [0x00007FF7AB5005AB]
+	(No symbol) [0x00007FF7AB54175C]
+	(No symbol) [0x00007FF7AB5418DC]
+	(No symbol) [0x00007FF7AB57CBC7]
+	(No symbol) [0x00007FF7AB5620EF]
+	(No symbol) [0x00007FF7AB57AAA4]
+	(No symbol) [0x00007FF7AB561E83]
+	(No symbol) [0x00007FF7AB53670A]
+	(No symbol) [0x00007FF7AB537964]
+	GetHandleVerifier [0x00007FF7ABA50AAB+3694587]
+	GetHandleVerifier [0x00007FF7ABAA728E+4048862]
+	GetHandleVerifier [0x00007FF7ABA9F173+4015811]
+	GetHandleVerifier [0x00007FF7AB7747D6+695590]
+	(No symbol) [0x00007FF7AB650CE8]
+	(No symbol) [0x00007FF7AB64CF34]
+	(No symbol) [0x00007FF7AB64D062]
+	(No symbol) [0x00007FF7AB63D3A3]
+	BaseThreadInitThunk [0x00007FFC7357257D+29]
+	RtlUserThreadStart [0x00007FFC7486AA78+40]
+
+2023-11-07 12:02:58,251 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-11-07 12:03:11,186 - INFO - Login Done
+2023-11-07 12:03:23,337 - INFO - 7501 Form opened
+2023-11-07 12:03:32,120 - INFO - ----Upper Part Done----
+2023-11-07 12:03:51,499 - INFO - ----Vessel Done----
+2023-11-07 12:04:07,558 - INFO - ----Trading Partner 1 Done----
+2023-11-07 12:04:22,903 - INFO - ----Trading Partner 2 Done----
+2023-11-07 12:04:47,016 - INFO - ----Form Saved Successfully----
+2023-11-07 12:04:52,361 - INFO - 7501 Form opened
+2023-11-07 12:05:02,730 - INFO - ----Upper Part Done----
+2023-11-07 12:05:23,326 - INFO - ----Vessel Done----
+2023-11-07 12:05:39,020 - INFO - ----Trading Partner 1 Done----
+2023-11-07 12:05:54,674 - INFO - ----Trading Partner 2 Done----
+2023-11-07 12:06:19,606 - INFO - ----Form Saved Successfully----
+2023-11-07 12:06:24,496 - INFO - 7501 Form opened
+2023-11-07 12:06:33,639 - INFO - ----Upper Part Done----
+2023-11-07 12:06:54,453 - INFO - ----Vessel Done----
+2023-11-07 12:07:11,004 - INFO - ----Trading Partner 1 Done----
+2023-11-07 12:07:26,322 - INFO - ----Trading Partner 2 Done----
+2023-11-07 12:07:54,354 - INFO - ----Form Saved Successfully----
+2023-11-07 12:08:00,540 - INFO - 7501 Form opened
+2023-11-07 12:08:10,875 - INFO - ----Upper Part Done----
+2023-11-07 12:08:31,237 - INFO - ----Vessel Done----
+2023-11-07 12:08:47,933 - INFO - ----Trading Partner 1 Done----
+2023-11-07 12:09:08,575 - INFO - ----Trading Partner 2 Done----
+2023-11-07 12:09:21,479 - INFO - foreign Line Value filled
+2023-11-07 12:09:34,708 - INFO - ----Form Saved Successfully----
+2023-11-07 12:09:39,589 - INFO - 7501 Form opened
+2023-11-07 12:09:48,594 - INFO - ----Upper Part Done----
+2023-11-07 12:10:08,534 - INFO - ----Vessel Done----
+2023-11-07 12:10:25,242 - INFO - ----Trading Partner 1 Done----
+2023-11-07 12:10:41,864 - INFO - ----Trading Partner 2 Done----
+2023-11-07 12:10:54,371 - INFO - It is Cotton HTS
+2023-11-07 12:11:08,516 - INFO - ----Form Saved Successfully----
+2023-11-07 12:36:15,776 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-11-07 12:36:26,246 - INFO - Login Done
+2023-11-07 12:36:38,378 - INFO - 7501 Form opened
+2023-11-07 12:36:54,206 - INFO - It is Cotton HTS
+2023-11-07 12:37:14,425 - INFO - ----Form not Saved----
+2023-11-07 12:38:06,938 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-11-07 12:38:18,543 - INFO - Login Done
+2023-11-07 12:38:30,658 - INFO - 7501 Form opened
+2023-11-07 12:38:47,100 - INFO - It is Cotton HTS
+2023-11-07 12:39:07,057 - INFO - ----Form not Saved----
+2023-11-07 12:41:37,561 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-11-07 12:42:47,582 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-11-07 12:43:20,622 - INFO - Login Done
+2023-11-07 12:43:34,489 - INFO - 7501 Form opened
+2023-11-07 12:43:56,890 - INFO - It is Cotton HTS
+2023-11-07 12:44:24,162 - INFO - ----Form Saved Successfully----
+2023-11-07 12:44:47,924 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-11-07 12:47:22,280 - INFO - Login Done
+2023-11-07 12:47:37,598 - INFO - 7501 Form opened
+2023-11-07 12:48:13,831 - ERROR - Message: 
+Stacktrace:
+	GetHandleVerifier [0x00007FF72C7182B2+55298]
+	(No symbol) [0x00007FF72C685E02]
+	(No symbol) [0x00007FF72C5405AB]
+	(No symbol) [0x00007FF72C58175C]
+	(No symbol) [0x00007FF72C5818DC]
+	(No symbol) [0x00007FF72C5BCBC7]
+	(No symbol) [0x00007FF72C5A20EF]
+	(No symbol) [0x00007FF72C5BAAA4]
+	(No symbol) [0x00007FF72C5A1E83]
+	(No symbol) [0x00007FF72C57670A]
+	(No symbol) [0x00007FF72C577964]
+	GetHandleVerifier [0x00007FF72CA90AAB+3694587]
+	GetHandleVerifier [0x00007FF72CAE728E+4048862]
+	GetHandleVerifier [0x00007FF72CADF173+4015811]
+	GetHandleVerifier [0x00007FF72C7B47D6+695590]
+	(No symbol) [0x00007FF72C690CE8]
+	(No symbol) [0x00007FF72C68CF34]
+	(No symbol) [0x00007FF72C68D062]
+	(No symbol) [0x00007FF72C67D3A3]
+	BaseThreadInitThunk [0x00007FFBA570257D+29]
+	RtlUserThreadStart [0x00007FFBA6A4AA78+40]
+
+2023-11-07 12:48:21,541 - INFO - ----Form Saved Successfully----
+2023-11-07 12:48:30,634 - INFO - 7501 Form opened
+2023-11-07 12:48:50,488 - INFO - It is Cotton HTS
+2023-11-07 12:49:10,980 - INFO - ----Form Saved Successfully----
+2023-11-07 12:49:19,953 - INFO - 7501 Form opened
+2023-11-07 12:50:00,828 - ERROR - EP7 Filled
+2023-11-07 12:50:19,182 - INFO - ----Form Saved Successfully----
+2023-11-07 13:03:40,282 - INFO - ------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------
+2023-11-07 13:04:51,707 - INFO - Login Done
+2023-11-07 13:05:04,921 - INFO - 7501 Form opened
+2023-11-07 13:05:16,346 - INFO - ----Upper Part Done----
+2023-11-07 13:05:46,000 - INFO - ----Vessel Done----
+2023-11-07 13:06:06,754 - INFO - ----Trading Partner 1 Done----
+2023-11-07 13:06:37,908 - INFO - ----Trading Partner 2 Done----
+2023-11-07 13:06:54,350 - INFO - foreign Line Value filled
+2023-11-07 13:07:12,740 - INFO - ----Form Saved Successfully----
+2023-11-07 13:07:20,165 - INFO - 7501 Form opened
+2023-11-07 13:07:29,716 - INFO - ----Upper Part Done----
+2023-11-07 13:07:50,803 - INFO - ----Vessel Done----
+2023-11-07 13:08:09,201 - INFO - ----Trading Partner 1 Done----
+2023-11-07 13:08:24,422 - INFO - ----Trading Partner 2 Done----
+2023-11-07 13:08:37,535 - INFO - It is Cotton HTS
+2023-11-07 13:09:02,530 - INFO - ----Form Saved Successfully----
+2023-11-07 13:09:11,787 - INFO - 7501 Form opened
+2023-11-07 13:09:26,442 - INFO - ----Upper Part Done----
+2023-11-07 13:09:57,535 - INFO - ----Vessel Done----
+2023-11-07 13:10:18,862 - INFO - ----Trading Partner 1 Done----
+2023-11-07 13:10:42,965 - INFO - ----Trading Partner 2 Done----
+2023-11-07 13:11:16,225 - ERROR - EP7 Filled
+2023-11-07 13:11:41,071 - INFO - ----Form Saved Successfully----

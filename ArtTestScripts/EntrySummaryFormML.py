@@ -78,7 +78,7 @@ for r in range(3, 4):
     time.sleep(2)
     selectImporterTxt.send_keys(Keys.ENTER)
 
-for r in range(3, 8):
+for r in range(6, 9):
     i = 0
     i = i - 1
     billCounts = utills.readData(file, "Sheet1", r, 2)
@@ -162,11 +162,16 @@ for r in range(3, 8):
         actionCode.send_keys(actionC)
         actionCode.send_keys(Keys.ENTER)
 
-        if trnpmode != 11:
-            modeOfTransport = driver.find_element(By.ID, "modeOfTransport")
-            modeOfTransport.click()
-            modeOfTransport.send_keys(trnpmode)
-            modeOfTransport.send_keys(Keys.ENTER)
+        # if trnpmode != 11:
+        #     modeOfTransport = driver.find_element(By.ID, "modeOfTransport")
+        #     modeOfTransport.click()
+        #     modeOfTransport.send_keys(trnpmode)
+        #     modeOfTransport.send_keys(Keys.ENTER)
+
+        modeOfTransport = driver.find_element(By.ID, "modeOfTransport")
+        modeOfTransport.click()
+        modeOfTransport.send_keys(trnpmode)
+        modeOfTransport.send_keys(Keys.ENTER)
 
         ivcnumbertxt= driver.find_element(By.CSS_SELECTOR, "input#invoiceNumber")
         ivcnumbertxt.send_keys(invoicenoData)
@@ -1520,7 +1525,21 @@ for r in range(3, 8):
                     maximizeQtySection = mywait.until(
                         EC.element_to_be_clickable((By.XPATH, "//button//span[normalize-space()=" + valhts + "]")))
                     maximizeQtySection.click()
-                    time.sleep(1)
+
+                # Add Cotton Quantity
+                if invoicenoEx=="AB_1LCtnTC5_":
+                    maximizeQtySection = mywait.until(EC.element_to_be_clickable((By.XPATH, "//button//span[normalize-space()=" + valhts + "]")))
+                    maximizeQtySection.click()
+                    CottonQty1=driver.find_element(By.XPATH, "(//input[@name='linevalue'])[2]")
+                    CottonQty1.send_keys(htsqty1)
+                    CottonQty2=driver.find_element(By.XPATH, "(//input[@name='linevalue'])[3]")
+                    CottonQty2.send_keys(htsqty2)
+
+                    DataFilledInCottonQuantity1 = CottonQty1.get_attribute("value")
+                    DataFilledInCottonQuantity2 = CottonQty2.get_attribute("value")
+                    if DataFilledInCottonQuantity1 and DataFilledInCottonQuantity2:
+                        print("This is cotton HTS, Added Quantity: ",DataFilledInCottonQuantity1," and ",DataFilledInCottonQuantity2)
+
             except Exception as e:
                 print(e)
                 logging.error(e)

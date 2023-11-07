@@ -55,7 +55,7 @@ def random_invoceGenerator(size=5, chars=string.ascii_uppercase + string.digits)
 def random_BillGenerator(size=6, chars=string.ascii_uppercase + string.digits):
     return ''.join(random.choice(chars) for x in range(size))
 #Read data from excel
-for r in range(50, 51):
+for r in range(4, 5):
     i = 0
     i = i - 1
     selectImporterData = utills.readData(file, "Sheet1", r, 140)
@@ -165,11 +165,16 @@ for r in range(50, 51):
         actionCode.send_keys(actionC)
         actionCode.send_keys(Keys.ENTER)
 
-        if trnpmode != 11:
-            modeOfTransport = driver.find_element(By.ID, "modeOfTransport")
-            modeOfTransport.click()
-            modeOfTransport.send_keys(trnpmode)
-            modeOfTransport.send_keys(Keys.ENTER)
+        # if trnpmode != 11:
+        #     modeOfTransport = driver.find_element(By.ID, "modeOfTransport")
+        #     modeOfTransport.click()
+        #     modeOfTransport.send_keys(trnpmode)
+        #     modeOfTransport.send_keys(Keys.ENTER)
+        #
+        modeOfTransport = driver.find_element(By.ID, "modeOfTransport")
+        modeOfTransport.click()
+        modeOfTransport.send_keys(trnpmode)
+        modeOfTransport.send_keys(Keys.ENTER)
 
         ivcnumbertxt= driver.find_element(By.CSS_SELECTOR, "input#invoiceNumber")
         ivcnumbertxt.send_keys(invoicenoData)
@@ -1592,7 +1597,21 @@ for r in range(50, 51):
                     maximizeQtySection = mywait.until(
                         EC.element_to_be_clickable((By.XPATH, "//button//span[normalize-space()=" + valhts + "]")))
                     maximizeQtySection.click()
-                    time.sleep(1)
+
+                # Add Cotton Quantity
+                if invoicenoEx=="AB_1LCtnTC5_":
+                    maximizeQtySection = mywait.until(EC.element_to_be_clickable((By.XPATH, "//button//span[normalize-space()=" + valhts + "]")))
+                    maximizeQtySection.click()
+                    CottonQty1=driver.find_element(By.XPATH, "(//input[@name='linevalue'])[2]")
+                    CottonQty1.send_keys(htsqty1)
+                    CottonQty2=driver.find_element(By.XPATH, "(//input[@name='linevalue'])[3]")
+                    CottonQty2.send_keys(htsqty2)
+
+                    DataFilledInCottonQuantity1 = CottonQty1.get_attribute("value")
+                    DataFilledInCottonQuantity2 = CottonQty2.get_attribute("value")
+                    if DataFilledInCottonQuantity1 and DataFilledInCottonQuantity2:
+                        print("This is cotton HTS, Added Quantity: ",DataFilledInCottonQuantity1," and ",DataFilledInCottonQuantity2)
+
             except Exception as e:
                 print(e)
                 logging.error(e)
@@ -1623,26 +1642,26 @@ for r in range(50, 51):
         logging.error(e)
 
 
-
-    try:
-        saveButton = mywait.until(EC.element_to_be_clickable((By.XPATH, "//button[contains(text(),'Save')]")))
-        saveButton.click()
-        time.sleep(2)
-
-        msg = driver.find_element(By.TAG_NAME, "body").text
-
-        if 'Form saved succesfully!' in msg:
-            formSavedConfirmationMsgButton = driver.find_element(By.XPATH, "//button[normalize-space()='OK']")
-            formSavedConfirmationMsgButton.click()
-            time.sleep(2)
-            print("Form Saved Successfully")
-            logging.info("----Form Saved Successfully----")
-            logoutButton = driver.find_element(By.XPATH, "//a[normalize-space()='Logout']")
-            logoutButton.click()
-        else:
-            driver.save_screenshot(".\\screenshots\\" + "testing_scr.png")  # Screenshot
-            logging.info("----Form not Saved----")
-            logoutButton = driver.find_element(By.XPATH, "//a[normalize-space()='Logout']")
-            logoutButton.click()
-    except:
-        pass
+# Save the form
+#     try:
+#         saveButton = mywait.until(EC.element_to_be_clickable((By.XPATH, "//button[contains(text(),'Save')]")))
+#         saveButton.click()
+#         time.sleep(2)
+#
+#         msg = driver.find_element(By.TAG_NAME, "body").text
+#
+#         if 'Form saved succesfully!' in msg:
+#             formSavedConfirmationMsgButton = driver.find_element(By.XPATH, "//button[normalize-space()='OK']")
+#             formSavedConfirmationMsgButton.click()
+#             time.sleep(2)
+#             print("Form Saved Successfully")
+#             logging.info("----Form Saved Successfully----")
+#             logoutButton = driver.find_element(By.XPATH, "//a[normalize-space()='Logout']")
+#             logoutButton.click()
+#         else:
+#             driver.save_screenshot(".\\screenshots\\" + "testing_scr.png")  # Screenshot
+#             logging.info("----Form not Saved----")
+#             logoutButton = driver.find_element(By.XPATH, "//a[normalize-space()='Logout']")
+#             logoutButton.click()
+#     except:
+#         pass
