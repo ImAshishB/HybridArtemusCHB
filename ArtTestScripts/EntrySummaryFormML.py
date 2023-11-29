@@ -311,20 +311,34 @@ for r in range(6, 9):
 
     # Vessel Inforrmation
     try:
-        vesselNametxt = driver.find_element(By.CSS_SELECTOR, "input#vesselName")
-        vesselNametxt.send_keys(vesselsname)
+        try:
+            vesselNametxt = driver.find_element(By.CSS_SELECTOR, "input#vesselName")
+            vesselNametxt.send_keys(vesselsname)
+        except:
+            pass
+
         vesselFlightNotxt = driver.find_element(By.CSS_SELECTOR, "input#vesselFlightNo")
         vesselFlightNotxt.send_keys(vessellsno)
 
-        Continer = driver.find_elements(By.XPATH, "// a[contains(text(), 'Add/Edit container')]")
-        if Continer:
-            driver.find_element(By.XPATH, "// a[contains(text(), 'Add/Edit container')]").click()
-            for cont in zip(containerlist):
-                driver.find_element(By.XPATH,"//app-vessel-container//div[@class='row new-form-row'][1]//div[@class='col-md-4 form-lable'][1]//input[@type='text']").send_keys(cont)
-                time.sleep(1)
-                driver.find_element(By.XPATH,"//app-vessel-container//div[@class='row new-form-row'][4]//button[normalize-space()='Add new container']").click()
-                time.sleep(1)
-            driver.find_element(By.XPATH, "//button[@type='button'][normalize-space()='Save']").click()
+        try:
+            Continer = driver.find_elements(By.XPATH, "// a[contains(text(), 'Add/Edit container')]")
+            if Continer:
+                driver.find_element(By.XPATH, "// a[contains(text(), 'Add/Edit container')]").click()
+                for cont in zip(containerlist):
+                    driver.find_element(By.XPATH,
+                                        "//app-vessel-container//div[@class='row new-form-row'][1]//div[@class='col-md-4 form-lable'][1]//input[@type='text']").send_keys(
+                        cont)
+                    time.sleep(1)
+                    driver.find_element(By.XPATH,
+                                        "//app-vessel-container//div[@class='row new-form-row'][4]//button[normalize-space()='Add new container']").click()
+                    time.sleep(1)
+                driver.find_element(By.XPATH, "//button[@type='button'][normalize-space()='Save']").click()
+        except:
+            print("No Container found")
+            pass
+
+
+
 
         # Check if all data filled in Vessel information or not
         if vesselNametxt.get_attribute("value") and vesselFlightNotxt.get_attribute("value"):
@@ -335,9 +349,7 @@ for r in range(6, 9):
             logging.error("!----Vessel Not Done----!")
 
     except Exception as e:
-        # print(e)
-        print("No Container found")
-        logging.info("No Container found")
+        pass
 
 
     # Trading Partners
