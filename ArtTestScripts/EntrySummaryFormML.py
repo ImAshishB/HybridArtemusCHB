@@ -78,7 +78,7 @@ for r in range(3, 4):
     time.sleep(2)
     selectImporterTxt.send_keys(Keys.ENTER)
 
-for r in range(6, 9):
+for r in range(4, 8):
     i = 0
     i = i - 1
     billCounts = utills.readData(file, "Sheet1", r, 2)

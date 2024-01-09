@@ -55,7 +55,7 @@ def random_invoceGenerator(size=5, chars=string.ascii_uppercase + string.digits)
 def random_BillGenerator(size=6, chars=string.ascii_uppercase + string.digits):
     return ''.join(random.choice(chars) for x in range(size))
 #Read data from excel
-for r in range(4, 5):
+for r in range(19, 20):
     i = 0
     i = i - 1
     selectImporterData = utills.readData(file, "Sheet1", r, 140)

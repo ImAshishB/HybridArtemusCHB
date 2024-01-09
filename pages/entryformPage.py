@@ -14,6 +14,9 @@ class EntryFormPage(BaseDriver):
 
     # Locators
 
+    # Select Importer
+    selectImporterTxt_XPATH = "//input[@id='typeahead-basic']"
+
     shipment_LINK_TEXT = "Shipments"
     form7501_LINK_TEXT = "Form 7501"
 
@@ -86,6 +89,15 @@ class EntryFormPage(BaseDriver):
 
 
     # Home Page
+    def selectImporter(self, selectImporterData):
+        selectImporterTxt = self.mywait.until(EC.element_to_be_clickable((By.XPATH, self.selectImporterTxt_XPATH)))
+        selectImporterTxt.click()
+        selectImporterTxt.send_keys(selectImporterData)
+        time.sleep(2)
+        selectImporterTxt.send_keys(Keys.BACKSPACE)
+        time.sleep(2)
+        selectImporterTxt.send_keys(Keys.ENTER)
+        time.sleep(2)
     def shipment(self):
         shipmentlink = self.mywait.until(EC.element_to_be_clickable((By.LINK_TEXT, self.shipment_LINK_TEXT)))
         shipmentlink.click()
