@@ -35,6 +35,8 @@ class TestEntryForm():
         for r in range(3, 4):
             self.usernameData = utills.readData(self.file, 'Sheet1', r, 5)
             self.passwordData = utills.readData(self.file, 'Sheet1', r, 6)
+            self.selectIMPORTERData = utills.readData(self.file, 'Sheet1', r, 140)
+
 
             # Login
             self.lp.userName(self.usernameData)
@@ -45,6 +47,7 @@ class TestEntryForm():
             # Go to 7501 Page
             self.esf = EntryFormPage(self.driver, self.mywait)
             self.esf.shipment()
+            self.esf.selectImporter(self.selectIMPORTERData)
             self.esf.form7501()
             self.log.info("----Entered in Form 7501----")
 
@@ -77,6 +80,7 @@ class TestEntryForm():
         for r in range(3, 4):
             self.usernameData = utills.readData(self.file, 'Sheet1', r, 5)
             self.passwordData = utills.readData(self.file, 'Sheet1', r, 6)
+            self.selectIMPORTERData = utills.readData(self.file, 'Sheet1', r, 140)
 
             # Login
             self.lp.userName(self.usernameData)
@@ -87,6 +91,7 @@ class TestEntryForm():
             # Go to 7501 Page
             self.esf = EntryFormPage(self.driver, self.mywait)
             self.esf.shipment()
+            self.esf.selectImporter(self.selectIMPORTERData)
             self.esf.form7501()
             self.log.info("----Entered in Form 7501----")
 
@@ -119,6 +124,7 @@ class TestEntryForm():
         for r in range(3, 4):
             self.usernameData = utills.readData(self.file, 'Sheet1', r, 5)
             self.passwordData = utills.readData(self.file, 'Sheet1', r, 6)
+            self.selectIMPORTERData = utills.readData(self.file, 'Sheet1', r, 140)
 
             # Login
             self.lp.userName(self.usernameData)
@@ -129,6 +135,7 @@ class TestEntryForm():
             # Go to 7501 Page
             self.esf = EntryFormPage(self.driver, self.mywait)
             self.esf.shipment()
+            self.esf.selectImporter(self.selectIMPORTERData)
             self.esf.form7501()
             self.log.info("----Entered in Form 7501----")
 
@@ -149,6 +156,7 @@ class TestEntryForm():
         for r in range(3, 4):
             self.usernameData = utills.readData(self.file, 'Sheet1', r, 5)
             self.passwordData = utills.readData(self.file, 'Sheet1', r, 6)
+            self.selectIMPORTERData = utills.readData(self.file, 'Sheet1', r, 140)
 
             # Login
             self.lp.userName(self.usernameData)
@@ -159,6 +167,7 @@ class TestEntryForm():
             # Go to 7501 Page
             self.esf = EntryFormPage(self.driver, self.mywait)
             self.esf.shipment()
+            self.esf.selectImporter(self.selectIMPORTERData)
             self.esf.form7501()
             self.log.info("----Entered in Form 7501----")
 

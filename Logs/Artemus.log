@@ -690,3 +690,97 @@
 2023-10-19 18:10:23 - TestEntryForm - INFO - ----------------Test Case test_saveformwithParts Starterd----------------
 2023-10-19 18:10:32 - TestEntryForm - INFO - ----Entered in Form 7501----
 2023-10-19 18:10:59 - TestEntryForm - INFO - Test Case 'save form with Parts' Failed
+2024-01-09 13:16:07 - TestEntryForm1LineItem - INFO - ----------------Test Case test_HTC1 Starterd----------------
+2024-01-09 13:16:10 - TestEntryForm1LineItem - INFO - ----Login Done----
+2024-01-09 13:16:16 - TestEntryForm1LineItem - INFO - ----Form 7501 Opened----
+2024-01-09 13:16:16 - TestEntryForm1LineItem - INFO - ----Upper Part Started----
+2024-01-09 13:16:27 - TestBillOfLading - INFO - ----Test Case test_BillOfLading Started----
+2024-01-09 13:16:28 - TestBillOfLading - INFO - ----Login Done----
+2024-01-09 13:16:35 - TestBillOfLading - INFO - ----7501 Form Opened----
+2024-01-09 13:16:35 - TestBillOfLading - INFO - ----Bill Of lading Started----
+2024-01-09 13:16:59 - TestLogin - INFO - Name shown in Homepage
+2024-01-09 13:16:59 - TestLogin - INFO - Name shown in Homepage
+2024-01-09 13:16:59 - TestLogin - INFO - Test Case Pass
+2024-01-09 13:16:59 - TestLogin - INFO - Test Case Pass
+2024-01-09 13:17:16 - TestLogin - INFO - Name shown in Homepage2
+2024-01-09 13:17:16 - TestLogin - INFO - Name shown in Homepage2
+2024-01-09 13:17:16 - TestLogin - INFO - Test Case 2 Pass
+2024-01-09 13:17:16 - TestLogin - INFO - Test Case 2 Pass
+2024-01-09 13:17:34 - TestLogin - INFO - Name shown in Homepage
+2024-01-09 13:17:34 - TestLogin - INFO - Name shown in Homepage
+2024-01-09 13:17:34 - TestLogin - INFO - Test Case Pass
+2024-01-09 13:17:34 - TestLogin - INFO - Test Case Pass
+2024-01-09 13:17:56 - TestLogin - INFO - Name shown in Homepage2
+2024-01-09 13:17:56 - TestLogin - INFO - Name shown in Homepage2
+2024-01-09 13:17:56 - TestLogin - INFO - Test Case 2 Pass
+2024-01-09 13:17:56 - TestLogin - INFO - Test Case 2 Pass
+2024-01-09 13:18:07 - Test1LTC - INFO - ----------------Test Case test_HTC1 Starterd----------------
+2024-01-09 13:18:07 - Test1LTC - INFO - ----------------Test Case test_HTC1 Starterd----------------
+2024-01-09 13:18:07 - Test1LTC - INFO - ----------------Test Case test_HTC1 Starterd----------------
+2024-01-09 13:18:07 - Test1LTC - INFO - ----------------Test Case test_HTC1 Starterd----------------
+2024-01-09 13:18:07 - Test1LTC - INFO - ----------------Test Case test_HTC1 Starterd----------------
+2024-01-09 13:18:13 - Test1LTC - INFO - ----Login Done----
+2024-01-09 13:18:13 - Test1LTC - INFO - ----Login Done----
+2024-01-09 13:18:13 - Test1LTC - INFO - ----Login Done----
+2024-01-09 13:18:13 - Test1LTC - INFO - ----Login Done----
+2024-01-09 13:18:13 - Test1LTC - INFO - ----Login Done----
+2024-01-09 13:18:20 - Test1LTC - INFO - ----Form 7501 Opened----
+2024-01-09 13:18:20 - Test1LTC - INFO - ----Form 7501 Opened----
+2024-01-09 13:18:20 - Test1LTC - INFO - ----Form 7501 Opened----
+2024-01-09 13:18:20 - Test1LTC - INFO - ----Form 7501 Opened----
+2024-01-09 13:18:20 - Test1LTC - INFO - ----Form 7501 Opened----
+2024-01-09 13:18:20 - Test1LTC - INFO - ----Upper Part Started----
+2024-01-09 13:18:20 - Test1LTC - INFO - ----Upper Part Started----
+2024-01-09 13:18:20 - Test1LTC - INFO - ----Upper Part Started----
+2024-01-09 13:18:20 - Test1LTC - INFO - ----Upper Part Started----
+2024-01-09 13:18:20 - Test1LTC - INFO - ----Upper Part Started----
+2024-01-09 13:18:32 - Test1LTC - INFO - ----------------Test Case test_HTC2 Starterd----------------
+2024-01-09 13:18:32 - Test1LTC - INFO - ----------------Test Case test_HTC2 Starterd----------------
+2024-01-09 13:18:32 - Test1LTC - INFO - ----------------Test Case test_HTC2 Starterd----------------
+2024-01-09 13:18:32 - Test1LTC - INFO - ----------------Test Case test_HTC2 Starterd----------------
+2024-01-09 13:18:32 - Test1LTC - INFO - ----------------Test Case test_HTC2 Starterd----------------
+2024-01-09 13:18:40 - Test1LTC - INFO - ----Login Done----
+2024-01-09 13:18:40 - Test1LTC - INFO - ----Login Done----
+2024-01-09 13:18:40 - Test1LTC - INFO - ----Login Done----
+2024-01-09 13:18:40 - Test1LTC - INFO - ----Login Done----
+2024-01-09 13:18:40 - Test1LTC - INFO - ----Login Done----
+2024-01-09 13:18:47 - Test1LTC - INFO - ----Form 7501 Opened----
+2024-01-09 13:18:47 - Test1LTC - INFO - ----Form 7501 Opened----
+2024-01-09 13:18:47 - Test1LTC - INFO - ----Form 7501 Opened----
+2024-01-09 13:18:47 - Test1LTC - INFO - ----Form 7501 Opened----
+2024-01-09 13:18:47 - Test1LTC - INFO - ----Form 7501 Opened----
+2024-01-09 13:18:47 - Test1LTC - INFO - ----Upper Part Started----
+2024-01-09 13:18:47 - Test1LTC - INFO - ----Upper Part Started----
+2024-01-09 13:18:47 - Test1LTC - INFO - ----Upper Part Started----
+2024-01-09 13:18:47 - Test1LTC - INFO - ----Upper Part Started----
+2024-01-09 13:18:47 - Test1LTC - INFO - ----Upper Part Started----
+2024-01-09 13:32:16 - TestEntryForm - INFO - ----------------Test Case test_saveformwithinvoiceNumber Starterd----------------
+2024-01-09 13:32:31 - TestEntryForm - INFO - ----Entered in Form 7501----
+2024-01-09 13:32:39 - TestEntryForm - INFO - Test Case 'save form with invoice Number' Passed
+2024-01-09 13:32:39 - TestEntryForm - INFO - ----------------Test Case test_saveformwithinvoiceNumber End----------------
+2024-01-09 13:33:01 - TestEntryForm - INFO - ----------------Test Case test_saveformwithoutinvoiceNumber Starterd----------------
+2024-01-09 13:33:20 - TestEntryForm - INFO - ----------------Test Case test_saveformwithExistinginvoiceNumber Starterd----------------
+2024-01-09 13:33:39 - TestEntryForm - INFO - ----------------Test Case test_saveformwithParts Starterd----------------
+2024-01-09 13:33:53 - TestEntryForm - INFO - ----Entered in Form 7501----
+2024-01-09 14:50:32 - TestEntryForm - INFO - ----------------Test Case test_saveformwithinvoiceNumber Starterd----------------
+2024-01-09 14:50:48 - TestEntryForm - INFO - ----Entered in Form 7501----
+2024-01-09 14:50:57 - TestEntryForm - INFO - Test Case 'save form with invoice Number' Passed
+2024-01-09 14:50:57 - TestEntryForm - INFO - ----------------Test Case test_saveformwithinvoiceNumber End----------------
+2024-01-09 14:51:29 - TestEntryForm - INFO - ----------------Test Case test_saveformwithoutinvoiceNumber Starterd----------------
+2024-01-09 14:52:03 - TestEntryForm - INFO - ----------------Test Case test_saveformwithExistinginvoiceNumber Starterd----------------
+2024-01-09 14:52:30 - TestEntryForm - INFO - ----------------Test Case test_saveformwithParts Starterd----------------
+2024-01-09 14:52:45 - TestEntryForm - INFO - ----Entered in Form 7501----
+2024-01-09 14:56:01 - TestEntryForm - INFO - ----------------Test Case test_saveformwithinvoiceNumber Starterd----------------
+2024-01-09 14:56:17 - TestEntryForm - INFO - ----Entered in Form 7501----
+2024-01-09 14:56:25 - TestEntryForm - INFO - Test Case 'save form with invoice Number' Passed
+2024-01-09 14:56:26 - TestEntryForm - INFO - ----------------Test Case test_saveformwithinvoiceNumber End----------------
+2024-01-09 14:57:06 - TestEntryForm - INFO - ----------------Test Case test_saveformwithoutinvoiceNumber Starterd----------------
+2024-01-09 14:57:22 - TestEntryForm - INFO - ----Entered in Form 7501----
+2024-01-09 14:57:27 - TestEntryForm - INFO - Test Case 'save form without invoice Number' Passed
+2024-01-09 14:57:27 - TestEntryForm - INFO - ----------------Test Case test_saveformwithoutinvoiceNumber End----------------
+2024-01-09 14:58:12 - TestEntryForm - INFO - ----------------Test Case test_saveformwithExistinginvoiceNumber Starterd----------------
+2024-01-09 14:58:27 - TestEntryForm - INFO - ----Entered in Form 7501----
+2024-01-09 14:58:31 - TestEntryForm - INFO - Test Case 'save form with Existing invoice Number' Passed
+2024-01-09 14:58:31 - TestEntryForm - INFO - ----------------Test Case test_saveformwithExistinginvoiceNumber End----------------
+2024-01-09 14:59:15 - TestEntryForm - INFO - ----------------Test Case test_saveformwithParts Starterd----------------
+2024-01-09 14:59:31 - TestEntryForm - INFO - ----Entered in Form 7501----
