@@ -24,7 +24,6 @@ class BaseDriver:
             self.driver.find_element(By.XPATH,"//div[@class='swal2-popup swal2-modal swal2-icon-warning animate__animated animate__fadeInDown']//button[text()='OK']").click()
             print("This Bill Number is already Used in another Entry")
 
-
     def webalert(self):
         try:
             alert = self.driver.switch_to.alert
