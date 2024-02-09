@@ -86,8 +86,6 @@ class EntryFormPage(BaseDriver):
     foreignLineValueOutClick_XPATH = "//span[text()='Foreign Line Value:']"
     NumberOfLineItem_XPATH = "//button[@aria-expanded='true' and @class='btn btn-link']//div[2]"
 
-
-
     # Home Page
     def selectImporter(self, selectImporterData):
         selectImporterTxt = self.mywait.until(EC.element_to_be_clickable((By.XPATH, self.selectImporterTxt_XPATH)))
@@ -320,7 +318,6 @@ class EntryFormPage(BaseDriver):
         invoiceTotalTxt = self.driver.find_element(By.CSS_SELECTOR, self.invoiceTotalTxt_CSS)
         invoiceTotalTxt.send_keys(invoiceTotaldata)
 
-
     def chinaHTS(self):
         self.driver.find_element(By.XPATH, "//button[normalize-space()='Yes']").click()
         time.sleep(1)
@@ -333,7 +330,6 @@ class EntryFormPage(BaseDriver):
         linevalueTxt.send_keys(Keys.CONTROL + 'a')
         linevalueTxt.send_keys(Keys.BACKSPACE)
         linevalueTxt.send_keys(lnvl)
-
     def foreinValue(self, foreinlinevalueData):
         foreignLineValueTxt = self.driver.find_element(By.XPATH, self.foreignLineValueTxt_XPATH)
         foreignLineValueTxt.send_keys(foreinlinevalueData)
