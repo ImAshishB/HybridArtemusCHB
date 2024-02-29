@@ -2,6 +2,7 @@ import time
 import pytest
 from pages.loginPage import Loginpage
 from pages.entryformPage import EntryFormPage
+from pages.form5106Page import  Form5106Page
 from pages.getAttributes import getAtributesOfText
 from selenium.webdriver.common.by import By
 from utilites.utils import utills
@@ -16,12 +17,10 @@ from utilites.utils import utills
 
 @pytest.mark.usefixtures("setup")
 class Test_5106_TC1():
-    randomInvoice = "ABTestTC1"+ utills.random_invoceGenerator() # random_invoceGenerator() came from utils
-    randomBill = "M" + utills.random_BillGenerator()  # random_BillGenerator() came from utils
+    ImporterNameData = "Imprtr CPMA_" + utills.random_importerNameGenerator() # random_importerNameGenerator() came from utils
+    ImporterNumberData = "10-" + utills.random_importerNumberGenerator() # random_importerNumberGenerator() came from utils
     file = "D:/Artmus Spec/Automation_Artemus/TestML.xlsx"
-    log = utills.custom_logger()  # we can change logging level
-    rows = utills.getRowCount(file, "TcHybridArtemusData")
-    coloumns = utills.getColumnCount(file, "TcHybridArtemusData")
+    log = utills.custom_logger_5106()  # we can change logging level
     list_status = []  # Empty List Veriable
 
 
@@ -30,109 +29,96 @@ class Test_5106_TC1():
         self.lp = Loginpage(self.driver, self.mywait)
         self.esf = EntryFormPage(self.driver, self.mywait)
         self.getvalues = getAtributesOfText(self.driver, self.mywait)
+        self.frm5106 = Form5106Page(self.driver, self.mywait)
 
 
-    def test_HTC1(self): # Country of origin india/No Duty HTS(NDC)
+    def test_ITTC1(self):
         self.log.info("----------------Test Case test_HTC1 Starterd----------------")
 
         for r in range(3, 4):
-            self.addBillbutton = utills.readData(self.file, 'TcHybridArtemusData', r, 2)
-            self.lineitmscount = utills.readData(self.file, 'TcHybridArtemusData', r, 3)
+            self.usernameData = utills.readData(self.file, "Sheet5106", r, 4)
+            self.passwordData = utills.readData(self.file, "Sheet5106", r, 5)
+            self.UtilizedforChckBoxData = utills.readData(self.file, "Sheet5106", r, 3)
+            self.ImporterNameEx = utills.readData(self.file, "Sheet5106", r, 6)
+            self.AlternateImporterNameData = utills.readData(self.file, "Sheet5106", r, 9)
+            self. OtherDescriptionData = utills.readData(self.file, "Sheet5106", r, 10)
+            self.ImporterTypeData = utills.readData(self.file, "Sheet5106", r, 11)
+            self.MailingAddressData = utills.readData(self.file, "Sheet5106", r, 12)
+            self.Line1Data = utills.readData(self.file, "Sheet5106", r, 13)
+            self.Line2Data = utills.readData(self.file, "Sheet5106", r, 14)
+            self.ZipcodeData = utills.readData(self.file, "Sheet5106", r, 15)
+            self.AddressTypeData = utills.readData(self.file, "Sheet5106", r, 16)
+            self.cityData = utills.readData(self.file, "Sheet5106", r, 17)
+            self.CountryCodeData = utills.readData(self.file, "Sheet5106", r, 18)
+            self.StateData = utills.readData(self.file, "Sheet5106", r, 19)
+            self.AddressExplanationData = utills.readData(self.file, "Sheet5106", r, 20)
+            self.PhoneData = utills.readData(self.file, "Sheet5106", r, 21)
+            self.EmailData = utills.readData(self.file, "Sheet5106", r, 22)
 
             # Login
             self.lp.userName(self.usernameData)
             self.lp.password(self.passwordData)
             self.lp.login()
             self.log.info("----Login Done----")
-            time.sleep(3)
+            time.sleep(4)
 
-            # Go to 7501 Page
-            # self.esf = EntryFormPage(self.driver, self.mywait)
-            self.esf.shipment()
-            self.esf.form7501()
-            self.log.info("----Form 7501 Opened----")
+            # Go to 5106 Page
+            self.frm5106.L5106()
+            time.sleep(1)
+            self.frm5106.form5106()
+            time.sleep(1)
+            self.log.info("----Form 5106 Opened----")
 
-            # Upper Part
-            self.log.info("----Upper Part Started----")
-            self.esf.invoicenumber(self.randomInvoice)
-            self.esf.entryFillingTypecode(self.entfilltypeData)
-            self.esf.actionCode(self.actionCData)
-            self.esf.modeOfTransport(self.trnpmodeData)
-            self.log.info("----Upper Part Done----")
+            # Form
+            self.log.info("----Form filling Started----")
+            self.frm5106.importerName(self.ImporterNameData)
+            self.frm5106.importerNumber(self.ImporterNumberData)
 
-            # Bill of Lading
-            self.log.info("----Bill Of Lading Started----")
-            self.esf.scaccode(self.scacData)
-            self.esf.bill(self.randomBill)
-            self.esf.uom(self.uomData)
-            self.esf.quantity(self.qtyyData)
-            self.log.info("----Bill Of Lading Done----")
+            self.frm5106.Line1(self.Line1Data)
+            self.frm5106.Line2(self.Line2Data)
+            self.frm5106.Zipcode(self.ZipcodeData)
+            self.frm5106.AddressType(self.AddressTypeData)
+            self.frm5106.City(self.cityData)
+            self.frm5106.Country(self.CountryCodeData)
+            time.sleep(1)
+            self.frm5106.State(self.StateData)
 
+            self.frm5106.CopyMailingAddress()
 
-            # Vessel Inforrmation
-            self.log.info("----Vessel Information Started----")
-            self.esf.vesselName(self.vesselsnameData)
-            self.esf.vesselFlightNo(self.vessellsnoData)
-            self.esf.addEditContiner()
-            self.esf.containers(self.containerlistData)
-            self.esf.saveContainer()
-            self.log.info("----Vessel Information Done----")
+            self.frm5106.PhoneNumber(self.PhoneData)
+            self.frm5106.EmailAddress(self.EmailData)
 
-            # Trading Partners 1
-            self.log.info("----Trading Partners 1 Started----")
-            self.esf.manufarture(self.manufacturerData)
-            self.esf.seller(self.sellerData)
-            self.esf.consignee(self.buyerData)
-            self.esf.buyer(self.buyerData)
-            self.log.info("----Trading Partners 1 Done----")
+            self.frm5106.SaveButton()
+            self.frm5106.ConfirmationOfSave()
 
-            # Trading Partners 2
+            self.frm5106.AllButton()
 
-            self.log.info("----Trading Partners 2 Started----")
-            self.esf.countryOfOrigin1(self.countryOfOrigin1Data)
-            self.esf.release_port(self.release_portData)
-            self.esf.countryOfExport1(self.countryOfExport1Data)
-            self.esf.ladingport(self.ladingportData)
-            self.esf.weight(self.grossWeightData)
-            self.esf.charges(self.chargedata)
-            self.esf.unladingport(self.unladingportData)
-            self.esf.manifestDescription(self.manifestDescriptionData)
-            self.esf.arrivaldate(self.arrivaldateData)
-            self.esf.exportdate(self.exportdateData)
-            self.log.info("----Trading Partners 2 Done----")
+            self.log.info("----Form filling Done----")
 
-            # Line Items
-            self.log.info("----Line Items Started----")
-            self.esf.invoiceTotal(self.invoiceTotalData)
-            self.esf.countryOfOrigin2(self.countryOfOrigin2Data)
-            self.esf.countryOfExport2(self.countryOfExport2Data)
-            self.esf.tariffno(self.tariffnoData)
-            self.esf.lineValue(self.linevalueData)
-            self.log.info("----Line Items Done----")
 
             # Save the form
-            self.esf.saveform()
+            # self.esf.saveform()
 
             # Verify that form should be saved
-            self.msg = self.driver.find_element(By.TAG_NAME, "body").text
+            # self.msg = self.driver.find_element(By.TAG_NAME, "body").text
+            #
+            # if 'Form saved succesfully!' in self.msg:
+            #     assert True
+            #     self.esf.formSavedConfirmationMsg()
+            #     self.log.info("----Form Saved Successfully----")
+            #     self.lp.logout()
+            # else:
+            #     self.driver.save_screenshot(".\\screenshots\\" + "test_HTC1_scr.png")  # Screenshot
+            #     self.esf.formSavedConfirmationMsg()
+            #     self.log.error("----Form Not Saved. Test Failed----")
+            #     self.lp.logout()
+            #     assert False
 
-            if 'Form saved succesfully!' in self.msg:
-                assert True
-                self.esf.formSavedConfirmationMsg()
-                self.log.info("----Form Saved Successfully----")
-                self.lp.logout()
-            else:
-                self.driver.save_screenshot(".\\screenshots\\" + "test_HTC1_scr.png")  # Screenshot
-                self.esf.formSavedConfirmationMsg()
-                self.log.error("----Form Not Saved. Test Failed----")
-                self.lp.logout()
-                assert False
-
-        self.log.info("----------------Test Case test_HTC1 End----------------")
+        self.log.info("----------------Test Case test_IMTC1 End----------------")
 
 
 
-# pytest -v -s testcases/test_TC1.py
+# pytest -v -s testcases/test_TC1_5106.py
 # pytest -v -s testcases/test_TC1.py --browser chrome
 # pytest -v -s testcases/test_TC1.py --browser firefox
 # pytest -v -s --html=reports\report.html testcases/test_TC1.py

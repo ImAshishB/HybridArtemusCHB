@@ -1,60 +1,29 @@
+from selenium import webdriver
+from selenium.common import NoSuchElementException, ElementNotVisibleException, ElementNotSelectableException, \
+    ElementClickInterceptedException, ElementNotInteractableException, NoAlertPresentException, TimeoutException
+from selenium.webdriver import ActionChains, Keys
+from selenium.webdriver.chrome.service import Service
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support.wait import WebDriverWait
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
 from utilites.utils import utills
-import string
-import random
-
-file = "D:\Artmus Spec\Automation_Artemus\TestML.xlsx"
-rows = utills.getRowCount(file, "Sheet1")
-coloumns = utills.getColumnCount(file, "Sheet1")
-
-def random_invoceGenerator(size=5, chars=string.ascii_uppercase + string.digits):
-    return ''.join(random.choice(chars) for x in range(size))
-def random_BillGenerator(size=6, chars=string.ascii_uppercase + string.digits + ','):
-    return ''.join(random.choice(chars) for x in range(size))
+import time
 
 
-def random_BilloGenerator(size=6, chars=string.ascii_uppercase + string.digits):
-    # Generate a random index to insert commas
-    comma_indices = random.sample(range(size), random.randint(0, size))
-    # Initialize the generated string with no commas
-    result = ''.join(random.choice(chars) for _ in range(size))
-    # Insert commas at random positions
-    for index in comma_indices:
-        result = result[:index] + ',' + result[index:]
-    return result
 
-#Read data from excel
-for r in range(9, 12):
-    i = 0
-    i = i - 1
-    billCounts = utills.readData(file, "Sheet1", r, 2)
-    lineitmscount = utills.readData(file, "Sheet1", r, 3)
+# file = "D:\Artmus Spec\Automation_Artemus\querylist.xlsx"
+# for r in range(1, 6):
+#     ImporterData = utills.readData(file, "Sheet3", r, 1)
+#     print(ImporterData)
 
-    trnpmode = utills.readData(file, "Sheet1", r, 9)
-    scacData = utills.readData(file, "Sheet1", r, 11).split(",")
-
-    entfilltype = utills.readData(file, "Sheet1", r, 7)
-    scacData2 = "MFUS"
-    scacData3 = "tk"
-    billofladdingNo2 = random_BillGenerator()
-    uomData2 = "PKG"
-    qtyyData2 = "50"
-
-    #print(trnpmode)
-
-    if trnpmode == 40:# or "11"
-        print(scacData3)
-    else:
-        print(scacData2)
-
-    # Bill Of lading
     # try:
-    #     print(billCounts)
-    #     billCounts = billCounts - 1
-    #     for i in range(billCounts):
-    #         print(billCounts)
-    #     for val_SCAC, val_UOM, val_BL_QTY in zip(scacData, uomData, qtyyData):  # button #val_BL  billofladdingNo
-    #         print(val_SCAC, val_UOM, val_BL_QTY, billofladdingNo)#, billofladdingNo
-    #
-    # except Exception as e:
-    #     print(e)
+    #     ImporterNumber = driver.find_element(By.XPATH,"//span[text()='Importer Number:']//parent::div//following-sibling::div").text
+    #     print(ImporterNumber)
+    #     utills.writeData(file, "Sheet3", r, 2, ImporterNumber)
+    # except:
+    #     pass
 
+a = 4
+for _ in range(a):
+    print("Ashish")
