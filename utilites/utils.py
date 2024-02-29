@@ -24,6 +24,18 @@ class utills():
         logger.addHandler(fh)
         return logger
 
+
+    def custom_logger_5106(logLevel=logging.DEBUG, log_folder="Logs"):
+        logger_name = inspect.stack()[1][3]
+        logger = logging.getLogger(logger_name)
+        logger.setLevel(logLevel)
+        log_file_path = os.path.join(log_folder, "Artemus5106.log")
+        fh= logging.FileHandler(log_file_path)
+        formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
+        fh.setFormatter(formatter)
+        logger.addHandler(fh)
+        return logger
+
     def getRowCount(file, sheetName):
         workbook = openpyxl.load_workbook(file)
         sheet = workbook[sheetName]
@@ -49,6 +61,12 @@ class utills():
         return ''.join(random.choice(chars) for x in range(size))
 
     def random_BillGenerator(size=6, chars=string.ascii_uppercase + string.digits):
+        return ''.join(random.choice(chars) for x in range(size))
+
+    def random_importerNameGenerator(size=4, chars=string.ascii_uppercase):
+        return ''.join(random.choice(chars) for x in range(size))
+
+    def random_importerNumberGenerator(size=9, chars=string.digits):
         return ''.join(random.choice(chars) for x in range(size))
 
 

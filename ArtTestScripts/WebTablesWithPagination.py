@@ -58,20 +58,17 @@ time.sleep(2)
 selectImporterTxt.send_keys(Keys.ENTER)
 time.sleep(2)
 nextarroro=driver.find_element(By.XPATH, "//i[@class='fa fa-arrow-circle-o-right fa-2x']")
-rows=driver.find_element(By.XPATH, "//table/tbody/tr").text # count number of rows
-cols=driver.find_element(By.XPATH, "//table/thead/tr/th").text # count number of coloumns
 rowsCount=len(driver.find_elements(By.XPATH, "//table/tbody/tr")) # count number of rows
 colsCount=len(driver.find_elements(By.XPATH, "//table/thead/tr/th")) # count number of coloumns
-print("Total number of rows are:",rows)
-print("Total number of coloumns are:",cols)
+
 print("Total number of rows are:",rowsCount)
 print("Total number of coloumns are:",colsCount)
 
 for r in range(1, rowsCount + 1):
     for c in range(1, colsCount + 1):
         values = driver.find_element(By.XPATH, "//table/tbody/tr[" + str(r) + "]/td[" + str(c) + "]").text
-        # print(values)
-        # utills.writeData(file, "Sheet3", r, c, values)
+        print(values)
+        utills.writeData(file, "Sheet3", r, c, values)
 driver.close()
 # a = 4
 # for _ in range(a):

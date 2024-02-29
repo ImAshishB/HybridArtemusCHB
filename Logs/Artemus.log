@@ -833,3 +833,79 @@
 2024-02-08 18:11:43 - TestEntryForm - INFO - ----------------Test Case test_saveformwithParts Starterd----------------
 2024-02-08 18:11:58 - TestEntryForm - INFO - ----Entered in Form 7501----
 2024-02-08 18:12:16 - TestEntryForm - INFO - Test Case 'save form with Parts' Failed
+2024-02-09 14:28:02 - Test1LTC - INFO - ----------------Test Case test_HTC1 Starterd----------------
+2024-02-09 14:28:07 - Test1LTC - INFO - ----Login Done----
+2024-02-09 14:28:13 - Test1LTC - INFO - ----Form 7501 Opened----
+2024-02-09 14:28:13 - Test1LTC - INFO - ----Upper Part Started----
+2024-02-12 13:17:48 - TestEntryForm - INFO - ----------------Test Case test_saveformwithinvoiceNumber Starterd----------------
+2024-02-12 13:18:02 - TestEntryForm - INFO - ----Entered in Form 7501----
+2024-02-12 13:18:11 - TestEntryForm - INFO - Test Case 'save form with invoice Number' Passed
+2024-02-12 13:18:23 - TestEntryForm - INFO - ----------------Test Case test_saveformwithoutinvoiceNumber Starterd----------------
+2024-02-12 13:18:38 - TestEntryForm - INFO - ----Entered in Form 7501----
+2024-02-12 13:18:45 - TestEntryForm - INFO - Test Case 'save form without invoice Number' Passed
+2024-02-12 13:18:45 - TestEntryForm - INFO - ----------------Test Case test_saveformwithoutinvoiceNumber End----------------
+2024-02-12 13:18:57 - TestEntryForm - INFO - ----------------Test Case test_saveformwithExistinginvoiceNumber Starterd----------------
+2024-02-12 13:19:11 - TestEntryForm - INFO - ----Entered in Form 7501----
+2024-02-12 13:19:16 - TestEntryForm - INFO - Test Case 'save form with Existing invoice Number' Passed
+2024-02-12 13:19:16 - TestEntryForm - INFO - ----------------Test Case test_saveformwithExistinginvoiceNumber End----------------
+2024-02-12 13:19:27 - TestEntryForm - INFO - ----------------Test Case test_saveformwithParts Starterd----------------
+2024-02-12 13:19:41 - TestEntryForm - INFO - ----Entered in Form 7501----
+2024-02-12 13:20:02 - TestEntryForm - INFO - Test Case 'save form with Parts' Failed
+2024-02-14 15:50:53 - TestEntryForm - INFO - ----------------Test Case test_saveformwithoutinvoiceNumber Starterd----------------
+2024-02-14 15:50:58 - TestEntryForm - INFO - ----------------Test Case test_saveformwithExistinginvoiceNumber Starterd----------------
+2024-02-14 15:51:01 - TestEntryForm - INFO - ----------------Test Case test_saveformwithinvoiceNumber Starterd----------------
+2024-02-14 15:51:08 - TestEntryForm - INFO - ----Entered in Form 7501----
+2024-02-14 15:51:13 - TestEntryForm - INFO - ----Entered in Form 7501----
+2024-02-14 15:51:16 - TestEntryForm - INFO - ----Entered in Form 7501----
+2024-02-14 15:51:17 - TestEntryForm - INFO - Test Case 'save form without invoice Number' Passed
+2024-02-14 15:51:18 - TestEntryForm - INFO - ----------------Test Case test_saveformwithoutinvoiceNumber End----------------
+2024-02-14 15:51:18 - TestEntryForm - INFO - Test Case 'save form with Existing invoice Number' Passed
+2024-02-14 15:51:19 - TestEntryForm - INFO - ----------------Test Case test_saveformwithExistinginvoiceNumber End----------------
+2024-02-14 15:51:28 - TestEntryForm - INFO - Test Case 'save form with invoice Number' Passed
+2024-02-14 15:51:29 - TestEntryForm - INFO - ----------------Test Case test_saveformwithinvoiceNumber End----------------
+2024-02-14 15:51:40 - TestEntryForm - INFO - ----------------Test Case test_saveformwithParts Starterd----------------
+2024-02-14 15:51:55 - TestEntryForm - INFO - ----Entered in Form 7501----
+2024-02-14 15:52:13 - TestEntryForm - INFO - Test Case 'save form with Parts' Failed
+2024-02-14 16:54:21 - TestEntryForm - INFO - ----------------Test Case test_saveformwithinvoiceNumber Starterd----------------
+2024-02-14 16:54:47 - TestEntryForm - INFO - ----------------Test Case test_saveformwithoutinvoiceNumber Starterd----------------
+2024-02-14 16:55:02 - TestEntryForm - INFO - ----Entered in Form 7501----
+2024-02-14 16:55:09 - TestEntryForm - INFO - Test Case 'save form without invoice Number' Passed
+2024-02-14 16:55:10 - TestEntryForm - INFO - ----------------Test Case test_saveformwithoutinvoiceNumber End----------------
+2024-02-14 16:55:21 - TestEntryForm - INFO - ----------------Test Case test_saveformwithExistinginvoiceNumber Starterd----------------
+2024-02-14 16:55:35 - TestEntryForm - INFO - ----Entered in Form 7501----
+2024-02-14 16:55:40 - TestEntryForm - INFO - Test Case 'save form with Existing invoice Number' Passed
+2024-02-14 16:55:40 - TestEntryForm - INFO - ----------------Test Case test_saveformwithExistinginvoiceNumber End----------------
+2024-02-14 16:55:51 - TestEntryForm - INFO - ----------------Test Case test_saveformwithParts Starterd----------------
+2024-02-14 16:56:06 - TestEntryForm - INFO - ----Entered in Form 7501----
+2024-02-14 17:03:19 - TestEntryForm - INFO - ----------------Test Case test_saveformwithinvoiceNumber Starterd----------------
+2024-02-14 17:03:33 - TestEntryForm - INFO - ----Entered in Form 7501----
+2024-02-14 17:03:45 - TestEntryForm - INFO - Test Case 'save form with invoice Number' Passed
+2024-02-14 17:03:45 - TestEntryForm - INFO - ----------------Test Case test_saveformwithinvoiceNumber End----------------
+2024-02-14 17:03:57 - TestEntryForm - INFO - ----------------Test Case test_saveformwithoutinvoiceNumber Starterd----------------
+2024-02-14 17:04:11 - TestEntryForm - INFO - ----Entered in Form 7501----
+2024-02-14 17:04:18 - TestEntryForm - INFO - Test Case 'save form without invoice Number' Passed
+2024-02-14 17:04:19 - TestEntryForm - INFO - ----------------Test Case test_saveformwithoutinvoiceNumber End----------------
+2024-02-14 17:04:30 - TestEntryForm - INFO - ----------------Test Case test_saveformwithExistinginvoiceNumber Starterd----------------
+2024-02-14 17:04:56 - TestEntryForm - INFO - ----------------Test Case test_saveformwithParts Starterd----------------
+2024-02-14 17:05:10 - TestEntryForm - INFO - ----Entered in Form 7501----
+2024-02-20 18:01:10 - TestEntryForm - INFO - ----------------Test Case test_saveformwithinvoiceNumber Starterd----------------
+2024-02-20 18:01:25 - TestEntryForm - INFO - ----Entered in Form 7501----
+2024-02-20 18:01:38 - TestEntryForm - INFO - Test Case 'save form with invoice Number' Passed
+2024-02-20 18:01:39 - TestEntryForm - INFO - ----------------Test Case test_saveformwithinvoiceNumber End----------------
+2024-02-20 18:03:13 - TestEntryForm - INFO - ----------------Test Case test_saveformwithoutinvoiceNumber Starterd----------------
+2024-02-20 18:03:36 - TestEntryForm - INFO - ----------------Test Case test_saveformwithExistinginvoiceNumber Starterd----------------
+2024-02-20 18:03:52 - TestEntryForm - INFO - ----Entered in Form 7501----
+2024-02-20 18:03:56 - TestEntryForm - INFO - Test Case 'save form with Existing invoice Number' Passed
+2024-02-20 18:03:57 - TestEntryForm - INFO - ----------------Test Case test_saveformwithExistinginvoiceNumber End----------------
+2024-02-21 15:56:53 - TestEntryForm - INFO - ----------------Test Case test_saveformwithinvoiceNumber Starterd----------------
+2024-02-21 15:57:08 - TestEntryForm - INFO - ----Entered in Form 7501----
+2024-02-21 15:57:21 - TestEntryForm - INFO - Test Case 'save form with invoice Number' Passed
+2024-02-21 15:57:22 - TestEntryForm - INFO - ----------------Test Case test_saveformwithinvoiceNumber End----------------
+2024-02-21 15:57:34 - TestEntryForm - INFO - ----------------Test Case test_saveformwithoutinvoiceNumber Starterd----------------
+2024-02-21 15:57:49 - TestEntryForm - INFO - ----Entered in Form 7501----
+2024-02-21 15:57:58 - TestEntryForm - INFO - Test Case 'save form without invoice Number' Passed
+2024-02-21 15:57:58 - TestEntryForm - INFO - ----------------Test Case test_saveformwithoutinvoiceNumber End----------------
+2024-02-21 15:58:11 - TestEntryForm - INFO - ----------------Test Case test_saveformwithExistinginvoiceNumber Starterd----------------
+2024-02-21 15:58:26 - TestEntryForm - INFO - ----Entered in Form 7501----
+2024-02-21 15:58:31 - TestEntryForm - INFO - Test Case 'save form with Existing invoice Number' Passed
+2024-02-21 15:58:31 - TestEntryForm - INFO - ----------------Test Case test_saveformwithExistinginvoiceNumber End----------------

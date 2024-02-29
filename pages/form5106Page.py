@@ -46,6 +46,15 @@ class Form5106Page(BaseDriver):
     saveButton_XPATH = "(//button[@class='btn btn-outline-info'][normalize-space()='Save'])[1]"
 
     # Action
+    def L5106(self):
+        L5106_LINK = self.driver.find_element(By.LINK_TEXT, self.L5106_LINK_TEXT)
+        L5106_LINK.click()
+
+    def form5106(self):
+        form5106L = self.driver.find_element(By.XPATH, self.form5106_XPATH)
+        form5106L.click()
+
+
     def importerName(self, importerNm):
         importerNameTxt = self.driver.find_element(By.ID, self.importerNameTxt_ID)
         importerNameTxt.send_keys(importerNm)
@@ -103,15 +112,15 @@ class Form5106Page(BaseDriver):
         Line2Txt.send_keys(Line2Data)
 
     def City(self, CityData):
-        CityTxt = self.driver.find_element(By.ID, self.CityTxt_XPATH)
+        CityTxt = self.driver.find_element(By.ID, self.CityTxt_ID)
         CityTxt.send_keys(CityData)
 
     def State(self, StateData):
-        StateTxt = self.driver.find_element(By.ID, self.StateTxt_XPATH)
+        StateTxt = self.driver.find_element(By.ID, self.StateTxt_ID)
         StateTxt.send_keys(StateData)
 
     def Zipcode(self, ZipcodeData):
-        ZipcodeTxt = self.driver.find_element(By.ID, self.ZipcodeTxt_XPATH)
+        ZipcodeTxt = self.driver.find_element(By.ID, self.ZipcodeTxt_ID)
         ZipcodeTxt.send_keys(ZipcodeData)
 
     def AddressType(self, AddressTypeData):
@@ -143,4 +152,22 @@ class Form5106Page(BaseDriver):
     def SaveButton(self):
         saveButton = self.driver.find_element(By.XPATH, self.saveButton_XPATH)
         saveButton.click()
-        time.sleep(2)
+        time.sleep(1)
+
+    def ConfirmationOfSave(self):
+        msg = self.driver.find_element(By.TAG_NAME, "body").text
+        if 'Form Saved Successfully!' in msg:
+            formSavedConfirmationMsgButton = self.driver.find_element(By.XPATH, "//button[normalize-space()='OK']")
+            formSavedConfirmationMsgButton.click()
+            time.sleep(1)
+            print("Form Saved Successfully")
+        else:
+            print("Form not Saved")
+
+    def AllButton(self):
+        All = self.mywait.until(EC.element_to_be_clickable((By.LINK_TEXT, "All")))
+        All.click()
+        time.sleep(1)
+
+
+

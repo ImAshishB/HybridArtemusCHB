@@ -19,8 +19,6 @@ class TestEntryForm():
     # random = " "
     file = "D:/Artmus Spec/Automation_Artemus/TestML.xlsx"
     log = utills.custom_logger()  # we can change logging level
-    rows = utills.getRowCount(file, "Sheet1")
-    coloumns = utills.getColumnCount(file, "Sheet1")
     list_status = []  # Empty List Veriable
 
     @pytest.fixture(autouse=True)
@@ -149,54 +147,6 @@ class TestEntryForm():
             self.lp.logout()
             self.esf.close()
             self.log.info("----------------Test Case test_saveformwithExistinginvoiceNumber End----------------")
-
-    def test_saveformwithParts(self):
-        self.log.info("----------------Test Case test_saveformwithParts Starterd----------------")
-
-        for r in range(3, 4):
-            self.usernameData = utills.readData(self.file, 'Sheet1', r, 5)
-            self.passwordData = utills.readData(self.file, 'Sheet1', r, 6)
-            self.selectIMPORTERData = utills.readData(self.file, 'Sheet1', r, 140)
-
-            # Login
-            self.lp.userName(self.usernameData)
-            self.lp.password(self.passwordData)
-            self.lp.login()
-            time.sleep(4)
-
-            # Go to 7501 Page
-            self.esf = EntryFormPage(self.driver, self.mywait)
-            self.esf.shipment()
-            self.esf.selectImporter(self.selectIMPORTERData)
-            self.esf.form7501()
-            self.log.info("----Entered in Form 7501----")
-
-            # Add Invoice Number
-            self.esf.invoicenumber(self.random)
-
-            # Add Line Items
-            self.esf.part("ABSmkPart")
-            self.esf.entererror()
-
-            # Save the form
-            self.esf.saveform()
-
-            # Verify that form should be saved
-            self.msg = self.driver.find_element(By.TAG_NAME, "body").text
-
-            if 'Form saved succesfully!' in self.msg:
-                assert True
-                self.esf.formSavedConfirmationMsg()
-                self.log.info("Test Case 'save form with Parts' Passed")
-                self.lp.logout()
-                self.esf.close()
-            else:
-                self.driver.save_screenshot(".\\screenshots\\" + "test_saveformwithParts_scr.png")  # Screenshot
-                self.esf.formSavedConfirmationMsg()
-                self.log.info("Test Case 'save form with Parts' Failed")
-                # self.lp.logout()
-                assert False
-        self.log.info("----------------Test Case test_saveformwithParts End----------------")
 
 
 

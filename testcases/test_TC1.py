@@ -19,9 +19,7 @@ class Test1LTC():
     randomInvoice = "ABTestTC1"+ utills.random_invoceGenerator() # random_invoceGenerator() came from utils
     randomBill = "M" + utills.random_BillGenerator()  # random_BillGenerator() came from utils
     file = "D:/Artmus Spec/Automation_Artemus/TestML.xlsx"
-    log = utills.custom_logger()  # we can change logging level
-    rows = utills.getRowCount(file, "TcHybridArtemusData")
-    coloumns = utills.getColumnCount(file, "TcHybridArtemusData")
+    log = utills.custom_logger()
     list_status = []  # Empty List Veriable
 
 

@@ -3,7 +3,7 @@ import logging
 import datetime
 from selenium import webdriver
 from selenium.common import NoSuchElementException, ElementNotVisibleException, ElementNotSelectableException, \
-    ElementClickInterceptedException, ElementNotInteractableException, NoAlertPresentException
+    ElementClickInterceptedException, ElementNotInteractableException, NoAlertPresentException, TimeoutException
 from selenium.webdriver import ActionChains, Keys
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
@@ -38,6 +38,8 @@ mywait = WebDriverWait(driver, 10, poll_frequency=2, ignored_exceptions= [NoSuch
                                                                          ElementNotSelectableException,
                                                                          ElementClickInterceptedException,
                                                                          ElementNotInteractableException,
+                                                                          TimeoutException,
+
                                                                          Exception])
 
 # URL
@@ -64,7 +66,13 @@ login_password.send_keys("tnash1")
 driver.find_element(By.XPATH, '//*[@id="background"]/div/div/div/div/div/form/button').click()
 print("Login Done")
 logging.info("Login Done")
-time.sleep(4)
+SHORT_TIMEOUT = 1  # give time for the loading element to appear
+LONG_TIMEOUT = 30  # give time for loading to finish
+LOADING_ELEMENT_XPATH = "//body//app-root//app-loader//h3[@class='loadingScreen__text']"
+try:
+    WebDriverWait(driver, LONG_TIMEOUT).until(EC.invisibility_of_element_located((By.XPATH, LOADING_ELEMENT_XPATH)))
+except TimeoutException:
+    pass
 Shipment = mywait.until(EC.element_to_be_clickable((By.LINK_TEXT, "Shipments")))
 Shipment.click()
 time.sleep(2)
@@ -78,11 +86,12 @@ for r in range(3, 4):
     time.sleep(2)
     selectImporterTxt.send_keys(Keys.ENTER)
 
-for r in range(3, 23):
+for r in range(3, 8):
     i = 0
     i = i - 1
     billCounts = utills.readData(file, "Sheet1", r, 2)
     lineitmscount = utills.readData(file, "Sheet1", r, 3)
+    testCasesNumber = utills.readData(file, "Sheet1", r, 10)
     # intlineitmscount = int(lineitmscount)
 
     # #Login
@@ -148,6 +157,8 @@ for r in range(3, 23):
     time.sleep(1)
     print("7501 Form opened")
     logging.info("7501 Form opened")
+    print("Test Case no : ",testCasesNumber, " Started")
+    # logging.info("Test Case no : ",testCasesNumber, " Started")
     #---------------------------------------------------------------------------------------------------------
 
     # Upper Section
@@ -162,11 +173,11 @@ for r in range(3, 23):
         actionCode.send_keys(actionC)
         actionCode.send_keys(Keys.ENTER)
 
-        # if trnpmode != 11:
-        #     modeOfTransport = driver.find_element(By.ID, "modeOfTransport")
-        #     modeOfTransport.click()
-        #     modeOfTransport.send_keys(trnpmode)
-        #     modeOfTransport.send_keys(Keys.ENTER)
+        if trnpmode != 11:
+            modeOfTransport = driver.find_element(By.ID, "modeOfTransport")
+            modeOfTransport.click()
+            modeOfTransport.send_keys(trnpmode)
+            modeOfTransport.send_keys(Keys.ENTER)
 
         modeOfTransport = driver.find_element(By.ID, "modeOfTransport")
         modeOfTransport.click()
@@ -1809,6 +1820,8 @@ for r in range(3, 23):
 
     except:
         pass
+    print("Test Case no : ", testCasesNumber, " End")
+    # logging.info("Test Case no : ", testCasesNumber, " End")
     All = mywait.until(EC.element_to_be_clickable((By.LINK_TEXT, "All")))
     All.click()
     time.sleep(1)
