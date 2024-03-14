@@ -86,7 +86,7 @@ for r in range(3, 4):
     time.sleep(2)
     selectImporterTxt.send_keys(Keys.ENTER)
 
-for r in range(3, 8):
+for r in range(9, 21):
     i = 0
     i = i - 1
     billCounts = utills.readData(file, "Sheet1", r, 2)
@@ -844,9 +844,6 @@ for r in range(3, 8):
                     # PG19,20
                     addEntities = driver.find_element(By.XPATH, "//select[@id='entities']")
 
-                    # PG19,20
-                    addEntities = driver.find_element(By.XPATH, "//select[@id='entities']")
-
                     # FD1
                     addEntities.click()
                     selectFD1 = driver.find_element(By.XPATH, "//option[normalize-space()='FDA Importer 1 - FD1']")
@@ -1196,38 +1193,7 @@ for r in range(3, 8):
                     maximizeQtySection.click()
                     time.sleep(1)
 
-
                 # FD2
-                FD1agencyProcessingCodeData = utills.readData(file, "Sheet1", r, 54)
-                FD1pgaLineValueData = utills.readData(file, "Sheet1", r, 55)
-                FD1descriptionData = utills.readData(file, "Sheet1", r, 56)
-                FD1EntityMF = utills.readData(file, "Sheet1", r, 58)
-                FD1EntityDEQ = utills.readData(file, "Sheet1", r, 59)
-                FD1EntityFD1 = utills.readData(file, "Sheet1", r, 60)
-                FD1EntityDP = utills.readData(file, "Sheet1", r, 61)
-                FD1individualQualifierData = utills.readData(file, "Sheet1", r, 68)
-                FD1mailOrFaxData = utills.readData(file, "Sheet1", r, 69)
-                FD1individualNameData = utills.readData(file, "Sheet1", r, 70)
-                FD1telephoneNoData = utills.readData(file, "Sheet1", r, 71)
-                FD1itemTypeData = utills.readData(file, "Sheet1", r, 73)
-                FD1productcodequalifierData = utills.readData(file, "Sheet1", r, 74)
-                FD1productcodnumberData = utills.readData(file, "Sheet1", r, 75)
-                FD1packagingQualifierData = utills.readData(file, "Sheet1", r, 77)
-                FD1unitOfMeasureData = utills.readData(file, "Sheet1", r, 78)
-                FD1pg26qtyData = utills.readData(file, "Sheet1", r, 79)
-                FD1SpecialUseDesignationData = utills.readData(file, "Sheet1", r, 81)
-                FD1sourceTypeCodeData = utills.readData(file, "Sheet1", r, 82)
-                FD1countryCodeData = utills.readData(file, "Sheet1", r, 83)
-                FD1commodityCharDescripData = utills.readData(file, "Sheet1", r, 85)
-                FD1afrmativecodeData1 = utills.readData(file, "Sheet1", r, 87)
-                FD1afrmativedescriptionData1 = utills.readData(file, "Sheet1", r, 89)
-                FD1afrmativecodeData2 = utills.readData(file, "Sheet1", r, 88)
-                FD1afrmativedescriptionData2 = utills.readData(file, "Sheet1", r, 90)
-                FD1inspLabTestData = utills.readData(file, "Sheet1", r, 92)
-                FD1schedTimeOfInspecData = utills.readData(file, "Sheet1", r, 93)
-                FD1scheduledDateOfInspectionData = utills.readData(file, "Sheet1", r, 94)
-                FD1inspectionorArrivallocationData = utills.readData(file, "Sheet1", r, 95)
-                FD1inspectionorArrivallocationCodeData = utills.readData(file, "Sheet1", r, 96)
 
                 FD2 = driver.find_elements(By.XPATH,
                                            "//button[@class='btn btn-link container-fluid text-left pl-0 collapsed']//div[@class='col-md-3']//a[normalize-space()='FD2']")
@@ -1261,14 +1227,27 @@ for r in range(3, 8):
 
                     # PG19,20
                     addEntities = driver.find_element(By.XPATH, "//select[@id='entities']")
+
+                    # FD1
                     addEntities.click()
-                    addEntities.send_keys("DP")
-                    time.sleep(1)
-                    addEntities.send_keys(Keys.ENTER)
-                    addEntities.click()
-                    addEntities.send_keys("FD1")
-                    time.sleep(1)
-                    addEntities.send_keys(Keys.ENTER)
+                    selectFD1 = driver.find_element(By.XPATH, "//option[normalize-space()='FDA Importer 1 - FD1']")
+                    selectFD1.click()
+                    # DFP
+                    selectDFP = driver.find_element(By.XPATH, "//option[normalize-space()='Owner - DFP']")
+                    selectDFP.click()
+                    # PNS
+                    selectPNS = driver.find_element(By.XPATH, "//option[normalize-space()='PN Submitter - PNS']")
+                    selectPNS.click()
+                    # PNT
+                    selectPNT = driver.find_element(By.XPATH, "//option[normalize-space()='PN Transmitter - PNT']")
+                    selectPNT.click()
+                    # FSV
+                    selectFSV = driver.find_element(By.XPATH,
+                                                    "//option[normalize-space()='Foreign Supplier Verification Program - FSV']")
+                    selectFSV.click()
+                    # PK
+                    selectPK = driver.find_element(By.XPATH, "//option[normalize-space()='Point Of Contact - PK']")
+                    selectPK.click()
 
                     mf = driver.find_element(By.XPATH,
                                              "(//span[normalize-space()='Manufacturer of goods-MF:']//parent::div//following-sibling::div//input[@id='typeahead-basic'])[1]")
@@ -1289,33 +1268,128 @@ for r in range(3, 8):
                     fd1.click()
                     fd1.send_keys(FD1EntityFD1)
                     time.sleep(2)
+                    fd1.send_keys(Keys.ARROW_DOWN)
                     fd1.send_keys(Keys.ENTER)
 
-                    dp = driver.find_element(By.XPATH,
-                                             "(//span[normalize-space()='Manufacturer of goods-MF:']//parent::div//following-sibling::div//input[@id='typeahead-basic'])[4]")
-                    dp.click()
-                    dp.send_keys(FD1EntityDP)
+                    dfp = driver.find_element(By.XPATH,
+                                              "(//span[normalize-space()='Manufacturer of goods-MF:']//parent::div//following-sibling::div//input[@id='typeahead-basic'])[4]")
+                    dfp.click()
+                    dfp.send_keys(FD1EntityDFP)
                     time.sleep(2)
-                    dp.send_keys(Keys.ENTER)
+                    dfp.send_keys(Keys.ARROW_DOWN)
+                    dfp.send_keys(Keys.ENTER)
+
+                    pns = driver.find_element(By.XPATH,
+                                              "(//span[normalize-space()='Manufacturer of goods-MF:']//parent::div//following-sibling::div//input[@id='typeahead-basic'])[5]")
+                    pns.click()
+                    pns.send_keys(FD1EntityPNS)
+                    time.sleep(2)
+                    pns.send_keys(Keys.ENTER)
+
+                    pnt = driver.find_element(By.XPATH,
+                                              "(//span[normalize-space()='Manufacturer of goods-MF:']//parent::div//following-sibling::div//input[@id='typeahead-basic'])[6]")
+                    pnt.click()
+                    pnt.send_keys(FD1EntityPNT)
+                    time.sleep(2)
+                    pnt.send_keys(Keys.ENTER)
+
+                    uc = driver.find_element(By.XPATH,
+                                             "(//span[normalize-space()='Manufacturer of goods-MF:']//parent::div//following-sibling::div//input[@id='typeahead-basic'])[7]")
+                    uc.click()
+                    uc.send_keys(FD1EntityUC)
+                    time.sleep(2)
+                    uc.send_keys(Keys.ARROW_DOWN)
+                    uc.send_keys(Keys.ENTER)
+
+                    fsv = driver.find_element(By.XPATH,
+                                              "(//span[normalize-space()='Manufacturer of goods-MF:']//parent::div//following-sibling::div//input[@id='typeahead-basic'])[8]")
+                    fsv.click()
+                    fsv.send_keys(FD1EntityFSV)
+                    time.sleep(2)
+                    fsv.send_keys(Keys.ENTER)
+
+                    pk = driver.find_element(By.XPATH,
+                                             "(//span[normalize-space()='Manufacturer of goods-MF:']//parent::div//following-sibling::div//input[@id='typeahead-basic'])[10]")
+                    pk.click()
+                    pk.send_keys(FD1EntityPK)
+                    time.sleep(2)
+                    pk.send_keys(Keys.ENTER)
+
+                    time.sleep(2)
 
                     # PG21
-                    individualQualifier = driver.find_element(By.XPATH,
-                                                              "//span[normalize-space()='Individual Qualifier:']//parent::div//following-sibling::div/input[@type='text' and @id='typeahead-basic']")
-                    individualQualifier.send_keys(FD1individualQualifierData)
+
+                    driver.find_element(By.XPATH, "(//button[contains(text(),'Add New Individual')])[1]").click()
+                    driver.find_element(By.XPATH, "(//button[contains(text(),'Add New Individual')])[1]").click()
+                    driver.find_element(By.XPATH, "(//button[contains(text(),'Add New Individual')])[1]").click()
+
+                    individualQualifierTxt1 = driver.find_element(By.XPATH,
+                                                                  "(//span[normalize-space()='Individual Qualifier:']//parent::div//following-sibling::div/input[@type='text' and @id='typeahead-basic'])[1]")
+                    mailOrFaxTxt1 = driver.find_element(By.XPATH,
+                                                        "(//span[normalize-space()='Email or Fax:']//parent::div//following-sibling::div/input[@name='email'])[1]")
+                    individualNameTxt1 = driver.find_element(By.XPATH,
+                                                             "(//span[text()='Individual Name:']//parent::div//following-sibling::div/input[@name='individualName'])[1]")
+                    telephoneNoTxt1 = driver.find_element(By.XPATH,
+                                                          "(//span[text()='Telephone No:']//parent::div//following-sibling::div/input[@name='telephoneNo'])[1]")
+
+                    individualQualifierTxt1.click()
+                    individualQualifierTxt1.send_keys(FD1individualQualifierData1)
                     time.sleep(2)
-                    individualQualifier.send_keys(Keys.ENTER)
+                    individualQualifierTxt1.send_keys(Keys.ENTER)
+                    mailOrFaxTxt1.send_keys(FD1mailOrFaxData1)
+                    individualNameTxt1.send_keys(FD1individualNameData1)
+                    telephoneNoTxt1.send_keys(FD1telephoneNoData1)
 
-                    mailOrFax = driver.find_element(By.XPATH,
-                                                    "//span[normalize-space()='Email or Fax:']//parent::div//following-sibling::div/input[@name='email']")
-                    mailOrFax.send_keys(FD1mailOrFaxData)
+                    individualQualifierTxt2 = driver.find_element(By.XPATH,
+                                                                  "(//span[normalize-space()='Individual Qualifier:']//parent::div//following-sibling::div/input[@type='text' and @id='typeahead-basic'])[2]")
+                    mailOrFaxTxt2 = driver.find_element(By.XPATH,
+                                                        "(//span[normalize-space()='Email or Fax:']//parent::div//following-sibling::div/input[@name='email'])[2]")
+                    individualNameTxt2 = driver.find_element(By.XPATH,
+                                                             "(//span[text()='Individual Name:']//parent::div//following-sibling::div/input[@name='individualName'])[2]")
+                    telephoneNoTxt2 = driver.find_element(By.XPATH,
+                                                          "(//span[text()='Telephone No:']//parent::div//following-sibling::div/input[@name='telephoneNo'])[2]")
 
-                    individualName = driver.find_element(By.XPATH,
-                                                         "//span[text()='Individual Name:']//parent::div//following-sibling::div/input[@name='individualName']")
-                    individualName.send_keys(FD1individualNameData)
+                    individualQualifierTxt2.click()
+                    individualQualifierTxt2.send_keys(FD1individualQualifierData2)
+                    time.sleep(2)
+                    individualQualifierTxt2.send_keys(Keys.ENTER)
+                    mailOrFaxTxt2.send_keys(FD1mailOrFaxData2)
+                    individualNameTxt2.send_keys(FD1individualNameData2)
+                    telephoneNoTxt2.send_keys(FD1telephoneNoData2)
 
-                    telephoneNo = driver.find_element(By.XPATH,
-                                                      "//span[text()='Telephone No:']//parent::div//following-sibling::div/input[@name='telephoneNo']")
-                    telephoneNo.send_keys(FD1telephoneNoData)
+                    individualQualifierTxt3 = driver.find_element(By.XPATH,
+                                                                  "(//span[normalize-space()='Individual Qualifier:']//parent::div//following-sibling::div/input[@type='text' and @id='typeahead-basic'])[3]")
+                    mailOrFaxTxt3 = driver.find_element(By.XPATH,
+                                                        "(//span[normalize-space()='Email or Fax:']//parent::div//following-sibling::div/input[@name='email'])[3]")
+                    individualNameTxt3 = driver.find_element(By.XPATH,
+                                                             "(//span[text()='Individual Name:']//parent::div//following-sibling::div/input[@name='individualName'])[3]")
+                    telephoneNoTxt3 = driver.find_element(By.XPATH,
+                                                          "(//span[text()='Telephone No:']//parent::div//following-sibling::div/input[@name='telephoneNo'])[3]")
+
+                    individualQualifierTxt3.click()
+                    individualQualifierTxt3.send_keys(FD1individualQualifierData3)
+                    time.sleep(2)
+                    individualQualifierTxt3.send_keys(Keys.ENTER)
+                    mailOrFaxTxt3.send_keys(FD1mailOrFaxData3)
+                    individualNameTxt3.send_keys(FD1individualNameData3)
+                    telephoneNoTxt3.send_keys(FD1telephoneNoData3)
+
+                    individualQualifierTxt4 = driver.find_element(By.XPATH,
+                                                                  "(//span[normalize-space()='Individual Qualifier:']//parent::div//following-sibling::div/input[@type='text' and @id='typeahead-basic'])[4]")
+                    mailOrFaxTxt4 = driver.find_element(By.XPATH,
+                                                        "(//span[normalize-space()='Email or Fax:']//parent::div//following-sibling::div/input[@name='email'])[4]")
+                    individualNameTxt4 = driver.find_element(By.XPATH,
+                                                             "(//span[text()='Individual Name:']//parent::div//following-sibling::div/input[@name='individualName'])[4]")
+                    telephoneNoTxt4 = driver.find_element(By.XPATH,
+                                                          "(//span[text()='Telephone No:']//parent::div//following-sibling::div/input[@name='telephoneNo'])[4]")
+
+                    individualQualifierTxt4.click()
+                    individualQualifierTxt4.send_keys(FD1individualQualifierData4)
+                    time.sleep(2)
+                    individualQualifierTxt4.send_keys(Keys.ENTER)
+                    mailOrFaxTxt4.send_keys(FD1mailOrFaxData4)
+                    individualNameTxt4.send_keys(FD1individualNameData4)
+                    telephoneNoTxt4.send_keys(FD1telephoneNoData4)
 
                     # PG02
                     itemType = driver.find_element(By.XPATH,
@@ -1340,7 +1414,7 @@ for r in range(3, 8):
                     productcodnumber.send_keys(FD1productcodnumberData)
                     time.sleep(2)
                     productcodnumber.send_keys(Keys.ENTER)
-
+                    #
                     # PG26
                     packagingQualifier = driver.find_element(By.XPATH,
                                                              "//span[text()='Packaging Qualifier:']//parent::div//following-sibling::div/select[@name='packagingQualifier']")
@@ -1359,52 +1433,76 @@ for r in range(3, 8):
                     pgaqty.send_keys(FD1pg26qtyData)
 
                     # PG04,05,06
+                    driver.find_element(By.XPATH, "(//button[contains(text(),'Add New Constituent')])[1]").click()
 
-                    specialUseDesignation = driver.find_element(By.XPATH,
-                                                                "//label[text()='Special Use Designation:']//parent::div//following-sibling::div/select[@name='specialUseDesignation']")
-                    specialUseDesignation.click()
-                    specialUseDesignation.send_keys(FD1SpecialUseDesignationData)
-                    specialUseDesignation.send_keys(Keys.ENTER)
+                    sourceTypeCodeTxt1 = driver.find_element(By.XPATH,
+                                                             "(//label[text()='Source Type Code:']//parent::div//following-sibling::div/select[@name='sourceTypeCode'])[1]")
+                    sourceTypeCodeTxt1.click()
+                    sourceTypeCodeTxt1Option = driver.find_element(By.XPATH,
+                                                                   "//option[normalize-space()='CSH - CSH - Country of Shipment']")
+                    sourceTypeCodeTxt1Option.click()
 
-                    sourceTypeCode = driver.find_element(By.XPATH,
-                                                         "//label[text()='Source Type Code:']//parent::div//following-sibling::div/select[@name='sourceTypeCode']")
-                    sourceTypeCode.click()
-                    time.sleep(1)
-                    sourceTypeCode.send_keys(FD1sourceTypeCodeData)
-                    sourceTypeCode.send_keys(Keys.ENTER)
+                    specialUseDesignationTxt1 = driver.find_element(By.XPATH,
+                                                                    "(//label[text()='Special Use Designation:']//parent::div//following-sibling::div/select[@name='specialUseDesignation'])[1]")
+                    specialUseDesignationTxt1.click()
+                    specialUseDesignationTxt1.send_keys(FD1SpecialUseDesignationData1)
+                    specialUseDesignationTxt1.send_keys(Keys.ENTER)
 
-                    countryCode = driver.find_element(By.XPATH,
-                                                      "//label[text()='Country Code:']//parent::div//following-sibling::div/input[@id='typeahead-basic']")
-                    countryCode.send_keys(FD1countryCodeData)
+                    countryCodeTxt1 = driver.find_element(By.XPATH,
+                                                          "(//label[text()='Country Code:']//parent::div//following-sibling::div/input[@id='typeahead-basic'])[1]")
+                    countryCodeTxt1.send_keys(FD1countryCodeData1)
                     time.sleep(2)
-                    countryCode.send_keys(Keys.ENTER)
+                    countryCodeTxt1.send_keys(Keys.ENTER)
+
+                    specialUseDesignationTxt2 = driver.find_element(By.XPATH,
+                                                                    "(//label[text()='Special Use Designation:']//parent::div//following-sibling::div/select[@name='specialUseDesignation'])[2]")
+                    specialUseDesignationTxt2.click()
+                    specialUseDesignationTxt2.send_keys(FD1SpecialUseDesignationData2)
+                    specialUseDesignationTxt2.send_keys(Keys.ENTER)
+                    sourceTypeCodeTxt2 = driver.find_element(By.XPATH,
+                                                             "(//label[text()='Source Type Code:']//parent::div//following-sibling::div/select[@name='sourceTypeCode'])[2]")
+                    sourceTypeCodeTxt2.click()
+                    time.sleep(1)
+                    sourceTypeCodeTxt2.send_keys(FD1sourceTypeCodeData2)
+                    sourceTypeCodeTxt2.send_keys(Keys.ENTER)
+                    countryCodeTxt2 = driver.find_element(By.XPATH,
+                                                          "(//label[text()='Country Code:']//parent::div//following-sibling::div/input[@id='typeahead-basic'])[2]")
+                    countryCodeTxt2.send_keys(FD1countryCodeData2)
+                    time.sleep(2)
+                    countryCodeTxt2.send_keys(Keys.ENTER)
 
                     # PG10
                     commodityCharacteristicDescription = driver.find_element(By.XPATH,
                                                                              "//span[text()='Commodity Characteristic Description:']//parent::div//following-sibling::div/input[@name='commodityCharacteristicDescription']")
                     commodityCharacteristicDescription.send_keys(FD1commodityCharDescripData)
                     time.sleep(2)
-                    commodityCharacteristicDescription.send_keys(Keys.ENTER)
 
                     # PG23
-                    driver.find_element(By.XPATH,
-                                        "//app-affirmation-compliance-list[@class='p-2 ng-valid ng-touched ng-dirty']//button[contains(text(),'Add New Info')]").click()
+                    AddNewInfo_Button = driver.find_element(By.XPATH,
+                                                            "//app-affirmation-compliance-list[@class='p-2 ng-valid ng-touched ng-dirty']//button[contains(text(),'Add New Info')]")
+                    AddNewInfo_Button.click()
+                    AddNewInfo_Button.click()
 
-                    afrmativecode1 = driver.find_element(By.XPATH, "(//select[@id='affirmationComplianceCode'])[1]")
-                    afrmativecode1.click()
-                    afrmativecode1.send_keys(FD1afrmativecodeData1)
-                    afrmativecode1.send_keys(Keys.ENTER)
-
+                    afrmativecodeTxt1 = driver.find_element(By.XPATH, "(//select[@id='affirmationComplianceCode'])[1]")
+                    afrmativecodeTxt1.click()
+                    afrmativecodeTxt1.send_keys(FD1afrmativecodeData1)
+                    afrmativecodeTxt1.send_keys(Keys.ENTER)
                     driver.find_element(By.XPATH, "(//input[@id='description'])[1]").send_keys(
                         FD1afrmativedescriptionData1)
 
-                    afrmativecode1 = driver.find_element(By.XPATH, "(//select[@id='affirmationComplianceCode'])[2]")
-                    afrmativecode1.click()
-                    afrmativecode1.send_keys(FD1afrmativecodeData2)
-                    afrmativecode1.send_keys(Keys.ENTER)
-
+                    afrmativecodeTxt2 = driver.find_element(By.XPATH, "(//select[@id='affirmationComplianceCode'])[2]")
+                    afrmativecodeTxt2.click()
+                    afrmativecodeTxt2.send_keys(FD1afrmativecodeData2)
+                    afrmativecodeTxt2.send_keys(Keys.ENTER)
                     driver.find_element(By.XPATH, "(//input[@id='description'])[2]").send_keys(
                         FD1afrmativedescriptionData2)
+
+                    afrmativecodeTxt3 = driver.find_element(By.XPATH, "(//select[@id='affirmationComplianceCode'])[3]")
+                    afrmativecodeTxt3.click()
+                    afrmativecodeTxt3.send_keys(FD1afrmativecodeData3)
+                    afrmativecodeTxt3.send_keys(Keys.ENTER)
+                    driver.find_element(By.XPATH, "(//input[@id='description'])[3]").send_keys(
+                        FD1afrmativedescriptionData3)
 
                     # Opnen PG30
                     driver.find_element(By.XPATH,
@@ -1436,8 +1534,11 @@ for r in range(3, 8):
                     time.sleep(2)
                     inspectionorArrivallocationCode.send_keys(FD1inspectionorArrivallocationCodeData)
 
+                    # PG27
+                    driver.find_element(By.XPATH, "//input[@id='containerNumber']").send_keys(FD1containerNumberData)
+
                     # Check if values are fille in PGA or not
-                    FD2Attributes = commercialDescription.get_attribute("value") and mf.get_attribute(
+                    FD1Attributes = commercialDescription.get_attribute("value") and mf.get_attribute(
                         "value") and productcodequalifier.get_attribute("value")
 
                     saveAndClose = driver.find_element(By.XPATH, "//button[normalize-space()='Save & Close']")
@@ -1454,6 +1555,7 @@ for r in range(3, 8):
                     except Exception as e:
                         print("Error while saving form")
                         logging.error("Error while saving form")
+
                     time.sleep(1)
                     try:
                         someValidationsError = driver.find_element(By.TAG_NAME, "body").text
@@ -1464,51 +1566,18 @@ for r in range(3, 8):
                             print("PGA has some validations issues but still PGA form saved")
                     except Exception as e:
                         print("PGA has issues and PGA form saved")
-                    time.sleep(1)
+                        print(e)
+                        time.sleep(1)
                     driver.find_element(By.XPATH, "//button[normalize-space()='OK']").click()
-
-                    if FD2Attributes:
+                    if FD1Attributes:
                         print("FD2 Filled")
                         logging.info("FD2 Filled")
-
-                    time.sleep(1)
                     maximizeQtySection = mywait.until(
                         EC.element_to_be_clickable((By.XPATH, "//button//span[normalize-space()=" + valhts + "]")))
                     maximizeQtySection.click()
                     time.sleep(1)
 
-
                 # FD3
-                FD1agencyProcessingCodeData = utills.readData(file, "Sheet1", r, 54)
-                FD1pgaLineValueData = utills.readData(file, "Sheet1", r, 55)
-                FD1descriptionData = utills.readData(file, "Sheet1", r, 56)
-                FD1EntityMF = utills.readData(file, "Sheet1", r, 58)
-                FD1EntityDEQ = utills.readData(file, "Sheet1", r, 59)
-                FD1EntityFD1 = utills.readData(file, "Sheet1", r, 60)
-                FD1EntityDP = utills.readData(file, "Sheet1", r, 61)
-                FD1individualQualifierData = utills.readData(file, "Sheet1", r, 68)
-                FD1mailOrFaxData = utills.readData(file, "Sheet1", r, 69)
-                FD1individualNameData = utills.readData(file, "Sheet1", r, 70)
-                FD1telephoneNoData = utills.readData(file, "Sheet1", r, 71)
-                FD1itemTypeData = utills.readData(file, "Sheet1", r, 73)
-                FD1productcodequalifierData = utills.readData(file, "Sheet1", r, 74)
-                FD1productcodnumberData = utills.readData(file, "Sheet1", r, 75)
-                FD1packagingQualifierData = utills.readData(file, "Sheet1", r, 77)
-                FD1unitOfMeasureData = utills.readData(file, "Sheet1", r, 78)
-                FD1pg26qtyData = utills.readData(file, "Sheet1", r, 79)
-                FD1SpecialUseDesignationData = utills.readData(file, "Sheet1", r, 81)
-                FD1sourceTypeCodeData = utills.readData(file, "Sheet1", r, 82)
-                FD1countryCodeData = utills.readData(file, "Sheet1", r, 83)
-                FD1commodityCharDescripData = utills.readData(file, "Sheet1", r, 85)
-                FD1afrmativecodeData1 = utills.readData(file, "Sheet1", r, 87)
-                FD1afrmativedescriptionData1 = utills.readData(file, "Sheet1", r, 89)
-                FD1afrmativecodeData2 = utills.readData(file, "Sheet1", r, 88)
-                FD1afrmativedescriptionData2 = utills.readData(file, "Sheet1", r, 90)
-                FD1inspLabTestData = utills.readData(file, "Sheet1", r, 92)
-                FD1schedTimeOfInspecData = utills.readData(file, "Sheet1", r, 93)
-                FD1scheduledDateOfInspectionData = utills.readData(file, "Sheet1", r, 94)
-                FD1inspectionorArrivallocationData = utills.readData(file, "Sheet1", r, 95)
-                FD1inspectionorArrivallocationCodeData = utills.readData(file, "Sheet1", r, 96)
 
                 FD3 = driver.find_elements(By.XPATH,
                                            "//button[@class='btn btn-link container-fluid text-left pl-0 collapsed']//div[@class='col-md-3']//a[normalize-space()='FD3']")
@@ -1542,14 +1611,27 @@ for r in range(3, 8):
 
                     # PG19,20
                     addEntities = driver.find_element(By.XPATH, "//select[@id='entities']")
+
+                    # FD1
                     addEntities.click()
-                    addEntities.send_keys("DP")
-                    time.sleep(1)
-                    addEntities.send_keys(Keys.ENTER)
-                    addEntities.click()
-                    addEntities.send_keys("FD1")
-                    time.sleep(1)
-                    addEntities.send_keys(Keys.ENTER)
+                    selectFD1 = driver.find_element(By.XPATH, "//option[normalize-space()='FDA Importer 1 - FD1']")
+                    selectFD1.click()
+                    # DFP
+                    selectDFP = driver.find_element(By.XPATH, "//option[normalize-space()='Owner - DFP']")
+                    selectDFP.click()
+                    # PNS
+                    selectPNS = driver.find_element(By.XPATH, "//option[normalize-space()='PN Submitter - PNS']")
+                    selectPNS.click()
+                    # PNT
+                    selectPNT = driver.find_element(By.XPATH, "//option[normalize-space()='PN Transmitter - PNT']")
+                    selectPNT.click()
+                    # FSV
+                    selectFSV = driver.find_element(By.XPATH,
+                                                    "//option[normalize-space()='Foreign Supplier Verification Program - FSV']")
+                    selectFSV.click()
+                    # PK
+                    selectPK = driver.find_element(By.XPATH, "//option[normalize-space()='Point Of Contact - PK']")
+                    selectPK.click()
 
                     mf = driver.find_element(By.XPATH,
                                              "(//span[normalize-space()='Manufacturer of goods-MF:']//parent::div//following-sibling::div//input[@id='typeahead-basic'])[1]")
@@ -1570,33 +1652,128 @@ for r in range(3, 8):
                     fd1.click()
                     fd1.send_keys(FD1EntityFD1)
                     time.sleep(2)
+                    fd1.send_keys(Keys.ARROW_DOWN)
                     fd1.send_keys(Keys.ENTER)
 
-                    dp = driver.find_element(By.XPATH,
-                                             "(//span[normalize-space()='Manufacturer of goods-MF:']//parent::div//following-sibling::div//input[@id='typeahead-basic'])[4]")
-                    dp.click()
-                    dp.send_keys(FD1EntityDP)
+                    dfp = driver.find_element(By.XPATH,
+                                              "(//span[normalize-space()='Manufacturer of goods-MF:']//parent::div//following-sibling::div//input[@id='typeahead-basic'])[4]")
+                    dfp.click()
+                    dfp.send_keys(FD1EntityDFP)
                     time.sleep(2)
-                    dp.send_keys(Keys.ENTER)
+                    dfp.send_keys(Keys.ARROW_DOWN)
+                    dfp.send_keys(Keys.ENTER)
+
+                    pns = driver.find_element(By.XPATH,
+                                              "(//span[normalize-space()='Manufacturer of goods-MF:']//parent::div//following-sibling::div//input[@id='typeahead-basic'])[5]")
+                    pns.click()
+                    pns.send_keys(FD1EntityPNS)
+                    time.sleep(2)
+                    pns.send_keys(Keys.ENTER)
+
+                    pnt = driver.find_element(By.XPATH,
+                                              "(//span[normalize-space()='Manufacturer of goods-MF:']//parent::div//following-sibling::div//input[@id='typeahead-basic'])[6]")
+                    pnt.click()
+                    pnt.send_keys(FD1EntityPNT)
+                    time.sleep(2)
+                    pnt.send_keys(Keys.ENTER)
+
+                    uc = driver.find_element(By.XPATH,
+                                             "(//span[normalize-space()='Manufacturer of goods-MF:']//parent::div//following-sibling::div//input[@id='typeahead-basic'])[7]")
+                    uc.click()
+                    uc.send_keys(FD1EntityUC)
+                    time.sleep(2)
+                    uc.send_keys(Keys.ARROW_DOWN)
+                    uc.send_keys(Keys.ENTER)
+
+                    fsv = driver.find_element(By.XPATH,
+                                              "(//span[normalize-space()='Manufacturer of goods-MF:']//parent::div//following-sibling::div//input[@id='typeahead-basic'])[8]")
+                    fsv.click()
+                    fsv.send_keys(FD1EntityFSV)
+                    time.sleep(2)
+                    fsv.send_keys(Keys.ENTER)
+
+                    pk = driver.find_element(By.XPATH,
+                                             "(//span[normalize-space()='Manufacturer of goods-MF:']//parent::div//following-sibling::div//input[@id='typeahead-basic'])[10]")
+                    pk.click()
+                    pk.send_keys(FD1EntityPK)
+                    time.sleep(2)
+                    pk.send_keys(Keys.ENTER)
+
+                    time.sleep(2)
 
                     # PG21
-                    individualQualifier = driver.find_element(By.XPATH,
-                                                              "//span[normalize-space()='Individual Qualifier:']//parent::div//following-sibling::div/input[@type='text' and @id='typeahead-basic']")
-                    individualQualifier.send_keys(FD1individualQualifierData)
+
+                    driver.find_element(By.XPATH, "(//button[contains(text(),'Add New Individual')])[1]").click()
+                    driver.find_element(By.XPATH, "(//button[contains(text(),'Add New Individual')])[1]").click()
+                    driver.find_element(By.XPATH, "(//button[contains(text(),'Add New Individual')])[1]").click()
+
+                    individualQualifierTxt1 = driver.find_element(By.XPATH,
+                                                                  "(//span[normalize-space()='Individual Qualifier:']//parent::div//following-sibling::div/input[@type='text' and @id='typeahead-basic'])[1]")
+                    mailOrFaxTxt1 = driver.find_element(By.XPATH,
+                                                        "(//span[normalize-space()='Email or Fax:']//parent::div//following-sibling::div/input[@name='email'])[1]")
+                    individualNameTxt1 = driver.find_element(By.XPATH,
+                                                             "(//span[text()='Individual Name:']//parent::div//following-sibling::div/input[@name='individualName'])[1]")
+                    telephoneNoTxt1 = driver.find_element(By.XPATH,
+                                                          "(//span[text()='Telephone No:']//parent::div//following-sibling::div/input[@name='telephoneNo'])[1]")
+
+                    individualQualifierTxt1.click()
+                    individualQualifierTxt1.send_keys(FD1individualQualifierData1)
                     time.sleep(2)
-                    individualQualifier.send_keys(Keys.ENTER)
+                    individualQualifierTxt1.send_keys(Keys.ENTER)
+                    mailOrFaxTxt1.send_keys(FD1mailOrFaxData1)
+                    individualNameTxt1.send_keys(FD1individualNameData1)
+                    telephoneNoTxt1.send_keys(FD1telephoneNoData1)
 
-                    mailOrFax = driver.find_element(By.XPATH,
-                                                    "//span[normalize-space()='Email or Fax:']//parent::div//following-sibling::div/input[@name='email']")
-                    mailOrFax.send_keys(FD1mailOrFaxData)
+                    individualQualifierTxt2 = driver.find_element(By.XPATH,
+                                                                  "(//span[normalize-space()='Individual Qualifier:']//parent::div//following-sibling::div/input[@type='text' and @id='typeahead-basic'])[2]")
+                    mailOrFaxTxt2 = driver.find_element(By.XPATH,
+                                                        "(//span[normalize-space()='Email or Fax:']//parent::div//following-sibling::div/input[@name='email'])[2]")
+                    individualNameTxt2 = driver.find_element(By.XPATH,
+                                                             "(//span[text()='Individual Name:']//parent::div//following-sibling::div/input[@name='individualName'])[2]")
+                    telephoneNoTxt2 = driver.find_element(By.XPATH,
+                                                          "(//span[text()='Telephone No:']//parent::div//following-sibling::div/input[@name='telephoneNo'])[2]")
 
-                    individualName = driver.find_element(By.XPATH,
-                                                         "//span[text()='Individual Name:']//parent::div//following-sibling::div/input[@name='individualName']")
-                    individualName.send_keys(FD1individualNameData)
+                    individualQualifierTxt2.click()
+                    individualQualifierTxt2.send_keys(FD1individualQualifierData2)
+                    time.sleep(2)
+                    individualQualifierTxt2.send_keys(Keys.ENTER)
+                    mailOrFaxTxt2.send_keys(FD1mailOrFaxData2)
+                    individualNameTxt2.send_keys(FD1individualNameData2)
+                    telephoneNoTxt2.send_keys(FD1telephoneNoData2)
 
-                    telephoneNo = driver.find_element(By.XPATH,
-                                                      "//span[text()='Telephone No:']//parent::div//following-sibling::div/input[@name='telephoneNo']")
-                    telephoneNo.send_keys(FD1telephoneNoData)
+                    individualQualifierTxt3 = driver.find_element(By.XPATH,
+                                                                  "(//span[normalize-space()='Individual Qualifier:']//parent::div//following-sibling::div/input[@type='text' and @id='typeahead-basic'])[3]")
+                    mailOrFaxTxt3 = driver.find_element(By.XPATH,
+                                                        "(//span[normalize-space()='Email or Fax:']//parent::div//following-sibling::div/input[@name='email'])[3]")
+                    individualNameTxt3 = driver.find_element(By.XPATH,
+                                                             "(//span[text()='Individual Name:']//parent::div//following-sibling::div/input[@name='individualName'])[3]")
+                    telephoneNoTxt3 = driver.find_element(By.XPATH,
+                                                          "(//span[text()='Telephone No:']//parent::div//following-sibling::div/input[@name='telephoneNo'])[3]")
+
+                    individualQualifierTxt3.click()
+                    individualQualifierTxt3.send_keys(FD1individualQualifierData3)
+                    time.sleep(2)
+                    individualQualifierTxt3.send_keys(Keys.ENTER)
+                    mailOrFaxTxt3.send_keys(FD1mailOrFaxData3)
+                    individualNameTxt3.send_keys(FD1individualNameData3)
+                    telephoneNoTxt3.send_keys(FD1telephoneNoData3)
+
+                    individualQualifierTxt4 = driver.find_element(By.XPATH,
+                                                                  "(//span[normalize-space()='Individual Qualifier:']//parent::div//following-sibling::div/input[@type='text' and @id='typeahead-basic'])[4]")
+                    mailOrFaxTxt4 = driver.find_element(By.XPATH,
+                                                        "(//span[normalize-space()='Email or Fax:']//parent::div//following-sibling::div/input[@name='email'])[4]")
+                    individualNameTxt4 = driver.find_element(By.XPATH,
+                                                             "(//span[text()='Individual Name:']//parent::div//following-sibling::div/input[@name='individualName'])[4]")
+                    telephoneNoTxt4 = driver.find_element(By.XPATH,
+                                                          "(//span[text()='Telephone No:']//parent::div//following-sibling::div/input[@name='telephoneNo'])[4]")
+
+                    individualQualifierTxt4.click()
+                    individualQualifierTxt4.send_keys(FD1individualQualifierData4)
+                    time.sleep(2)
+                    individualQualifierTxt4.send_keys(Keys.ENTER)
+                    mailOrFaxTxt4.send_keys(FD1mailOrFaxData4)
+                    individualNameTxt4.send_keys(FD1individualNameData4)
+                    telephoneNoTxt4.send_keys(FD1telephoneNoData4)
 
                     # PG02
                     itemType = driver.find_element(By.XPATH,
@@ -1621,7 +1798,7 @@ for r in range(3, 8):
                     productcodnumber.send_keys(FD1productcodnumberData)
                     time.sleep(2)
                     productcodnumber.send_keys(Keys.ENTER)
-
+                    #
                     # PG26
                     packagingQualifier = driver.find_element(By.XPATH,
                                                              "//span[text()='Packaging Qualifier:']//parent::div//following-sibling::div/select[@name='packagingQualifier']")
@@ -1640,52 +1817,76 @@ for r in range(3, 8):
                     pgaqty.send_keys(FD1pg26qtyData)
 
                     # PG04,05,06
+                    driver.find_element(By.XPATH, "(//button[contains(text(),'Add New Constituent')])[1]").click()
 
-                    specialUseDesignation = driver.find_element(By.XPATH,
-                                                                "//label[text()='Special Use Designation:']//parent::div//following-sibling::div/select[@name='specialUseDesignation']")
-                    specialUseDesignation.click()
-                    specialUseDesignation.send_keys(FD1SpecialUseDesignationData)
-                    specialUseDesignation.send_keys(Keys.ENTER)
+                    sourceTypeCodeTxt1 = driver.find_element(By.XPATH,
+                                                             "(//label[text()='Source Type Code:']//parent::div//following-sibling::div/select[@name='sourceTypeCode'])[1]")
+                    sourceTypeCodeTxt1.click()
+                    sourceTypeCodeTxt1Option = driver.find_element(By.XPATH,
+                                                                   "//option[normalize-space()='CSH - CSH - Country of Shipment']")
+                    sourceTypeCodeTxt1Option.click()
 
-                    sourceTypeCode = driver.find_element(By.XPATH,
-                                                         "//label[text()='Source Type Code:']//parent::div//following-sibling::div/select[@name='sourceTypeCode']")
-                    sourceTypeCode.click()
-                    time.sleep(1)
-                    sourceTypeCode.send_keys(FD1sourceTypeCodeData)
-                    sourceTypeCode.send_keys(Keys.ENTER)
+                    specialUseDesignationTxt1 = driver.find_element(By.XPATH,
+                                                                    "(//label[text()='Special Use Designation:']//parent::div//following-sibling::div/select[@name='specialUseDesignation'])[1]")
+                    specialUseDesignationTxt1.click()
+                    specialUseDesignationTxt1.send_keys(FD1SpecialUseDesignationData1)
+                    specialUseDesignationTxt1.send_keys(Keys.ENTER)
 
-                    countryCode = driver.find_element(By.XPATH,
-                                                      "//label[text()='Country Code:']//parent::div//following-sibling::div/input[@id='typeahead-basic']")
-                    countryCode.send_keys(FD1countryCodeData)
+                    countryCodeTxt1 = driver.find_element(By.XPATH,
+                                                          "(//label[text()='Country Code:']//parent::div//following-sibling::div/input[@id='typeahead-basic'])[1]")
+                    countryCodeTxt1.send_keys(FD1countryCodeData1)
                     time.sleep(2)
-                    countryCode.send_keys(Keys.ENTER)
+                    countryCodeTxt1.send_keys(Keys.ENTER)
+
+                    specialUseDesignationTxt2 = driver.find_element(By.XPATH,
+                                                                    "(//label[text()='Special Use Designation:']//parent::div//following-sibling::div/select[@name='specialUseDesignation'])[2]")
+                    specialUseDesignationTxt2.click()
+                    specialUseDesignationTxt2.send_keys(FD1SpecialUseDesignationData2)
+                    specialUseDesignationTxt2.send_keys(Keys.ENTER)
+                    sourceTypeCodeTxt2 = driver.find_element(By.XPATH,
+                                                             "(//label[text()='Source Type Code:']//parent::div//following-sibling::div/select[@name='sourceTypeCode'])[2]")
+                    sourceTypeCodeTxt2.click()
+                    time.sleep(1)
+                    sourceTypeCodeTxt2.send_keys(FD1sourceTypeCodeData2)
+                    sourceTypeCodeTxt2.send_keys(Keys.ENTER)
+                    countryCodeTxt2 = driver.find_element(By.XPATH,
+                                                          "(//label[text()='Country Code:']//parent::div//following-sibling::div/input[@id='typeahead-basic'])[2]")
+                    countryCodeTxt2.send_keys(FD1countryCodeData2)
+                    time.sleep(2)
+                    countryCodeTxt2.send_keys(Keys.ENTER)
 
                     # PG10
                     commodityCharacteristicDescription = driver.find_element(By.XPATH,
                                                                              "//span[text()='Commodity Characteristic Description:']//parent::div//following-sibling::div/input[@name='commodityCharacteristicDescription']")
                     commodityCharacteristicDescription.send_keys(FD1commodityCharDescripData)
                     time.sleep(2)
-                    commodityCharacteristicDescription.send_keys(Keys.ENTER)
 
                     # PG23
-                    driver.find_element(By.XPATH,
-                                        "//app-affirmation-compliance-list[@class='p-2 ng-valid ng-touched ng-dirty']//button[contains(text(),'Add New Info')]").click()
+                    AddNewInfo_Button = driver.find_element(By.XPATH,
+                                                            "//app-affirmation-compliance-list[@class='p-2 ng-valid ng-touched ng-dirty']//button[contains(text(),'Add New Info')]")
+                    AddNewInfo_Button.click()
+                    AddNewInfo_Button.click()
 
-                    afrmativecode1 = driver.find_element(By.XPATH, "(//select[@id='affirmationComplianceCode'])[1]")
-                    afrmativecode1.click()
-                    afrmativecode1.send_keys(FD1afrmativecodeData1)
-                    afrmativecode1.send_keys(Keys.ENTER)
-
+                    afrmativecodeTxt1 = driver.find_element(By.XPATH, "(//select[@id='affirmationComplianceCode'])[1]")
+                    afrmativecodeTxt1.click()
+                    afrmativecodeTxt1.send_keys(FD1afrmativecodeData1)
+                    afrmativecodeTxt1.send_keys(Keys.ENTER)
                     driver.find_element(By.XPATH, "(//input[@id='description'])[1]").send_keys(
                         FD1afrmativedescriptionData1)
 
-                    afrmativecode1 = driver.find_element(By.XPATH, "(//select[@id='affirmationComplianceCode'])[2]")
-                    afrmativecode1.click()
-                    afrmativecode1.send_keys(FD1afrmativecodeData2)
-                    afrmativecode1.send_keys(Keys.ENTER)
-
+                    afrmativecodeTxt2 = driver.find_element(By.XPATH, "(//select[@id='affirmationComplianceCode'])[2]")
+                    afrmativecodeTxt2.click()
+                    afrmativecodeTxt2.send_keys(FD1afrmativecodeData2)
+                    afrmativecodeTxt2.send_keys(Keys.ENTER)
                     driver.find_element(By.XPATH, "(//input[@id='description'])[2]").send_keys(
                         FD1afrmativedescriptionData2)
+
+                    afrmativecodeTxt3 = driver.find_element(By.XPATH, "(//select[@id='affirmationComplianceCode'])[3]")
+                    afrmativecodeTxt3.click()
+                    afrmativecodeTxt3.send_keys(FD1afrmativecodeData3)
+                    afrmativecodeTxt3.send_keys(Keys.ENTER)
+                    driver.find_element(By.XPATH, "(//input[@id='description'])[3]").send_keys(
+                        FD1afrmativedescriptionData3)
 
                     # Opnen PG30
                     driver.find_element(By.XPATH,
@@ -1717,8 +1918,11 @@ for r in range(3, 8):
                     time.sleep(2)
                     inspectionorArrivallocationCode.send_keys(FD1inspectionorArrivallocationCodeData)
 
+                    # PG27
+                    driver.find_element(By.XPATH, "//input[@id='containerNumber']").send_keys(FD1containerNumberData)
+
                     # Check if values are fille in PGA or not
-                    FD3Attributes = commercialDescription.get_attribute("value") and mf.get_attribute(
+                    FD1Attributes = commercialDescription.get_attribute("value") and mf.get_attribute(
                         "value") and productcodequalifier.get_attribute("value")
 
                     saveAndClose = driver.find_element(By.XPATH, "//button[normalize-space()='Save & Close']")
@@ -1735,14 +1939,23 @@ for r in range(3, 8):
                     except Exception as e:
                         print("Error while saving form")
                         logging.error("Error while saving form")
-                    time.sleep(1)
-                    driver.find_element(By.XPATH, "//button[normalize-space()='OK']").click()
 
-                    if FD3Attributes:
+                    time.sleep(1)
+                    try:
+                        someValidationsError = driver.find_element(By.TAG_NAME, "body").text
+                        if 'The Manufacturer record should have an entity number' in someValidationsError:
+                            driver.find_element(By.XPATH,
+                                                "//button[@type='button'][normalize-space()='Save & Close']").click()
+                            time.sleep(1)
+                            print("PGA has some validations issues but still PGA form saved")
+                    except Exception as e:
+                        print("PGA has issues and PGA form saved")
+                        print(e)
+                        time.sleep(1)
+                    driver.find_element(By.XPATH, "//button[normalize-space()='OK']").click()
+                    if FD1Attributes:
                         print("FD3 Filled")
                         logging.info("FD3 Filled")
-
-                    time.sleep(1)
                     maximizeQtySection = mywait.until(
                         EC.element_to_be_clickable((By.XPATH, "//button//span[normalize-space()=" + valhts + "]")))
                     maximizeQtySection.click()

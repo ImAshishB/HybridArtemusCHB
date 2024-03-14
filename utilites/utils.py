@@ -14,7 +14,7 @@ class utills():
         logger = logging.getLogger(logger_name)
         logger.setLevel(logLevel)
         # create console handler or file handler and set the log level
-        log_file_path = os.path.join(log_folder, "Artemus.log")
+        log_file_path = os.path.join(log_folder, "ArtemusH.log")
         fh= logging.FileHandler(log_file_path)
         # create formatter
         formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s', datefmt='%Y-%m-%d %H:%M:%S')

@@ -909,3 +909,23 @@
 2024-02-21 15:58:26 - TestEntryForm - INFO - ----Entered in Form 7501----
 2024-02-21 15:58:31 - TestEntryForm - INFO - Test Case 'save form with Existing invoice Number' Passed
 2024-02-21 15:58:31 - TestEntryForm - INFO - ----------------Test Case test_saveformwithExistinginvoiceNumber End----------------
+2024-02-29 16:16:21 - TestLogin - INFO - Name shown in Homepage
+2024-02-29 16:16:21 - TestLogin - INFO - Test Case Pass
+2024-02-29 16:16:39 - TestLogin - INFO - Name shown in Homepage2
+2024-02-29 16:16:39 - TestLogin - INFO - Test Case 2 Pass
+2024-02-29 16:22:15 - TestLogin - INFO - Name shown in Homepage
+2024-02-29 16:22:15 - TestLogin - INFO - Test Case Pass
+2024-02-29 16:22:33 - TestLogin - INFO - Name shown in Homepage2
+2024-02-29 16:22:33 - TestLogin - INFO - Test Case 2 Pass
+2024-02-29 16:23:47 - TestLogin - INFO - Name shown in Homepage
+2024-02-29 16:23:47 - TestLogin - INFO - Test Case Pass
+2024-02-29 16:24:05 - TestLogin - INFO - Name shown in Homepage2
+2024-02-29 16:24:05 - TestLogin - INFO - Test Case 2 Pass
+2024-02-29 16:24:39 - TestLogin - INFO - Name shown in Homepage
+2024-02-29 16:24:39 - TestLogin - ERROR - Test Case failed
+2024-02-29 16:24:57 - TestLogin - INFO - Name shown in Homepage2
+2024-02-29 16:24:57 - TestLogin - INFO - Test Case 2 Pass
+2024-02-29 16:26:32 - TestLogin - INFO - Name shown in Homepage
+2024-02-29 16:26:32 - TestLogin - ERROR - Test Case failed
+2024-02-29 16:26:51 - TestLogin - INFO - Name shown in Homepage2
+2024-02-29 16:26:51 - TestLogin - INFO - Test Case 2 Pass

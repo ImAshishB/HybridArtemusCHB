@@ -1,9 +1,12 @@
 import pytest
-from selenium.common import NoAlertPresentException
+from selenium.common import NoAlertPresentException, TimeoutException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 import time
 from selenium.webdriver import ActionChains, Keys
+from selenium.webdriver.support.wait import WebDriverWait
+
+
 class BaseDriver:
     def __init__(self, driver):
         self.driver = driver
@@ -30,6 +33,17 @@ class BaseDriver:
             alert.accept()
         except NoAlertPresentException:
             pass
+
+    def loadingScreenHandling(self):
+        SHORT_TIMEOUT = 1  # give time for the loading element to appear
+        LONG_TIMEOUT = 30  # give time for loading to finish
+        LOADING_ELEMENT_XPATH = "//body//app-root//app-loader//h3[@class='loadingScreen__text']"
+        try:
+            WebDriverWait(self.driver, LONG_TIMEOUT).until(EC.invisibility_of_element_located((By.XPATH, LOADING_ELEMENT_XPATH)))
+        except TimeoutException:
+            pass
+
+
 
 
 

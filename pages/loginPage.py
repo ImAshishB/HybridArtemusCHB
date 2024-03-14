@@ -42,3 +42,6 @@ class Loginpage(BaseDriver):
         logoutButton.click()
         #self.log.warning("logout done")
 
+    def close(self):
+        self.driver.close()
+

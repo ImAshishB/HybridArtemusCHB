@@ -2,6 +2,7 @@ import time
 import pytest
 from pages.loginPage import Loginpage
 from pages.entryformPage import EntryFormPage
+from pages.getAttributes import getAtributesOfText
 from selenium.webdriver.common.by import By
 from utilites.utils import utills
 from selenium.common import NoAlertPresentException
@@ -14,13 +15,11 @@ from base.base_driver import BaseDriver
 from utilites.utils import utills
 
 @pytest.mark.usefixtures("setup")
-class Test1LTC():
-    randomInvoice = "ABTestTC2"+ utills.random_invoceGenerator() # random_invoceGenerator() came from utils
+class Test_EntrySummary1():
+    randomInvoice = "ABTestTC1"+ utills.random_invoceGenerator() # random_invoceGenerator() came from utils
     randomBill = "M" + utills.random_BillGenerator()  # random_BillGenerator() came from utils
     file = "D:/Artmus Spec/Automation_Artemus/TestML.xlsx"
-    log = utills.custom_logger()  # we can change logging level
-    rows = utills.getRowCount(file, "TcHybridArtemusData")
-    coloumns = utills.getColumnCount(file, "TcHybridArtemusData")
+    log = utills.custom_logger()
     list_status = []  # Empty List Veriable
 
 
@@ -28,12 +27,14 @@ class Test1LTC():
     def class_setup(self):
         self.lp = Loginpage(self.driver, self.mywait)
         self.esf = EntryFormPage(self.driver, self.mywait)
+        self.getvalues = getAtributesOfText(self.driver, self.mywait)
 
 
-    def test_HTC2(self): # Country of origin india/No Duty HTS(NDC)
-        self.log.info("----------------Test Case test_HTC2 Starterd----------------")
+    def test_TC1_SimpleEntry_Vessel_Container(self): # Country of origin india/No Duty HTS(NDC)
+        self.log.info("----------------Test Case test_TC1_SimpleEntry_Vessel_Container with Container Starterd----------------")
 
-        for r in range(4, 5):
+        for r in range(3, 4):
+            self.selectIMPORTERData = utills.readData(self.file, 'TcHybridArtemusData', r, 140)
             self.addBillbutton = utills.readData(self.file, 'TcHybridArtemusData', r, 2)
             self.lineitmscount = utills.readData(self.file, 'TcHybridArtemusData', r, 3)
 
@@ -82,7 +83,7 @@ class Test1LTC():
             self.htsqty1Data = utills.readData(self.file, 'TcHybridArtemusData', r, 34)
             self.htsqty2Data = utills.readData(self.file, 'TcHybridArtemusData', r, 35)
             self.addcaseNumberData = utills.readData(self.file, 'TcHybridArtemusData', r, 111)
-            self.cvdcaseNumberData = utills.readData(self.file, 'TcHybridArtemusData', r, 110)
+            self.cvdcaseNumberData = utills.readData(self.file, 'TcHybridArtemusData', r, 111)
             self.linevalueData = utills.readData(self.file, 'TcHybridArtemusData', r, 36)#.split(",")
             self.countryOfOrigin2Data = utills.readData(self.file, 'TcHybridArtemusData', r, 37)#.split(",")
             self.countryOfExport2Data = utills.readData(self.file, 'TcHybridArtemusData', r, 38)#.split(",")
@@ -92,11 +93,12 @@ class Test1LTC():
             self.lp.password(self.passwordData)
             self.lp.login()
             self.log.info("----Login Done----")
-            time.sleep(3)
+            self.lp.loadingScreenHandling()
 
             # Go to 7501 Page
             # self.esf = EntryFormPage(self.driver, self.mywait)
             self.esf.shipment()
+            self.esf.selectImporter(self.selectIMPORTERData)
             self.esf.form7501()
             self.log.info("----Form 7501 Opened----")
 
@@ -116,6 +118,7 @@ class Test1LTC():
             self.esf.quantity(self.qtyyData)
             self.log.info("----Bill Of Lading Done----")
 
+
             # Vessel Inforrmation
             self.log.info("----Vessel Information Started----")
             self.esf.vesselName(self.vesselsnameData)
@@ -123,6 +126,7 @@ class Test1LTC():
             self.esf.addEditContiner()
             self.esf.containers(self.containerlistData)
             self.esf.saveContainer()
+            self.log.info("----Vessel Information Done----")
 
             # Trading Partners 1
             self.log.info("----Trading Partners 1 Started----")
@@ -163,23 +167,41 @@ class Test1LTC():
             self.msg = self.driver.find_element(By.TAG_NAME, "body").text
 
             if 'Form saved succesfully!' in self.msg:
-                assert True
                 self.esf.formSavedConfirmationMsg()
                 self.log.info("----Form Saved Successfully----")
-                self.lp.logout()
+                self.esf.submitform()
+                self.log.info("----Clicked on Submit Button----")
+
+                if 'Confirm Entry Information' in self.msg:
+                    self.log.info("----Validation Form opened----")
+                InvoiceValuesOfValidationForm = self.driver.find_element(By.XPATH,"//p[@class='form-lable'][contains(text(),'Total Invoice Value:')]//span[1]").text
+                InvoiceValuesOfValidationFormFloat = float(InvoiceValuesOfValidationForm)
+                if InvoiceValuesOfValidationFormFloat != 0:
+                    self.log.info("----The values are calculated properly----")
+                    self.esf.validationFormsubmitButton()
+                    self.log.info("----Clicked on Submit Button of Validation Form----")
+                    self.esf.loadingScreenHandling()
+                    if 'EDI send successfully' in self.msg:
+                        self.esf.validationFormsubmitConfirmationMsg()
+                        self.log.info("----Form Submitted Successfully----")
+                    else:
+                        self.esf.validationFormsubmitConfirmationMsg()
+                    self.esf.close()
+
+                else:
+                    self.log.error("----The values are not calculated properly----")
             else:
-                self.driver.save_screenshot(".\\screenshots\\" + "test_HTC2_scr.png")  # Screenshot
+                # self.driver.save_screenshot(".\\screenshots\\" + "test_HTC1_scr.png")  # Screenshot
                 self.esf.formSavedConfirmationMsg()
                 self.log.error("----Form Not Saved. Test Failed----")
-                self.lp.logout()
-                assert False
 
-        self.log.info("----------------Test Case test_HTC2 End----------------")
+        self.log.info("----------------Test Case test_TC1_SimpleEntry_Vessel_Container with Container End----------------")
 
 
 
-# pytest -v -s testcases/test_TC2.py
-# pytest -v -s testcases/test_TC2.py --browser chrome
-# pytest -v -s testcases/test_TC2.py --browser firefox
-# pytest -v -s --html=reports\report.html testcases/test_TC2.py
-# pytest -v --html=reports\report.html testcases/test_TC2.py --browser chrome   #if in html report if logs are not getting genrated then remove -s and try
+# pytest -v -s testcases/test_EntryTC1.py
+# pytest -v -s testcases/test_EntryTC1.py --browser chrome
+# pytest -v -s testcases/test_EntryTC1.py --browser firefox
+# pytest -v -s --html=reports\EntryTC1Report.html testcases/test_EntryTC1.py
+# pytest -v --html=reports\EntryTC1Report.html testcases/test_EntryTC1.py
+# pytest -v --html=reports\EntryTC1Report.html testcases/test_EntryTC1.py --browser chrome   #if in html report if logs are not getting genrated then remove -s and try
