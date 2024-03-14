@@ -14,8 +14,9 @@ from base.base_driver import BaseDriver
 from utilites.utils import utills
 
 @pytest.mark.usefixtures("setup")
-class TestEntryForm():
-    random = "ABTestInvc"+ utills.random_invoceGenerator() # random_invoceGenerator() came from utils
+class TestSmokTC():
+    random = "AB1_SmokTest_"+ utills.random_invoceGenerator() # random_invoceGenerator() came from utils
+    randomPlus = "AB2_SmokTest_"+ utills.random_invoceGenerator() # random_invoceGenerator() came from utils
     # random = " "
     file = "D:/Artmus Spec/Automation_Artemus/TestML.xlsx"
     log = utills.custom_logger()  # we can change logging level
@@ -31,23 +32,24 @@ class TestEntryForm():
         self.log.info("----------------Test Case test_saveformwithinvoiceNumber Starterd----------------")
 
         for r in range(3, 4):
-            self.usernameData = utills.readData(self.file, 'Sheet1', r, 5)
-            self.passwordData = utills.readData(self.file, 'Sheet1', r, 6)
-            self.selectIMPORTERData = utills.readData(self.file, 'Sheet1', r, 140)
+            self.usernameData = utills.readData(self.file, 'SmokTestData', r, 5)
+            self.passwordData = utills.readData(self.file, 'SmokTestData', r, 6)
+            self.selectIMPORTERData = utills.readData(self.file, 'SmokTestData', r, 140)
 
 
             # Login
             self.lp.userName(self.usernameData)
             self.lp.password(self.passwordData)
             self.lp.login()
-            time.sleep(4)
+            self.lp.loadingScreenHandling()
+
 
             # Go to 7501 Page
             self.esf = EntryFormPage(self.driver, self.mywait)
             self.esf.shipment()
             self.esf.selectImporter(self.selectIMPORTERData)
             self.esf.form7501()
-            self.log.info("----Entered in Form 7501----")
+            self.log.info("Entered in Form 7501")
 
             # Add Invoice Number
             self.esf.invoicenumber(self.random)
@@ -63,11 +65,11 @@ class TestEntryForm():
                 self.esf.formSavedConfirmationMsg()
                 self.log.info("Test Case 'save form with invoice Number' Passed")
                 self.lp.logout()
-                self.esf.close()
+                self.esf.close() # I have included close at conftest that's why I am commenting this line
             else:
                 self.driver.save_screenshot(".\\screenshots\\" + "test_saveformwithinvoiceNumber_scr.png")  # Screenshot
                 self.esf.formSavedConfirmationMsg()
-                self.log.info("Test Case 'save form with invoice Number' Failed")
+                self.log.error("Test Case 'save form with invoice Number' Failed")
                 # self.lp.logout()
                 assert False
         self.log.info("----------------Test Case test_saveformwithinvoiceNumber End----------------")
@@ -76,15 +78,15 @@ class TestEntryForm():
         self.log.info("----------------Test Case test_saveformwithoutinvoiceNumber Starterd----------------")
 
         for r in range(3, 4):
-            self.usernameData = utills.readData(self.file, 'Sheet1', r, 5)
-            self.passwordData = utills.readData(self.file, 'Sheet1', r, 6)
-            self.selectIMPORTERData = utills.readData(self.file, 'Sheet1', r, 140)
+            self.usernameData = utills.readData(self.file, 'SmokTestData', r, 5)
+            self.passwordData = utills.readData(self.file, 'SmokTestData', r, 6)
+            self.selectIMPORTERData = utills.readData(self.file, 'SmokTestData', r, 140)
 
             # Login
             self.lp.userName(self.usernameData)
             self.lp.password(self.passwordData)
             self.lp.login()
-            time.sleep(4)
+            self.lp.loadingScreenHandling()
 
             # Go to 7501 Page
             self.esf = EntryFormPage(self.driver, self.mywait)
@@ -107,7 +109,7 @@ class TestEntryForm():
                 self.esf.formSavedConfirmationMsg()
                 self.log.info("Test Case 'save form without invoice Number' Passed")
                 self.lp.logout()
-                self.esf.close()
+                self.esf.close() # I have included close at conftest that's why I am commenting this line
             else:
                 self.driver.save_screenshot(".\\screenshots\\" + "test_saveformwithoutinvoiceNumber_scr.png")  # Screenshot
                 self.esf.formSavedConfirmationMsg()
@@ -120,9 +122,9 @@ class TestEntryForm():
         self.log.info("----------------Test Case test_saveformwithExistinginvoiceNumber Starterd----------------")
 
         for r in range(3, 4):
-            self.usernameData = utills.readData(self.file, 'Sheet1', r, 5)
-            self.passwordData = utills.readData(self.file, 'Sheet1', r, 6)
-            self.selectIMPORTERData = utills.readData(self.file, 'Sheet1', r, 140)
+            self.usernameData = utills.readData(self.file, 'SmokTestData', r, 5)
+            self.passwordData = utills.readData(self.file, 'SmokTestData', r, 6)
+            self.selectIMPORTERData = utills.readData(self.file, 'SmokTestData', r, 140)
 
             # Login
             self.lp.userName(self.usernameData)
@@ -145,8 +147,62 @@ class TestEntryForm():
 
             # LogOut
             self.lp.logout()
-            self.esf.close()
+            self.esf.close() # I have included close at conftest that's why I am commenting this line
             self.log.info("----------------Test Case test_saveformwithExistinginvoiceNumber End----------------")
+
+    def test_saveAndSubmitFormwithInvoiceNumberOnly(self):
+        self.log.info("----------------Test Case test_saveAndSubmitFormwithInvoiceNumberOnly Starterd----------------")
+
+        for r in range(3, 4):
+            self.usernameData = utills.readData(self.file, 'SmokTestData', r, 5)
+            self.passwordData = utills.readData(self.file, 'SmokTestData', r, 6)
+            self.selectIMPORTERData = utills.readData(self.file, 'SmokTestData', r, 140)
+
+
+            # Login
+            self.lp.userName(self.usernameData)
+            self.lp.password(self.passwordData)
+            self.lp.login()
+            self.lp.loadingScreenHandling()
+
+
+            # Go to 7501 Page
+            self.esf = EntryFormPage(self.driver, self.mywait)
+            self.esf.shipment()
+            self.esf.selectImporter(self.selectIMPORTERData)
+            self.esf.form7501()
+            self.log.info("Entered in Form 7501")
+
+            # Add Invoice Number
+            self.esf.invoicenumber(self.randomPlus)
+
+            # Save the form
+            self.esf.saveform()
+            self.esf.formSavedConfirmationMsg()
+            self.log.info("Form Saved")
+            self.esf.submitform()
+            self.esf.MandatoryFieldMsg()
+            self.log.info("Test Case 'save And Submit Form with Invoice Number Only ' Passed")
+
+
+
+            # Verify that form should be saved
+            # self.msg = self.driver.find_element(By.TAG_NAME, "body").text
+
+            # if 'Form saved succesfully!' in self.msg:
+            #     self.esf.formSavedConfirmationMsg()
+            #     self.log.info("Form Saved")
+            #     self.esf.submitform()
+            #     if 'Fill Mandatory Fields!' in self.msg:
+            #         self.esf.MandatoryFieldMsg()
+            #         self.log.info("Test Case 'save And Submit Form with Invoice Number Only ' Passed")
+            #     self.lp.logout()
+            #     self.esf.close() # I have included close at conftest that's why I am commenting this line
+            # else:
+            #     self.driver.save_screenshot(".\\screenshots\\" + "test_saveAndSubmitFormwithInvoiceNumberOnly_scr.png")  # Screenshot
+            #     self.log.error("Test Case 'save And Submit Form with Invoice Number Only' Failed")
+            #     # self.lp.logout()
+        self.log.info("----------------Test Case test_saveAndSubmitFormwithInvoiceNumberOnly End----------------")
 
 
 
@@ -155,5 +211,6 @@ class TestEntryForm():
 # pytest -v -s testcases/test_smokTestCases.py --browser chrome
 # pytest -v -s testcases/test_smokTestCases.py --browser firefox
 # pytest -v -s --html=reports\smokTestReport.html testcases/test_smokTestCases.py
+# pytest -v --html=reports\smokTestReport.html testcases/test_smokTestCases.py
 # pytest -v --html=reports\smokTestReport.html testcases/test_smokTestCases.py --browser chrome   #if in html report if logs are not getting genrated then remove -s and try
 # pytest -v -s -n=3 --html=reports\smokTestReport.html testcases/test_smokTestCases.py --browser chrome

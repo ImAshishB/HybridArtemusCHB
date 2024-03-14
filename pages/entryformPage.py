@@ -85,6 +85,10 @@ class EntryFormPage(BaseDriver):
     foreignLineValueTxt_XPATH = "//span[text()='Foreign Line Value:']//parent::div//following-sibling::div/input[@name='linevalue']"
     foreignLineValueOutClick_XPATH = "//span[text()='Foreign Line Value:']"
     NumberOfLineItem_XPATH = "//button[@aria-expanded='true' and @class='btn btn-link']//div[2]"
+    textOfHTSWhenCollapsed_XPATH="//button[@class='btn btn-link container-fluid text-left pl-0 collapsed']/div/div[1]/span"
+    textOfHTSWhenCollapsed_XPATH_ForChina = "(//button[@class='btn btn-link container-fluid text-left pl-0 collapsed'])[2]/div/div[1]/span"
+    textOfHTSWhenExpanded_XPATH = "//button[@class='btn btn-link container-fluid text-left pl-0']/div/div[1]/span"
+    textOfHTSWhenExpanded_XPATH_ForChina = "(//button[@class='btn btn-link container-fluid text-left pl-0'])[2]/div/div[1]/span"
 
     # Home Page
     def selectImporter(self, selectImporterData):
@@ -318,10 +322,16 @@ class EntryFormPage(BaseDriver):
         invoiceTotalTxt = self.driver.find_element(By.CSS_SELECTOR, self.invoiceTotalTxt_CSS)
         invoiceTotalTxt.send_keys(invoiceTotaldata)
 
-    def chinaHTS(self):
+    def chinaHTSToAdd(self):
         self.driver.find_element(By.XPATH, "//button[normalize-space()='Yes']").click()
         time.sleep(1)
-    def cottonHTS(self):
+    def chinaHTSNotToAdd(self):
+        self.driver.find_element(By.XPATH, "//button[normalize-space()='Cancel']").click()
+        time.sleep(1)
+    def cottonHTSToExempt(self):
+        self.driver.find_element(By.XPATH, "//button[normalize-space()='Yes']").click()
+        time.sleep(1)
+    def cottonHTSNotToExempt(self):
         self.driver.find_element(By.XPATH, "//button[normalize-space()='Cancel']").click()
         time.sleep(1)
     def lineValue(self,lnvl):
@@ -352,6 +362,37 @@ class EntryFormPage(BaseDriver):
         cvdOutclick = self.driver.find_element(By.XPATH,"(//span[normalize-space()='CVD Case Number:'])[" + str(NumberOfLineItem) + "]")
         cvdOutclick.click()
         time.sleep(1)
+
+    def maximizeQtySection(self):
+        textOfHTS = self.driver.find_element(By.XPATH, self.textOfHTSWhenCollapsed_XPATH).text
+        maximizeQtySectionButton = self.mywait.until(EC.element_to_be_clickable((By.XPATH, "//button//span[normalize-space()=" + textOfHTS + "]")))
+        maximizeQtySectionButton.click()
+
+    def minimizeQtySection(self):
+        textOfHTS = self.driver.find_element(By.XPATH, self.textOfHTSWhenExpanded_XPATH).text
+        minimizeQtySectionButton = self.mywait.until(EC.element_to_be_clickable((By.XPATH, "//button//span[normalize-space()=" + textOfHTS + "]")))
+        minimizeQtySectionButton.click()
+    def maximizeQtySectionForChina(self):
+        textOfHTSForChina = self.driver.find_element(By.XPATH, self.textOfHTSWhenCollapsed_XPATH_ForChina).text
+        maximizeQtySectionForChinaButton = self.mywait.until(EC.element_to_be_clickable((By.XPATH, "//button//span[normalize-space()=" + textOfHTSForChina + "]")))
+        maximizeQtySectionForChinaButton.click()
+
+    def minimizeQtySectionForChina(self):
+        textOfHTSForChina = self.driver.find_element(By.XPATH, self.textOfHTSWhenExpanded_XPATH_ForChina).text
+        minimizeQtySectionForChinaButton = self.mywait.until(EC.element_to_be_clickable((By.XPATH, "//button//span[normalize-space()=" + textOfHTSForChina + "]")))
+        minimizeQtySectionForChinaButton.click()
+    def addCottonValues(self,htsqty1,htsqty2):
+        CottonQty1 = self.driver.find_element(By.XPATH, "(//input[@name='linevalue'])[2]")
+        CottonQty1.send_keys(htsqty1)
+        CottonQty2 = self.driver.find_element(By.XPATH, "(//input[@name='linevalue'])[3]")
+        CottonQty2.send_keys(htsqty2)
+
+    def addCottonValuesForChina(self,htsqty1,htsqty2):
+        CottonQty1 = self.driver.find_element(By.XPATH, "(//input[@name='linevalue'])[8]")
+        CottonQty1.send_keys(htsqty1)
+        CottonQty2 = self.driver.find_element(By.XPATH, "(//input[@name='linevalue'])[9]")
+        CottonQty2.send_keys(htsqty2)
+
     def removelineitem(self,lineitmscount):
         removeLineItem = self.mywait.until(EC.element_to_be_clickable(
             (By.XPATH, "(//button[contains(text(),'Remove Line')])[" + str(lineitmscount + 1) + "]")))
@@ -367,6 +408,27 @@ class EntryFormPage(BaseDriver):
         formSavedConfirmationMsgButton = self.driver.find_element(By.XPATH, "//button[normalize-space()='OK']")
         formSavedConfirmationMsgButton.click()
         time.sleep(2)
+
+    def submitform(self):
+        submitButton = self.mywait.until(EC.element_to_be_clickable((By.XPATH, "//button[contains(text(),'Submit')]")))
+        submitButton.click()
+        time.sleep(2)
+
+    def validationFormsubmitButton(self):
+        validationFormsubmitButton = self.mywait.until(EC.element_to_be_clickable((By.XPATH, "//button[@type='button'][normalize-space()='Submit']")))
+        validationFormsubmitButton.click()
+        time.sleep(2)
+
+    def validationFormsubmitConfirmationMsg(self):
+        validationFormsubmitConfirmationMsgButton = self.driver.find_element(By.XPATH, "//button[normalize-space()='OK']")
+        validationFormsubmitConfirmationMsgButton.click()
+        time.sleep(2)
+
+    def MandatoryFieldMsg(self):
+        mandatoryFieldMsgButton = self.driver.find_element(By.XPATH, "//button[normalize-space()='OK']")
+        mandatoryFieldMsgButton.click()
+        time.sleep(2)
+
 
 
     def close(self):

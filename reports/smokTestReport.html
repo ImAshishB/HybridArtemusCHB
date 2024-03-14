@@ -253,10 +253,10 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>smokTestReport.html</h1>
-    <p>Report generated on 14-Feb-2024 at 15:52:17 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
+    <p>Report generated on 01-Mar-2024 at 14:57:46 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
     <h2>Summary</h2>
-    <p>4 tests ran in 101.74 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">3 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">1 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>4 tests ran in 265.74 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">4 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -267,39 +267,52 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
           <th class="sortable links" col="links">Links</th></tr>
         <tr hidden="true" id="not-found-message">
           <th colspan="4">No results found. Try to check the filters</th></tr></thead>
-      <tbody class="failed results-table-row">
-        <tr>
-          <td class="col-result">Failed</td>
-          <td class="col-name">testcases/test_smokTestCases.py::TestEntryForm::test_saveformwithParts</td>
-          <td class="col-duration">44.21</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">testcases/test_smokTestCases.py::TestEntryForm::test_saveformwithoutinvoiceNumber</td>
-          <td class="col-duration">41.31</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
-      <tbody class="passed results-table-row">
-        <tr>
-          <td class="col-result">Passed</td>
-          <td class="col-name">testcases/test_smokTestCases.py::TestEntryForm::test_saveformwithExistinginvoiceNumber</td>
-          <td class="col-duration">42.45</td>
-          <td class="col-links"></td></tr>
-        <tr>
-          <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody>
       <tbody class="passed results-table-row">
         <tr>
           <td class="col-result">Passed</td>
           <td class="col-name">testcases/test_smokTestCases.py::TestEntryForm::test_saveformwithinvoiceNumber</td>
-          <td class="col-duration">51.62</td>
+          <td class="col-duration">74.06</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="empty log">No log output captured.</div></td></tr></tbody></table></body></html>
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     TestEntryForm:test_smokTestCases.py:32 ----------------Test Case test_saveformwithinvoiceNumber Starterd----------------
+INFO     TestEntryForm:test_smokTestCases.py:52 Entered in Form 7501
+INFO     TestEntryForm:test_smokTestCases.py:66 Test Case &#x27;save form with invoice Number&#x27; Passed
+INFO     TestEntryForm:test_smokTestCases.py:75 ----------------Test Case test_saveformwithinvoiceNumber End----------------<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testcases/test_smokTestCases.py::TestEntryForm::test_saveformwithoutinvoiceNumber</td>
+          <td class="col-duration">65.25</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     TestEntryForm:test_smokTestCases.py:78 ----------------Test Case test_saveformwithoutinvoiceNumber Starterd----------------
+INFO     TestEntryForm:test_smokTestCases.py:96 ----Entered in Form 7501----
+INFO     TestEntryForm:test_smokTestCases.py:110 Test Case &#x27;save form without invoice Number&#x27; Passed
+INFO     TestEntryForm:test_smokTestCases.py:119 ----------------Test Case test_saveformwithoutinvoiceNumber End----------------<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testcases/test_smokTestCases.py::TestEntryForm::test_saveformwithExistinginvoiceNumber</td>
+          <td class="col-duration">66.87</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     TestEntryForm:test_smokTestCases.py:122 ----------------Test Case test_saveformwithExistinginvoiceNumber Starterd----------------
+INFO     TestEntryForm:test_smokTestCases.py:140 ----Entered in Form 7501----
+INFO     TestEntryForm:test_smokTestCases.py:146 Test Case &#x27;save form with Existing invoice Number&#x27; Passed
+INFO     TestEntryForm:test_smokTestCases.py:151 ----------------Test Case test_saveformwithExistinginvoiceNumber End----------------<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testcases/test_smokTestCases.py::TestEntryForm::test_saveAndSubmitFormwithInvoiceNumberOnly</td>
+          <td class="col-duration">58.75</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     TestEntryForm:test_smokTestCases.py:154 ----------------Test Case test_saveAndSubmitFormwithInvoiceNumberOnly Starterd----------------
+INFO     TestEntryForm:test_smokTestCases.py:174 Entered in Form 7501
+INFO     TestEntryForm:test_smokTestCases.py:182 Form Saved
+INFO     TestEntryForm:test_smokTestCases.py:185 Test Case &#x27;save And Submit Form with Invoice Number Only &#x27; Passed
+INFO     TestEntryForm:test_smokTestCases.py:205 ----------------Test Case test_saveAndSubmitFormwithInvoiceNumberOnly End----------------<br/></div></td></tr></tbody></table></body></html>

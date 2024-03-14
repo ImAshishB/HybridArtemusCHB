@@ -320,7 +320,7 @@ def setup(request, browser):#browser #request
 
     request.cls.driver = driver
     request.cls.mywait = mywait
-    # yield
+    # yield # will  execute after every method
     # driver.close()
 
 def pytest_addoption(parser):    # This will get the value from CLI /hooks

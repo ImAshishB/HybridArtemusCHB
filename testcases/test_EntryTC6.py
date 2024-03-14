@@ -15,8 +15,8 @@ from base.base_driver import BaseDriver
 from utilites.utils import utills
 
 @pytest.mark.usefixtures("setup")
-class Test1LTC():
-    randomInvoice = "ABTestTC1"+ utills.random_invoceGenerator() # random_invoceGenerator() came from utils
+class Test_EntrySummary6():
+    randomInvoice = "ABTestTC6"+ utills.random_invoceGenerator() # random_invoceGenerator() came from utils
     randomBill = "M" + utills.random_BillGenerator()  # random_BillGenerator() came from utils
     file = "D:/Artmus Spec/Automation_Artemus/TestML.xlsx"
     log = utills.custom_logger()
@@ -30,10 +30,11 @@ class Test1LTC():
         self.getvalues = getAtributesOfText(self.driver, self.mywait)
 
 
-    def test_HTC1(self): # Country of origin india/No Duty HTS(NDC)
-        self.log.info("----------------Test Case test_HTC1 Starterd----------------")
+    def test_TC6_ADdCVD_Vessel_Container(self):
+        self.log.info("----------------Test Case test_TC6_ADdCVD_Vessel_Container with Container Starterd----------------")
 
-        for r in range(3, 4):
+        for r in range(8, 9):
+            self.selectIMPORTERData = utills.readData(self.file, 'TcHybridArtemusData', r, 140)
             self.addBillbutton = utills.readData(self.file, 'TcHybridArtemusData', r, 2)
             self.lineitmscount = utills.readData(self.file, 'TcHybridArtemusData', r, 3)
 
@@ -82,7 +83,7 @@ class Test1LTC():
             self.htsqty1Data = utills.readData(self.file, 'TcHybridArtemusData', r, 34)
             self.htsqty2Data = utills.readData(self.file, 'TcHybridArtemusData', r, 35)
             self.addcaseNumberData = utills.readData(self.file, 'TcHybridArtemusData', r, 111)
-            self.cvdcaseNumberData = utills.readData(self.file, 'TcHybridArtemusData', r, 111)
+            self.cvdcaseNumberData = utills.readData(self.file, 'TcHybridArtemusData', r, 110)
             self.linevalueData = utills.readData(self.file, 'TcHybridArtemusData', r, 36)#.split(",")
             self.countryOfOrigin2Data = utills.readData(self.file, 'TcHybridArtemusData', r, 37)#.split(",")
             self.countryOfExport2Data = utills.readData(self.file, 'TcHybridArtemusData', r, 38)#.split(",")
@@ -92,11 +93,12 @@ class Test1LTC():
             self.lp.password(self.passwordData)
             self.lp.login()
             self.log.info("----Login Done----")
-            time.sleep(3)
+            self.lp.loadingScreenHandling()
 
             # Go to 7501 Page
             # self.esf = EntryFormPage(self.driver, self.mywait)
             self.esf.shipment()
+            self.esf.selectImporter(self.selectIMPORTERData)
             self.esf.form7501()
             self.log.info("----Form 7501 Opened----")
 
@@ -156,6 +158,8 @@ class Test1LTC():
             self.esf.countryOfExport2(self.countryOfExport2Data)
             self.esf.tariffno(self.tariffnoData)
             self.esf.lineValue(self.linevalueData)
+            self.esf.addCvd(self.addcaseNumberData,self.cvdcaseNumberData)
+
             self.log.info("----Line Items Done----")
 
             # Save the form
@@ -165,23 +169,43 @@ class Test1LTC():
             self.msg = self.driver.find_element(By.TAG_NAME, "body").text
 
             if 'Form saved succesfully!' in self.msg:
-                assert True
                 self.esf.formSavedConfirmationMsg()
                 self.log.info("----Form Saved Successfully----")
-                self.lp.logout()
+                self.esf.submitform()
+                self.log.info("----Clicked on Submit Button----")
+
+                if 'Confirm Entry Information' in self.msg:
+                    self.log.info("----Validation Form opened----")
+                InvoiceValuesOfValidationForm = self.driver.find_element(By.XPATH,"//p[@class='form-lable'][contains(text(),'Total Invoice Value:')]//span[1]").text
+                ADDValuesOfValidationForm = self.driver.find_element(By.XPATH,"//p[@class='form-lable'][contains(text(),'Total AD:')]//span[1]").text
+                InvoiceValuesOfValidationFormFloat = float(InvoiceValuesOfValidationForm)
+                ADDValuesOfValidationFormFloat = float(ADDValuesOfValidationForm)
+                if InvoiceValuesOfValidationFormFloat != 0 and ADDValuesOfValidationFormFloat!=0:
+                    self.log.info("----The values are calculated properly----")
+                    self.esf.validationFormsubmitButton()
+                    self.log.info("----Clicked on Submit Button of Validation Form----")
+                    self.esf.loadingScreenHandling()
+                    if 'EDI send successfully' in self.msg:
+                        self.esf.validationFormsubmitConfirmationMsg()
+                        self.log.info("----Form Submitted Successfully----")
+                    else:
+                        self.esf.validationFormsubmitConfirmationMsg()
+                    self.esf.close()
+
+                else:
+                    self.log.error("----The values are not calculated properly----")
             else:
-                self.driver.save_screenshot(".\\screenshots\\" + "test_HTC1_scr.png")  # Screenshot
+                # self.driver.save_screenshot(".\\screenshots\\" + "test_HTC6_scr.png")  # Screenshot
                 self.esf.formSavedConfirmationMsg()
                 self.log.error("----Form Not Saved. Test Failed----")
-                self.lp.logout()
-                assert False
 
-        self.log.info("----------------Test Case test_HTC1 End----------------")
+        self.log.info("----------------Test Case test_TC6_ADdCVD_Vessel_Container with Container End----------------")
 
 
 
-# pytest -v -s testcases/test_TC1.py
-# pytest -v -s testcases/test_TC1.py --browser chrome
-# pytest -v -s testcases/test_TC1.py --browser firefox
-# pytest -v -s --html=reports\report.html testcases/test_TC1.py
-# pytest -v --html=reports\report.html testcases/test_TC1.py --browser chrome   #if in html report if logs are not getting genrated then remove -s and try
+# pytest -v -s testcases/test_EntryTC6.py
+# pytest -v -s testcases/test_EntryTC6.py --browser chrome
+# pytest -v -s testcases/test_EntryTC6.py --browser firefox
+# pytest -v -s --html=reports\EntryTC6Report.html testcases/test_EntryTC6.py
+# pytest -v --html=reports\EntryTC6Report.html testcases/test_EntryTC6.py
+# pytest -v --html=reports\EntryTC6Report.html testcases/test_EntryTC6.py --browser chrome   #if in html report if logs are not getting genrated then remove -s and try
