@@ -105,53 +105,53 @@ class Test_EntrySummary17():
             self.log.info("----Form 7501 Opened----")
 
             # Upper Part
-            # self.log.info("----Upper Part Started----")
-            # self.esf.invoicenumber(self.randomInvoice)
-            # self.esf.entryFillingTypecode(self.entfilltypeData)
-            # self.esf.actionCode(self.actionCData)
-            # self.esf.modeOfTransport(self.trnpmodeData)
-            # self.log.info("----Upper Part Done----")
-            #
-            # # Bill of Lading
-            # self.log.info("----Bill Of Lading Started----")
-            # self.esf.scaccode(self.scacData)
-            # self.esf.bill(self.randomBill)
-            # self.esf.uom(self.uomData)
-            # self.esf.quantity(self.qtyyData)
-            # self.log.info("----Bill Of Lading Done----")
-            #
-            #
-            # # Vessel Inforrmation
-            # self.log.info("----Vessel Information Started----")
-            # self.esf.vesselName(self.vesselsnameData)
-            # self.esf.vesselFlightNo(self.vessellsnoData)
-            # self.esf.addEditContiner()
-            # self.esf.containers(self.containerlistData)
-            # self.esf.saveContainer()
-            # self.log.info("----Vessel Information Done----")
-            #
-            # # Trading Partners 1
-            # self.log.info("----Trading Partners 1 Started----")
-            # self.esf.manufarture(self.manufacturerData)
-            # self.esf.seller(self.sellerData)
-            # self.esf.consignee(self.buyerData)
-            # self.esf.buyer(self.buyerData)
-            # self.log.info("----Trading Partners 1 Done----")
-            #
-            # # Trading Partners 2
-            #
-            # self.log.info("----Trading Partners 2 Started----")
-            # self.esf.countryOfOrigin1(self.countryOfOrigin1Data)
-            # self.esf.release_port(self.release_portData)
-            # self.esf.countryOfExport1(self.countryOfExport1Data)
-            # self.esf.ladingport(self.ladingportData)
-            # self.esf.weight(self.grossWeightData)
-            # self.esf.charges(self.chargedata)
-            # self.esf.unladingport(self.unladingportData)
-            # self.esf.manifestDescription(self.manifestDescriptionData)
-            # self.esf.arrivaldate(self.arrivaldateData)
-            # self.esf.exportdate(self.exportdateData)
-            # self.log.info("----Trading Partners 2 Done----")
+            self.log.info("----Upper Part Started----")
+            self.esf.invoicenumber(self.randomInvoice)
+            self.esf.entryFillingTypecode(self.entfilltypeData)
+            self.esf.actionCode(self.actionCData)
+            self.esf.modeOfTransport(self.trnpmodeData)
+            self.log.info("----Upper Part Done----")
+
+            # Bill of Lading
+            self.log.info("----Bill Of Lading Started----")
+            self.esf.scaccode(self.scacData)
+            self.esf.bill(self.randomBill)
+            self.esf.uom(self.uomData)
+            self.esf.quantity(self.qtyyData)
+            self.log.info("----Bill Of Lading Done----")
+
+
+            # Vessel Inforrmation
+            self.log.info("----Vessel Information Started----")
+            self.esf.vesselName(self.vesselsnameData)
+            self.esf.vesselFlightNo(self.vessellsnoData)
+            self.esf.addEditContiner()
+            self.esf.containers(self.containerlistData)
+            self.esf.saveContainer()
+            self.log.info("----Vessel Information Done----")
+
+            # Trading Partners 1
+            self.log.info("----Trading Partners 1 Started----")
+            self.esf.manufarture(self.manufacturerData)
+            self.esf.seller(self.sellerData)
+            self.esf.consignee(self.buyerData)
+            self.esf.buyer(self.buyerData)
+            self.log.info("----Trading Partners 1 Done----")
+
+            # Trading Partners 2
+
+            self.log.info("----Trading Partners 2 Started----")
+            self.esf.countryOfOrigin1(self.countryOfOrigin1Data)
+            self.esf.release_port(self.release_portData)
+            self.esf.countryOfExport1(self.countryOfExport1Data)
+            self.esf.ladingport(self.ladingportData)
+            self.esf.weight(self.grossWeightData)
+            self.esf.charges(self.chargedata)
+            self.esf.unladingport(self.unladingportData)
+            self.esf.manifestDescription(self.manifestDescriptionData)
+            self.esf.arrivaldate(self.arrivaldateData)
+            self.esf.exportdate(self.exportdateData)
+            self.log.info("----Trading Partners 2 Done----")
 
             # Line Items
             self.log.info("----Line Items Started----")
@@ -355,68 +355,69 @@ class Test_EntrySummary17():
             self.pga.containerNumber(self.FD1containerNumberData)
 
             # SavePGA FD3
-        #     self.pga.saveAndClosePGA()
-        #     try:
-        #         alertDataIsValidMSG = self.driver.find_element(By.XPATH,
-        #                                                        "//div[normalize-space()='1. The Data is Valid...']")
-        #         if alertDataIsValidMSG:
-        #             self.pga.alertDataIsValid()
-        #     except:
-        #         self.log.error("Error while saving PGA form")
-        #         pass
-        #     try:
-        #         someValidationsError = self.driver.find_element(By.TAG_NAME, "body").text
-        #         if 'The Manufacturer record should have an entity number' in someValidationsError:
-        #             self.pga.alertSomeValidationIssue()
-        #             time.sleep(1)
-        #             print("PGA has some validations issues but still PGA form saved")
-        #     except Exception as e:
-        #         print("PGA has issues and PGA form saved")
-        #         print(e)
-        #     time.sleep(1)
-        #     self.pga.pgaFormClosedalert()
-        #     self.esf.minimizeQtySection()
-        #     self.log.info("----PGA FD1 form closed----")
-        #
-        #
-        #     self.log.info("----Line Items Done----")
-        #
-        #     # Save the form
-        #     self.esf.saveform()
-        #
-        #     # Verify that form should be saved
-        #     self.msg = self.driver.find_element(By.TAG_NAME, "body").text
-        #
-        #     if 'Form saved succesfully!' in self.msg:
-        #         self.esf.formSavedConfirmationMsg()
-        #         self.log.info("----Form Saved Successfully----")
-        #         self.esf.submitform()
-        #         self.log.info("----Clicked on Submit Button----")
-        #
-        #         if 'Confirm Entry Information' in self.msg:
-        #             self.log.info("----Validation Form opened----")
-        #         InvoiceValuesOfValidationForm = self.driver.find_element(By.XPATH,"//p[@class='form-lable'][contains(text(),'Total Invoice Value:')]//span[1]").text
-        #
-        #         if InvoiceValuesOfValidationForm != 0:
-        #             self.log.info("----The values are calculated properly----")
-        #             self.esf.validationFormsubmitButton()
-        #             self.log.info("----Clicked on Submit Button of Validation Form----")
-        #             self.esf.loadingScreenHandling()
-        #             if 'EDI send successfully' in self.msg:
-        #                 self.esf.validationFormsubmitConfirmationMsg()
-        #                 self.log.info("----Form Submitted Successfully----")
-        #             else:
-        #                 self.esf.validationFormsubmitConfirmationMsg()
-        #             self.esf.close()
-        #
-        #         else:
-        #             self.log.error("----The values are not calculated properly----")
-        #     else:
-        #         # self.driver.save_screenshot(".\\screenshots\\" + "test_HTC17_scr.png")  # Screenshot
-        #         self.esf.formSavedConfirmationMsg()
-        #         self.log.error("----Form Not Saved. Test Failed----")
-        #
-        # self.log.info("----------------Test Case test_TC17_1FPGAFDA_Vessel_Container End----------------")
+            self.pga.saveAndClosePGA()
+            try:
+                alertDataIsValidMSG = self.driver.find_element(By.XPATH,
+                                                               "//div[normalize-space()='1. The Data is Valid...']")
+                if alertDataIsValidMSG:
+                    self.pga.alertDataIsValid()
+            except:
+                self.log.error("Error while saving PGA form")
+                pass
+            try:
+                someValidationsError = self.driver.find_element(By.TAG_NAME, "body").text
+                if 'The Manufacturer record should have an entity number' in someValidationsError:
+                    self.pga.alertSomeValidationIssue()
+                    time.sleep(1)
+                    print("PGA has some validations issues but still PGA form saved")
+            except Exception as e:
+                print("PGA has issues and PGA form saved")
+                print(e)
+            time.sleep(1)
+            self.pga.pgaFormClosedalert()
+            self.esf.minimizeQtySection()
+            self.log.info("----PGA FD1 form closed----")
+
+
+            self.log.info("----Line Items Done----")
+
+            # Save the form
+            self.esf.saveform()
+
+            # Verify that form should be saved
+            self.msg = self.driver.find_element(By.TAG_NAME, "body").text
+
+            if 'Form saved succesfully!' in self.msg:
+                self.esf.formSavedConfirmationMsg()
+                self.log.info("----Form Saved Successfully----")
+                self.esf.submitform()
+                self.log.info("----Clicked on Submit Button----")
+
+                if 'Confirm Entry Information' in self.msg:
+                    self.log.info("----Validation Form opened----")
+                InvoiceValuesOfValidationForm = self.driver.find_element(By.XPATH,"//p[@class='form-lable'][contains(text(),'Total Invoice Value:')]//span[1]").text
+
+                if InvoiceValuesOfValidationForm != 0:
+                    self.log.info("----The values are calculated properly----")
+                    self.esf.validationFormsubmitButton()
+                    self.log.info("----Clicked on Submit Button of Validation Form----")
+                    self.esf.loadingScreenHandling()
+                    if 'EDI send successfully' in self.msg:
+                        self.esf.validationFormsubmitConfirmationMsg()
+                        self.log.info("----Form Submitted Successfully----")
+                        self.esf.close()
+                    else:
+                        self.esf.validationFormsubmitConfirmationMsg()
+
+
+                else:
+                    self.log.error("----The values are not calculated properly----")
+            else:
+                # self.driver.save_screenshot(".\\screenshots\\" + "test_HTC17_scr.png")  # Screenshot
+                self.esf.formSavedConfirmationMsg()
+                self.log.error("----Form Not Saved. Test Failed----")
+
+        self.log.info("----------------Test Case test_TC17_1FPGAFDA_Vessel_Container End----------------")
 
 
 

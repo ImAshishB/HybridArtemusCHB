@@ -27,7 +27,7 @@ import random
 # # Configure logger
 # logging.basicConfig(filename=log_file, level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-logging.basicConfig(filename="Art_7501Log", level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logging.basicConfig(filename="Art_7501_1Entry", level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s', filemode='w')
 logging.info('------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------')
 serv_obj = Service("C:\Drivers\chromedriver-win64\chromedriver.exe")
 options = webdriver.ChromeOptions()
@@ -835,6 +835,7 @@ for r in range(7, 8):
                 FD1itemTypeData = utills.readData(file, "Sheet1", r, 73)
                 FD1productcodequalifierData = utills.readData(file, "Sheet1", r, 74)
                 FD1productcodnumberData = utills.readData(file, "Sheet1", r, 75)
+
                 FD1packagingQualifierData = utills.readData(file, "Sheet1", r, 77)
                 FD1unitOfMeasureData = utills.readData(file, "Sheet1", r, 78)
                 FD1pg26qtyData = utills.readData(file, "Sheet1", r, 79)
@@ -896,9 +897,9 @@ for r in range(7, 8):
 
                     # PG19,20
                     addEntities = driver.find_element(By.XPATH, "//select[@id='entities']")
+                    addEntities.click()
 
                     # FD1
-                    addEntities.click()
                     selectFD1 = driver.find_element(By.XPATH, "//option[normalize-space()='FDA Importer 1 - FD1']")
                     selectFD1.click()
                     # DFP
@@ -1083,7 +1084,7 @@ for r in range(7, 8):
                     productcodnumber.send_keys(FD1productcodnumberData)
                     time.sleep(2)
                     productcodnumber.send_keys(Keys.ENTER)
-                    #
+
                     # PG26
                     packagingQualifier = driver.find_element(By.XPATH,
                                                              "//span[text()='Packaging Qualifier:']//parent::div//following-sibling::div/select[@name='packagingQualifier']")

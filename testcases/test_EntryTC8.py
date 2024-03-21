@@ -16,7 +16,7 @@ from utilites.utils import utills
 
 @pytest.mark.usefixtures("setup")
 class Test_EntrySummary8():
-    randomInvoice = "ABTestTC8"+ utills.random_invoceGenerator() # random_invoceGenerator() came from utils
+    randomInvoice = "ABTstTC8_InfrmlVsl_"+ utills.random_invoceGenerator() # random_invoceGenerator() came from utils
     randomBill = "M" + utills.random_BillGenerator()  # random_BillGenerator() came from utils
     file = "D:/Artmus Spec/Automation_Artemus/TestML.xlsx"
     log = utills.custom_logger()
@@ -184,9 +184,10 @@ class Test_EntrySummary8():
                     if 'EDI send successfully' in self.msg:
                         self.esf.validationFormsubmitConfirmationMsg()
                         self.log.info("----Form Submitted Successfully----")
+                        self.esf.close()
                     else:
                         self.esf.validationFormsubmitConfirmationMsg()
-                    self.esf.close()
+                        self.log.error("----Form edi sent but Error occured----")
 
                 else:
                     self.log.error("----The values are not calculated properly----")

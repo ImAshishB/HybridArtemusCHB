@@ -17,7 +17,7 @@ from utilites.utils import utills
 
 @pytest.mark.usefixtures("setup")
 class Test_EntrySummary14():
-    randomInvoice = "ABTestTC14"+ utills.random_invoceGenerator() # random_invoceGenerator() came from utils
+    randomInvoice = "ABTstTC14_PGA1F_"+ utills.random_invoceGenerator() # random_invoceGenerator() came from utils
     randomBill = "M" + utills.random_BillGenerator()  # random_BillGenerator() came from utils
     file = "D:/Artmus Spec/Automation_Artemus/TestML.xlsx"
     log = utills.custom_logger()
@@ -50,7 +50,6 @@ class Test_EntrySummary14():
 
             # Bill
             self.scacData = utills.readData(self.file, 'TcHybridArtemusData', r, 11)
-            # billofladdingNo = utills.readData(file, "Sheet1", r, 12).split(",")
             self.uomData = utills.readData(self.file, 'TcHybridArtemusData', r, 13)#.split(",")
             self.qtyyData = utills.readData(self.file, 'TcHybridArtemusData', r, 14)#.split(",")
 
@@ -162,18 +161,18 @@ class Test_EntrySummary14():
             self.esf.lineValue(self.linevalueData)
 
             # Add PGA Detail
-            self.EP7descriptionData = utills.readData(self.file, "Sheet1", r, 43)
-            self.EP7pgaLineValueData = utills.readData(self.file, "Sheet1", r, 44)
+            self.EP7descriptionData = utills.readData(self.file, "TcHybridArtemusData", r, 43)
+            self.EP7pgaLineValueData = utills.readData(self.file, "TcHybridArtemusData", r, 44)
 
-            self.EP7individualQualifierdata = utills.readData(self.file, "Sheet1", r, 45)
-            self.EP7mailOrFaxdata = utills.readData(self.file, "Sheet1", r, 46)
-            self.EP7individualNameData = utills.readData(self.file, "Sheet1", r, 47)
-            self.EP7telephoneNoData = utills.readData(self.file, "Sheet1", r, 48)
+            self.EP7individualQualifierdata = utills.readData(self.file, "TcHybridArtemusData", r, 45)
+            self.EP7mailOrFaxdata = utills.readData(self.file, "TcHybridArtemusData", r, 46)
+            self.EP7individualNameData = utills.readData(self.file, "TcHybridArtemusData", r, 47)
+            self.EP7telephoneNoData = utills.readData(self.file, "TcHybridArtemusData", r, 48)
 
-            self.EP7entityRoleCodeData = utills.readData(self.file, "Sheet1", r, 49)
-            self.EP7declarationCodeData = utills.readData(self.file, "Sheet1", r, 50)
-            self.EP7declarationCertificationData = utills.readData(self.file, "Sheet1", r, 51)
-            self.EP7dateSignatureData = utills.readData(self.file, "Sheet1", r, 52)
+            self.EP7entityRoleCodeData = utills.readData(self.file, "TcHybridArtemusData", r, 49)
+            self.EP7declarationCodeData = utills.readData(self.file, "TcHybridArtemusData", r, 50)
+            self.EP7declarationCertificationData = utills.readData(self.file, "TcHybridArtemusData", r, 51)
+            self.EP7dateSignatureData = utills.readData(self.file, "TcHybridArtemusData", r, 52)
 
             self.pga.EP7()
             self.log.info("----PGA from opened----")
@@ -206,15 +205,7 @@ class Test_EntrySummary14():
             self.pga.pgaFormClosedalert()
             self.log.info("----PGA Form closed----")
             self.esf.minimizeQtySection()
-
-
-
-
             self.log.info("----PGA Form closed----")
-
-
-
-
 
             self.log.info("----Line Items Done----")
 
@@ -242,9 +233,10 @@ class Test_EntrySummary14():
                     if 'EDI send successfully' in self.msg:
                         self.esf.validationFormsubmitConfirmationMsg()
                         self.log.info("----Form Submitted Successfully----")
+                        self.esf.close()
                     else:
                         self.esf.validationFormsubmitConfirmationMsg()
-                    self.esf.close()
+                        self.log.error("----Form edi sent but Error occured----")
 
                 else:
                     self.log.error("----The values are not calculated properly----")
