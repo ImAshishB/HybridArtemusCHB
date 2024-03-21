@@ -630,12 +630,13 @@ for r in range(7, 8):
 
             # PGA Form
             try:
-                EP5descriptionData = utills.readData(file, "Sheet1", r, 40)
-                EP5desclaimerdata = utills.readData(file, "Sheet1", r, 41)
 
+                # EP5
                 EP5 = driver.find_elements(By.XPATH,
                                            "//button[@class='btn btn-link container-fluid text-left pl-0 collapsed']//div[@class='col-md-3']//a[normalize-space()='EP5']")
                 if EP5:
+                    EP5descriptionData = utills.readData(file, "Sheet1", r, 40)
+                    EP5desclaimerdata = utills.readData(file, "Sheet1", r, 41)
                     driver.find_element(By.XPATH,
                                         "//button[@class='btn btn-link container-fluid text-left pl-0 collapsed']//div[@class='col-md-3']//a[normalize-space()='EP5']").click()
 
@@ -686,22 +687,22 @@ for r in range(7, 8):
 
 
                 # EP7
-                EP7descriptionData = utills.readData(file, "Sheet1", r, 43)
-                EP7pgaLineValueData = utills.readData(file, "Sheet1", r, 44)
-
-                EP7individualQualifierdata = utills.readData(file, "Sheet1", r, 45)
-                EP7mailOrFaxdata = utills.readData(file, "Sheet1", r, 46)
-                EP7individualNameData = utills.readData(file, "Sheet1", r, 47)
-                EP7telephoneNoData = utills.readData(file, "Sheet1", r, 48)
-
-                EP7entityRoleCodeData = utills.readData(file, "Sheet1", r, 49)
-                EP7declarationCodeData = utills.readData(file, "Sheet1", r, 50)
-                EP7declarationCertificationData = utills.readData(file, "Sheet1", r, 51)
-                EP7dateSignatureData = utills.readData(file, "Sheet1", r, 52)
 
                 EP7 = driver.find_elements(By.XPATH,
                                            "//button[@class='btn btn-link container-fluid text-left pl-0 collapsed']//div[@class='col-md-3']//a[normalize-space()='EP7']")
                 if EP7:
+                    EP7descriptionData = utills.readData(file, "Sheet1", r, 43)
+                    EP7pgaLineValueData = utills.readData(file, "Sheet1", r, 44)
+
+                    EP7individualQualifierdata = utills.readData(file, "Sheet1", r, 45)
+                    EP7mailOrFaxdata = utills.readData(file, "Sheet1", r, 46)
+                    EP7individualNameData = utills.readData(file, "Sheet1", r, 47)
+                    EP7telephoneNoData = utills.readData(file, "Sheet1", r, 48)
+
+                    EP7entityRoleCodeData = utills.readData(file, "Sheet1", r, 49)
+                    EP7declarationCodeData = utills.readData(file, "Sheet1", r, 50)
+                    EP7declarationCertificationData = utills.readData(file, "Sheet1", r, 51)
+                    EP7dateSignatureData = utills.readData(file, "Sheet1", r, 52)
                     driver.find_element(By.XPATH,
                                         "//button[@class='btn btn-link container-fluid text-left pl-0 collapsed']//div[@class='col-md-3']//a[normalize-space()='EP7']").click()
                     # driver.find_element(By.XPATH, "//div[@class='col-md-3']//a[normalize-space()='EP7']").click()
@@ -797,77 +798,76 @@ for r in range(7, 8):
 
                 # FD1
 
-                FD1agencyProcessingCodeData = utills.readData(file, "Sheet1", r, 54)
-                FD1pgaLineValueData = utills.readData(file, "Sheet1", r, 55)
-                FD1descriptionData = utills.readData(file, "Sheet1", r, 56)
-
-                FD1EntityMF = utills.readData(file, "Sheet1", r, 58)
-                FD1EntityDEQ = utills.readData(file, "Sheet1", r, 59)
-                FD1EntityFD1 = utills.readData(file, "Sheet1", r, 60)
-                FD1EntityDFP = utills.readData(file, "Sheet1", r, 61)
-                FD1EntityPNS = utills.readData(file, "Sheet1", r, 62)
-                FD1EntityIM = utills.readData(file, "Sheet1", r, 63)
-                FD1EntityPNT = utills.readData(file, "Sheet1", r, 64)
-                FD1EntityFSV = utills.readData(file, "Sheet1", r, 65)
-                FD1EntityUC = utills.readData(file, "Sheet1", r, 66)
-                FD1EntityPK = utills.readData(file, "Sheet1", r, 67)
-
-                FD1individualQualifierData1 = utills.readData(file, "Sheet1", r, 68)
-                FD1mailOrFaxData1 = utills.readData(file, "Sheet1", r, 69)
-                FD1individualNameData1 = utills.readData(file, "Sheet1", r, 70)
-                FD1telephoneNoData1 = utills.readData(file, "Sheet1", r, 71)
-
-                FD1individualQualifierData2 = utills.readData(file, "Sheet1", r, 98)
-                FD1mailOrFaxData2 = utills.readData(file, "Sheet1", r, 99)
-                FD1individualNameData2 = utills.readData(file, "Sheet1", r, 100)
-                FD1telephoneNoData2 = utills.readData(file, "Sheet1", r, 101)
-
-                FD1individualQualifierData3 = utills.readData(file, "Sheet1", r, 102)
-                FD1mailOrFaxData3 = utills.readData(file, "Sheet1", r, 103)
-                FD1individualNameData3 = utills.readData(file, "Sheet1", r, 104)
-                FD1telephoneNoData3 = utills.readData(file, "Sheet1", r, 105)
-
-                FD1individualQualifierData4 = utills.readData(file, "Sheet1", r, 106)
-                FD1mailOrFaxData4 = utills.readData(file, "Sheet1", r, 107)
-                FD1individualNameData4 = utills.readData(file, "Sheet1", r, 108)
-                FD1telephoneNoData4 = utills.readData(file, "Sheet1", r, 109)
-
-                FD1itemTypeData = utills.readData(file, "Sheet1", r, 73)
-                FD1productcodequalifierData = utills.readData(file, "Sheet1", r, 74)
-                FD1productcodnumberData = utills.readData(file, "Sheet1", r, 75)
-
-                FD1packagingQualifierData = utills.readData(file, "Sheet1", r, 77)
-                FD1unitOfMeasureData = utills.readData(file, "Sheet1", r, 78)
-                FD1pg26qtyData = utills.readData(file, "Sheet1", r, 79)
-
-                FD1SpecialUseDesignationData1 = utills.readData(file, "Sheet1", r, 81)
-                FD1sourceTypeCodeData1 = utills.readData(file, "Sheet1", r, 82)
-                FD1countryCodeData1 = utills.readData(file, "Sheet1", r, 83)
-
-                FD1SpecialUseDesignationData2 = utills.readData(file, "Sheet1", r, 115)
-                FD1sourceTypeCodeData2 = utills.readData(file, "Sheet1", r, 116)
-                FD1countryCodeData2 = utills.readData(file, "Sheet1", r, 117)
-
-                FD1commodityCharDescripData = utills.readData(file, "Sheet1", r, 85)
-
-                FD1afrmativecodeData1 = utills.readData(file, "Sheet1", r, 87)
-                FD1afrmativedescriptionData1 = utills.readData(file, "Sheet1", r, 89)
-                FD1afrmativecodeData2 = utills.readData(file, "Sheet1", r, 88)
-                FD1afrmativedescriptionData2 = utills.readData(file, "Sheet1", r, 90)
-                FD1afrmativedescriptionData3 = utills.readData(file, "Sheet1", r, 120)
-                FD1afrmativecodeData3 = utills.readData(file, "Sheet1", r, 119)
-
-                FD1inspLabTestData = utills.readData(file, "Sheet1", r, 92)
-                FD1schedTimeOfInspecData = utills.readData(file, "Sheet1", r, 93)
-                FD1scheduledDateOfInspectionData = utills.readData(file, "Sheet1", r, 94)
-                FD1inspectionorArrivallocationData = utills.readData(file, "Sheet1", r, 95)
-                FD1inspectionorArrivallocationCodeData = utills.readData(file, "Sheet1", r, 96)
-
-                FD1containerNumberData = utills.readData(file, "Sheet1", r, 121)
-
                 FD1 = driver.find_elements(By.XPATH,
                                            "//button[@class='btn btn-link container-fluid text-left pl-0 collapsed']//div[@class='col-md-3']//a[normalize-space()='FD1']")
                 if FD1:
+                    FD1agencyProcessingCodeData = utills.readData(file, "Sheet1", r, 54)
+                    FD1pgaLineValueData = utills.readData(file, "Sheet1", r, 55)
+                    FD1descriptionData = utills.readData(file, "Sheet1", r, 56)
+
+                    FD1EntityMF = utills.readData(file, "Sheet1", r, 58)
+                    FD1EntityDEQ = utills.readData(file, "Sheet1", r, 59)
+                    FD1EntityFD1 = utills.readData(file, "Sheet1", r, 60)
+                    FD1EntityDFP = utills.readData(file, "Sheet1", r, 61)
+                    FD1EntityPNS = utills.readData(file, "Sheet1", r, 62)
+                    FD1EntityIM = utills.readData(file, "Sheet1", r, 63)
+                    FD1EntityPNT = utills.readData(file, "Sheet1", r, 64)
+                    FD1EntityFSV = utills.readData(file, "Sheet1", r, 65)
+                    FD1EntityUC = utills.readData(file, "Sheet1", r, 66)
+                    FD1EntityPK = utills.readData(file, "Sheet1", r, 67)
+
+                    FD1individualQualifierData1 = utills.readData(file, "Sheet1", r, 68)
+                    FD1mailOrFaxData1 = utills.readData(file, "Sheet1", r, 69)
+                    FD1individualNameData1 = utills.readData(file, "Sheet1", r, 70)
+                    FD1telephoneNoData1 = utills.readData(file, "Sheet1", r, 71)
+
+                    FD1individualQualifierData2 = utills.readData(file, "Sheet1", r, 98)
+                    FD1mailOrFaxData2 = utills.readData(file, "Sheet1", r, 99)
+                    FD1individualNameData2 = utills.readData(file, "Sheet1", r, 100)
+                    FD1telephoneNoData2 = utills.readData(file, "Sheet1", r, 101)
+
+                    FD1individualQualifierData3 = utills.readData(file, "Sheet1", r, 102)
+                    FD1mailOrFaxData3 = utills.readData(file, "Sheet1", r, 103)
+                    FD1individualNameData3 = utills.readData(file, "Sheet1", r, 104)
+                    FD1telephoneNoData3 = utills.readData(file, "Sheet1", r, 105)
+
+                    FD1individualQualifierData4 = utills.readData(file, "Sheet1", r, 106)
+                    FD1mailOrFaxData4 = utills.readData(file, "Sheet1", r, 107)
+                    FD1individualNameData4 = utills.readData(file, "Sheet1", r, 108)
+                    FD1telephoneNoData4 = utills.readData(file, "Sheet1", r, 109)
+
+                    FD1itemTypeData = utills.readData(file, "Sheet1", r, 73)
+                    FD1productcodequalifierData = utills.readData(file, "Sheet1", r, 74)
+                    FD1productcodnumberData = utills.readData(file, "Sheet1", r, 75)
+
+                    FD1packagingQualifierData = utills.readData(file, "Sheet1", r, 77)
+                    FD1unitOfMeasureData = utills.readData(file, "Sheet1", r, 78)
+                    FD1pg26qtyData = utills.readData(file, "Sheet1", r, 79)
+
+                    FD1SpecialUseDesignationData1 = utills.readData(file, "Sheet1", r, 81)
+                    FD1sourceTypeCodeData1 = utills.readData(file, "Sheet1", r, 82)
+                    FD1countryCodeData1 = utills.readData(file, "Sheet1", r, 83)
+
+                    FD1SpecialUseDesignationData2 = utills.readData(file, "Sheet1", r, 115)
+                    FD1sourceTypeCodeData2 = utills.readData(file, "Sheet1", r, 116)
+                    FD1countryCodeData2 = utills.readData(file, "Sheet1", r, 117)
+
+                    FD1commodityCharDescripData = utills.readData(file, "Sheet1", r, 85)
+
+                    FD1afrmativecodeData1 = utills.readData(file, "Sheet1", r, 87)
+                    FD1afrmativedescriptionData1 = utills.readData(file, "Sheet1", r, 89)
+                    FD1afrmativecodeData2 = utills.readData(file, "Sheet1", r, 88)
+                    FD1afrmativedescriptionData2 = utills.readData(file, "Sheet1", r, 90)
+                    FD1afrmativedescriptionData3 = utills.readData(file, "Sheet1", r, 120)
+                    FD1afrmativecodeData3 = utills.readData(file, "Sheet1", r, 119)
+
+                    FD1inspLabTestData = utills.readData(file, "Sheet1", r, 92)
+                    FD1schedTimeOfInspecData = utills.readData(file, "Sheet1", r, 93)
+                    FD1scheduledDateOfInspectionData = utills.readData(file, "Sheet1", r, 94)
+                    FD1inspectionorArrivallocationData = utills.readData(file, "Sheet1", r, 95)
+                    FD1inspectionorArrivallocationCodeData = utills.readData(file, "Sheet1", r, 96)
+
+                    FD1containerNumberData = utills.readData(file, "Sheet1", r, 121)
                     driver.find_element(By.XPATH,
                                         "//button[@class='btn btn-link container-fluid text-left pl-0 collapsed']//div[@class='col-md-3']//a[normalize-space()='FD1']").click()
                     time.sleep(1)
@@ -1252,6 +1252,73 @@ for r in range(7, 8):
                 FD2 = driver.find_elements(By.XPATH,
                                            "//button[@class='btn btn-link container-fluid text-left pl-0 collapsed']//div[@class='col-md-3']//a[normalize-space()='FD2']")
                 if FD2:
+                    FD1agencyProcessingCodeData = utills.readData(file, "Sheet1", r, 54)
+                    FD1pgaLineValueData = utills.readData(file, "Sheet1", r, 55)
+                    FD1descriptionData = utills.readData(file, "Sheet1", r, 56)
+
+                    FD1EntityMF = utills.readData(file, "Sheet1", r, 58)
+                    FD1EntityDEQ = utills.readData(file, "Sheet1", r, 59)
+                    FD1EntityFD1 = utills.readData(file, "Sheet1", r, 60)
+                    FD1EntityDFP = utills.readData(file, "Sheet1", r, 61)
+                    FD1EntityPNS = utills.readData(file, "Sheet1", r, 62)
+                    FD1EntityIM = utills.readData(file, "Sheet1", r, 63)
+                    FD1EntityPNT = utills.readData(file, "Sheet1", r, 64)
+                    FD1EntityFSV = utills.readData(file, "Sheet1", r, 65)
+                    FD1EntityUC = utills.readData(file, "Sheet1", r, 66)
+                    FD1EntityPK = utills.readData(file, "Sheet1", r, 67)
+
+                    FD1individualQualifierData1 = utills.readData(file, "Sheet1", r, 68)
+                    FD1mailOrFaxData1 = utills.readData(file, "Sheet1", r, 69)
+                    FD1individualNameData1 = utills.readData(file, "Sheet1", r, 70)
+                    FD1telephoneNoData1 = utills.readData(file, "Sheet1", r, 71)
+
+                    FD1individualQualifierData2 = utills.readData(file, "Sheet1", r, 98)
+                    FD1mailOrFaxData2 = utills.readData(file, "Sheet1", r, 99)
+                    FD1individualNameData2 = utills.readData(file, "Sheet1", r, 100)
+                    FD1telephoneNoData2 = utills.readData(file, "Sheet1", r, 101)
+
+                    FD1individualQualifierData3 = utills.readData(file, "Sheet1", r, 102)
+                    FD1mailOrFaxData3 = utills.readData(file, "Sheet1", r, 103)
+                    FD1individualNameData3 = utills.readData(file, "Sheet1", r, 104)
+                    FD1telephoneNoData3 = utills.readData(file, "Sheet1", r, 105)
+
+                    FD1individualQualifierData4 = utills.readData(file, "Sheet1", r, 106)
+                    FD1mailOrFaxData4 = utills.readData(file, "Sheet1", r, 107)
+                    FD1individualNameData4 = utills.readData(file, "Sheet1", r, 108)
+                    FD1telephoneNoData4 = utills.readData(file, "Sheet1", r, 109)
+
+                    FD1itemTypeData = utills.readData(file, "Sheet1", r, 73)
+                    FD1productcodequalifierData = utills.readData(file, "Sheet1", r, 74)
+                    FD1productcodnumberData = utills.readData(file, "Sheet1", r, 75)
+
+                    FD1packagingQualifierData = utills.readData(file, "Sheet1", r, 77)
+                    FD1unitOfMeasureData = utills.readData(file, "Sheet1", r, 78)
+                    FD1pg26qtyData = utills.readData(file, "Sheet1", r, 79)
+
+                    FD1SpecialUseDesignationData1 = utills.readData(file, "Sheet1", r, 81)
+                    FD1sourceTypeCodeData1 = utills.readData(file, "Sheet1", r, 82)
+                    FD1countryCodeData1 = utills.readData(file, "Sheet1", r, 83)
+
+                    FD1SpecialUseDesignationData2 = utills.readData(file, "Sheet1", r, 115)
+                    FD1sourceTypeCodeData2 = utills.readData(file, "Sheet1", r, 116)
+                    FD1countryCodeData2 = utills.readData(file, "Sheet1", r, 117)
+
+                    FD1commodityCharDescripData = utills.readData(file, "Sheet1", r, 85)
+
+                    FD1afrmativecodeData1 = utills.readData(file, "Sheet1", r, 87)
+                    FD1afrmativedescriptionData1 = utills.readData(file, "Sheet1", r, 89)
+                    FD1afrmativecodeData2 = utills.readData(file, "Sheet1", r, 88)
+                    FD1afrmativedescriptionData2 = utills.readData(file, "Sheet1", r, 90)
+                    FD1afrmativedescriptionData3 = utills.readData(file, "Sheet1", r, 120)
+                    FD1afrmativecodeData3 = utills.readData(file, "Sheet1", r, 119)
+
+                    FD1inspLabTestData = utills.readData(file, "Sheet1", r, 92)
+                    FD1schedTimeOfInspecData = utills.readData(file, "Sheet1", r, 93)
+                    FD1scheduledDateOfInspectionData = utills.readData(file, "Sheet1", r, 94)
+                    FD1inspectionorArrivallocationData = utills.readData(file, "Sheet1", r, 95)
+                    FD1inspectionorArrivallocationCodeData = utills.readData(file, "Sheet1", r, 96)
+
+                    FD1containerNumberData = utills.readData(file, "Sheet1", r, 121)
                     driver.find_element(By.XPATH,
                                         "//button[@class='btn btn-link container-fluid text-left pl-0 collapsed']//div[@class='col-md-3']//a[normalize-space()='FD2']").click()
                     time.sleep(1)
@@ -1635,6 +1702,73 @@ for r in range(7, 8):
                 FD3 = driver.find_elements(By.XPATH,
                                            "//button[@class='btn btn-link container-fluid text-left pl-0 collapsed']//div[@class='col-md-3']//a[normalize-space()='FD3']")
                 if FD3:
+                    FD1agencyProcessingCodeData = utills.readData(file, "Sheet1", r, 54)
+                    FD1pgaLineValueData = utills.readData(file, "Sheet1", r, 55)
+                    FD1descriptionData = utills.readData(file, "Sheet1", r, 56)
+
+                    FD1EntityMF = utills.readData(file, "Sheet1", r, 58)
+                    FD1EntityDEQ = utills.readData(file, "Sheet1", r, 59)
+                    FD1EntityFD1 = utills.readData(file, "Sheet1", r, 60)
+                    FD1EntityDFP = utills.readData(file, "Sheet1", r, 61)
+                    FD1EntityPNS = utills.readData(file, "Sheet1", r, 62)
+                    FD1EntityIM = utills.readData(file, "Sheet1", r, 63)
+                    FD1EntityPNT = utills.readData(file, "Sheet1", r, 64)
+                    FD1EntityFSV = utills.readData(file, "Sheet1", r, 65)
+                    FD1EntityUC = utills.readData(file, "Sheet1", r, 66)
+                    FD1EntityPK = utills.readData(file, "Sheet1", r, 67)
+
+                    FD1individualQualifierData1 = utills.readData(file, "Sheet1", r, 68)
+                    FD1mailOrFaxData1 = utills.readData(file, "Sheet1", r, 69)
+                    FD1individualNameData1 = utills.readData(file, "Sheet1", r, 70)
+                    FD1telephoneNoData1 = utills.readData(file, "Sheet1", r, 71)
+
+                    FD1individualQualifierData2 = utills.readData(file, "Sheet1", r, 98)
+                    FD1mailOrFaxData2 = utills.readData(file, "Sheet1", r, 99)
+                    FD1individualNameData2 = utills.readData(file, "Sheet1", r, 100)
+                    FD1telephoneNoData2 = utills.readData(file, "Sheet1", r, 101)
+
+                    FD1individualQualifierData3 = utills.readData(file, "Sheet1", r, 102)
+                    FD1mailOrFaxData3 = utills.readData(file, "Sheet1", r, 103)
+                    FD1individualNameData3 = utills.readData(file, "Sheet1", r, 104)
+                    FD1telephoneNoData3 = utills.readData(file, "Sheet1", r, 105)
+
+                    FD1individualQualifierData4 = utills.readData(file, "Sheet1", r, 106)
+                    FD1mailOrFaxData4 = utills.readData(file, "Sheet1", r, 107)
+                    FD1individualNameData4 = utills.readData(file, "Sheet1", r, 108)
+                    FD1telephoneNoData4 = utills.readData(file, "Sheet1", r, 109)
+
+                    FD1itemTypeData = utills.readData(file, "Sheet1", r, 73)
+                    FD1productcodequalifierData = utills.readData(file, "Sheet1", r, 74)
+                    FD1productcodnumberData = utills.readData(file, "Sheet1", r, 75)
+
+                    FD1packagingQualifierData = utills.readData(file, "Sheet1", r, 77)
+                    FD1unitOfMeasureData = utills.readData(file, "Sheet1", r, 78)
+                    FD1pg26qtyData = utills.readData(file, "Sheet1", r, 79)
+
+                    FD1SpecialUseDesignationData1 = utills.readData(file, "Sheet1", r, 81)
+                    FD1sourceTypeCodeData1 = utills.readData(file, "Sheet1", r, 82)
+                    FD1countryCodeData1 = utills.readData(file, "Sheet1", r, 83)
+
+                    FD1SpecialUseDesignationData2 = utills.readData(file, "Sheet1", r, 115)
+                    FD1sourceTypeCodeData2 = utills.readData(file, "Sheet1", r, 116)
+                    FD1countryCodeData2 = utills.readData(file, "Sheet1", r, 117)
+
+                    FD1commodityCharDescripData = utills.readData(file, "Sheet1", r, 85)
+
+                    FD1afrmativecodeData1 = utills.readData(file, "Sheet1", r, 87)
+                    FD1afrmativedescriptionData1 = utills.readData(file, "Sheet1", r, 89)
+                    FD1afrmativecodeData2 = utills.readData(file, "Sheet1", r, 88)
+                    FD1afrmativedescriptionData2 = utills.readData(file, "Sheet1", r, 90)
+                    FD1afrmativedescriptionData3 = utills.readData(file, "Sheet1", r, 120)
+                    FD1afrmativecodeData3 = utills.readData(file, "Sheet1", r, 119)
+
+                    FD1inspLabTestData = utills.readData(file, "Sheet1", r, 92)
+                    FD1schedTimeOfInspecData = utills.readData(file, "Sheet1", r, 93)
+                    FD1scheduledDateOfInspectionData = utills.readData(file, "Sheet1", r, 94)
+                    FD1inspectionorArrivallocationData = utills.readData(file, "Sheet1", r, 95)
+                    FD1inspectionorArrivallocationCodeData = utills.readData(file, "Sheet1", r, 96)
+
+                    FD1containerNumberData = utills.readData(file, "Sheet1", r, 121)
                     driver.find_element(By.XPATH,
                                         "//button[@class='btn btn-link container-fluid text-left pl-0 collapsed']//div[@class='col-md-3']//a[normalize-space()='FD3']").click()
                     time.sleep(1)
