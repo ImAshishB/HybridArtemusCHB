@@ -1,161 +1,202 @@
-from selenium import webdriver
-from selenium.common import NoSuchElementException, ElementNotVisibleException, ElementNotSelectableException, \
-    ElementClickInterceptedException, ElementNotInteractableException, NoAlertPresentException, TimeoutException
-from selenium.webdriver import ActionChains, Keys
-from selenium.webdriver.chrome.service import Service
-from selenium.webdriver.common.by import By
-from selenium.webdriver.support.wait import WebDriverWait
-from selenium.webdriver.support.ui import WebDriverWait
-from selenium.webdriver.support import expected_conditions as EC
-from utilites.utils import utills
 import time
+import pytest
+from pages.loginPage import Loginpage
+from pages.entryformPage import EntryFormPage
+from pages.getAttributes import getAtributesOfText
+from pages.pgaformPage import PGAFormPage
+from selenium.webdriver.common.by import By
+from utilites.utils import utills
+from selenium.common import NoAlertPresentException
+import pytest
+from selenium.webdriver import ActionChains, Keys
+from selenium.webdriver.common.by import By
+from selenium.webdriver.support import expected_conditions as EC
+import time
+from base.base_driver import BaseDriver
+from utilites.utils import utills
 
-# serv_obj = Service("C:\Drivers\chromedriver-win64\chromedriver.exe")
-# options = webdriver.ChromeOptions()
-# options.add_experimental_option("detach", True)
-# driver = webdriver.Chrome(options=options, service=serv_obj)
-# mywait = WebDriverWait(driver, 10, poll_frequency=2, ignored_exceptions=[NoSuchElementException,
-#                                                                          ElementNotVisibleException,
-#                                                                          ElementNotSelectableException,
-#                                                                          ElementClickInterceptedException,
-#                                                                          ElementNotInteractableException,
-#                                                                          Exception])
-#
-# # URL
-# driver.get("http://52.54.244.138:8080/ArtemusChb/")
-# # driver.get("https://chb.artemusgroupusa.com/")
-# # Maximize page
-# driver.maximize_window()
-#
-# # Login
-# driver.find_element(By.ID, "username").send_keys("Ashishh")
-# driver.find_element(By.ID, "password").send_keys("ashishh1")
-# # driver.find_element(By.ID, "username").send_keys("Varada")
-# # driver.find_element(By.ID, "password").send_keys("varada1")
-# driver.find_element(By.XPATH, '//*[@id="background"]/div/div/div/div/div/form/button').click()
-#
-# # HomePage
-# query = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.LINK_TEXT, "Queries")))
-# query.click()
-# time.sleep(1)
-# Bond = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.LINK_TEXT, "Bond")))
-# Bond.click()
-# time.sleep(1)
-a=1
-a=2
-print(a)
-file = "D:\Artmus Spec\Automation_Artemus\querylist.xlsx"
-for r in range(3, 5):
-    QueryNo = utills.readData(file, "Sheet2", r, 12)
-    ImporterData = utills.readData(file, "Sheet2", r, 1)
-
-    # Query the imorter ID and record the query data
-    print("This is Query No: ", QueryNo)
-    print("This is Importer ID: ", ImporterData)
-    # importerOfRrecord = driver.find_element(By.XPATH, "//input[@id='importerNo']")
-    # importerOfRrecord.clear()
-    # importerOfRrecord.send_keys(ImporterData)
-    #
-    # submitButton = driver.find_element(By.XPATH, "//button[normalize-space()='Submit']")
-    # submitButton.click()
-    #
-    # SHORT_TIMEOUT = 1  # give time for the loading element to appear
-    # LONG_TIMEOUT = 30  # give time for loading to finish
-    # LOADING_ELEMENT_XPATH = "//body//app-root//app-loader//h3[@class='loadingScreen__text']"
-    #
-    # try:
-    #     WebDriverWait(driver, LONG_TIMEOUT).until(EC.invisibility_of_element_located((By.XPATH, LOADING_ELEMENT_XPATH)))
-    # except TimeoutException:
-    #     pass
-    #
-    # # Record the Data found after query the Bond
-    # try:
-    #     ImporterNumber = driver.find_element(By.XPATH,"//span[text()='Importer Number:']//parent::div//following-sibling::div").text
-    #     utills.writeData(file, "Sheet2", r, 2, ImporterNumber)
-    # except:
-    #     pass
-    # try:
-    #     ImporterName = driver.find_element(By.XPATH,"//span[text()='Importer’s Name:']//parent::div//following-sibling::div").text
-    #     utills.writeData(file, "Sheet2", r, 4, ImporterName)
-    # except:
-    #     pass
-    # try:
-    #     BondEffectiveDate = driver.find_element(By.XPATH,"//span[text()='Bond Effective Date:']//parent::div//following-sibling::div").text
-    #     utills.writeData(file, "Sheet2", r, 6, BondEffectiveDate)
-    # except:
-    #     pass
-    #
-    # try:
-    #     QueryResultsCode = driver.find_element(By.XPATH,"//span[text()='Query Results Code:']//parent::div//following-sibling::div").text
-    #     utills.writeData(file, "Sheet2", r, 8, QueryResultsCode)
-    # except:
-    #     pass
-    #
-    # try:
-    #     BondType = driver.find_element(By.XPATH,"//span[text()='Bond Type/Activity Code:']//parent::div//following-sibling::div").text
-    #     utills.writeData(file, "Sheet2", r, 10, BondType)
-    # except:
-    #     pass
-    #
-    # try:
-    #     centerIdentifier = driver.find_element(By.XPATH,"//span[text()='Center Identifier:']//parent::div//following-sibling::div").text
-    #     utills.writeData(file, "Sheet2", r, 9, centerIdentifier)
-    # except:
-    #     pass
-    #
-    # # Click to Create/Update Importer link
-    # driver.find_element(By.XPATH, "//a[normalize-space()='Create/Update Importer']").click()
-    # time.sleep(1)
-    #
-    # # Record the Data found in Importer Screen
-    # try:
-    #     ImporterNumberInImpScreen = driver.find_element(By.XPATH,"//div/input[@id='importerIdentityNumber']")
-    #     ImporterNumberInImpScreenData=ImporterNumberInImpScreen.get_attribute("value")
-    #     utills.writeData(file, "Sheet2", r, 3, ImporterNumberInImpScreenData)
-    # except:
-    #     pass
-    # try:
-    #     ImporterNameInImpScreen = driver.find_element(By.XPATH,"//div/input[@id='importerName']")
-    #     ImporterNameInImpScreenData=ImporterNameInImpScreen.get_attribute("value")
-    #     utills.writeData(file, "Sheet2", r, 5, ImporterNameInImpScreenData)
-    # except:
-    #     pass
-    # try:
-    #     BondEffectiveDateInImpScreen = driver.find_element(By.XPATH,"//div/input[@id='bondEffectiveDate']")
-    #     BondEffectiveDateInImpScreenData=BondEffectiveDateInImpScreen.get_attribute("value")
-    #     utills.writeData(file, "Sheet2", r, 7, BondEffectiveDateInImpScreenData)
-    # except:
-    #     pass
-    #
-    #
-    #
-    # # Print the values of the elements in console
-    # try:
-    #     print("Importer Name in Query: ", ImporterName, "  And  Importer Name in Importer Screen: ",ImporterNameInImpScreenData)
-    #     print("Importer Number in Query: ", ImporterNumber, "Importer Number in Importer Screen: ",ImporterNumberInImpScreenData)
-    #     print("Bond Effective Date in Query: ", BondEffectiveDate, "Bond Effective Date in Importer Screen: ",BondEffectiveDateInImpScreenData)
-    # except:
-    #     pass
-    #
-    #
-    # try:
-    #     if  ImporterName == ImporterNameInImpScreenData and ImporterNumber == ImporterNumberInImpScreenData and BondEffectiveDate == BondEffectiveDateInImpScreenData:
-    #         utills.writeData(file, "Sheet2", r, 11, "Passed")
-    #     else:
-    #         utills.writeData(file, "Sheet2", r, 11, "Failed")
-    #
-    # except Exception as e:
-    #     print(e)
-    #
-    # # Close the Importer Screen
-    #
-    # driver.find_element(By.XPATH, "//span[@aria-hidden='true']").click()
-    # time.sleep(1)
-    #
+@pytest.mark.usefixtures("setup")
+class Test_EntrySummary16():
+    randomInvoice = "ABTstTC16_PGA3F_"+ utills.random_invoceGenerator() # random_invoceGenerator() came from utils
+    randomBill = "M" + utills.random_BillGenerator()  # random_BillGenerator() came from utils
+    file = "D:/Artmus Spec/Automation_Artemus/TestML.xlsx"
+    log = utills.custom_logger()
+    list_status = []  # Empty List Veriable
 
 
+    @pytest.fixture(autouse=True)
+    def class_setup(self):
+        self.lp = Loginpage(self.driver, self.mywait)
+        self.esf = EntryFormPage(self.driver, self.mywait)
+        self.getvalues = getAtributesOfText(self.driver, self.mywait)
+        self.pga = PGAFormPage(self.driver, self.mywait)
+
+
+    def test_TC16_3FPGA_Vessel_Container(self):
+        self.log.info("----------------Test Case test_TC16_3FPGA_Vessel_Container Starterd----------------")
+
+        for r in range(18, 19):
+
+
+            # Login
+
+            # Add PGA Detail
+
+
+            #PG01
+            self.FD1agencyProcessingCodeData = utills.readData(self.file, "TcHybridArtemusData", r, 54)
+            self.FD1pgaLineValueData = utills.readData(self.file, "TcHybridArtemusData", r, 55)
+            self.FD1descriptionData = utills.readData(self.file, "TcHybridArtemusData", r, 56)
+
+            #PG19
+            self.FD1EntityMF = utills.readData(self.file, "TcHybridArtemusData", r, 58)
+            self.FD1EntityDEQ = utills.readData(self.file, "TcHybridArtemusData", r, 59)
+            self.FD1EntityFD1 = utills.readData(self.file, "TcHybridArtemusData", r, 60)
+            self.FD1EntityDP = utills.readData(self.file, "TcHybridArtemusData", r, 61)
+
+            # PG21
+            self.FD1individualQualifierData1 = utills.readData(self.file, "TcHybridArtemusData", r, 68)
+            self.FD1mailOrFaxData1 = utills.readData(self.file, "TcHybridArtemusData", r, 69)
+            self.FD1individualNameData1 = utills.readData(self.file, "TcHybridArtemusData", r, 70)
+            self.FD1telephoneNoData1 = utills.readData(self.file, "TcHybridArtemusData", r, 71)
+
+            # PG02
+            self.FD1itemTypeData = utills.readData(self.file, "TcHybridArtemusData", r, 73)
+            self.FD1productcodequalifierData = utills.readData(self.file, "TcHybridArtemusData", r, 74)
+            self.FD1productcodnumberData = utills.readData(self.file, "TcHybridArtemusData", r, 75)
+
+            # PG26
+            self.FD1packagingQualifierData = utills.readData(self.file, "TcHybridArtemusData", r, 77)
+            self.FD1unitOfMeasureData = utills.readData(self.file, "TcHybridArtemusData", r, 78)
+            self.FD1pg26qtyData = utills.readData(self.file, "TcHybridArtemusData", r, 79)
+
+            # PG4,5,6
+            self.FD1SpecialUseDesignationData1 = utills.readData(self.file, "TcHybridArtemusData", r, 81)
+            self.FD1sourceTypeCodeData1 = utills.readData(self.file, "TcHybridArtemusData", r, 82)
+            self.FD1countryCodeData1 = utills.readData(self.file, "TcHybridArtemusData", r, 83)
+
+            # PG10
+            self.FD1commodityCharDescripData = utills.readData(self.file, "TcHybridArtemusData", r, 85)
+
+            # PG23
+            self.FD1afrmativecodeData1 = utills.readData(self.file, "TcHybridArtemusData", r, 87)
+            self.FD1afrmativedescriptionData1 = utills.readData(self.file, "TcHybridArtemusData", r, 89)
+            self.FD1afrmativecodeData2 = utills.readData(self.file, "TcHybridArtemusData", r, 88)
+            self.FD1afrmativedescriptionData2 = utills.readData(self.file, "TcHybridArtemusData", r, 90)
+
+            # PG27
+            self.FD1containerNumberData = utills.readData(self.file, "TcHybridArtemusData", r, 121)
+
+            # EP5
+            self.pga.EP5()
+            self.log.info("----PGA EP5 form opened----")
+            self.pga.commercialDescription(self.EP7descriptionData)
+            self.pga.desclaimer(self.EP5desclaimerdata)
+            # SavePGA EP5
+            self.pga.saveAndClosePGA()
+            try:
+                alertDataIsValidMSG = self.driver.find_element(By.XPATH,
+                                                               "//div[normalize-space()='1. The Data is Valid...']")
+                if alertDataIsValidMSG:
+                    self.pga.alertDataIsValid()
+            except:
+                self.log.error("Error while saving PGA form")
+                pass
+            time.sleep(1)
+            self.pga.pgaFormClosedalert()
+            self.esf.minimizeQtySection()
+            self.log.info("----PGA EP5 form Closed----")
+
+            #EP7
+            self.pga.EP7()
+            self.log.info("----PGA EP7 form opened----")
+            #PG01
+            self.pga.commercialDescription(self.EP7descriptionData)
+            self.pga.pgaLineValue(self.EP7pgaLineValueData)
+
+            #PG21
+            self.pga.individualQualifier(self.EP7individualQualifierdata)
+            self.pga.mailOrFax(self.EP7mailOrFaxdata)
+            self.pga.individualName(self.EP7individualNameData)
+            self.pga.telephoneNo(self.EP7telephoneNoData)
+
+            #PG23
+            self.pga.entityRoleCode(self.EP7entityRoleCodeData)
+            self.pga.declarationCode(self.EP7declarationCodeData)
+            self.pga.declarationCertification(self.EP7declarationCertificationData)
+            self.pga.dateSignature(self.EP7dateSignatureData)
+
+            #SavePGA EP7
+            self.pga.saveAndClosePGA()
+            try:
+                alertDataIsValidMSG = self.driver.find_element(By.XPATH,"//div[normalize-space()='1. The Data is Valid...']")
+                if alertDataIsValidMSG:
+                    self.pga.alertDataIsValid()
+            except:
+                self.log.error("Error while saving PGA form")
+                pass
+            time.sleep(1)
+            self.pga.pgaFormClosedalert()
+            self.esf.minimizeQtySection()
+            self.log.info("----PGA EP7 form closed----")
+
+            # FD3
+            self.pga.FD3()
+            self.log.info("----PGA FD3 form opened----")
+            # PG01
+            self.pga.commercialDescription(self.EP7descriptionData)
+            self.pga.pgaLineValue(self.EP7pgaLineValueData)
+
+            # PG21
+            self.pga.individualQualifier(self.EP7individualQualifierdata)
+            self.pga.mailOrFax(self.EP7mailOrFaxdata)
+            self.pga.individualName(self.EP7individualNameData)
+            self.pga.telephoneNo(self.EP7telephoneNoData)
+
+            self.log.info("----Line Items Done----")
+
+            # Save the form
+            self.esf.saveform()
+
+            # Verify that form should be saved
+            self.msg = self.driver.find_element(By.TAG_NAME, "body").text
+
+            if 'Form saved succesfully!' in self.msg:
+                self.esf.formSavedConfirmationMsg()
+                self.log.info("----Form Saved Successfully----")
+                self.esf.submitform()
+                self.log.info("----Clicked on Submit Button----")
+
+                if 'Confirm Entry Information' in self.msg:
+                    self.log.info("----Validation Form opened----")
+                InvoiceValuesOfValidationForm = self.driver.find_element(By.XPATH,"//p[@class='form-lable'][contains(text(),'Total Invoice Value:')]//span[1]").text
+
+                if InvoiceValuesOfValidationForm != 0:
+                    self.log.info("----The values are calculated properly----")
+                    self.esf.validationFormsubmitButton()
+                    self.log.info("----Clicked on Submit Button of Validation Form----")
+                    self.esf.loadingScreenHandling()
+                    if 'EDI send successfully' in self.msg:
+                        self.esf.validationFormsubmitConfirmationMsg()
+                        self.log.info("----Form Submitted Successfully----")
+                    else:
+                        self.esf.validationFormsubmitConfirmationMsg()
+                    self.esf.close()
+
+                else:
+                    self.log.error("----The values are not calculated properly----")
+            else:
+                # self.driver.save_screenshot(".\\screenshots\\" + "test_HTC16_scr.png")  # Screenshot
+                self.esf.formSavedConfirmationMsg()
+                self.log.error("----Form Not Saved. Test Failed----")
+
+        self.log.info("----------------Test Case test_TC16_3FPGA_Vessel_Container End----------------")
 
 
 
-
-
+# pytest -v -s testcases/test_EntryTC16.py
+# pytest -v -s testcases/test_EntryTC16.py --browser chrome
+# pytest -v -s testcases/test_EntryTC16.py --browser firefox
+# pytest -v -s --html=reports\EntryTC16Report.html testcases/test_EntryTC16.py
+# pytest -v --html=reports\EntryTC16Report.html testcases/test_EntryTC16.py
+# pytest -v --html=reports\EntryTC16Report.html testcases/test_EntryTC16.py --browser chrome   #if in html report if logs are not getting genrated then remove -s and try

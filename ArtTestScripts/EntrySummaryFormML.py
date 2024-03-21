@@ -27,7 +27,7 @@ import random
 # # Configure logger
 # logging.basicConfig(filename=log_file, level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
-logging.basicConfig(filename="Art_7501Log", level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logging.basicConfig(filename="Art_7501_MEntry", level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s', filemode='w')
 logging.info('------------------------------------------------------------New Log Started From Here-----------------------------------------------------------------------')
 serv_obj = Service("C:\Drivers\chromedriver-win64\chromedriver.exe")
 options = webdriver.ChromeOptions()

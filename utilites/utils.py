@@ -15,7 +15,7 @@ class utills():
         logger.setLevel(logLevel)
         # create console handler or file handler and set the log level
         log_file_path = os.path.join(log_folder, "ArtemusH.log")
-        fh= logging.FileHandler(log_file_path)
+        fh= logging.FileHandler(log_file_path, mode='w')
         # create formatter
         formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s', datefmt='%Y-%m-%d %H:%M:%S')
         # add formatter to console or file handler
@@ -57,7 +57,7 @@ class utills():
         sheet.cell(rownum, coloumnno).value = data
         workbook.save(file)
 
-    def random_invoceGenerator(size=8, chars=string.ascii_uppercase + string.digits):
+    def random_invoceGenerator(size=5, chars=string.ascii_uppercase + string.digits):
         return ''.join(random.choice(chars) for x in range(size))
 
     def random_BillGenerator(size=6, chars=string.ascii_uppercase + string.digits):

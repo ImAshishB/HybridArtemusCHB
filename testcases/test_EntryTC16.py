@@ -16,8 +16,8 @@ from base.base_driver import BaseDriver
 from utilites.utils import utills
 
 @pytest.mark.usefixtures("setup")
-class Test_EntrySummary15():
-    randomInvoice = "ABTstTC15_PGA2F_"+ utills.random_invoceGenerator() # random_invoceGenerator() came from utils
+class Test_EntrySummary16():
+    randomInvoice = "ABTstTC16_PGA3F_"+ utills.random_invoceGenerator() # random_invoceGenerator() came from utils
     randomBill = "M" + utills.random_BillGenerator()  # random_BillGenerator() came from utils
     file = "D:/Artmus Spec/Automation_Artemus/TestML.xlsx"
     log = utills.custom_logger()
@@ -32,10 +32,10 @@ class Test_EntrySummary15():
         self.pga = PGAFormPage(self.driver, self.mywait)
 
 
-    def test_TC15_2FPGA_Vessel_Container(self):
-        self.log.info("----------------Test Case test_TC15_2FPGA_Vessel_Container Starterd----------------")
+    def test_TC16_3FPGA_Vessel_Container(self):
+        self.log.info("----------------Test Case test_TC16_3FPGA_Vessel_Container Starterd----------------")
 
-        for r in range(17, 18):
+        for r in range(18, 19):
             self.selectIMPORTERData = utills.readData(self.file, 'TcHybridArtemusData', r, 140)
             self.addBillbutton = utills.readData(self.file, 'TcHybridArtemusData', r, 2)
             self.lineitmscount = utills.readData(self.file, 'TcHybridArtemusData', r, 3)
@@ -167,7 +167,7 @@ class Test_EntrySummary15():
             self.EP5desclaimerdata = utills.readData(self.file, "TcHybridArtemusData", r, 41)
 
             self.EP7descriptionData = utills.readData(self.file, "TcHybridArtemusData", r, 43)
-            self.EP7pgaLineValueData = utills.readData(self.file, "TcHybridArtemusData", r, 44)
+            self.EP7pgaLineValueData = utills.readData(self.file, "TcHybridArtemusData", r, 36)
 
             self.EP7individualQualifierdata = utills.readData(self.file, "TcHybridArtemusData", r, 45)
             self.EP7mailOrFaxdata = utills.readData(self.file, "TcHybridArtemusData", r, 46)
@@ -179,12 +179,63 @@ class Test_EntrySummary15():
             self.EP7declarationCertificationData = utills.readData(self.file, "TcHybridArtemusData", r, 51)
             self.EP7dateSignatureData = utills.readData(self.file, "TcHybridArtemusData", r, 52)
 
+            #PG01
+            self.FD1agencyProcessingCodeData = utills.readData(self.file, "TcHybridArtemusData", r, 54)
+            self.FD1pgaLineValueData = utills.readData(self.file, "TcHybridArtemusData", r, 36)
+            self.FD1descriptionData = utills.readData(self.file, "TcHybridArtemusData", r, 56)
+
+            #PG19
+            self.FD1EntityMFData = utills.readData(self.file, "TcHybridArtemusData", r, 58)
+            self.FD1EntityDEQData = utills.readData(self.file, "TcHybridArtemusData", r, 59)
+            self.FD1EntityFD1Data = utills.readData(self.file, "TcHybridArtemusData", r, 60)
+            self.FD1EntityDPData = utills.readData(self.file, "TcHybridArtemusData", r, 61)
+
+            # PG21
+            self.FD1individualQualifierData1 = utills.readData(self.file, "TcHybridArtemusData", r, 68)
+            self.FD1mailOrFaxData1 = utills.readData(self.file, "TcHybridArtemusData", r, 69)
+            self.FD1individualNameData1 = utills.readData(self.file, "TcHybridArtemusData", r, 70)
+            self.FD1telephoneNoData1 = utills.readData(self.file, "TcHybridArtemusData", r, 71)
+
+            # PG02
+            self.FD1itemTypeData = utills.readData(self.file, "TcHybridArtemusData", r, 73)
+            self.FD1productcodequalifierData = utills.readData(self.file, "TcHybridArtemusData", r, 74)
+            self.FD1productcodnumberData = utills.readData(self.file, "TcHybridArtemusData", r, 75)
+
+            # PG26
+            self.FD1packagingQualifierData = utills.readData(self.file, "TcHybridArtemusData", r, 77)
+            self.FD1unitOfMeasureData = utills.readData(self.file, "TcHybridArtemusData", r, 78)
+            self.FD1pg26qtyData = utills.readData(self.file, "TcHybridArtemusData", r, 14)
+
+            # PG4,5,6
+            self.FD1SpecialUseDesignationData1 = utills.readData(self.file, "TcHybridArtemusData", r, 81)
+            self.FD1sourceTypeCodeData1 = utills.readData(self.file, "TcHybridArtemusData", r, 82)
+            self.FD1countryCodeData1 = utills.readData(self.file, "TcHybridArtemusData", r, 83)
+
+            # PG10
+            self.FD1commodityCharDescripData = utills.readData(self.file, "TcHybridArtemusData", r, 85)
+
+            # PG23
+            self.FD1afrmativecodeData1 = utills.readData(self.file, "TcHybridArtemusData", r, 87)
+            self.FD1afrmativedescriptionData1 = utills.readData(self.file, "TcHybridArtemusData", r, 89)
+            self.FD1afrmativecodeData2 = utills.readData(self.file, "TcHybridArtemusData", r, 88)
+            self.FD1afrmativedescriptionData2 = utills.readData(self.file, "TcHybridArtemusData", r, 90)
+
+            # PG23
+            self.FD1inspLabTestData = utills.readData(self.file, "Sheet1", r, 92)
+            self.FD1schedTimeOfInspecData = utills.readData(self.file, "Sheet1", r, 93)
+            self.FD1scheduledDateOfInspectionData = utills.readData(self.file, "Sheet1", r, 94)
+            self.FD1inspectionorArrivallocationData = utills.readData(self.file, "Sheet1", r, 95)
+            self.FD1inspectionorArrivallocationCodeData = utills.readData(self.file, "Sheet1", r, 96)
+
+            # PG27
+            self.FD1containerNumberData = utills.readData(self.file, "TcHybridArtemusData", r, 121)
+
             # EP5
             self.pga.EP5()
             self.log.info("----PGA EP5 form opened----")
             self.pga.commercialDescription(self.EP7descriptionData)
             self.pga.desclaimer(self.EP5desclaimerdata)
-            # SavePGA
+            # SavePGA EP5
             self.pga.saveAndClosePGA()
             try:
                 alertDataIsValidMSG = self.driver.find_element(By.XPATH,
@@ -218,7 +269,7 @@ class Test_EntrySummary15():
             self.pga.declarationCertification(self.EP7declarationCertificationData)
             self.pga.dateSignature(self.EP7dateSignatureData)
 
-            #SavePGA
+            #SavePGA EP7
             self.pga.saveAndClosePGA()
             try:
                 alertDataIsValidMSG = self.driver.find_element(By.XPATH,"//div[normalize-space()='1. The Data is Valid...']")
@@ -231,6 +282,90 @@ class Test_EntrySummary15():
             self.pga.pgaFormClosedalert()
             self.esf.minimizeQtySection()
             self.log.info("----PGA EP7 form closed----")
+
+            # FD3
+            self.pga.FD3()
+            self.log.info("----PGA FD3 form opened----")
+            # PG01
+            self.pga.commercialDescription(self.FD1descriptionData)
+            self.pga.agencyProcessingCode(self.FD1agencyProcessingCodeData)
+            self.pga.pgaLineValue(self.FD1pgaLineValueData)
+
+            # PG19
+            self.pga.selectFD1()
+            self.pga.selectDP()
+            #Fill Data in PG19
+            self.pga.mf(self.FD1EntityMFData)
+            self.pga.deq(self.FD1EntityDEQData)
+            self.pga.fd1(self.FD1EntityFD1Data)
+            self.pga.dp(self.FD1EntityDPData)
+
+            # PG21
+            self.pga.individualQualifier(self.FD1individualQualifierData1)
+            self.pga.mailOrFax(self.FD1mailOrFaxData1)
+            self.pga.individualName(self.FD1individualNameData1)
+            self.pga.telephoneNo(self.FD1telephoneNoData1)
+
+            # PG02
+            self.pga.itemType(self.FD1itemTypeData)
+            self.pga.productcodequalifier(self.FD1productcodequalifierData)
+            self.pga.productcodenumber(self.FD1productcodnumberData)
+
+            # PG26
+            self.pga.packagingQualifier(self.FD1packagingQualifierData)
+            self.pga.unitOfMeasure(self.FD1unitOfMeasureData)
+            self.pga.pgaqtyTxt(self.FD1pg26qtyData)
+
+            # PG04,05,06
+            self.pga.specialUseDesignation1(self.FD1SpecialUseDesignationData1)
+            self.pga.sourceTypeCode1(self.FD1sourceTypeCodeData1)
+            self.pga.countryCode1(self.FD1countryCodeData1)
+
+            # PG10
+            self.pga.commodityCharacteristicDescription(self.FD1commodityCharDescripData)
+
+            # PG23
+            self.pga.click_AddNewInfo_Button()
+            self.pga.afrmativecode1(self.FD1afrmativecodeData1)
+            self.pga.afrmativecode1Description(self.FD1afrmativedescriptionData1)
+            self.pga.afrmativecode2(self.FD1afrmativecodeData2)
+            self.pga.afrmativecode2Description(self.FD1afrmativedescriptionData2)
+
+            # PG23
+            self.pga.openPG30Section()
+            self.pga.inspectionLabTestingStatus(self.FD1inspLabTestData)
+            self.pga.scheduledTimeOfInspection(self.FD1schedTimeOfInspecData)
+            self.pga.scheduledDateOfInspection(self.FD1scheduledDateOfInspectionData)
+            self.pga.inspectionorArrivallocation(self.FD1inspectionorArrivallocationData)
+            self.pga.inspectionorArrivallocationCode(self.FD1inspectionorArrivallocationCodeData)
+
+            #PG27
+            self.pga.containerNumber(self.FD1containerNumberData)
+
+            # SavePGA FD3
+            self.pga.saveAndClosePGA()
+            try:
+                alertDataIsValidMSG = self.driver.find_element(By.XPATH,
+                                                               "//div[normalize-space()='1. The Data is Valid...']")
+                if alertDataIsValidMSG:
+                    self.pga.alertDataIsValid()
+            except:
+                self.log.error("Error while saving PGA form")
+                pass
+            try:
+                someValidationsError = self.driver.find_element(By.TAG_NAME, "body").text
+                if 'The Manufacturer record should have an entity number' in someValidationsError:
+                    self.pga.alertSomeValidationIssue()
+                    time.sleep(1)
+                    print("PGA has some validations issues but still PGA form saved")
+            except Exception as e:
+                print("PGA has issues and PGA form saved")
+                print(e)
+            time.sleep(1)
+            self.pga.pgaFormClosedalert()
+            self.esf.minimizeQtySection()
+            self.log.info("----PGA FD3 form closed----")
+
 
             self.log.info("----Line Items Done----")
 
@@ -266,17 +401,17 @@ class Test_EntrySummary15():
                 else:
                     self.log.error("----The values are not calculated properly----")
             else:
-                # self.driver.save_screenshot(".\\screenshots\\" + "test_HTC15_scr.png")  # Screenshot
+                # self.driver.save_screenshot(".\\screenshots\\" + "test_HTC16_scr.png")  # Screenshot
                 self.esf.formSavedConfirmationMsg()
                 self.log.error("----Form Not Saved. Test Failed----")
 
-        self.log.info("----------------Test Case test_TC15_2FPGA_Vessel_Container End----------------")
+        self.log.info("----------------Test Case test_TC16_3FPGA_Vessel_Container End----------------")
 
 
 
-# pytest -v -s testcases/test_EntryTC15.py
-# pytest -v -s testcases/test_EntryTC15.py --browser chrome
-# pytest -v -s testcases/test_EntryTC15.py --browser firefox
-# pytest -v -s --html=reports\EntryTC15Report.html testcases/test_EntryTC15.py
-# pytest -v --html=reports\EntryTC15Report.html testcases/test_EntryTC15.py
-# pytest -v --html=reports\EntryTC15Report.html testcases/test_EntryTC15.py --browser chrome   #if in html report if logs are not getting genrated then remove -s and try
+# pytest -v -s testcases/test_EntryTC16.py
+# pytest -v -s testcases/test_EntryTC16.py --browser chrome
+# pytest -v -s testcases/test_EntryTC16.py --browser firefox
+# pytest -v -s --html=reports\EntryTC16Report.html testcases/test_EntryTC16.py
+# pytest -v --html=reports\EntryTC16Report.html testcases/test_EntryTC16.py
+# pytest -v --html=reports\EntryTC16Report.html testcases/test_EntryTC16.py --browser chrome   #if in html report if logs are not getting genrated then remove -s and try
