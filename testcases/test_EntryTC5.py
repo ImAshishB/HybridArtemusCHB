@@ -15,8 +15,8 @@ from base.base_driver import BaseDriver
 from utilites.utils import utills
 
 @pytest.mark.usefixtures("setup")
-class Test_EntrySummary1():
-    randomInvoice = "ABTstTC1_Vsl_"+ utills.random_invoceGenerator() # random_invoceGenerator() came from utils
+class Test_EntrySummary5():
+    randomInvoice = "ABTstTC5_Rail_"+ utills.random_invoceGenerator() # random_invoceGenerator() came from utils
     randomBill = "M" + utills.random_BillGenerator()  # random_BillGenerator() came from utils
     file = "D:/Artmus Spec/Automation_Artemus/TestML.xlsx"
     log = utills.custom_logger()
@@ -30,10 +30,10 @@ class Test_EntrySummary1():
         self.getvalues = getAtributesOfText(self.driver, self.mywait)
 
 
-    def test_TC1_SimpleEntry_Vessel_Container(self): # Country of origin india/No Duty HTS(NDC)
-        self.log.info("----------------Test Case test_TC1_SimpleEntry_Vessel_Container with Container Starterd----------------")
+    def test_TC5_SimpleEntry_Rail_Container(self): # Country of origin india/No Duty HTS(NDC)
+        self.log.info("----------------Test Case test_TC5_SimpleEntry_Rail_Container with Container Starterd----------------")
 
-        for r in range(3, 4):
+        for r in range(7, 8):
             self.selectIMPORTERData = utills.readData(self.file, 'TcHybridArtemusData', r, 140)
             self.addBillbutton = utills.readData(self.file, 'TcHybridArtemusData', r, 2)
             self.lineitmscount = utills.readData(self.file, 'TcHybridArtemusData', r, 3)
@@ -193,19 +193,17 @@ class Test_EntrySummary1():
                 else:
                     self.log.error("----The values are not calculated properly----")
             else:
-                # self.driver.save_screenshot(".\\screenshots\\" + "test_HTC1_scr.png")  # Screenshot
+                # self.driver.save_screenshot(".\\screenshots\\" + "test_HTC5_scr.png")  # Screenshot
                 self.esf.formSavedConfirmationMsg()
                 self.log.error("----Form Not Saved. Test Failed----")
 
-        self.log.info("----------------Test Case test_TC1_SimpleEntry_Vessel_Container with Container End----------------")
+        self.log.info("----------------Test Case test_TC5_SimpleEntry_Rail_Container with Container End----------------")
 
 
 
-# pytest -v -s testcases/test_EntryTC1.py
-# pytest -v -s testcases/test_EntryTC1.py --browser chrome
-# pytest -v -s testcases/test_EntryTC1.py --browser firefox
-# pytest -v -s --html=reports\EntryTC1Report.html testcases/test_EntryTC1.py
-# pytest -v --html=reports\EntryTC1Report.html testcases/test_EntryTC1.py
-# pytest -v --html=reports\EntryTC1Report.html testcases/test_EntryTC1.py --browser chrome   #if in html report if logs are not getting genrated then remove -s and try
-# pytest -v -s -n=1 --html=reports\report.html testcases/test_Login.py    n=1 means each test cases running 1 by 1
-# pytest -v -s -n=2 --html=reports\report.html testcases/test_Login.py    n=2 means 2 test cases running at a time in 2 browsers
+# pytest -v -s testcases/test_EntryTC5.py
+# pytest -v -s testcases/test_EntryTC5.py --browser chrome
+# pytest -v -s testcases/test_EntryTC5.py --browser firefox
+# pytest -v -s --html=reports\EntryTC5Report.html testcases/test_EntryTC5.py
+# pytest -v --html=reports\EntryTC5Report.html testcases/test_EntryTC5.py
+# pytest -v --html=reports\EntryTC5Report.html testcases/test_EntryTC5.py --browser chrome   #if in html report if logs are not getting genrated then remove -s and try
