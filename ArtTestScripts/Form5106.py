@@ -58,7 +58,7 @@ time.sleep(2)
 #     time.sleep(2)
 #     selectImporterTxt.send_keys(Keys.ENTER)
 
-for r in range(3, 8):
+for r in range(4, 8):
     # i = 0
     # i = i - 1
     # #Login

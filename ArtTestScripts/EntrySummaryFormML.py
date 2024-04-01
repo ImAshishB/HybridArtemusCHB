@@ -78,15 +78,17 @@ Shipment.click()
 time.sleep(2)
 
 # Select Importer
-for r in range(3, 4):
+for r in range(3,4):
     selectImporterData = utills.readData(file, "Sheet1", r, 140)
     selectImporterTxt = mywait.until(EC.element_to_be_clickable((By.XPATH, "//input[@id='typeahead-basic']")))
     selectImporterTxt.click()
     selectImporterTxt.send_keys(selectImporterData)
+    time.sleep(1)
+    selectImporterTxt.send_keys(Keys.BACKSPACE)
     time.sleep(2)
     selectImporterTxt.send_keys(Keys.ENTER)
 
-for r in range(9, 21):
+for r in range(4, 10):
     i = 0
     i = i - 1
     billCounts = utills.readData(file, "Sheet1", r, 2)

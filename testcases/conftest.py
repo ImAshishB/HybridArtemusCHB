@@ -310,7 +310,7 @@ def setup(request, browser):#browser #request
                                                                                  ElementNotInteractableException,
                                                                                  Exception])
 
-    # return driver
+    # return drivers
     # URL
     driver.get("http://52.54.244.138:8080/ArtemusChb/")
 
@@ -333,6 +333,24 @@ def browser(request):  # This will return the Browser value to setup method
 
 
 
+######### Pytest HTML Report #########
+
+# def pytest_configure(config):
+#     config._metadata['Project Name'] = 'Artemus CHB'
+#     config._metadata['Module Name'] = 'KuchBhi'
+#     config._metadata['Tester'] = 'Ashish'
+
+
+# def pytest_configure(config):
+#     config.option.html_metadata['Project Name'] = 'Artemus CHB'
+#     config.option.html_metadata['Module Name'] = 'KuchBhi'
+#     config.option.html_metadata['Tester'] = 'Ashish'
+#
+#
+# @pytest.mark.optionalhook
+# def pytest_metadata(metadata):
+#     metadata.pop("JAVA_HOME", None)
+#     metadata.pop("Plugins", None)
 
 
 
