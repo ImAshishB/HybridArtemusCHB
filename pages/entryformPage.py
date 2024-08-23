@@ -29,6 +29,7 @@ class EntryFormPage(BaseDriver):
 
     # Bill of lading locators
 
+    BillTypeDRP_XPATH = "(//select[@id='billTypeCode'])[1]"
     scaccodeTxt_XPATH = "//span[text()='SCAC:']//parent::div//following-sibling::div/input[@id='typeahead-basic']"
     billTxt_XPATH = "//input[@name='billOfLading']"
     outclick_XPATH = "//span[normalize-space()='Split Shipment:']"
@@ -41,6 +42,12 @@ class EntryFormPage(BaseDriver):
     # uomTxt_XPATH = "//div[@class='ng-untouched ng-pristine ng-invalid']//fieldset//input[@name='uom']"
     # quantityTxt_XPATH = "//div[@class='ng-untouched ng-pristine ng-invalid']//fieldset//input[@name='quantity']"
     # addBillButton_XPATH = "//button[normalize-space()='Add a Bill']"
+
+    # In Bound Information
+    itNumberTxt_XPATH = "//app-inbound-transportation//input[@id='itNumber']"
+    itDateTxt_XPATH = "//app-inbound-transportation//input[@name='docsReceivedDate']"
+    portOfUnLadingTxt_XPATH = "//app-inbound-transportation//input[@id='portofUnlading']"
+    itBOLDrp_XPATH = "//app-inbound-transportation//select[@id='itBol']"
 
     # Vessel Inforrmation locators
     vesselNameTxt_CSS = "input#vesselName"
@@ -136,6 +143,15 @@ class EntryFormPage(BaseDriver):
         time.sleep(2)
 
     # Bill of Lading
+
+
+    def BillTypeRegular(self):
+        BillTypeDRP = self.mywait.until(EC.element_to_be_clickable((By.XPATH, self.BillTypeDRP_XPATH)))
+        BillTypeDRP.click()
+        BillTypeDRP.send_keys("r")
+        time.sleep(1)
+        BillTypeDRP.send_keys(Keys.ENTER)
+
     def scaccode(self, scac):
         scaccodeTxt = self.mywait.until(EC.element_to_be_clickable((By.XPATH, self.scaccodeTxt_XPATH)))
         scaccodeTxt.click()
@@ -165,6 +181,27 @@ class EntryFormPage(BaseDriver):
     def addBill(self):
         addBillButton = self.driver.find_element(By.XPATH, self.addBillButton_XPATH)
         addBillButton.click()
+
+
+    # In Bound Information
+    def itNumber(self, itNumberData):
+        itNumberTxt = self.driver.find_element(By.XPATH, self.itNumberTxt_XPATH)
+        itNumberTxt.send_keys(itNumberData)
+    def itDate(self, itDateData):
+        itDateTxt = self.driver.find_element(By.XPATH, self.itDateTxt_XPATH)
+        itDateTxt.send_keys(itDateData)
+    def portOfUnLading(self, portOfUnLadingData):
+        portOfUnLadingTxt = self.driver.find_element(By.XPATH, self.portOfUnLadingTxt_XPATH)
+        portOfUnLadingTxt.click()
+        portOfUnLadingTxt.send_keys(portOfUnLadingData)
+        time.sleep(2)
+        portOfUnLadingTxt.send_keys(Keys.ENTER)
+    def itBOLindividualBill(self):
+        itBOLDrp = self.driver.find_element(By.XPATH, self.itBOLDrp_XPATH)
+        itBOLDrp.click()
+        itBOLDrp.send_keys("i")
+        time.sleep(1)
+        itBOLDrp.send_keys(Keys.ENTER)
 
     # Vessel Inforrmation
     def vesselName(self, vesselsname):
