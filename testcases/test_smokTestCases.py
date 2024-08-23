@@ -27,7 +27,7 @@ class TestSmokTC():
         self.lp = Loginpage(self.driver, self.mywait)
         self.esf = EntryFormPage(self.driver, self.mywait)
 
-
+    @pytest.mark.sanity
     def test_saveformwithinvoiceNumber(self):
         self.log.info("----------------Test Case test_saveformwithinvoiceNumber Starterd----------------")
 
@@ -74,6 +74,7 @@ class TestSmokTC():
                 assert False
         self.log.info("----------------Test Case test_saveformwithinvoiceNumber End----------------")
 
+    @pytest.mark.sanity
     def test_saveformwithoutinvoiceNumber(self):
         self.log.info("----------------Test Case test_saveformwithoutinvoiceNumber Starterd----------------")
 
@@ -118,6 +119,7 @@ class TestSmokTC():
                 assert False
         self.log.info("----------------Test Case test_saveformwithoutinvoiceNumber End----------------")
 
+    @pytest.mark.sanity
     def test_saveformwithExistinginvoiceNumber(self):
         self.log.info("----------------Test Case test_saveformwithExistinginvoiceNumber Starterd----------------")
 
@@ -150,6 +152,7 @@ class TestSmokTC():
             self.esf.close() # I have included close at conftest that's why I am commenting this line
             self.log.info("----------------Test Case test_saveformwithExistinginvoiceNumber End----------------")
 
+    @pytest.mark.sanity
     def test_saveAndSubmitFormwithInvoiceNumberOnly(self):
         self.log.info("----------------Test Case test_saveAndSubmitFormwithInvoiceNumberOnly Starterd----------------")
 
@@ -214,3 +217,9 @@ class TestSmokTC():
 # pytest -v --html=reports\smokTestReport.html testcases/test_smokTestCases.py
 # pytest -v --html=reports\smokTestReport.html testcases/test_smokTestCases.py --browser chrome   #if in html report if logs are not getting genrated then remove -s and try
 # pytest -v -s -n=3 --html=reports\smokTestReport.html testcases/test_smokTestCases.py --browser chrome
+
+# pytest -v -s -m "sanity"  --html=reports\report.html testcases/
+
+# @pytest.mark.sanity
+# @pytest.mark.regression
+# @pytest.mark.integration

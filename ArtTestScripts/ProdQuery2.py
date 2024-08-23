@@ -43,17 +43,17 @@ tariffquery.click()
 time.sleep(1)
 
 file="D:\Artmus Spec\Automation_Artemus\querylist.xlsx"
-rows=utills.getRowCount(file,"Sheet1")
+rows=utills.getRowCount(file,"Sheet4")
 
 #Add Date
 driver.find_element(By.XPATH, "//input[@name='fromDate']").clear()
-driver.find_element(By.XPATH, "//input[@name='fromDate']").send_keys("2024/07/15")
+driver.find_element(By.XPATH, "//input[@name='fromDate']").send_keys("2024/07/16")
 
-for r in range(1200,1300):
-    srNo = utills.readData(file, "Sheet1", r, 1)
-    htsno=utills.readData(file,"Sheet1",r,3)
+for r in range(3,12):
+    srNo = utills.readData(file, "Sheet4", r, 1)
+    htsno=utills.readData(file,"Sheet4",r,3)
     htsnoS = str(htsno)
-    # deisc=utills.writeData(file,"Sheet1",r,4, data="Done")
+    # deisc=utills.writeData(file,"Sheet4",r,4, data="Done")
     htsInput = WebDriverWait(driver, 10).until(EC.element_to_be_clickable((By.ID, "HTSUSNo")))
     htsInput.click()
 
@@ -100,12 +100,12 @@ for r in range(1200,1300):
     responseHTS = driver.find_element(By.TAG_NAME, "app-tarrif-query-response").text
 
     if htsnoS in responseHTS:
-        utills.writeData(file, "Sheet1", r, 4, "Response came")
+        utills.writeData(file, "Sheet4", r, 4, "Response came")
         if 'NOT ON FILE OR EXPIRED' in responseHTS:
             print("This HTS is not on file", htsno)
-            utills.writeData(file, "Sheet1", r, 5, "Not On File")
+            utills.writeData(file, "Sheet4", r, 5, "Not On File")
     else:
-        utills.writeData(file, "Sheet1", r, 4, "!! Response Not came !!")
+        utills.writeData(file, "Sheet4", r, 4, "!! Response Not came !!")
         print("!! Response Not came !! for HTS No. ",htsnoS)
 
 
@@ -115,13 +115,13 @@ for r in range(1200,1300):
     #     responseHTS = driver.find_element(By.TAG_NAME, "app-tarrif-query-response").text
     #
     #     if htsnoS in responseHTS:
-    #         utills.writeData(file, "Sheet1", r, 4, "Response came")
+    #         utills.writeData(file, "Sheet4", r, 4, "Response came")
     #     else:
-    #         utills.writeData(file, "Sheet1", r, 4, "!! Response Not came !!")
+    #         utills.writeData(file, "Sheet4", r, 4, "!! Response Not came !!")
     #
     #     if 'NOT ON FILE OR EXPIRED' in responseHTS:
     #         print("This HTS is not on file", htsno)
-    #         utills.writeData(file, "Sheet1", r, 5, "Not On File")
+    #         utills.writeData(file, "Sheet4", r, 5, "Not On File")
     # except:
     #     pass
 

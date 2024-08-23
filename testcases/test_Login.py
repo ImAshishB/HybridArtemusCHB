@@ -12,6 +12,8 @@ class TestLogin():
     @pytest.fixture(autouse=True)
     def class_setup(self):
         self.lp = Loginpage(self.driver, self.mywait)
+
+    @pytest.mark.sanity
     def test_loginBy1stOneCredentials(self):
         #lp = Loginpage(self.driver, self.mywait)
         self.lp.userName("tnash")
@@ -33,7 +35,7 @@ class TestLogin():
             self.log.error("Test Case failed")
             assert False
 
-
+    @pytest.mark.sanity
     def test_loginBy2ndOneCredentials(self):
         #lp = Loginpage(self.driver, self.mywait)
         self.lp.userName("artemus")

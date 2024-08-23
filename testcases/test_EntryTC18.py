@@ -15,8 +15,8 @@ from base.base_driver import BaseDriver
 from utilites.utils import utills
 
 @pytest.mark.usefixtures("setup")
-class Test_EntrySummary1():
-    randomInvoice = "ABTstTC1_Vsl_"+ utills.random_invoceGenerator() # random_invoceGenerator() came from utils
+class Test_EntrySummary18():
+    randomInvoice = "ABTstTC18_Inbond_"+ utills.random_invoceGenerator() # random_invoceGenerator() came from utils
     randomBill = "M" + utills.random_BillGenerator()  # random_BillGenerator() came from utils
     file = "D:/Artmus Spec/Automation_Artemus/TestML.xlsx"
     log = utills.custom_logger()
@@ -30,10 +30,10 @@ class Test_EntrySummary1():
         self.getvalues = getAtributesOfText(self.driver, self.mywait)
 
 
-    def test_TC1_SimpleEntry_Vessel_Container(self): # Country of origin india/No Duty HTS(NDC)
-        self.log.info("----------------Test Case test_TC1_SimpleEntry_Vessel_Container with Container Starterd----------------")
+    def test_TC18_SimpleEntry_Vessel_Container_Inbond(self): # Country of origin india/No Duty HTS(NDC)
+        self.log.info("----------------Test Case test_TC18_SimpleEntry_Vessel_Container_Inbond with Container Starterd----------------")
 
-        for r in range(3, 4):
+        for r in range(20, 21):
             self.selectIMPORTERData = utills.readData(self.file, 'TcHybridArtemusData', r, 140)
             self.addBillbutton = utills.readData(self.file, 'TcHybridArtemusData', r, 2)
             self.lineitmscount = utills.readData(self.file, 'TcHybridArtemusData', r, 3)
@@ -51,6 +51,11 @@ class Test_EntrySummary1():
             # billofladdingNo = utills.readData(file, "Sheet1", r, 12).split(",")
             self.uomData = utills.readData(self.file, 'TcHybridArtemusData', r, 13)#.split(",")
             self.qtyyData = utills.readData(self.file, 'TcHybridArtemusData', r, 14)#.split(",")
+
+            # Inbond Information
+            self.itNumberData = utills.readData(self.file, 'TcHybridArtemusData', r, 141)
+            self.itDateData = utills.readData(self.file, 'TcHybridArtemusData', r, 142)
+            self.portOfUnladingData = utills.readData(self.file, 'TcHybridArtemusData', r, 143)
 
             # Vessel Inforrmation
             self.vesselsnameData = utills.readData(self.file, "TcHybridArtemusData", r, 15)
@@ -112,12 +117,20 @@ class Test_EntrySummary1():
 
             # Bill of Lading
             self.log.info("----Bill Of Lading Started----")
+            self.esf.BillTypeRegular()
             self.esf.scaccode(self.scacData)
             self.esf.bill(self.randomBill)
             self.esf.uom(self.uomData)
             self.esf.quantity(self.qtyyData)
             self.log.info("----Bill Of Lading Done----")
 
+            # Inbond Information
+            self.log.info("----In-Bound Information Started----")
+            self.esf.itNumber(self.itNumberData)
+            self.esf.itDate(self.itDateData)
+            self.esf.portOfUnLading(self.portOfUnladingData)
+            self.esf.itBOLindividualBill()
+            self.log.info("----In-Bound Information Done----")
 
             # Vessel Inforrmation
             self.log.info("----Vessel Information Started----")
@@ -145,7 +158,6 @@ class Test_EntrySummary1():
             self.esf.ladingport(self.ladingportData)
             self.esf.weight(self.grossWeightData)
             self.esf.charges(self.chargedata)
-            self.esf.unladingport(self.unladingportData)
             self.esf.manifestDescription(self.manifestDescriptionData)
             self.esf.arrivaldate(self.arrivaldateData)
             self.esf.exportdate(self.exportdateData)
@@ -193,20 +205,20 @@ class Test_EntrySummary1():
                 else:
                     self.log.error("----The values are not calculated properly----")
             else:
-                # self.driver.save_screenshot(".\\screenshots\\" + "test_HTC1_scr.png")  # Screenshot
+                # self.driver.save_screenshot(".\\screenshots\\" + "test_HTC18_scr.png")  # Screenshot
                 self.esf.formSavedConfirmationMsg()
                 self.log.error("----Form Not Saved. Test Failed----")
 
-        self.log.info("----------------Test Case test_TC1_SimpleEntry_Vessel_Container with Container End----------------")
+        self.log.info("----------------Test Case test_TC18_SimpleEntry_Vessel_Container_Inbond with Container End----------------")
 
 
 
-# pytest -v -s testcases/test_EntryTC1.py
-# pytest -v -s testcases/test_EntryTC1.py --browser chrome
-# pytest -v -s testcases/test_EntryTC1.py --browser firefox
-# pytest -v -s --html=reports\EntryTC1Report.html testcases/test_EntryTC1.py
-# pytest -v --html=reports\EntryTC1Report.html testcases/test_EntryTC1.py
-# pytest -v --html=reports\EntryTC1Report.html testcases/test_EntryTC1.py --browser chrome   #if in html report if logs are not getting genrated then remove -s and try
+# pytest -v -s testcases/test_EntryTC18.py
+# pytest -v -s testcases/test_EntryTC18.py --browser chrome
+# pytest -v -s testcases/test_EntryTC18.py --browser firefox
+# pytest -v -s --html=reports\EntryTC18Report.html testcases/test_EntryTC18.py
+# pytest -v --html=reports\EntryTC18Report.html testcases/test_EntryTC18.py
+# pytest -v --html=reports\EntryTC18Report.html testcases/test_EntryTC18.py --browser chrome   #if in html report if logs are not getting genrated then remove -s and try
 # pytest -v -s -n=1 --html=reports\report.html testcases/test_Login.py    n=1 means each test cases running 1 by 1
 # pytest -v -s -n=2 --html=reports\report.html testcases/test_Login.py    n=2 means 2 test cases running at a time in 2 browsers
 
