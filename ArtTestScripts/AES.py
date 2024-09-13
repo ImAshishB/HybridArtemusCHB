@@ -286,7 +286,6 @@ for r in range(3, 4):
     except:
         pass
 
-
     # Party Page
     try:
         print("Party Section opened")

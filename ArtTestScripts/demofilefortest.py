@@ -1,11 +1,17 @@
+# In this Script, script will be record errors and will be continuing for next script.
+import logging
+import datetime
 from selenium import webdriver
 from selenium.common import NoSuchElementException, ElementNotVisibleException, ElementNotSelectableException, \
-    ElementClickInterceptedException, ElementNotInteractableException, NoAlertPresentException
+    ElementClickInterceptedException, ElementNotInteractableException, NoAlertPresentException, TimeoutException
+from selenium.webdriver import ActionChains, Keys
 from selenium.webdriver.chrome.service import Service
 from selenium.webdriver.common.by import By
+from selenium.webdriver.support.wait import WebDriverWait
 from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from utilites.utils import utills
 import time
-
 serv_obj = Service("C:\Drivers\chromedriver-win64\chromedriver.exe")
 options = webdriver.ChromeOptions()
 options.add_experimental_option("detach", True)
@@ -15,109 +21,50 @@ mywait = WebDriverWait(driver, 10, poll_frequency=2, ignored_exceptions= [NoSuch
                                                                          ElementNotSelectableException,
                                                                          ElementClickInterceptedException,
                                                                          ElementNotInteractableException,
+                                                                          TimeoutException,
+
                                                                          Exception])
 
 # URL
-driver.get("https://www.calculator.net/")
-input1Data=2
-input2Data=3
+driver.get("http://52.54.244.138:8080/ArtemusChb/")
 
+# Maximize page
+driver.maximize_window()
+
+# Login
+login_username = mywait.until(EC.element_to_be_clickable((By.ID, "username")))
+login_username.click()
+login_username.send_keys("tnash")
+login_password = mywait.until(EC.element_to_be_clickable((By.ID, "password")))
+login_password.click()
+login_password.send_keys("tnash1")
+driver.find_element(By.XPATH, '//*[@id="background"]/div/div/div/div/div/form/button').click()
+print("Login Done")
+SHORT_TIMEOUT = 1  # give time for the loading element to appear
+LONG_TIMEOUT = 30  # give time for loading to finish
+LOADING_ELEMENT_XPATH = "//body//app-root//app-loader//h3[@class='loadingScreen__text']"
 try:
-    # value of A
-    input1=driver.find_element(By.XPATH, "//span[normalize-space()='"+str(input1Data)+"']")
-    input1.click()
-    # multiply
-    driver.find_element(By.XPATH, "//span[normalize-space()='×']").click()
-    # value of B
-    input2 = driver.find_element(By.XPATH, "//span[normalize-space()='" + str(input2Data) + "']")
-    input2.click()
-    # equal to C
-    driver.find_element(By.XPATH, "//span[normalize-space()='=']").click()
-    time.sleep(1)
-    # calculation
-    calculation_element = driver.find_element(By.XPATH, "//div[@id='sciOutPut']")
+    WebDriverWait(driver, LONG_TIMEOUT).until(EC.invisibility_of_element_located((By.XPATH, LOADING_ELEMENT_XPATH)))
+except TimeoutException:
+    pass
+Shipment = mywait.until(EC.element_to_be_clickable((By.LINK_TEXT, "Shipments")))
+Shipment.click()
+time.sleep(2)
 
-    input1Text = input1.text
-    Intinput1Text = int(input1Text)
+# Select Importer
+selectImporterTxt = mywait.until(EC.element_to_be_clickable((By.XPATH, "//input[@id='typeahead-basic']")))
+selectImporterTxt.click()
+selectImporterTxt.send_keys("arttest")
+time.sleep(1)
+selectImporterTxt.send_keys(Keys.BACKSPACE)
+time.sleep(2)
+selectImporterTxt.send_keys(Keys.ENTER)
+time.sleep(1)
 
-    input2Text = input2.text
-    Intinput2BText = int(input2Text)
+# Open the saved form
+driver.find_element(By.XPATH, "(//i[@aria-hidden='true'])[1]").click()
+time.sleep(2)
 
-    calculation_text = calculation_element.text
-    Intcalculation_text = int(calculation_text)
-
-
-    expected_result = Intinput1Text* Intinput2BText
-    print("Expected result:", expected_result)
-    print("Actual result:", Intcalculation_text)
-    if expected_result == Intcalculation_text:
-        print("Calculation is correct!")
-    else:
-        print("Calculation is not correct!")
-
-except Exception as e:
-    print("Error:", e)
-
-
-
-
-
-# from selenium import webdriver
-# from selenium.common import NoSuchElementException, ElementNotVisibleException, ElementNotSelectableException, \
-#     ElementClickInterceptedException, ElementNotInteractableException, NoAlertPresentException
-# from selenium.webdriver.chrome.service import Service
-# from selenium.webdriver.common.by import By
-# from selenium.webdriver.support.ui import WebDriverWait
-# import time
-#
-# serv_obj = Service("C:\Drivers\chromedriver-win64\chromedriver.exe")
-# options = webdriver.ChromeOptions()
-# options.add_experimental_option("detach", True)
-# driver = webdriver.Chrome(options=options, service=serv_obj)
-# mywait = WebDriverWait(driver, 10, poll_frequency=2, ignored_exceptions= [NoSuchElementException,
-#                                                                          ElementNotVisibleException,
-#                                                                          ElementNotSelectableException,
-#                                                                          ElementClickInterceptedException,
-#                                                                          ElementNotInteractableException,
-#                                                                          Exception])
-#
-# # URL
-# driver.get("https://www.calculator.net/")
-# input1Data=[1,2,3,4,5,6,7,8,9,10]
-# input2Data=[2,3,4,5,6,7,8,9,10,11]
-#
-# try:
-#     for input1Value, input2Value in zip(input1Data, input2Data):
-#         # value of A
-#         input1 = driver.find_element(By.XPATH, "//span[normalize-space()='" + str(input1Value) + "']")
-#         input1.click()
-#         # multiply
-#         driver.find_element(By.XPATH, "//span[normalize-space()='×']").click()
-#         # value of B
-#         input2 = driver.find_element(By.XPATH, "//span[normalize-space()='" + str(input2Value) + "']")
-#         input2.click()
-#         # equal to C
-#         driver.find_element(By.XPATH, "//span[normalize-space()='=']").click()
-#         time.sleep(1)
-#         # calculation
-#         calculation_element = driver.find_element(By.XPATH, "//div[@id='sciOutPut']")
-#
-#         input1Text = input1.text
-#         Intinput1Text = int(input1Text)
-#
-#         input2Text = input2.text
-#         Intinput2BText = int(input2Text)
-#
-#         calculation_text = calculation_element.text
-#         Intcalculation_text = int(calculation_text)
-#
-#         expected_result = Intinput1Text * Intinput2BText
-#         print("Expected result:", expected_result)
-#         print("Actual result:", Intcalculation_text)
-#         if expected_result == Intcalculation_text:
-#             print("Calculation is correct!")
-#         else:
-#             print("Calculation is not correct!")
-#
-# except Exception as e:
-#     print("Error:", e)
+# Copy the saved form
+driver.find_element(By.XPATH, "//i[@class='fa fa-copy 2px']").click()
+time.sleep(2)
