@@ -55,7 +55,7 @@ def random_invoceGenerator(size=5, chars=string.ascii_uppercase + string.digits)
 def random_BillGenerator(size=6, chars=string.ascii_uppercase + string.digits):
     return ''.join(random.choice(chars) for x in range(size))
 #Read data from excel
-for r in range(3, 4):
+for r in range(33, 34):
     i = 0
     i = i - 1
     selectImporterData = utills.readData(file, "Sheet1", r, 140)
@@ -477,11 +477,13 @@ for r in range(3, 4):
         time.sleep(2)
         countryOfExportText1.send_keys(Keys.ENTER)
 
-        ladingportText = driver.find_element(By.XPATH,"//div[@class='formBorderBill']//div[@class='row new-form-row'][4]//div[@class='col-md-3 form-lable'][1]//input[@id='typeahead-basic']")
-        ladingportText.click()
-        ladingportText.send_keys(ladingportdata)
-        time.sleep(2)
-        ladingportText.send_keys(Keys.ENTER)
+        if trnpmode != 40 or trnpmode != 41:
+            ladingportText = driver.find_element(By.XPATH,
+                                                 "//div[@class='formBorderBill']//div[@class='row new-form-row'][4]//div[@class='col-md-3 form-lable'][1]//input[@id='typeahead-basic']")
+            ladingportText.click()
+            ladingportText.send_keys(ladingportdata)
+            time.sleep(2)
+            ladingportText.send_keys(Keys.ENTER)
 
         weight = driver.find_element(By.ID, "grossWeight")
         weight.clear()
@@ -558,6 +560,8 @@ for r in range(3, 4):
             tariffnotxt.send_keys(Keys.ENTER)
             time.sleep(1)
 
+
+
             # partTxt.click()
             # partTxt.send_keys(partsData)
             # time.sleep(2)
@@ -571,6 +575,9 @@ for r in range(3, 4):
                 time.sleep(1)
                 print("It is Cotton HTS")
                 logging.info("It is Cotton HTS")
+                cottonAlert = driver.switch_to.alert
+                cottonAlert.send_keys(htsqty1)
+                cottonAlert.accept()
 
             #chinaHTS=driver.find_elements(By.XPATH, "//button[normalize-space()='Yes']")
             chinaHTS = driver.find_element(By.TAG_NAME, "body").text
@@ -579,6 +586,14 @@ for r in range(3, 4):
                 time.sleep(1)
                 print("It is China HTS")
                 logging.info("It is China HTS")
+
+            if entfilltype == "23":
+                tariffnotxt.click()
+                tariffnotxt.clear()
+                tariffnotxt.send_keys("98130020")
+                time.sleep(2)
+                tariffnotxt.send_keys(Keys.ENTER)
+                time.sleep(1)
 
 
 
@@ -2154,18 +2169,18 @@ for r in range(3, 4):
                     maximizeQtySection.click()
 
                 # Add Cotton Quantity
-                if invoicenoEx=="AB_1LCtnTC5_" or invoicenoEx=="AB_1LCNCtnTC11_":
-                    maximizeQtySection = mywait.until(EC.element_to_be_clickable((By.XPATH, "//button//span[normalize-space()=" + valhts + "]")))
-                    maximizeQtySection.click()
-                    CottonQty1=driver.find_element(By.XPATH, "(//input[@name='linevalue'])[2]")
-                    CottonQty1.send_keys(htsqty1)
-                    CottonQty2=driver.find_element(By.XPATH, "(//input[@name='linevalue'])[3]")
-                    CottonQty2.send_keys(htsqty2)
-
-                    DataFilledInCottonQuantity1 = CottonQty1.get_attribute("value")
-                    DataFilledInCottonQuantity2 = CottonQty2.get_attribute("value")
-                    if DataFilledInCottonQuantity1 and DataFilledInCottonQuantity2:
-                        print("This is cotton HTS, Added Quantity: ",DataFilledInCottonQuantity1," and ",DataFilledInCottonQuantity2)
+                # if invoicenoEx=="AB_1LCtnTC5_" or invoicenoEx=="AB_1LCNCtnTC11_":
+                #     maximizeQtySection = mywait.until(EC.element_to_be_clickable((By.XPATH, "//button//span[normalize-space()=" + valhts + "]")))
+                #     maximizeQtySection.click()
+                #     CottonQty1=driver.find_element(By.XPATH, "(//input[@name='linevalue'])[2]")
+                #     CottonQty1.send_keys(htsqty1)
+                #     CottonQty2=driver.find_element(By.XPATH, "(//input[@name='linevalue'])[3]")
+                #     CottonQty2.send_keys(htsqty2)
+                #
+                #     DataFilledInCottonQuantity1 = CottonQty1.get_attribute("value")
+                #     DataFilledInCottonQuantity2 = CottonQty2.get_attribute("value")
+                #     if DataFilledInCottonQuantity1 and DataFilledInCottonQuantity2:
+                #         print("This is cotton HTS, Added Quantity: ",DataFilledInCottonQuantity1," and ",DataFilledInCottonQuantity2)
 
             except Exception as e:
                 print(e)
