@@ -1,0 +1,870 @@
+1699984880117	geckodriver	INFO	Listening on 127.0.0.1:62377
+1699984883225	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "62378" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Admin\\AppData\\Local\\Temp\\rust_mozprofileljLNzV"
+1699984883232	geckodriver::marionette	DEBUG	Waiting 60s to connect to browser on 127.0.0.1
+1699984883232	geckodriver::browser	TRACE	Failed to open C:\Users\Admin\AppData\Local\Temp\rust_mozprofileljLNzV\MarionetteActivePort
+1699984883232	geckodriver::marionette	TRACE	Retrying in 100ms
+1699984883347	geckodriver::browser	TRACE	Failed to open C:\Users\Admin\AppData\Local\Temp\rust_mozprofileljLNzV\MarionetteActivePort
+1699984883348	geckodriver::marionette	TRACE	Retrying in 100ms
+1699984883459	geckodriver::browser	TRACE	Failed to open C:\Users\Admin\AppData\Local\Temp\rust_mozprofileljLNzV\MarionetteActivePort
+1699984883459	geckodriver::marionette	TRACE	Retrying in 100ms
+1699984883569	geckodriver::browser	TRACE	Failed to open C:\Users\Admin\AppData\Local\Temp\rust_mozprofileljLNzV\MarionetteActivePort
+1699984883569	geckodriver::marionette	TRACE	Retrying in 100ms
+1699984883679	geckodriver::browser	TRACE	Failed to open C:\Users\Admin\AppData\Local\Temp\rust_mozprofileljLNzV\MarionetteActivePort
+1699984883679	geckodriver::marionette	TRACE	Retrying in 100ms
+1699984883787	geckodriver::browser	TRACE	Failed to open C:\Users\Admin\AppData\Local\Temp\rust_mozprofileljLNzV\MarionetteActivePort
+1699984883787	geckodriver::marionette	TRACE	Retrying in 100ms
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1699984883895	geckodriver::browser	TRACE	Failed to open C:\Users\Admin\AppData\Local\Temp\rust_mozprofileljLNzV\MarionetteActivePort
+1699984883895	geckodriver::marionette	TRACE	Retrying in 100ms
+1699984884005	geckodriver::browser	TRACE	Failed to open C:\Users\Admin\AppData\Local\Temp\rust_mozprofileljLNzV\MarionetteActivePort
+1699984884005	geckodriver::marionette	TRACE	Retrying in 100ms
+1699984884115	geckodriver::browser	TRACE	Failed to open C:\Users\Admin\AppData\Local\Temp\rust_mozprofileljLNzV\MarionetteActivePort
+1699984884115	geckodriver::marionette	TRACE	Retrying in 100ms
+1699984884134	RemoteAgent	DEBUG	WebDriver BiDi enabled
+1699984884135	RemoteAgent	DEBUG	CDP enabled
+1699984884135	Marionette	INFO	Marionette enabled
+1699984884137	RemoteAgent	DEBUG	Setting recommended pref apz.content_response_timeout to 60000
+1699984884137	RemoteAgent	DEBUG	Setting recommended pref browser.contentblocking.introCount to 99
+1699984884137	RemoteAgent	DEBUG	Setting recommended pref browser.download.panel.shown to true
+1699984884137	RemoteAgent	DEBUG	Setting recommended pref browser.newtabpage.activity-stream.showSponsoredTopSites to false
+1699984884137	RemoteAgent	DEBUG	Setting recommended pref browser.newtabpage.enabled to false
+1699984884138	RemoteAgent	DEBUG	Setting recommended pref browser.pagethumbnails.capturing_disabled to true
+1699984884138	RemoteAgent	DEBUG	Setting recommended pref browser.region.network.url to 
+1699984884138	RemoteAgent	DEBUG	Setting recommended pref browser.search.update to false
+1699984884138	RemoteAgent	DEBUG	Setting recommended pref browser.startup.couldRestoreSession.count to -1
+1699984884138	RemoteAgent	DEBUG	Setting recommended pref browser.tabs.closeWindowWithLastTab to false
+1699984884138	RemoteAgent	DEBUG	Setting recommended pref browser.tabs.unloadOnLowMemory to false
+1699984884138	RemoteAgent	DEBUG	Setting recommended pref browser.tabs.warnOnClose to false
+1699984884138	RemoteAgent	DEBUG	Setting recommended pref browser.tabs.warnOnCloseOtherTabs to false
+1699984884138	RemoteAgent	DEBUG	Setting recommended pref browser.tabs.warnOnOpen to false
+1699984884138	RemoteAgent	DEBUG	Setting recommended pref browser.toolbars.bookmarks.visibility to never
+1699984884138	RemoteAgent	DEBUG	Setting recommended pref browser.topsites.contile.enabled to false
+1699984884138	RemoteAgent	DEBUG	Setting recommended pref browser.usedOnWindows10.introURL to 
+1699984884138	RemoteAgent	DEBUG	Setting recommended pref browser.urlbar.merino.endpointURL to 
+1699984884138	RemoteAgent	DEBUG	Setting recommended pref browser.urlbar.suggest.searches to false
+1699984884138	RemoteAgent	DEBUG	Setting recommended pref datareporting.policy.dataSubmissionPolicyAccepted to false
+1699984884139	RemoteAgent	DEBUG	Setting recommended pref dom.disable_open_during_load to false
+1699984884139	RemoteAgent	DEBUG	Setting recommended pref dom.file.createInChild to true
+1699984884139	RemoteAgent	DEBUG	Setting recommended pref dom.input_events.security.minNumTicks to 0
+1699984884139	RemoteAgent	DEBUG	Setting recommended pref dom.input_events.security.minTimeElapsedInMS to 0
+1699984884139	RemoteAgent	DEBUG	Setting recommended pref dom.max_chrome_script_run_time to 0
+1699984884139	RemoteAgent	DEBUG	Setting recommended pref dom.max_script_run_time to 0
+1699984884139	RemoteAgent	DEBUG	Setting recommended pref dom.navigation.locationChangeRateLimit.count to 0
+1699984884139	RemoteAgent	DEBUG	Setting recommended pref dom.push.connection.enabled to false
+1699984884139	RemoteAgent	DEBUG	Setting recommended pref dom.screenorientation.allow-lock to true
+1699984884139	RemoteAgent	DEBUG	Setting recommended pref dom.successive_dialog_time_limit to 0
+1699984884139	RemoteAgent	DEBUG	Setting recommended pref extensions.getAddons.cache.enabled to false
+1699984884139	RemoteAgent	DEBUG	Setting recommended pref extensions.getAddons.discovery.api_url to data:, 
+1699984884139	RemoteAgent	DEBUG	Setting recommended pref extensions.blocklist.detailsURL to http://%(server)s/extensions-dummy/blocklistDetailsURL
+1699984884139	RemoteAgent	DEBUG	Setting recommended pref extensions.blocklist.itemURL to http://%(server)s/extensions-dummy/blocklistItemURL
+1699984884139	RemoteAgent	DEBUG	Setting recommended pref extensions.hotfix.url to http://%(server)s/extensions-dummy/hotfixURL
+1699984884139	RemoteAgent	DEBUG	Setting recommended pref extensions.systemAddon.update.url to http://%(server)s/dummy-system-addons.xml
+1699984884139	RemoteAgent	DEBUG	Setting recommended pref extensions.update.background.url to http://%(server)s/extensions-dummy/updateBackgroundURL
+1699984884139	RemoteAgent	DEBUG	Setting recommended pref extensions.update.url to http://%(server)s/extensions-dummy/updateURL
+1699984884139	RemoteAgent	DEBUG	Setting recommended pref extensions.getAddons.get.url to http://%(server)s/extensions-dummy/repositoryGetURL
+1699984884139	RemoteAgent	DEBUG	Setting recommended pref extensions.getAddons.search.browseURL to http://%(server)s/extensions-dummy/repositoryBrowseURL
+1699984884139	RemoteAgent	DEBUG	Setting recommended pref geo.provider.network.url to 
+1699984884139	RemoteAgent	DEBUG	Setting recommended pref identity.fxaccounts.auth.uri to https://{server}/dummy/fxa
+1699984884139	RemoteAgent	DEBUG	Setting recommended pref network.connectivity-service.enabled to false
+1699984884139	RemoteAgent	DEBUG	Setting recommended pref network.http.phishy-userpass-length to 255
+1699984884139	RemoteAgent	DEBUG	Setting recommended pref network.http.prompt-temp-redirect to false
+1699984884139	RemoteAgent	DEBUG	Setting recommended pref privacy.trackingprotection.enabled to false
+1699984884139	RemoteAgent	DEBUG	Setting recommended pref security.fileuri.strict_origin_policy to false
+1699984884140	RemoteAgent	DEBUG	Setting recommended pref security.notification_enable_delay to 0
+1699984884140	RemoteAgent	DEBUG	Setting recommended pref security.remote_settings.intermediates.enabled to false
+1699984884140	RemoteAgent	DEBUG	Setting recommended pref signon.autofillForms to false
+1699984884140	RemoteAgent	DEBUG	Setting recommended pref signon.rememberSignons to false
+1699984884140	RemoteAgent	DEBUG	Setting recommended pref toolkit.telemetry.server to https://%(server)s/telemetry-dummy/
+1699984884140	RemoteAgent	DEBUG	Setting recommended pref widget.windows.window_occlusion_tracking.enabled to false
+Dynamically enable window occlusion 0
+1699984884140	RemoteAgent	DEBUG	Setting recommended pref dom.disable_beforeunload to true
+1699984884142	Marionette	TRACE	Received observer notification final-ui-startup
+1699984884144	RemoteAgent	TRACE	Received observer notification final-ui-startup
+1699984884223	geckodriver::browser	TRACE	Failed to open C:\Users\Admin\AppData\Local\Temp\rust_mozprofileljLNzV\MarionetteActivePort
+1699984884223	geckodriver::marionette	TRACE	Retrying in 100ms
+1699984884326	Marionette	INFO	Listening on port 62388
+1699984884331	geckodriver::browser	TRACE	Failed to open C:\Users\Admin\AppData\Local\Temp\rust_mozprofileljLNzV\MarionetteActivePort
+1699984884331	geckodriver::marionette	TRACE	Retrying in 100ms
+1699984884338	Marionette	DEBUG	Marionette is listening
+1699984884343	RemoteAgent	TRACE	Available local IP addresses: 127.0.0.1, [::1]
+Read port: 62388
+WebDriver BiDi listening on ws://127.0.0.1:62378
+1699984884486	RemoteAgent	DEBUG	Setting recommended pref browser.contentblocking.features.standard to -tp,tpPrivate,cookieBehavior0,-cm,-fp
+1699984884486	RemoteAgent	DEBUG	Setting recommended pref network.cookie.cookieBehavior to 0
+1699984884487	CDP	DEBUG	Waiting for initial application window
+1699984884591	Marionette	DEBUG	Accepted connection 0 from 127.0.0.1:62389
+1699984884643	geckodriver::marionette	DEBUG	Connection to Marionette established on 127.0.0.1:62388.
+1699984885333	Marionette	DEBUG	0 -> [0,1,"WebDriver:NewSession",{"acceptInsecureCerts":true,"browserName":"firefox","pageLoadStrategy":"normal"}]
+1699984885353	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1699984885804	Marionette	DEBUG	Waiting for initial application window
+1699984888007	Marionette	TRACE	Received observer notification browser-idle-startup-tasks-finished
+1699984888007	RemoteAgent	TRACE	Received observer notification browser-idle-startup-tasks-finished
+1699984888015	RemoteAgent	TRACE	[8] ProgressListener Start: expectNavigation=false resolveWhenStarted=false unloadTimeout=5000 waitForExplicitStart=false
+1699984888015	RemoteAgent	TRACE	[8] ProgressListener Setting unload timer (5000ms)
+1699984888016	RemoteAgent	TRACE	[8] Document already finished loading: about:blank
+1699984888016	RemoteAgent	TRACE	[8] ProgressListener Stop: has error=false
+DevTools listening on ws://127.0.0.1:62378/devtools/browser/bd4087d7-e778-4842-810b-8b7e6831e56b
+1699984888029	Marionette	DEBUG	0 <- [1,1,null,{"sessionId":"905de944-682e-467b-8cff-5c9191996688","capabilities":{"browserName":"firefox","browserVersion":"119.0.1","platformName":"windows","acceptInsecureCerts":true,"pageLoadStrategy":"normal","setWindowRect":true,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"strictFileInteractability":false,"unhandledPromptBehavior":"dismiss and notify","moz:accessibilityChecks":false,"moz:buildID":"20231106151204","moz:debuggerAddress":"127.0.0.1:62378","moz:headless":false,"moz:platformVersion":"10.0","moz:processID":8492,"moz:profile":"C:\\Users\\Admin\\AppData\\Local\\Temp\\rust_mozprofileljLNzV","moz:shutdownTimeout":60000,"moz:webdriverClick":true,"moz:windowless":false,"proxy":{}}}]
+1699984888035	webdriver::server	DEBUG	<- 200 OK {"value":{"sessionId":"905de944-682e-467b-8cff-5c9191996688","capabilities":{"acceptInsecureCerts":true,"browserNam ... ctability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify"}}}
+1699984888042	webdriver::server	DEBUG	-> POST /session/905de944-682e-467b-8cff-5c9191996688/url {"url": "http://52.54.244.138:8080/ArtemusChb/"}
+1699984888045	Marionette	DEBUG	0 -> [0,2,"WebDriver:Navigate",{"url":"http://52.54.244.138:8080/ArtemusChb/"}]
+1699984888049	Marionette	TRACE	[8] Received event beforeunload for about:blank
+1699984889426	Marionette	TRACE	Remoteness change detected. Set new top-level browsing context to 11
+1699984889435	Marionette	TRACE	[11] Received event beforeunload for about:blank
+1699984889436	Marionette	TRACE	[11] Received event pagehide for about:blank
+1699984892897	Marionette	TRACE	[11] Received event DOMContentLoaded for http://52.54.244.138:8080/ArtemusChb/
+1699984892897	Marionette	TRACE	[11] Received event pageshow for http://52.54.244.138:8080/ArtemusChb/
+1699984892898	Marionette	DEBUG	0 <- [1,2,null,{"value":null}]
+1699984892902	webdriver::server	DEBUG	<- 200 OK {"value":null}
+1699984912904	webdriver::server	DEBUG	-> GET /session/905de944-682e-467b-8cff-5c9191996688/title 
+1699984912905	Marionette	DEBUG	0 -> [0,3,"WebDriver:GetTitle",{}]
+1699984912906	Marionette	DEBUG	0 <- [1,3,null,{"value":"ArtemusCHBUI"}]
+1699984912906	webdriver::server	DEBUG	<- 200 OK {"value":"ArtemusCHBUI"}
+1699984912909	webdriver::server	DEBUG	-> POST /session/905de944-682e-467b-8cff-5c9191996688/refresh {}
+1699984912910	Marionette	DEBUG	0 -> [0,4,"WebDriver:Refresh",{}]
+1699984912912	Marionette	TRACE	[11] Received event beforeunload for http://52.54.244.138:8080/ArtemusChb/
+1699984913502	Marionette	TRACE	[11] Received event pagehide for http://52.54.244.138:8080/ArtemusChb/
+1699984914193	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1699984922311	Marionette	TRACE	[11] Received event DOMContentLoaded for http://52.54.244.138:8080/ArtemusChb/
+1699984922312	Marionette	TRACE	[11] Received event pageshow for http://52.54.244.138:8080/ArtemusChb/
+1699984922312	Marionette	DEBUG	0 <- [1,4,null,{"value":null}]
+1699984922313	webdriver::server	DEBUG	<- 200 OK {"value":null}
+1699984942315	webdriver::server	DEBUG	-> GET /session/905de944-682e-467b-8cff-5c9191996688/title 
+1699984942316	Marionette	DEBUG	0 -> [0,5,"WebDriver:GetTitle",{}]
+1699984942317	Marionette	DEBUG	0 <- [1,5,null,{"value":"ArtemusCHBUI"}]
+1699984942317	webdriver::server	DEBUG	<- 200 OK {"value":"ArtemusCHBUI"}
+1699984942320	webdriver::server	DEBUG	-> POST /session/905de944-682e-467b-8cff-5c9191996688/refresh {}
+1699984942322	Marionette	DEBUG	0 -> [0,6,"WebDriver:Refresh",{}]
+1699984942324	Marionette	TRACE	[11] Received event beforeunload for http://52.54.244.138:8080/ArtemusChb/
+1699984942947	Marionette	TRACE	[11] Received event pagehide for http://52.54.244.138:8080/ArtemusChb/
+1699984951080	Marionette	TRACE	[11] Received event DOMContentLoaded for http://52.54.244.138:8080/ArtemusChb/
+1699984951081	Marionette	TRACE	[11] Received event pageshow for http://52.54.244.138:8080/ArtemusChb/
+1699984951081	Marionette	DEBUG	0 <- [1,6,null,{"value":null}]
+1699984951084	webdriver::server	DEBUG	<- 200 OK {"value":null}
+1699984971086	webdriver::server	DEBUG	-> GET /session/905de944-682e-467b-8cff-5c9191996688/title 
+1699984971088	Marionette	DEBUG	0 -> [0,7,"WebDriver:GetTitle",{}]
+1699984971088	Marionette	DEBUG	0 <- [1,7,null,{"value":"ArtemusCHBUI"}]
+1699984971089	webdriver::server	DEBUG	<- 200 OK {"value":"ArtemusCHBUI"}
+1699984971090	webdriver::server	DEBUG	-> POST /session/905de944-682e-467b-8cff-5c9191996688/refresh {}
+1699984971091	Marionette	DEBUG	0 -> [0,8,"WebDriver:Refresh",{}]
+1699984971093	Marionette	TRACE	[11] Received event beforeunload for http://52.54.244.138:8080/ArtemusChb/
+1699984972497	Marionette	TRACE	[11] Received event pagehide for http://52.54.244.138:8080/ArtemusChb/
+1699984982377	Marionette	TRACE	[11] Received event DOMContentLoaded for http://52.54.244.138:8080/ArtemusChb/
+1699984982379	Marionette	TRACE	[11] Received event pageshow for http://52.54.244.138:8080/ArtemusChb/
+1699984982380	Marionette	DEBUG	0 <- [1,8,null,{"value":null}]
+1699984982383	webdriver::server	DEBUG	<- 200 OK {"value":null}
+1699985002385	webdriver::server	DEBUG	-> GET /session/905de944-682e-467b-8cff-5c9191996688/title 
+1699985002387	Marionette	DEBUG	0 -> [0,9,"WebDriver:GetTitle",{}]
+1699985002387	Marionette	DEBUG	0 <- [1,9,null,{"value":"ArtemusCHBUI"}]
+1699985002388	webdriver::server	DEBUG	<- 200 OK {"value":"ArtemusCHBUI"}
+1699985002389	webdriver::server	DEBUG	-> POST /session/905de944-682e-467b-8cff-5c9191996688/refresh {}
+1699985002390	Marionette	DEBUG	0 -> [0,10,"WebDriver:Refresh",{}]
+1699985002392	Marionette	TRACE	[11] Received event beforeunload for http://52.54.244.138:8080/ArtemusChb/
+1699985002945	Marionette	TRACE	[11] Received event pagehide for http://52.54.244.138:8080/ArtemusChb/
+1699985010353	Marionette	TRACE	[11] Received event DOMContentLoaded for http://52.54.244.138:8080/ArtemusChb/
+1699985010355	Marionette	TRACE	[11] Received event pageshow for http://52.54.244.138:8080/ArtemusChb/
+1699985010356	Marionette	DEBUG	0 <- [1,10,null,{"value":null}]
+1699985010359	webdriver::server	DEBUG	<- 200 OK {"value":null}
+1699985022006	Marionette	TRACE	Received observer notification quit-application
+1699985022006	Marionette	INFO	Stopped listening on port 62388
+1699985022006	RemoteAgent	DEBUG	Resetting recommended pref apz.content_response_timeout
+1699985022006	RemoteAgent	DEBUG	Resetting recommended pref browser.contentblocking.introCount
+1699985022006	RemoteAgent	DEBUG	Resetting recommended pref browser.download.panel.shown
+1699985022006	RemoteAgent	DEBUG	Resetting recommended pref browser.newtabpage.activity-stream.showSponsoredTopSites
+1699985022006	RemoteAgent	DEBUG	Resetting recommended pref browser.newtabpage.enabled
+1699985022007	RemoteAgent	DEBUG	Resetting recommended pref browser.pagethumbnails.capturing_disabled
+1699985022008	RemoteAgent	DEBUG	Resetting recommended pref browser.region.network.url
+1699985022008	RemoteAgent	DEBUG	Resetting recommended pref browser.search.update
+1699985022008	RemoteAgent	DEBUG	Resetting recommended pref browser.startup.couldRestoreSession.count
+1699985022008	RemoteAgent	DEBUG	Resetting recommended pref browser.tabs.closeWindowWithLastTab
+1699985022008	RemoteAgent	DEBUG	Resetting recommended pref browser.tabs.unloadOnLowMemory
+1699985022008	RemoteAgent	DEBUG	Resetting recommended pref browser.tabs.warnOnClose
+1699985022008	RemoteAgent	DEBUG	Resetting recommended pref browser.tabs.warnOnCloseOtherTabs
+1699985022008	RemoteAgent	DEBUG	Resetting recommended pref browser.tabs.warnOnOpen
+1699985022008	RemoteAgent	DEBUG	Resetting recommended pref browser.toolbars.bookmarks.visibility
+1699985022009	RemoteAgent	DEBUG	Resetting recommended pref browser.topsites.contile.enabled
+1699985022009	RemoteAgent	DEBUG	Resetting recommended pref browser.usedOnWindows10.introURL
+1699985022009	RemoteAgent	DEBUG	Resetting recommended pref browser.urlbar.merino.endpointURL
+1699985022011	RemoteAgent	DEBUG	Resetting recommended pref browser.urlbar.suggest.searches
+1699985022014	RemoteAgent	DEBUG	Resetting recommended pref datareporting.policy.dataSubmissionPolicyAccepted
+1699985022015	RemoteAgent	DEBUG	Resetting recommended pref dom.disable_open_during_load
+1699985022015	RemoteAgent	DEBUG	Resetting recommended pref dom.file.createInChild
+1699985022015	RemoteAgent	DEBUG	Resetting recommended pref dom.input_events.security.minNumTicks
+1699985022016	RemoteAgent	DEBUG	Resetting recommended pref dom.input_events.security.minTimeElapsedInMS
+1699985022016	RemoteAgent	DEBUG	Resetting recommended pref dom.max_chrome_script_run_time
+1699985022016	RemoteAgent	DEBUG	Resetting recommended pref dom.max_script_run_time
+1699985022017	RemoteAgent	DEBUG	Resetting recommended pref dom.navigation.locationChangeRateLimit.count
+1699985022017	RemoteAgent	DEBUG	Resetting recommended pref dom.push.connection.enabled
+1699985022017	RemoteAgent	DEBUG	Resetting recommended pref dom.screenorientation.allow-lock
+1699985022017	RemoteAgent	DEBUG	Resetting recommended pref dom.successive_dialog_time_limit
+1699985022017	RemoteAgent	DEBUG	Resetting recommended pref extensions.getAddons.cache.enabled
+1699985022017	RemoteAgent	DEBUG	Resetting recommended pref extensions.getAddons.discovery.api_url
+1699985022017	RemoteAgent	DEBUG	Resetting recommended pref extensions.blocklist.detailsURL
+1699985022018	RemoteAgent	DEBUG	Resetting recommended pref extensions.blocklist.itemURL
+1699985022018	RemoteAgent	DEBUG	Resetting recommended pref extensions.hotfix.url
+1699985022018	RemoteAgent	DEBUG	Resetting recommended pref extensions.systemAddon.update.url
+1699985022018	RemoteAgent	DEBUG	Resetting recommended pref extensions.update.background.url
+1699985022018	RemoteAgent	DEBUG	Resetting recommended pref extensions.update.url
+1699985022019	RemoteAgent	DEBUG	Resetting recommended pref extensions.getAddons.get.url
+1699985022019	RemoteAgent	DEBUG	Resetting recommended pref extensions.getAddons.search.browseURL
+1699985022019	RemoteAgent	DEBUG	Resetting recommended pref geo.provider.network.url
+1699985022019	RemoteAgent	DEBUG	Resetting recommended pref identity.fxaccounts.auth.uri
+1699985022019	RemoteAgent	DEBUG	Resetting recommended pref network.connectivity-service.enabled
+1699985022020	RemoteAgent	DEBUG	Resetting recommended pref network.http.phishy-userpass-length
+1699985022020	RemoteAgent	DEBUG	Resetting recommended pref network.http.prompt-temp-redirect
+1699985022020	RemoteAgent	DEBUG	Resetting recommended pref privacy.trackingprotection.enabled
+1699985022020	RemoteAgent	DEBUG	Resetting recommended pref security.fileuri.strict_origin_policy
+1699985022020	RemoteAgent	DEBUG	Resetting recommended pref security.notification_enable_delay
+1699985022020	RemoteAgent	DEBUG	Resetting recommended pref security.remote_settings.intermediates.enabled
+1699985022021	RemoteAgent	DEBUG	Resetting recommended pref signon.autofillForms
+1699985022021	RemoteAgent	DEBUG	Resetting recommended pref signon.rememberSignons
+1699985022022	RemoteAgent	DEBUG	Resetting recommended pref toolkit.telemetry.server
+1699985022022	RemoteAgent	DEBUG	Resetting recommended pref widget.windows.window_occlusion_tracking.enabled
+Dynamically enable window occlusion 1
+1699985022024	RemoteAgent	DEBUG	Resetting recommended pref dom.disable_beforeunload
+1699985022024	RemoteAgent	DEBUG	Resetting recommended pref browser.contentblocking.features.standard
+1699985022025	RemoteAgent	DEBUG	Resetting recommended pref network.cookie.cookieBehavior
+1699985022025	RemoteAgent	TRACE	Received observer notification quit-application
+1699985022025	Marionette	DEBUG	Marionette stopped listening
+1699985022030	RemoteAgent	DEBUG	Resetting recommended pref browser.contentblocking.features.standard
+1699985022030	RemoteAgent	DEBUG	Resetting recommended pref network.cookie.cookieBehavior
+1699985022048	Marionette	DEBUG	Closed connection 0
+1699985030362	webdriver::server	DEBUG	-> GET /session/905de944-682e-467b-8cff-5c9191996688/title 
+1699985030362	webdriver::server	DEBUG	Teardown session
+1699985030490	webdriver::server	DEBUG	<- 500 Internal Server Error {"value":{"error":"unknown error","message":"Failed to decode response from marionette","stacktrace":""}}
+1699985030491	webdriver::server	DEBUG	-> DELETE /session/905de944-682e-467b-8cff-5c9191996688 
+1699985030491	webdriver::server	DEBUG	<- 404 Not Found {"value":{"error":"invalid session id","message":"Tried to run command without establishing a connection","stacktrace":""}}
+1699985046168	geckodriver	INFO	Listening on 127.0.0.1:62586
+1699985049256	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "62587" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Admin\\AppData\\Local\\Temp\\rust_mozprofile98yzLm"
+1699985049276	geckodriver::marionette	DEBUG	Waiting 60s to connect to browser on 127.0.0.1
+1699985049276	geckodriver::browser	TRACE	Failed to open C:\Users\Admin\AppData\Local\Temp\rust_mozprofile98yzLm\MarionetteActivePort
+1699985049276	geckodriver::marionette	TRACE	Retrying in 100ms
+1699985049390	geckodriver::browser	TRACE	Failed to open C:\Users\Admin\AppData\Local\Temp\rust_mozprofile98yzLm\MarionetteActivePort
+1699985049390	geckodriver::marionette	TRACE	Retrying in 100ms
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1699985049500	geckodriver::browser	TRACE	Failed to open C:\Users\Admin\AppData\Local\Temp\rust_mozprofile98yzLm\MarionetteActivePort
+1699985049500	geckodriver::marionette	TRACE	Retrying in 100ms
+1699985049610	geckodriver::browser	TRACE	Failed to open C:\Users\Admin\AppData\Local\Temp\rust_mozprofile98yzLm\MarionetteActivePort
+1699985049610	geckodriver::marionette	TRACE	Retrying in 100ms
+1699985049628	RemoteAgent	DEBUG	WebDriver BiDi enabled
+1699985049628	RemoteAgent	DEBUG	CDP enabled
+1699985049629	Marionette	INFO	Marionette enabled
+1699985049630	RemoteAgent	DEBUG	Setting recommended pref apz.content_response_timeout to 60000
+1699985049630	RemoteAgent	DEBUG	Setting recommended pref browser.contentblocking.introCount to 99
+1699985049630	RemoteAgent	DEBUG	Setting recommended pref browser.download.panel.shown to true
+1699985049630	RemoteAgent	DEBUG	Setting recommended pref browser.newtabpage.activity-stream.showSponsoredTopSites to false
+1699985049630	RemoteAgent	DEBUG	Setting recommended pref browser.newtabpage.enabled to false
+1699985049630	RemoteAgent	DEBUG	Setting recommended pref browser.pagethumbnails.capturing_disabled to true
+1699985049630	RemoteAgent	DEBUG	Setting recommended pref browser.region.network.url to 
+1699985049630	RemoteAgent	DEBUG	Setting recommended pref browser.search.update to false
+1699985049631	RemoteAgent	DEBUG	Setting recommended pref browser.startup.couldRestoreSession.count to -1
+1699985049631	RemoteAgent	DEBUG	Setting recommended pref browser.tabs.closeWindowWithLastTab to false
+1699985049631	RemoteAgent	DEBUG	Setting recommended pref browser.tabs.unloadOnLowMemory to false
+1699985049631	RemoteAgent	DEBUG	Setting recommended pref browser.tabs.warnOnClose to false
+1699985049631	RemoteAgent	DEBUG	Setting recommended pref browser.tabs.warnOnCloseOtherTabs to false
+1699985049631	RemoteAgent	DEBUG	Setting recommended pref browser.tabs.warnOnOpen to false
+1699985049631	RemoteAgent	DEBUG	Setting recommended pref browser.toolbars.bookmarks.visibility to never
+1699985049631	RemoteAgent	DEBUG	Setting recommended pref browser.topsites.contile.enabled to false
+1699985049631	RemoteAgent	DEBUG	Setting recommended pref browser.usedOnWindows10.introURL to 
+1699985049631	RemoteAgent	DEBUG	Setting recommended pref browser.urlbar.merino.endpointURL to 
+1699985049631	RemoteAgent	DEBUG	Setting recommended pref browser.urlbar.suggest.searches to false
+1699985049631	RemoteAgent	DEBUG	Setting recommended pref datareporting.policy.dataSubmissionPolicyAccepted to false
+1699985049631	RemoteAgent	DEBUG	Setting recommended pref dom.disable_open_during_load to false
+1699985049631	RemoteAgent	DEBUG	Setting recommended pref dom.file.createInChild to true
+1699985049631	RemoteAgent	DEBUG	Setting recommended pref dom.input_events.security.minNumTicks to 0
+1699985049631	RemoteAgent	DEBUG	Setting recommended pref dom.input_events.security.minTimeElapsedInMS to 0
+1699985049631	RemoteAgent	DEBUG	Setting recommended pref dom.max_chrome_script_run_time to 0
+1699985049631	RemoteAgent	DEBUG	Setting recommended pref dom.max_script_run_time to 0
+1699985049631	RemoteAgent	DEBUG	Setting recommended pref dom.navigation.locationChangeRateLimit.count to 0
+1699985049631	RemoteAgent	DEBUG	Setting recommended pref dom.push.connection.enabled to false
+1699985049631	RemoteAgent	DEBUG	Setting recommended pref dom.screenorientation.allow-lock to true
+1699985049631	RemoteAgent	DEBUG	Setting recommended pref dom.successive_dialog_time_limit to 0
+1699985049631	RemoteAgent	DEBUG	Setting recommended pref extensions.getAddons.cache.enabled to false
+1699985049631	RemoteAgent	DEBUG	Setting recommended pref extensions.getAddons.discovery.api_url to data:, 
+1699985049631	RemoteAgent	DEBUG	Setting recommended pref extensions.blocklist.detailsURL to http://%(server)s/extensions-dummy/blocklistDetailsURL
+1699985049631	RemoteAgent	DEBUG	Setting recommended pref extensions.blocklist.itemURL to http://%(server)s/extensions-dummy/blocklistItemURL
+1699985049631	RemoteAgent	DEBUG	Setting recommended pref extensions.hotfix.url to http://%(server)s/extensions-dummy/hotfixURL
+1699985049631	RemoteAgent	DEBUG	Setting recommended pref extensions.systemAddon.update.url to http://%(server)s/dummy-system-addons.xml
+1699985049631	RemoteAgent	DEBUG	Setting recommended pref extensions.update.background.url to http://%(server)s/extensions-dummy/updateBackgroundURL
+1699985049631	RemoteAgent	DEBUG	Setting recommended pref extensions.update.url to http://%(server)s/extensions-dummy/updateURL
+1699985049632	RemoteAgent	DEBUG	Setting recommended pref extensions.getAddons.get.url to http://%(server)s/extensions-dummy/repositoryGetURL
+1699985049632	RemoteAgent	DEBUG	Setting recommended pref extensions.getAddons.search.browseURL to http://%(server)s/extensions-dummy/repositoryBrowseURL
+1699985049632	RemoteAgent	DEBUG	Setting recommended pref geo.provider.network.url to 
+1699985049632	RemoteAgent	DEBUG	Setting recommended pref identity.fxaccounts.auth.uri to https://{server}/dummy/fxa
+1699985049632	RemoteAgent	DEBUG	Setting recommended pref network.connectivity-service.enabled to false
+1699985049632	RemoteAgent	DEBUG	Setting recommended pref network.http.phishy-userpass-length to 255
+1699985049632	RemoteAgent	DEBUG	Setting recommended pref network.http.prompt-temp-redirect to false
+1699985049632	RemoteAgent	DEBUG	Setting recommended pref privacy.trackingprotection.enabled to false
+1699985049632	RemoteAgent	DEBUG	Setting recommended pref security.fileuri.strict_origin_policy to false
+1699985049632	RemoteAgent	DEBUG	Setting recommended pref security.notification_enable_delay to 0
+1699985049632	RemoteAgent	DEBUG	Setting recommended pref security.remote_settings.intermediates.enabled to false
+1699985049632	RemoteAgent	DEBUG	Setting recommended pref signon.autofillForms to false
+1699985049632	RemoteAgent	DEBUG	Setting recommended pref signon.rememberSignons to false
+1699985049632	RemoteAgent	DEBUG	Setting recommended pref toolkit.telemetry.server to https://%(server)s/telemetry-dummy/
+1699985049632	RemoteAgent	DEBUG	Setting recommended pref widget.windows.window_occlusion_tracking.enabled to false
+Dynamically enable window occlusion 0
+1699985049632	RemoteAgent	DEBUG	Setting recommended pref dom.disable_beforeunload to true
+1699985049633	Marionette	TRACE	Received observer notification final-ui-startup
+1699985049635	RemoteAgent	TRACE	Received observer notification final-ui-startup
+1699985049721	geckodriver::browser	TRACE	Failed to open C:\Users\Admin\AppData\Local\Temp\rust_mozprofile98yzLm\MarionetteActivePort
+1699985049721	geckodriver::marionette	TRACE	Retrying in 100ms
+1699985049764	Marionette	INFO	Listening on port 62595
+1699985049767	Marionette	DEBUG	Marionette is listening
+1699985049774	RemoteAgent	TRACE	Available local IP addresses: 127.0.0.1, [::1]
+WebDriver BiDi listening on ws://127.0.0.1:62587
+1699985049785	RemoteAgent	DEBUG	Setting recommended pref browser.contentblocking.features.standard to -tp,tpPrivate,cookieBehavior0,-cm,-fp
+1699985049785	RemoteAgent	DEBUG	Setting recommended pref network.cookie.cookieBehavior to 0
+1699985049786	CDP	DEBUG	Waiting for initial application window
+Read port: 62595
+1699985049851	Marionette	DEBUG	Accepted connection 0 from 127.0.0.1:62598
+1699985049954	geckodriver::marionette	DEBUG	Connection to Marionette established on 127.0.0.1:62595.
+1699985049988	Marionette	DEBUG	0 -> [0,1,"WebDriver:NewSession",{"acceptInsecureCerts":true,"browserName":"firefox","pageLoadStrategy":"normal"}]
+1699985049991	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1699985050014	Marionette	DEBUG	Waiting for initial application window
+1699985051818	Marionette	TRACE	Received observer notification browser-idle-startup-tasks-finished
+1699985051818	RemoteAgent	TRACE	Received observer notification browser-idle-startup-tasks-finished
+1699985051823	RemoteAgent	TRACE	[8] ProgressListener Start: expectNavigation=false resolveWhenStarted=false unloadTimeout=5000 waitForExplicitStart=false
+1699985051823	RemoteAgent	TRACE	[8] ProgressListener Setting unload timer (5000ms)
+1699985051823	RemoteAgent	TRACE	[8] Document already finished loading: about:blank
+1699985051823	RemoteAgent	TRACE	[8] ProgressListener Stop: has error=false
+DevTools listening on ws://127.0.0.1:62587/devtools/browser/f7abe257-5836-4f44-812c-2086f428569d
+1699985051833	Marionette	DEBUG	0 <- [1,1,null,{"sessionId":"e860470a-fbef-406d-9f8b-9b54026505e4","capabilities":{"browserName":"firefox","browserVersion":"119.0.1","platformName":"windows","acceptInsecureCerts":true,"pageLoadStrategy":"normal","setWindowRect":true,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"strictFileInteractability":false,"unhandledPromptBehavior":"dismiss and notify","moz:accessibilityChecks":false,"moz:buildID":"20231106151204","moz:debuggerAddress":"127.0.0.1:62587","moz:headless":false,"moz:platformVersion":"10.0","moz:processID":11732,"moz:profile":"C:\\Users\\Admin\\AppData\\Local\\Temp\\rust_mozprofile98yzLm","moz:shutdownTimeout":60000,"moz:webdriverClick":true,"moz:windowless":false,"proxy":{}}}]
+1699985051838	webdriver::server	DEBUG	<- 200 OK {"value":{"sessionId":"e860470a-fbef-406d-9f8b-9b54026505e4","capabilities":{"acceptInsecureCerts":true,"browserNam ... ctability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify"}}}
+1699985051840	webdriver::server	DEBUG	-> POST /session/e860470a-fbef-406d-9f8b-9b54026505e4/url {"url": "http://52.54.244.138:8080/ArtemusChb/"}
+1699985051840	Marionette	DEBUG	0 -> [0,2,"WebDriver:Navigate",{"url":"http://52.54.244.138:8080/ArtemusChb/"}]
+1699985051844	Marionette	TRACE	[8] Received event beforeunload for about:blank
+1699985052386	Marionette	TRACE	Remoteness change detected. Set new top-level browsing context to 11
+1699985052411	Marionette	TRACE	[11] Received event beforeunload for about:blank
+1699985052414	Marionette	TRACE	[11] Received event pagehide for about:blank
+1699985070572	Marionette	TRACE	[11] Received event DOMContentLoaded for http://52.54.244.138:8080/ArtemusChb/
+1699985070573	Marionette	TRACE	[11] Received event pageshow for http://52.54.244.138:8080/ArtemusChb/
+1699985070573	Marionette	DEBUG	0 <- [1,2,null,{"value":null}]
+1699985070587	webdriver::server	DEBUG	<- 200 OK {"value":null}
+1699985080148	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+console.error: (new Error("Polling for changes failed: NetworkError: Network request failed.", "resource://services-settings/remote-settings.sys.mjs", 321))
+1699985090590	webdriver::server	DEBUG	-> GET /session/e860470a-fbef-406d-9f8b-9b54026505e4/title 
+1699985090591	Marionette	DEBUG	0 -> [0,3,"WebDriver:GetTitle",{}]
+1699985090591	Marionette	DEBUG	0 <- [1,3,null,{"value":"ArtemusCHBUI"}]
+1699985090591	webdriver::server	DEBUG	<- 200 OK {"value":"ArtemusCHBUI"}
+1699985090592	webdriver::server	DEBUG	-> POST /session/e860470a-fbef-406d-9f8b-9b54026505e4/refresh {}
+1699985090593	Marionette	DEBUG	0 -> [0,4,"WebDriver:Refresh",{}]
+1699985090594	Marionette	TRACE	[11] Received event beforeunload for http://52.54.244.138:8080/ArtemusChb/
+1699985091219	Marionette	TRACE	[11] Received event pagehide for http://52.54.244.138:8080/ArtemusChb/
+1699985110505	Marionette	TRACE	[11] Received event DOMContentLoaded for http://52.54.244.138:8080/ArtemusChb/
+1699985110506	Marionette	TRACE	[11] Received event pageshow for http://52.54.244.138:8080/ArtemusChb/
+1699985110506	Marionette	DEBUG	0 <- [1,4,null,{"value":null}]
+1699985110509	webdriver::server	DEBUG	<- 200 OK {"value":null}
+1699985114306	Marionette	TRACE	Received observer notification quit-application
+1699985114306	Marionette	INFO	Stopped listening on port 62595
+1699985114307	RemoteAgent	DEBUG	Resetting recommended pref apz.content_response_timeout
+1699985114307	RemoteAgent	DEBUG	Resetting recommended pref browser.contentblocking.introCount
+1699985114307	RemoteAgent	DEBUG	Resetting recommended pref browser.download.panel.shown
+1699985114307	RemoteAgent	DEBUG	Resetting recommended pref browser.newtabpage.activity-stream.showSponsoredTopSites
+1699985114307	RemoteAgent	DEBUG	Resetting recommended pref browser.newtabpage.enabled
+1699985114308	RemoteAgent	DEBUG	Resetting recommended pref browser.pagethumbnails.capturing_disabled
+1699985114308	RemoteAgent	DEBUG	Resetting recommended pref browser.region.network.url
+1699985114308	RemoteAgent	DEBUG	Resetting recommended pref browser.search.update
+1699985114308	RemoteAgent	DEBUG	Resetting recommended pref browser.startup.couldRestoreSession.count
+1699985114309	RemoteAgent	DEBUG	Resetting recommended pref browser.tabs.closeWindowWithLastTab
+1699985114309	RemoteAgent	DEBUG	Resetting recommended pref browser.tabs.unloadOnLowMemory
+1699985114309	RemoteAgent	DEBUG	Resetting recommended pref browser.tabs.warnOnClose
+1699985114309	RemoteAgent	DEBUG	Resetting recommended pref browser.tabs.warnOnCloseOtherTabs
+1699985114309	RemoteAgent	DEBUG	Resetting recommended pref browser.tabs.warnOnOpen
+1699985114309	RemoteAgent	DEBUG	Resetting recommended pref browser.toolbars.bookmarks.visibility
+1699985114309	RemoteAgent	DEBUG	Resetting recommended pref browser.topsites.contile.enabled
+1699985114310	RemoteAgent	DEBUG	Resetting recommended pref browser.usedOnWindows10.introURL
+1699985114310	RemoteAgent	DEBUG	Resetting recommended pref browser.urlbar.merino.endpointURL
+1699985114311	RemoteAgent	DEBUG	Resetting recommended pref browser.urlbar.suggest.searches
+1699985114312	RemoteAgent	DEBUG	Resetting recommended pref datareporting.policy.dataSubmissionPolicyAccepted
+1699985114312	RemoteAgent	DEBUG	Resetting recommended pref dom.disable_open_during_load
+1699985114312	RemoteAgent	DEBUG	Resetting recommended pref dom.file.createInChild
+1699985114313	RemoteAgent	DEBUG	Resetting recommended pref dom.input_events.security.minNumTicks
+1699985114313	RemoteAgent	DEBUG	Resetting recommended pref dom.input_events.security.minTimeElapsedInMS
+1699985114313	RemoteAgent	DEBUG	Resetting recommended pref dom.max_chrome_script_run_time
+1699985114313	RemoteAgent	DEBUG	Resetting recommended pref dom.max_script_run_time
+1699985114314	RemoteAgent	DEBUG	Resetting recommended pref dom.navigation.locationChangeRateLimit.count
+1699985114314	RemoteAgent	DEBUG	Resetting recommended pref dom.push.connection.enabled
+1699985114314	RemoteAgent	DEBUG	Resetting recommended pref dom.screenorientation.allow-lock
+1699985114314	RemoteAgent	DEBUG	Resetting recommended pref dom.successive_dialog_time_limit
+1699985114315	RemoteAgent	DEBUG	Resetting recommended pref extensions.getAddons.cache.enabled
+1699985114315	RemoteAgent	DEBUG	Resetting recommended pref extensions.getAddons.discovery.api_url
+1699985114315	RemoteAgent	DEBUG	Resetting recommended pref extensions.blocklist.detailsURL
+1699985114315	RemoteAgent	DEBUG	Resetting recommended pref extensions.blocklist.itemURL
+1699985114315	RemoteAgent	DEBUG	Resetting recommended pref extensions.hotfix.url
+1699985114315	RemoteAgent	DEBUG	Resetting recommended pref extensions.systemAddon.update.url
+1699985114315	RemoteAgent	DEBUG	Resetting recommended pref extensions.update.background.url
+1699985114316	RemoteAgent	DEBUG	Resetting recommended pref extensions.update.url
+1699985114317	RemoteAgent	DEBUG	Resetting recommended pref extensions.getAddons.get.url
+1699985114317	RemoteAgent	DEBUG	Resetting recommended pref extensions.getAddons.search.browseURL
+1699985114317	RemoteAgent	DEBUG	Resetting recommended pref geo.provider.network.url
+1699985114317	RemoteAgent	DEBUG	Resetting recommended pref identity.fxaccounts.auth.uri
+1699985114317	RemoteAgent	DEBUG	Resetting recommended pref network.connectivity-service.enabled
+1699985114317	RemoteAgent	DEBUG	Resetting recommended pref network.http.phishy-userpass-length
+1699985114317	RemoteAgent	DEBUG	Resetting recommended pref network.http.prompt-temp-redirect
+1699985114317	RemoteAgent	DEBUG	Resetting recommended pref privacy.trackingprotection.enabled
+1699985114317	RemoteAgent	DEBUG	Resetting recommended pref security.fileuri.strict_origin_policy
+1699985114318	RemoteAgent	DEBUG	Resetting recommended pref security.notification_enable_delay
+1699985114318	RemoteAgent	DEBUG	Resetting recommended pref security.remote_settings.intermediates.enabled
+1699985114318	RemoteAgent	DEBUG	Resetting recommended pref signon.autofillForms
+1699985114319	RemoteAgent	DEBUG	Resetting recommended pref signon.rememberSignons
+1699985114320	RemoteAgent	DEBUG	Resetting recommended pref toolkit.telemetry.server
+1699985114320	RemoteAgent	DEBUG	Resetting recommended pref widget.windows.window_occlusion_tracking.enabled
+Dynamically enable window occlusion 1
+1699985114323	RemoteAgent	DEBUG	Resetting recommended pref dom.disable_beforeunload
+1699985114323	RemoteAgent	DEBUG	Resetting recommended pref browser.contentblocking.features.standard
+1699985114323	RemoteAgent	DEBUG	Resetting recommended pref network.cookie.cookieBehavior
+1699985114323	RemoteAgent	TRACE	Received observer notification quit-application
+1699985114324	Marionette	DEBUG	Marionette stopped listening
+1699985114332	RemoteAgent	DEBUG	Resetting recommended pref browser.contentblocking.features.standard
+1699985114332	RemoteAgent	DEBUG	Resetting recommended pref network.cookie.cookieBehavior
+1699985114344	Marionette	DEBUG	Closed connection 0
+1699985130512	webdriver::server	DEBUG	-> GET /session/e860470a-fbef-406d-9f8b-9b54026505e4/title 
+1699985130512	webdriver::server	DEBUG	Teardown session
+1699985130805	webdriver::server	DEBUG	<- 500 Internal Server Error {"value":{"error":"unknown error","message":"Failed to decode response from marionette","stacktrace":""}}
+1699985130807	webdriver::server	DEBUG	-> DELETE /session/e860470a-fbef-406d-9f8b-9b54026505e4 
+1699985130807	webdriver::server	DEBUG	<- 404 Not Found {"value":{"error":"invalid session id","message":"Tried to run command without establishing a connection","stacktrace":""}}
+1699985151892	geckodriver	INFO	Listening on 127.0.0.1:62779
+1699985154974	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "62780" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Admin\\AppData\\Local\\Temp\\rust_mozprofiletWXa0i"
+1699985154991	geckodriver::marionette	DEBUG	Waiting 60s to connect to browser on 127.0.0.1
+1699985154991	geckodriver::browser	TRACE	Failed to open C:\Users\Admin\AppData\Local\Temp\rust_mozprofiletWXa0i\MarionetteActivePort
+1699985154991	geckodriver::marionette	TRACE	Retrying in 100ms
+1699985155092	geckodriver::browser	TRACE	Failed to open C:\Users\Admin\AppData\Local\Temp\rust_mozprofiletWXa0i\MarionetteActivePort
+1699985155092	geckodriver::marionette	TRACE	Retrying in 100ms
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1699985155203	geckodriver::browser	TRACE	Failed to open C:\Users\Admin\AppData\Local\Temp\rust_mozprofiletWXa0i\MarionetteActivePort
+1699985155204	geckodriver::marionette	TRACE	Retrying in 100ms
+1699985155313	geckodriver::browser	TRACE	Failed to open C:\Users\Admin\AppData\Local\Temp\rust_mozprofiletWXa0i\MarionetteActivePort
+1699985155313	geckodriver::marionette	TRACE	Retrying in 100ms
+1699985155349	RemoteAgent	DEBUG	WebDriver BiDi enabled
+1699985155349	RemoteAgent	DEBUG	CDP enabled
+1699985155349	Marionette	INFO	Marionette enabled
+1699985155350	RemoteAgent	DEBUG	Setting recommended pref apz.content_response_timeout to 60000
+1699985155350	RemoteAgent	DEBUG	Setting recommended pref browser.contentblocking.introCount to 99
+1699985155351	RemoteAgent	DEBUG	Setting recommended pref browser.download.panel.shown to true
+1699985155351	RemoteAgent	DEBUG	Setting recommended pref browser.newtabpage.activity-stream.showSponsoredTopSites to false
+1699985155351	RemoteAgent	DEBUG	Setting recommended pref browser.newtabpage.enabled to false
+1699985155351	RemoteAgent	DEBUG	Setting recommended pref browser.pagethumbnails.capturing_disabled to true
+1699985155351	RemoteAgent	DEBUG	Setting recommended pref browser.region.network.url to 
+1699985155351	RemoteAgent	DEBUG	Setting recommended pref browser.search.update to false
+1699985155351	RemoteAgent	DEBUG	Setting recommended pref browser.startup.couldRestoreSession.count to -1
+1699985155351	RemoteAgent	DEBUG	Setting recommended pref browser.tabs.closeWindowWithLastTab to false
+1699985155351	RemoteAgent	DEBUG	Setting recommended pref browser.tabs.unloadOnLowMemory to false
+1699985155351	RemoteAgent	DEBUG	Setting recommended pref browser.tabs.warnOnClose to false
+1699985155351	RemoteAgent	DEBUG	Setting recommended pref browser.tabs.warnOnCloseOtherTabs to false
+1699985155351	RemoteAgent	DEBUG	Setting recommended pref browser.tabs.warnOnOpen to false
+1699985155351	RemoteAgent	DEBUG	Setting recommended pref browser.toolbars.bookmarks.visibility to never
+1699985155351	RemoteAgent	DEBUG	Setting recommended pref browser.topsites.contile.enabled to false
+1699985155351	RemoteAgent	DEBUG	Setting recommended pref browser.usedOnWindows10.introURL to 
+1699985155351	RemoteAgent	DEBUG	Setting recommended pref browser.urlbar.merino.endpointURL to 
+1699985155351	RemoteAgent	DEBUG	Setting recommended pref browser.urlbar.suggest.searches to false
+1699985155351	RemoteAgent	DEBUG	Setting recommended pref datareporting.policy.dataSubmissionPolicyAccepted to false
+1699985155352	RemoteAgent	DEBUG	Setting recommended pref dom.disable_open_during_load to false
+1699985155352	RemoteAgent	DEBUG	Setting recommended pref dom.file.createInChild to true
+1699985155352	RemoteAgent	DEBUG	Setting recommended pref dom.input_events.security.minNumTicks to 0
+1699985155352	RemoteAgent	DEBUG	Setting recommended pref dom.input_events.security.minTimeElapsedInMS to 0
+1699985155352	RemoteAgent	DEBUG	Setting recommended pref dom.max_chrome_script_run_time to 0
+1699985155352	RemoteAgent	DEBUG	Setting recommended pref dom.max_script_run_time to 0
+1699985155352	RemoteAgent	DEBUG	Setting recommended pref dom.navigation.locationChangeRateLimit.count to 0
+1699985155352	RemoteAgent	DEBUG	Setting recommended pref dom.push.connection.enabled to false
+1699985155352	RemoteAgent	DEBUG	Setting recommended pref dom.screenorientation.allow-lock to true
+1699985155352	RemoteAgent	DEBUG	Setting recommended pref dom.successive_dialog_time_limit to 0
+1699985155352	RemoteAgent	DEBUG	Setting recommended pref extensions.getAddons.cache.enabled to false
+1699985155352	RemoteAgent	DEBUG	Setting recommended pref extensions.getAddons.discovery.api_url to data:, 
+1699985155352	RemoteAgent	DEBUG	Setting recommended pref extensions.blocklist.detailsURL to http://%(server)s/extensions-dummy/blocklistDetailsURL
+1699985155352	RemoteAgent	DEBUG	Setting recommended pref extensions.blocklist.itemURL to http://%(server)s/extensions-dummy/blocklistItemURL
+1699985155352	RemoteAgent	DEBUG	Setting recommended pref extensions.hotfix.url to http://%(server)s/extensions-dummy/hotfixURL
+1699985155352	RemoteAgent	DEBUG	Setting recommended pref extensions.systemAddon.update.url to http://%(server)s/dummy-system-addons.xml
+1699985155352	RemoteAgent	DEBUG	Setting recommended pref extensions.update.background.url to http://%(server)s/extensions-dummy/updateBackgroundURL
+1699985155352	RemoteAgent	DEBUG	Setting recommended pref extensions.update.url to http://%(server)s/extensions-dummy/updateURL
+1699985155352	RemoteAgent	DEBUG	Setting recommended pref extensions.getAddons.get.url to http://%(server)s/extensions-dummy/repositoryGetURL
+1699985155352	RemoteAgent	DEBUG	Setting recommended pref extensions.getAddons.search.browseURL to http://%(server)s/extensions-dummy/repositoryBrowseURL
+1699985155352	RemoteAgent	DEBUG	Setting recommended pref geo.provider.network.url to 
+1699985155352	RemoteAgent	DEBUG	Setting recommended pref identity.fxaccounts.auth.uri to https://{server}/dummy/fxa
+1699985155352	RemoteAgent	DEBUG	Setting recommended pref network.connectivity-service.enabled to false
+1699985155352	RemoteAgent	DEBUG	Setting recommended pref network.http.phishy-userpass-length to 255
+1699985155352	RemoteAgent	DEBUG	Setting recommended pref network.http.prompt-temp-redirect to false
+1699985155352	RemoteAgent	DEBUG	Setting recommended pref privacy.trackingprotection.enabled to false
+1699985155352	RemoteAgent	DEBUG	Setting recommended pref security.fileuri.strict_origin_policy to false
+1699985155352	RemoteAgent	DEBUG	Setting recommended pref security.notification_enable_delay to 0
+1699985155352	RemoteAgent	DEBUG	Setting recommended pref security.remote_settings.intermediates.enabled to false
+1699985155352	RemoteAgent	DEBUG	Setting recommended pref signon.autofillForms to false
+1699985155352	RemoteAgent	DEBUG	Setting recommended pref signon.rememberSignons to false
+1699985155352	RemoteAgent	DEBUG	Setting recommended pref toolkit.telemetry.server to https://%(server)s/telemetry-dummy/
+1699985155353	RemoteAgent	DEBUG	Setting recommended pref widget.windows.window_occlusion_tracking.enabled to false
+Dynamically enable window occlusion 0
+1699985155353	RemoteAgent	DEBUG	Setting recommended pref dom.disable_beforeunload to true
+1699985155354	Marionette	TRACE	Received observer notification final-ui-startup
+1699985155355	RemoteAgent	TRACE	Received observer notification final-ui-startup
+1699985155423	geckodriver::browser	TRACE	Failed to open C:\Users\Admin\AppData\Local\Temp\rust_mozprofiletWXa0i\MarionetteActivePort
+1699985155423	geckodriver::marionette	TRACE	Retrying in 100ms
+1699985155470	Marionette	INFO	Listening on port 62787
+1699985155472	Marionette	DEBUG	Marionette is listening
+1699985155477	RemoteAgent	TRACE	Available local IP addresses: 127.0.0.1, [::1]
+WebDriver BiDi listening on ws://127.0.0.1:62780
+1699985155485	RemoteAgent	DEBUG	Setting recommended pref browser.contentblocking.features.standard to -tp,tpPrivate,cookieBehavior0,-cm,-fp
+1699985155485	RemoteAgent	DEBUG	Setting recommended pref network.cookie.cookieBehavior to 0
+1699985155485	CDP	DEBUG	Waiting for initial application window
+Read port: 62787
+1699985155633	Marionette	DEBUG	Accepted connection 0 from 127.0.0.1:62790
+1699985155743	geckodriver::marionette	DEBUG	Connection to Marionette established on 127.0.0.1:62787.
+1699985155768	Marionette	DEBUG	0 -> [0,1,"WebDriver:NewSession",{"acceptInsecureCerts":true,"browserName":"firefox","pageLoadStrategy":"normal"}]
+1699985155770	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1699985155898	Marionette	DEBUG	Waiting for initial application window
+1699985157722	Marionette	TRACE	Received observer notification browser-idle-startup-tasks-finished
+1699985157722	RemoteAgent	TRACE	Received observer notification browser-idle-startup-tasks-finished
+1699985157727	RemoteAgent	TRACE	[8] ProgressListener Start: expectNavigation=false resolveWhenStarted=false unloadTimeout=5000 waitForExplicitStart=false
+1699985157727	RemoteAgent	TRACE	[8] ProgressListener Setting unload timer (5000ms)
+1699985157727	RemoteAgent	TRACE	[8] Document already finished loading: about:blank
+1699985157727	RemoteAgent	TRACE	[8] ProgressListener Stop: has error=false
+DevTools listening on ws://127.0.0.1:62780/devtools/browser/53c2b818-4231-4dd5-be78-da00c9351f80
+1699985157736	Marionette	DEBUG	0 <- [1,1,null,{"sessionId":"422a483f-4d4a-4c32-9f0c-f1a251d92a8c","capabilities":{"browserName":"firefox","browserVersion":"119.0.1","platformName":"windows","acceptInsecureCerts":true,"pageLoadStrategy":"normal","setWindowRect":true,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"strictFileInteractability":false,"unhandledPromptBehavior":"dismiss and notify","moz:accessibilityChecks":false,"moz:buildID":"20231106151204","moz:debuggerAddress":"127.0.0.1:62780","moz:headless":false,"moz:platformVersion":"10.0","moz:processID":4264,"moz:profile":"C:\\Users\\Admin\\AppData\\Local\\Temp\\rust_mozprofiletWXa0i","moz:shutdownTimeout":60000,"moz:webdriverClick":true,"moz:windowless":false,"proxy":{}}}]
+1699985157744	webdriver::server	DEBUG	<- 200 OK {"value":{"sessionId":"422a483f-4d4a-4c32-9f0c-f1a251d92a8c","capabilities":{"acceptInsecureCerts":true,"browserNam ... ctability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify"}}}
+1699985157746	webdriver::server	DEBUG	-> POST /session/422a483f-4d4a-4c32-9f0c-f1a251d92a8c/url {"url": "http://52.54.244.138:8080/ArtemusChb/"}
+1699985157751	Marionette	DEBUG	0 -> [0,2,"WebDriver:Navigate",{"url":"http://52.54.244.138:8080/ArtemusChb/"}]
+1699985157756	Marionette	TRACE	[8] Received event beforeunload for about:blank
+1699985158317	Marionette	TRACE	Remoteness change detected. Set new top-level browsing context to 11
+1699985158327	Marionette	TRACE	[11] Received event beforeunload for about:blank
+1699985158331	Marionette	TRACE	[11] Received event pagehide for about:blank
+1699985164150	Marionette	TRACE	[11] Received event DOMContentLoaded for http://52.54.244.138:8080/ArtemusChb/
+1699985164151	Marionette	TRACE	[11] Received event pageshow for http://52.54.244.138:8080/ArtemusChb/
+1699985164151	Marionette	DEBUG	0 <- [1,2,null,{"value":null}]
+1699985164159	webdriver::server	DEBUG	<- 200 OK {"value":null}
+1699985166227	Marionette	DEBUG	Closed connection 0
+1699985187581	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+console.error: services.settings: 
+  Message: NetworkError: Network error: TypeError: NetworkError: Network request failed
+  Stack:
+    APIError@resource://services-settings/RemoteSettingsClient.sys.mjs:107:1
+NetworkError@resource://services-settings/RemoteSettingsClient.sys.mjs:111:5
+_adjustedError@resource://services-settings/RemoteSettingsClient.sys.mjs:907:14
+maybeSync@resource://services-settings/RemoteSettingsClient.sys.mjs:812:38
+
+console.error: (new NetworkError("Network error: TypeError: NetworkError: Network request failed", "resource://services-settings/RemoteSettingsClient.sys.mjs", 107))
+1699985546001	Marionette	TRACE	Received observer notification quit-application
+1699985546001	Marionette	INFO	Stopped listening on port 62787
+1699985546001	RemoteAgent	DEBUG	Resetting recommended pref apz.content_response_timeout
+1699985546002	RemoteAgent	DEBUG	Resetting recommended pref browser.contentblocking.introCount
+1699985546002	RemoteAgent	DEBUG	Resetting recommended pref browser.download.panel.shown
+1699985546004	RemoteAgent	DEBUG	Resetting recommended pref browser.newtabpage.activity-stream.showSponsoredTopSites
+1699985546005	RemoteAgent	DEBUG	Resetting recommended pref browser.newtabpage.enabled
+1699985546015	RemoteAgent	DEBUG	Resetting recommended pref browser.pagethumbnails.capturing_disabled
+1699985546015	RemoteAgent	DEBUG	Resetting recommended pref browser.region.network.url
+1699985546015	RemoteAgent	DEBUG	Resetting recommended pref browser.search.update
+1699985546015	RemoteAgent	DEBUG	Resetting recommended pref browser.startup.couldRestoreSession.count
+1699985546015	RemoteAgent	DEBUG	Resetting recommended pref browser.tabs.closeWindowWithLastTab
+1699985546016	RemoteAgent	DEBUG	Resetting recommended pref browser.tabs.unloadOnLowMemory
+1699985546016	RemoteAgent	DEBUG	Resetting recommended pref browser.tabs.warnOnClose
+1699985546016	RemoteAgent	DEBUG	Resetting recommended pref browser.tabs.warnOnCloseOtherTabs
+1699985546016	RemoteAgent	DEBUG	Resetting recommended pref browser.tabs.warnOnOpen
+1699985546016	RemoteAgent	DEBUG	Resetting recommended pref browser.toolbars.bookmarks.visibility
+1699985546017	RemoteAgent	DEBUG	Resetting recommended pref browser.topsites.contile.enabled
+1699985546017	RemoteAgent	DEBUG	Resetting recommended pref browser.usedOnWindows10.introURL
+1699985546017	RemoteAgent	DEBUG	Resetting recommended pref browser.urlbar.merino.endpointURL
+1699985546020	RemoteAgent	DEBUG	Resetting recommended pref browser.urlbar.suggest.searches
+1699985546022	RemoteAgent	DEBUG	Resetting recommended pref datareporting.policy.dataSubmissionPolicyAccepted
+1699985546022	RemoteAgent	DEBUG	Resetting recommended pref dom.disable_open_during_load
+1699985546022	RemoteAgent	DEBUG	Resetting recommended pref dom.file.createInChild
+1699985546023	RemoteAgent	DEBUG	Resetting recommended pref dom.input_events.security.minNumTicks
+1699985546023	RemoteAgent	DEBUG	Resetting recommended pref dom.input_events.security.minTimeElapsedInMS
+1699985546023	RemoteAgent	DEBUG	Resetting recommended pref dom.max_chrome_script_run_time
+1699985546023	RemoteAgent	DEBUG	Resetting recommended pref dom.max_script_run_time
+1699985546023	RemoteAgent	DEBUG	Resetting recommended pref dom.navigation.locationChangeRateLimit.count
+1699985546024	RemoteAgent	DEBUG	Resetting recommended pref dom.push.connection.enabled
+1699985546024	RemoteAgent	DEBUG	Resetting recommended pref dom.screenorientation.allow-lock
+1699985546024	RemoteAgent	DEBUG	Resetting recommended pref dom.successive_dialog_time_limit
+1699985546024	RemoteAgent	DEBUG	Resetting recommended pref extensions.getAddons.cache.enabled
+1699985546024	RemoteAgent	DEBUG	Resetting recommended pref extensions.getAddons.discovery.api_url
+1699985546024	RemoteAgent	DEBUG	Resetting recommended pref extensions.blocklist.detailsURL
+1699985546024	RemoteAgent	DEBUG	Resetting recommended pref extensions.blocklist.itemURL
+1699985546025	RemoteAgent	DEBUG	Resetting recommended pref extensions.hotfix.url
+1699985546025	RemoteAgent	DEBUG	Resetting recommended pref extensions.systemAddon.update.url
+1699985546025	RemoteAgent	DEBUG	Resetting recommended pref extensions.update.background.url
+1699985546025	RemoteAgent	DEBUG	Resetting recommended pref extensions.update.url
+1699985546026	RemoteAgent	DEBUG	Resetting recommended pref extensions.getAddons.get.url
+1699985546026	RemoteAgent	DEBUG	Resetting recommended pref extensions.getAddons.search.browseURL
+1699985546026	RemoteAgent	DEBUG	Resetting recommended pref geo.provider.network.url
+1699985546027	RemoteAgent	DEBUG	Resetting recommended pref identity.fxaccounts.auth.uri
+1699985546027	RemoteAgent	DEBUG	Resetting recommended pref network.connectivity-service.enabled
+1699985546027	RemoteAgent	DEBUG	Resetting recommended pref network.http.phishy-userpass-length
+1699985546027	RemoteAgent	DEBUG	Resetting recommended pref network.http.prompt-temp-redirect
+1699985546027	RemoteAgent	DEBUG	Resetting recommended pref privacy.trackingprotection.enabled
+1699985546027	RemoteAgent	DEBUG	Resetting recommended pref security.fileuri.strict_origin_policy
+1699985546027	RemoteAgent	DEBUG	Resetting recommended pref security.notification_enable_delay
+1699985546028	RemoteAgent	DEBUG	Resetting recommended pref security.remote_settings.intermediates.enabled
+1699985546028	RemoteAgent	DEBUG	Resetting recommended pref signon.autofillForms
+1699985546028	RemoteAgent	DEBUG	Resetting recommended pref signon.rememberSignons
+1699985546029	RemoteAgent	DEBUG	Resetting recommended pref toolkit.telemetry.server
+1699985546029	RemoteAgent	DEBUG	Resetting recommended pref widget.windows.window_occlusion_tracking.enabled
+Dynamically enable window occlusion 1
+1699985546031	RemoteAgent	DEBUG	Resetting recommended pref dom.disable_beforeunload
+1699985546031	RemoteAgent	DEBUG	Resetting recommended pref browser.contentblocking.features.standard
+1699985546032	RemoteAgent	DEBUG	Resetting recommended pref network.cookie.cookieBehavior
+1699985546032	RemoteAgent	TRACE	Received observer notification quit-application
+1699985546034	Marionette	DEBUG	Marionette stopped listening
+1699985546043	RemoteAgent	DEBUG	Resetting recommended pref browser.contentblocking.features.standard
+1699985546043	RemoteAgent	DEBUG	Resetting recommended pref network.cookie.cookieBehavior
+1700100665897	geckodriver	INFO	Listening on 127.0.0.1:60744
+1700100669029	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "60745" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\Admin\\AppData\\Local\\Temp\\rust_mozprofileWsEV1z"
+1700100669036	geckodriver::marionette	DEBUG	Waiting 60s to connect to browser on 127.0.0.1
+1700100669037	geckodriver::browser	TRACE	Failed to open C:\Users\Admin\AppData\Local\Temp\rust_mozprofileWsEV1z\MarionetteActivePort
+1700100669037	geckodriver::marionette	TRACE	Retrying in 100ms
+1700100669149	geckodriver::browser	TRACE	Failed to open C:\Users\Admin\AppData\Local\Temp\rust_mozprofileWsEV1z\MarionetteActivePort
+1700100669150	geckodriver::marionette	TRACE	Retrying in 100ms
+1700100669258	geckodriver::browser	TRACE	Failed to open C:\Users\Admin\AppData\Local\Temp\rust_mozprofileWsEV1z\MarionetteActivePort
+1700100669258	geckodriver::marionette	TRACE	Retrying in 100ms
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1700100669366	geckodriver::browser	TRACE	Failed to open C:\Users\Admin\AppData\Local\Temp\rust_mozprofileWsEV1z\MarionetteActivePort
+1700100669366	geckodriver::marionette	TRACE	Retrying in 100ms
+1700100669474	geckodriver::browser	TRACE	Failed to open C:\Users\Admin\AppData\Local\Temp\rust_mozprofileWsEV1z\MarionetteActivePort
+1700100669474	geckodriver::marionette	TRACE	Retrying in 100ms
+1700100669584	geckodriver::browser	TRACE	Failed to open C:\Users\Admin\AppData\Local\Temp\rust_mozprofileWsEV1z\MarionetteActivePort
+1700100669585	geckodriver::marionette	TRACE	Retrying in 100ms
+1700100669694	geckodriver::browser	TRACE	Failed to open C:\Users\Admin\AppData\Local\Temp\rust_mozprofileWsEV1z\MarionetteActivePort
+1700100669694	geckodriver::marionette	TRACE	Retrying in 100ms
+1700100669803	geckodriver::browser	TRACE	Failed to open C:\Users\Admin\AppData\Local\Temp\rust_mozprofileWsEV1z\MarionetteActivePort
+1700100669803	geckodriver::marionette	TRACE	Retrying in 100ms
+1700100669911	geckodriver::browser	TRACE	Failed to open C:\Users\Admin\AppData\Local\Temp\rust_mozprofileWsEV1z\MarionetteActivePort
+1700100669911	geckodriver::marionette	TRACE	Retrying in 100ms
+1700100669939	RemoteAgent	DEBUG	WebDriver BiDi enabled
+1700100669940	RemoteAgent	DEBUG	CDP enabled
+1700100669941	Marionette	INFO	Marionette enabled
+1700100669944	RemoteAgent	DEBUG	Setting recommended pref apz.content_response_timeout to 60000
+1700100669945	RemoteAgent	DEBUG	Setting recommended pref browser.contentblocking.introCount to 99
+1700100669945	RemoteAgent	DEBUG	Setting recommended pref browser.download.panel.shown to true
+1700100669945	RemoteAgent	DEBUG	Setting recommended pref browser.newtabpage.activity-stream.showSponsoredTopSites to false
+1700100669945	RemoteAgent	DEBUG	Setting recommended pref browser.newtabpage.enabled to false
+1700100669945	RemoteAgent	DEBUG	Setting recommended pref browser.pagethumbnails.capturing_disabled to true
+1700100669945	RemoteAgent	DEBUG	Setting recommended pref browser.region.network.url to 
+1700100669946	RemoteAgent	DEBUG	Setting recommended pref browser.search.update to false
+1700100669946	RemoteAgent	DEBUG	Setting recommended pref browser.startup.couldRestoreSession.count to -1
+1700100669946	RemoteAgent	DEBUG	Setting recommended pref browser.tabs.closeWindowWithLastTab to false
+1700100669946	RemoteAgent	DEBUG	Setting recommended pref browser.tabs.unloadOnLowMemory to false
+1700100669946	RemoteAgent	DEBUG	Setting recommended pref browser.tabs.warnOnClose to false
+1700100669946	RemoteAgent	DEBUG	Setting recommended pref browser.tabs.warnOnCloseOtherTabs to false
+1700100669947	RemoteAgent	DEBUG	Setting recommended pref browser.tabs.warnOnOpen to false
+1700100669947	RemoteAgent	DEBUG	Setting recommended pref browser.toolbars.bookmarks.visibility to never
+1700100669947	RemoteAgent	DEBUG	Setting recommended pref browser.topsites.contile.enabled to false
+1700100669947	RemoteAgent	DEBUG	Setting recommended pref browser.usedOnWindows10.introURL to 
+1700100669947	RemoteAgent	DEBUG	Setting recommended pref browser.urlbar.merino.endpointURL to 
+1700100669947	RemoteAgent	DEBUG	Setting recommended pref browser.urlbar.suggest.searches to false
+1700100669947	RemoteAgent	DEBUG	Setting recommended pref datareporting.policy.dataSubmissionPolicyAccepted to false
+1700100669947	RemoteAgent	DEBUG	Setting recommended pref dom.disable_open_during_load to false
+1700100669947	RemoteAgent	DEBUG	Setting recommended pref dom.file.createInChild to true
+1700100669947	RemoteAgent	DEBUG	Setting recommended pref dom.input_events.security.minNumTicks to 0
+1700100669947	RemoteAgent	DEBUG	Setting recommended pref dom.input_events.security.minTimeElapsedInMS to 0
+1700100669947	RemoteAgent	DEBUG	Setting recommended pref dom.max_chrome_script_run_time to 0
+1700100669948	RemoteAgent	DEBUG	Setting recommended pref dom.max_script_run_time to 0
+1700100669948	RemoteAgent	DEBUG	Setting recommended pref dom.navigation.locationChangeRateLimit.count to 0
+1700100669948	RemoteAgent	DEBUG	Setting recommended pref dom.push.connection.enabled to false
+1700100669948	RemoteAgent	DEBUG	Setting recommended pref dom.screenorientation.allow-lock to true
+1700100669948	RemoteAgent	DEBUG	Setting recommended pref dom.successive_dialog_time_limit to 0
+1700100669948	RemoteAgent	DEBUG	Setting recommended pref extensions.getAddons.cache.enabled to false
+1700100669948	RemoteAgent	DEBUG	Setting recommended pref extensions.getAddons.discovery.api_url to data:, 
+1700100669948	RemoteAgent	DEBUG	Setting recommended pref extensions.blocklist.detailsURL to http://%(server)s/extensions-dummy/blocklistDetailsURL
+1700100669948	RemoteAgent	DEBUG	Setting recommended pref extensions.blocklist.itemURL to http://%(server)s/extensions-dummy/blocklistItemURL
+1700100669948	RemoteAgent	DEBUG	Setting recommended pref extensions.hotfix.url to http://%(server)s/extensions-dummy/hotfixURL
+1700100669948	RemoteAgent	DEBUG	Setting recommended pref extensions.systemAddon.update.url to http://%(server)s/dummy-system-addons.xml
+1700100669949	RemoteAgent	DEBUG	Setting recommended pref extensions.update.background.url to http://%(server)s/extensions-dummy/updateBackgroundURL
+1700100669949	RemoteAgent	DEBUG	Setting recommended pref extensions.update.url to http://%(server)s/extensions-dummy/updateURL
+1700100669949	RemoteAgent	DEBUG	Setting recommended pref extensions.getAddons.get.url to http://%(server)s/extensions-dummy/repositoryGetURL
+1700100669949	RemoteAgent	DEBUG	Setting recommended pref extensions.getAddons.search.browseURL to http://%(server)s/extensions-dummy/repositoryBrowseURL
+1700100669949	RemoteAgent	DEBUG	Setting recommended pref geo.provider.network.url to 
+1700100669949	RemoteAgent	DEBUG	Setting recommended pref identity.fxaccounts.auth.uri to https://{server}/dummy/fxa
+1700100669949	RemoteAgent	DEBUG	Setting recommended pref network.connectivity-service.enabled to false
+1700100669949	RemoteAgent	DEBUG	Setting recommended pref network.http.phishy-userpass-length to 255
+1700100669949	RemoteAgent	DEBUG	Setting recommended pref network.http.prompt-temp-redirect to false
+1700100669949	RemoteAgent	DEBUG	Setting recommended pref privacy.trackingprotection.enabled to false
+1700100669949	RemoteAgent	DEBUG	Setting recommended pref security.fileuri.strict_origin_policy to false
+1700100669949	RemoteAgent	DEBUG	Setting recommended pref security.notification_enable_delay to 0
+1700100669949	RemoteAgent	DEBUG	Setting recommended pref security.remote_settings.intermediates.enabled to false
+1700100669950	RemoteAgent	DEBUG	Setting recommended pref signon.autofillForms to false
+1700100669950	RemoteAgent	DEBUG	Setting recommended pref signon.rememberSignons to false
+1700100669950	RemoteAgent	DEBUG	Setting recommended pref toolkit.telemetry.server to https://%(server)s/telemetry-dummy/
+1700100669950	RemoteAgent	DEBUG	Setting recommended pref widget.windows.window_occlusion_tracking.enabled to false
+Dynamically enable window occlusion 0
+1700100669950	RemoteAgent	DEBUG	Setting recommended pref dom.disable_beforeunload to true
+1700100669954	Marionette	TRACE	Received observer notification final-ui-startup
+1700100669957	RemoteAgent	TRACE	Received observer notification final-ui-startup
+1700100670020	geckodriver::browser	TRACE	Failed to open C:\Users\Admin\AppData\Local\Temp\rust_mozprofileWsEV1z\MarionetteActivePort
+1700100670020	geckodriver::marionette	TRACE	Retrying in 100ms
+1700100670128	geckodriver::browser	TRACE	Failed to open C:\Users\Admin\AppData\Local\Temp\rust_mozprofileWsEV1z\MarionetteActivePort
+1700100670128	geckodriver::marionette	TRACE	Retrying in 100ms
+1700100670236	geckodriver::browser	TRACE	Failed to open C:\Users\Admin\AppData\Local\Temp\rust_mozprofileWsEV1z\MarionetteActivePort
+1700100670236	geckodriver::marionette	TRACE	Retrying in 100ms
+1700100670347	geckodriver::browser	TRACE	Failed to open C:\Users\Admin\AppData\Local\Temp\rust_mozprofileWsEV1z\MarionetteActivePort
+1700100670347	geckodriver::marionette	TRACE	Retrying in 100ms
+1700100670456	geckodriver::browser	TRACE	Failed to open C:\Users\Admin\AppData\Local\Temp\rust_mozprofileWsEV1z\MarionetteActivePort
+1700100670456	geckodriver::marionette	TRACE	Retrying in 100ms
+1700100670566	geckodriver::browser	TRACE	Failed to open C:\Users\Admin\AppData\Local\Temp\rust_mozprofileWsEV1z\MarionetteActivePort
+1700100670566	geckodriver::marionette	TRACE	Retrying in 100ms
+1700100670674	geckodriver::browser	TRACE	Failed to open C:\Users\Admin\AppData\Local\Temp\rust_mozprofileWsEV1z\MarionetteActivePort
+1700100670674	geckodriver::marionette	TRACE	Retrying in 100ms
+1700100670683	Marionette	INFO	Listening on port 60757
+1700100670695	Marionette	DEBUG	Marionette is listening
+1700100670725	RemoteAgent	TRACE	Available local IP addresses: 127.0.0.1, [::1]
+WebDriver BiDi listening on ws://127.0.0.1:60745
+1700100670755	RemoteAgent	DEBUG	Setting recommended pref browser.contentblocking.features.standard to -tp,tpPrivate,cookieBehavior0,-cm,-fp
+1700100670755	RemoteAgent	DEBUG	Setting recommended pref network.cookie.cookieBehavior to 0
+1700100670756	CDP	DEBUG	Waiting for initial application window
+Read port: 60757
+1700100670828	Marionette	DEBUG	Accepted connection 0 from 127.0.0.1:60760
+1700100670837	geckodriver::marionette	DEBUG	Connection to Marionette established on 127.0.0.1:60757.
+1700100671115	Marionette	DEBUG	0 -> [0,1,"WebDriver:NewSession",{"acceptInsecureCerts":true,"browserName":"firefox","pageLoadStrategy":"normal"}]
+1700100671121	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1700100671160	Marionette	DEBUG	Waiting for initial application window
+1700100673458	Marionette	TRACE	Received observer notification browser-idle-startup-tasks-finished
+1700100673458	RemoteAgent	TRACE	Received observer notification browser-idle-startup-tasks-finished
+1700100673473	RemoteAgent	TRACE	[8] ProgressListener Start: expectNavigation=false resolveWhenStarted=false unloadTimeout=5000 waitForExplicitStart=false
+1700100673473	RemoteAgent	TRACE	[8] ProgressListener Setting unload timer (5000ms)
+1700100673473	RemoteAgent	TRACE	[8] Document already finished loading: about:blank
+1700100673473	RemoteAgent	TRACE	[8] ProgressListener Stop: has error=false
+DevTools listening on ws://127.0.0.1:60745/devtools/browser/07c7c72a-4cd4-429a-9f6a-acd4b207de4b
+1700100673497	Marionette	DEBUG	0 <- [1,1,null,{"sessionId":"a11fc03e-4628-43df-aa2f-2895bd6afdfb","capabilities":{"browserName":"firefox","browserVersion":"119.0.1","platformName":"windows","acceptInsecureCerts":true,"pageLoadStrategy":"normal","setWindowRect":true,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"strictFileInteractability":false,"unhandledPromptBehavior":"dismiss and notify","moz:accessibilityChecks":false,"moz:buildID":"20231106151204","moz:debuggerAddress":"127.0.0.1:60745","moz:headless":false,"moz:platformVersion":"10.0","moz:processID":9276,"moz:profile":"C:\\Users\\Admin\\AppData\\Local\\Temp\\rust_mozprofileWsEV1z","moz:shutdownTimeout":60000,"moz:webdriverClick":true,"moz:windowless":false,"proxy":{}}}]
+1700100673526	webdriver::server	DEBUG	<- 200 OK {"value":{"sessionId":"a11fc03e-4628-43df-aa2f-2895bd6afdfb","capabilities":{"acceptInsecureCerts":true,"browserNam ... ctability":false,"timeouts":{"implicit":0,"pageLoad":300000,"script":30000},"unhandledPromptBehavior":"dismiss and notify"}}}
+1700100673529	webdriver::server	DEBUG	-> POST /session/a11fc03e-4628-43df-aa2f-2895bd6afdfb/url {"url": "http://52.54.244.138:8080/ArtemusChb/"}
+1700100673561	Marionette	DEBUG	0 -> [0,2,"WebDriver:Navigate",{"url":"http://52.54.244.138:8080/ArtemusChb/"}]
+1700100673568	Marionette	TRACE	[8] Received event beforeunload for about:blank
+1700100674112	Marionette	TRACE	Remoteness change detected. Set new top-level browsing context to 11
+1700100674128	Marionette	TRACE	[11] Received event beforeunload for about:blank
+1700100674130	Marionette	TRACE	[11] Received event pagehide for about:blank
+1700100700043	addons.xpi	ERROR	System addon update list error SyntaxError: XMLHttpRequest.open: 'http://%(server)s/dummy-system-addons.xml' is not a valid URL.
+1700100727801	Marionette	TRACE	[11] Received event DOMContentLoaded for http://52.54.244.138:8080/ArtemusChb/
+1700100727804	Marionette	TRACE	[11] Received event pageshow for http://52.54.244.138:8080/ArtemusChb/
+1700100727805	Marionette	DEBUG	0 <- [1,2,null,{"value":null}]
+1700100727818	webdriver::server	DEBUG	<- 200 OK {"value":null}
+1700100747824	webdriver::server	DEBUG	-> GET /session/a11fc03e-4628-43df-aa2f-2895bd6afdfb/title 
+1700100747827	Marionette	DEBUG	0 -> [0,3,"WebDriver:GetTitle",{}]
+1700100747829	Marionette	DEBUG	0 <- [1,3,null,{"value":"ArtemusCHBUI"}]
+1700100747830	webdriver::server	DEBUG	<- 200 OK {"value":"ArtemusCHBUI"}
+1700100747834	webdriver::server	DEBUG	-> POST /session/a11fc03e-4628-43df-aa2f-2895bd6afdfb/refresh {}
+1700100747836	Marionette	DEBUG	0 -> [0,4,"WebDriver:Refresh",{}]
+1700100747841	Marionette	TRACE	[11] Received event beforeunload for http://52.54.244.138:8080/ArtemusChb/
+1700100749203	Marionette	TRACE	[11] Received event pagehide for http://52.54.244.138:8080/ArtemusChb/
+1700100797252	Marionette	TRACE	[11] Received event DOMContentLoaded for http://52.54.244.138:8080/ArtemusChb/
+1700100797253	Marionette	TRACE	[11] Received event pageshow for http://52.54.244.138:8080/ArtemusChb/
+1700100797253	Marionette	DEBUG	0 <- [1,4,null,{"value":null}]
+1700100797259	webdriver::server	DEBUG	<- 200 OK {"value":null}
+1700100817263	webdriver::server	DEBUG	-> GET /session/a11fc03e-4628-43df-aa2f-2895bd6afdfb/title 
+1700100817266	Marionette	DEBUG	0 -> [0,5,"WebDriver:GetTitle",{}]
+1700100817267	Marionette	DEBUG	0 <- [1,5,null,{"value":"ArtemusCHBUI"}]
+1700100817268	webdriver::server	DEBUG	<- 200 OK {"value":"ArtemusCHBUI"}
+1700100817271	webdriver::server	DEBUG	-> POST /session/a11fc03e-4628-43df-aa2f-2895bd6afdfb/refresh {}
+1700100817272	Marionette	DEBUG	0 -> [0,6,"WebDriver:Refresh",{}]
+1700100817275	Marionette	TRACE	[11] Received event beforeunload for http://52.54.244.138:8080/ArtemusChb/
+1700100818688	Marionette	TRACE	[11] Received event pagehide for http://52.54.244.138:8080/ArtemusChb/
+1700100880544	Marionette	TRACE	[11] Received event DOMContentLoaded for http://52.54.244.138:8080/ArtemusChb/
+1700100880545	Marionette	TRACE	[11] Received event pageshow for http://52.54.244.138:8080/ArtemusChb/
+1700100880545	Marionette	DEBUG	0 <- [1,6,null,{"value":null}]
+1700100880550	webdriver::server	DEBUG	<- 200 OK {"value":null}
+1700100900553	webdriver::server	DEBUG	-> GET /session/a11fc03e-4628-43df-aa2f-2895bd6afdfb/title 
+1700100900554	Marionette	DEBUG	0 -> [0,7,"WebDriver:GetTitle",{}]
+1700100900555	Marionette	DEBUG	0 <- [1,7,null,{"value":"ArtemusCHBUI"}]
+1700100900556	webdriver::server	DEBUG	<- 200 OK {"value":"ArtemusCHBUI"}
+1700100900558	webdriver::server	DEBUG	-> POST /session/a11fc03e-4628-43df-aa2f-2895bd6afdfb/refresh {}
+1700100900559	Marionette	DEBUG	0 -> [0,8,"WebDriver:Refresh",{}]
+1700100900561	Marionette	TRACE	[11] Received event beforeunload for http://52.54.244.138:8080/ArtemusChb/
+1700100901127	Marionette	TRACE	[11] Received event pagehide for http://52.54.244.138:8080/ArtemusChb/
+1700100948932	Marionette	TRACE	[11] Received event DOMContentLoaded for http://52.54.244.138:8080/ArtemusChb/
+1700100948938	Marionette	TRACE	[11] Received event pageshow for http://52.54.244.138:8080/ArtemusChb/
+1700100948938	Marionette	DEBUG	0 <- [1,8,null,{"value":null}]
+1700100948944	webdriver::server	DEBUG	<- 200 OK {"value":null}
+1700100968946	webdriver::server	DEBUG	-> GET /session/a11fc03e-4628-43df-aa2f-2895bd6afdfb/title 
+1700100968947	Marionette	DEBUG	0 -> [0,9,"WebDriver:GetTitle",{}]
+1700100968947	Marionette	DEBUG	0 <- [1,9,null,{"value":"ArtemusCHBUI"}]
+1700100968947	webdriver::server	DEBUG	<- 200 OK {"value":"ArtemusCHBUI"}
+1700100968948	webdriver::server	DEBUG	-> POST /session/a11fc03e-4628-43df-aa2f-2895bd6afdfb/refresh {}
+1700100968949	Marionette	DEBUG	0 -> [0,10,"WebDriver:Refresh",{}]
+1700100968949	Marionette	TRACE	[11] Received event beforeunload for http://52.54.244.138:8080/ArtemusChb/
+1700100970858	Marionette	TRACE	[11] Received event pagehide for http://52.54.244.138:8080/ArtemusChb/
+console.error: ({})
+1700101030517	Marionette	TRACE	[11] Received event DOMContentLoaded for http://52.54.244.138:8080/ArtemusChb/
+1700101030517	Marionette	TRACE	[11] Received event pageshow for http://52.54.244.138:8080/ArtemusChb/
+1700101030518	Marionette	DEBUG	0 <- [1,10,null,{"value":null}]
+1700101030520	webdriver::server	DEBUG	<- 200 OK {"value":null}
+1700101050522	webdriver::server	DEBUG	-> GET /session/a11fc03e-4628-43df-aa2f-2895bd6afdfb/title 
+1700101050524	Marionette	DEBUG	0 -> [0,11,"WebDriver:GetTitle",{}]
+1700101050525	Marionette	DEBUG	0 <- [1,11,null,{"value":"ArtemusCHBUI"}]
+1700101050526	webdriver::server	DEBUG	<- 200 OK {"value":"ArtemusCHBUI"}
+1700101050528	webdriver::server	DEBUG	-> POST /session/a11fc03e-4628-43df-aa2f-2895bd6afdfb/refresh {}
+1700101050529	Marionette	DEBUG	0 -> [0,12,"WebDriver:Refresh",{}]
+1700101050532	Marionette	TRACE	[11] Received event beforeunload for http://52.54.244.138:8080/ArtemusChb/
+1700101050575	Marionette	TRACE	[11] Received event beforeunload for http://52.54.244.138:8080/ArtemusChb/
+1700101050590	Marionette	TRACE	[11] Received event pagehide for http://52.54.244.138:8080/ArtemusChb/
+1700101050726	Marionette	TRACE	[11] Received event DOMContentLoaded for about:neterror?e=connectionFailure&u=http%3A//52.54.244.138%3A8080/ArtemusChb/&c=UTF-8&d=Firefox%20can%E2%80%99t%20establish%20a%20connection%20to%20the%20server%20at%2052.54.244.138%3A8080.
+1700101050727	Marionette	DEBUG	0 <- [1,12,{"error":"unknown error","message":"Reached error page: about:neterror?e=connectionFailure&u=http%3A//52.54.244.138%3A8080/ArtemusChb/&c=UTF-8&d=Firefox%20can%E2%80%99t%20establish%20a%20connection%20to%20the%20server%20at%2052.54.244.138%3A8080.","stacktrace":"RemoteError@chrome://remote/content/shared/RemoteError.sys.mjs:8:8\nWebDriverError@chrome://remote/content/shared/webdriver/Er ... es/EventEmitter.sys.mjs:154:20\nreceiveMessage@chrome://remote/content/marionette/actors/MarionetteEventsParent.sys.mjs:33:25\n"},null]
+1700101050727	webdriver::server	DEBUG	<- 500 Internal Server Error {"value":{"error":"unknown error","message":"Reached error page: about:neterror?e=connectionFail ... entEmitter.sys.mjs:154:20\nreceiveMessage@chrome://remote/content/marionette/actors/MarionetteEventsParent.sys.mjs:33:25\n"}}
+1700101050728	webdriver::server	DEBUG	-> DELETE /session/a11fc03e-4628-43df-aa2f-2895bd6afdfb 
+1700101050729	Marionette	DEBUG	0 -> [0,13,"Marionette:Quit",{"flags":["eForceQuit"]}]
+1700101050729	Marionette	INFO	Stopped listening on port 60757
+1700101050788	Marionette	TRACE	Received observer notification quit-application
+1700101050790	Marionette	TRACE	Received observer notification quit-application
+1700101050790	RemoteAgent	DEBUG	Resetting recommended pref apz.content_response_timeout
+1700101050790	RemoteAgent	DEBUG	Resetting recommended pref browser.contentblocking.introCount
+1700101050791	RemoteAgent	DEBUG	Resetting recommended pref browser.download.panel.shown
+1700101050791	RemoteAgent	DEBUG	Resetting recommended pref browser.newtabpage.activity-stream.showSponsoredTopSites
+1700101050791	RemoteAgent	DEBUG	Resetting recommended pref browser.newtabpage.enabled
+1700101050806	RemoteAgent	DEBUG	Resetting recommended pref browser.pagethumbnails.capturing_disabled
+1700101050806	RemoteAgent	DEBUG	Resetting recommended pref browser.region.network.url
+1700101050807	RemoteAgent	DEBUG	Resetting recommended pref browser.search.update
+1700101050807	RemoteAgent	DEBUG	Resetting recommended pref browser.startup.couldRestoreSession.count
+1700101050807	RemoteAgent	DEBUG	Resetting recommended pref browser.tabs.closeWindowWithLastTab
+1700101050807	RemoteAgent	DEBUG	Resetting recommended pref browser.tabs.unloadOnLowMemory
+1700101050807	RemoteAgent	DEBUG	Resetting recommended pref browser.tabs.warnOnClose
+1700101050807	RemoteAgent	DEBUG	Resetting recommended pref browser.tabs.warnOnCloseOtherTabs
+1700101050808	RemoteAgent	DEBUG	Resetting recommended pref browser.tabs.warnOnOpen
+1700101050808	RemoteAgent	DEBUG	Resetting recommended pref browser.toolbars.bookmarks.visibility
+1700101050808	RemoteAgent	DEBUG	Resetting recommended pref browser.topsites.contile.enabled
+1700101050808	RemoteAgent	DEBUG	Resetting recommended pref browser.usedOnWindows10.introURL
+1700101050808	RemoteAgent	DEBUG	Resetting recommended pref browser.urlbar.merino.endpointURL
+1700101050810	RemoteAgent	DEBUG	Resetting recommended pref browser.urlbar.suggest.searches
+1700101050811	RemoteAgent	DEBUG	Resetting recommended pref datareporting.policy.dataSubmissionPolicyAccepted
+1700101050811	RemoteAgent	DEBUG	Resetting recommended pref dom.disable_open_during_load
+1700101050811	RemoteAgent	DEBUG	Resetting recommended pref dom.file.createInChild
+1700101050812	RemoteAgent	DEBUG	Resetting recommended pref dom.input_events.security.minNumTicks
+1700101050812	RemoteAgent	DEBUG	Resetting recommended pref dom.input_events.security.minTimeElapsedInMS
+1700101050812	RemoteAgent	DEBUG	Resetting recommended pref dom.max_chrome_script_run_time
+1700101050812	RemoteAgent	DEBUG	Resetting recommended pref dom.max_script_run_time
+1700101050813	RemoteAgent	DEBUG	Resetting recommended pref dom.navigation.locationChangeRateLimit.count
+1700101050813	RemoteAgent	DEBUG	Resetting recommended pref dom.push.connection.enabled
+1700101050813	RemoteAgent	DEBUG	Resetting recommended pref dom.screenorientation.allow-lock
+1700101050813	RemoteAgent	DEBUG	Resetting recommended pref dom.successive_dialog_time_limit
+1700101050814	RemoteAgent	DEBUG	Resetting recommended pref extensions.getAddons.cache.enabled
+1700101050814	RemoteAgent	DEBUG	Resetting recommended pref extensions.getAddons.discovery.api_url
+1700101050814	RemoteAgent	DEBUG	Resetting recommended pref extensions.blocklist.detailsURL
+1700101050814	RemoteAgent	DEBUG	Resetting recommended pref extensions.blocklist.itemURL
+1700101050814	RemoteAgent	DEBUG	Resetting recommended pref extensions.hotfix.url
+1700101050815	RemoteAgent	DEBUG	Resetting recommended pref extensions.systemAddon.update.url
+1700101050815	RemoteAgent	DEBUG	Resetting recommended pref extensions.update.background.url
+1700101050816	RemoteAgent	DEBUG	Resetting recommended pref extensions.update.url
+1700101050818	RemoteAgent	DEBUG	Resetting recommended pref extensions.getAddons.get.url
+1700101050819	RemoteAgent	DEBUG	Resetting recommended pref extensions.getAddons.search.browseURL
+1700101050819	RemoteAgent	DEBUG	Resetting recommended pref geo.provider.network.url
+1700101050820	RemoteAgent	DEBUG	Resetting recommended pref identity.fxaccounts.auth.uri
+1700101050820	RemoteAgent	DEBUG	Resetting recommended pref network.connectivity-service.enabled
+1700101050820	RemoteAgent	DEBUG	Resetting recommended pref network.http.phishy-userpass-length
+1700101050820	RemoteAgent	DEBUG	Resetting recommended pref network.http.prompt-temp-redirect
+1700101050820	RemoteAgent	DEBUG	Resetting recommended pref privacy.trackingprotection.enabled
+1700101050820	RemoteAgent	DEBUG	Resetting recommended pref security.fileuri.strict_origin_policy
+1700101050821	RemoteAgent	DEBUG	Resetting recommended pref security.notification_enable_delay
+1700101050821	RemoteAgent	DEBUG	Resetting recommended pref security.remote_settings.intermediates.enabled
+1700101050821	RemoteAgent	DEBUG	Resetting recommended pref signon.autofillForms
+1700101050822	RemoteAgent	DEBUG	Resetting recommended pref signon.rememberSignons
+1700101050823	RemoteAgent	DEBUG	Resetting recommended pref toolkit.telemetry.server
+1700101050823	RemoteAgent	DEBUG	Resetting recommended pref widget.windows.window_occlusion_tracking.enabled
+Dynamically enable window occlusion 1
+1700101050826	RemoteAgent	DEBUG	Resetting recommended pref dom.disable_beforeunload
+1700101050826	RemoteAgent	DEBUG	Resetting recommended pref browser.contentblocking.features.standard
+1700101050826	RemoteAgent	DEBUG	Resetting recommended pref network.cookie.cookieBehavior
+1700101050826	RemoteAgent	TRACE	Received observer notification quit-application
+1700101050827	Marionette	DEBUG	Marionette stopped listening
+1700101050827	Marionette	DEBUG	0 <- [1,13,null,{"cause":"shutdown","forced":false,"in_app":true}]
+1700101050853	RemoteAgent	DEBUG	Resetting recommended pref browser.contentblocking.features.standard
+1700101050854	RemoteAgent	DEBUG	Resetting recommended pref network.cookie.cookieBehavior
+1700101050854	webdriver::server	DEBUG	Teardown session
+1700101050862	Marionette	DEBUG	Closed connection 0
+1700101051071	geckodriver::browser	DEBUG	Browser process stopped: exit code: 0
+1700101051229	webdriver::server	DEBUG	<- 200 OK {"value":null}

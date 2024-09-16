@@ -1,0 +1,840 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8"/>
+    <title>EntryTCsReport.html</title>
+    <link href="assets/style.css" rel="stylesheet" type="text/css"/></head>
+  <body onLoad="init()">
+    <script>/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this file,
+ * You can obtain one at http://mozilla.org/MPL/2.0/. */
+
+
+function toArray(iter) {
+    if (iter === null) {
+        return null;
+    }
+    return Array.prototype.slice.call(iter);
+}
+
+function find(selector, elem) { // eslint-disable-line no-redeclare
+    if (!elem) {
+        elem = document;
+    }
+    return elem.querySelector(selector);
+}
+
+function findAll(selector, elem) {
+    if (!elem) {
+        elem = document;
+    }
+    return toArray(elem.querySelectorAll(selector));
+}
+
+function sortColumn(elem) {
+    toggleSortStates(elem);
+    const colIndex = toArray(elem.parentNode.childNodes).indexOf(elem);
+    let key;
+    if (elem.classList.contains('result')) {
+        key = keyResult;
+    } else if (elem.classList.contains('links')) {
+        key = keyLink;
+    } else {
+        key = keyAlpha;
+    }
+    sortTable(elem, key(colIndex));
+}
+
+function showAllExtras() { // eslint-disable-line no-unused-vars
+    findAll('.col-result').forEach(showExtras);
+}
+
+function hideAllExtras() { // eslint-disable-line no-unused-vars
+    findAll('.col-result').forEach(hideExtras);
+}
+
+function showExtras(colresultElem) {
+    const extras = colresultElem.parentNode.nextElementSibling;
+    const expandcollapse = colresultElem.firstElementChild;
+    extras.classList.remove('collapsed');
+    expandcollapse.classList.remove('expander');
+    expandcollapse.classList.add('collapser');
+}
+
+function hideExtras(colresultElem) {
+    const extras = colresultElem.parentNode.nextElementSibling;
+    const expandcollapse = colresultElem.firstElementChild;
+    extras.classList.add('collapsed');
+    expandcollapse.classList.remove('collapser');
+    expandcollapse.classList.add('expander');
+}
+
+function showFilters() {
+    let visibleString = getQueryParameter('visible') || 'all';
+    visibleString = visibleString.toLowerCase();
+    const checkedItems = visibleString.split(',');
+
+    const filterItems = document.getElementsByClassName('filter');
+    for (let i = 0; i < filterItems.length; i++) {
+        filterItems[i].hidden = false;
+
+        if (visibleString != 'all') {
+            filterItems[i].checked = checkedItems.includes(filterItems[i].getAttribute('data-test-result'));
+            filterTable(filterItems[i]);
+        }
+    }
+}
+
+function addCollapse() {
+    // Add links for show/hide all
+    const resulttable = find('table#results-table');
+    const showhideall = document.createElement('p');
+    showhideall.innerHTML = '<a href="javascript:showAllExtras()">Show all details</a> / ' +
+                            '<a href="javascript:hideAllExtras()">Hide all details</a>';
+    resulttable.parentElement.insertBefore(showhideall, resulttable);
+
+    // Add show/hide link to each result
+    findAll('.col-result').forEach(function(elem) {
+        const collapsed = getQueryParameter('collapsed') || 'Passed';
+        const extras = elem.parentNode.nextElementSibling;
+        const expandcollapse = document.createElement('span');
+        if (extras.classList.contains('collapsed')) {
+            expandcollapse.classList.add('expander');
+        } else if (collapsed.includes(elem.innerHTML)) {
+            extras.classList.add('collapsed');
+            expandcollapse.classList.add('expander');
+        } else {
+            expandcollapse.classList.add('collapser');
+        }
+        elem.appendChild(expandcollapse);
+
+        elem.addEventListener('click', function(event) {
+            if (event.currentTarget.parentNode.nextElementSibling.classList.contains('collapsed')) {
+                showExtras(event.currentTarget);
+            } else {
+                hideExtras(event.currentTarget);
+            }
+        });
+    });
+}
+
+function getQueryParameter(name) {
+    const match = RegExp('[?&]' + name + '=([^&]*)').exec(window.location.search);
+    return match && decodeURIComponent(match[1].replace(/\+/g, ' '));
+}
+
+function init () { // eslint-disable-line no-unused-vars
+    resetSortHeaders();
+
+    addCollapse();
+
+    showFilters();
+
+    sortColumn(find('.initial-sort'));
+
+    findAll('.sortable').forEach(function(elem) {
+        elem.addEventListener('click',
+            function() {
+                sortColumn(elem);
+            }, false);
+    });
+}
+
+function sortTable(clicked, keyFunc) {
+    const rows = findAll('.results-table-row');
+    const reversed = !clicked.classList.contains('asc');
+    const sortedRows = sort(rows, keyFunc, reversed);
+    /* Whole table is removed here because browsers acts much slower
+     * when appending existing elements.
+     */
+    const thead = document.getElementById('results-table-head');
+    document.getElementById('results-table').remove();
+    const parent = document.createElement('table');
+    parent.id = 'results-table';
+    parent.appendChild(thead);
+    sortedRows.forEach(function(elem) {
+        parent.appendChild(elem);
+    });
+    document.getElementsByTagName('BODY')[0].appendChild(parent);
+}
+
+function sort(items, keyFunc, reversed) {
+    const sortArray = items.map(function(item, i) {
+        return [keyFunc(item), i];
+    });
+
+    sortArray.sort(function(a, b) {
+        const keyA = a[0];
+        const keyB = b[0];
+
+        if (keyA == keyB) return 0;
+
+        if (reversed) {
+            return keyA < keyB ? 1 : -1;
+        } else {
+            return keyA > keyB ? 1 : -1;
+        }
+    });
+
+    return sortArray.map(function(item) {
+        const index = item[1];
+        return items[index];
+    });
+}
+
+function keyAlpha(colIndex) {
+    return function(elem) {
+        return elem.childNodes[1].childNodes[colIndex].firstChild.data.toLowerCase();
+    };
+}
+
+function keyLink(colIndex) {
+    return function(elem) {
+        const dataCell = elem.childNodes[1].childNodes[colIndex].firstChild;
+        return dataCell == null ? '' : dataCell.innerText.toLowerCase();
+    };
+}
+
+function keyResult(colIndex) {
+    return function(elem) {
+        const strings = ['Error', 'Failed', 'Rerun', 'XFailed', 'XPassed',
+            'Skipped', 'Passed'];
+        return strings.indexOf(elem.childNodes[1].childNodes[colIndex].firstChild.data);
+    };
+}
+
+function resetSortHeaders() {
+    findAll('.sort-icon').forEach(function(elem) {
+        elem.parentNode.removeChild(elem);
+    });
+    findAll('.sortable').forEach(function(elem) {
+        const icon = document.createElement('div');
+        icon.className = 'sort-icon';
+        icon.textContent = 'vvv';
+        elem.insertBefore(icon, elem.firstChild);
+        elem.classList.remove('desc', 'active');
+        elem.classList.add('asc', 'inactive');
+    });
+}
+
+function toggleSortStates(elem) {
+    //if active, toggle between asc and desc
+    if (elem.classList.contains('active')) {
+        elem.classList.toggle('asc');
+        elem.classList.toggle('desc');
+    }
+
+    //if inactive, reset all other functions and add ascending active
+    if (elem.classList.contains('inactive')) {
+        resetSortHeaders();
+        elem.classList.remove('inactive');
+        elem.classList.add('active');
+    }
+}
+
+function isAllRowsHidden(value) {
+    return value.hidden == false;
+}
+
+function filterTable(elem) { // eslint-disable-line no-unused-vars
+    const outcomeAtt = 'data-test-result';
+    const outcome = elem.getAttribute(outcomeAtt);
+    const classOutcome = outcome + ' results-table-row';
+    const outcomeRows = document.getElementsByClassName(classOutcome);
+
+    for(let i = 0; i < outcomeRows.length; i++){
+        outcomeRows[i].hidden = !elem.checked;
+    }
+
+    const rows = findAll('.results-table-row').filter(isAllRowsHidden);
+    const allRowsHidden = rows.length == 0 ? true : false;
+    const notFoundMessage = document.getElementById('not-found-message');
+    notFoundMessage.hidden = !allRowsHidden;
+}
+</script>
+    <h1>EntryTCsReport.html</h1>
+    <p>Report generated on 20-Mar-2024 at 18:12:16 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
+    <h2>Summary</h2>
+    <p>25 tests ran in 4468.20 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">22 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">3 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <h2>Results</h2>
+    <table id="results-table">
+      <thead id="results-table-head">
+        <tr>
+          <th class="sortable result initial-sort" col="result">Result</th>
+          <th class="sortable" col="name">Test</th>
+          <th class="sortable" col="duration">Duration</th>
+          <th class="sortable links" col="links">Links</th></tr>
+        <tr hidden="true" id="not-found-message">
+          <th colspan="4">No results found. Try to check the filters</th></tr></thead>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td class="col-name">testcases/test_EntryTC1.py::Test_EntrySummary1::test_TC1_SimpleEntry_Vessel_Container</td>
+          <td class="col-duration">289.04</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">self = &lt;testcases.test_EntryTC1.Test_EntrySummary1 object at 0x00000259F8B13990&gt;<br/><br/>    def test_TC1_SimpleEntry_Vessel_Container(self): # Country of origin india/No Duty HTS(NDC)<br/>        self.log.info(&quot;----------------Test Case test_TC1_SimpleEntry_Vessel_Container with Container Starterd----------------&quot;)<br/>    <br/>        for r in range(3, 4):<br/>            self.selectIMPORTERData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 140)<br/>            self.addBillbutton = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 2)<br/>            self.lineitmscount = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 3)<br/>    <br/>            self.usernameData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 5)<br/>            self.passwordData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 6)<br/>    <br/>            # upper part<br/>            self.entfilltypeData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 7)<br/>            self.actionCData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 8)<br/>            self.trnpmodeData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 9)<br/>    <br/>            # Bill<br/>            self.scacData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 11)<br/>            # billofladdingNo = utills.readData(file, &quot;Sheet1&quot;, r, 12).split(&quot;,&quot;)<br/>            self.uomData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 13)#.split(&quot;,&quot;)<br/>            self.qtyyData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 14)#.split(&quot;,&quot;)<br/>    <br/>            # Vessel Inforrmation<br/>            self.vesselsnameData = utills.readData(self.file, &quot;TcHybridArtemusData&quot;, r, 15)<br/>            self.vessellsnoData = utills.readData(self.file, &quot;TcHybridArtemusData&quot;, r, 16)<br/>            self.containerscount = utills.readData(self.file, &quot;TcHybridArtemusData&quot;, r, 4)<br/>            self.containerlistData = utills.readData(self.file, &quot;TcHybridArtemusData&quot;, r, 17)<br/>    <br/>            # Trading Partners 1<br/>            self.manufacturerData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 18)<br/>            self.sellerData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 19)<br/>            self.consigneeData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 20)<br/>            self.buyerData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 21)<br/>    <br/>            # Trading Partners 2<br/>            self.countryOfOrigin1Data = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 22)<br/>            self.release_portData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 23)<br/>            self.countryOfExport1Data = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 24)<br/>            self.ladingportData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 25)<br/>            self.grossWeightData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 26)<br/>            self.chargedata = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 27)<br/>            self.unladingportData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 28)<br/>            self.manifestDescriptionData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 29)<br/>            self.arrivaldateData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 30)<br/>            self.exportdateData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 31)<br/>            self.currencyData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 112)<br/>    <br/>            # Line Items<br/>            self.invoiceTotalData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 32)<br/>            self.tariffnoData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 33)#.split(&quot;,&quot;)<br/>            self.htsqty1Data = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 34)<br/>            self.htsqty2Data = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 35)<br/>            self.addcaseNumberData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 111)<br/>            self.cvdcaseNumberData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 111)<br/>            self.linevalueData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 36)#.split(&quot;,&quot;)<br/>            self.countryOfOrigin2Data = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 37)#.split(&quot;,&quot;)<br/>            self.countryOfExport2Data = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 38)#.split(&quot;,&quot;)<br/>    <br/>            # Login<br/>            self.lp.userName(self.usernameData)<br/>            self.lp.password(self.passwordData)<br/>            self.lp.login()<br/>            self.log.info(&quot;----Login Done----&quot;)<br/>            self.lp.loadingScreenHandling()<br/>    <br/>            # Go to 7501 Page<br/>            # self.esf = EntryFormPage(self.driver, self.mywait)<br/>            self.esf.shipment()<br/>            self.esf.selectImporter(self.selectIMPORTERData)<br/>            self.esf.form7501()<br/>            self.log.info(&quot;----Form 7501 Opened----&quot;)<br/>    <br/>            # Upper Part<br/>            self.log.info(&quot;----Upper Part Started----&quot;)<br/>            self.esf.invoicenumber(self.randomInvoice)<br/>            self.esf.entryFillingTypecode(self.entfilltypeData)<br/>            self.esf.actionCode(self.actionCData)<br/>            self.esf.modeOfTransport(self.trnpmodeData)<br/>            self.log.info(&quot;----Upper Part Done----&quot;)<br/>    <br/>            # Bill of Lading<br/>            self.log.info(&quot;----Bill Of Lading Started----&quot;)<br/>            self.esf.scaccode(self.scacData)<br/>            self.esf.bill(self.randomBill)<br/>            self.esf.uom(self.uomData)<br/>            self.esf.quantity(self.qtyyData)<br/>            self.log.info(&quot;----Bill Of Lading Done----&quot;)<br/>    <br/>    <br/>            # Vessel Inforrmation<br/>            self.log.info(&quot;----Vessel Information Started----&quot;)<br/>            self.esf.vesselName(self.vesselsnameData)<br/>            self.esf.vesselFlightNo(self.vessellsnoData)<br/>            self.esf.addEditContiner()<br/>            self.esf.containers(self.containerlistData)<br/>            self.esf.saveContainer()<br/>            self.log.info(&quot;----Vessel Information Done----&quot;)<br/>    <br/>            # Trading Partners 1<br/>            self.log.info(&quot;----Trading Partners 1 Started----&quot;)<br/>            self.esf.manufarture(self.manufacturerData)<br/>            self.esf.seller(self.sellerData)<br/>            self.esf.consignee(self.buyerData)<br/>            self.esf.buyer(self.buyerData)<br/>            self.log.info(&quot;----Trading Partners 1 Done----&quot;)<br/>    <br/>            # Trading Partners 2<br/>    <br/>            self.log.info(&quot;----Trading Partners 2 Started----&quot;)<br/>            self.esf.countryOfOrigin1(self.countryOfOrigin1Data)<br/>            self.esf.release_port(self.release_portData)<br/>            self.esf.countryOfExport1(self.countryOfExport1Data)<br/>            self.esf.ladingport(self.ladingportData)<br/>            self.esf.weight(self.grossWeightData)<br/>            self.esf.charges(self.chargedata)<br/>            self.esf.unladingport(self.unladingportData)<br/>            self.esf.manifestDescription(self.manifestDescriptionData)<br/>            self.esf.arrivaldate(self.arrivaldateData)<br/>            self.esf.exportdate(self.exportdateData)<br/>            self.log.info(&quot;----Trading Partners 2 Done----&quot;)<br/>    <br/>            # Line Items<br/>            self.log.info(&quot;----Line Items Started----&quot;)<br/>            self.esf.invoiceTotal(self.invoiceTotalData)<br/>            self.esf.countryOfOrigin2(self.countryOfOrigin2Data)<br/>            self.esf.countryOfExport2(self.countryOfExport2Data)<br/>            self.esf.tariffno(self.tariffnoData)<br/>            self.esf.lineValue(self.linevalueData)<br/>            self.log.info(&quot;----Line Items Done----&quot;)<br/>    <br/>            # Save the form<br/>            self.esf.saveform()<br/>    <br/>            # Verify that form should be saved<br/>            self.msg = self.driver.find_element(By.TAG_NAME, &quot;body&quot;).text<br/>    <br/>            if &#x27;Form saved succesfully!&#x27; in self.msg:<br/>                self.esf.formSavedConfirmationMsg()<br/>                self.log.info(&quot;----Form Saved Successfully----&quot;)<br/>                self.esf.submitform()<br/>                self.log.info(&quot;----Clicked on Submit Button----&quot;)<br/>    <br/>                if &#x27;Confirm Entry Information&#x27; in self.msg:<br/>                    self.log.info(&quot;----Validation Form opened----&quot;)<br/>&gt;               InvoiceValuesOfValidationForm = self.driver.find_element(By.XPATH,&quot;//p[@class=&#x27;form-lable&#x27;][contains(text(),&#x27;Total Invoice Value:&#x27;)]//span[1]&quot;).text<br/><br/>testcases\test_EntryTC1.py:177: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/>venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py:739: in find_element<br/>    return self.execute(Command.FIND_ELEMENT, {&quot;using&quot;: by, &quot;value&quot;: value})[&quot;value&quot;]<br/>venv\Lib\site-packages\selenium\webdriver\remote\webdriver.py:345: in execute<br/>    self.error_handler.check_response(response)<br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/><br/>self = &lt;selenium.webdriver.remote.errorhandler.ErrorHandler object at 0x00000259F8F54610&gt;<br/>response = {&#x27;status&#x27;: 404, &#x27;value&#x27;: &#x27;{&quot;value&quot;:{&quot;error&quot;:&quot;no such element&quot;,&quot;message&quot;:&quot;no such element: Unable to locate element: {\...07FF7BBA7BD04]\\n\\tBaseThreadInitThunk [0x00007FFD41D1257D+29]\\n\\tRtlUserThreadStart [0x00007FFD4338AA58+40]\\n&quot;}}&#x27;}<br/><br/>    def check_response(self, response: Dict[str, Any]) -&gt; None:<br/>        &quot;&quot;&quot;Checks that a JSON response from the WebDriver does not have an<br/>        error.<br/>    <br/>        :Args:<br/>         - response - The JSON response from the WebDriver server as a dictionary<br/>           object.<br/>    <br/>        :Raises: If the response contains an error message.<br/>        &quot;&quot;&quot;<br/>        status = response.get(&quot;status&quot;, None)<br/>        if not status or status == ErrorCode.SUCCESS:<br/>            return<br/>        value = None<br/>        message = response.get(&quot;message&quot;, &quot;&quot;)<br/>        screen: str = response.get(&quot;screen&quot;, &quot;&quot;)<br/>        stacktrace = None<br/>        if isinstance(status, int):<br/>            value_json = response.get(&quot;value&quot;, None)<br/>            if value_json and isinstance(value_json, str):<br/>                import json<br/>    <br/>                try:<br/>                    value = json.loads(value_json)<br/>                    if len(value) == 1:<br/>                        value = value[&quot;value&quot;]<br/>                    status = value.get(&quot;error&quot;, None)<br/>                    if not status:<br/>                        status = value.get(&quot;status&quot;, ErrorCode.UNKNOWN_ERROR)<br/>                        message = value.get(&quot;value&quot;) or value.get(&quot;message&quot;)<br/>                        if not isinstance(message, str):<br/>                            value = message<br/>                            message = message.get(&quot;message&quot;)<br/>                    else:<br/>                        message = value.get(&quot;message&quot;, None)<br/>                except ValueError:<br/>                    pass<br/>    <br/>        exception_class: Type[WebDriverException]<br/>        e = ErrorCode()<br/>        error_codes = [item for item in dir(e) if not item.startswith(&quot;__&quot;)]<br/>        for error_code in error_codes:<br/>            error_info = getattr(ErrorCode, error_code)<br/>            if isinstance(error_info, list) and status in error_info:<br/>                exception_class = getattr(ExceptionMapping, error_code, WebDriverException)<br/>                break<br/>        else:<br/>            exception_class = WebDriverException<br/>    <br/>        if not value:<br/>            value = response[&quot;value&quot;]<br/>        if isinstance(value, str):<br/>            raise exception_class(value)<br/>        if message == &quot;&quot; and &quot;message&quot; in value:<br/>            message = value[&quot;message&quot;]<br/>    <br/>        screen = None  # type: ignore[assignment]<br/>        if &quot;screen&quot; in value:<br/>            screen = value[&quot;screen&quot;]<br/>    <br/>        stacktrace = None<br/>        st_value = value.get(&quot;stackTrace&quot;) or value.get(&quot;stacktrace&quot;)<br/>        if st_value:<br/>            if isinstance(st_value, str):<br/>                stacktrace = st_value.split(&quot;\n&quot;)<br/>            else:<br/>                stacktrace = []<br/>                try:<br/>                    for frame in st_value:<br/>                        line = frame.get(&quot;lineNumber&quot;, &quot;&quot;)<br/>                        file = frame.get(&quot;fileName&quot;, &quot;&lt;anonymous&gt;&quot;)<br/>                        if line:<br/>                            file = f&quot;{file}:{line}&quot;<br/>                        meth = frame.get(&quot;methodName&quot;, &quot;&lt;anonymous&gt;&quot;)<br/>                        if &quot;className&quot; in frame:<br/>                            meth = f&quot;{frame[&#x27;className&#x27;]}.{meth}&quot;<br/>                        msg = &quot;    at %s (%s)&quot;<br/>                        msg = msg % (meth, file)<br/>                        stacktrace.append(msg)<br/>                except TypeError:<br/>                    pass<br/>        if exception_class == UnexpectedAlertPresentException:<br/>            alert_text = None<br/>            if &quot;data&quot; in value:<br/>                alert_text = value[&quot;data&quot;].get(&quot;text&quot;)<br/>            elif &quot;alert&quot; in value:<br/>                alert_text = value[&quot;alert&quot;].get(&quot;text&quot;)<br/>            raise exception_class(message, screen, stacktrace, alert_text)  # type: ignore[call-arg]  # mypy is not smart enough here<br/>&gt;       raise exception_class(message, screen, stacktrace)<br/><span class="error">E       selenium.common.exceptions.NoSuchElementException: Message: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//p[@class=&#x27;form-lable&#x27;][contains(text(),&#x27;Total Invoice Value:&#x27;)]//span[1]&quot;}</span><br/><span class="error">E         (Session info: chrome=122.0.6261.129); For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception</span><br/><span class="error">E       Stacktrace:</span><br/><span class="error">E       	GetHandleVerifier [0x00007FF7BBE65E42+3538674]</span><br/><span class="error">E       	(No symbol) [0x00007FF7BBA84C02]</span><br/><span class="error">E       	(No symbol) [0x00007FF7BB935AEB]</span><br/><span class="error">E       	(No symbol) [0x00007FF7BB97BF4E]</span><br/><span class="error">E       	(No symbol) [0x00007FF7BB97C0CC]</span><br/><span class="error">E       	(No symbol) [0x00007FF7BB9BE477]</span><br/><span class="error">E       	(No symbol) [0x00007FF7BB99F0EF]</span><br/><span class="error">E       	(No symbol) [0x00007FF7BB9BBDE3]</span><br/><span class="error">E       	(No symbol) [0x00007FF7BB99EE53]</span><br/><span class="error">E       	(No symbol) [0x00007FF7BB96F514]</span><br/><span class="error">E       	(No symbol) [0x00007FF7BB970631]</span><br/><span class="error">E       	GetHandleVerifier [0x00007FF7BBE96CAD+3738973]</span><br/><span class="error">E       	GetHandleVerifier [0x00007FF7BBEEC506+4089270]</span><br/><span class="error">E       	GetHandleVerifier [0x00007FF7BBEE4823+4057299]</span><br/><span class="error">E       	GetHandleVerifier [0x00007FF7BBBB5C49+720121]</span><br/><span class="error">E       	(No symbol) [0x00007FF7BBA9126F]</span><br/><span class="error">E       	(No symbol) [0x00007FF7BBA8C304]</span><br/><span class="error">E       	(No symbol) [0x00007FF7BBA8C432]</span><br/><span class="error">E       	(No symbol) [0x00007FF7BBA7BD04]</span><br/><span class="error">E       	BaseThreadInitThunk [0x00007FFD41D1257D+29]</span><br/><span class="error">E       	RtlUserThreadStart [0x00007FFD4338AA58+40]</span><br/><br/>venv\Lib\site-packages\selenium\webdriver\remote\errorhandler.py:229: NoSuchElementException<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     Test_EntrySummary1:test_EntryTC1.py:34 ----------------Test Case test_TC1_SimpleEntry_Vessel_Container with Container Starterd----------------
+INFO     Test_EntrySummary1:test_EntryTC1.py:95 ----Login Done----
+INFO     Test_EntrySummary1:test_EntryTC1.py:103 ----Form 7501 Opened----
+INFO     Test_EntrySummary1:test_EntryTC1.py:106 ----Upper Part Started----
+INFO     Test_EntrySummary1:test_EntryTC1.py:111 ----Upper Part Done----
+INFO     Test_EntrySummary1:test_EntryTC1.py:114 ----Bill Of Lading Started----
+INFO     Test_EntrySummary1:test_EntryTC1.py:119 ----Bill Of Lading Done----
+INFO     Test_EntrySummary1:test_EntryTC1.py:123 ----Vessel Information Started----
+INFO     Test_EntrySummary1:test_EntryTC1.py:129 ----Vessel Information Done----
+INFO     Test_EntrySummary1:test_EntryTC1.py:132 ----Trading Partners 1 Started----
+INFO     Test_EntrySummary1:test_EntryTC1.py:137 ----Trading Partners 1 Done----
+INFO     Test_EntrySummary1:test_EntryTC1.py:141 ----Trading Partners 2 Started----
+INFO     Test_EntrySummary1:test_EntryTC1.py:152 ----Trading Partners 2 Done----
+INFO     Test_EntrySummary1:test_EntryTC1.py:155 ----Line Items Started----
+INFO     Test_EntrySummary1:test_EntryTC1.py:161 ----Line Items Done----
+INFO     Test_EntrySummary1:test_EntryTC1.py:171 ----Form Saved Successfully----
+INFO     Test_EntrySummary1:test_EntryTC1.py:173 ----Clicked on Submit Button----<br/></div></td></tr></tbody>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td class="col-name">testcases/test_EntryTC9.py::Test_EntrySummary9::test_TC9_Informal_AirContainer</td>
+          <td class="col-duration">174.63</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">self = &lt;testcases.test_EntryTC9.Test_EntrySummary9 object at 0x00000259F8FBE9D0&gt;<br/><br/>    def test_TC9_Informal_AirContainer(self): # Country of origin india/No Duty HTS(NDC)<br/>        self.log.info(&quot;----------------Test Case test_TC9_Informal_AirContainer with Container Starterd----------------&quot;)<br/>    <br/>        for r in range(11, 12):<br/>            self.selectIMPORTERData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 140)<br/>            self.addBillbutton = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 2)<br/>            self.lineitmscount = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 3)<br/>    <br/>            self.usernameData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 5)<br/>            self.passwordData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 6)<br/>    <br/>            # upper part<br/>            self.entfilltypeData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 7)<br/>            self.actionCData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 8)<br/>            self.trnpmodeData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 9)<br/>    <br/>            # Bill<br/>            self.scacData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 11)<br/>            # billofladdingNo = utills.readData(file, &quot;Sheet1&quot;, r, 12).split(&quot;,&quot;)<br/>            self.uomData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 13)#.split(&quot;,&quot;)<br/>            self.qtyyData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 14)#.split(&quot;,&quot;)<br/>    <br/>            # Vessel Inforrmation<br/>            self.vesselsnameData = utills.readData(self.file, &quot;TcHybridArtemusData&quot;, r, 15)<br/>            self.vessellsnoData = utills.readData(self.file, &quot;TcHybridArtemusData&quot;, r, 16)<br/>            self.containerscount = utills.readData(self.file, &quot;TcHybridArtemusData&quot;, r, 4)<br/>            self.containerlistData = utills.readData(self.file, &quot;TcHybridArtemusData&quot;, r, 17)<br/>    <br/>            # Trading Partners 1<br/>            self.manufacturerData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 18)<br/>            self.sellerData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 19)<br/>            self.consigneeData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 20)<br/>            self.buyerData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 21)<br/>    <br/>            # Trading Partners 2<br/>            self.countryOfOrigin1Data = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 22)<br/>            self.release_portData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 23)<br/>            self.countryOfExport1Data = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 24)<br/>            self.ladingportData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 25)<br/>            self.grossWeightData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 26)<br/>            self.chargedata = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 27)<br/>            self.unladingportData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 28)<br/>            self.manifestDescriptionData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 29)<br/>            self.arrivaldateData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 30)<br/>            self.exportdateData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 31)<br/>            self.currencyData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 112)<br/>    <br/>            # Line Items<br/>            self.invoiceTotalData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 32)<br/>            self.tariffnoData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 33)#.split(&quot;,&quot;)<br/>            self.htsqty1Data = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 34)<br/>            self.htsqty2Data = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 35)<br/>            self.addcaseNumberData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 111)<br/>            self.cvdcaseNumberData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 111)<br/>            self.linevalueData = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 36)#.split(&quot;,&quot;)<br/>            self.countryOfOrigin2Data = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 37)#.split(&quot;,&quot;)<br/>            self.countryOfExport2Data = utills.readData(self.file, &#x27;TcHybridArtemusData&#x27;, r, 38)#.split(&quot;,&quot;)<br/>    <br/>            # Login<br/>            self.lp.userName(self.usernameData)<br/>            self.lp.password(self.passwordData)<br/>            self.lp.login()<br/>            self.log.info(&quot;----Login Done----&quot;)<br/>            self.lp.loadingScreenHandling()<br/>    <br/>            # Go to 7501 Page<br/>            # self.esf = EntryFormPage(self.driver, self.mywait)<br/>            self.esf.shipment()<br/>            self.esf.selectImporter(self.selectIMPORTERData)<br/>            self.esf.form7501()<br/>            self.log.info(&quot;----Form 7501 Opened----&quot;)<br/>    <br/>            # Upper Part<br/>            self.log.info(&quot;----Upper Part Started----&quot;)<br/>            self.esf.invoicenumber(self.randomInvoice)<br/>            self.esf.entryFillingTypecode(self.entfilltypeData)<br/>            self.esf.actionCode(self.actionCData)<br/>            self.esf.modeOfTransport(self.trnpmodeData)<br/>            self.log.info(&quot;----Upper Part Done----&quot;)<br/>    <br/>            # Bill of Lading<br/>            self.log.info(&quot;----Bill Of Lading Started----&quot;)<br/>            self.esf.scaccode(self.scacData)<br/>            self.esf.bill(self.randomBill)<br/>            self.esf.uom(self.uomData)<br/>            self.esf.quantity(self.qtyyData)<br/>            self.log.info(&quot;----Bill Of Lading Done----&quot;)<br/>    <br/>    <br/>            # Vessel Inforrmation<br/>            self.log.info(&quot;----Vessel Information Started----&quot;)<br/>            self.esf.vesselFlightNo(self.vessellsnoData)<br/>            self.esf.addEditContiner()<br/>            self.esf.containers(self.containerlistData)<br/>            self.esf.saveContainer()<br/>            self.log.info(&quot;----Vessel Information Done----&quot;)<br/>    <br/>            # Trading Partners 1<br/>            self.log.info(&quot;----Trading Partners 1 Started----&quot;)<br/>            self.esf.manufarture(self.manufacturerData)<br/>            self.esf.seller(self.sellerData)<br/>            self.esf.consignee(self.buyerData)<br/>            self.esf.buyer(self.buyerData)<br/>            self.log.info(&quot;----Trading Partners 1 Done----&quot;)<br/>    <br/>            # Trading Partners 2<br/>    <br/>            self.log.info(&quot;----Trading Partners 2 Started----&quot;)<br/>            self.esf.countryOfOrigin1(self.countryOfOrigin1Data)<br/>            self.esf.release_port(self.release_portData)<br/>            self.esf.countryOfExport1(self.countryOfExport1Data)<br/>            self.esf.weight(self.grossWeightData)<br/>            self.esf.charges(self.chargedata)<br/>            self.esf.unladingport(self.unladingportData)<br/>            self.esf.manifestDescription(self.manifestDescriptionData)<br/>            self.esf.arrivaldate(self.arrivaldateData)<br/>            self.esf.exportdate(self.exportdateData)<br/>            self.log.info(&quot;----Trading Partners 2 Done----&quot;)<br/>    <br/>            # Line Items<br/>            self.log.info(&quot;----Line Items Started----&quot;)<br/>            self.esf.invoiceTotal(self.invoiceTotalData)<br/>            self.esf.countryOfOrigin2(self.countryOfOrigin2Data)<br/>            self.esf.countryOfExport2(self.countryOfExport2Data)<br/>            self.esf.tariffno(self.tariffnoData)<br/>            self.esf.lineValue(self.linevalueData)<br/>            self.log.info(&quot;----Line Items Done----&quot;)<br/>    <br/>            # Save the form<br/>            self.esf.saveform()<br/>    <br/>            # Verify that form should be saved<br/>            self.msg = self.driver.find_element(By.TAG_NAME, &quot;body&quot;).text<br/>    <br/>            if &#x27;Form saved succesfully!&#x27; in self.msg:<br/>                self.esf.formSavedConfirmationMsg()<br/>                self.log.info(&quot;----Form Saved Successfully----&quot;)<br/>                self.esf.submitform()<br/>                self.log.info(&quot;----Clicked on Submit Button----&quot;)<br/>    <br/>                if &#x27;Confirm Entry Information&#x27; in self.msg:<br/>                    self.log.info(&quot;----Validation Form opened----&quot;)<br/>                InvoiceValuesOfValidationForm = self.driver.find_element(By.XPATH,&quot;//p[@class=&#x27;form-lable&#x27;][contains(text(),&#x27;Total Invoice Value:&#x27;)]//span[1]&quot;).text<br/>&gt;               InvoiceValuesOfValidationFormFloat = float(InvoiceValuesOfValidationForm)<br/><span class="error">E               ValueError: could not convert string to float: &#x27;&#x27;</span><br/><br/>testcases\test_EntryTC9.py:176: ValueError<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     Test_EntrySummary9:test_EntryTC9.py:34 ----------------Test Case test_TC9_Informal_AirContainer with Container Starterd----------------
+INFO     Test_EntrySummary9:test_EntryTC9.py:95 ----Login Done----
+INFO     Test_EntrySummary9:test_EntryTC9.py:103 ----Form 7501 Opened----
+INFO     Test_EntrySummary9:test_EntryTC9.py:106 ----Upper Part Started----
+INFO     Test_EntrySummary9:test_EntryTC9.py:111 ----Upper Part Done----
+INFO     Test_EntrySummary9:test_EntryTC9.py:114 ----Bill Of Lading Started----
+INFO     Test_EntrySummary9:test_EntryTC9.py:119 ----Bill Of Lading Done----
+INFO     Test_EntrySummary9:test_EntryTC9.py:123 ----Vessel Information Started----
+INFO     Test_EntrySummary9:test_EntryTC9.py:128 ----Vessel Information Done----
+INFO     Test_EntrySummary9:test_EntryTC9.py:131 ----Trading Partners 1 Started----
+INFO     Test_EntrySummary9:test_EntryTC9.py:136 ----Trading Partners 1 Done----
+INFO     Test_EntrySummary9:test_EntryTC9.py:140 ----Trading Partners 2 Started----
+INFO     Test_EntrySummary9:test_EntryTC9.py:150 ----Trading Partners 2 Done----
+INFO     Test_EntrySummary9:test_EntryTC9.py:153 ----Line Items Started----
+INFO     Test_EntrySummary9:test_EntryTC9.py:159 ----Line Items Done----
+INFO     Test_EntrySummary9:test_EntryTC9.py:169 ----Form Saved Successfully----
+INFO     Test_EntrySummary9:test_EntryTC9.py:171 ----Clicked on Submit Button----<br/></div></td></tr></tbody>
+      <tbody class="failed results-table-row">
+        <tr>
+          <td class="col-result">Failed</td>
+          <td class="col-name">testcases/test_LoginDDT.py::TestLogin::test_loginBy1stOneCredentials</td>
+          <td class="col-duration">50.42</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log">self = &lt;testcases.test_LoginDDT.TestLogin object at 0x00000259F8FB6550&gt;<br/><br/>    def test_loginBy1stOneCredentials(self):<br/>        global hometext<br/>        for r in range(3, 7):  # 2, self.rows+1<br/>            self.usernameData = utills.readData(self.file, &#x27;LoginTestDDT&#x27;, r, 1)<br/>            self.passwordData = utills.readData(self.file, &#x27;LoginTestDDT&#x27;, r, 2)<br/>            self.lp.userName(self.usernameData)<br/>            self.lp.password(self.passwordData)<br/>            self.lp.login()<br/>            self.log.info(&quot;Clicked on Login Button&quot;)<br/>            self.lp.loadingScreenHandling()<br/>    <br/>            try:<br/>                home = self.driver.find_element(By.XPATH, &quot;//a[@routerlink=&#x27;/userHome&#x27;]&quot;)<br/>                hometext = home.text<br/>                self.log.info(&quot;Name shown in Homepage&quot;)<br/>            except Exception as e:<br/>                self.log.info(&quot;Name not shown in Homepage&quot;)<br/>    <br/>            if hometext == &quot;Welcome, tnash  &quot;:<br/>                # assert True<br/>                self.lp.logout()<br/>                self.log.info(&quot;Test Case Pass&quot;)<br/>&gt;               utills.writeData(self.file, &quot;LoginTestDDT&quot;, r, 4, &quot;Login Successfully&quot;)<br/><br/>testcases\test_LoginDDT.py:43: <br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/>utilites\utils.py:58: in writeData<br/>    workbook.save(file)<br/>venv\Lib\site-packages\openpyxl\workbook\workbook.py:386: in save<br/>    save_workbook(self, filename)<br/>venv\Lib\site-packages\openpyxl\writer\excel.py:291: in save_workbook<br/>    archive = ZipFile(filename, &#x27;w&#x27;, ZIP_DEFLATED, allowZip64=True)<br/>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ <br/><br/>self = &lt;zipfile.ZipFile [closed]&gt;, file = &#x27;D:/Artmus Spec/Automation_Artemus/TestML.xlsx&#x27;, mode = &#x27;w&#x27;, compression = 8, allowZip64 = True, compresslevel = None<br/><br/>    def __init__(self, file, mode=&quot;r&quot;, compression=ZIP_STORED, allowZip64=True,<br/>                 compresslevel=None, *, strict_timestamps=True, metadata_encoding=None):<br/>        &quot;&quot;&quot;Open the ZIP file with mode read &#x27;r&#x27;, write &#x27;w&#x27;, exclusive create &#x27;x&#x27;,<br/>        or append &#x27;a&#x27;.&quot;&quot;&quot;<br/>        if mode not in (&#x27;r&#x27;, &#x27;w&#x27;, &#x27;x&#x27;, &#x27;a&#x27;):<br/>            raise ValueError(&quot;ZipFile requires mode &#x27;r&#x27;, &#x27;w&#x27;, &#x27;x&#x27;, or &#x27;a&#x27;&quot;)<br/>    <br/>        _check_compression(compression)<br/>    <br/>        self._allowZip64 = allowZip64<br/>        self._didModify = False<br/>        self.debug = 0  # Level of printing: 0 through 3<br/>        self.NameToInfo = {}    # Find file info given name<br/>        self.filelist = []      # List of ZipInfo instances for archive<br/>        self.compression = compression  # Method of compression<br/>        self.compresslevel = compresslevel<br/>        self.mode = mode<br/>        self.pwd = None<br/>        self._comment = b&#x27;&#x27;<br/>        self._strict_timestamps = strict_timestamps<br/>        self.metadata_encoding = metadata_encoding<br/>    <br/>        # Check that we don&#x27;t try to write with nonconforming codecs<br/>        if self.metadata_encoding and mode != &#x27;r&#x27;:<br/>            raise ValueError(<br/>                &quot;metadata_encoding is only supported for reading files&quot;)<br/>    <br/>        # Check if we were passed a file-like object<br/>        if isinstance(file, os.PathLike):<br/>            file = os.fspath(file)<br/>        if isinstance(file, str):<br/>            # No, it&#x27;s a filename<br/>            self._filePassed = 0<br/>            self.filename = file<br/>            modeDict = {&#x27;r&#x27; : &#x27;rb&#x27;, &#x27;w&#x27;: &#x27;w+b&#x27;, &#x27;x&#x27;: &#x27;x+b&#x27;, &#x27;a&#x27; : &#x27;r+b&#x27;,<br/>                        &#x27;r+b&#x27;: &#x27;w+b&#x27;, &#x27;w+b&#x27;: &#x27;wb&#x27;, &#x27;x+b&#x27;: &#x27;xb&#x27;}<br/>            filemode = modeDict[mode]<br/>            while True:<br/>                try:<br/>&gt;                   self.fp = io.open(file, filemode)<br/><span class="error">E                   PermissionError: [Errno 13] Permission denied: &#x27;D:/Artmus Spec/Automation_Artemus/TestML.xlsx&#x27;</span><br/><br/>C:\Users\Admin\AppData\Local\Programs\Python\Python311\Lib\zipfile.py:1281: PermissionError<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     TestLogin:test_LoginDDT.py:29 Clicked on Login Button
+INFO     TestLogin:test_LoginDDT.py:35 Name shown in Homepage
+INFO     TestLogin:test_LoginDDT.py:42 Test Case Pass<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testcases/test_EntryTC10.py::Test_EntrySummary10::test_TC10_Currency_SimpleEntry_Vessel_Container</td>
+          <td class="col-duration">281.40</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     Test_EntrySummary10:test_EntryTC10.py:34 ----------------Test Case test_TC10_Currency_SimpleEntry_Vessel_Container with Container Starterd----------------
+INFO     Test_EntrySummary10:test_EntryTC10.py:96 ----Login Done----
+INFO     Test_EntrySummary10:test_EntryTC10.py:104 ----Form 7501 Opened----
+INFO     Test_EntrySummary10:test_EntryTC10.py:107 ----Upper Part Started----
+INFO     Test_EntrySummary10:test_EntryTC10.py:112 ----Upper Part Done----
+INFO     Test_EntrySummary10:test_EntryTC10.py:115 ----Bill Of Lading Started----
+INFO     Test_EntrySummary10:test_EntryTC10.py:120 ----Bill Of Lading Done----
+INFO     Test_EntrySummary10:test_EntryTC10.py:124 ----Vessel Information Started----
+INFO     Test_EntrySummary10:test_EntryTC10.py:130 ----Vessel Information Done----
+INFO     Test_EntrySummary10:test_EntryTC10.py:133 ----Trading Partners 1 Started----
+INFO     Test_EntrySummary10:test_EntryTC10.py:138 ----Trading Partners 1 Done----
+INFO     Test_EntrySummary10:test_EntryTC10.py:142 ----Trading Partners 2 Started----
+INFO     Test_EntrySummary10:test_EntryTC10.py:154 ----Trading Partners 2 Done----
+INFO     Test_EntrySummary10:test_EntryTC10.py:157 ----Line Items Started----
+INFO     Test_EntrySummary10:test_EntryTC10.py:162 ----Line Items Done----
+INFO     Test_EntrySummary10:test_EntryTC10.py:172 ----Form Saved Successfully----
+INFO     Test_EntrySummary10:test_EntryTC10.py:174 ----Clicked on Submit Button----
+INFO     Test_EntrySummary10:test_EntryTC10.py:181 ----The values are calculated properly----
+INFO     Test_EntrySummary10:test_EntryTC10.py:183 ----Clicked on Submit Button of Validation Form----
+INFO     Test_EntrySummary10:test_EntryTC10.py:199 ----------------Test Case test_TC10_Currency_SimpleEntry_Vessel_Container with Container End----------------<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testcases/test_EntryTC11.py::Test_EntrySummary11::test_TC11_CottonDontExemptHTS_SimpleEntry_Vessel_Container</td>
+          <td class="col-duration">198.06</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     Test_EntrySummary11:test_EntryTC11.py:34 ----------------Test Case test_TC11_CottonDontExemptHTS_SimpleEntry_Vessel_Container with Container Starterd----------------
+INFO     Test_EntrySummary11:test_EntryTC11.py:95 ----Login Done----
+INFO     Test_EntrySummary11:test_EntryTC11.py:103 ----Form 7501 Opened----
+INFO     Test_EntrySummary11:test_EntryTC11.py:106 ----Upper Part Started----
+INFO     Test_EntrySummary11:test_EntryTC11.py:111 ----Upper Part Done----
+INFO     Test_EntrySummary11:test_EntryTC11.py:114 ----Bill Of Lading Started----
+INFO     Test_EntrySummary11:test_EntryTC11.py:119 ----Bill Of Lading Done----
+INFO     Test_EntrySummary11:test_EntryTC11.py:123 ----Vessel Information Started----
+INFO     Test_EntrySummary11:test_EntryTC11.py:129 ----Vessel Information Done----
+INFO     Test_EntrySummary11:test_EntryTC11.py:132 ----Trading Partners 1 Started----
+INFO     Test_EntrySummary11:test_EntryTC11.py:137 ----Trading Partners 1 Done----
+INFO     Test_EntrySummary11:test_EntryTC11.py:141 ----Trading Partners 2 Started----
+INFO     Test_EntrySummary11:test_EntryTC11.py:152 ----Trading Partners 2 Done----
+INFO     Test_EntrySummary11:test_EntryTC11.py:155 ----Line Items Started----
+INFO     Test_EntrySummary11:test_EntryTC11.py:164 ----Line Items Done----
+INFO     Test_EntrySummary11:test_EntryTC11.py:174 ----Form Saved Successfully----
+INFO     Test_EntrySummary11:test_EntryTC11.py:176 ----Clicked on Submit Button----
+INFO     Test_EntrySummary11:test_EntryTC11.py:185 ----The values are calculated properly----
+INFO     Test_EntrySummary11:test_EntryTC11.py:187 ----Clicked on Submit Button of Validation Form----
+INFO     Test_EntrySummary11:test_EntryTC11.py:203 ----------------Test Case test_TC11_CottonDontExemptHTS_SimpleEntry_Vessel_Container with Container End----------------<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testcases/test_EntryTC12.py::Test_EntrySummary12::test_TC12_China_SimpleEntry_Vessel_Container</td>
+          <td class="col-duration">255.92</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     Test_EntrySummary12:test_EntryTC12.py:34 ----------------Test Case test_TC12_China_SimpleEntry_Vessel_Container with Container Starterd----------------
+INFO     Test_EntrySummary12:test_EntryTC12.py:95 ----Login Done----
+INFO     Test_EntrySummary12:test_EntryTC12.py:103 ----Form 7501 Opened----
+INFO     Test_EntrySummary12:test_EntryTC12.py:106 ----Upper Part Started----
+INFO     Test_EntrySummary12:test_EntryTC12.py:111 ----Upper Part Done----
+INFO     Test_EntrySummary12:test_EntryTC12.py:114 ----Bill Of Lading Started----
+INFO     Test_EntrySummary12:test_EntryTC12.py:119 ----Bill Of Lading Done----
+INFO     Test_EntrySummary12:test_EntryTC12.py:123 ----Vessel Information Started----
+INFO     Test_EntrySummary12:test_EntryTC12.py:129 ----Vessel Information Done----
+INFO     Test_EntrySummary12:test_EntryTC12.py:132 ----Trading Partners 1 Started----
+INFO     Test_EntrySummary12:test_EntryTC12.py:137 ----Trading Partners 1 Done----
+INFO     Test_EntrySummary12:test_EntryTC12.py:141 ----Trading Partners 2 Started----
+INFO     Test_EntrySummary12:test_EntryTC12.py:152 ----Trading Partners 2 Done----
+INFO     Test_EntrySummary12:test_EntryTC12.py:155 ----Line Items Started----
+INFO     Test_EntrySummary12:test_EntryTC12.py:162 ----Line Items Done----
+INFO     Test_EntrySummary12:test_EntryTC12.py:172 ----Form Saved Successfully----
+INFO     Test_EntrySummary12:test_EntryTC12.py:174 ----Clicked on Submit Button----
+INFO     Test_EntrySummary12:test_EntryTC12.py:181 ----The values are calculated properly----
+INFO     Test_EntrySummary12:test_EntryTC12.py:183 ----Clicked on Submit Button of Validation Form----
+INFO     Test_EntrySummary12:test_EntryTC12.py:199 ----------------Test Case test_TC12_China_SimpleEntry_Vessel_Container with Container End----------------<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testcases/test_EntryTC13.py::Test_EntrySummary13::test_TC13_ChinaCotton_SimpleEntry_Vessel_Container</td>
+          <td class="col-duration">256.40</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     Test_EntrySummary13:test_EntryTC13.py:34 ----------------Test Case test_TC13_ChinaCotton_SimpleEntry_Vessel_Container Starterd----------------
+INFO     Test_EntrySummary13:test_EntryTC13.py:95 ----Login Done----
+INFO     Test_EntrySummary13:test_EntryTC13.py:103 ----Form 7501 Opened----
+INFO     Test_EntrySummary13:test_EntryTC13.py:106 ----Upper Part Started----
+INFO     Test_EntrySummary13:test_EntryTC13.py:111 ----Upper Part Done----
+INFO     Test_EntrySummary13:test_EntryTC13.py:114 ----Bill Of Lading Started----
+INFO     Test_EntrySummary13:test_EntryTC13.py:119 ----Bill Of Lading Done----
+INFO     Test_EntrySummary13:test_EntryTC13.py:123 ----Vessel Information Started----
+INFO     Test_EntrySummary13:test_EntryTC13.py:129 ----Vessel Information Done----
+INFO     Test_EntrySummary13:test_EntryTC13.py:132 ----Trading Partners 1 Started----
+INFO     Test_EntrySummary13:test_EntryTC13.py:137 ----Trading Partners 1 Done----
+INFO     Test_EntrySummary13:test_EntryTC13.py:141 ----Trading Partners 2 Started----
+INFO     Test_EntrySummary13:test_EntryTC13.py:152 ----Trading Partners 2 Done----
+INFO     Test_EntrySummary13:test_EntryTC13.py:155 ----Line Items Started----
+INFO     Test_EntrySummary13:test_EntryTC13.py:165 ----Line Items Done----
+INFO     Test_EntrySummary13:test_EntryTC13.py:175 ----Form Saved Successfully----
+INFO     Test_EntrySummary13:test_EntryTC13.py:177 ----Clicked on Submit Button----
+INFO     Test_EntrySummary13:test_EntryTC13.py:186 ----The values are calculated properly----
+INFO     Test_EntrySummary13:test_EntryTC13.py:188 ----Clicked on Submit Button of Validation Form----
+INFO     Test_EntrySummary13:test_EntryTC13.py:204 ----------------Test Case test_TC13_ChinaCotton_SimpleEntry_Vessel_Container End----------------<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testcases/test_EntryTC14.py::Test_EntrySummary14::test_TC14_1FPGA_Vessel_Container</td>
+          <td class="col-duration">267.23</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     Test_EntrySummary14:test_EntryTC14.py:36 ----------------Test Case test_TC14_1FPGA_Vessel_Container Starterd----------------
+INFO     Test_EntrySummary14:test_EntryTC14.py:96 ----Login Done----
+INFO     Test_EntrySummary14:test_EntryTC14.py:104 ----Form 7501 Opened----
+INFO     Test_EntrySummary14:test_EntryTC14.py:107 ----Upper Part Started----
+INFO     Test_EntrySummary14:test_EntryTC14.py:112 ----Upper Part Done----
+INFO     Test_EntrySummary14:test_EntryTC14.py:115 ----Bill Of Lading Started----
+INFO     Test_EntrySummary14:test_EntryTC14.py:120 ----Bill Of Lading Done----
+INFO     Test_EntrySummary14:test_EntryTC14.py:124 ----Vessel Information Started----
+INFO     Test_EntrySummary14:test_EntryTC14.py:130 ----Vessel Information Done----
+INFO     Test_EntrySummary14:test_EntryTC14.py:133 ----Trading Partners 1 Started----
+INFO     Test_EntrySummary14:test_EntryTC14.py:138 ----Trading Partners 1 Done----
+INFO     Test_EntrySummary14:test_EntryTC14.py:142 ----Trading Partners 2 Started----
+INFO     Test_EntrySummary14:test_EntryTC14.py:153 ----Trading Partners 2 Done----
+INFO     Test_EntrySummary14:test_EntryTC14.py:156 ----Line Items Started----
+INFO     Test_EntrySummary14:test_EntryTC14.py:178 ----PGA from opened----
+INFO     Test_EntrySummary14:test_EntryTC14.py:206 ----PGA Form closed----
+INFO     Test_EntrySummary14:test_EntryTC14.py:208 ----PGA Form closed----
+INFO     Test_EntrySummary14:test_EntryTC14.py:210 ----Line Items Done----
+INFO     Test_EntrySummary14:test_EntryTC14.py:220 ----Form Saved Successfully----
+INFO     Test_EntrySummary14:test_EntryTC14.py:222 ----Clicked on Submit Button----
+INFO     Test_EntrySummary14:test_EntryTC14.py:229 ----The values are calculated properly----
+INFO     Test_EntrySummary14:test_EntryTC14.py:231 ----Clicked on Submit Button of Validation Form----
+INFO     Test_EntrySummary14:test_EntryTC14.py:247 ----------------Test Case test_TC14_1FPGA_Vessel_Container End----------------<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testcases/test_EntryTC15.py::Test_EntrySummary15::test_TC15_2FPGA_Vessel_Container</td>
+          <td class="col-duration">276.89</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     Test_EntrySummary15:test_EntryTC15.py:36 ----------------Test Case test_TC15_2FPGA_Vessel_Container Starterd----------------
+INFO     Test_EntrySummary15:test_EntryTC15.py:97 ----Login Done----
+INFO     Test_EntrySummary15:test_EntryTC15.py:105 ----Form 7501 Opened----
+INFO     Test_EntrySummary15:test_EntryTC15.py:108 ----Upper Part Started----
+INFO     Test_EntrySummary15:test_EntryTC15.py:113 ----Upper Part Done----
+INFO     Test_EntrySummary15:test_EntryTC15.py:116 ----Bill Of Lading Started----
+INFO     Test_EntrySummary15:test_EntryTC15.py:121 ----Bill Of Lading Done----
+INFO     Test_EntrySummary15:test_EntryTC15.py:125 ----Vessel Information Started----
+INFO     Test_EntrySummary15:test_EntryTC15.py:131 ----Vessel Information Done----
+INFO     Test_EntrySummary15:test_EntryTC15.py:134 ----Trading Partners 1 Started----
+INFO     Test_EntrySummary15:test_EntryTC15.py:139 ----Trading Partners 1 Done----
+INFO     Test_EntrySummary15:test_EntryTC15.py:143 ----Trading Partners 2 Started----
+INFO     Test_EntrySummary15:test_EntryTC15.py:154 ----Trading Partners 2 Done----
+INFO     Test_EntrySummary15:test_EntryTC15.py:157 ----Line Items Started----
+INFO     Test_EntrySummary15:test_EntryTC15.py:184 ----PGA EP5 form opened----
+INFO     Test_EntrySummary15:test_EntryTC15.py:200 ----PGA EP5 form Closed----
+INFO     Test_EntrySummary15:test_EntryTC15.py:204 ----PGA EP7 form opened----
+INFO     Test_EntrySummary15:test_EntryTC15.py:233 ----PGA EP7 form closed----
+INFO     Test_EntrySummary15:test_EntryTC15.py:235 ----Line Items Done----
+INFO     Test_EntrySummary15:test_EntryTC15.py:245 ----Form Saved Successfully----
+INFO     Test_EntrySummary15:test_EntryTC15.py:247 ----Clicked on Submit Button----
+INFO     Test_EntrySummary15:test_EntryTC15.py:254 ----The values are calculated properly----
+INFO     Test_EntrySummary15:test_EntryTC15.py:256 ----Clicked on Submit Button of Validation Form----
+INFO     Test_EntrySummary15:test_EntryTC15.py:272 ----------------Test Case test_TC15_2FPGA_Vessel_Container End----------------<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testcases/test_EntryTC16.py::Test_EntrySummary16::test_TC16_3FPGA_Vessel_Container</td>
+          <td class="col-duration">256.31</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>PGA has some validations issues but still PGA form saved
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     Test_EntrySummary16:test_EntryTC16.py:36 ----------------Test Case test_TC16_3FPGA_Vessel_Container Starterd----------------
+INFO     Test_EntrySummary16:test_EntryTC16.py:97 ----Login Done----
+INFO     Test_EntrySummary16:test_EntryTC16.py:105 ----Form 7501 Opened----
+INFO     Test_EntrySummary16:test_EntryTC16.py:108 ----Upper Part Started----
+INFO     Test_EntrySummary16:test_EntryTC16.py:113 ----Upper Part Done----
+INFO     Test_EntrySummary16:test_EntryTC16.py:116 ----Bill Of Lading Started----
+INFO     Test_EntrySummary16:test_EntryTC16.py:121 ----Bill Of Lading Done----
+INFO     Test_EntrySummary16:test_EntryTC16.py:125 ----Vessel Information Started----
+INFO     Test_EntrySummary16:test_EntryTC16.py:131 ----Vessel Information Done----
+INFO     Test_EntrySummary16:test_EntryTC16.py:134 ----Trading Partners 1 Started----
+INFO     Test_EntrySummary16:test_EntryTC16.py:139 ----Trading Partners 1 Done----
+INFO     Test_EntrySummary16:test_EntryTC16.py:143 ----Trading Partners 2 Started----
+INFO     Test_EntrySummary16:test_EntryTC16.py:154 ----Trading Partners 2 Done----
+INFO     Test_EntrySummary16:test_EntryTC16.py:157 ----Line Items Started----
+INFO     Test_EntrySummary16:test_EntryTC16.py:235 ----PGA EP5 form opened----
+INFO     Test_EntrySummary16:test_EntryTC16.py:251 ----PGA EP5 form Closed----
+INFO     Test_EntrySummary16:test_EntryTC16.py:255 ----PGA EP7 form opened----
+INFO     Test_EntrySummary16:test_EntryTC16.py:284 ----PGA EP7 form closed----
+INFO     Test_EntrySummary16:test_EntryTC16.py:288 ----PGA FD3 form opened----
+ERROR    Test_EntrySummary16:test_EntryTC16.py:353 Error while saving PGA form
+INFO     Test_EntrySummary16:test_EntryTC16.py:367 ----PGA FD3 form closed----
+INFO     Test_EntrySummary16:test_EntryTC16.py:370 ----Line Items Done----
+INFO     Test_EntrySummary16:test_EntryTC16.py:380 ----Form Saved Successfully----
+INFO     Test_EntrySummary16:test_EntryTC16.py:382 ----Clicked on Submit Button----
+INFO     Test_EntrySummary16:test_EntryTC16.py:389 ----The values are calculated properly----
+INFO     Test_EntrySummary16:test_EntryTC16.py:391 ----Clicked on Submit Button of Validation Form----
+INFO     Test_EntrySummary16:test_EntryTC16.py:407 ----------------Test Case test_TC16_3FPGA_Vessel_Container End----------------<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testcases/test_EntryTC17.py::Test_EntrySummary17::test_TC17_1FPGAFDA_Vessel_Container</td>
+          <td class="col-duration">277.47</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>PGA has some validations issues but still PGA form saved
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     Test_EntrySummary17:test_EntryTC17.py:36 ----------------Test Case test_TC17_1FPGAFDA_Vessel_Container Starterd----------------
+INFO     Test_EntrySummary17:test_EntryTC17.py:97 ----Login Done----
+INFO     Test_EntrySummary17:test_EntryTC17.py:105 ----Form 7501 Opened----
+INFO     Test_EntrySummary17:test_EntryTC17.py:108 ----Upper Part Started----
+INFO     Test_EntrySummary17:test_EntryTC17.py:113 ----Upper Part Done----
+INFO     Test_EntrySummary17:test_EntryTC17.py:116 ----Bill Of Lading Started----
+INFO     Test_EntrySummary17:test_EntryTC17.py:121 ----Bill Of Lading Done----
+INFO     Test_EntrySummary17:test_EntryTC17.py:125 ----Vessel Information Started----
+INFO     Test_EntrySummary17:test_EntryTC17.py:131 ----Vessel Information Done----
+INFO     Test_EntrySummary17:test_EntryTC17.py:134 ----Trading Partners 1 Started----
+INFO     Test_EntrySummary17:test_EntryTC17.py:139 ----Trading Partners 1 Done----
+INFO     Test_EntrySummary17:test_EntryTC17.py:143 ----Trading Partners 2 Started----
+INFO     Test_EntrySummary17:test_EntryTC17.py:154 ----Trading Partners 2 Done----
+INFO     Test_EntrySummary17:test_EntryTC17.py:157 ----Line Items Started----
+INFO     Test_EntrySummary17:test_EntryTC17.py:263 ----PGA FD1 form opened----
+ERROR    Test_EntrySummary17:test_EntryTC17.py:365 Error while saving PGA form
+INFO     Test_EntrySummary17:test_EntryTC17.py:379 ----PGA FD1 form closed----
+INFO     Test_EntrySummary17:test_EntryTC17.py:382 ----Line Items Done----
+INFO     Test_EntrySummary17:test_EntryTC17.py:392 ----Form Saved Successfully----
+INFO     Test_EntrySummary17:test_EntryTC17.py:394 ----Clicked on Submit Button----
+INFO     Test_EntrySummary17:test_EntryTC17.py:401 ----The values are calculated properly----
+INFO     Test_EntrySummary17:test_EntryTC17.py:403 ----Clicked on Submit Button of Validation Form----
+INFO     Test_EntrySummary17:test_EntryTC17.py:420 ----------------Test Case test_TC17_1FPGAFDA_Vessel_Container End----------------<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testcases/test_EntryTC2.py::Test_EntrySummary2::test_TC2_SimpleEntry_VesselWithoutContainer</td>
+          <td class="col-duration">210.29</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     Test_EntrySummary2:test_EntryTC2.py:34 ----------------Test Case test_TC2_SimpleEntry_VesselWithoutContainer Starterd----------------
+INFO     Test_EntrySummary2:test_EntryTC2.py:95 ----Login Done----
+INFO     Test_EntrySummary2:test_EntryTC2.py:103 ----Form 7501 Opened----
+INFO     Test_EntrySummary2:test_EntryTC2.py:106 ----Upper Part Started----
+INFO     Test_EntrySummary2:test_EntryTC2.py:111 ----Upper Part Done----
+INFO     Test_EntrySummary2:test_EntryTC2.py:114 ----Bill Of Lading Started----
+INFO     Test_EntrySummary2:test_EntryTC2.py:119 ----Bill Of Lading Done----
+INFO     Test_EntrySummary2:test_EntryTC2.py:123 ----Vessel Information Started----
+INFO     Test_EntrySummary2:test_EntryTC2.py:126 ----Vessel Information Done----
+INFO     Test_EntrySummary2:test_EntryTC2.py:129 ----Trading Partners 1 Started----
+INFO     Test_EntrySummary2:test_EntryTC2.py:134 ----Trading Partners 1 Done----
+INFO     Test_EntrySummary2:test_EntryTC2.py:138 ----Trading Partners 2 Started----
+INFO     Test_EntrySummary2:test_EntryTC2.py:149 ----Trading Partners 2 Done----
+INFO     Test_EntrySummary2:test_EntryTC2.py:152 ----Line Items Started----
+INFO     Test_EntrySummary2:test_EntryTC2.py:158 ----Line Items Done----
+INFO     Test_EntrySummary2:test_EntryTC2.py:168 ----Form Saved Successfully----
+INFO     Test_EntrySummary2:test_EntryTC2.py:170 ----Clicked on Submit Button----
+INFO     Test_EntrySummary2:test_EntryTC2.py:177 ----The values are calculated properly----
+INFO     Test_EntrySummary2:test_EntryTC2.py:179 ----Clicked on Submit Button of Validation Form----
+INFO     Test_EntrySummary2:test_EntryTC2.py:195 ----------------Test Case test_TC2_SimpleEntry_VesselWithoutContainer End----------------<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testcases/test_EntryTC3.py::Test_EntrySummary3::test_TC3_SimpleEntry_AirContainer</td>
+          <td class="col-duration">222.28</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     Test_EntrySummary3:test_EntryTC3.py:34 ----------------Test Case test_TC3_SimpleEntry_Air with Container Starterd----------------
+INFO     Test_EntrySummary3:test_EntryTC3.py:95 ----Login Done----
+INFO     Test_EntrySummary3:test_EntryTC3.py:103 ----Form 7501 Opened----
+INFO     Test_EntrySummary3:test_EntryTC3.py:106 ----Upper Part Started----
+INFO     Test_EntrySummary3:test_EntryTC3.py:111 ----Upper Part Done----
+INFO     Test_EntrySummary3:test_EntryTC3.py:114 ----Bill Of Lading Started----
+INFO     Test_EntrySummary3:test_EntryTC3.py:119 ----Bill Of Lading Done----
+INFO     Test_EntrySummary3:test_EntryTC3.py:123 ----Vessel Information Started----
+INFO     Test_EntrySummary3:test_EntryTC3.py:128 ----Vessel Information Done----
+INFO     Test_EntrySummary3:test_EntryTC3.py:131 ----Trading Partners 1 Started----
+INFO     Test_EntrySummary3:test_EntryTC3.py:136 ----Trading Partners 1 Done----
+INFO     Test_EntrySummary3:test_EntryTC3.py:140 ----Trading Partners 2 Started----
+INFO     Test_EntrySummary3:test_EntryTC3.py:150 ----Trading Partners 2 Done----
+INFO     Test_EntrySummary3:test_EntryTC3.py:153 ----Line Items Started----
+INFO     Test_EntrySummary3:test_EntryTC3.py:159 ----Line Items Done----
+INFO     Test_EntrySummary3:test_EntryTC3.py:169 ----Form Saved Successfully----
+INFO     Test_EntrySummary3:test_EntryTC3.py:171 ----Clicked on Submit Button----
+INFO     Test_EntrySummary3:test_EntryTC3.py:178 ----The values are calculated properly----
+INFO     Test_EntrySummary3:test_EntryTC3.py:180 ----Clicked on Submit Button of Validation Form----
+INFO     Test_EntrySummary3:test_EntryTC3.py:198 ----------------Test Case test_TC3_SimpleEntry_Air with Container End----------------<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testcases/test_EntryTC4.py::Test_EntrySummary4::test_TC4_SimpleEntry_Air_WithoutContainer</td>
+          <td class="col-duration">166.09</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     Test_EntrySummary4:test_EntryTC4.py:34 ----------------Test Case test_TC4_SimpleEntry_Air with Container Starterd----------------
+INFO     Test_EntrySummary4:test_EntryTC4.py:95 ----Login Done----
+INFO     Test_EntrySummary4:test_EntryTC4.py:103 ----Form 7501 Opened----
+INFO     Test_EntrySummary4:test_EntryTC4.py:106 ----Upper Part Started----
+INFO     Test_EntrySummary4:test_EntryTC4.py:111 ----Upper Part Done----
+INFO     Test_EntrySummary4:test_EntryTC4.py:114 ----Bill Of Lading Started----
+INFO     Test_EntrySummary4:test_EntryTC4.py:119 ----Bill Of Lading Done----
+INFO     Test_EntrySummary4:test_EntryTC4.py:123 ----Vessel Information Started----
+INFO     Test_EntrySummary4:test_EntryTC4.py:125 ----Vessel Information Done----
+INFO     Test_EntrySummary4:test_EntryTC4.py:128 ----Trading Partners 1 Started----
+INFO     Test_EntrySummary4:test_EntryTC4.py:133 ----Trading Partners 1 Done----
+INFO     Test_EntrySummary4:test_EntryTC4.py:137 ----Trading Partners 2 Started----
+INFO     Test_EntrySummary4:test_EntryTC4.py:147 ----Trading Partners 2 Done----
+INFO     Test_EntrySummary4:test_EntryTC4.py:150 ----Line Items Started----
+INFO     Test_EntrySummary4:test_EntryTC4.py:156 ----Line Items Done----
+INFO     Test_EntrySummary4:test_EntryTC4.py:166 ----Form Saved Successfully----
+INFO     Test_EntrySummary4:test_EntryTC4.py:168 ----Clicked on Submit Button----
+INFO     Test_EntrySummary4:test_EntryTC4.py:175 ----The values are calculated properly----
+INFO     Test_EntrySummary4:test_EntryTC4.py:177 ----Clicked on Submit Button of Validation Form----
+INFO     Test_EntrySummary4:test_EntryTC4.py:195 ----------------Test Case test_TC4_SimpleEntry_Air with Container End----------------<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testcases/test_EntryTC6.py::Test_EntrySummary6::test_TC6_ADdCVD_Vessel_Container</td>
+          <td class="col-duration">163.48</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     Test_EntrySummary6:test_EntryTC6.py:34 ----------------Test Case test_TC6_ADdCVD_Vessel_Container with Container Starterd----------------
+INFO     Test_EntrySummary6:test_EntryTC6.py:95 ----Login Done----
+INFO     Test_EntrySummary6:test_EntryTC6.py:103 ----Form 7501 Opened----
+INFO     Test_EntrySummary6:test_EntryTC6.py:106 ----Upper Part Started----
+INFO     Test_EntrySummary6:test_EntryTC6.py:111 ----Upper Part Done----
+INFO     Test_EntrySummary6:test_EntryTC6.py:114 ----Bill Of Lading Started----
+INFO     Test_EntrySummary6:test_EntryTC6.py:119 ----Bill Of Lading Done----
+INFO     Test_EntrySummary6:test_EntryTC6.py:123 ----Vessel Information Started----
+INFO     Test_EntrySummary6:test_EntryTC6.py:129 ----Vessel Information Done----
+INFO     Test_EntrySummary6:test_EntryTC6.py:132 ----Trading Partners 1 Started----
+INFO     Test_EntrySummary6:test_EntryTC6.py:137 ----Trading Partners 1 Done----
+INFO     Test_EntrySummary6:test_EntryTC6.py:141 ----Trading Partners 2 Started----
+INFO     Test_EntrySummary6:test_EntryTC6.py:152 ----Trading Partners 2 Done----
+INFO     Test_EntrySummary6:test_EntryTC6.py:155 ----Line Items Started----
+INFO     Test_EntrySummary6:test_EntryTC6.py:163 ----Line Items Done----
+INFO     Test_EntrySummary6:test_EntryTC6.py:173 ----Form Saved Successfully----
+INFO     Test_EntrySummary6:test_EntryTC6.py:175 ----Clicked on Submit Button----
+INFO     Test_EntrySummary6:test_EntryTC6.py:184 ----The values are calculated properly----
+INFO     Test_EntrySummary6:test_EntryTC6.py:186 ----Clicked on Submit Button of Validation Form----
+INFO     Test_EntrySummary6:test_EntryTC6.py:202 ----------------Test Case test_TC6_ADdCVD_Vessel_Container with Container End----------------<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testcases/test_EntryTC7.py::Test_EntrySummary7::test_TC7_ADDCVD_AirContainer</td>
+          <td class="col-duration">193.65</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     Test_EntrySummary7:test_EntryTC7.py:37 ----------------Test Case test_TC7_ADDCVD_AirContainer with Container Starterd----------------
+INFO     Test_EntrySummary7:test_EntryTC7.py:98 ----Login Done----
+INFO     Test_EntrySummary7:test_EntryTC7.py:106 ----Form 7501 Opened----
+INFO     Test_EntrySummary7:test_EntryTC7.py:109 ----Upper Part Started----
+INFO     Test_EntrySummary7:test_EntryTC7.py:114 ----Upper Part Done----
+INFO     Test_EntrySummary7:test_EntryTC7.py:117 ----Bill Of Lading Started----
+INFO     Test_EntrySummary7:test_EntryTC7.py:122 ----Bill Of Lading Done----
+INFO     Test_EntrySummary7:test_EntryTC7.py:126 ----Vessel Information Started----
+INFO     Test_EntrySummary7:test_EntryTC7.py:131 ----Vessel Information Done----
+INFO     Test_EntrySummary7:test_EntryTC7.py:134 ----Trading Partners 1 Started----
+INFO     Test_EntrySummary7:test_EntryTC7.py:139 ----Trading Partners 1 Done----
+INFO     Test_EntrySummary7:test_EntryTC7.py:143 ----Trading Partners 2 Started----
+INFO     Test_EntrySummary7:test_EntryTC7.py:153 ----Trading Partners 2 Done----
+INFO     Test_EntrySummary7:test_EntryTC7.py:156 ----Line Items Started----
+INFO     Test_EntrySummary7:test_EntryTC7.py:163 ----Line Items Done----
+INFO     Test_EntrySummary7:test_EntryTC7.py:173 ----Form Saved Successfully----
+INFO     Test_EntrySummary7:test_EntryTC7.py:175 ----Clicked on Submit Button----
+INFO     Test_EntrySummary7:test_EntryTC7.py:185 ----The values are calculated properly----
+INFO     Test_EntrySummary7:test_EntryTC7.py:187 ----Clicked on Submit Button of Validation Form----
+INFO     Test_EntrySummary7:test_EntryTC7.py:205 ----------------Test Case test_TC7_ADDCVD_AirContainer with Container End----------------<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testcases/test_EntryTC8.py::Test_EntrySummary8::test_TC8_Informal_Vessel_Container</td>
+          <td class="col-duration">180.03</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     Test_EntrySummary8:test_EntryTC8.py:34 ----------------Test Case test_TC8_Informal_Vessel_Container with Container Starterd----------------
+INFO     Test_EntrySummary8:test_EntryTC8.py:95 ----Login Done----
+INFO     Test_EntrySummary8:test_EntryTC8.py:103 ----Form 7501 Opened----
+INFO     Test_EntrySummary8:test_EntryTC8.py:106 ----Upper Part Started----
+INFO     Test_EntrySummary8:test_EntryTC8.py:111 ----Upper Part Done----
+INFO     Test_EntrySummary8:test_EntryTC8.py:114 ----Bill Of Lading Started----
+INFO     Test_EntrySummary8:test_EntryTC8.py:119 ----Bill Of Lading Done----
+INFO     Test_EntrySummary8:test_EntryTC8.py:123 ----Vessel Information Started----
+INFO     Test_EntrySummary8:test_EntryTC8.py:129 ----Vessel Information Done----
+INFO     Test_EntrySummary8:test_EntryTC8.py:132 ----Trading Partners 1 Started----
+INFO     Test_EntrySummary8:test_EntryTC8.py:137 ----Trading Partners 1 Done----
+INFO     Test_EntrySummary8:test_EntryTC8.py:141 ----Trading Partners 2 Started----
+INFO     Test_EntrySummary8:test_EntryTC8.py:152 ----Trading Partners 2 Done----
+INFO     Test_EntrySummary8:test_EntryTC8.py:155 ----Line Items Started----
+INFO     Test_EntrySummary8:test_EntryTC8.py:161 ----Line Items Done----
+INFO     Test_EntrySummary8:test_EntryTC8.py:171 ----Form Saved Successfully----
+INFO     Test_EntrySummary8:test_EntryTC8.py:173 ----Clicked on Submit Button----
+INFO     Test_EntrySummary8:test_EntryTC8.py:180 ----The values are calculated properly----
+INFO     Test_EntrySummary8:test_EntryTC8.py:182 ----Clicked on Submit Button of Validation Form----
+INFO     Test_EntrySummary8:test_EntryTC8.py:198 ----------------Test Case test_TC8_Informal_Vessel_Container with Container End----------------<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testcases/test_Entry_Demo.py::Test_EntrySummary17::test_TC17_1FPGAFDA_Vessel_Container</td>
+          <td class="col-duration">343.53</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     Test_EntrySummary17:test_Entry_Demo.py:36 ----------------Test Case test_TC17_1FPGAFDA_Vessel_Container Starterd----------------
+INFO     Test_EntrySummary17:test_Entry_Demo.py:97 ----Login Done----
+INFO     Test_EntrySummary17:test_Entry_Demo.py:105 ----Form 7501 Opened----
+INFO     Test_EntrySummary17:test_Entry_Demo.py:157 ----Line Items Started----
+INFO     Test_EntrySummary17:test_Entry_Demo.py:263 ----PGA FD1 form opened----<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testcases/test_Login.py::TestLogin::test_loginBy1stOneCredentials</td>
+          <td class="col-duration">61.07</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     TestLogin:test_Login.py:24 Login Done
+INFO     TestLogin:test_Login.py:29 Test Case Pass<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testcases/test_Login.py::TestLogin::test_loginBy2ndOneCredentials</td>
+          <td class="col-duration">70.25</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>Welcome, artemus  
+Test Case Pass
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     TestLogin:test_Login.py:47 Login Done
+INFO     TestLogin:test_Login.py:54 Test Case 2 Pass<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testcases/test_TC1_5106.py::Test_5106_TC1::test_ITTC1</td>
+          <td class="col-duration">61.28</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>Form Saved Successfully
+<br/> -------------------------------Captured log call-------------------------------- <br/>INFO     Test_5106_TC1:test_TC1_5106.py:36 ----------------Test Case test_HTC1 Starterd----------------
+INFO     Test_5106_TC1:test_TC1_5106.py:62 ----Login Done----
+INFO     Test_5106_TC1:test_TC1_5106.py:70 ----Form 5106 Opened----
+INFO     Test_5106_TC1:test_TC1_5106.py:73 ----Form filling Started----
+INFO     Test_5106_TC1:test_TC1_5106.py:96 ----Form filling Done----
+INFO     Test_5106_TC1:test_TC1_5106.py:117 ----------------Test Case test_IMTC1 End----------------<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testcases/test_smokTestCases.py::TestSmokTC::test_saveformwithinvoiceNumber</td>
+          <td class="col-duration">57.58</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     TestSmokTC:test_smokTestCases.py:32 ----------------Test Case test_saveformwithinvoiceNumber Starterd----------------
+INFO     TestSmokTC:test_smokTestCases.py:52 Entered in Form 7501
+INFO     TestSmokTC:test_smokTestCases.py:66 Test Case &#x27;save form with invoice Number&#x27; Passed
+INFO     TestSmokTC:test_smokTestCases.py:75 ----------------Test Case test_saveformwithinvoiceNumber End----------------<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testcases/test_smokTestCases.py::TestSmokTC::test_saveformwithoutinvoiceNumber</td>
+          <td class="col-duration">42.41</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     TestSmokTC:test_smokTestCases.py:78 ----------------Test Case test_saveformwithoutinvoiceNumber Starterd----------------
+INFO     TestSmokTC:test_smokTestCases.py:96 ----Entered in Form 7501----
+INFO     TestSmokTC:test_smokTestCases.py:110 Test Case &#x27;save form without invoice Number&#x27; Passed
+INFO     TestSmokTC:test_smokTestCases.py:119 ----------------Test Case test_saveformwithoutinvoiceNumber End----------------<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testcases/test_smokTestCases.py::TestSmokTC::test_saveformwithExistinginvoiceNumber</td>
+          <td class="col-duration">59.74</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     TestSmokTC:test_smokTestCases.py:122 ----------------Test Case test_saveformwithExistinginvoiceNumber Starterd----------------
+INFO     TestSmokTC:test_smokTestCases.py:140 ----Entered in Form 7501----
+INFO     TestSmokTC:test_smokTestCases.py:146 Test Case &#x27;save form with Existing invoice Number&#x27; Passed
+INFO     TestSmokTC:test_smokTestCases.py:151 ----------------Test Case test_saveformwithExistinginvoiceNumber End----------------<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">testcases/test_smokTestCases.py::TestSmokTC::test_saveAndSubmitFormwithInvoiceNumberOnly</td>
+          <td class="col-duration">48.81</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> -------------------------------Captured log call-------------------------------- <br/>INFO     TestSmokTC:test_smokTestCases.py:154 ----------------Test Case test_saveAndSubmitFormwithInvoiceNumberOnly Starterd----------------
+INFO     TestSmokTC:test_smokTestCases.py:174 Entered in Form 7501
+INFO     TestSmokTC:test_smokTestCases.py:182 Form Saved
+INFO     TestSmokTC:test_smokTestCases.py:185 Test Case &#x27;save And Submit Form with Invoice Number Only &#x27; Passed
+INFO     TestSmokTC:test_smokTestCases.py:205 ----------------Test Case test_saveAndSubmitFormwithInvoiceNumberOnly End----------------<br/></div></td></tr></tbody></table></body></html>
